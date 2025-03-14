@@ -2,6 +2,11 @@
 import "../styles/base.css";
 import Navbar from "../components/Navbar.astro";
 import Login from "../components/Login.astro";
+const supportedLanguages = ["en"]; // Alle Sprachen außer "de", weil "de" Standard ist
+const lang = Astro.params.lang ?? "de";
+const language = supportedLanguages.includes(lang) ? lang : "de";
+// Jede Komponente, die in diesem Layout definiert ist, muss den language Prop übergeben bekommen (Damit die richtigen)
+// Sprachelemente gefetcht werden
 ---
 
 <!doctype html>
@@ -19,7 +24,7 @@ import Login from "../components/Login.astro";
   </head>
   <body id="body">
     <Login />
-    <Navbar />
+    <Navbar language={language} />
     <slot />
   </body>
 </html>
@@ -40,7 +45,7 @@ import Login from "../components/Login.astro";
           }
         });
       },
-      { threshold: 0.3 },
+      { threshold: 0.3 }
     ); // Aktiviert, wenn 30% sichtbar
     const secondObserver = new IntersectionObserver(
       (entries) => {
@@ -52,7 +57,7 @@ import Login from "../components/Login.astro";
           }
         });
       },
-      { threshold: 0.3 },
+      { threshold: 0.3 }
     );
     // Jedes Element dem Observer hinzufügen
     elements.forEach((el) => observer.observe(el));
