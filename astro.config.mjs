@@ -5,9 +5,16 @@ import { defineConfig } from 'astro/config';
 export default defineConfig({
     site: 'https://capitanski.github.io/',
     outDir: './docs',
-    output: 'static',
+    output: 'server',
     //base: 'matuschek',
     build: {
         assets: 'custom-folder'
+    },
+    vite: {
+        resolve: {
+            alias: {
+                "@": "/src"
+            }
+        }
     }
 });
