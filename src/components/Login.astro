@@ -1,0 +1,89 @@
+---
+import Circles from "../assets/Circles.svg";
+---
+
+<form id="login-form">
+  <div class="form-inner">
+    <img src={Circles.src} alt="" />
+    <h1>Login</h1>
+    <input
+      type="password"
+      name="password"
+      id="password"
+      placeholder="Passwort"
+    />
+    <input type="submit" value="Anmelden" />
+  </div>
+</form>
+<script>
+  window.addEventListener("DOMContentLoaded", () => {
+    const loginForm = document.getElementById("login-form");
+    const password = document.getElementById("password");
+    loginForm?.addEventListener("submit", (e) => {
+      e.preventDefault();
+      if (password && password?.value == "brind2025") {
+        window.localStorage.setItem("auth", "authenticated");
+        loginForm.style.display = "none";
+      } else {
+        window.localStorage.setItem("auth", "false");
+        loginForm.style.display = "block";
+        alert("Falsches Passwort");
+      }
+      console.log(e);
+    });
+    if (
+      !window.localStorage.getItem("auth") ||
+      window.localStorage.getItem("auth") != "authenticated"
+    ) {
+      loginForm.style.display = "block";
+    } else {
+      loginForm.style.display = "none";
+    }
+  });
+</script>
+<style>
+  form {
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    background: white;
+    z-index: 1000;
+  }
+  .form-inner {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    gap: 20px;
+    position: relative;
+  }
+  input[type="password"] {
+    width: 40%;
+    background: var(--lightgray);
+    border-radius: 10px;
+    border: none;
+    padding: 10px 25px;
+    text-align: center;
+    font-family: "Inter", sans-serif;
+  }
+  input[type="submit"] {
+    font-family: "Inter", sans-serif;
+    border: none;
+    border-radius: 10px;
+    padding: 10px 25px;
+    background: var(--darkgray);
+    color: var(--lightgray);
+  }
+  input,
+  h1 {
+    z-index: 2;
+  }
+  img {
+    position: absolute;
+    z-index: 1;
+    filter: blur(100px);
+    opacity: 0.1;
+  }
+</style>

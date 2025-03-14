@@ -1,0 +1,75 @@
+---
+import "../styles/base.css";
+import Navbar from "../components/Navbar.astro";
+import Login from "../components/Login.astro";
+---
+
+<!doctype html>
+<html lang="de">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="generator" content={Astro.generator} />
+    <title>Jakob Matuschek - Saxophonmusik aus dem Herzen Passau's</title>
+    <meta
+      name="description"
+      content="Jakob Matuschek - Saxophonmusik aus dem Herzen Passau's"
+    />
+  </head>
+  <body id="body">
+    <Login />
+    <Navbar />
+    <slot />
+  </body>
+</html>
+<script>
+  window.addEventListener("DOMContentLoaded", () => {
+    // CUSTOM INTERSECTION OBSERVER
+    // Alle zu beobachtenden Elemente auswählen
+    const elements = document.querySelectorAll(".animatable");
+    const images = document.querySelectorAll(".animatable-opacity");
+    // Intersection Observer erstellen
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add("in-view"); // Klasse hinzufügen
+          } else {
+            entry.target.classList.remove("in-view"); // Klasse entfernen
+          }
+        });
+      },
+      { threshold: 0.3 },
+    ); // Aktiviert, wenn 30% sichtbar
+    const secondObserver = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add("in-view-opacity"); // Klasse hinzufügen
+          } else {
+            entry.target.classList.remove("in-view-opacity"); // Klasse entfernen
+          }
+        });
+      },
+      { threshold: 0.3 },
+    );
+    // Jedes Element dem Observer hinzufügen
+    elements.forEach((el) => observer.observe(el));
+    images.forEach((el) => secondObserver.observe(el));
+  });
+</script>
+<style>
+  :root {
+    font-family: "Inter", sans-serif;
+  }
+  html,
+  body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+  }
+</style>
