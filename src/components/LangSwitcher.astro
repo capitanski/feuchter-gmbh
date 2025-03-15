@@ -1,0 +1,38 @@
+---
+import langSwitcher from "@/functions/langSwitcher.js";
+const currentLang = Astro.params.lang ?? "de"; // Fallback auf Deutsch
+const currentPath = Astro.url.pathname; // Die aktuelle URL
+const languageLinks = langSwitcher(currentPath); // Generiere die Links für jede Sprache
+---
+
+<nav>
+  <ul>
+    {
+      languageLinks.map(({ lang, url }) => (
+        <li>
+          <a href={url} class={currentLang === lang ? "active" : ""}>
+            {lang.toUpperCase()}
+          </a>
+        </li>
+      ))
+    }
+  </ul>
+</nav>
+
+<style>
+  nav ul {
+    display: flex;
+    gap: 10px;
+    list-style: none;
+    padding: 0;
+  }
+  nav a {
+    text-decoration: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+  }
+  .active {
+    font-weight: bold;
+    background: lightgray;
+  }
+</style>

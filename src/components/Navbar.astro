@@ -1,7 +1,7 @@
 ---
 import Logo from "../assets/Logo.svg";
 import Menu from "../assets/Menu.svg";
-const { language } = Astro.props;
+import LangSwitcher from "./LangSwitcher.astro";
 const links = [
   {
     text: "Biographie",
@@ -37,6 +37,7 @@ const links = [
           return <a href={link.to}>{link.text}</a>;
         })
       }
+      <LangSwitcher />
     </div>
     <img
       src={Menu.src}
@@ -48,6 +49,7 @@ const links = [
     />
   </div>
   <div class="mobile-links hidden" id="mobile-links">
+    <LangSwitcher />
     {
       links.map((link) => {
         return (

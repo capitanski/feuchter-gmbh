@@ -4,6 +4,17 @@ import background from "../assets/brind_hero.webp";
 import Button from "../components/Button.astro";
 import Circles from "../assets/Circles.svg";
 import Scribble from "../assets/Scribble.svg";
+const { language } = Astro.props;
+let heading = "Elegante Saxophonmusik für Hochzeiten, Events und mehr.";
+let introText = `Jakob Matuschek wurde 1995 in Passau geboren und startete dort seine
+        musikalische Ausbildung an der städtischen Musikschule in den Fächern
+        Klavier, Saxophon und Schlagwerk. Sein Studium an der Berufsfachschule
+        für Musik in Plattling schloss er im Jahr 2016 als staatlich geprüfter
+        Ensembleleiter mit Hauptfach Saxophon ab.`;
+if (language == "en") {
+  heading = "Elegant saxophone music for weddings, events, and more.";
+  introText = `Jakob Matuschek was born in 1995 in Passau and began his musical education at the municipal music school there, studying piano, saxophone, and percussion. He completed his studies at the Vocational School for Music in Plattling in 2016, graduating as a state-certified ensemble director with a major in saxophone.`;
+}
 ---
 
 <section>
@@ -24,14 +35,10 @@ import Scribble from "../assets/Scribble.svg";
     />
     <div class="hero-container">
       <h1 class="hero-heading">
-        Elegante Saxophonmusik für Hochzeiten, Events und mehr.
+        {heading}
       </h1>
       <p class="hero-paragraph">
-        Jakob Matuschek wurde 1995 in Passau geboren und startete dort seine
-        musikalische Ausbildung an der städtischen Musikschule in den Fächern
-        Klavier, Saxophon und Schlagwerk. Sein Studium an der Berufsfachschule
-        für Musik in Plattling schloss er im Jahr 2016 als staatlich geprüfter
-        Ensembleleiter mit Hauptfach Saxophon ab.
+        {introText}
       </p>
       <div class="button-wrapper hero-button-wrapper">
         <Button
