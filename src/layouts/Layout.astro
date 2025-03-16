@@ -8,6 +8,7 @@ const pageLanguage = locals.language; // Holt die aktuelle Sprache aus der Middl
 const languages = locals.languages; // Holt die Sprachlinks aus Middleware (wichtig für hreflang, canonical und langSwitcher Tags in Navbar)
 // Jede Komponente, die in diesem Layout definiert ist, muss den language Prop übergeben bekommen (Damit die richtigen)
 // Sprachelemente gefetcht werden
+console.log(languages, "layout");
 ---
 
 <!doctype html>
@@ -31,7 +32,7 @@ const languages = locals.languages; // Holt die Sprachlinks aus Middleware (wich
   </head>
   <body id="body">
     <Login />
-    <Navbar language={pageLanguage} />
+    <Navbar language={pageLanguage} languages={languages} />
     <slot />
   </body>
 </html>

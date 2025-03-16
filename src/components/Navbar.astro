@@ -2,6 +2,8 @@
 import Logo from "../assets/Logo.svg";
 import Menu from "../assets/Menu.svg";
 import LangSwitcher from "./LangSwitcher.astro";
+const { languages } = Astro.props;
+console.log(languages, "Navbar");
 const links = [
   {
     text: "Biographie",
@@ -37,7 +39,7 @@ const links = [
           return <a href={link.to}>{link.text}</a>;
         })
       }
-      <LangSwitcher />
+      <LangSwitcher languages={languages} />
     </div>
     <img
       src={Menu.src}
