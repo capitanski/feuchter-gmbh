@@ -2,16 +2,15 @@
 import "../styles/base.css";
 import Navbar from "../components/Navbar.astro";
 import Login from "../components/Login.astro";
-import langChecker from "@/functions/langChecker";
 const { languages } = Astro.props;
-const lang = Astro.params.lang ?? "de";
-const language = langChecker(lang);
+const { locals } = Astro;
+const pageLanguage = locals.language;
 // Jede Komponente, die in diesem Layout definiert ist, muss den language Prop übergeben bekommen (Damit die richtigen)
 // Sprachelemente gefetcht werden
 ---
 
 <!doctype html>
-<html lang={language}>
+<html lang={pageLanguage}>
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width" />
@@ -22,6 +21,7 @@ const language = langChecker(lang);
       name="description"
       content="Jakob Matuschek - Saxophonmusik aus dem Herzen Passau's"
     />
+    <link rel="canonical" href={languages[0].url} />
     {
       languages.map(({ lang, url }) => (
         <link rel="alternate" hreflang={lang} href={url} />
@@ -30,7 +30,7 @@ const language = langChecker(lang);
   </head>
   <body id="body">
     <Login />
-    <Navbar language={language} />
+    <Navbar language={pageLanguage} />
     <slot />
   </body>
 </html>

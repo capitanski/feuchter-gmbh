@@ -2,6 +2,7 @@
 import Button from "../components/Button.astro";
 import Image from "../assets/Heine.svg";
 import BiographyImage from "../assets/Biographie.webp";
+const { language } = Astro.props;
 ---
 
 <section id="biographie">
@@ -15,7 +16,7 @@ import BiographyImage from "../assets/Biographie.webp";
           class="image-headline animatable"
           loading="lazy"
         />
-        <h2 class="animatable">Biographie</h2>
+        <h2 class="animatable">Biographie {language}</h2>
         <p>
           Jakob Matuschek wurde 1995 in Passau geboren und startete dort seine
           musikalische Ausbildung an der städtischen Musikschule in den Fächern
