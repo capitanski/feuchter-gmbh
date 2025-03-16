@@ -3,14 +3,12 @@ import Welcome from "@/components/Welcome.astro";
 import Biography from "@/components/Biography.astro";
 import Layout from "@/layouts/Layout.astro";
 
-import langSwitcher from "@/functions/langSwitcher";
 const { locals } = Astro;
 const pageLanguage = locals.language;
 const currentPath = Astro.url.pathname;
-const languages = langSwitcher(currentPath);
 ---
 
-<Layout languages={languages}>
+<Layout>
   <Biography language={pageLanguage} />
   <!--
 	<Leistungen />

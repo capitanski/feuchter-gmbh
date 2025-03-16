@@ -2,9 +2,10 @@
 import "../styles/base.css";
 import Navbar from "../components/Navbar.astro";
 import Login from "../components/Login.astro";
-const { languages } = Astro.props;
+//const { languages } = Astro.props;
 const { locals } = Astro;
-const pageLanguage = locals.language;
+const pageLanguage = locals.language; // Holt die aktuelle Sprache aus der Middleware (wichtig für html lang tag und Layoutkomponenten)
+const languages = locals.languages; // Holt die Sprachlinks aus Middleware (wichtig für hreflang, canonical und langSwitcher Tags in Navbar)
 // Jede Komponente, die in diesem Layout definiert ist, muss den language Prop übergeben bekommen (Damit die richtigen)
 // Sprachelemente gefetcht werden
 ---
