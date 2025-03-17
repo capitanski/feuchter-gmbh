@@ -1,23 +1,23 @@
 ---
 import Circles from "../assets/Quotes.svg";
-import Hochzeiten from "../assets/hochzeiten.webp";
-import Corporate from "../assets/corporate.webp";
-import Birthday from "../assets/birthday.webp";
+import Hochzeiten from "../assets/konzeption.jpg";
+import Corporate from "../assets/produktion.jpg";
+import Birthday from "../assets/logistik.jpg";
 const leistungen = [
   {
     icon: Hochzeiten.src,
-    title: "Hochzeiten",
-    text: "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.",
+    title: "Entwicklung & Konzeption",
+    text: "Von der ersten Idee bis zum fertigen Design entwickeln wir passgenaue Bekleidungslösungen, die höchsten Anforderungen gerecht werden. Unser erfahrenes Team erarbeitet individuelle Konzepte, die Funktionalität, Komfort und Stil vereinen – maßgeschneidert auf die Bedürfnisse von Militär, Behörden und Unternehmen.",
   },
   {
     icon: Corporate.src,
-    title: "Firmenevents",
-    text: "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.",
+    title: "Produktion",
+    text: "In unserer Produktion setzen wir auf modernste Technologien und höchste Qualitätsstandards. Jedes Kleidungsstück wird sorgfältig gefertigt, um Langlebigkeit und maximale Funktionalität zu gewährleisten. Dabei kombinieren wir technisches Know-how mit einem präzisen Auge für Details, um robuste Arbeitskleidung und exklusive Corporate Fashion zu liefern.",
   },
   {
     icon: Birthday.src,
-    title: "Geburtstage",
-    text: "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.",
+    title: "Logistik & Vertrieb",
+    text: "Effiziente Logistikprozesse und ein starker Vertriebsservice garantieren, dass Ihre Bestellung termingerecht und zuverlässig bei Ihnen ankommt. Wir kümmern uns um die gesamte Lieferkette – von der Produktion bis zur Auslieferung – und stellen sicher, dass Ihre Mitarbeiter stets optimal ausgestattet sind.",
   },
 ];
 ---
@@ -26,7 +26,7 @@ const leistungen = [
   <div class="container">
     <h2 class="animatable">Leistungen</h2>
     <p class="subtitle animatable">
-      Von Hochzeiten über Firmenevents, bis zu Geburtstagen und vielem mehr.
+      Von der Entwicklung, über die Produktion bis hin zur Logistik
     </p>
     <div class="rezensionen-grid">
       {
@@ -106,8 +106,8 @@ const leistungen = [
     margin: 0;
   }
   .card-icon {
-    width: 150px;
-    height: 150px;
+    width: 100%;
+    height: 200px;
     object-fit: cover;
     border-radius: 20px;
     box-shadow: rgba(0, 0, 0, 0.25) 0px 25px 50px -12px;
@@ -130,6 +130,9 @@ const leistungen = [
     align-self: flex-start;
     margin-bottom: 0px;
     font-size: 3rem;
+    font-family: "Afacadflux", sans-serif;
+    text-transform: uppercase;
+    font-weight: 800;
   }
   .icon-and-title {
     display: flex;
@@ -137,5 +140,6 @@ const leistungen = [
     justify-content: flex-start;
     align-items: flex-start;
     gap: 30px;
+    width: 100%;
   }
 </style>

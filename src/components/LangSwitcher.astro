@@ -29,13 +29,21 @@ const { langs } = Astro.props as { langs: { lang: string; url: string }[] };
     list-style: none;
     padding: 0;
   }
+  li {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
   nav a {
     text-decoration: none;
-    padding: 5px 10px;
-    border-radius: 5px;
+    color: var(--lightgray);
+    padding: 0px 0px;
+    font-size: 0.7rem;
+    font-weight: 100;
   }
   .active {
-    font-weight: bold;
-    background: lightgray;
+    font-weight: 900 !important;
+    color: var(--sand) !important;
   }
 </style>

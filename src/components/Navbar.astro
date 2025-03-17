@@ -1,26 +1,42 @@
 ---
 // WICHTIG: Sowohl navlinks als auch MOBILE NAV LINKS muss das languages Prop erhalten!!!!!!
-import Logo from "../assets/Logo.svg";
+import Logo from "../assets/feuchter_gmbh_logo.svg";
 import Menu from "../assets/Menu.svg";
 import LangSwitcher from "./LangSwitcher.astro";
 const { languages } = Astro.props;
 
 const links = [
   {
-    text: "Biographie",
-    to: "#biographie",
-  },
-  {
-    text: "Rezensionen",
-    to: "#rezensionen",
+    text: "Über uns",
+    to: "#",
   },
   {
     text: "Leistungen",
-    to: "#leistungen",
+    to: "#",
   },
   {
     text: "Kontakt",
-    to: "#kontakt",
+    to: "#",
+  },
+  {
+    text: "Blog",
+    to: "#",
+  },
+  {
+    text: "Projekte & Referenzen",
+    to: "#",
+  },
+  {
+    text: "Business",
+    to: "#",
+  },
+  {
+    text: "Bekleidung",
+    to: "#",
+  },
+  {
+    text: "Transportlösungen",
+    to: "#",
   },
 ];
 ---
@@ -40,16 +56,18 @@ const links = [
           return <a href={link.to}>{link.text}</a>;
         })
       }
-      <LangSwitcher langs={languages} />
     </div>
-    <img
-      src={Menu.src}
-      alt=""
-      class="menu"
-      id="menu"
-      fetchpriority="high"
-      loading="eager"
-    />
+    <LangSwitcher langs={languages} />
+    <div class="menu-button-wrapper">
+      <img
+        src={Menu.src}
+        alt=""
+        class="menu"
+        id="menu"
+        fetchpriority="high"
+        loading="eager"
+      />
+    </div>
   </div>
   <div class="mobile-links hidden" id="mobile-links">
     <LangSwitcher langs={languages} />
@@ -98,11 +116,23 @@ const links = [
 </script>
 <style>
   .logo {
-    width: 250px;
+    width: 100px;
     height: auto;
     z-index: 3;
     @media screen and (max-width: 767px) {
-      width: 160px;
+      width: 80px;
+    }
+  }
+  .menu-button-wrapper {
+    display: none;
+    width: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    align-items: center;
+    @media screen and (max-width: 767px) {
+      display: flex;
+      width: 80px;
     }
   }
   .menu {
@@ -112,6 +142,7 @@ const links = [
     z-index: 3;
     transition: all 0.2s cubic-bezier(0.405, 0.935, 0.625, 0.895);
     transform: rotate(0);
+    filter: invert(100%);
     @media screen and (max-width: 767px) {
       display: block;
     }
@@ -120,7 +151,7 @@ const links = [
     transform: rotate(180deg);
   }
   .scrolled {
-    background: white !important;
+    background: black !important;
     box-shadow: rgba(0, 0, 0, 0.25) 0px 25px 50px -12px;
   }
   .links {
@@ -134,17 +165,20 @@ const links = [
     }
   }
   a {
-    color: var(--darkgray);
+    color: var(--lightgray);
     text-decoration: none;
-    font-size: 0.9rem;
-    font-weight: 600;
+    font-size: 0.6rem;
+    font-weight: 300;
     transition: all 0.2s ease-in-out;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 2px;
     @media screen and (max-width: 767px) {
       font-size: 1.3rem;
     }
   }
   a:hover {
-    color: #c3943a;
+    color: var(--olive);
   }
   nav {
     width: 100%;
@@ -167,7 +201,7 @@ const links = [
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    max-width: 1200px;
+    max-width: 1400px;
     padding: 15px;
     width: 100%;
   }

@@ -1,14 +1,16 @@
 ---
 import Welcome from "@/components/Welcome.astro";
+import Leistungen from "@/components/Leistungen.astro";
 import Layout from "@/layouts/Layout.astro";
-const { locals } = Astro;
+import type { AstroLocals } from "@/types";
+
+const { locals } = Astro as unknown as { locals: AstroLocals };
+
 const pageLanguage = locals.language;
 ---
 
 <Layout>
-  <Welcome language={pageLanguage} />
-  <!--<Biography />
+	<Welcome language={pageLanguage} />
+
 	<Leistungen />
-	<Rezensionen />
-	<Kontakt />-->
 </Layout>
