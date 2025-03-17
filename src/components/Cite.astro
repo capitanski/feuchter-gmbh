@@ -1,0 +1,68 @@
+---
+import CEO from "@/assets/CEO.jpg";
+---
+
+<section>
+    <div class="container">
+        <p class="cite">
+            "Seit 1957 stehen wir für erstklassige Funktionalität, Langlebigkeit
+            und Innovation in der Produktion von Militär- und
+            Behördenbekleidung. Mit unserer jahrzehntelangen Erfahrung und
+            höchsten Qualitätsstandards bieten wir nun auch Outdoor-, Survival-
+            und Sicherheitsanbietern maßgeschneiderte Bekleidungslösungen. Unser
+            Ziel ist es, Profis in jeder Situation zuverlässig auszurüsten – mit
+            Kleidung, die schützt, unterstützt und höchsten Anforderungen
+            gerecht wird."
+        </p>
+        <img src={CEO.src} alt="" class="ceo animatable" />
+        <div class="ceo-and-role">
+            <p class="ceo-name">Klaus Feuchter</p>
+            <p class="job-role">CEO, Feuchter GmbH</p>
+        </div>
+    </div>
+</section>
+<style>
+    section {
+        background: var(--verydarkgray);
+    }
+    .container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+        padding: 100px 0;
+    }
+    p {
+        text-align: center;
+        color: var(--lightgray);
+    }
+    .cite {
+        font-style: italic;
+        max-width: 70%;
+        line-height: 30px;
+    }
+    .ceo-and-role {
+        display: flex;
+        flex-direction: column;
+        gap: 0px;
+    }
+    .ceo {
+        width: 200px;
+        height: 200px;
+        border-radius: 20px;
+        box-shadow: var(--boxshadow);
+    }
+    .ceo-name {
+        margin: 0;
+        font-family: "Afacadflux", sans-serif;
+        font-weight: 700;
+        font-size: 1.3rem;
+        text-transform: uppercase;
+    }
+    .job-role {
+        margin: 0;
+        font-size: 0.7rem;
+        color: var(--sand);
+    }
+</style>

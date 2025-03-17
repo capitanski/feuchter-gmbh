@@ -1,0 +1,159 @@
+---
+import Circles from "../assets/Quotes.svg";
+import Produktionsketten from "../assets/globe.svg";
+import Grossserien from "../assets/grossserien.svg";
+import Qualitaetsstandards from "../assets/qualitaetsstandards.svg";
+import Neuentwicklungen from "../assets/neuentwicklungen.svg";
+import Lieferant from "../assets/Lieferant.svg";
+import Qualitaetsmanagement from "../assets/qualitaetsmanagement.svg";
+const leistungen = [
+    {
+        icon: Produktionsketten.src,
+        title: "Internationale Produktionsketten",
+        text: "Wir sind ein internationaler Bekleidungshersteller mit nachhaltigen Produktionsketten, hoher Qualität und fairen Arbeitsbedingungen. Effiziente Logistik und verantwortungsvolle Prozesse sichern termingerechte Lieferungen und High-End Produkte für spezielle Einsatzzwecke.",
+    },
+    {
+        icon: Grossserien.src,
+        title: "Der Profi für Großserien",
+        text: "Als Experte für Großserienfertigung bieten wir hochwertige Bekleidung in großen Stückzahlen. Effiziente Produktion, präzise Prozesse und verlässliche Lieferketten garantieren erstklassige Qualität und pünktliche Lieferung an Ziele auf der ganzen Welt.",
+    },
+    {
+        icon: Qualitaetsstandards.src,
+        title: "Höchste Qualitätsstandards",
+        text: "Unsere hohen Qualitätsstandards sichern erstklassige Bekleidung durch präzise Fertigung, strenge Kontrollen und nachhaltige Materialien. Wir garantieren Langlebigkeit, Komfort und Perfektion für anspruchsvolle Kunden weltweit.",
+    },
+    {
+        icon: Neuentwicklungen.src,
+        title: "Wir lieben Neuentwicklungen",
+        text: "Wir realisieren komplette Neuentwicklungen in Bekleidung und Textil — von der Idee bis zum fertigen Produkt. Innovative Designs, moderne Materialien und maßgeschneiderte Lösungen für Ihre Vision.",
+    },
+    {
+        icon: Lieferant.src,
+        title: "Offizieller Lieferant der Deutschen Bundeswehr",
+        text: "Als offizieller Lieferant der Deutschen Bundeswehr bieten wir hochwertige, langlebige und funktionale Bekleidung. Unsere Produkte erfüllen höchste Standards und gewährleisten Zuverlässigkeit unter extremen Bedingungen.",
+    },
+    {
+        icon: Qualitaetsmanagement.src,
+        title: "Qualitätsmanagement vom Feinsten",
+        text: "Wir garantieren makelloses Qualitätsmanagement durch deutsche Fachkräfte in unseren ausländischen Produktionsstätten. Präzise Kontrollen und höchste Standards sichern erstklassige Bekleidung – zuverlässig, nachhaltig und effizient.",
+    },
+];
+---
+
+<section id="leistungen">
+    <div class="container">
+        <h2 class="animatable">Ihr Vorhaben in den besten Händen</h2>
+        <div class="rezensionen-grid">
+            {
+                leistungen.map((leistung) => {
+                    return (
+                        <div class="rezension-card animate-in-right">
+                            <div class="icon-and-title">
+                                <img
+                                    src={leistung.icon}
+                                    alt=""
+                                    class="card-icon"
+                                    loading="lazy"
+                                    width="150"
+                                    height="150"
+                                />
+                                <p class="card-title">{leistung.title}</p>
+                            </div>
+                            <p class="card-text">{leistung.text}</p>
+                        </div>
+                    );
+                })
+            }
+        </div>
+    </div>
+</section>
+
+<style>
+    section {
+        position: relative;
+        padding: 50px 0 !important;
+    }
+    .container {
+        position: relative;
+        align-items: flex-start;
+        @media screen and (max-width: 820px) {
+            padding: 0 20px;
+        }
+        @media screen and (max-width: 1024px) and (min-width: 821px) {
+            padding: 0 70px;
+        }
+    }
+    .subtitle {
+        text-align: left;
+        margin: 0;
+        font-weight: 600;
+    }
+    .scribble {
+        position: absolute;
+        top: 0;
+        left: 5vw;
+        object-fit: contain;
+        z-index: -1;
+        opacity: 0.2;
+        width: 20%;
+    }
+    .rezensionen-grid {
+        width: 100%;
+        display: grid;
+        column-gap: 50px;
+        row-gap: 50px;
+        grid-template-columns: 1fr 1fr 1fr;
+        margin-top: 25px;
+        @media screen and (max-width: 820px) {
+            grid-template-columns: auto;
+        }
+        @media screen and (max-width: 1024px) and (min-width: 821px) {
+            grid-template-columns: auto auto;
+        }
+    }
+    .rezension-card {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        gap: 5px;
+    }
+    .rezension-card p {
+        margin: 0;
+    }
+    .card-icon {
+        width: 40px;
+        height: 40px;
+        object-fit: contain;
+    }
+    .card-title {
+        font-weight: 800;
+        font-size: 1.2rem;
+    }
+    .card-text {
+        font-size: 0.8rem;
+    }
+    .container {
+        display: flex;
+        flex-direction: column;
+    }
+    section {
+        padding: 50px 0;
+    }
+    h2 {
+        align-self: flex-start;
+        margin-bottom: 0px;
+        font-size: 3rem;
+        font-family: "Afacadflux", sans-serif;
+        text-transform: uppercase;
+        font-weight: 800;
+    }
+    .icon-and-title {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        gap: 20px;
+        width: 100%;
+    }
+</style>

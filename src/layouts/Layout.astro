@@ -42,6 +42,7 @@ const languages = locals.languages; // Holt die Sprachlinks aus Middleware (wich
     // Alle zu beobachtenden Elemente auswählen
     const elements = document.querySelectorAll(".animatable");
     const images = document.querySelectorAll(".animatable-opacity");
+    const inRight = document.querySelectorAll(".animate-in-right");
     // Intersection Observer erstellen
     const observer = new IntersectionObserver(
       (entries) => {
@@ -53,7 +54,7 @@ const languages = locals.languages; // Holt die Sprachlinks aus Middleware (wich
           }
         });
       },
-      { threshold: 0.3 }
+      { threshold: 0.3 },
     ); // Aktiviert, wenn 30% sichtbar
     const secondObserver = new IntersectionObserver(
       (entries) => {
@@ -65,11 +66,24 @@ const languages = locals.languages; // Holt die Sprachlinks aus Middleware (wich
           }
         });
       },
-      { threshold: 0.3 }
+      { threshold: 0.3 },
+    );
+    const thirdObserver = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add("in-view"); // Klasse hinzufügen
+          } else {
+            entry.target.classList.remove("in-view"); // Klasse entfernen
+          }
+        });
+      },
+      { threshold: 0.3 },
     );
     // Jedes Element dem Observer hinzufügen
     elements.forEach((el) => observer.observe(el));
     images.forEach((el) => secondObserver.observe(el));
+    inRight.forEach((el) => thirdObserver.observe(el));
   });
 </script>
 <style>
