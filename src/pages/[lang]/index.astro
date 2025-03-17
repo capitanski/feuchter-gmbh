@@ -4,6 +4,7 @@ import Leistungen from "@/components/Leistungen.astro";
 import Cite from "@/components/Cite.astro";
 import Usps from "@/components/Usps.astro";
 import Projects from "@/components/Projects.astro";
+import Categories from "@/components/Categories.astro";
 import Layout from "@/layouts/Layout.astro";
 import type { AstroLocals } from "@/types";
 
@@ -15,6 +16,7 @@ const pageLanguage = locals.language;
 <Layout>
 	<Welcome language={pageLanguage} />
 	<Leistungen />
+	<Categories />
 	<Cite />
 	<Usps />
 	<Projects />

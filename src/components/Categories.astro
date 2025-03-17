@@ -1,0 +1,157 @@
+---
+import Transportloesungen from "@/assets/transportloesungen.jpg";
+import Bekleidung from "@/assets/bekleidung.jpg";
+import Behoerdenkleidung from "@/assets/behoerden.jpg";
+import Thermohaube from "@/assets/thermohaube.jpg";
+import Staubhaube from "@/assets/staubhaube.jpg";
+import Circles from "@/assets/Swirl.png";
+const categories = [
+    {
+        title: "Militär- & Survivalkleidung",
+        slug: "/bekleidung",
+        image: Bekleidung.src,
+    },
+    {
+        title: "Behördenkleidung",
+        slug: "/bekleidung",
+        image: Behoerdenkleidung.src,
+    },
+    {
+        title: "Corporate Fashion",
+        slug: "/bekleidung",
+        image: Behoerdenkleidung.src,
+    },
+    {
+        title: "Schutzwand für Rollcontainer",
+        slug: "/transportloesungen",
+        image: Transportloesungen.src,
+    },
+    {
+        title: "Thermohaube für Rollcontainer",
+        slug: "/transportloesungen",
+        image: Thermohaube.src,
+    },
+    {
+        title: "Staubhaube für Rollcontainer",
+        slug: "/transportloesungen",
+        image: Staubhaube.src,
+    },
+];
+---
+
+<section>
+    <img src={Circles.src} alt="" class="img-absolute" />
+    <div class="container">
+        <h2 class="section-title animatable">Unser Angebot</h2>
+        <div class="category-grid">
+            {
+                categories.map((category) => {
+                    return (
+                        <div class="category-card animate-in-right">
+                            <div class="card-title-and-text">
+                                <div class="image-and-title">
+                                    <img
+                                        src={category.image}
+                                        alt=""
+                                        loading="lazy"
+                                    />
+                                    <h2>{category.title}</h2>
+                                </div>
+                                <p>
+                                    Lorem ipsum dolor sit amet. Et similique
+                                    beatae ut illum praesentium et ipsum
+                                    inventore sit dolore aspernatur eos minus
+                                    laborum. Aut incidunt facilis ut possimus
+                                    ratione vel quos doloremque est fuga quidem
+                                    qui velit iure. Sit pariatur quia ut veniam
+                                    incidunt et soluta laudantium aut voluptatem
+                                    modi aut fuga quia id odio voluptas ad autem
+                                    incidunt. Et tenetur voluptatum et accusamus
+                                    sapiente ut galisum esse ea illo ratione a
+                                    nobis neque et beatae obcaecati ut soluta
+                                    dolores!
+                                </p>
+                            </div>
+                        </div>
+                    );
+                })
+            }
+        </div>
+    </div>
+</section>
+<style>
+    section {
+        padding: 100px 0;
+        background: var(--verydarkgray);
+        position: relative;
+        z-index: 1;
+        overflow: hidden;
+    }
+    .img-absolute {
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: -1;
+        opacity: 0.5;
+        width: 600px;
+        object-fit: contain;
+        @media screen and (max-width: 820px) {
+            opacity: 0.3;
+            width: 90%;
+            top: 0;
+        }
+    }
+    .container {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 50px;
+        padding: 20px;
+    }
+    .category-grid {
+        width: 100%;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 25px;
+        @media screen and (max-width: 820px) {
+            grid-template-columns: 1fr;
+        }
+    }
+    .category-card {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        gap: 10px;
+    }
+    .category-card img {
+        width: 50px;
+        height: 50px;
+        object-fit: cover;
+        border-radius: 10px;
+        box-shadow: rgba(0, 0, 0, 0.25) 0px 25px 50px -12px;
+    }
+    .image-and-title {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: center;
+        gap: 10px;
+    }
+    h2 {
+        font-size: 1.4rem;
+        font-family: "Inter", sans-serif;
+        margin: 0;
+        color: var(--lightgray);
+    }
+    p {
+        color: var(--lightgray);
+        font-size: 0.8rem;
+    }
+    .section-title {
+        font-family: "Afacadflux", sans-serif;
+        font-size: 3rem;
+        text-transform: uppercase;
+    }
+</style>

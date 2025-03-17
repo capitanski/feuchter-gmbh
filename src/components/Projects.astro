@@ -1,7 +1,7 @@
 ---
 import projects from "@/content/projects.js";
 import ProjectTag from "./ProjectTag.astro";
-import Circles from "@/assets/Circles.svg";
+import Circles from "@/assets/Swirl.png";
 // Astro image importieren
 ---
 
@@ -61,10 +61,13 @@ import Circles from "@/assets/Circles.svg";
     .img-absolute {
         position: absolute;
         top: 0;
+        left: 0;
         z-index: -1;
-        filter: blur(100px);
-        opacity: 0.3;
+        opacity: 0.5;
         width: 50%;
+        @media screen and (max-width: 820px) {
+            width: 80%;
+        }
     }
     .container {
         position: relative;
