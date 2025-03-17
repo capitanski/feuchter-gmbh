@@ -5,12 +5,13 @@ import Button from "../components/Button.astro";
 import Circles from "../assets/Circles.svg";
 import Scribble from "../assets/feuchter_gmbh_header.jpg";
 const { language } = Astro.props;
-let heading = "Professionelle Textil- & Bekleidungslösungen";
+let heading = "Professionelle Textil- & Bekleidungslösungen seit 1957";
 let subtitle = "für Unternehmen, Militär und Behörden";
 let introText = `Seit 1957 sind wir einer der führenden Produzenten von Bekleidung für Armeen, Behörden und Unternehmen weltweit. Vertrauen Sie auf unsere langjährige Erfahrung in den Bereichen Entwicklung, Produktion und Lieferung. Egal ob Sie einen Produzenten für Ihren eigenen Onlineshop oder ihr Geschäft suchen oder Sie Ihre Mitarbeiter neu ausstatten möchten - bei uns sind Sie in besten Händen.`;
 if (language == "en") {
-  heading = "Elegant saxophone music for weddings, events, and more.";
-  introText = `Jakob Matuschek was born in 1995 in Passau and began his musical education at the municipal music school there, studying piano, saxophone, and percussion. He completed his studies at the Vocational School for Music in Plattling in 2016, graduating as a state-certified ensemble director with a major in saxophone.`;
+  heading = "Professional Textile & Apparel Solutions since 1957";
+  subtitle = "For Businesses, Military, and Government Agencies";
+  introText = `Since 1957, we have been one of the leading producers of clothing for armies, government agencies, and businesses worldwide. Rely on our many years of experience in development, production, and delivery. Whether you are looking for a manufacturer for your own online shop or retail business, or you need to outfit your employees with new uniforms – you are in the best hands with us.`;
 }
 ---
 
@@ -18,7 +19,7 @@ if (language == "en") {
   <img
     src={Scribble.src}
     alt=""
-    class="scribble"
+    class="scribble animatable"
     fetchpriority="high"
     loading="eager"
   />
@@ -84,7 +85,7 @@ if (language == "en") {
   h1 {
     color: var(--lightgray);
     font-weight: 900;
-    font-size: 3.2rem;
+    font-size: 3rem;
     letter-spacing: -1px;
     line-height: 2.3rem;
     text-align: center;
@@ -93,6 +94,7 @@ if (language == "en") {
     margin: 0;
     @media screen and (max-width: 820px) {
       font-size: 2rem;
+      text-align: left;
     }
   }
   p {
@@ -102,6 +104,9 @@ if (language == "en") {
     font-weight: 300;
     font-size: 0.9rem;
     text-align: center;
+    @media screen and (max-width: 820px) {
+      text-align: left;
+    }
   }
   .hero-container {
     display: flex;
@@ -111,6 +116,9 @@ if (language == "en") {
     width: 100%;
     gap: 5px;
     padding: 50px 0;
+    @media screen and (max-width: 820px) {
+      gap: 0px;
+    }
   }
   .subtitle {
     text-align: center;
@@ -124,6 +132,10 @@ if (language == "en") {
     text-transform: uppercase;
     color: var(--sand);
     font-style: italic;
+    @media screen and (max-width: 820px) {
+      text-align: left;
+      margin-top: 0px;
+    }
   }
   img {
     width: 80%;
