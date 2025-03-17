@@ -2,8 +2,9 @@
 import Welcome from "@/components/Welcome.astro";
 import Biography from "@/components/Biography.astro";
 import Layout from "@/layouts/Layout.astro";
+import type { AstroLocals } from "@/types";
 
-const { locals } = Astro;
+const { locals } = Astro as unknown as { locals: AstroLocals };
 const pageLanguage = locals.language;
 const currentPath = Astro.url.pathname;
 ---

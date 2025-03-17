@@ -8,6 +8,7 @@ const langSwitcher = function (currentPath) {
   // Returns an array of objects containing the current path and lang url-segment
   // to render the hreflang tags in the layout
   //const supportedLanguages = ["de", "en", "fr", "cz"]; // DE muss als erstes stehen, weil das die Canonical URL bildet
+
   currentPath = currentPath.split("/").filter(Boolean);
   //currentPath = currentPath.replace(/^\/(de|en|fr)/, "");
   currentPath.shift();

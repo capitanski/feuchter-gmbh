@@ -2,13 +2,13 @@ import { defineMiddleware } from "astro/middleware";
 import langSwitcher from "./functions/langSwitcher";
 import supportedLanguages from "./sitevariables/supportedlanguages";
 export const onRequest = defineMiddleware(
-  ({ locals, request, redirect }, next) => {
+  ({ context, locals, request, redirect }, next) => {
     const url = new URL(request.url);
     const pathSegments = url.pathname.split("/").filter(Boolean); // Zerlegt die URL
     //const supportedLanguages = ["de", "en", "fr", "cz"];
     const defaultLang = "de"; // Standard-Sprache
     //currentPath = currentPath.replace(/^\/(de|en|fr)/, "");
-    const languages = langSwitcher(url.pathname);
+    const languages = langSwitcher(url.pathname, supportedLanguages);
     locals.languages = languages;
     // Falls die URL KEIN Sprachprefix hat (z. B. "/about"), redirecten
     if (!supportedLanguages.includes(pathSegments[0])) {
