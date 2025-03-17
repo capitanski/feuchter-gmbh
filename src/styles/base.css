@@ -84,9 +84,14 @@ h2 {
   font-weight: 700;
   font-size: 3rem;
   letter-spacing: -1.5px;
-  color: rgb(59, 59, 59);
+  color: var(--darkgray);
   margin-bottom: 0;
   margin-top: 10px;
+  line-height: 85%;
+}
+
+h1 {
+  line-height: 85%;
 }
 
 p {
