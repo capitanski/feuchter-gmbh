@@ -74,7 +74,7 @@ const links = [
     {
       links.map((link) => {
         return (
-          <a href={link.to} class="mobile-link">
+          <a href={`/${language}/${link.to}`} class="mobile-link">
             {link.text}
           </a>
         );
