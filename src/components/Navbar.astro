@@ -11,13 +11,16 @@ const links = navLinks[language as keyof TranslatedNavigation];
 
 <nav id="navbar">
   <div class="nav-inner">
-    <img
-      src={Logo.src}
-      alt=""
-      class="logo"
-      fetchpriority="high"
-      loading="eager"
-    />
+    <a href={`/${language}/`}>
+      <img
+        src={Logo.src}
+        alt=""
+        class="logo"
+        fetchpriority="high"
+        loading="eager"
+      />
+    </a>
+
     <div class="links">
       {
         links.map((link) => {
