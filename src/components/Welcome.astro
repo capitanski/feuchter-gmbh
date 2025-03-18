@@ -1,6 +1,4 @@
 ---
-import astroLogo from "../assets/astro.svg";
-import background from "../assets/feuchter_gmbh_header.jpg";
 import Button from "../components/Button.astro";
 import Circles from "../assets/Circles.svg";
 import Scribble from "../assets/feuchter_gmbh_header.jpg";
@@ -85,7 +83,8 @@ if (language == "en") {
   h1 {
     color: var(--lightgray);
     font-weight: 700;
-    font-size: 3rem;
+    font-size: 2rem;
+    max-width: 75%;
     letter-spacing: -1px;
     text-align: center;
     font-family: "Afacadflux", sans-serif;
@@ -94,6 +93,7 @@ if (language == "en") {
     @media screen and (max-width: 820px) {
       font-size: 2rem;
       text-align: left;
+      max-width: 100%;
     }
   }
   p {
@@ -135,6 +135,7 @@ if (language == "en") {
     @media screen and (max-width: 820px) {
       text-align: left;
       margin-top: 0px;
+      width: 100%;
     }
   }
   img {
