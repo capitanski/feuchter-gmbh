@@ -3,42 +3,10 @@
 import Logo from "../assets/feuchter_gmbh_logo.svg";
 import Menu from "../assets/Menu.svg";
 import LangSwitcher from "./LangSwitcher.astro";
+import { navLinks } from "@/content/navLinks";
+import type { TranslatedNavigation } from "@/types";
 const { languages, language } = Astro.props;
-
-const links = [
-  {
-    text: "Über uns",
-    to: "about",
-  },
-  {
-    text: "Leistungen",
-    to: "services",
-  },
-  {
-    text: "Kontakt",
-    to: "contact",
-  },
-  {
-    text: "Blog",
-    to: "blog",
-  },
-  {
-    text: "Projekte & Referenzen",
-    to: "projects",
-  },
-  {
-    text: "Business",
-    to: "business",
-  },
-  {
-    text: "Bekleidung",
-    to: "bekleidung",
-  },
-  {
-    text: "Transportlösungen",
-    to: "transportloesungen",
-  },
-];
+const links = navLinks[language as keyof TranslatedNavigation];
 ---
 
 <nav id="navbar">
