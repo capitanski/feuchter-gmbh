@@ -1,19 +1,7 @@
 ---
 import Button from "../components/Button.astro";
 import Circles from "../assets/Circles.svg";
-import Scribble from "../assets/firmengebaeude.jpg";
-const { language } = Astro.props;
-let heading =
-    "Vom Traditionellen Bekleidungshersteller bis zum international agierenden Ausstatter von Armeen und Behörden";
-let subtitle = "Familiengeführt seit 1957";
-let introText = `
-Seit 1957 haben wir uns vom traditionellen Bekleidungshersteller zu einem international agierenden Ausstatter für Armeen und Behörden weltweit entwickelt. Mit unserer langjährigen Erfahrung bieten wir maßgeschneiderte Lösungen, die höchste Standards in Qualität, Funktionalität und Sicherheit erfüllen.`;
-if (language == "en") {
-    heading =
-        "From a traditional clothing manufacturer to an internationally operating supplier of armies and authorities";
-    subtitle = "Family-owned since 1957.";
-    introText = `Since 1957, we have evolved from a traditional clothing manufacturer into an internationally operating supplier for armies and authorities worldwide. With our many years of experience, we offer tailored solutions that meet the highest standards of quality, functionality, and safety.`;
-}
+const { language, heading, subtitle, introText, Scribble } = Astro.props;
 ---
 
 <section>
@@ -97,6 +85,7 @@ if (language == "en") {
             font-size: 2rem;
             text-align: left;
             max-width: 100%;
+            width: 100%;
         }
     }
     p {

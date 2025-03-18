@@ -2,14 +2,33 @@
 import WelcomeLeftAligned from "@/components/WelcomeLeftAligned.astro";
 import Layout from "@/layouts/Layout.astro";
 import TeamGrid from "@/components/TeamGrid.astro";
+import Scribble from "@/assets/firmengebaeude.jpg";
 import type { AstroLocals } from "@/types";
 
 const { locals } = Astro as unknown as { locals: AstroLocals };
 
 const pageLanguage = locals.language;
+
+let heading =
+	"Vom Traditionellen Bekleidungshersteller bis zum international agierenden Ausstatter von Armeen und Behörden";
+let subtitle = "Familiengeführt seit 1957";
+let introText = `
+Seit 1957 haben wir uns vom traditionellen Bekleidungshersteller zu einem international agierenden Ausstatter für Armeen und Behörden weltweit entwickelt. Mit unserer langjährigen Erfahrung bieten wir maßgeschneiderte Lösungen, die höchste Standards in Qualität, Funktionalität und Sicherheit erfüllen.`;
+if (pageLanguage == "en") {
+	heading =
+		"From a traditional clothing manufacturer to an internationally operating supplier of armies and authorities";
+	subtitle = "Family-owned since 1957.";
+	introText = `Since 1957, we have evolved from a traditional clothing manufacturer into an internationally operating supplier for armies and authorities worldwide. With our many years of experience, we offer tailored solutions that meet the highest standards of quality, functionality, and safety.`;
+}
 ---
 
 <Layout>
-	<WelcomeLeftAligned language={pageLanguage} />
+	<WelcomeLeftAligned
+		language={pageLanguage}
+		heading={heading}
+		subtitle={subtitle}
+		introText={introText}
+		Scribble={Scribble}
+	/>
 	<TeamGrid />
 </Layout>

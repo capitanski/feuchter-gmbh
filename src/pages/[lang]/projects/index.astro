@@ -1,0 +1,34 @@
+---
+import WelcomeLeftAligned from "@/components/WelcomeLeftAligned.astro";
+import Layout from "@/layouts/Layout.astro";
+import Projects from "@/components/Projects.astro";
+import Scribble from "@/assets/leistungen.jpg";
+import type { AstroLocals } from "@/types";
+
+const { locals } = Astro as unknown as { locals: AstroLocals };
+
+const pageLanguage = locals.language;
+
+let heading = "Projekte & Referenzen";
+let subtitle =
+    "Vom Unterhemd bis zum Einsatzanzug - Seit 1957 bieten wir höchste qualitätsstandards";
+let introText = `
+Wir unterstützen unsere Kunden von Anfang an bei ihren Projekten – von der Konzeption und Entwicklung über die Produktion bis hin zur Logistik. Mit unserer Expertise sorgen wir für maßgeschneiderte Lösungen, die effizient, zuverlässig und nachhaltig sind.`;
+if (pageLanguage == "en") {
+    heading = "We support you in your endeavor from the very beginning.";
+    subtitle = "From conception to production to logistics";
+    introText = `
+We support our customers from the very beginning of their projects – from conception and development to production and logistics. With our expertise, we ensure tailored solutions that are efficient, reliable, and sustainable.`;
+}
+---
+
+<Layout>
+    <WelcomeLeftAligned
+        language={pageLanguage}
+        heading={heading}
+        subtitle={subtitle}
+        introText={introText}
+        Scribble={Scribble}
+    />
+    <Projects />
+</Layout>
