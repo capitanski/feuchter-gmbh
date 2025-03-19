@@ -7,6 +7,7 @@ import { navLinks } from "@/content/navLinks";
 import type { TranslatedNavigation } from "@/types";
 const { languages, language } = Astro.props;
 const links = navLinks[language as keyof TranslatedNavigation];
+const currentPath = Astro.url.pathname;
 ---
 
 <nav id="navbar">
@@ -24,7 +25,14 @@ const links = navLinks[language as keyof TranslatedNavigation];
     <div class="links">
       {
         links.map((link) => {
-          return <a href={`/${language}/${link.to}`}>{link.text}</a>;
+          return (
+            <a
+              href={`/${language}/${link.to}`}
+              class={currentPath === `/${language}/${link.to}` ? "active" : ""}
+            >
+              {link.text}
+            </a>
+          );
         })
       }
     </div>
@@ -45,7 +53,14 @@ const links = navLinks[language as keyof TranslatedNavigation];
     {
       links.map((link) => {
         return (
-          <a href={`/${language}/${link.to}`} class="mobile-link">
+          <a
+            href={`/${language}/${link.to}`}
+            class={
+              currentPath === `/${language}/${link.to}`
+                ? "active mobile-link"
+                : "mobile-link"
+            }
+          >
             {link.text}
           </a>
         );
@@ -93,6 +108,10 @@ const links = navLinks[language as keyof TranslatedNavigation];
     @media screen and (max-width: 767px) {
       width: 80px;
     }
+  }
+  .active {
+    font-weight: 600 !important;
+    color: var(--sand) !important;
   }
   .menu-button-wrapper {
     display: none;

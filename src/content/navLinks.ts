@@ -14,16 +14,8 @@ export const navLinks: TranslatedNavigation = {
       to: "contact",
     },
     {
-      text: "Blog",
-      to: "blog",
-    },
-    {
       text: "Projekte & Referenzen",
       to: "projects",
-    },
-    {
-      text: "Business",
-      to: "business",
     },
     {
       text: "Bekleidung",
@@ -47,18 +39,12 @@ export const navLinks: TranslatedNavigation = {
       text: "Contact",
       to: "contact",
     },
-    {
-      text: "Blog",
-      to: "blog",
-    },
+
     {
       text: "Projects & References",
       to: "projects",
     },
-    {
-      text: "Business",
-      to: "business",
-    },
+
     {
       text: "Clothing",
       to: "clothing",
@@ -81,18 +67,12 @@ export const navLinks: TranslatedNavigation = {
       text: "Contact",
       to: "contact",
     },
-    {
-      text: "Blog",
-      to: "blog",
-    },
+
     {
       text: "Projets et références",
       to: "projects",
     },
-    {
-      text: "Affaires",
-      to: "business",
-    },
+
     {
       text: "Vêtements",
       to: "clothing",
@@ -115,18 +95,12 @@ export const navLinks: TranslatedNavigation = {
       text: "Kontakt",
       to: "contact",
     },
-    {
-      text: "Blog",
-      to: "blog",
-    },
+
     {
       text: "Projekty a reference",
       to: "projects",
     },
-    {
-      text: "Obchod",
-      to: "business",
-    },
+
     {
       text: "Oblečení",
       to: "clothing",
@@ -149,18 +123,12 @@ export const navLinks: TranslatedNavigation = {
       text: "Contact",
       to: "contact",
     },
-    {
-      text: "Blog",
-      to: "blog",
-    },
+
     {
       text: "Projecten en referenties",
       to: "projects",
     },
-    {
-      text: "Zaken",
-      to: "business",
-    },
+
     {
       text: "Kleding",
       to: "clothing",
