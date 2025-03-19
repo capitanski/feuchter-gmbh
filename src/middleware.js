@@ -8,7 +8,7 @@ export const onRequest = defineMiddleware(
     //const supportedLanguages = ["de", "en", "fr", "cz"];
     const defaultLang = "de"; // Standard-Sprache
     //currentPath = currentPath.replace(/^\/(de|en|fr)/, "");
-    const languages = langSwitcher(url.pathname, supportedLanguages);
+    const languages = langSwitcher(url.pathname);
     locals.languages = languages;
     // Falls die URL KEIN Sprachprefix hat (z. B. "/about"), redirecten
     if (!supportedLanguages.includes(pathSegments[0])) {

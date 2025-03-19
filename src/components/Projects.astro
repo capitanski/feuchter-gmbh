@@ -2,180 +2,182 @@
 import projects from "@/content/projects.js";
 import ProjectTag from "./ProjectTag.astro";
 import Circles from "@/assets/Swirl.png";
+const currentLang = Astro.params.lang;
 // Astro image importieren
 ---
 
 <section id="projects">
-    <img src={Circles.src} alt="" class="img-absolute" />
-    <div class="container">
-        <h2 class="animatable">Projekte & Referenzen</h2>
-        <p class="subtitle animatable">Bekleidung, die einfach funktioniert</p>
-        <div class="rezensionen-grid">
-            {
-                projects.map((project) => {
+  <img src={Circles.src} alt="" class="img-absolute" />
+  <div class="container">
+    <h2 class="animatable">Projekte & Referenzen</h2>
+    <p class="subtitle animatable">Bekleidung, die einfach funktioniert</p>
+    <div class="rezensionen-grid">
+      {
+        projects.map((project) => {
+          return (
+            <div class="rezension-card animate-in-right">
+              <div class="icon-and-title">
+                <div class="project-image-wrapper">
+                  {project.images.map((image) => {
                     return (
-                        <div class="rezension-card animate-in-right">
-                            <div class="icon-and-title">
-                                <div class="project-image-wrapper">
-                                    {project.images.map((image) => {
-                                        return (
-                                            <img
-                                                src={image}
-                                                alt=""
-                                                class="card-icon"
-                                                loading="lazy"
-                                                width="150"
-                                                height="150"
-                                            />
-                                        );
-                                    })}
-                                </div>
-                                <div class="project-tag-wrapper">
-                                    {project.tags.map((tag) => {
-                                        return <ProjectTag tagContent={tag} />;
-                                    })}
-                                    <ProjectTag
-                                        tagContent={`${project.amount} pcs`}
-                                    />
-                                    <ProjectTag tagContent={project.customer} />
-                                    <ProjectTag tagContent={project.tl} />
-                                    <ProjectTag tagContent={project.date} />
-                                    <ProjectTag tagContent={project.status} />
-                                </div>
-                                <p class="card-title">{project.title}</p>
-                            </div>
-                            <p class="card-text">{project.shortDescription}</p>
-                        </div>
+                      <img
+                        src={image}
+                        alt=""
+                        class="card-icon"
+                        loading="lazy"
+                        width="150"
+                        height="150"
+                      />
                     );
-                })
-            }
-        </div>
+                  })}
+                </div>
+                <div class="project-tag-wrapper">
+                  {project.tags.map((tag) => {
+                    return <ProjectTag tagContent={tag} />;
+                  })}
+                  <ProjectTag tagContent={`${project.amount} pcs`} />
+                  <ProjectTag tagContent={project.customer} />
+                  <ProjectTag tagContent={project.tl} />
+                  <ProjectTag tagContent={project.date} />
+                  <ProjectTag tagContent={project.status} />
+                </div>
+                <p class="card-title">{project.title}</p>
+              </div>
+              <p class="card-text">{project.shortDescription}</p>
+              <a href={`/${currentLang}/projects/${project.slug}`}>
+                Zum Projekt
+              </a>
+            </div>
+          );
+        })
+      }
     </div>
+  </div>
 </section>
 
 <style>
-    section {
-        position: relative;
-        padding: 50px 0 !important;
+  section {
+    position: relative;
+    padding: 50px 0 !important;
+  }
+  .img-absolute {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    opacity: 0.5;
+    width: 50%;
+    @media screen and (max-width: 820px) {
+      width: 80%;
     }
-    .img-absolute {
-        position: absolute;
-        top: 0;
-        left: 0;
-        z-index: -1;
-        opacity: 0.5;
-        width: 50%;
-        @media screen and (max-width: 820px) {
-            width: 80%;
-        }
+  }
+  .container {
+    position: relative;
+    align-items: flex-start;
+    @media screen and (max-width: 820px) {
+      padding: 0 20px;
     }
-    .container {
-        position: relative;
-        align-items: flex-start;
-        @media screen and (max-width: 820px) {
-            padding: 0 20px;
-        }
-        @media screen and (max-width: 1024px) and (min-width: 821px) {
-            padding: 0 70px;
-        }
+    @media screen and (max-width: 1024px) and (min-width: 821px) {
+      padding: 0 70px;
     }
-    .subtitle {
-        text-align: left;
-        margin: 0;
-        font-weight: 600;
+  }
+  .subtitle {
+    text-align: left;
+    margin: 0;
+    font-weight: 600;
+  }
+  .scribble {
+    position: absolute;
+    top: 0;
+    left: 5vw;
+    object-fit: contain;
+    z-index: -1;
+    opacity: 0.2;
+    width: 20%;
+  }
+  .rezensionen-grid {
+    width: 100%;
+    display: grid;
+    gap: 20px;
+    row-gap: 60px;
+    grid-template-columns: auto auto auto;
+    margin-top: 55px;
+    @media screen and (max-width: 820px) {
+      grid-template-columns: auto;
     }
-    .scribble {
-        position: absolute;
-        top: 0;
-        left: 5vw;
-        object-fit: contain;
-        z-index: -1;
-        opacity: 0.2;
-        width: 20%;
+    @media screen and (max-width: 1024px) and (min-width: 821px) {
+      grid-template-columns: auto auto;
     }
-    .rezensionen-grid {
-        width: 100%;
-        display: grid;
-        gap: 20px;
-        row-gap: 60px;
-        grid-template-columns: auto auto auto;
-        margin-top: 55px;
-        @media screen and (max-width: 820px) {
-            grid-template-columns: auto;
-        }
-        @media screen and (max-width: 1024px) and (min-width: 821px) {
-            grid-template-columns: auto auto;
-        }
-    }
-    .rezension-card {
-        position: relative;
-        display: flex;
-        flex-direction: column;
-        justify-content: flex-start;
-        align-items: flex-start;
-        gap: 10px;
-        background: #f3f1eb;
-        padding: 40px;
-        border-radius: 20px;
-        z-index: 1;
-        box-shadow:
-            rgba(0, 0, 0, 0.25) 0px 25px 50px -12px,
-            0 0 0 0.35px var(--lightgray);
-    }
-    .rezension-card p {
-        margin: 0;
-    }
-    .project-tag-wrapper {
-        width: 100%;
-        display: flex;
-        flex-direction: row;
-        justify-content: flex-start;
-        align-items: flex-start;
-        flex-wrap: wrap;
-        gap: 5px;
-    }
-    .card-icon {
-        width: 100%;
-        height: auto;
-        object-fit: cover;
-        border-radius: 100px;
-        box-shadow: rgba(0, 0, 0, 0.25) 0px 25px 50px -12px;
-    }
-    .card-title {
-        font-weight: 800;
-        font-size: 1.4rem;
-    }
-    .card-text {
-        font-size: 0.8rem;
-    }
-    .container {
-        display: flex;
-        flex-direction: column;
-    }
-    section {
-        padding: 50px 0;
-    }
-    h2 {
-        align-self: flex-start;
-        margin-bottom: 0px;
-        font-size: 3rem;
-        font-family: "Afacadflux", sans-serif;
-        text-transform: uppercase;
-        font-weight: 800;
-    }
-    .icon-and-title {
-        display: flex;
-        flex-direction: column;
-        justify-content: flex-start;
-        align-items: flex-start;
-        gap: 10px;
-        width: 100%;
-    }
-    .project-image-wrapper {
-        width: 100%;
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
-        gap: 10px;
-        margin-top: -85px;
-    }
+  }
+  .rezension-card {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 10px;
+    background: #f3f1eb;
+    padding: 40px;
+    border-radius: 20px;
+    z-index: 1;
+    box-shadow:
+      rgba(0, 0, 0, 0.25) 0px 25px 50px -12px,
+      0 0 0 0.35px var(--lightgray);
+  }
+  .rezension-card p {
+    margin: 0;
+  }
+  .project-tag-wrapper {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    gap: 5px;
+  }
+  .card-icon {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 100px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 25px 50px -12px;
+  }
+  .card-title {
+    font-weight: 800;
+    font-size: 1.4rem;
+  }
+  .card-text {
+    font-size: 0.8rem;
+  }
+  .container {
+    display: flex;
+    flex-direction: column;
+  }
+  section {
+    padding: 50px 0;
+  }
+  h2 {
+    align-self: flex-start;
+    margin-bottom: 0px;
+    font-size: 3rem;
+    font-family: "Afacadflux", sans-serif;
+    text-transform: uppercase;
+    font-weight: 800;
+  }
+  .icon-and-title {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 10px;
+    width: 100%;
+  }
+  .project-image-wrapper {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 10px;
+    margin-top: -85px;
+  }
 </style>
