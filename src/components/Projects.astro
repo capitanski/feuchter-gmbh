@@ -2,6 +2,7 @@
 import projects from "@/content/projects.js";
 import ProjectTag from "./ProjectTag.astro";
 import Circles from "@/assets/Swirl.png";
+import Arrow from "@/assets/Arrow_link.svg";
 const currentLang = Astro.params.lang;
 // Astro image importieren
 ---
@@ -44,8 +45,12 @@ const currentLang = Astro.params.lang;
                 <p class="card-title">{project.title}</p>
               </div>
               <p class="card-text">{project.shortDescription}</p>
-              <a href={`/${currentLang}/projects/${project.slug}`}>
-                Zum Projekt
+              <a
+                href={`/${currentLang}/projects/${project.slug}`}
+                class="project-link"
+              >
+                <img src={Arrow.src} alt="" />
+                <span>mehr erfahren</span>
               </a>
             </div>
           );
@@ -179,5 +184,23 @@ const currentLang = Astro.params.lang;
     grid-template-columns: 1fr 1fr 1fr;
     gap: 10px;
     margin-top: -85px;
+  }
+  .project-link {
+    color: var(--verydarkgray);
+    text-decoration: none;
+    font-size: 0.8rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    transition: gap 0.3s ease-in-out;
+    gap: 5px;
+  }
+  .project-link:hover {
+    gap: 10px;
+  }
+  .project-link img {
+    width: 20px;
+    height: 20px;
   }
 </style>

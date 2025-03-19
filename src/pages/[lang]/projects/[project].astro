@@ -1,8 +1,6 @@
 ---
-import WelcomeLeftAligned from "@/components/WelcomeLeftAligned.astro";
+import ProjectAboveTheFold from "@/components/ProjectAboveTheFold.astro";
 import Layout from "@/layouts/Layout.astro";
-import Projects from "@/components/Projects.astro";
-import Scribble from "@/assets/projekte.jpg";
 import projekte from "@/content/projects.js";
 import type { AstroLocals } from "@/types";
 const projectParam = Astro.params.project;
@@ -15,7 +13,7 @@ if (!currentProject) {
 const { locals } = Astro as unknown as { locals: AstroLocals };
 
 const pageLanguage = locals.language;
-
+console.log(typeof currentProject.images[0]);
 let heading = "Projekte & Referenzen";
 let subtitle =
   "Vom Unterhemd bis zum Einsatzanzug - Seit 1957 bieten wir höchste qualitätsstandards";
@@ -30,12 +28,13 @@ We support our customers from the very beginning of their projects – from conc
 ---
 
 <Layout>
-  <WelcomeLeftAligned
+  <ProjectAboveTheFold
     language={pageLanguage}
     heading={currentProject.title}
     subtitle={subtitle}
     introText={introText}
-    Scribble={Scribble}
+    mainImage={currentProject.mainImage}
+    images={currentProject.images}
+    currentProject={currentProject}
   />
-  <Projects />
 </Layout>

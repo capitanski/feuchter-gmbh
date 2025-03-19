@@ -1,11 +1,27 @@
 ---
-const { tagContent } = Astro.props;
+const { tagContent, colorScheme } = Astro.props;
 ---
 
-<div class="project-tag">
+<div
+    class={colorScheme && colorScheme == "bright"
+        ? "is-bright project-tag"
+        : "is-dark project-tag"}
+>
     {tagContent}
 </div>
 <style>
+    .is-bright {
+        color: var(--sand);
+        box-shadow:
+            rgba(0, 0, 0, 0.25) 0px 25px 50px -12px,
+            0 0 0 0.35px var(--sand) !important;
+    }
+    .is-dark {
+        color: var(--verydarkgray);
+        box-shadow:
+            rgba(0, 0, 0, 0.25) 0px 25px 50px -12px,
+            0 0 0 0.35px var(--verydarkgray);
+    }
     .project-tag {
         box-shadow:
             rgba(0, 0, 0, 0.25) 0px 25px 50px -12px,
