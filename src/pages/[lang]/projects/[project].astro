@@ -3,7 +3,13 @@ import ProjectAboveTheFold from "@/components/ProjectAboveTheFold.astro";
 import ProjectRichText from "@/components/ProjectRichText.astro";
 import Layout from "@/layouts/Layout.astro";
 import projekte from "@/content/projects.js";
+import fs from "fs/promises";
+
 import type { AstroLocals } from "@/types";
+const { locals } = Astro as unknown as { locals: AstroLocals };
+
+// Lang Param auslesen, projekte nach slug durchsuchen, wenn kein Projekt gefunden wird, 404 Fehler werfen
+const pageLanguage = locals.language;
 const projectParam = Astro.params.project;
 const currentProject = projekte.find((item) => {
   return item.slug == projectParam;
@@ -11,9 +17,17 @@ const currentProject = projekte.find((item) => {
 if (!currentProject) {
   return new Response(null, { status: 404 });
 }
-const { locals } = Astro as unknown as { locals: AstroLocals };
 
-const pageLanguage = locals.language;
+// Richtext aus HTML Dateien lesen, wenn keiner gefunden wird, 404 Fehler werfen
+let richtext = "";
+try {
+  richtext = await fs.readFile(
+    `./src/content/htmldata/${projectParam}-${pageLanguage}.html`,
+    "utf-8",
+  );
+} catch (err) {
+  return new Response(null, { status: 404 });
+}
 ---
 
 <Layout>
@@ -21,5 +35,5 @@ const pageLanguage = locals.language;
     currentProject={currentProject}
     language={pageLanguage}
   />
-  <ProjectRichText richText={currentProject.richtextData} />
+  <ProjectRichText richText={richtext} pageLanguage={pageLanguage} />
 </Layout>

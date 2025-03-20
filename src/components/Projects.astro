@@ -3,7 +3,8 @@ import projects from "@/content/projects.js";
 import ProjectTag from "./ProjectTag.astro";
 import Circles from "@/assets/Swirl.png";
 import Arrow from "@/assets/Arrow_link.svg";
-const currentLang = Astro.params.lang;
+import { translations } from "@/content/translations";
+const pageLanguage = Astro.params.lang;
 // Astro image importieren
 ---
 
@@ -33,20 +34,22 @@ const currentLang = Astro.params.lang;
                   })}
                 </div>
                 <div class="project-tag-wrapper">
-                  {project.tags.map((tag) => {
+                  {project.tags[pageLanguage].map((tag) => {
                     return <ProjectTag tagContent={tag} />;
                   })}
-                  <ProjectTag tagContent={`${project.amount} pcs`} />
-                  <ProjectTag tagContent={project.customer} />
+                  <ProjectTag
+                    tagContent={`${project.amount} ${translations("menge", pageLanguage)}`}
+                  />
+                  <ProjectTag tagContent={project.customer[pageLanguage]} />
                   <ProjectTag tagContent={project.tl} />
                   <ProjectTag tagContent={project.date} />
-                  <ProjectTag tagContent={project.status} />
+                  <ProjectTag tagContent={project.status[pageLanguage]} />
                 </div>
-                <p class="card-title">{project.title}</p>
+                <p class="card-title">{project.title[pageLanguage]}</p>
               </div>
-              <p class="card-text">{project.shortDescription}</p>
+              <p class="card-text">{project.shortDescription[pageLanguage]}</p>
               <a
-                href={`/${currentLang}/projects/${project.slug}`}
+                href={`/${pageLanguage}/projects/${project.slug}`}
                 class="project-link"
               >
                 <img src={Arrow.src} alt="" />
@@ -145,7 +148,7 @@ const currentLang = Astro.params.lang;
     width: 100%;
     height: auto;
     object-fit: cover;
-    border-radius: 100px;
+    border-radius: 25px;
     box-shadow: rgba(0, 0, 0, 0.25) 0px 25px 50px -12px;
   }
   .card-title {

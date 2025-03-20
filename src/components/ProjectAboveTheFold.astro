@@ -2,6 +2,7 @@
 import Button from "../components/Button.astro";
 import Circles from "../assets/Swirl.png";
 import ProjectTag from "@/components/ProjectTag.astro";
+import { translations } from "@/content/translations";
 const { currentProject, language } = Astro.props;
 ---
 
@@ -23,7 +24,7 @@ const { currentProject, language } = Astro.props;
               <img
                 src={image}
                 alt=""
-                class="project-image"
+                class="project-image animatable"
                 fetchpriority="high"
                 loading="eager"
               />
@@ -41,27 +42,33 @@ const { currentProject, language } = Astro.props;
     />
     <div class="hero-container">
       <h1 class="hero-heading animatable">
-        {currentProject.title}
+        {currentProject.title[language]}
       </h1>
       <div class="project-tag-wrapper">
         {
-          currentProject.tags.map((tag) => {
+          currentProject.tags[language].map((tag) => {
             return <ProjectTag tagContent={tag} colorScheme="bright" />;
           })
         }
         <ProjectTag
           tagContent={`${currentProject.amount.toLocaleString({
             language,
-          })} pcs`}
+          })} ${translations("menge", language)}`}
           colorScheme="bright"
         />
-        <ProjectTag tagContent={currentProject.customer} colorScheme="bright" />
+        <ProjectTag
+          tagContent={currentProject.customer[language]}
+          colorScheme="bright"
+        />
         <ProjectTag tagContent={currentProject.tl} colorScheme="bright" />
         <ProjectTag tagContent={currentProject.date} colorScheme="bright" />
-        <ProjectTag tagContent={currentProject.status} colorScheme="bright" />
+        <ProjectTag
+          tagContent={currentProject.status[language]}
+          colorScheme="bright"
+        />
       </div>
       <p class="hero-paragraph">
-        {currentProject.shortDescription}
+        {currentProject.shortDescription[language]}
       </p>
       <div class="button-wrapper hero-button-wrapper">
         <Button

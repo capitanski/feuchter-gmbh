@@ -1,2 +1,2 @@
-const supportedLanguages = ["de", "en", "fr", "cs", "nl"];
+const supportedLanguages = ["de", "en"];
 export default supportedLanguages;

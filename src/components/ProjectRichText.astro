@@ -1,10 +1,11 @@
 ---
-const { richText } = Astro.props;
+const { richText, pageLanguage } = Astro.props;
+import { translations } from "@/content/translations.js";
 ---
 
 <section>
   <div class="container">
-    <h2>Projektbeschreibung</h2>
+    <h2>{translations("projektbeschreibung", pageLanguage)}</h2>
     <div class="rich-text" set:html={richText} />
   </div>
 </section>
