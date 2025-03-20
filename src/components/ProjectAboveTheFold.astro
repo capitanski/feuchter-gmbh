@@ -2,7 +2,7 @@
 import Button from "../components/Button.astro";
 import Circles from "../assets/Swirl.png";
 import ProjectTag from "@/components/ProjectTag.astro";
-const { currentProject } = Astro.props;
+const { currentProject, language } = Astro.props;
 ---
 
 <section>
@@ -50,7 +50,9 @@ const { currentProject } = Astro.props;
           })
         }
         <ProjectTag
-          tagContent={`${currentProject.amount} pcs`}
+          tagContent={`${currentProject.amount.toLocaleString({
+            language,
+          })} pcs`}
           colorScheme="bright"
         />
         <ProjectTag tagContent={currentProject.customer} colorScheme="bright" />
@@ -90,6 +92,7 @@ const { currentProject } = Astro.props;
     padding-bottom: 50px;
     background: rgba(0, 0, 0, 0.9);
     z-index: 1;
+    overflow: hidden;
   }
   .img-absolute {
     position: absolute;

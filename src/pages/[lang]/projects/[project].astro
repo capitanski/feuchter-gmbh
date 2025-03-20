@@ -17,6 +17,9 @@ const pageLanguage = locals.language;
 ---
 
 <Layout>
-  <ProjectAboveTheFold currentProject={currentProject} />
+  <ProjectAboveTheFold
+    currentProject={currentProject}
+    language={pageLanguage}
+  />
   <ProjectRichText richText={currentProject.richtextData} />
 </Layout>
