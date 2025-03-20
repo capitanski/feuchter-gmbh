@@ -3,30 +3,44 @@ import Circles from "../assets/Quotes.svg";
 import Hochzeiten from "../assets/konzeption.jpg";
 import Corporate from "../assets/produktion.jpg";
 import Birthday from "../assets/logistik.jpg";
+import { translations } from "@/content/translations";
+const { language } = Astro.props;
 const leistungen = [
   {
+    translationKey: "konzeption",
     icon: Hochzeiten.src,
     title: "Entwicklung & Konzeption",
-    text: "Von der ersten Idee bis zum fertigen Design entwickeln wir passgenaue Bekleidungslösungen, die höchsten Anforderungen gerecht werden. Unser erfahrenes Team erarbeitet individuelle Konzepte, die Funktionalität, Komfort und Stil vereinen – maßgeschneidert auf die Bedürfnisse von Militär, Behörden und Unternehmen.",
+    text: {
+      de: "Von der ersten Idee bis zum fertigen Design entwickeln wir passgenaue Bekleidungslösungen, die höchsten Anforderungen gerecht werden. Unser erfahrenes Team erarbeitet individuelle Konzepte, die Funktionalität, Komfort und Stil vereinen – maßgeschneidert auf die Bedürfnisse von Militär, Behörden und Unternehmen.",
+      en: "From the initial idea to the final design, we develop customized clothing solutions that meet the highest standards. Our experienced team creates tailored concepts that combine functionality, comfort, and style – specifically designed to meet the needs of the military, government agencies, and businesses.",
+    },
   },
   {
+    translationKey: "produktion",
     icon: Corporate.src,
     title: "Produktion",
-    text: "In unserer Produktion setzen wir auf modernste Technologien und höchste Qualitätsstandards. Jedes Kleidungsstück wird sorgfältig gefertigt, um Langlebigkeit und maximale Funktionalität zu gewährleisten. Dabei kombinieren wir technisches Know-how mit einem präzisen Auge für Details, um robuste Arbeitskleidung und exklusive Corporate Fashion zu liefern.",
+    text: {
+      de: "In unserer Produktion setzen wir auf modernste Technologien und höchste Qualitätsstandards. Jedes Kleidungsstück wird sorgfältig gefertigt, um Langlebigkeit und maximale Funktionalität zu gewährleisten. Dabei kombinieren wir technisches Know-how mit einem präzisen Auge für Details, um robuste Arbeitskleidung und exklusive Corporate Fashion zu liefern.",
+      en: "Our production process incorporates state-of-the-art technology and strict quality standards. Every garment is meticulously engineered for durability and peak performance. By merging advanced technical knowledge with precision craftsmanship, we create durable workwear and high-end corporate fashion.",
+    },
   },
   {
+    translationKey: "logistik",
     icon: Birthday.src,
     title: "Logistik & Vertrieb",
-    text: "Effiziente Logistikprozesse und ein starker Vertriebsservice garantieren, dass Ihre Bestellung termingerecht und zuverlässig bei Ihnen ankommt. Wir kümmern uns um die gesamte Lieferkette – von der Produktion bis zur Auslieferung – und stellen sicher, dass Ihre Mitarbeiter stets optimal ausgestattet sind.",
+    text: {
+      de: "Effiziente Logistikprozesse und ein starker Vertriebsservice garantieren, dass Ihre Bestellung termingerecht und zuverlässig bei Ihnen ankommt. Wir kümmern uns um die gesamte Lieferkette – von der Produktion bis zur Auslieferung – und stellen sicher, dass Ihre Mitarbeiter stets optimal ausgestattet sind.",
+      en: "Seamless logistics and exceptional customer service ensure that your order is delivered on time and with complete reliability. From production to delivery, we handle the entire supply chain so that your team is always equipped with the best.",
+    },
   },
 ];
 ---
 
 <section id="leistungen">
   <div class="container">
-    <h2 class="animatable">Leistungen</h2>
+    <h2 class="animatable">{translations("leistungen", language)}</h2>
     <p class="subtitle animatable">
-      Von der Entwicklung, über die Produktion bis hin zur Logistik
+      {translations("leistungensubtitle", language)}
     </p>
     <div class="rezensionen-grid">
       {
@@ -42,9 +56,11 @@ const leistungen = [
                   width="150"
                   height="150"
                 />
-                <p class="card-title">{leistung.title}</p>
+                <p class="card-title">
+                  {translations(leistung.translationKey, language)}
+                </p>
               </div>
-              <p class="card-text">{leistung.text}</p>
+              <p class="card-text">{leistung.text[language]}</p>
             </div>
           );
         })
