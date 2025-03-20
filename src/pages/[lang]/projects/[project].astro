@@ -1,5 +1,6 @@
 ---
 import ProjectAboveTheFold from "@/components/ProjectAboveTheFold.astro";
+import ProjectRichText from "@/components/ProjectRichText.astro";
 import Layout from "@/layouts/Layout.astro";
 import projekte from "@/content/projects.js";
 import type { AstroLocals } from "@/types";
@@ -13,28 +14,9 @@ if (!currentProject) {
 const { locals } = Astro as unknown as { locals: AstroLocals };
 
 const pageLanguage = locals.language;
-console.log(typeof currentProject.images[0]);
-let heading = "Projekte & Referenzen";
-let subtitle =
-  "Vom Unterhemd bis zum Einsatzanzug - Seit 1957 bieten wir höchste qualitätsstandards";
-let introText = `
-Wir unterstützen unsere Kunden von Anfang an bei ihren Projekten – von der Konzeption und Entwicklung über die Produktion bis hin zur Logistik. Mit unserer Expertise sorgen wir für maßgeschneiderte Lösungen, die effizient, zuverlässig und nachhaltig sind.`;
-if (pageLanguage == "en") {
-  heading = "We support you in your endeavor from the very beginning.";
-  subtitle = "From conception to production to logistics";
-  introText = `
-We support our customers from the very beginning of their projects – from conception and development to production and logistics. With our expertise, we ensure tailored solutions that are efficient, reliable, and sustainable.`;
-}
 ---
 
 <Layout>
-  <ProjectAboveTheFold
-    language={pageLanguage}
-    heading={currentProject.title}
-    subtitle={subtitle}
-    introText={introText}
-    mainImage={currentProject.mainImage}
-    images={currentProject.images}
-    currentProject={currentProject}
-  />
+  <ProjectAboveTheFold currentProject={currentProject} />
+  <ProjectRichText richText={currentProject.richtextData} />
 </Layout>

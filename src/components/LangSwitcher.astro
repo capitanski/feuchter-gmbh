@@ -1,11 +1,7 @@
 ---
-import langSwitcher from "@/functions/langSwitcher.js";
-
 const currentLang = Astro.params.lang ?? "de"; // Fallback auf Deutsch
 const currentPath = Astro.url.pathname; // Die aktuelle URL
 const { langs } = Astro.props as { langs: { lang: string; url: string }[] };
-
-//const languageLinks = langSwitcher(currentPath); // Generiere die Links für jede Sprache
 ---
 
 <nav>
