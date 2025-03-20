@@ -2,7 +2,9 @@
 import Button from "../components/Button.astro";
 import Circles from "../assets/Circles.svg";
 import Scribble from "../assets/feuchter_gmbh_header.jpg";
+import { buttonTranslations } from "@/content/translations";
 const { language } = Astro.props;
+
 let heading = "Professionelle Textil- & Bekleidungslösungen seit 1957";
 let subtitle = "für Unternehmen, Militär und Behörden";
 let introText = `Seit 1957 sind wir einer der führenden Produzenten von Bekleidung für Armeen, Behörden und Unternehmen weltweit. Vertrauen Sie auf unsere langjährige Erfahrung in den Bereichen Entwicklung, Produktion und Lieferung. Egal ob Sie einen Produzenten für Ihren eigenen Onlineshop oder ihr Geschäft suchen oder Sie Ihre Mitarbeiter neu ausstatten möchten - bei uns sind Sie in besten Händen.`;
@@ -39,13 +41,13 @@ if (language == "en") {
       </p>
       <div class="button-wrapper hero-button-wrapper">
         <Button
-          linkText="Jetzt anfragen"
-          target="#kontakt"
+          linkText={buttonTranslations("contact", language)}
+          target=`/${language}/contact`
           class="hero-button-1"
         />
         <Button
-          linkText="Referenzen"
-          target="#rezensionen"
+          linkText={buttonTranslations("projects", language)}
+          target=`/${language}/projects`
           class="hero-button-2"
         />
       </div>

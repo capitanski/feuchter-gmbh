@@ -4,7 +4,9 @@ import ProjectTag from "./ProjectTag.astro";
 import Circles from "@/assets/Swirl.png";
 import Arrow from "@/assets/Arrow_link.svg";
 import { translations } from "@/content/translations";
+import { buttonTranslations } from "@/content/translations";
 const pageLanguage = Astro.params.lang;
+const { currentUrl, language } = Astro.props;
 // Astro image importieren
 ---
 
@@ -38,7 +40,10 @@ const pageLanguage = Astro.params.lang;
                     return <ProjectTag tagContent={tag} />;
                   })}
                   <ProjectTag
-                    tagContent={`${project.amount} ${translations("menge", pageLanguage)}`}
+                    tagContent={`${project.amount} ${translations(
+                      "menge",
+                      pageLanguage
+                    )}`}
                   />
                   <ProjectTag tagContent={project.customer[pageLanguage]} />
                   <ProjectTag tagContent={project.tl} />
@@ -53,7 +58,7 @@ const pageLanguage = Astro.params.lang;
                 class="project-link"
               >
                 <img src={Arrow.src} alt="" />
-                <span>mehr erfahren</span>
+                <span>{buttonTranslations("mehr", language)}</span>
               </a>
             </div>
           );
