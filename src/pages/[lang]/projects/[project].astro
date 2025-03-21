@@ -25,6 +25,7 @@ try {
     `./src/content/htmldata/${projectParam}-${pageLanguage}.html`,
     "utf-8",
   );
+  console.log(richtext.length);
 } catch (err) {
   return new Response(null, { status: 404 });
 }

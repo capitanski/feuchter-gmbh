@@ -6,51 +6,91 @@ import gabriele from "@/assets/team/gabriele_feuchter.jpg";
 import lea from "@/assets/team/lea_feuchter.jpg";
 import markus from "@/assets/team/markus_feuchter.jpg";
 import avatar from "@/assets/team/avatar.jpg";
+const { language } = Astro.props;
+const headline = {
+    de: "Lernen Sie das Team kennen",
+    en: "Meet the team",
+};
+const cite = {
+    de: `"Unsere Liebe zum Detail und unser Anspruch an Perfektion
+                treiben uns jeden Tag aufs Neue an. Auch in der
+                Großserienproduktion geben wir uns nicht mit dem Durchschnitt
+                zufrieden – denn echte Qualität zeigt sich in den kleinen
+                Dingen. Dafür stehen wir mit Stolz seit über 60 Jahren."`,
+    en: `"Our passion for detail and our commitment to perfection drive us every single day. Even in large-scale production, we never settle for average – because true quality reveals itself in the little things. We've proudly stood by that belief for over 60 years."`,
+};
 const teamMembers = [
     {
         img: klaus.src,
         name: "Klaus Feuchter",
-        role: "CEO",
+        role: {
+            de: "CEO",
+            en: "CEO",
+        },
     },
     {
         img: markus.src,
         name: "Markus Feuchter",
-        role: "Produktentwicklung",
+        role: {
+            de: "Produktentwicklung",
+            en: "Product Development",
+        },
     },
     {
         img: sabrina.src,
         name: "Sabrina Feuchter",
-        role: "Stellvertretende Geschäftsführung",
+        role: {
+            de: "Stellvertretende Geschäftsführung",
+            en: "Deputy Managing Director",
+        },
     },
     {
         img: avatar.src,
         name: "Kathrin Hinz",
-        role: "Assistentin d. Geschäftsführung",
+        role: {
+            de: "Assistentin d. Geschäftsführung",
+            en: "Executive Assistant",
+        },
     },
     {
         img: gabriele.src,
         name: "Gabriele Feuchter",
-        role: "Leitung d. Finanzbuchhaltung",
+        role: {
+            de: "Leitung d. Finanzbuchhaltung",
+            en: "Head of Financial Accounting",
+        },
     },
     {
         img: lea.src,
         name: "Lea Feuchter",
-        role: "Finanzbuchhaltung",
+        role: {
+            de: "Finanzbuchhaltung",
+            en: "Financial Accounting",
+        },
     },
     {
         img: felix.src,
         name: "Felix Feuchter",
-        role: "Head of Marketing, PR & Design",
+        role: {
+            de: "Head of Marketing, PR & Design",
+            en: "Head of Marketing, PR & Design",
+        },
     },
     {
         img: avatar.src,
         name: "Monika Walter",
-        role: "Logistik & Lagerverwaltung",
+        role: {
+            de: "Logistik & Lagerverwaltung",
+            en: "Logistics & Warehouse Management",
+        },
     },
     {
         img: avatar.src,
         name: "Maximilian Hierl",
-        role: "M. Eng. Qualitätsingenieur",
+        role: {
+            de: "M. Eng. Qualitätsingenieur",
+            en: "M. Eng. Quality Engineer",
+        },
     },
 ];
 ---
@@ -58,13 +98,9 @@ const teamMembers = [
 <section>
     <div class="container">
         <div class="title-and-cite">
-            <h2 class="animate-in-right">Lernen Sie das Team kennen</h2>
+            <h2 class="animate-in-right">{headline[language]}</h2>
             <p class="zitat">
-                "Unsere Liebe zum Detail und unser Anspruch an Perfektion
-                treiben uns jeden Tag aufs Neue an. Auch in der
-                Großserienproduktion geben wir uns nicht mit dem Durchschnitt
-                zufrieden – denn echte Qualität zeigt sich in den kleinen
-                Dingen. Dafür stehen wir mit Stolz seit über 60 Jahren."
+                {cite[language]}
             </p>
         </div>
 
@@ -76,7 +112,7 @@ const teamMembers = [
                             <img src={item.img} alt="" />
                             <div class="grid-item-text">
                                 <p>{item.name}</p>
-                                <span>{item.role}</span>
+                                <span>{item.role[language]}</span>
                             </div>
                         </div>
                     );

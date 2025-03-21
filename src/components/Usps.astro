@@ -6,36 +6,73 @@ import Qualitaetsstandards from "../assets/qualitaetsstandards.svg";
 import Neuentwicklungen from "../assets/neuentwicklungen.svg";
 import Lieferant from "../assets/Lieferant.svg";
 import Qualitaetsmanagement from "../assets/qualitaetsmanagement.svg";
+const { language } = Astro.props;
 const leistungen = [
     {
         icon: Produktionsketten.src,
-        title: "Internationale Produktionsketten",
-        text: "Wir sind ein internationaler Bekleidungshersteller mit nachhaltigen Produktionsketten, hoher Qualität und fairen Arbeitsbedingungen. Effiziente Logistik und verantwortungsvolle Prozesse sichern termingerechte Lieferungen und High-End Produkte für spezielle Einsatzzwecke.",
+        title: {
+            de: "Internationale Produktionsketten",
+            en: "International Production Chains",
+        },
+        text: {
+            de: "Wir sind ein internationaler Bekleidungshersteller mit nachhaltigen Produktionsketten, hoher Qualität und fairen Arbeitsbedingungen. Effiziente Logistik und verantwortungsvolle Prozesse sichern termingerechte Lieferungen und High-End Produkte für spezielle Einsatzzwecke.",
+            en: "We are an international clothing manufacturer with sustainable production chains, high quality, and fair working conditions. Efficient logistics and responsible processes ensure on-time deliveries and high-end products for specialized applications.",
+        },
     },
     {
         icon: Grossserien.src,
-        title: "Der Profi für Großserien",
-        text: "Als Experte für Großserienfertigung bieten wir hochwertige Bekleidung in großen Stückzahlen. Effiziente Produktion, präzise Prozesse und verlässliche Lieferketten garantieren erstklassige Qualität und pünktliche Lieferung an Ziele auf der ganzen Welt.",
+        title: {
+            de: "Der Profi für Großserien",
+            en: "The Expert for Large-Scale Production",
+        },
+        text: {
+            de: "Als Experte für Großserienfertigung bieten wir hochwertige Bekleidung in großen Stückzahlen. Effiziente Produktion, präzise Prozesse und verlässliche Lieferketten garantieren erstklassige Qualität und pünktliche Lieferung an Ziele auf der ganzen Welt.",
+            en: "As experts in large-scale manufacturing, we offer high-quality clothing in large quantities. Efficient production, precise processes, and reliable supply chains guarantee top quality and on-time delivery worldwide.",
+        },
     },
     {
         icon: Qualitaetsstandards.src,
-        title: "Höchste Qualitätsstandards",
-        text: "Unsere hohen Qualitätsstandards sichern erstklassige Bekleidung durch präzise Fertigung, strenge Kontrollen und nachhaltige Materialien. Wir garantieren Langlebigkeit, Komfort und Perfektion für anspruchsvolle Kunden weltweit.",
+        title: {
+            de: "Höchste Qualitätsstandards",
+            en: "Highest Quality Standards",
+        },
+        text: {
+            de: "Unsere hohen Qualitätsstandards sichern erstklassige Bekleidung durch präzise Fertigung, strenge Kontrollen und nachhaltige Materialien. Wir garantieren Langlebigkeit, Komfort und Perfektion für anspruchsvolle Kunden weltweit.",
+            en: "Our high quality standards ensure top-tier clothing through precise manufacturing, strict controls, and sustainable materials. We guarantee durability, comfort, and perfection for demanding customers worldwide.",
+        },
     },
     {
         icon: Neuentwicklungen.src,
-        title: "Wir lieben Neuentwicklungen",
-        text: "Wir realisieren komplette Neuentwicklungen in Bekleidung und Textil — von der Idee bis zum fertigen Produkt. Innovative Designs, moderne Materialien und maßgeschneiderte Lösungen für Ihre Vision.",
+        title: {
+            de: "Wir lieben Neuentwicklungen",
+            en: "We Love New Developments",
+        },
+        text: {
+            de: "Wir realisieren komplette Neuentwicklungen in Bekleidung und Textil — von der Idee bis zum fertigen Produkt. Innovative Designs, moderne Materialien und maßgeschneiderte Lösungen für Ihre Vision.",
+            en: "We implement complete new developments in clothing and textiles — from concept to finished product. Innovative designs, modern materials, and custom solutions for your vision.",
+        },
     },
     {
         icon: Lieferant.src,
-        title: "Offizieller Lieferant der Deutschen Bundeswehr",
-        text: "Als offizieller Lieferant der Deutschen Bundeswehr bieten wir hochwertige, langlebige und funktionale Bekleidung. Unsere Produkte erfüllen höchste Standards und gewährleisten Zuverlässigkeit unter extremen Bedingungen.",
+        title: {
+            de: "Offizieller Lieferant der Deutschen Bundeswehr",
+            en: "Official Supplier to the German Armed Forces",
+        },
+        text: {
+            de: "Als offizieller Lieferant der Deutschen Bundeswehr bieten wir hochwertige, langlebige und funktionale Bekleidung. Unsere Produkte erfüllen höchste Standards und gewährleisten Zuverlässigkeit unter extremen Bedingungen.",
+            en: "As an official supplier to the German Armed Forces, we provide high-quality, durable, and functional clothing. Our products meet the highest standards and ensure reliability under extreme conditions.",
+        },
     },
     {
         icon: Qualitaetsmanagement.src,
-        title: "Qualitätsmanagement vom Feinsten",
-        text: "Wir garantieren makelloses Qualitätsmanagement durch deutsche Fachkräfte in unseren ausländischen Produktionsstätten. Präzise Kontrollen und höchste Standards sichern erstklassige Bekleidung – zuverlässig, nachhaltig und effizient.",
+        title: {
+            de: "Qualitätsmanagement vom Feinsten",
+            en: "Top-Notch Quality Management",
+        },
+        text: {
+            de: "Wir garantieren makelloses Qualitätsmanagement durch deutsche Fachkräfte in unseren ausländischen Produktionsstätten. Präzise Kontrollen und höchste Standards sichern erstklassige Bekleidung – zuverlässig, nachhaltig und effizient.",
+            en: "We guarantee flawless quality management by German experts in our foreign production sites. Precise inspections and the highest standards ensure premium clothing — reliable, sustainable, and efficient.",
+        },
     },
 ];
 ---
@@ -58,9 +95,11 @@ const leistungen = [
                                     width="150"
                                     height="150"
                                 />
-                                <p class="card-title">{leistung.title}</p>
+                                <p class="card-title">
+                                    {leistung.title[language]}
+                                </p>
                             </div>
-                            <p class="card-text">{leistung.text}</p>
+                            <p class="card-text">{leistung.text[language]}</p>
                         </div>
                     );
                 })

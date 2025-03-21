@@ -1,19 +1,19 @@
 ---
 import CEO from "@/assets/CEO.jpg";
 import Quotes from "@/assets/Quotes.svg";
+const { language } = Astro.props;
+
+const cite = {
+  de: `"Seit 1957 stehen wir für erstklassige Funktionalität, Langlebigkeit und Innovation in der Produktion von Militär- und Behördenbekleidung. Mit unserer jahrzehntelangen Erfahrung und höchsten Qualitätsstandards bieten wir nun auch Outdoor-, Survival- und Sicherheitsanbietern maßgeschneiderte Bekleidungslösungen. Unser Ziel ist es, Profis in jeder Situation zuverlässig auszurüsten – mit Kleidung, die schützt, unterstützt und höchsten Anforderungen gerecht wird."`,
+  en: `"Since 1957, we have stood for outstanding functionality, durability, and innovation in the production of military and official agency clothing. With decades of experience and the highest quality standards, we now also offer customized clothing solutions for outdoor, survival, and security providers. Our goal is to equip professionals reliably in any situation – with clothing that protects, supports, and meets the highest demands."`,
+};
 ---
 
 <section>
   <img src={Quotes.src} alt="" class="img-absolute animatable-opacity" />
   <div class="container">
     <p class="cite">
-      "Seit 1957 stehen wir für erstklassige Funktionalität, Langlebigkeit und
-      Innovation in der Produktion von Militär- und Behördenbekleidung. Mit
-      unserer jahrzehntelangen Erfahrung und höchsten Qualitätsstandards bieten
-      wir nun auch Outdoor-, Survival- und Sicherheitsanbietern maßgeschneiderte
-      Bekleidungslösungen. Unser Ziel ist es, Profis in jeder Situation
-      zuverlässig auszurüsten – mit Kleidung, die schützt, unterstützt und
-      höchsten Anforderungen gerecht wird."
+      {cite[language]}
     </p>
     <img src={CEO.src} alt="" class="ceo animatable" />
     <div class="ceo-and-role">

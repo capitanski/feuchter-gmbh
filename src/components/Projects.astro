@@ -7,14 +7,22 @@ import { translations } from "@/content/translations";
 import { buttonTranslations } from "@/content/translations";
 const pageLanguage = Astro.params.lang;
 const { currentUrl, language } = Astro.props;
+const heading = {
+  de: "Projekte & Referenzen",
+  en: "Projects & References",
+};
+const subtitle = {
+  de: "Bekleidung, die einfach funktioniert",
+  en: "Clothing that simply works",
+};
 // Astro image importieren
 ---
 
 <section id="projects">
   <img src={Circles.src} alt="" class="img-absolute" />
   <div class="container">
-    <h2 class="animatable">Projekte & Referenzen</h2>
-    <p class="subtitle animatable">Bekleidung, die einfach funktioniert</p>
+    <h2 class="animatable">{heading[language]}</h2>
+    <p class="subtitle animatable">{subtitle[language]}</p>
     <div class="rezensionen-grid">
       {
         projects.map((project) => {
@@ -42,7 +50,7 @@ const { currentUrl, language } = Astro.props;
                   <ProjectTag
                     tagContent={`${project.amount} ${translations(
                       "menge",
-                      pageLanguage
+                      pageLanguage,
                     )}`}
                   />
                   <ProjectTag tagContent={project.customer[pageLanguage]} />

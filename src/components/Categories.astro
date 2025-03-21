@@ -5,35 +5,82 @@ import Behoerdenkleidung from "@/assets/behoerden.jpg";
 import Thermohaube from "@/assets/thermohaube.jpg";
 import Staubhaube from "@/assets/staubhaube.jpg";
 import Circles from "@/assets/Swirl.png";
+const { language } = Astro.props;
+const heading = {
+  de: "Unser Angebot",
+  en: "What we have to offer",
+};
 const categories = [
   {
-    title: "Militär- & Survivalkleidung",
-    slug: "/bekleidung",
+    title: {
+      de: "Militär- & Survivalkleidung",
+      en: "Military & Survival Clothing",
+    },
+    text: {
+      de: "Unsere Militär- und Survivalkleidung bietet Schutz, Komfort und Funktionalität in extremen Umgebungen. Entwickelt für höchste Anforderungen, eignet sie sich ideal für taktische Einsätze, Outdoor-Abenteuer und Notfallsituationen. Strapazierfähige Materialien und durchdachtes Design garantieren zuverlässige Leistung, auch unter härtesten Bedingungen – weltweit einsetzbar.",
+      en: "Our military and survival clothing provides protection, comfort, and functionality in extreme environments. Designed for the toughest demands, it's perfect for tactical missions, outdoor adventures, and emergency situations. Durable materials and thoughtful design ensure reliable performance, even under the harshest conditions – trusted worldwide.",
+    },
+    slug: "/clothing/military-and-survival",
     image: Bekleidung.src,
   },
   {
-    title: "Behördenkleidung",
-    slug: "/bekleidung",
+    title: {
+      de: "Behördenkleidung",
+      en: "Official Agency Clothing",
+    },
+    text: {
+      de: "Unsere Behördenkleidung erfüllt alle Anforderungen an Funktion, Sicherheit und Tragekomfort. Ob Polizei, Zoll oder Rettungsdienste – wir bieten maßgeschneiderte Lösungen für den professionellen Alltag. Die Kombination aus modernen Stoffen, robustem Aufbau und individueller Ausstattung macht unsere Kleidung zum zuverlässigen Partner im Einsatz.",
+      en: "Our official agency clothing meets all requirements for function, safety, and wearing comfort. Whether for police, customs, or emergency services – we offer custom solutions for everyday professional use. Modern fabrics, durable construction, and tailored features make our garments a dependable choice on duty.",
+    },
+    slug: "/clothing/officialwear",
     image: Behoerdenkleidung.src,
   },
   {
-    title: "Corporate Fashion",
-    slug: "/bekleidung",
+    title: {
+      de: "Corporate Fashion",
+      en: "Corporate Fashion",
+    },
+    text: {
+      de: "Mit unserer Corporate Fashion stärken Sie das Erscheinungsbild Ihrer Marke durch professionelle, stilvolle Kleidung. Ob für Messen, Kundenkontakt oder interne Veranstaltungen – wir bieten hochwertige Textilien mit individuellem Design. Komfort, Qualität und Wiedererkennung stehen dabei im Mittelpunkt jeder Kollektion, die wir entwickeln.",
+      en: "Our corporate fashion enhances your brand's appearance with professional, stylish clothing. Whether for trade fairs, customer interactions, or internal events – we offer high-quality textiles with custom designs. Comfort, quality, and brand recognition are at the heart of every collection we create for you.",
+    },
+    slug: "/clothing/corporate-fashion",
     image: Behoerdenkleidung.src,
   },
   {
-    title: "Schutzwand für Rollcontainer",
-    slug: "/transportloesungen",
+    title: {
+      de: "Schutzwand für Rollcontainer",
+      en: "Protective Wall for Roll Containers",
+    },
+    text: {
+      de: "Die Schutzwand für Rollcontainer dient als robuster Puffer gegen Stöße und schützt empfindliche Fracht. Sie ist leicht montierbar, wiederverwendbar und erhöht die Sicherheit beim Transport. Ideal für Logistikunternehmen und Lagerhaltung, bei denen sensible Güter zuverlässig gesichert werden müssen – effizient und langlebig.",
+      en: "The protective wall for roll containers acts as a sturdy buffer against impact and protects sensitive cargo. It is easy to install, reusable, and enhances transport safety. Ideal for logistics companies and storage environments where delicate goods must be reliably secured – efficient and long-lasting.",
+    },
+    slug: "/transportsolutions/protective-wall",
     image: Transportloesungen.src,
   },
   {
-    title: "Thermohaube für Rollcontainer",
-    slug: "/transportloesungen",
+    title: {
+      de: "Thermohaube für Rollcontainer",
+      en: "Thermal Cover for Roll Containers",
+    },
+    text: {
+      de: "Unsere Thermohauben ermöglichen den sicheren Transport temperaturempfindlicher Waren. Sie halten Hitze, Kälte und Feuchtigkeit zuverlässig fern und sorgen für ein konstantes Klima im Inneren des Rollcontainers. Besonders geeignet für Lebensmittel, Pharma oder Chemie – überall, wo konstante Temperaturen essenziell sind.",
+      en: "Our thermal covers enable the safe transport of temperature-sensitive goods. They effectively protect against heat, cold, and moisture, ensuring a stable climate inside the roll container. Especially suitable for food, pharmaceuticals, or chemicals – wherever constant temperatures are critical during storage or delivery.",
+    },
+    slug: "/transportsolutions/thermal-cover",
     image: Thermohaube.src,
   },
   {
-    title: "Staubhaube für Rollcontainer",
-    slug: "/transportloesungen",
+    title: {
+      de: "Staubhaube für Rollcontainer",
+      en: "Dust Cover for Roll Containers",
+    },
+    text: {
+      de: "Die Staubhaube schützt Ihre Produkte zuverlässig vor Verschmutzung während Transport und Lagerung. Sie ist einfach zu handhaben, langlebig und in verschiedenen Größen erhältlich. Besonders nützlich in staubigen Umgebungen oder bei längerer Zwischenlagerung – damit Ihre Waren stets sauber und geschützt bleiben.",
+      en: "The dust cover reliably protects your products from contamination during transport and storage. It is easy to handle, durable, and available in various sizes. Particularly useful in dusty environments or for long-term storage – ensuring your goods stay clean and well-protected at all times.",
+    },
+    slug: "/transportsolutions/dust-cover",
     image: Staubhaube.src,
   },
 ];
@@ -42,7 +89,7 @@ const categories = [
 <section>
   <img src={Circles.src} alt="" class="img-absolute" />
   <div class="container">
-    <h2 class="section-title animatable">Unser Angebot</h2>
+    <h2 class="section-title animatable">{heading[language]}</h2>
     <div class="category-grid">
       {
         categories.map((category) => {
@@ -51,18 +98,9 @@ const categories = [
               <div class="card-title-and-text">
                 <div class="image-and-title">
                   <img src={category.image} alt="" loading="lazy" />
-                  <h2>{category.title}</h2>
+                  <h2>{category.title[language]}</h2>
                 </div>
-                <p>
-                  Lorem ipsum dolor sit amet. Et similique beatae ut illum
-                  praesentium et ipsum inventore sit dolore aspernatur eos minus
-                  laborum. Aut incidunt facilis ut possimus ratione vel quos
-                  doloremque est fuga quidem qui velit iure. Sit pariatur quia
-                  ut veniam incidunt et soluta laudantium aut voluptatem modi
-                  aut fuga quia id odio voluptas ad autem incidunt. Et tenetur
-                  voluptatum et accusamus sapiente ut galisum esse ea illo
-                  ratione a nobis neque et beatae obcaecati ut soluta dolores!
-                </p>
+                <p>{category.text[language]}</p>
               </div>
             </div>
           );

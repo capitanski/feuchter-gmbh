@@ -27,20 +27,19 @@ const showButton = page !== "projects";
         {heading}
       </h1>
       <p class="subtitle animatable">{subtitle}</p>
-      <p class="hero-paragraph">
-        {introText}
-      </p>
+      {introText && <p class="hero-paragraph">{introText}</p>}
+
       <div class="button-wrapper hero-button-wrapper">
         <Button
           linkText={buttonTranslations("contact", language)}
-          target="/contact"
+          target=`/${language}/contact`
           class="hero-button-1"
         />
         {
           !showButton && (
             <Button
               linkText={buttonTranslations("aboutus", language)}
-              target="/about"
+              target={`/${language}/about`}
               class="hero-button-2"
             />
           )
@@ -49,7 +48,7 @@ const showButton = page !== "projects";
           showButton && (
             <Button
               linkText={buttonTranslations("projects", language)}
-              target="/projects"
+              target={`/${language}/projects`}
               class="hero-button-2"
             />
           )
