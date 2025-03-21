@@ -7,6 +7,10 @@ import Neuentwicklungen from "../assets/neuentwicklungen.svg";
 import Lieferant from "../assets/Lieferant.svg";
 import Qualitaetsmanagement from "../assets/qualitaetsmanagement.svg";
 const { language } = Astro.props;
+const headline = {
+    de: "Ihre Vision – professionell umgesetzt",
+    en: "Your vision, expertly handled",
+};
 const leistungen = [
     {
         icon: Produktionsketten.src,
@@ -80,7 +84,7 @@ const leistungen = [
 <section id="usps">
     <img src={Circles.src} alt="" class="img-absolute" />
     <div class="container">
-        <h2 class="animatable">Ihr Vorhaben in den besten Händen</h2>
+        <h2 class="animatable">{headline[language]}</h2>
         <div class="rezensionen-grid">
             {
                 leistungen.map((leistung) => {
