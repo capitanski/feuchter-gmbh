@@ -1,0 +1,73 @@
+---
+import WelcomeLeftAligned from "@/components/WelcomeLeftAligned.astro";
+import Layout from "@/layouts/Layout.astro";
+import Products from "@/components/Products.astro";
+import Scribble from "@/assets/feuchter_gmbh_header.jpg";
+import Transportloesungen from "@/assets/transportloesungen.jpg";
+import Thermohaube from "@/assets/thermohaube.jpg";
+import Staubhaube from "@/assets/staubhaube.jpg";
+import type { AstroLocals } from "@/types";
+
+const { locals } = Astro as unknown as { locals: AstroLocals };
+
+const pageLanguage = locals.language;
+
+let heading = "Nachhaltige, umweltfreundliche Lösungen für Rollcontainer";
+let subtitle = "Nachhaltig sichern statt verschwenden.";
+let introText = `Wir sagen herkömmlicher Stretchfolie den Kampf an – mit innovativen, wiederverwendbaren Lösungen für die Transportsicherung von Rollcontainern. Unsere umweltfreundlichen Alternativen wie passgenaue Thermohauben und robuste Staubabdeckungen bieten nicht nur optimalen Schutz, sondern setzen auch ein klares Zeichen für Nachhaltigkeit. Schluss mit Einwegfolie – setzen Sie auf langlebige, ressourcenschonende Produkte, die Ihre Logistik effizienter und umweltfreundlicher machen.`;
+if (pageLanguage == "en") {
+  heading = "Sustainable, eco-friendly solutions for Roll cage trolleys";
+  subtitle = "Secure sustainably – no more waste.";
+  introText = `We're putting an end to conventional stretch film – with innovative, reusable solutions for securing roll containers during transport. Our eco-friendly alternatives, such as custom-fit thermal covers and durable dust protection, offer optimal protection while making a strong statement for sustainability. Say goodbye to single-use plastic and choose long-lasting, resource-saving products that make your logistics more efficient and environmentally friendly.`;
+}
+
+const categories = [
+  {
+    title: {
+      de: "Schutzwand für Rollcontainer",
+      en: "Protective Wall for Roll Containers",
+    },
+    text: {
+      de: "Die Schutzwand für Rollcontainer dient als robuster Puffer gegen Stöße und schützt empfindliche Fracht. Sie ist leicht montierbar, wiederverwendbar und erhöht die Sicherheit beim Transport. Ideal für Logistikunternehmen und Lagerhaltung, bei denen sensible Güter zuverlässig gesichert werden müssen – effizient und langlebig.",
+      en: "The protective wall for roll containers acts as a sturdy buffer against impact and protects sensitive cargo. It is easy to install, reusable, and enhances transport safety. Ideal for logistics companies and storage environments where delicate goods must be reliably secured – efficient and long-lasting.",
+    },
+    slug: "transportsolutions/protective-wall",
+    image: Transportloesungen.src,
+  },
+  {
+    title: {
+      de: "Thermohaube für Rollcontainer",
+      en: "Thermal Cover for Roll Containers",
+    },
+    text: {
+      de: "Unsere Thermohauben ermöglichen den sicheren Transport temperaturempfindlicher Waren. Sie halten Hitze, Kälte und Feuchtigkeit zuverlässig fern und sorgen für ein konstantes Klima im Inneren des Rollcontainers. Besonders geeignet für Lebensmittel, Pharma oder Chemie – überall, wo konstante Temperaturen essenziell sind.",
+      en: "Our thermal covers enable the safe transport of temperature-sensitive goods. They effectively protect against heat, cold, and moisture, ensuring a stable climate inside the roll container. Especially suitable for food, pharmaceuticals, or chemicals – wherever constant temperatures are critical during storage or delivery.",
+    },
+    slug: "transportsolutions/thermal-cover",
+    image: Thermohaube.src,
+  },
+  {
+    title: {
+      de: "Staubhaube für Rollcontainer",
+      en: "Dust Cover for Roll Containers",
+    },
+    text: {
+      de: "Die Staubhaube schützt Ihre Produkte zuverlässig vor Verschmutzung während Transport und Lagerung. Sie ist einfach zu handhaben, langlebig und in verschiedenen Größen erhältlich. Besonders nützlich in staubigen Umgebungen oder bei längerer Zwischenlagerung – damit Ihre Waren stets sauber und geschützt bleiben.",
+      en: "The dust cover reliably protects your products from contamination during transport and storage. It is easy to handle, durable, and available in various sizes. Particularly useful in dusty environments or for long-term storage – ensuring your goods stay clean and well-protected at all times.",
+    },
+    slug: "transportsolutions/dust-cover",
+    image: Staubhaube.src,
+  },
+];
+---
+
+<Layout>
+  <WelcomeLeftAligned
+    language={pageLanguage}
+    heading={heading}
+    subtitle={subtitle}
+    introText={introText}
+    Scribble={Transportloesungen}
+  />
+  <Products language={pageLanguage} categories={categories} />
+</Layout>

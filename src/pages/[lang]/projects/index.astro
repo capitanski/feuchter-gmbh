@@ -12,11 +12,15 @@ const pageLanguage = locals.language;
 let heading = "Projekte & Referenzen";
 let subtitle =
   "Vom Unterhemd bis zum Einsatzanzug - Seit 1957 bieten wir höchste qualitätsstandards";
+let introText =
+  "Ob funktionale Kleidung für den täglichen Einsatz, maßgeschneiderte Lösungen für Behörden oder großangelegte Serienproduktionen: Unsere langjährige Erfahrung, Innovationskraft und Verlässlichkeit machen uns zum starken Partner für anspruchsvolle Textilprojekte. Werfen Sie einen Blick auf ausgewählte Referenzen und überzeugen Sie sich selbst.";
 
 if (pageLanguage == "en") {
   heading = "Projects & References";
   subtitle =
     "From underwear to tactical suits – since 1957, we’ve been delivering the highest quality standards";
+  introText =
+    "Whether it's functional clothing for daily use, custom-made solutions for government agencies, or large-scale production runs – our decades of experience, innovation, and reliability make us a strong partner for demanding textile projects.";
 }
 ---
 
@@ -26,6 +30,7 @@ if (pageLanguage == "en") {
     heading={heading}
     subtitle={subtitle}
     Scribble={Scribble}
+    introText={introText}
     page="projects"
   />
   <Projects language={pageLanguage} />
