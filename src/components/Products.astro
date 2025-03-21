@@ -1,0 +1,144 @@
+---
+import Transportloesungen from "@/assets/transportloesungen.jpg";
+import Bekleidung from "@/assets/bekleidung.jpg";
+import Behoerdenkleidung from "@/assets/behoerden.jpg";
+import Thermohaube from "@/assets/thermohaube.jpg";
+import Staubhaube from "@/assets/staubhaube.jpg";
+import { buttonTranslations } from "@/content/translations";
+import Arrow from "@/assets/Arrow_link.svg";
+import Circles from "@/assets/Swirl.png";
+const { language, categories } = Astro.props;
+const heading = {
+  de: "Unser Angebot",
+  en: "What we have to offer",
+};
+---
+
+<section>
+  <img src={Circles.src} alt="" class="img-absolute" />
+  <div class="container">
+    <h2 class="section-title animatable">{heading[language]}</h2>
+    <div class="category-grid">
+      {
+        categories.map((category) => {
+          return (
+            <div class="category-card animate-in-right">
+              <div class="card-title-and-text">
+                <div class="image-and-title">
+                  <img src={category.image} alt="" loading="lazy" />
+                  <h2>{category.title[language]}</h2>
+                </div>
+                <p>{category.text[language]}</p>
+              </div>
+              <a
+                href={`/${language}/projects/${category.slug}`}
+                class="project-link"
+              >
+                <img src={Arrow.src} alt="" />
+                <span>{buttonTranslations("toproducts", language)}</span>
+              </a>
+            </div>
+          );
+        })
+      }
+    </div>
+  </div>
+</section>
+<style>
+  section {
+    padding: 100px 0;
+    background: var(--verydarkgray);
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+  }
+  .img-absolute {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    opacity: 0.1;
+    width: 600px;
+    object-fit: contain;
+    @media screen and (max-width: 820px) {
+      opacity: 0.1;
+      width: 90%;
+      top: 0;
+    }
+  }
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 50px;
+    padding: 20px;
+  }
+  .category-grid {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 25px;
+    row-gap: 80px;
+    @media screen and (max-width: 820px) {
+      grid-template-columns: 1fr;
+    }
+  }
+  .category-card {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 10px;
+  }
+  .category-card img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 40px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 25px 50px -12px;
+  }
+  .image-and-title {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 40px;
+  }
+  h2 {
+    font-size: 1.4rem;
+    font-family: "Inter", sans-serif;
+    margin: 0;
+    color: var(--lightgray);
+  }
+  p {
+    color: var(--lightgray);
+    font-size: 0.8rem;
+  }
+  .section-title {
+    font-family: "Afacadflux", sans-serif;
+    font-size: 3rem;
+    text-transform: uppercase;
+  }
+  .project-link {
+    color: var(--sand);
+    text-decoration: none;
+    font-size: 0.8rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    transition: gap 0.3s ease-in-out;
+    gap: 10px;
+    font-family: "Afacadflux", sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+  }
+  .project-link:hover {
+    gap: 20px;
+  }
+  .project-link img {
+    width: 30px;
+    height: 30px;
+  }
+</style>

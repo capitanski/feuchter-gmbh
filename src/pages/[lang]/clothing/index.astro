@@ -1,0 +1,76 @@
+---
+import WelcomeLeftAligned from "@/components/WelcomeLeftAligned.astro";
+import Layout from "@/layouts/Layout.astro";
+import Products from "@/components/Products.astro";
+import Scribble from "@/assets/feuchter_gmbh_header.jpg";
+import Transportloesungen from "@/assets/transportloesungen.jpg";
+import Bekleidung from "@/assets/bekleidung.jpg";
+import Behoerdenkleidung from "@/assets/behoerden.jpg";
+import type { AstroLocals } from "@/types";
+
+const { locals } = Astro as unknown as { locals: AstroLocals };
+
+const pageLanguage = locals.language;
+
+let heading =
+  "Von Militär- & Survivalkleidung über Behördenkleidung bis hin zu feinster Corporate Fashion";
+let subtitle = "Egal ob für Armeen, Behörden, Onlineshops oder Unternehmen";
+let introText = `Von robuster Militär- und Survivalkleidung über funktionale Behördenausstattung bis hin zu maßgeschneiderter Corporate Fashion – wir statten Sie aus. Ob für Armeen, Einsatzkräfte, Onlineshops oder Unternehmen: Unsere Produkte vereinen Qualität, Funktionalität und Design auf höchstem Niveau. Vertrauen Sie auf Erfahrung, Präzision und textile Lösungen, die den Unterschied machen.`;
+if (pageLanguage == "en") {
+  heading =
+    "From military and survival clothing to official uniforms and premium corporate fashion";
+  subtitle =
+    "Whether for armed forces, government agencies, online retailers, or businesses";
+  introText = `From rugged military and survival apparel to functional gear for authorities and tailored corporate fashion – we’ve got you covered. Whether for armed forces, emergency services, online retailers, or businesses: our products combine quality, functionality, and design at the highest level. Rely on experience, precision, and textile solutions that make a difference.`;
+}
+
+const categories = [
+  {
+    title: {
+      de: "Militär- & Survivalkleidung",
+      en: "Military & Survival Clothing",
+    },
+    text: {
+      de: "Unsere Militär- und Survivalkleidung bietet Schutz, Komfort und Funktionalität in extremen Umgebungen. Entwickelt für höchste Anforderungen, eignet sie sich ideal für taktische Einsätze, Outdoor-Abenteuer und Notfallsituationen. Strapazierfähige Materialien und durchdachtes Design garantieren zuverlässige Leistung, auch unter härtesten Bedingungen – weltweit einsetzbar.",
+      en: "Our military and survival clothing provides protection, comfort, and functionality in extreme environments. Designed for the toughest demands, it's perfect for tactical missions, outdoor adventures, and emergency situations. Durable materials and thoughtful design ensure reliable performance, even under the harshest conditions – trusted worldwide.",
+    },
+    slug: "clothing/military-and-survival",
+    image: Bekleidung.src,
+  },
+  {
+    title: {
+      de: "Behördenkleidung",
+      en: "Official Agency Clothing",
+    },
+    text: {
+      de: "Unsere Behördenkleidung erfüllt alle Anforderungen an Funktion, Sicherheit und Tragekomfort. Ob Polizei, Zoll oder Rettungsdienste – wir bieten maßgeschneiderte Lösungen für den professionellen Alltag. Die Kombination aus modernen Stoffen, robustem Aufbau und individueller Ausstattung macht unsere Kleidung zum zuverlässigen Partner im Einsatz.",
+      en: "Our official agency clothing meets all requirements for function, safety, and wearing comfort. Whether for police, customs, or emergency services – we offer custom solutions for everyday professional use. Modern fabrics, durable construction, and tailored features make our garments a dependable choice on duty.",
+    },
+    slug: "clothing/officialwear",
+    image: Behoerdenkleidung.src,
+  },
+  {
+    title: {
+      de: "Corporate Fashion",
+      en: "Corporate Fashion",
+    },
+    text: {
+      de: "Mit unserer Corporate Fashion stärken Sie das Erscheinungsbild Ihrer Marke durch professionelle, stilvolle Kleidung. Ob für Messen, Kundenkontakt oder interne Veranstaltungen – wir bieten hochwertige Textilien mit individuellem Design. Komfort, Qualität und Wiedererkennung stehen dabei im Mittelpunkt jeder Kollektion, die wir entwickeln.",
+      en: "Our corporate fashion enhances your brand's appearance with professional, stylish clothing. Whether for trade fairs, customer interactions, or internal events – we offer high-quality textiles with custom designs. Comfort, quality, and brand recognition are at the heart of every collection we create for you.",
+    },
+    slug: "clothing/corporate-fashion",
+    image: Behoerdenkleidung.src,
+  },
+];
+---
+
+<Layout>
+  <WelcomeLeftAligned
+    language={pageLanguage}
+    heading={heading}
+    subtitle={subtitle}
+    introText={introText}
+    Scribble={Scribble}
+  />
+  <Products language={pageLanguage} categories={categories} />
+</Layout>

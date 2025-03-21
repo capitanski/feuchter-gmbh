@@ -121,6 +121,16 @@ export function buttonTranslations(text, lang) {
           break;
       }
       break;
+    case "toproducts":
+      switch (lang) {
+        case "de":
+          returnValue = "zu den Produkten";
+          break;
+        case "en":
+          returnValue = "to the products";
+          break;
+      }
+      break;
   }
   return returnValue;
 }
