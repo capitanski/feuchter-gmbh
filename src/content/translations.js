@@ -111,6 +111,16 @@ export function buttonTranslations(text, lang) {
           break;
       }
       break;
+    case "aboutus":
+      switch (lang) {
+        case "de":
+          returnValue = "Über uns";
+          break;
+        case "en":
+          returnValue = "About us";
+          break;
+      }
+      break;
   }
   return returnValue;
 }
