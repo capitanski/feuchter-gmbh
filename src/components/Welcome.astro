@@ -3,6 +3,9 @@ import Button from "../components/Button.astro";
 import Circles from "../assets/Circles.svg";
 import Scribble from "../assets/feuchter_gmbh_header.jpg";
 import { buttonTranslations } from "@/content/translations";
+import translate from "translate";
+translate.engine = "libre";
+
 const { language } = Astro.props;
 
 let heading = "Professionelle Textil- & Bekleidungslösungen seit 1957";
@@ -13,6 +16,8 @@ if (language == "en") {
   subtitle = "For Businesses, Military, and Government Agencies";
   introText = `Since 1957, we have been one of the leading producers of clothing for armies, government agencies, and businesses worldwide. Rely on our many years of experience in development, production, and delivery. Whether you are looking for a manufacturer for your own online shop or retail business, or you need to outfit your employees with new uniforms – you are in the best hands with us.`;
 }
+const translated = await translate(introText, "en");
+console.log(translated);
 ---
 
 <section>
