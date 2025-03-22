@@ -12,7 +12,7 @@ const links = navLinks[language as keyof TranslatedNavigation];
 
 <nav id="footer">
   <div class="nav-inner">
-    <div>
+    <div class="logo-and-legal">
       <img src={Logo.src} alt="" class="logo" loading="lazy" />
       <div class="links legal">
         <a href={`/${language}/legal/imprint`}
@@ -53,6 +53,22 @@ const links = navLinks[language as keyof TranslatedNavigation];
     z-index: 3;
     @media screen and (max-width: 767px) {
       width: 80px;
+    }
+  }
+  .logo-and-legal {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    @media screen and (max-width: 820px) {
+      align-items: center !important;
+    }
+  }
+  .logo-and-legal a {
+    width: 100%;
+    text-align: left;
+    @media screen and (max-width: 820px) {
+      text-align: center;
     }
   }
   .links {
