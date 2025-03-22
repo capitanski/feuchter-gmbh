@@ -5,19 +5,28 @@ import Menu from "../assets/Menu.svg";
 import LangSwitcher from "./LangSwitcher.astro";
 import { navLinks } from "@/content/navLinks";
 import type { TranslatedNavigation } from "@/types";
+import { buttonTranslations } from "@/content/translations";
 const { languages, language } = Astro.props;
 const links = navLinks[language as keyof TranslatedNavigation];
 ---
 
 <nav id="footer">
   <div class="nav-inner">
-    <img
-      src={Logo.src}
-      alt=""
-      class="logo"
-      fetchpriority="high"
-      loading="eager"
-    />
+    <div>
+      <img src={Logo.src} alt="" class="logo" loading="lazy" />
+      <div class="links legal">
+        <a href={`/${language}/legal/imprint`}
+          >{buttonTranslations("impressum", language)}</a
+        >
+        <a href={`/${language}/legal/privacy`}
+          >{buttonTranslations("datenschutz", language)}</a
+        >
+        <a href={`/${language}/legal/agbs`}
+          >{buttonTranslations("agbs", language)}</a
+        >
+      </div>
+    </div>
+
     <div class="links">
       <LangSwitcher langs={languages} />
       {
@@ -52,6 +61,10 @@ const links = navLinks[language as keyof TranslatedNavigation];
     justify-content: flex-start;
     align-items: center;
     gap: 15px;
+  }
+  .legal {
+    align-items: flex-start;
+    margin-top: 20px;
   }
   a {
     color: var(--lightgray);

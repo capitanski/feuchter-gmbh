@@ -131,6 +131,36 @@ export function buttonTranslations(text, lang) {
           break;
       }
       break;
+    case "impressum":
+      switch (lang) {
+        case "de":
+          returnValue = "Impressum";
+          break;
+        case "en":
+          returnValue = "Imprint";
+          break;
+      }
+      break;
+    case "datenschutz":
+      switch (lang) {
+        case "de":
+          returnValue = "Datenschutzerklärung";
+          break;
+        case "en":
+          returnValue = "Privacy";
+          break;
+      }
+      break;
+    case "agbs":
+      switch (lang) {
+        case "de":
+          returnValue = "AGB";
+          break;
+        case "en":
+          returnValue = "Terms and Conditions";
+          break;
+      }
+      break;
   }
   return returnValue;
 }

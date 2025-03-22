@@ -1,40 +1,40 @@
-.rich-text h1 {
+.rich-text-dark h1 {
   font-size: 2.1rem;
   line-height: 120%;
 }
 
-.rich-text h2 {
+.rich-text-dark h2 {
   font-size: 1.7rem;
 }
 
-.rich-text h3 {
+.rich-text-dark h3 {
   font-size: 1.6rem;
 }
 
-.rich-text h4 {
+.rich-text-dark h4 {
   font-size: 1.4rem;
 }
 
-.rich-text h5 {
+.rich-text-dark h5 {
   font-size: 1.2rem;
 }
 
-.rich-text h6 {
+.rich-text-dark h6 {
   font-size: 1rem;
 }
 
-.rich-text h1,
+.rich-text-dark h1,
 h2,
 h3,
 h4,
 h5,
 h6 {
-  color: var(--darkgray);
+  color: var(--lightgray);
   letter-spacing: -1px;
   margin: 20px 0;
 }
 
-.rich-text * {
+.rich-text-dark * {
   word-wrap: break-word;
   /* Alternative Schreibweise */
   overflow-wrap: break-word;
@@ -43,9 +43,10 @@ h6 {
   /* Falls Text zuvor als nowrap gesetzt wurde */
 }
 
-p,
-ul {
-  color: var(--darkgray);
+.rich-text-dark p,
+ul,
+a {
+  color: var(--lightgray);
   font-size: 0.9rem;
   font-weight: 400;
 }

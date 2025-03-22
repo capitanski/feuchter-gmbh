@@ -1,0 +1,33 @@
+---
+import fs from "fs/promises";
+import Layout from "@/layouts/Layout.astro";
+const { language } = Astro.locals;
+let richtext = "";
+try {
+  richtext = await fs.readFile(
+    `./src/content/htmldata/legal/privacy_${language}.html`,
+    "utf-8"
+  );
+} catch (err) {
+  return new Response(null, { status: 404 });
+}
+---
+
+<Layout>
+  <section>
+    <div class="container rich-text-dark" set:html={richtext} />
+  </section>
+</Layout>
+<style>
+  section {
+    padding: 100px 20px;
+    background: var(--verydarkgray) !important;
+  }
+  .container {
+    max-width: 1200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+</style>
