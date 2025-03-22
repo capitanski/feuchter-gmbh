@@ -1,35 +1,42 @@
 .rich-text h1 {
   font-size: 2.1rem;
   line-height: 120%;
+  color: var(--verydarkgray);
+  letter-spacing: -1px;
+  margin: 20px 0;
 }
 
 .rich-text h2 {
   font-size: 1.7rem;
+  color: var(--verydarkgray);
+  letter-spacing: -1px;
+  margin: 20px 0;
 }
 
 .rich-text h3 {
   font-size: 1.6rem;
+  color: var(--verydarkgray);
+  letter-spacing: -1px;
+  margin: 20px 0;
 }
 
 .rich-text h4 {
   font-size: 1.4rem;
+  color: var(--verydarkgray);
+  letter-spacing: -1px;
+  margin: 20px 0;
 }
 
 .rich-text h5 {
   font-size: 1.2rem;
+  color: var(--verydarkgray);
+  letter-spacing: -1px;
+  margin: 20px 0;
 }
 
 .rich-text h6 {
   font-size: 1rem;
-}
-
-.rich-text h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  color: var(--darkgray);
+  color: var(--verydarkgray);
   letter-spacing: -1px;
   margin: 20px 0;
 }
@@ -43,9 +50,18 @@ h6 {
   /* Falls Text zuvor als nowrap gesetzt wurde */
 }
 
-p,
-ul {
-  color: var(--darkgray);
+.rich-text p {
+  color: var(--verydarkgray);
+  font-size: 0.9rem;
+  font-weight: 400;
+}
+.rich-text ul {
+  color: var(--verydarkgray);
+  font-size: 0.9rem;
+  font-weight: 400;
+}
+.rich-text a {
+  color: var(--verydarkgray);
   font-size: 0.9rem;
   font-weight: 400;
 }
