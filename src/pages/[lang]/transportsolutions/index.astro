@@ -3,6 +3,7 @@ import WelcomeLeftAligned from "@/components/WelcomeLeftAligned.astro";
 import Layout from "@/layouts/Layout.astro";
 import Products from "@/components/Products.astro";
 import Scribble from "@/assets/feuchter_gmbh_header.jpg";
+import HeaderImage from "@/assets/transportwand_header.jpg";
 import Transportloesungen from "@/assets/transportloesungen.jpg";
 import Thermohaube from "@/assets/thermohaube.jpg";
 import Staubhaube from "@/assets/staubhaube.jpg";
@@ -67,7 +68,7 @@ const categories = [
     heading={heading}
     subtitle={subtitle}
     introText={introText}
-    Scribble={Transportloesungen}
+    Scribble={HeaderImage}
   />
   <Products language={pageLanguage} categories={categories} />
 </Layout>
