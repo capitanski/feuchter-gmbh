@@ -28,7 +28,8 @@ const subtitle = {
         projects.map((project) => {
           return (
             <div class="rezension-card animate-in-right">
-              <div class="icon-and-title">
+              <div>
+                <div class="icon-and-title">
                 <div class="project-image-wrapper">
                   {project.images.map((image) => {
                     return (
@@ -61,6 +62,8 @@ const subtitle = {
                 <p class="card-title">{project.title[pageLanguage]}</p>
               </div>
               <p class="card-text">{`${project.shortDescription[pageLanguage].slice(0, 200)}...`}</p>
+              </div>
+              
               <a
                 href={`/${pageLanguage}/projects/${project.slug}`}
                 class="project-link"
@@ -134,7 +137,7 @@ const subtitle = {
     position: relative;
     display: flex;
     flex-direction: column;
-    justify-content: flex-start;
+    justify-content: space-between;
     align-items: flex-start;
     gap: 10px;
     background: #f3f1eb;

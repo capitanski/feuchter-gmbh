@@ -30,10 +30,7 @@ const heading = {
                 </div>
                 <p>{category.text[language]}</p>
               </div>
-              <a
-                href={`/${language}/projects/${category.slug}`}
-                class="project-link"
-              >
+              <a href={`/${language}/${category.slug}`} class="project-link">
                 <img src={Arrow.src} alt="" />
                 <span>{buttonTranslations("toproducts", language)}</span>
               </a>
