@@ -44,13 +44,13 @@ const subtitle = {
                   })}
                 </div>
                 <div class="project-tag-wrapper">
-                  {project.tags[pageLanguage].map((tag) => {
+                 <!-- {project.tags[pageLanguage].map((tag) => {
                     return <ProjectTag tagContent={tag} />;
-                  })}
+                  })}-->
                   <ProjectTag
                     tagContent={`${project.amount} ${translations(
                       "menge",
-                      pageLanguage
+                      pageLanguage,
                     )}`}
                   />
                   <ProjectTag tagContent={project.customer[pageLanguage]} />
@@ -60,7 +60,7 @@ const subtitle = {
                 </div>
                 <p class="card-title">{project.title[pageLanguage]}</p>
               </div>
-              <p class="card-text">{project.shortDescription[pageLanguage]}</p>
+              <p class="card-text">{`${project.shortDescription[pageLanguage].slice(0, 200)}...`}</p>
               <a
                 href={`/${pageLanguage}/projects/${project.slug}`}
                 class="project-link"
@@ -121,13 +121,13 @@ const subtitle = {
     display: grid;
     gap: 20px;
     row-gap: 80px;
-    grid-template-columns: auto auto auto;
+    grid-template-columns: 1fr 1fr 1fr;
     margin-top: 55px;
     @media screen and (max-width: 820px) {
-      grid-template-columns: auto;
+      grid-template-columns: 1fr;
     }
     @media screen and (max-width: 1024px) and (min-width: 821px) {
-      grid-template-columns: auto auto;
+      grid-template-columns: 1fr 1fr;
     }
   }
   .rezension-card {
