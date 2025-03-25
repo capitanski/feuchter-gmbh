@@ -14,7 +14,7 @@ const { categories, products, pageLanguage } = Astro.props;
                 .filter((product) => product.category.key == category)
                 .map((p) => {
                   return (
-                    <div class="product-grid-item">
+                    <div class="product-grid-item animatable">
                       <img src={p.mainImage} alt="" />
                       <p>{p.title[pageLanguage]}</p>
                     </div>
@@ -55,7 +55,6 @@ const { categories, products, pageLanguage } = Astro.props;
     align-items: flex-start;
     gap: 10px;
     cursor: pointer;
-    transition: gap 0.3s ease-in-out;
   }
   .product-grid-item:hover {
     gap: 15px;
