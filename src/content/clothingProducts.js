@@ -1,4 +1,4 @@
-import { clothingCategories } from "./productcategories";
+import { clothingCategories } from "./clothingCategories";
 const products = [
     {
         title: {

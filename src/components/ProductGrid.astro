@@ -1,22 +1,76 @@
 ---
-const { categories, products, pageLanguage } = Astro.props;
+const { categories, products, pageLanguage, searchCategory } = Astro.props;
 ---
 
 <section>
   <div class="container">
+    <div class="intro">
+      <div class="headline-and-subtitle">
+        <h1>
+          Von Militär- & Survivalkleidung über Behördenkleidung bis hin zu
+          feinster Corporate Fashion
+        </h1>
+        <p class="subtitle">
+          Egal ob für Armeen, Behörden, Onlineshops oder Unternehmen
+        </p>
+      </div>
+      <p class="intro-text">
+        Von robuster Militär- und Survivalkleidung über funktionale
+        Behördenausstattung bis hin zu maßgeschneiderter Corporate Fashion – wir
+        statten Sie aus. Ob für Armeen, Einsatzkräfte, Onlineshops oder
+        Unternehmen: Unsere Produkte vereinen Qualität, Funktionalität und
+        Design auf höchstem Niveau. Vertrauen Sie auf Erfahrung, Präzision und
+        textile Lösungen, die den Unterschied machen.
+      </p>
+    </div>
+
+    <div class="filter-link-container">
+      <a
+        href=`clothing?category=military-and-survival`
+        class={searchCategory === "military-and-survival"
+          ? "active filter-link"
+          : "filter-link"}>Militär- und Survivalkleidung</a
+      >
+      <a
+        href=`clothing?category=officialwear`
+        class={searchCategory === "officialwear"
+          ? "active filter-link"
+          : "filter-link"}>Behörden- & Securitykleidung</a
+      >
+      <a
+        href=`clothing?category=corporate-fashion`
+        class={searchCategory === "corporate-fashion"
+          ? "active filter-link"
+          : "filter-link"}>Corporate Fashion</a
+      >
+    </div>
+
     {
       categories.map((category) => {
         return (
           <>
-            <h2>{category}</h2>
+            <h2>{category.value}</h2>
             <div class="product-grid">
               {products
-                .filter((product) => product.category.key == category)
+                .filter(
+                  (product) =>
+                    product.category.key == category.key &&
+                    product.category.overall == searchCategory,
+                )
                 .map((p) => {
                   return (
                     <div class="product-grid-item animatable">
                       <img src={p.mainImage} alt="" />
-                      <p>{p.title[pageLanguage]}</p>
+                      <div>
+                        <span>Original TL</span>
+                        <p class="product-title">{p.title[pageLanguage]}</p>
+                        <details class="rich-text-dark">
+                          <summary>Technische Daten</summary>
+                          <img src={p.mainImage} alt="" />
+                          <p>{p.description[pageLanguage]}</p>
+                          <small set:html={p.technicalData[pageLanguage]} />
+                        </details>
+                      </div>
                     </div>
                   );
                 })}
@@ -42,6 +96,7 @@ const { categories, products, pageLanguage } = Astro.props;
     color: var(--sand);
     margin-bottom: 30px;
     margin-top: 30px;
+    font-size: 1.8rem;
   }
   .product-grid {
     display: grid;
@@ -60,17 +115,80 @@ const { categories, products, pageLanguage } = Astro.props;
     gap: 15px;
   }
   .product-grid-item img {
-    width: 100px;
-    height: 100px;
+    width: 75px;
+    height: 75px;
     object-fit: cover;
     border-radius: 15px;
   }
-  .product-grid-item p {
+  .product-title {
     font-family: "Afacadflux", sans-serif;
     text-transform: uppercase;
     letter-spacing: 2px;
     color: var(--lightgray);
     font-weight: 700;
     margin: 0 !important;
+  }
+  .product-grid-item span {
+    color: var(--sand);
+    font-weight: 200;
+    font-size: 0.7rem;
+    font-family: "Afacadflux", sans-serif;
+    text-transform: uppercase;
+  }
+  details {
+    color: var(--lightgray) !important;
+    font-family: "Inter", sans-serif !important;
+    font-size: 0.7rem;
+  }
+  .filter-link {
+    color: var(--sand);
+    text-decoration: none;
+    padding: 5px 15px;
+    box-shadow:
+      rgba(0, 0, 0, 0.25) 0px 25px 50px -12px,
+      0 0 0 0.35px var(--sand) !important;
+    font-size: 0.7rem;
+    font-weight: 400;
+    border-radius: 15px;
+  }
+  .active {
+    color: var(--verydarkgray) !important;
+    background: var(--sand) !important;
+  }
+  .filter-link-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 10px;
+  }
+  .subtitle {
+    color: var(--sand);
+    font-family: "Afacadflux", sans-serif;
+    text-transform: uppercase;
+    margin: 0;
+    font-size: 1.3rem;
+  }
+  h1 {
+    font-family: "Afacadflux", sans-serif;
+    text-transform: uppercase;
+    margin: 0;
+    font-size: 2rem;
+    line-height: 2rem;
+    font-weight: 700;
+  }
+  .intro-text {
+    margin: 0;
+    color: var(--lightgray);
+    font-size: 0.8rem;
+  }
+  .intro {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 10px;
+    max-width: 60%;
+    padding: 0 0 50px 0;
   }
 </style>

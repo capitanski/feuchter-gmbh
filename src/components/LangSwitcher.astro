@@ -2,6 +2,15 @@
 const currentLang = Astro.params.lang ?? "de"; // Fallback auf Deutsch
 const currentPath = Astro.url.pathname; // Die aktuelle URL
 const { langs } = Astro.props as { langs: { lang: string; url: string }[] };
+// Die nächsten 3 Zeilen sind wichtig, wenn man auf Seiten die Sprache wechselt,
+// auf denen Search Params genutzt werden
+const { url } = Astro.request;
+const searchParams = new URL(url).searchParams;
+const searchCategory = searchParams.get("category");
+let searchparamString = "";
+if (searchCategory) {
+  searchparamString = `?category=${searchCategory}`;
+}
 ---
 
 <nav>
@@ -9,7 +18,7 @@ const { langs } = Astro.props as { langs: { lang: string; url: string }[] };
     {
       langs.map(({ lang, url }) => (
         <li>
-          <a href={url} class={currentLang === lang ? "active" : ""}>
+          <a href=`${url}${searchparamString}` class={currentLang === lang ? "active" : ""}>
             {lang.toUpperCase()}
           </a>
         </li>
