@@ -1,0 +1,77 @@
+---
+const { categories, products, pageLanguage } = Astro.props;
+---
+
+<section>
+  <div class="container">
+    {
+      categories.map((category) => {
+        return (
+          <>
+            <h2>{category}</h2>
+            <div class="product-grid">
+              {products
+                .filter((product) => product.category.key == category)
+                .map((p) => {
+                  return (
+                    <div class="product-grid-item">
+                      <img src={p.mainImage} alt="" />
+                      <p>{p.title[pageLanguage]}</p>
+                    </div>
+                  );
+                })}
+            </div>
+          </>
+        );
+      })
+    }
+  </div>
+</section>
+<style>
+  section {
+    background: var(--verydarkgray);
+    padding: 150px 0;
+  }
+  .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+  h2 {
+    color: var(--sand);
+    margin-bottom: 30px;
+    margin-top: 30px;
+  }
+  .product-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 5px;
+  }
+  .product-grid-item {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 10px;
+    cursor: pointer;
+    transition: gap 0.3s ease-in-out;
+  }
+  .product-grid-item:hover {
+    gap: 15px;
+  }
+  .product-grid-item img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 15px;
+  }
+  .product-grid-item p {
+    font-family: "Afacadflux", sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: var(--lightgray);
+    font-weight: 700;
+    margin: 0 !important;
+  }
+</style>

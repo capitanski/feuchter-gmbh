@@ -1,28 +1,28 @@
 ---
 // Militär und Survival oder Behördenkleidung oder Corporate Fashion
 import Layout from "@/layouts/Layout.astro";
+import ProductGrid from "@/components/ProductGrid.astro";
 import products from "@/content/clothing";
 import { clothingCategories } from "@/content/productcategories";
 import type { AstroLocals } from "@/types";
+
+const categories = Array.from(
+  new Set(
+    products.map((product) => {
+      return product.category.key;
+    })
+  )
+);
+console.log(categories);
 
 const { locals } = Astro as unknown as { locals: AstroLocals };
 const pageLanguage = locals.language;
 ---
 
 <Layout>
-    {
-        Object.keys(clothingCategories).map((category) => {
-            return (
-                <h2>{clothingCategories[category][pageLanguage]}</h2>
-                <p>
-                    {products
-                        .filter((product) => product.category.key == category)
-                        .map((p) => {
-                            return <span>{p.title[pageLanguage]}</span>;
-                        })}
-                </p>
-            );
-        })
-    }
-    <p></p>
+  <ProductGrid
+    categories={categories}
+    products={products}
+    pageLanguage={pageLanguage}
+  />
 </Layout>
