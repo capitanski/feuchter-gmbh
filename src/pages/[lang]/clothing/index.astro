@@ -4,6 +4,7 @@ import Layout from "@/layouts/Layout.astro";
 import Products from "@/components/Products.astro";
 import Scribble from "@/assets/feuchter_gmbh_header.jpg";
 import ProductGrid from "@/components/ProductGrid.astro";
+import HeaderImage from "@/assets/feuchter_gmbh_header.jpg";
 import products from "@/content/clothingProducts";
 import { clothingCategories } from "@/content/clothingCategories";
 import type { AstroLocals } from "@/types";
@@ -34,6 +35,33 @@ if (categories.length == 0) {
   return new Response(null, { status: 404 });
 }
 
+const links = [
+  {
+    href: `clothing?category=military-and-survival`,
+    searchCategory: "military-and-survival",
+    linkText: {
+      de: "Militär- und Survivalkleidung",
+      en: "Military- and Surivalclothing",
+    },
+  },
+  {
+    href: `clothing?category=officialwear`,
+    searchCategory: "officialwear",
+    linkText: {
+      de: "Behörden- & Securitykleidung",
+      en: "Official- and Securityclothing",
+    },
+  },
+  {
+    href: `clothing?category=corporate-fashion`,
+    searchCategory: "corporate-fashion",
+    linkText: {
+      de: "Corporate Fashion",
+      en: "Corporate Fashion",
+    },
+  },
+];
+
 let heading =
   "Von Militär- & Survivalkleidung über Behördenkleidung bis hin zu feinster Corporate Fashion";
 let subtitle = "Egal ob für Armeen, Behörden, Onlineshops oder Unternehmen";
@@ -53,5 +81,10 @@ if (pageLanguage == "en") {
     products={products}
     pageLanguage={pageLanguage}
     searchCategory={searchCategory}
+    links={links}
+    headerImage={HeaderImage}
+    heading={heading}
+    introText={introText}
+    subtitle={subtitle}
   />
 </Layout>

@@ -1,8 +1,16 @@
 ---
-const { categories, products, pageLanguage, searchCategory } = Astro.props;
+const {
+  categories,
+  products,
+  pageLanguage,
+  searchCategory,
+  links,
+  headerImage,
+} = Astro.props;
 ---
 
 <section>
+  <img src={headerImage.src} alt="" class="header-image" />
   <div class="container">
     <div class="intro">
       <div class="headline-and-subtitle">
@@ -25,24 +33,22 @@ const { categories, products, pageLanguage, searchCategory } = Astro.props;
     </div>
 
     <div class="filter-link-container">
-      <a
-        href=`clothing?category=military-and-survival`
-        class={searchCategory === "military-and-survival"
-          ? "active filter-link"
-          : "filter-link"}>Militär- und Survivalkleidung</a
-      >
-      <a
-        href=`clothing?category=officialwear`
-        class={searchCategory === "officialwear"
-          ? "active filter-link"
-          : "filter-link"}>Behörden- & Securitykleidung</a
-      >
-      <a
-        href=`clothing?category=corporate-fashion`
-        class={searchCategory === "corporate-fashion"
-          ? "active filter-link"
-          : "filter-link"}>Corporate Fashion</a
-      >
+      {
+        links.map((link) => {
+          return (
+            <a
+              href={link.href}
+              class={
+                link.searchCategory === searchCategory
+                  ? "active filter-link"
+                  : "filter-link"
+              }
+            >
+              {link.linkText[pageLanguage]}
+            </a>
+          );
+        })
+      }
     </div>
 
     {
@@ -83,8 +89,20 @@ const { categories, products, pageLanguage, searchCategory } = Astro.props;
 </section>
 <style>
   section {
-    background: var(--verydarkgray);
+    background: rgba(0, 0, 0, 0.8);
     padding: 150px 0;
+    position: relative;
+  }
+  .header-image {
+    width: 100%;
+    height: 100%;
+    border-radius: 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    object-fit: cover;
+    z-index: -1;
+    opacity: 1;
   }
   .container {
     display: flex;

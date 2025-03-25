@@ -19,11 +19,11 @@ export const navLinks: TranslatedNavigation = {
     },
     {
       text: "Bekleidung",
-      to: "clothing",
+      to: "clothing?category=military-and-survival",
     },
     {
       text: "Transportlösungen",
-      to: "transportsolutions",
+      to: "transportsolutions?category=protective-wall",
     },
   ],
   en: [
@@ -47,11 +47,11 @@ export const navLinks: TranslatedNavigation = {
 
     {
       text: "Clothing",
-      to: "clothing",
+      to: "clothing?category=military-and-survival",
     },
     {
       text: "Transport Solutions",
-      to: "transportsolutions",
+      to: "transportsolutions?category=protective-wall",
     },
   ],
   fr: [
