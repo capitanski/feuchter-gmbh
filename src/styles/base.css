@@ -92,6 +92,7 @@ h2 {
 
 h1 {
   line-height: 85%;
+  font-weight: 900 !important;
   background: linear-gradient(135deg, var(--lightgray), var(--sand));
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -104,5 +105,4 @@ p {
   font-size: 0.9rem;
 }
 
-section {
-}
+section {}

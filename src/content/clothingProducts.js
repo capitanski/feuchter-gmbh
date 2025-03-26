@@ -17,7 +17,9 @@ const products = [
     mainImage:
       "https://cdn.prod.website-files.com/66fbdc612b6ec708353a8c01/67cefc495d5f5d04c716f47a_Bordhemd%20Marine%20Front.jpg",
     images: [
-      "https://cdn.prod.website-files.com/66fbdc612b6ec708353a8c01/67ceb8e7af42e1fae9e61375_BordhemdMa%C3%9Ftabelle.png",
+      "https://cdn.prod.website-files.com/66fbdc612b6ec708353a8c01/67cefc495d5f5d04c716f47a_Bordhemd%20Marine%20Front.jpg",
+      "https://cdn.prod.website-files.com/66fbdc612b6ec708353a8c01/67cefc495d5f5d04c716f47a_Bordhemd%20Marine%20Front.jpg",
+      "https://cdn.prod.website-files.com/66fbdc612b6ec708353a8c01/67cefc495d5f5d04c716f47a_Bordhemd%20Marine%20Front.jpg"
     ],
     originalTl: true,
     category: {
