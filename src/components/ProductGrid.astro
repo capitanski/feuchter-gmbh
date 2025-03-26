@@ -1,4 +1,7 @@
 ---
+import Modal from "./Modal.astro";
+import Arrow from "@/assets/Arrow_link.svg";
+import { buttonTranslations } from "@/content/translations";
 const {
   categories,
   products,
@@ -9,24 +12,61 @@ const {
   heading,
   subtitle,
   introText,
+  texts,
 } = Astro.props;
+console.log(searchCategory);
+let content;
+let suitableFor;
+if (searchCategory == "protective-wall") {
+  content = texts.protectivewall;
+}
+if (searchCategory == "thermal-cover") {
+  content = texts.thermalcover;
+}
+if (searchCategory == "dust-cover") {
+  content = texts.dustcover;
+}
+if (searchCategory == "military-and-survival") {
+  content = texts.militarysurvival;
+}
+if (searchCategory == "officialwear") {
+  content = texts.officialwear;
+}
+if (searchCategory == "corporate-fashion") {
+  content = texts.corporatefashion;
+}
+if (pageLanguage == "de") {
+  suitableFor = "Ideal für:";
+}
+if (pageLanguage == "en") {
+  suitableFor = "Ideal for:";
+}
 ---
 
 <section>
-  <img src={headerImage.src} alt="" class="header-image" />
+  <img src={content.headerImage} alt="" class="header-image" />
   <div class="container">
     <div class="intro">
       <div class="headline-and-subtitle">
         <h1 class="animatable">
-          {heading}
+          {content.heading[pageLanguage]}
         </h1>
         <p class="subtitle">
-          {subtitle}
+          {content.subtitle[pageLanguage]}
         </p>
       </div>
       <p class="intro-text">
-        {introText}
-      </p>
+        {content.introText[pageLanguage]}
+      </p><p class="suitable-for">{suitableFor}</p>
+      <div class="suitable-for-wrapper">
+        <div class="tags">
+          {
+            content.suitableFor[pageLanguage].map((item) => {
+              return <div class="tag">{item}</div>;
+            })
+          }
+        </div>
+      </div>
     </div>
 
     <div class="filter-link-container">
@@ -58,22 +98,26 @@ const {
                 .filter(
                   (product) =>
                     product.category.key == category.key &&
-                    product.category.overall == searchCategory
+                    product.category.overall == searchCategory,
                 )
                 .map((p) => {
                   return (
-                    <div class="product-grid-item animatable">
+                    <div class="product-grid-item">
                       <img src={p.mainImage} alt="" />
                       <div>
                         {p.originalTl ? <span>Original TL</span> : ""}
                         {p.individual ? <span>Individualisierbar</span> : ""}
                         <p class="product-title">{p.title[pageLanguage]}</p>
-                        <details class="rich-text-dark">
-                          <summary>Technische Daten</summary>
-                          <img src={p.mainImage} alt="" />
-                          <p>{p.description[pageLanguage]}</p>
-                          <small set:html={p.technicalData[pageLanguage]} />
-                        </details>
+                        <button class="openBtn project-link">
+                          <img src={Arrow.src} alt="" />
+                          <span>
+                            {buttonTranslations(
+                              "technischedaten",
+                              pageLanguage,
+                            )}
+                          </span>
+                        </button>
+                        <Modal content={p} pageLanguage={pageLanguage} />
                       </div>
                     </div>
                   );
@@ -87,7 +131,7 @@ const {
 </section>
 <style>
   section {
-    background: rgba(0, 0, 0, 0.9);
+    background: rgba(0, 0, 0, 0.7);
     padding: 150px 0;
     position: relative;
     min-height: 100vh;
@@ -128,9 +172,6 @@ const {
     align-items: flex-start;
     gap: 10px;
     cursor: pointer;
-  }
-  .product-grid-item:hover {
-    gap: 15px;
   }
   .product-grid-item img {
     width: 75px;
@@ -186,7 +227,8 @@ const {
     font-family: "Afacadflux", sans-serif;
     text-transform: uppercase;
     margin: 0;
-    font-size: 1.3rem;
+    font-size: 1rem;
+    font-style: italic;
   }
   h1 {
     font-family: "Afacadflux", sans-serif;
@@ -209,5 +251,62 @@ const {
     gap: 10px;
     max-width: 60%;
     padding: 0 0 50px 0;
+  }
+  .tags {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 10px;
+  }
+  .tag {
+    font-size: 0.7rem;
+    color: var(--sand);
+    font-family: "Afacadflux", sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+  }
+  .suitable-for {
+    color: var(--sand);
+    margin: 0;
+    font-family: "Afacadflux", sans-serif;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 1.2rem;
+  }
+  .suitable-for-wrapper {
+    border-left: 5px solid var(--sand);
+    padding-left: 10px;
+    padding: 5px 0 5px 10px;
+  }
+  button {
+    background: transparent;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    margin-top: 5px;
+  }
+  .project-link span {
+    font-size: 0.7rem;
+  }
+  .project-link {
+    color: var(--sand);
+    text-decoration: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    transition: gap 0.3s ease-in-out;
+    gap: 10px;
+    font-family: "Afacadflux", sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+  }
+  .project-link:hover {
+    gap: 20px;
+  }
+  .project-link img {
+    width: 20px;
+    height: 20px;
   }
 </style>

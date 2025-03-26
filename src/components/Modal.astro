@@ -1,0 +1,84 @@
+---
+// Modal.astro
+const { isOpen = false, content, pageLanguage } = Astro.props;
+---
+
+<div class="modal-overlay" style:display={isOpen ? "flex" : "none"}>
+    <div class="modal">
+        <button class="close-button">×</button>
+        <h2>{content.title[pageLanguage]}</h2>
+        <p>{content.description[pageLanguage]}</p>
+        <small
+            set:html={content.technicalData[pageLanguage]}
+            class="rich-text-dark"
+        />
+    </div>
+</div>
+<script>
+    // public/modal.js
+    document.addEventListener("DOMContentLoaded", () => {
+        const modals = Array.from(document.querySelectorAll(".modal-overlay"));
+        const openBtn = document.getElementById("openModal");
+        modals.forEach((modal) => {
+            let prev = modal.previousElementSibling;
+            while (prev) {
+                if (prev.classList.contains("openBtn")) {
+                    prev.addEventListener("click", () => {
+                        modal.style.display = "flex";
+                    });
+                    break;
+                }
+                prev = prev.previousElementSibling;
+            }
+            const closeBtn = modal.querySelector(".close-button");
+            closeBtn?.addEventListener("click", () => {
+                modals.forEach((everyModal) => {
+                    everyModal.style.display = "none";
+                });
+            });
+        });
+    });
+</script>
+<style>
+    .modal-overlay {
+        position: fixed;
+        top: 0;
+        left: 0;
+        background: rgba(0, 0, 0, 0.8);
+        display: none;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+        z-index: 1000;
+        width: 100vw;
+        height: 100vh;
+        overflow-y: scroll;
+    }
+
+    .modal {
+        background: transparent;
+        padding: 6rem 2rem;
+        border-radius: 0.5rem;
+        min-height: 100vh;
+        width: 100%;
+        max-width: 800px;
+    }
+
+    .close-button {
+        position: fixed;
+        top: 15px;
+        left: 15px;
+        color: white;
+        background: none;
+        border: none;
+        font-size: 1.5rem;
+        cursor: pointer;
+        z-index: 1001;
+    }
+    h2 {
+        color: var(--sand) !important;
+    }
+    p {
+        color: var(--sand);
+    }
+</style>

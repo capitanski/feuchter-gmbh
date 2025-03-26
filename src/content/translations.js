@@ -161,6 +161,16 @@ export function buttonTranslations(text, lang) {
           break;
       }
       break;
+    case "technischedaten":
+      switch (lang) {
+        case "de":
+          returnValue = "Technische Daten";
+          break;
+        case "en":
+          returnValue = "Technical Data";
+          break;
+      }
+      break;
   }
   return returnValue;
 }

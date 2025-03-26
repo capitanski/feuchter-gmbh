@@ -7,6 +7,7 @@ import ProductGrid from "@/components/ProductGrid.astro";
 import HeaderImage from "@/assets/feuchter_gmbh_header.jpg";
 import products from "@/content/clothingProducts";
 import { clothingCategories } from "@/content/clothingCategories";
+import { clothingTexts } from "@/content/clothingTexts";
 import type { AstroLocals } from "@/types";
 const { locals } = Astro as unknown as { locals: AstroLocals };
 const { url } = Astro.request;
@@ -20,15 +21,15 @@ let categories = Array.from(
         (product) =>
           product.category.key ==
             clothingCategories[product.category.key].key &&
-          product.category.overall == searchCategory
+          product.category.overall == searchCategory,
       )
       .map((product) => {
         return {
           key: product.category.key,
           value: clothingCategories[product.category.key][pageLanguage],
         };
-      })
-  )
+      }),
+  ),
 );
 categories = [...new Map(categories.map((item) => [item.key, item])).values()];
 if (categories.length == 0) {
@@ -86,5 +87,6 @@ if (pageLanguage == "en") {
     heading={heading}
     introText={introText}
     subtitle={subtitle}
+    texts={clothingTexts}
   />
 </Layout>
