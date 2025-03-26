@@ -1,6 +1,6 @@
 import schutzwand from "@/assets/projekte.jpg";
-import thermohaube from "@/assets/projekte.jpg";
-import staubhaube from "@/assets/projekte.jpg";
+import thermohaube from "@/assets/officialwear_header.jpg";
+import staubhaube from "@/assets/corporate_fashion.jpg";
 export const clothingTexts = {
     militarysurvival: {
         heading: {
@@ -24,8 +24,8 @@ export const clothingTexts = {
     },
     officialwear: {
         heading: {
-            de: "Die Thermohaube für Rollcontainer",
-            en: "The thermal cover for roll cage trolleys"
+            de: "Behörden- & Securitykleidung",
+            en: "Officialwear and Securityclothing"
         },
         subtitle: {
             de: "Transportieren und Lagern Sie Ihre Waren sicher und wohltemperiert von A nach B",
@@ -43,11 +43,11 @@ export const clothingTexts = {
     },
     corporatefashion: {
         heading: {
-            de: "Die Staubhaube für Rollcontainer",
-            en: "The dust cover for roll cage trolleys"
+            de: "Corporate Fashion für Unternehmen",
+            en: "Corporate Fashion for Businesses"
         },
         subtitle: {
-            de: "Transportieren und Lagern Sie Ihre Waren sicher & blickdicht von A nach B",
+            de: "Individuell abgestimmt auf Ihre Bedürfnisse",
             en: "Transport and store your goods safely and out of sight from A to B."
         },
         introText: {
