@@ -20,15 +20,15 @@ let categories = Array.from(
         (product) =>
           product.category.key ==
             clothingCategories[product.category.key].key &&
-          product.category.overall == searchCategory,
+          product.category.overall == searchCategory
       )
       .map((product) => {
         return {
           key: product.category.key,
           value: clothingCategories[product.category.key][pageLanguage],
         };
-      }),
-  ),
+      })
+  )
 );
 categories = [...new Map(categories.map((item) => [item.key, item])).values()];
 if (categories.length == 0) {
@@ -65,13 +65,13 @@ const links = [
 let heading =
   "Von Militär- & Survivalkleidung über Behördenkleidung bis hin zu feinster Corporate Fashion";
 let subtitle = "Egal ob für Armeen, Behörden, Onlineshops oder Unternehmen";
-let introText = `Von robuster Militär- und Survivalkleidung über funktionale Behördenausstattung bis hin zu maßgeschneiderter Corporate Fashion – wir statten Sie aus. Ob für Armeen, Einsatzkräfte, Onlineshops oder Unternehmen: Unsere Produkte vereinen Qualität, Funktionalität und Design auf höchstem Niveau. Vertrauen Sie auf Erfahrung, Präzision und textile Lösungen, die den Unterschied machen.`;
+let introText = `Von robuster Militär- und Survivalkleidung über funktionale Behördenausstattung bis hin zu maßgeschneiderter Corporate Fashion – wir statten Sie aus. Ob für Armeen, Einsatzkräfte, Onlineshops oder Unternehmen: Unsere Produkte vereinen Qualität, Funktionalität und Design auf höchstem Niveau. Vertrauen Sie auf Erfahrung, Präzision und textile Lösungen, die den Unterschied machen. Kontaktieren Sie uns gerne für Anfragen oder individuelle Lösungen.`;
 if (pageLanguage == "en") {
   heading =
     "From military and survival clothing to official uniforms and premium corporate fashion";
   subtitle =
     "Whether for armed forces, government agencies, online retailers, or businesses";
-  introText = `From rugged military and survival apparel to functional gear for authorities and tailored corporate fashion – we’ve got you covered. Whether for armed forces, emergency services, online retailers, or businesses: our products combine quality, functionality, and design at the highest level. Rely on experience, precision, and textile solutions that make a difference.`;
+  introText = `From rugged military and survival apparel to functional gear for authorities and tailored corporate fashion – we’ve got you covered. Whether for armed forces, emergency services, online retailers, or businesses: our products combine quality, functionality, and design at the highest level. Rely on experience, precision, and textile solutions that make a difference. Feel free to reach out to us for inquiries or customized solutions.`;
 }
 ---
 

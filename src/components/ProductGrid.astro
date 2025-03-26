@@ -6,6 +6,9 @@ const {
   searchCategory,
   links,
   headerImage,
+  heading,
+  subtitle,
+  introText,
 } = Astro.props;
 ---
 
@@ -14,21 +17,15 @@ const {
   <div class="container">
     <div class="intro">
       <div class="headline-and-subtitle">
-        <h1>
-          Von Militär- & Survivalkleidung über Behördenkleidung bis hin zu
-          feinster Corporate Fashion
+        <h1 class="animatable">
+          {heading}
         </h1>
         <p class="subtitle">
-          Egal ob für Armeen, Behörden, Onlineshops oder Unternehmen
+          {subtitle}
         </p>
       </div>
       <p class="intro-text">
-        Von robuster Militär- und Survivalkleidung über funktionale
-        Behördenausstattung bis hin zu maßgeschneiderter Corporate Fashion – wir
-        statten Sie aus. Ob für Armeen, Einsatzkräfte, Onlineshops oder
-        Unternehmen: Unsere Produkte vereinen Qualität, Funktionalität und
-        Design auf höchstem Niveau. Vertrauen Sie auf Erfahrung, Präzision und
-        textile Lösungen, die den Unterschied machen.
+        {introText}
       </p>
     </div>
 
@@ -61,14 +58,15 @@ const {
                 .filter(
                   (product) =>
                     product.category.key == category.key &&
-                    product.category.overall == searchCategory,
+                    product.category.overall == searchCategory
                 )
                 .map((p) => {
                   return (
                     <div class="product-grid-item animatable">
                       <img src={p.mainImage} alt="" />
                       <div>
-                        <span>Original TL</span>
+                        {p.originalTl ? <span>Original TL</span> : ""}
+                        {p.individual ? <span>Individualisierbar</span> : ""}
                         <p class="product-title">{p.title[pageLanguage]}</p>
                         <details class="rich-text-dark">
                           <summary>Technische Daten</summary>
@@ -92,10 +90,12 @@ const {
     background: rgba(0, 0, 0, 0.9);
     padding: 150px 0;
     position: relative;
+    min-height: 100vh;
   }
   .header-image {
     width: 100%;
     height: 100%;
+    min-height: 100vh;
     border-radius: 0;
     position: fixed;
     top: 0;
@@ -145,11 +145,12 @@ const {
     color: var(--lightgray);
     font-weight: 700;
     margin: 0 !important;
+    font-size: 1.2rem;
   }
   .product-grid-item span {
     color: var(--sand);
     font-weight: 200;
-    font-size: 0.7rem;
+    font-size: 0.9rem;
     font-family: "Afacadflux", sans-serif;
     text-transform: uppercase;
   }
