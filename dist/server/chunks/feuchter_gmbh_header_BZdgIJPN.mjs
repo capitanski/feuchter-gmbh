@@ -1,4 +1,4 @@
-const Scribble = new Proxy({"src":"/custom-folder/feuchter_gmbh_header.DKT3z74D.jpg","width":1400,"height":933,"format":"jpg"}, {
+const Scribble = new Proxy({"src":"/custom-folder/feuchter_gmbh_header.Cq--DDfa.jpg","width":1400,"height":933,"format":"jpg"}, {
 						get(target, name, receiver) {
 							if (name === 'clone') {
 								return structuredClone(target);

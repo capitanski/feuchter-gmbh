@@ -2,9 +2,9 @@ import { e as createAstro, f as createComponent, m as maybeRenderHead, h as addA
 import 'kleur/colors';
 import { $ as $$Button } from '../chunks/Button_CREy6nXF.mjs';
 import { C as Circles$1, b as buttonTranslations, $ as $$Layout } from '../chunks/Layout_BOf780Oc.mjs';
-import { S as Scribble } from '../chunks/feuchter_gmbh_header_DPQaMsdO.mjs';
+import { S as Scribble } from '../chunks/feuchter_gmbh_header_BZdgIJPN.mjs';
 /* empty css                                 */
-import { $ as $$Leistungen } from '../chunks/Leistungen_BORZTDwV.mjs';
+import { $ as $$Leistungen } from '../chunks/Leistungen_KnwR46OT.mjs';
 import 'clsx';
 import { $ as $$Projects } from '../chunks/Projects_DO-svvB5.mjs';
 import { T as Transportloesungen, a as Thermohaube, S as Staubhaube } from '../chunks/staubhaube_5C8NrczT.mjs';

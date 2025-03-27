@@ -2,7 +2,7 @@ import { e as createAstro, f as createComponent, i as renderComponent, r as rend
 import 'kleur/colors';
 import { $ as $$Layout } from '../../chunks/Layout_BOf780Oc.mjs';
 import { $ as $$ProductGrid } from '../../chunks/ProductGrid_DUfxWBXk.mjs';
-import { S as Scribble$1 } from '../../chunks/feuchter_gmbh_header_DPQaMsdO.mjs';
+import { S as Scribble$1 } from '../../chunks/feuchter_gmbh_header_BZdgIJPN.mjs';
 import { S as Scribble } from '../../chunks/projekte_YcggKxQO.mjs';
 export { renderers } from '../../renderers.mjs';
 
