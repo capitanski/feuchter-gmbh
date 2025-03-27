@@ -4,7 +4,7 @@ const Scribble = new Proxy({"src":"/custom-folder/feuchter_gmbh_header.DKT3z74D.
 								return structuredClone(target);
 							}
 							if (name === 'fsPath') {
-								return "C:/Users/sabri/OneDrive/Desktop/feuchter-gmbh-astro/feuchter-gmbh/src/assets/feuchter_gmbh_header.jpg";
+								return "/home/felix/Desktop/feuchtergmbh_website/feuchter-gmbh/src/assets/feuchter_gmbh_header.jpg";
 							}
 							
 							return target[name];

@@ -1,21 +1,21 @@
-import { e as createComponent, f as createAstro, m as maybeRenderHead, h as addAttribute, u as unescapeHTML, j as renderScript, r as renderTemplate, i as renderComponent, k as Fragment } from './astro/server_D3XaGqlG.mjs';
+import { e as createAstro, f as createComponent, m as maybeRenderHead, h as addAttribute, u as unescapeHTML, j as renderScript, r as renderTemplate, i as renderComponent, k as Fragment } from './astro/server_CofuBfMf.mjs';
 import 'kleur/colors';
 import 'clsx';
 /* empty css                         */
-import { A as Arrow } from './Arrow_sand_5oaPgMNc.mjs';
-import { b as buttonTranslations } from './Layout_BEzOSaoH.mjs';
+import { A as Arrow } from './Arrow_sand_CKat7LSH.mjs';
+import { b as buttonTranslations } from './Layout_DpPkgxYx.mjs';
 
-const $$Astro$1 = createAstro();
+const $$Astro$1 = createAstro("http://192.168.178.48:4321/");
 const $$Modal = createComponent(($$result, $$props, $$slots) => {
   const Astro2 = $$result.createAstro($$Astro$1, $$props, $$slots);
   Astro2.self = $$Modal;
   const { isOpen = false, content, pageLanguage } = Astro2.props;
   return renderTemplate`${maybeRenderHead()}<div class="modal-overlay"${addAttribute(isOpen ? "block" : "none", "style:display")} data-astro-cid-qmzm2soj> <div class="modal" data-astro-cid-qmzm2soj> <button class="close-button" data-astro-cid-qmzm2soj>×</button> <h2 data-astro-cid-qmzm2soj>${content.title[pageLanguage]}</h2> <p data-astro-cid-qmzm2soj>${content.description[pageLanguage]}</p> <div class="modal-image-grid" data-astro-cid-qmzm2soj> ${content.images.map((image) => {
     return renderTemplate`<div class="modal-grid-item" data-astro-cid-qmzm2soj> <img${addAttribute(image, "src")} data-astro-cid-qmzm2soj> </div>`;
-  })} </div> <small class="rich-text-dark" data-astro-cid-qmzm2soj>${unescapeHTML(content.technicalData[pageLanguage])}</small> </div> </div> ${renderScript($$result, "C:/Users/sabri/OneDrive/Desktop/feuchter-gmbh-astro/feuchter-gmbh/src/components/Modal.astro?astro&type=script&index=0&lang.ts")} `;
-}, "C:/Users/sabri/OneDrive/Desktop/feuchter-gmbh-astro/feuchter-gmbh/src/components/Modal.astro", void 0);
+  })} </div> <small class="rich-text-dark" data-astro-cid-qmzm2soj>${unescapeHTML(content.technicalData[pageLanguage])}</small> </div> </div> ${renderScript($$result, "/home/felix/Desktop/feuchtergmbh_website/feuchter-gmbh/src/components/Modal.astro?astro&type=script&index=0&lang.ts")} `;
+}, "/home/felix/Desktop/feuchtergmbh_website/feuchter-gmbh/src/components/Modal.astro", void 0);
 
-const $$Astro = createAstro();
+const $$Astro = createAstro("http://192.168.178.48:4321/");
 const $$ProductGrid = createComponent(($$result, $$props, $$slots) => {
   const Astro2 = $$result.createAstro($$Astro, $$props, $$slots);
   Astro2.self = $$ProductGrid;
@@ -33,7 +33,6 @@ const $$ProductGrid = createComponent(($$result, $$props, $$slots) => {
   } = Astro2.props;
   console.log(searchCategory);
   let content;
-  let suitableFor;
   if (searchCategory == "protective-wall") {
     content = texts.protectivewall;
   }
@@ -52,15 +51,16 @@ const $$ProductGrid = createComponent(($$result, $$props, $$slots) => {
   if (searchCategory == "corporate-fashion") {
     content = texts.corporatefashion;
   }
-  if (pageLanguage == "de") {
-    suitableFor = "Ideal f\xFCr:";
-  }
-  if (pageLanguage == "en") {
-    suitableFor = "Ideal for:";
-  }
-  return renderTemplate`${maybeRenderHead()}<section data-astro-cid-poyn3awd> <img${addAttribute(content.headerImage, "src")} alt="" class="header-image" data-astro-cid-poyn3awd> <img${addAttribute(content.mobileHeaderImage, "src")} alt="" class="mobile-header-image" data-astro-cid-poyn3awd> <div class="container" data-astro-cid-poyn3awd> <div class="intro" data-astro-cid-poyn3awd> <div class="headline-and-subtitle" data-astro-cid-poyn3awd> <h1 class="animatable" data-astro-cid-poyn3awd> ${content.heading[pageLanguage]} </h1> <p class="subtitle" data-astro-cid-poyn3awd> ${content.subtitle[pageLanguage]} </p> </div> <p class="intro-text" data-astro-cid-poyn3awd> ${content.introText[pageLanguage]} </p><p class="suitable-for" data-astro-cid-poyn3awd>${suitableFor}</p> <div class="suitable-for-wrapper" data-astro-cid-poyn3awd> <div class="tags" data-astro-cid-poyn3awd> ${content.suitableFor[pageLanguage].map((item) => {
-    return renderTemplate`<div class="tag" data-astro-cid-poyn3awd>${item}</div>`;
-  })} </div> </div> </div> <div class="filter-link-container" data-astro-cid-poyn3awd> ${links.map((link) => {
+  return renderTemplate`${maybeRenderHead()}<section data-astro-cid-poyn3awd> <img${addAttribute(content.headerImage, "src")} alt="" class="header-image" fetchpriority="high" loading="eager" data-astro-cid-poyn3awd> <img${addAttribute(content.mobileHeaderImage, "src")} alt="" fetchpriority="high" loading="eager" class="mobile-header-image" data-astro-cid-poyn3awd> <div class="container" data-astro-cid-poyn3awd> <div class="intro" data-astro-cid-poyn3awd> <div class="headline-and-subtitle" data-astro-cid-poyn3awd> <h1 class="animatable" data-astro-cid-poyn3awd> ${content.heading[pageLanguage]} </h1> <p class="subtitle" data-astro-cid-poyn3awd> ${content.subtitle[pageLanguage]} </p> </div> <p class="intro-text" data-astro-cid-poyn3awd> ${content.introText[pageLanguage]} </p> <!--<p class="suitable-for">{suitableFor}</p>
+      <div class="suitable-for-wrapper">
+        <div class="tags">
+          {
+            content.suitableFor[pageLanguage].map((item) => {
+              return <div class="tag">{item}</div>;
+            })
+          }
+        </div>
+      </div>--> </div> <div class="filter-link-container" data-astro-cid-poyn3awd> ${links.map((link) => {
     return renderTemplate`<a${addAttribute(link.href, "href")}${addAttribute(
       link.searchCategory === searchCategory ? "active filter-link" : "filter-link",
       "class"
@@ -75,6 +75,6 @@ const $$ProductGrid = createComponent(($$result, $$props, $$slots) => {
       )} </span> </button> ${renderComponent($$result2, "Modal", $$Modal, { "content": p, "pageLanguage": pageLanguage, "data-astro-cid-poyn3awd": true })} </div> </div>`;
     })} </div> ` })}`;
   })} </div> </section> `;
-}, "C:/Users/sabri/OneDrive/Desktop/feuchter-gmbh-astro/feuchter-gmbh/src/components/ProductGrid.astro", void 0);
+}, "/home/felix/Desktop/feuchtergmbh_website/feuchter-gmbh/src/components/ProductGrid.astro", void 0);
 
 export { $$ProductGrid as $ };

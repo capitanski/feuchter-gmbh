@@ -1,8 +1,8 @@
-import { d as defineMiddleware, s as sequence } from './chunks/index_DDLrMzrS.mjs';
+import { d as defineMiddleware, s as sequence } from './chunks/index_BgZuM8MG.mjs';
 import 'es-module-lexer';
-import './chunks/astro-designed-error-pages_DGng-stw.mjs';
+import './chunks/astro-designed-error-pages_lSq4DxT8.mjs';
 import 'kleur/colors';
-import './chunks/astro/server_D3XaGqlG.mjs';
+import './chunks/astro/server_CofuBfMf.mjs';
 import 'clsx';
 import 'cookie';
 
@@ -11,7 +11,7 @@ const supportedLanguages = ["de", "en"];
 const langSwitcher = function (currentPath) {
   // Change the base URL when publishing, otherwise the hreflang tags in layout
   // and the lang Switcher links will have wrong destiantions
-  const baseURL = "http://localhost:4321";
+  const baseURL = "http://192.168.178.48:4321";
   // This function implements the language switching function
   // By clicking one of the Links it changes the language and stays on the same site
   // Returns an array of objects containing the current path and lang url-segment

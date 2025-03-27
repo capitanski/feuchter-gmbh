@@ -1,12 +1,12 @@
-import { e as createComponent, f as createAstro, i as renderComponent, r as renderTemplate } from '../../chunks/astro/server_D3XaGqlG.mjs';
+import { e as createAstro, f as createComponent, i as renderComponent, r as renderTemplate } from '../../chunks/astro/server_CofuBfMf.mjs';
 import 'kleur/colors';
-import { $ as $$WelcomeLeftAligned } from '../../chunks/WelcomeLeftAligned_BWOSXBrj.mjs';
-import { $ as $$Layout } from '../../chunks/Layout_BEzOSaoH.mjs';
-import { $ as $$Projects } from '../../chunks/Projects_CeuNvffk.mjs';
-import { S as Scribble } from '../../chunks/projekte_Dsxstb7L.mjs';
+import { $ as $$WelcomeLeftAligned } from '../../chunks/WelcomeLeftAligned_DsfbLpaP.mjs';
+import { $ as $$Layout } from '../../chunks/Layout_DpPkgxYx.mjs';
+import { $ as $$Projects } from '../../chunks/Projects_CkRXKfRE.mjs';
+import { S as Scribble } from '../../chunks/projekte_C1wqO7aJ.mjs';
 export { renderers } from '../../renderers.mjs';
 
-const $$Astro = createAstro();
+const $$Astro = createAstro("http://192.168.178.48:4321/");
 const $$Index = createComponent(($$result, $$props, $$slots) => {
   const Astro2 = $$result.createAstro($$Astro, $$props, $$slots);
   Astro2.self = $$Index;
@@ -21,9 +21,9 @@ const $$Index = createComponent(($$result, $$props, $$slots) => {
     introText = "Whether it's functional clothing for daily use, custom-made solutions for government agencies, or large-scale production runs \u2013 our decades of experience, innovation, and reliability make us a strong partner for demanding textile projects.";
   }
   return renderTemplate`${renderComponent($$result, "Layout", $$Layout, {}, { "default": ($$result2) => renderTemplate` ${renderComponent($$result2, "WelcomeLeftAligned", $$WelcomeLeftAligned, { "language": pageLanguage, "heading": heading, "subtitle": subtitle, "Scribble": Scribble, "introText": introText, "page": "projects" })} ${renderComponent($$result2, "Projects", $$Projects, { "language": pageLanguage })} ` })}`;
-}, "C:/Users/sabri/OneDrive/Desktop/feuchter-gmbh-astro/feuchter-gmbh/src/pages/[lang]/projects/index.astro", void 0);
+}, "/home/felix/Desktop/feuchtergmbh_website/feuchter-gmbh/src/pages/[lang]/projects/index.astro", void 0);
 
-const $$file = "C:/Users/sabri/OneDrive/Desktop/feuchter-gmbh-astro/feuchter-gmbh/src/pages/[lang]/projects/index.astro";
+const $$file = "/home/felix/Desktop/feuchtergmbh_website/feuchter-gmbh/src/pages/[lang]/projects/index.astro";
 const $$url = "/[lang]/projects";
 
 const _page = /*#__PURE__*/Object.freeze(/*#__PURE__*/Object.defineProperty({

@@ -1,7 +1,7 @@
 import { renderers } from './renderers.mjs';
 import { a as actions } from './chunks/_noop-actions_CfKMStZn.mjs';
-import { c as createExports, s as serverEntrypointModule } from './chunks/_@astrojs-ssr-adapter_CooQMiFW.mjs';
-import { manifest } from './manifest_DLItG2Wg.mjs';
+import { c as createExports, s as serverEntrypointModule } from './chunks/_@astrojs-ssr-adapter_CqJRH-hv.mjs';
+import { manifest } from './manifest_BpNyAG7A.mjs';
 
 const serverIslandMap = new Map();;
 
@@ -39,8 +39,8 @@ const _manifest = Object.assign(manifest, {
 });
 const _args = {
     "mode": "standalone",
-    "client": "file:///C:/Users/sabri/OneDrive/Desktop/feuchter-gmbh-astro/feuchter-gmbh/dist/client/",
-    "server": "file:///C:/Users/sabri/OneDrive/Desktop/feuchter-gmbh-astro/feuchter-gmbh/dist/server/",
+    "client": "file:///home/felix/Desktop/feuchtergmbh_website/feuchter-gmbh/dist/client/",
+    "server": "file:///home/felix/Desktop/feuchtergmbh_website/feuchter-gmbh/dist/server/",
     "host": true,
     "port": 4321,
     "assets": "custom-folder"

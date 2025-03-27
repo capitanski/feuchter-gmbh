@@ -1,4 +1,4 @@
-import { e as createComponent, f as createAstro, m as maybeRenderHead, h as addAttribute, r as renderTemplate } from './astro/server_D3XaGqlG.mjs';
+import { e as createAstro, f as createComponent, m as maybeRenderHead, h as addAttribute, r as renderTemplate } from './astro/server_CofuBfMf.mjs';
 import 'kleur/colors';
 import 'clsx';
 /* empty css                             */
@@ -9,20 +9,20 @@ const Circles = new Proxy({"src":"/custom-folder/Swirl.DDUPOy4D.png","width":100
 								return structuredClone(target);
 							}
 							if (name === 'fsPath') {
-								return "C:/Users/sabri/OneDrive/Desktop/feuchter-gmbh-astro/feuchter-gmbh/src/assets/Swirl.png";
+								return "/home/felix/Desktop/feuchtergmbh_website/feuchter-gmbh/src/assets/Swirl.png";
 							}
 							
 							return target[name];
 						}
 					});
 
-const $$Astro = createAstro();
+const $$Astro = createAstro("http://192.168.178.48:4321/");
 const $$ProjectTag = createComponent(($$result, $$props, $$slots) => {
   const Astro2 = $$result.createAstro($$Astro, $$props, $$slots);
   Astro2.self = $$ProjectTag;
   const { tagContent, colorScheme } = Astro2.props;
   return renderTemplate`${maybeRenderHead()}<div${addAttribute(colorScheme && colorScheme == "bright" ? "is-bright project-tag" : "is-dark project-tag", "class")} data-astro-cid-hp42x6y6> ${tagContent} </div> `;
-}, "C:/Users/sabri/OneDrive/Desktop/feuchter-gmbh-astro/feuchter-gmbh/src/components/ProjectTag.astro", void 0);
+}, "/home/felix/Desktop/feuchtergmbh_website/feuchter-gmbh/src/components/ProjectTag.astro", void 0);
 
 const PolizeihemdSeite = new Proxy({"src":"/custom-folder/polizeihemd_bayern_seite.C04EstQ5.jpg","width":500,"height":500,"format":"jpg"}, {
 						get(target, name, receiver) {
@@ -30,7 +30,7 @@ const PolizeihemdSeite = new Proxy({"src":"/custom-folder/polizeihemd_bayern_sei
 								return structuredClone(target);
 							}
 							if (name === 'fsPath') {
-								return "C:/Users/sabri/OneDrive/Desktop/feuchter-gmbh-astro/feuchter-gmbh/src/assets/polizeihemd_bayern_seite.jpg";
+								return "/home/felix/Desktop/feuchtergmbh_website/feuchter-gmbh/src/assets/polizeihemd_bayern_seite.jpg";
 							}
 							
 							return target[name];
@@ -43,7 +43,7 @@ const PolizeihemdFront = new Proxy({"src":"/custom-folder/polizeihemd_bayern_fro
 								return structuredClone(target);
 							}
 							if (name === 'fsPath') {
-								return "C:/Users/sabri/OneDrive/Desktop/feuchter-gmbh-astro/feuchter-gmbh/src/assets/polizeihemd_bayern_front.jpg";
+								return "/home/felix/Desktop/feuchtergmbh_website/feuchter-gmbh/src/assets/polizeihemd_bayern_front.jpg";
 							}
 							
 							return target[name];
@@ -56,7 +56,7 @@ const PolizeihemdWappen = new Proxy({"src":"/custom-folder/polizeihemd_bayern_wa
 								return structuredClone(target);
 							}
 							if (name === 'fsPath') {
-								return "C:/Users/sabri/OneDrive/Desktop/feuchter-gmbh-astro/feuchter-gmbh/src/assets/polizeihemd_bayern_wappen.jpg";
+								return "/home/felix/Desktop/feuchtergmbh_website/feuchter-gmbh/src/assets/polizeihemd_bayern_wappen.jpg";
 							}
 							
 							return target[name];
@@ -69,7 +69,7 @@ new Proxy({"src":"/custom-folder/Monteurkombi_Front.iYCDe86S.jpg","width":1000,"
 								return structuredClone(target);
 							}
 							if (name === 'fsPath') {
-								return "C:/Users/sabri/OneDrive/Desktop/feuchter-gmbh-astro/feuchter-gmbh/src/assets/Monteurkombi_Front.jpg";
+								return "/home/felix/Desktop/feuchtergmbh_website/feuchter-gmbh/src/assets/Monteurkombi_Front.jpg";
 							}
 							
 							return target[name];
@@ -82,7 +82,7 @@ new Proxy({"src":"/custom-folder/Monteurkombi_Seite.CYxkTo4U.jpg","width":1000,"
 								return structuredClone(target);
 							}
 							if (name === 'fsPath') {
-								return "C:/Users/sabri/OneDrive/Desktop/feuchter-gmbh-astro/feuchter-gmbh/src/assets/Monteurkombi_Seite.jpg";
+								return "/home/felix/Desktop/feuchtergmbh_website/feuchter-gmbh/src/assets/Monteurkombi_Seite.jpg";
 							}
 							
 							return target[name];

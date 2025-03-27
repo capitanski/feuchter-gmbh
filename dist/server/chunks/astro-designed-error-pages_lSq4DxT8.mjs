@@ -1,12 +1,12 @@
 import { parse, stringify } from 'devalue';
-import { ak as REDIRECT_STATUS_CODES, A as AstroError, al as ActionsReturnedInvalidDataError, D as DEFAULT_404_COMPONENT } from './astro/server_D3XaGqlG.mjs';
+import { ak as REDIRECT_STATUS_CODES, A as AstroError, al as ActionsReturnedInvalidDataError, D as DEFAULT_404_COMPONENT } from './astro/server_CofuBfMf.mjs';
 import { escape } from 'html-escaper';
 
 const ACTION_QUERY_PARAMS$1 = {
   actionName: "_action"};
 const ACTION_RPC_ROUTE_PATTERN = "/_actions/[...path]";
 
-const __vite_import_meta_env__ = {"ASSETS_PREFIX": undefined, "BASE_URL": "/", "DEV": false, "MODE": "production", "PROD": true, "SITE": undefined, "SSR": true};
+const __vite_import_meta_env__ = {"ASSETS_PREFIX": undefined, "BASE_URL": "/", "DEV": false, "MODE": "production", "PROD": true, "SITE": "http://192.168.178.48:4321/", "SSR": true};
 const ACTION_QUERY_PARAMS = ACTION_QUERY_PARAMS$1;
 const codeToStatusMap = {
   // Implemented from tRPC error code table
@@ -95,7 +95,7 @@ function getActionQueryString(name) {
 }
 function serializeActionResult(res) {
   if (res.error) {
-    if (Object.assign(__vite_import_meta_env__, { OS: process.env.OS })?.DEV) {
+    if (Object.assign(__vite_import_meta_env__, { _: process.env._ })?.DEV) {
       actionResultErrorStack.set(res.error.stack);
     }
     let body2;
@@ -162,7 +162,7 @@ function deserializeActionResult(res) {
         })
       };
     }
-    if (Object.assign(__vite_import_meta_env__, { OS: process.env.OS })?.PROD) {
+    if (Object.assign(__vite_import_meta_env__, { _: process.env._ })?.PROD) {
       return { error: ActionError.fromJson(json), data: void 0 };
     } else {
       const error = ActionError.fromJson(json);

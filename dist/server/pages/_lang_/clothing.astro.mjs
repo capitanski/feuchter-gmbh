@@ -1,9 +1,9 @@
-import { e as createComponent, f as createAstro, i as renderComponent, r as renderTemplate } from '../../chunks/astro/server_D3XaGqlG.mjs';
+import { e as createAstro, f as createComponent, i as renderComponent, r as renderTemplate } from '../../chunks/astro/server_CofuBfMf.mjs';
 import 'kleur/colors';
-import { $ as $$Layout } from '../../chunks/Layout_BEzOSaoH.mjs';
-import { $ as $$ProductGrid } from '../../chunks/ProductGrid_DHJEZUdI.mjs';
-import { S as Scribble$1 } from '../../chunks/feuchter_gmbh_header_CC9-MUSr.mjs';
-import { S as Scribble } from '../../chunks/projekte_Dsxstb7L.mjs';
+import { $ as $$Layout } from '../../chunks/Layout_DpPkgxYx.mjs';
+import { $ as $$ProductGrid } from '../../chunks/ProductGrid_BE_fzfaf.mjs';
+import { S as Scribble$1 } from '../../chunks/feuchter_gmbh_header_DPQaMsdO.mjs';
+import { S as Scribble } from '../../chunks/projekte_C1wqO7aJ.mjs';
 export { renderers } from '../../renderers.mjs';
 
 const clothingCategories = {
@@ -809,7 +809,7 @@ const thermohaube = new Proxy({"src":"/custom-folder/officialwear_header.B3vUiA3
 								return structuredClone(target);
 							}
 							if (name === 'fsPath') {
-								return "C:/Users/sabri/OneDrive/Desktop/feuchter-gmbh-astro/feuchter-gmbh/src/assets/officialwear_header.jpg";
+								return "/home/felix/Desktop/feuchtergmbh_website/feuchter-gmbh/src/assets/officialwear_header.jpg";
 							}
 							
 							return target[name];
@@ -822,7 +822,7 @@ const staubhaube = new Proxy({"src":"/custom-folder/corporate_fashion.CnWaj1Y1.j
 								return structuredClone(target);
 							}
 							if (name === 'fsPath') {
-								return "C:/Users/sabri/OneDrive/Desktop/feuchter-gmbh-astro/feuchter-gmbh/src/assets/corporate_fashion.jpg";
+								return "/home/felix/Desktop/feuchtergmbh_website/feuchter-gmbh/src/assets/corporate_fashion.jpg";
 							}
 							
 							return target[name];
@@ -835,7 +835,7 @@ const mobileProjekte = new Proxy({"src":"/custom-folder/projekte_mobile.DOWqA9OZ
 								return structuredClone(target);
 							}
 							if (name === 'fsPath') {
-								return "C:/Users/sabri/OneDrive/Desktop/feuchter-gmbh-astro/feuchter-gmbh/src/assets/projekte_mobile.jpg";
+								return "/home/felix/Desktop/feuchtergmbh_website/feuchter-gmbh/src/assets/projekte_mobile.jpg";
 							}
 							
 							return target[name];
@@ -848,7 +848,7 @@ const mobileOfficialwear = new Proxy({"src":"/custom-folder/officialwear_mobile.
 								return structuredClone(target);
 							}
 							if (name === 'fsPath') {
-								return "C:/Users/sabri/OneDrive/Desktop/feuchter-gmbh-astro/feuchter-gmbh/src/assets/officialwear_mobile.jpg";
+								return "/home/felix/Desktop/feuchtergmbh_website/feuchter-gmbh/src/assets/officialwear_mobile.jpg";
 							}
 							
 							return target[name];
@@ -861,7 +861,7 @@ const mobileCorporatefashion = new Proxy({"src":"/custom-folder/corporate_fashio
 								return structuredClone(target);
 							}
 							if (name === 'fsPath') {
-								return "C:/Users/sabri/OneDrive/Desktop/feuchter-gmbh-astro/feuchter-gmbh/src/assets/corporate_fashion_mobile.jpg";
+								return "/home/felix/Desktop/feuchtergmbh_website/feuchter-gmbh/src/assets/corporate_fashion_mobile.jpg";
 							}
 							
 							return target[name];
@@ -969,7 +969,7 @@ const clothingTexts = {
   },
 };
 
-const $$Astro = createAstro();
+const $$Astro = createAstro("http://192.168.178.48:4321/");
 const $$Index = createComponent(($$result, $$props, $$slots) => {
   const Astro2 = $$result.createAstro($$Astro, $$props, $$slots);
   Astro2.self = $$Index;
@@ -1029,9 +1029,9 @@ const $$Index = createComponent(($$result, $$props, $$slots) => {
     introText = `From rugged military and survival apparel to functional gear for authorities and tailored corporate fashion \u2013 we\u2019ve got you covered. Whether for armed forces, emergency services, online retailers, or businesses: our products combine quality, functionality, and design at the highest level. Rely on experience, precision, and textile solutions that make a difference. Feel free to reach out to us for inquiries or customized solutions.`;
   }
   return renderTemplate`${renderComponent($$result, "Layout", $$Layout, {}, { "default": ($$result2) => renderTemplate` ${renderComponent($$result2, "ProductGrid", $$ProductGrid, { "categories": categories, "products": products, "pageLanguage": pageLanguage, "searchCategory": searchCategory, "links": links, "headerImage": Scribble$1, "heading": heading, "introText": introText, "subtitle": subtitle, "texts": clothingTexts })} ` })}`;
-}, "C:/Users/sabri/OneDrive/Desktop/feuchter-gmbh-astro/feuchter-gmbh/src/pages/[lang]/clothing/index.astro", void 0);
+}, "/home/felix/Desktop/feuchtergmbh_website/feuchter-gmbh/src/pages/[lang]/clothing/index.astro", void 0);
 
-const $$file = "C:/Users/sabri/OneDrive/Desktop/feuchter-gmbh-astro/feuchter-gmbh/src/pages/[lang]/clothing/index.astro";
+const $$file = "/home/felix/Desktop/feuchtergmbh_website/feuchter-gmbh/src/pages/[lang]/clothing/index.astro";
 const $$url = "/[lang]/clothing";
 
 const _page = /*#__PURE__*/Object.freeze(/*#__PURE__*/Object.defineProperty({

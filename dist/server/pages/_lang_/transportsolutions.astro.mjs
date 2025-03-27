@@ -1,8 +1,8 @@
-import { e as createComponent, f as createAstro, i as renderComponent, r as renderTemplate } from '../../chunks/astro/server_D3XaGqlG.mjs';
+import { e as createAstro, f as createComponent, i as renderComponent, r as renderTemplate } from '../../chunks/astro/server_CofuBfMf.mjs';
 import 'kleur/colors';
-import { $ as $$Layout } from '../../chunks/Layout_BEzOSaoH.mjs';
-import { $ as $$ProductGrid } from '../../chunks/ProductGrid_DHJEZUdI.mjs';
-import { T as Transportloesungen, S as Staubhaube, a as Thermohaube } from '../../chunks/staubhaube_BaMKudJE.mjs';
+import { $ as $$Layout } from '../../chunks/Layout_DpPkgxYx.mjs';
+import { $ as $$ProductGrid } from '../../chunks/ProductGrid_BE_fzfaf.mjs';
+import { T as Transportloesungen, S as Staubhaube, a as Thermohaube } from '../../chunks/staubhaube_5C8NrczT.mjs';
 export { renderers } from '../../renderers.mjs';
 
 const HeaderImage = new Proxy({"src":"/custom-folder/transportwand_header.CWrzyzww.jpg","width":1920,"height":1080,"format":"jpg"}, {
@@ -11,7 +11,7 @@ const HeaderImage = new Proxy({"src":"/custom-folder/transportwand_header.CWrzyz
 								return structuredClone(target);
 							}
 							if (name === 'fsPath') {
-								return "C:/Users/sabri/OneDrive/Desktop/feuchter-gmbh-astro/feuchter-gmbh/src/assets/transportwand_header.jpg";
+								return "/home/felix/Desktop/feuchtergmbh_website/feuchter-gmbh/src/assets/transportwand_header.jpg";
 							}
 							
 							return target[name];
@@ -141,7 +141,7 @@ const schutzwand = new Proxy({"src":"/custom-folder/Transportwand quer.Dm-sC9wI.
 								return structuredClone(target);
 							}
 							if (name === 'fsPath') {
-								return "C:/Users/sabri/OneDrive/Desktop/feuchter-gmbh-astro/feuchter-gmbh/src/assets/Transportwand quer.jpg";
+								return "/home/felix/Desktop/feuchtergmbh_website/feuchter-gmbh/src/assets/Transportwand quer.jpg";
 							}
 							
 							return target[name];
@@ -154,7 +154,7 @@ const thermohaube = new Proxy({"src":"/custom-folder/Thermohaube quer.Dgsxx-du.j
 								return structuredClone(target);
 							}
 							if (name === 'fsPath') {
-								return "C:/Users/sabri/OneDrive/Desktop/feuchter-gmbh-astro/feuchter-gmbh/src/assets/Thermohaube quer.jpg";
+								return "/home/felix/Desktop/feuchtergmbh_website/feuchter-gmbh/src/assets/Thermohaube quer.jpg";
 							}
 							
 							return target[name];
@@ -167,7 +167,7 @@ const staubhaube = new Proxy({"src":"/custom-folder/Staubhaube quer.DiktvuiN.jpg
 								return structuredClone(target);
 							}
 							if (name === 'fsPath') {
-								return "C:/Users/sabri/OneDrive/Desktop/feuchter-gmbh-astro/feuchter-gmbh/src/assets/Staubhaube quer.jpg";
+								return "/home/felix/Desktop/feuchtergmbh_website/feuchter-gmbh/src/assets/Staubhaube quer.jpg";
 							}
 							
 							return target[name];
@@ -180,7 +180,7 @@ const mobileSchutzwand = new Proxy({"src":"/custom-folder/Transportwand mobile.J
 								return structuredClone(target);
 							}
 							if (name === 'fsPath') {
-								return "C:/Users/sabri/OneDrive/Desktop/feuchter-gmbh-astro/feuchter-gmbh/src/assets/Transportwand mobile.jpg";
+								return "/home/felix/Desktop/feuchtergmbh_website/feuchter-gmbh/src/assets/Transportwand mobile.jpg";
 							}
 							
 							return target[name];
@@ -193,7 +193,7 @@ const mobileThermohaube = new Proxy({"src":"/custom-folder/Thermohaube mobile.Ct
 								return structuredClone(target);
 							}
 							if (name === 'fsPath') {
-								return "C:/Users/sabri/OneDrive/Desktop/feuchter-gmbh-astro/feuchter-gmbh/src/assets/Thermohaube mobile.jpg";
+								return "/home/felix/Desktop/feuchtergmbh_website/feuchter-gmbh/src/assets/Thermohaube mobile.jpg";
 							}
 							
 							return target[name];
@@ -206,7 +206,7 @@ const mobileStaubhaube = new Proxy({"src":"/custom-folder/Staubhaube mobile.UN8_
 								return structuredClone(target);
 							}
 							if (name === 'fsPath') {
-								return "C:/Users/sabri/OneDrive/Desktop/feuchter-gmbh-astro/feuchter-gmbh/src/assets/Staubhaube mobile.jpg";
+								return "/home/felix/Desktop/feuchtergmbh_website/feuchter-gmbh/src/assets/Staubhaube mobile.jpg";
 							}
 							
 							return target[name];
@@ -298,7 +298,7 @@ const transportTexts = {
   },
 };
 
-const $$Astro = createAstro();
+const $$Astro = createAstro("http://192.168.178.48:4321/");
 const $$Index = createComponent(($$result, $$props, $$slots) => {
   const Astro2 = $$result.createAstro($$Astro, $$props, $$slots);
   Astro2.self = $$Index;
@@ -359,9 +359,9 @@ const $$Index = createComponent(($$result, $$props, $$slots) => {
     introText = `We manufacture high-quality protective walls, dust covers, and thermal covers for roll containers. Our innovative solutions are designed to fully replace traditional stretch film, offering a sustainable and reusable alternative for load securing. Whether you need protection from impact, dust, or temperature fluctuations \u2013 our products provide reliable and eco-friendly coverage. Feel free to reach out to us for inquiries or customized solutions.`;
   }
   return renderTemplate`${renderComponent($$result, "Layout", $$Layout, {}, { "default": ($$result2) => renderTemplate` ${renderComponent($$result2, "ProductGrid", $$ProductGrid, { "categories": categories, "products": products, "pageLanguage": pageLanguage, "searchCategory": searchCategory, "links": links, "headerImage": HeaderImage, "heading": heading, "introText": introText, "subtitle": subtitle, "texts": transportTexts })} ` })}`;
-}, "C:/Users/sabri/OneDrive/Desktop/feuchter-gmbh-astro/feuchter-gmbh/src/pages/[lang]/transportsolutions/index.astro", void 0);
+}, "/home/felix/Desktop/feuchtergmbh_website/feuchter-gmbh/src/pages/[lang]/transportsolutions/index.astro", void 0);
 
-const $$file = "C:/Users/sabri/OneDrive/Desktop/feuchter-gmbh-astro/feuchter-gmbh/src/pages/[lang]/transportsolutions/index.astro";
+const $$file = "/home/felix/Desktop/feuchtergmbh_website/feuchter-gmbh/src/pages/[lang]/transportsolutions/index.astro";
 const $$url = "/[lang]/transportsolutions";
 
 const _page = /*#__PURE__*/Object.freeze(/*#__PURE__*/Object.defineProperty({

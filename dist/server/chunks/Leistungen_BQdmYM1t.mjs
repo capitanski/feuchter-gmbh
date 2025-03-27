@@ -1,7 +1,7 @@
-import { e as createComponent, f as createAstro, m as maybeRenderHead, h as addAttribute, r as renderTemplate } from './astro/server_D3XaGqlG.mjs';
+import { e as createAstro, f as createComponent, m as maybeRenderHead, h as addAttribute, r as renderTemplate } from './astro/server_CofuBfMf.mjs';
 import 'kleur/colors';
 import 'clsx';
-import { t as translations } from './Layout_BEzOSaoH.mjs';
+import { t as translations } from './Layout_DpPkgxYx.mjs';
 /* empty css                         */
 
 const Hochzeiten = new Proxy({"src":"/custom-folder/konzeption.BZfKvx5v.jpg","width":600,"height":338,"format":"jpg"}, {
@@ -10,7 +10,7 @@ const Hochzeiten = new Proxy({"src":"/custom-folder/konzeption.BZfKvx5v.jpg","wi
 								return structuredClone(target);
 							}
 							if (name === 'fsPath') {
-								return "C:/Users/sabri/OneDrive/Desktop/feuchter-gmbh-astro/feuchter-gmbh/src/assets/konzeption.jpg";
+								return "/home/felix/Desktop/feuchtergmbh_website/feuchter-gmbh/src/assets/konzeption.jpg";
 							}
 							
 							return target[name];
@@ -23,7 +23,7 @@ const Corporate = new Proxy({"src":"/custom-folder/produktion.r_3EJc1L.jpg","wid
 								return structuredClone(target);
 							}
 							if (name === 'fsPath') {
-								return "C:/Users/sabri/OneDrive/Desktop/feuchter-gmbh-astro/feuchter-gmbh/src/assets/produktion.jpg";
+								return "/home/felix/Desktop/feuchtergmbh_website/feuchter-gmbh/src/assets/produktion.jpg";
 							}
 							
 							return target[name];
@@ -36,14 +36,14 @@ const Birthday = new Proxy({"src":"/custom-folder/logistik.CEFg3cVX.jpg","width"
 								return structuredClone(target);
 							}
 							if (name === 'fsPath') {
-								return "C:/Users/sabri/OneDrive/Desktop/feuchter-gmbh-astro/feuchter-gmbh/src/assets/logistik.jpg";
+								return "/home/felix/Desktop/feuchtergmbh_website/feuchter-gmbh/src/assets/logistik.jpg";
 							}
 							
 							return target[name];
 						}
 					});
 
-const $$Astro = createAstro();
+const $$Astro = createAstro("http://192.168.178.48:4321/");
 const $$Leistungen = createComponent(($$result, $$props, $$slots) => {
   const Astro2 = $$result.createAstro($$Astro, $$props, $$slots);
   Astro2.self = $$Leistungen;
@@ -80,6 +80,6 @@ const $$Leistungen = createComponent(($$result, $$props, $$slots) => {
   return renderTemplate`${maybeRenderHead()}<section id="leistungen" data-astro-cid-qlbszkyo> <div class="container" data-astro-cid-qlbszkyo> <h2 class="animatable" data-astro-cid-qlbszkyo>${translations("leistungen", language)}</h2> <p class="subtitle animatable" data-astro-cid-qlbszkyo> ${translations("leistungensubtitle", language)} </p> <div class="rezensionen-grid" data-astro-cid-qlbszkyo> ${leistungen.map((leistung) => {
     return renderTemplate`<div class="rezension-card animate-in-right" data-astro-cid-qlbszkyo> <div class="icon-and-title" data-astro-cid-qlbszkyo> <img${addAttribute(leistung.icon, "src")} alt="" class="card-icon" loading="lazy" width="150" height="150" data-astro-cid-qlbszkyo> <p class="card-title" data-astro-cid-qlbszkyo> ${translations(leistung.translationKey, language)} </p> </div> <p class="card-text" data-astro-cid-qlbszkyo>${leistung.text[language]}</p> </div>`;
   })} </div> </div> </section> `;
-}, "C:/Users/sabri/OneDrive/Desktop/feuchter-gmbh-astro/feuchter-gmbh/src/components/Leistungen.astro", void 0);
+}, "/home/felix/Desktop/feuchtergmbh_website/feuchter-gmbh/src/components/Leistungen.astro", void 0);
 
 export { $$Leistungen as $ };

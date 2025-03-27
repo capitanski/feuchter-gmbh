@@ -1,7 +1,7 @@
-import { e as createComponent, f as createAstro, m as maybeRenderHead, h as addAttribute, i as renderComponent, r as renderTemplate } from './astro/server_D3XaGqlG.mjs';
+import { e as createAstro, f as createComponent, m as maybeRenderHead, h as addAttribute, i as renderComponent, r as renderTemplate } from './astro/server_CofuBfMf.mjs';
 import 'kleur/colors';
-import { p as projects, C as Circles, $ as $$ProjectTag } from './projects_CCNn56pS.mjs';
-import { b as buttonTranslations, t as translations } from './Layout_BEzOSaoH.mjs';
+import { p as projects, C as Circles, $ as $$ProjectTag } from './projects_CXEmOaep.mjs';
+import { b as buttonTranslations, t as translations } from './Layout_DpPkgxYx.mjs';
 /* empty css                         */
 
 const Arrow = new Proxy({"src":"/custom-folder/Arrow_link.4yBbKQU6.svg","width":827,"height":826,"format":"svg"}, {
@@ -10,14 +10,14 @@ const Arrow = new Proxy({"src":"/custom-folder/Arrow_link.4yBbKQU6.svg","width":
 								return structuredClone(target);
 							}
 							if (name === 'fsPath') {
-								return "C:/Users/sabri/OneDrive/Desktop/feuchter-gmbh-astro/feuchter-gmbh/src/assets/Arrow_link.svg";
+								return "/home/felix/Desktop/feuchtergmbh_website/feuchter-gmbh/src/assets/Arrow_link.svg";
 							}
 							
 							return target[name];
 						}
 					});
 
-const $$Astro = createAstro();
+const $$Astro = createAstro("http://192.168.178.48:4321/");
 const $$Projects = createComponent(($$result, $$props, $$slots) => {
   const Astro2 = $$result.createAstro($$Astro, $$props, $$slots);
   Astro2.self = $$Projects;
@@ -41,6 +41,6 @@ const $$Projects = createComponent(($$result, $$props, $$slots) => {
       pageLanguage
     )}`, "data-astro-cid-amng4zvp": true })} ${renderComponent($$result, "ProjectTag", $$ProjectTag, { "tagContent": project.customer[pageLanguage], "data-astro-cid-amng4zvp": true })} ${renderComponent($$result, "ProjectTag", $$ProjectTag, { "tagContent": project.tl, "data-astro-cid-amng4zvp": true })} ${renderComponent($$result, "ProjectTag", $$ProjectTag, { "tagContent": project.date, "data-astro-cid-amng4zvp": true })} ${renderComponent($$result, "ProjectTag", $$ProjectTag, { "tagContent": project.status[pageLanguage], "data-astro-cid-amng4zvp": true })} </div> <p class="card-title" data-astro-cid-amng4zvp>${project.title[pageLanguage]}</p> </div> <p class="card-text" data-astro-cid-amng4zvp>${`${project.shortDescription[pageLanguage].slice(0, 200)}...`}</p> </div> <a${addAttribute(`/${pageLanguage}/projects/${project.slug}`, "href")} class="project-link" data-astro-cid-amng4zvp> <img${addAttribute(Arrow.src, "src")} alt="" data-astro-cid-amng4zvp> <span data-astro-cid-amng4zvp>${buttonTranslations("mehr", language)}</span> </a> </div>`;
   })} </div> </div> </section> `;
-}, "C:/Users/sabri/OneDrive/Desktop/feuchter-gmbh-astro/feuchter-gmbh/src/components/Projects.astro", void 0);
+}, "/home/felix/Desktop/feuchtergmbh_website/feuchter-gmbh/src/components/Projects.astro", void 0);
 
 export { $$Projects as $ };

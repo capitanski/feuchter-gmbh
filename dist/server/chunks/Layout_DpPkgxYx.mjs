@@ -1,4 +1,4 @@
-import { e as createComponent, f as createAstro, m as maybeRenderHead, h as addAttribute, r as renderTemplate, i as renderComponent, j as renderScript, l as renderHead, n as renderSlot } from './astro/server_D3XaGqlG.mjs';
+import { e as createAstro, f as createComponent, m as maybeRenderHead, h as addAttribute, r as renderTemplate, i as renderComponent, j as renderScript, l as renderHead, n as renderSlot } from './astro/server_CofuBfMf.mjs';
 import 'kleur/colors';
 /* empty css                         */
 import 'clsx';
@@ -9,7 +9,7 @@ const Circles = new Proxy({"src":"/custom-folder/Circles.Q2htWEHX.svg","width":1
 								return structuredClone(target);
 							}
 							if (name === 'fsPath') {
-								return "C:/Users/sabri/OneDrive/Desktop/feuchter-gmbh-astro/feuchter-gmbh/src/assets/Circles.svg";
+								return "/home/felix/Desktop/feuchtergmbh_website/feuchter-gmbh/src/assets/Circles.svg";
 							}
 							
 							return target[name];
@@ -199,7 +199,7 @@ const Logo = new Proxy({"src":"/custom-folder/feuchter_gmbh_logo.DsXPjw9d.svg","
 								return structuredClone(target);
 							}
 							if (name === 'fsPath') {
-								return "C:/Users/sabri/OneDrive/Desktop/feuchter-gmbh-astro/feuchter-gmbh/src/assets/feuchter_gmbh_logo.svg";
+								return "/home/felix/Desktop/feuchtergmbh_website/feuchter-gmbh/src/assets/feuchter_gmbh_logo.svg";
 							}
 							
 							return target[name];
@@ -212,14 +212,14 @@ const Menu = new Proxy({"src":"/custom-folder/Menu.BmJbz0by.svg","width":49,"hei
 								return structuredClone(target);
 							}
 							if (name === 'fsPath') {
-								return "C:/Users/sabri/OneDrive/Desktop/feuchter-gmbh-astro/feuchter-gmbh/src/assets/Menu.svg";
+								return "/home/felix/Desktop/feuchtergmbh_website/feuchter-gmbh/src/assets/Menu.svg";
 							}
 							
 							return target[name];
 						}
 					});
 
-const $$Astro$3 = createAstro();
+const $$Astro$3 = createAstro("http://192.168.178.48:4321/");
 const $$LangSwitcher = createComponent(($$result, $$props, $$slots) => {
   const Astro2 = $$result.createAstro($$Astro$3, $$props, $$slots);
   Astro2.self = $$LangSwitcher;
@@ -234,7 +234,7 @@ const $$LangSwitcher = createComponent(($$result, $$props, $$slots) => {
     searchparamString = `?category=${searchCategory}`;
   }
   return renderTemplate`${maybeRenderHead()}<nav data-astro-cid-su6xvggn> <ul data-astro-cid-su6xvggn> ${langs.map(({ lang, url: url2 }) => renderTemplate`<li data-astro-cid-su6xvggn> <a${addAttribute(`${url2}${searchparamString}`, "href")}${addAttribute(currentLang === lang ? "active" : "", "class")} data-astro-cid-su6xvggn> ${lang.toUpperCase()} </a> </li>`)} </ul> </nav> `;
-}, "C:/Users/sabri/OneDrive/Desktop/feuchter-gmbh-astro/feuchter-gmbh/src/components/LangSwitcher.astro", void 0);
+}, "/home/felix/Desktop/feuchtergmbh_website/feuchter-gmbh/src/components/LangSwitcher.astro", void 0);
 
 const navLinks = {
   de: [
@@ -369,7 +369,7 @@ const navLinks = {
   ]
 };
 
-const $$Astro$2 = createAstro();
+const $$Astro$2 = createAstro("http://192.168.178.48:4321/");
 const $$Navbar = createComponent(($$result, $$props, $$slots) => {
   const Astro2 = $$result.createAstro($$Astro$2, $$props, $$slots);
   Astro2.self = $$Navbar;
@@ -383,10 +383,10 @@ const $$Navbar = createComponent(($$result, $$props, $$slots) => {
       currentPath === `/${language}/${link.to}` ? "active mobile-link" : "mobile-link",
       "class"
     )} data-astro-cid-5blmo7yk> ${link.text} </a>`;
-  })} </div> </nav> ${renderScript($$result, "C:/Users/sabri/OneDrive/Desktop/feuchter-gmbh-astro/feuchter-gmbh/src/components/Navbar.astro?astro&type=script&index=0&lang.ts")} `;
-}, "C:/Users/sabri/OneDrive/Desktop/feuchter-gmbh-astro/feuchter-gmbh/src/components/Navbar.astro", void 0);
+  })} </div> </nav> ${renderScript($$result, "/home/felix/Desktop/feuchtergmbh_website/feuchter-gmbh/src/components/Navbar.astro?astro&type=script&index=0&lang.ts")} `;
+}, "/home/felix/Desktop/feuchtergmbh_website/feuchter-gmbh/src/components/Navbar.astro", void 0);
 
-const $$Astro$1 = createAstro();
+const $$Astro$1 = createAstro("http://192.168.178.48:4321/");
 const $$Footer = createComponent(($$result, $$props, $$slots) => {
   const Astro2 = $$result.createAstro($$Astro$1, $$props, $$slots);
   Astro2.self = $$Footer;
@@ -395,13 +395,13 @@ const $$Footer = createComponent(($$result, $$props, $$slots) => {
   return renderTemplate`${maybeRenderHead()}<nav id="footer" data-astro-cid-sz7xmlte> <div class="nav-inner" data-astro-cid-sz7xmlte> <div class="logo-and-legal" data-astro-cid-sz7xmlte> <img${addAttribute(Logo.src, "src")} alt="" class="logo" loading="lazy" data-astro-cid-sz7xmlte> <div class="links legal" data-astro-cid-sz7xmlte> <a${addAttribute(`/${language}/legal/imprint`, "href")} data-astro-cid-sz7xmlte>${buttonTranslations("impressum", language)}</a> <a${addAttribute(`/${language}/legal/privacy`, "href")} data-astro-cid-sz7xmlte>${buttonTranslations("datenschutz", language)}</a> <a${addAttribute(`/${language}/legal/agbs`, "href")} data-astro-cid-sz7xmlte>${buttonTranslations("agbs", language)}</a> </div> </div> <div class="links" data-astro-cid-sz7xmlte> ${renderComponent($$result, "LangSwitcher", $$LangSwitcher, { "langs": languages, "data-astro-cid-sz7xmlte": true })} ${links.map((link) => {
     return renderTemplate`<a${addAttribute(`/${language}/${link.to}`, "href")} data-astro-cid-sz7xmlte>${link.text}</a>`;
   })} </div> <div class="langswitcher-and-contact" data-astro-cid-sz7xmlte> <div class="contact-data" data-astro-cid-sz7xmlte> <p data-astro-cid-sz7xmlte>+49 123456789</p> <p data-astro-cid-sz7xmlte>office@feuchter.com</p> <p data-astro-cid-sz7xmlte>Feuchter GmbH</p> <p data-astro-cid-sz7xmlte>Innbruckstraße 10</p> <p data-astro-cid-sz7xmlte>4780 Schärding AT</p> </div> </div> </div> </nav> `;
-}, "C:/Users/sabri/OneDrive/Desktop/feuchter-gmbh-astro/feuchter-gmbh/src/components/Footer.astro", void 0);
+}, "/home/felix/Desktop/feuchtergmbh_website/feuchter-gmbh/src/components/Footer.astro", void 0);
 
 const $$Login = createComponent(($$result, $$props, $$slots) => {
-  return renderTemplate`${maybeRenderHead()}<form id="login-form" data-astro-cid-b2fdlob7> <div class="form-inner" data-astro-cid-b2fdlob7> <img${addAttribute(Circles.src, "src")} alt="" data-astro-cid-b2fdlob7> <h1 data-astro-cid-b2fdlob7>Login</h1> <input type="password" name="password" id="password" placeholder="Passwort" data-astro-cid-b2fdlob7> <input type="submit" value="Anmelden" data-astro-cid-b2fdlob7> </div> </form> ${renderScript($$result, "C:/Users/sabri/OneDrive/Desktop/feuchter-gmbh-astro/feuchter-gmbh/src/components/Login.astro?astro&type=script&index=0&lang.ts")} `;
-}, "C:/Users/sabri/OneDrive/Desktop/feuchter-gmbh-astro/feuchter-gmbh/src/components/Login.astro", void 0);
+  return renderTemplate`${maybeRenderHead()}<form id="login-form" data-astro-cid-b2fdlob7> <div class="form-inner" data-astro-cid-b2fdlob7> <img${addAttribute(Circles.src, "src")} alt="" data-astro-cid-b2fdlob7> <h1 data-astro-cid-b2fdlob7>Login</h1> <input type="password" name="password" id="password" placeholder="Passwort" data-astro-cid-b2fdlob7> <input type="submit" value="Anmelden" data-astro-cid-b2fdlob7> </div> </form> ${renderScript($$result, "/home/felix/Desktop/feuchtergmbh_website/feuchter-gmbh/src/components/Login.astro?astro&type=script&index=0&lang.ts")} `;
+}, "/home/felix/Desktop/feuchtergmbh_website/feuchter-gmbh/src/components/Login.astro", void 0);
 
-const $$Astro = createAstro();
+const $$Astro = createAstro("http://192.168.178.48:4321/");
 const $$Layout = createComponent(($$result, $$props, $$slots) => {
   const Astro2 = $$result.createAstro($$Astro, $$props, $$slots);
   Astro2.self = $$Layout;
@@ -415,7 +415,7 @@ const $$Layout = createComponent(($$result, $$props, $$slots) => {
   if (searchCategory) {
     searchparamString = `?category=${searchCategory}`;
   }
-  return renderTemplate`<html${addAttribute(pageLanguage, "lang")} data-astro-cid-sckkx6r4> <head><meta charset="UTF-8"><meta name="viewport" content="width=device-width"><link rel="icon" type="image/svg+xml" href="/favicon.svg"><meta name="generator"${addAttribute(Astro2.generator, "content")}><title>Feuchter GmbH - Bekleidungslösungen</title><meta name="description" content="Jakob Matuschek - Saxophonmusik aus dem Herzen Passau's"><link rel="canonical"${addAttribute(languages[0].url, "href")}>${languages.map(({ lang, url: url2 }) => renderTemplate`<link rel="alternate"${addAttribute(lang, "hreflang")}${addAttribute(`${url2}${searchparamString}`, "href")}>`)}${renderHead()}</head> <body id="body" data-astro-cid-sckkx6r4> ${renderComponent($$result, "Login", $$Login, { "data-astro-cid-sckkx6r4": true })} ${renderComponent($$result, "Navbar", $$Navbar, { "language": pageLanguage, "languages": languages, "data-astro-cid-sckkx6r4": true })} ${renderSlot($$result, $$slots["default"])} ${renderComponent($$result, "Footer", $$Footer, { "language": pageLanguage, "languages": languages, "data-astro-cid-sckkx6r4": true })} ${renderScript($$result, "C:/Users/sabri/OneDrive/Desktop/feuchter-gmbh-astro/feuchter-gmbh/src/layouts/Layout.astro?astro&type=script&index=0&lang.ts")} </body></html>`;
-}, "C:/Users/sabri/OneDrive/Desktop/feuchter-gmbh-astro/feuchter-gmbh/src/layouts/Layout.astro", void 0);
+  return renderTemplate`<html${addAttribute(pageLanguage, "lang")} data-astro-cid-sckkx6r4> <head><meta charset="UTF-8"><meta name="viewport" content="width=device-width"><link rel="icon" type="image/svg+xml" href="/favicon.svg"><meta name="generator"${addAttribute(Astro2.generator, "content")}><title>Feuchter GmbH - Bekleidungslösungen</title><meta name="description" content="Jakob Matuschek - Saxophonmusik aus dem Herzen Passau's"><link rel="canonical"${addAttribute(languages[0].url, "href")}>${languages.map(({ lang, url: url2 }) => renderTemplate`<link rel="alternate"${addAttribute(lang, "hreflang")}${addAttribute(`${url2}${searchparamString}`, "href")}>`)}${renderHead()}</head> <body id="body" data-astro-cid-sckkx6r4> ${renderComponent($$result, "Login", $$Login, { "data-astro-cid-sckkx6r4": true })} ${renderComponent($$result, "Navbar", $$Navbar, { "language": pageLanguage, "languages": languages, "data-astro-cid-sckkx6r4": true })} ${renderSlot($$result, $$slots["default"])} ${renderComponent($$result, "Footer", $$Footer, { "language": pageLanguage, "languages": languages, "data-astro-cid-sckkx6r4": true })} ${renderScript($$result, "/home/felix/Desktop/feuchtergmbh_website/feuchter-gmbh/src/layouts/Layout.astro?astro&type=script&index=0&lang.ts")} </body></html>`;
+}, "/home/felix/Desktop/feuchtergmbh_website/feuchter-gmbh/src/layouts/Layout.astro", void 0);
 
 export { $$Layout as $, Circles as C, buttonTranslations as b, translations as t };

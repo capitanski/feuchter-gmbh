@@ -4,213 +4,211 @@ import Produktionsketten from "../assets/globe.svg";
 import Grossserien from "../assets/grossserien.svg";
 import Qualitaetsstandards from "../assets/qualitaetsstandards.svg";
 import Neuentwicklungen from "../assets/neuentwicklungen.svg";
-import Lieferant from "../assets/Lieferant.svg";
+import Lieferant from "../assets/lieferant.svg";
 import Qualitaetsmanagement from "../assets/qualitaetsmanagement.svg";
 const { language } = Astro.props;
 const headline = {
-    de: "Ihre Vision – professionell umgesetzt",
-    en: "Your vision, expertly handled",
+  de: "Ihre Vision – professionell umgesetzt",
+  en: "Your vision, expertly handled",
 };
 const leistungen = [
-    {
-        icon: Produktionsketten.src,
-        title: {
-            de: "Internationale Produktionsketten",
-            en: "International Production Chains",
-        },
-        text: {
-            de: "Wir sind ein internationaler Bekleidungshersteller mit nachhaltigen Produktionsketten, hoher Qualität und fairen Arbeitsbedingungen. Effiziente Logistik und verantwortungsvolle Prozesse sichern termingerechte Lieferungen und High-End Produkte für spezielle Einsatzzwecke.",
-            en: "We are an international clothing manufacturer with sustainable production chains, high quality, and fair working conditions. Efficient logistics and responsible processes ensure on-time deliveries and high-end products for specialized applications.",
-        },
+  {
+    icon: Produktionsketten.src,
+    title: {
+      de: "Internationale Produktionsketten",
+      en: "International Production Chains",
     },
-    {
-        icon: Grossserien.src,
-        title: {
-            de: "Der Profi für Großserien",
-            en: "The Expert for Large-Scale Production",
-        },
-        text: {
-            de: "Als Experte für Großserienfertigung bieten wir hochwertige Bekleidung in großen Stückzahlen. Effiziente Produktion, präzise Prozesse und verlässliche Lieferketten garantieren erstklassige Qualität und pünktliche Lieferung an Ziele auf der ganzen Welt.",
-            en: "As experts in large-scale manufacturing, we offer high-quality clothing in large quantities. Efficient production, precise processes, and reliable supply chains guarantee top quality and on-time delivery worldwide.",
-        },
+    text: {
+      de: "Wir sind ein internationaler Bekleidungshersteller mit nachhaltigen Produktionsketten, hoher Qualität und fairen Arbeitsbedingungen. Effiziente Logistik und verantwortungsvolle Prozesse sichern termingerechte Lieferungen und High-End Produkte für spezielle Einsatzzwecke.",
+      en: "We are an international clothing manufacturer with sustainable production chains, high quality, and fair working conditions. Efficient logistics and responsible processes ensure on-time deliveries and high-end products for specialized applications.",
     },
-    {
-        icon: Qualitaetsstandards.src,
-        title: {
-            de: "Höchste Qualitätsstandards",
-            en: "Highest Quality Standards",
-        },
-        text: {
-            de: "Unsere hohen Qualitätsstandards sichern erstklassige Bekleidung durch präzise Fertigung, strenge Kontrollen und nachhaltige Materialien. Wir garantieren Langlebigkeit, Komfort und Perfektion für anspruchsvolle Kunden weltweit.",
-            en: "Our high quality standards ensure top-tier clothing through precise manufacturing, strict controls, and sustainable materials. We guarantee durability, comfort, and perfection for demanding customers worldwide.",
-        },
+  },
+  {
+    icon: Grossserien.src,
+    title: {
+      de: "Der Profi für Großserien",
+      en: "The Expert for Large-Scale Production",
     },
-    {
-        icon: Neuentwicklungen.src,
-        title: {
-            de: "Wir lieben Neuentwicklungen",
-            en: "We Love New Developments",
-        },
-        text: {
-            de: "Wir realisieren komplette Neuentwicklungen in Bekleidung und Textil — von der Idee bis zum fertigen Produkt. Innovative Designs, moderne Materialien und maßgeschneiderte Lösungen für Ihre Vision.",
-            en: "We implement complete new developments in clothing and textiles — from concept to finished product. Innovative designs, modern materials, and custom solutions for your vision.",
-        },
+    text: {
+      de: "Als Experte für Großserienfertigung bieten wir hochwertige Bekleidung in großen Stückzahlen. Effiziente Produktion, präzise Prozesse und verlässliche Lieferketten garantieren erstklassige Qualität und pünktliche Lieferung an Ziele auf der ganzen Welt.",
+      en: "As experts in large-scale manufacturing, we offer high-quality clothing in large quantities. Efficient production, precise processes, and reliable supply chains guarantee top quality and on-time delivery worldwide.",
     },
-    {
-        icon: Lieferant.src,
-        title: {
-            de: "Offizieller Lieferant der Deutschen Bundeswehr",
-            en: "Official Supplier to the German Armed Forces",
-        },
-        text: {
-            de: "Als offizieller Lieferant der Deutschen Bundeswehr bieten wir hochwertige, langlebige und funktionale Bekleidung. Unsere Produkte erfüllen höchste Standards und gewährleisten Zuverlässigkeit unter extremen Bedingungen.",
-            en: "As an official supplier to the German Armed Forces, we provide high-quality, durable, and functional clothing. Our products meet the highest standards and ensure reliability under extreme conditions.",
-        },
+  },
+  {
+    icon: Qualitaetsstandards.src,
+    title: {
+      de: "Höchste Qualitätsstandards",
+      en: "Highest Quality Standards",
     },
-    {
-        icon: Qualitaetsmanagement.src,
-        title: {
-            de: "Qualitätsmanagement vom Feinsten",
-            en: "Top-Notch Quality Management",
-        },
-        text: {
-            de: "Wir garantieren makelloses Qualitätsmanagement durch deutsche Fachkräfte in unseren ausländischen Produktionsstätten. Präzise Kontrollen und höchste Standards sichern erstklassige Bekleidung – zuverlässig, nachhaltig und effizient.",
-            en: "We guarantee flawless quality management by German experts in our foreign production sites. Precise inspections and the highest standards ensure premium clothing — reliable, sustainable, and efficient.",
-        },
+    text: {
+      de: "Unsere hohen Qualitätsstandards sichern erstklassige Bekleidung durch präzise Fertigung, strenge Kontrollen und nachhaltige Materialien. Wir garantieren Langlebigkeit, Komfort und Perfektion für anspruchsvolle Kunden weltweit.",
+      en: "Our high quality standards ensure top-tier clothing through precise manufacturing, strict controls, and sustainable materials. We guarantee durability, comfort, and perfection for demanding customers worldwide.",
     },
+  },
+  {
+    icon: Neuentwicklungen.src,
+    title: {
+      de: "Wir lieben Neuentwicklungen",
+      en: "We Love New Developments",
+    },
+    text: {
+      de: "Wir realisieren komplette Neuentwicklungen in Bekleidung und Textil — von der Idee bis zum fertigen Produkt. Innovative Designs, moderne Materialien und maßgeschneiderte Lösungen für Ihre Vision.",
+      en: "We implement complete new developments in clothing and textiles — from concept to finished product. Innovative designs, modern materials, and custom solutions for your vision.",
+    },
+  },
+  {
+    icon: Lieferant.src,
+    title: {
+      de: "Offizieller Lieferant der Deutschen Bundeswehr",
+      en: "Official Supplier to the German Armed Forces",
+    },
+    text: {
+      de: "Als offizieller Lieferant der Deutschen Bundeswehr bieten wir hochwertige, langlebige und funktionale Bekleidung. Unsere Produkte erfüllen höchste Standards und gewährleisten Zuverlässigkeit unter extremen Bedingungen.",
+      en: "As an official supplier to the German Armed Forces, we provide high-quality, durable, and functional clothing. Our products meet the highest standards and ensure reliability under extreme conditions.",
+    },
+  },
+  {
+    icon: Qualitaetsmanagement.src,
+    title: {
+      de: "Qualitätsmanagement vom Feinsten",
+      en: "Top-Notch Quality Management",
+    },
+    text: {
+      de: "Wir garantieren makelloses Qualitätsmanagement durch deutsche Fachkräfte in unseren ausländischen Produktionsstätten. Präzise Kontrollen und höchste Standards sichern erstklassige Bekleidung – zuverlässig, nachhaltig und effizient.",
+      en: "We guarantee flawless quality management by German experts in our foreign production sites. Precise inspections and the highest standards ensure premium clothing — reliable, sustainable, and efficient.",
+    },
+  },
 ];
 ---
 
 <section id="usps">
-    <img src={Circles.src} alt="" class="img-absolute" />
-    <div class="container">
-        <h2 class="animatable">{headline[language]}</h2>
-        <div class="rezensionen-grid">
-            {
-                leistungen.map((leistung) => {
-                    return (
-                        <div class="rezension-card animate-in-right">
-                            <div class="icon-and-title">
-                                <img
-                                    src={leistung.icon}
-                                    alt=""
-                                    class="card-icon"
-                                    loading="lazy"
-                                    width="150"
-                                    height="150"
-                                />
-                                <p class="card-title">
-                                    {leistung.title[language]}
-                                </p>
-                            </div>
-                            <p class="card-text">{leistung.text[language]}</p>
-                        </div>
-                    );
-                })
-            }
-        </div>
+  <img src={Circles.src} alt="" class="img-absolute" />
+  <div class="container">
+    <h2 class="animatable">{headline[language]}</h2>
+    <div class="rezensionen-grid">
+      {
+        leistungen.map((leistung) => {
+          return (
+            <div class="rezension-card animate-in-right">
+              <div class="icon-and-title">
+                <img
+                  src={leistung.icon}
+                  alt=""
+                  class="card-icon"
+                  loading="lazy"
+                  width="150"
+                  height="150"
+                />
+                <p class="card-title">{leistung.title[language]}</p>
+              </div>
+              <p class="card-text">{leistung.text[language]}</p>
+            </div>
+          );
+        })
+      }
     </div>
+  </div>
 </section>
 
 <style>
-    section {
-        position: relative;
-        padding: 50px 0 !important;
+  section {
+    position: relative;
+    padding: 50px 0 !important;
+  }
+  .img-absolute {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    z-index: -1;
+    opacity: 0.4;
+    width: 50%;
+    @media screen and (max-width: 820px) {
+      bottom: auto;
+      top: 0;
+      width: 80%;
     }
-    .img-absolute {
-        position: absolute;
-        bottom: 0;
-        right: 0;
-        z-index: -1;
-        opacity: 0.4;
-        width: 50%;
-        @media screen and (max-width: 820px) {
-            bottom: auto;
-            top: 0;
-            width: 80%;
-        }
+  }
+  .container {
+    position: relative;
+    align-items: flex-start;
+    @media screen and (max-width: 820px) {
+      padding: 0 20px;
     }
-    .container {
-        position: relative;
-        align-items: flex-start;
-        @media screen and (max-width: 820px) {
-            padding: 0 20px;
-        }
-        @media screen and (max-width: 1024px) and (min-width: 821px) {
-            padding: 0 70px;
-        }
+    @media screen and (max-width: 1024px) and (min-width: 821px) {
+      padding: 0 70px;
     }
-    .subtitle {
-        text-align: left;
-        margin: 0;
-        font-weight: 600;
+  }
+  .subtitle {
+    text-align: left;
+    margin: 0;
+    font-weight: 600;
+  }
+  .scribble {
+    position: absolute;
+    top: 0;
+    left: 5vw;
+    object-fit: contain;
+    z-index: -1;
+    opacity: 0.2;
+    width: 20%;
+  }
+  .rezensionen-grid {
+    width: 100%;
+    display: grid;
+    column-gap: 50px;
+    row-gap: 50px;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin-top: 25px;
+    @media screen and (max-width: 820px) {
+      grid-template-columns: auto;
     }
-    .scribble {
-        position: absolute;
-        top: 0;
-        left: 5vw;
-        object-fit: contain;
-        z-index: -1;
-        opacity: 0.2;
-        width: 20%;
+    @media screen and (max-width: 1024px) and (min-width: 821px) {
+      grid-template-columns: auto auto;
     }
-    .rezensionen-grid {
-        width: 100%;
-        display: grid;
-        column-gap: 50px;
-        row-gap: 50px;
-        grid-template-columns: 1fr 1fr 1fr;
-        margin-top: 25px;
-        @media screen and (max-width: 820px) {
-            grid-template-columns: auto;
-        }
-        @media screen and (max-width: 1024px) and (min-width: 821px) {
-            grid-template-columns: auto auto;
-        }
-    }
-    .rezension-card {
-        display: flex;
-        flex-direction: column;
-        justify-content: flex-start;
-        align-items: flex-start;
-        gap: 5px;
-    }
-    .rezension-card p {
-        margin: 0;
-    }
-    .card-icon {
-        width: 40px;
-        height: 40px;
-        object-fit: contain;
-    }
-    .card-title {
-        font-weight: 800;
-        font-size: 1.2rem;
-    }
-    .card-text {
-        font-size: 0.8rem;
-    }
-    .container {
-        display: flex;
-        flex-direction: column;
-    }
-    section {
-        padding: 50px 0;
-    }
-    h2 {
-        align-self: flex-start;
-        margin-bottom: 0px;
-        font-size: 3rem;
-        font-family: "Afacadflux", sans-serif;
-        text-transform: uppercase;
-        font-weight: 800;
-    }
-    .icon-and-title {
-        display: flex;
-        flex-direction: column;
-        justify-content: flex-start;
-        align-items: flex-start;
-        gap: 20px;
-        width: 100%;
-    }
+  }
+  .rezension-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 5px;
+  }
+  .rezension-card p {
+    margin: 0;
+  }
+  .card-icon {
+    width: 40px;
+    height: 40px;
+    object-fit: contain;
+  }
+  .card-title {
+    font-weight: 800;
+    font-size: 1.2rem;
+  }
+  .card-text {
+    font-size: 0.8rem;
+  }
+  .container {
+    display: flex;
+    flex-direction: column;
+  }
+  section {
+    padding: 50px 0;
+  }
+  h2 {
+    align-self: flex-start;
+    margin-bottom: 0px;
+    font-size: 3rem;
+    font-family: "Afacadflux", sans-serif;
+    text-transform: uppercase;
+    font-weight: 800;
+  }
+  .icon-and-title {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 20px;
+    width: 100%;
+  }
 </style>
