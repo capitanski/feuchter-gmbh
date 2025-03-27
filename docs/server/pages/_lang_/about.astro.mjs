@@ -1,7 +1,7 @@
-import { f as createComponent, m as maybeRenderHead, h as addAttribute, r as renderTemplate, e as createAstro, i as renderComponent } from '../../chunks/astro/server_Li3VZHa6.mjs';
+import { e as createAstro, f as createComponent, m as maybeRenderHead, h as addAttribute, r as renderTemplate, i as renderComponent } from '../../chunks/astro/server_CofuBfMf.mjs';
 import 'kleur/colors';
-import { $ as $$WelcomeLeftAligned } from '../../chunks/WelcomeLeftAligned_C5xH2p6w.mjs';
-import { $ as $$Layout } from '../../chunks/Layout_Bmhv3BOY.mjs';
+import { $ as $$WelcomeLeftAligned } from '../../chunks/WelcomeLeftAligned_CKHqU0IZ.mjs';
+import { $ as $$Layout } from '../../chunks/Layout_B3q6ub7q.mjs';
 import 'clsx';
 /* empty css                                    */
 export { renderers } from '../../renderers.mjs';
@@ -97,62 +97,99 @@ const avatar = new Proxy({"src":"/custom-folder/avatar.BIt64UI2.jpg","width":400
 						}
 					});
 
+const $$Astro$1 = createAstro("https://capitanski.github.io/");
 const $$TeamGrid = createComponent(($$result, $$props, $$slots) => {
+  const Astro2 = $$result.createAstro($$Astro$1, $$props, $$slots);
+  Astro2.self = $$TeamGrid;
+  const { language } = Astro2.props;
+  const headline = {
+    de: "Lernen Sie das Team kennen",
+    en: "Meet the team"
+  };
+  const cite = {
+    de: `"Unsere Liebe zum Detail und unser Anspruch an Perfektion
+                treiben uns jeden Tag aufs Neue an. Auch in der
+                Gro\xDFserienproduktion geben wir uns nicht mit dem Durchschnitt
+                zufrieden \u2013 denn echte Qualit\xE4t zeigt sich in den kleinen
+                Dingen. Daf\xFCr stehen wir mit Stolz seit \xFCber 60 Jahren."`,
+    en: `"Our passion for detail and our commitment to perfection drive us every single day. Even in large-scale production, we never settle for average \u2013 because true quality reveals itself in the little things. We've proudly stood by that belief for over 60 years."`
+  };
   const teamMembers = [
     {
       img: klaus.src,
       name: "Klaus Feuchter",
-      role: "CEO"
+      role: {
+        de: "CEO",
+        en: "CEO"
+      }
     },
     {
       img: markus.src,
       name: "Markus Feuchter",
-      role: "Produktentwicklung"
+      role: {
+        de: "Produktentwicklung",
+        en: "Product Development"
+      }
     },
     {
       img: sabrina.src,
       name: "Sabrina Feuchter",
-      role: "Stellvertretende Gesch\xE4ftsf\xFChrung"
+      role: {
+        de: "Stellvertretende Gesch\xE4ftsf\xFChrung",
+        en: "Deputy Managing Director"
+      }
     },
     {
       img: avatar.src,
       name: "Kathrin Hinz",
-      role: "Assistentin d. Gesch\xE4ftsf\xFChrung"
+      role: {
+        de: "Assistentin d. Gesch\xE4ftsf\xFChrung",
+        en: "Executive Assistant"
+      }
     },
     {
       img: gabriele.src,
       name: "Gabriele Feuchter",
-      role: "Leitung d. Finanzbuchhaltung"
+      role: {
+        de: "Leitung d. Finanzbuchhaltung",
+        en: "Head of Financial Accounting"
+      }
     },
     {
       img: lea.src,
       name: "Lea Feuchter",
-      role: "Finanzbuchhaltung"
+      role: {
+        de: "Finanzbuchhaltung",
+        en: "Financial Accounting"
+      }
     },
     {
       img: felix.src,
       name: "Felix Feuchter",
-      role: "Head of Marketing, PR & Design"
+      role: {
+        de: "Head of Marketing, PR & Design",
+        en: "Head of Marketing, PR & Design"
+      }
     },
     {
       img: avatar.src,
       name: "Monika Walter",
-      role: "Logistik & Lagerverwaltung"
+      role: {
+        de: "Logistik & Lagerverwaltung",
+        en: "Logistics & Warehouse Management"
+      }
     },
     {
       img: avatar.src,
       name: "Maximilian Hierl",
-      role: "M. Eng. Qualit\xE4tsingenieur"
+      role: {
+        de: "M. Eng. Qualit\xE4tsingenieur",
+        en: "M. Eng. Quality Engineer"
+      }
     }
   ];
-  return renderTemplate`${maybeRenderHead()}<section data-astro-cid-liz7rhkm> <div class="container" data-astro-cid-liz7rhkm> <div class="title-and-cite" data-astro-cid-liz7rhkm> <h2 class="animate-in-right" data-astro-cid-liz7rhkm>Lernen Sie das Team kennen</h2> <p class="zitat" data-astro-cid-liz7rhkm>
-"Unsere Liebe zum Detail und unser Anspruch an Perfektion
-                treiben uns jeden Tag aufs Neue an. Auch in der
-                Großserienproduktion geben wir uns nicht mit dem Durchschnitt
-                zufrieden – denn echte Qualität zeigt sich in den kleinen
-                Dingen. Dafür stehen wir mit Stolz seit über 60 Jahren."
-</p> </div> <div class="grid" data-astro-cid-liz7rhkm> ${teamMembers.map((item) => {
-    return renderTemplate`<div class="grid-item animatable" data-astro-cid-liz7rhkm> <img${addAttribute(item.img, "src")} alt="" data-astro-cid-liz7rhkm> <div class="grid-item-text" data-astro-cid-liz7rhkm> <p data-astro-cid-liz7rhkm>${item.name}</p> <span data-astro-cid-liz7rhkm>${item.role}</span> </div> </div>`;
+  return renderTemplate`${maybeRenderHead()}<section data-astro-cid-liz7rhkm> <div class="container" data-astro-cid-liz7rhkm> <div class="title-and-cite" data-astro-cid-liz7rhkm> <h2 class="animate-in-right" data-astro-cid-liz7rhkm>${headline[language]}</h2> <p class="zitat" data-astro-cid-liz7rhkm> ${cite[language]} </p> </div> <div class="grid" data-astro-cid-liz7rhkm> ${teamMembers.map((item) => {
+    return renderTemplate`<div class="grid-item animatable" data-astro-cid-liz7rhkm> <img${addAttribute(item.img, "src")} alt="" data-astro-cid-liz7rhkm> <div class="grid-item-text" data-astro-cid-liz7rhkm> <p data-astro-cid-liz7rhkm>${item.name}</p> <span data-astro-cid-liz7rhkm>${item.role[language]}</span> </div> </div>`;
   })} </div> </div> </section> `;
 }, "C:/Users/sabri/OneDrive/Desktop/feuchter-gmbh-astro/feuchter-gmbh/src/components/TeamGrid.astro", void 0);
 
@@ -184,7 +221,7 @@ Seit 1957 haben wir uns vom traditionellen Bekleidungshersteller zu einem intern
     subtitle = "Family-owned since 1957.";
     introText = `Since 1957, we have evolved from a traditional clothing manufacturer into an internationally operating supplier for armies and authorities worldwide. With our many years of experience, we offer tailored solutions that meet the highest standards of quality, functionality, and safety.`;
   }
-  return renderTemplate`${renderComponent($$result, "Layout", $$Layout, {}, { "default": ($$result2) => renderTemplate` ${renderComponent($$result2, "WelcomeLeftAligned", $$WelcomeLeftAligned, { "language": pageLanguage, "heading": heading, "subtitle": subtitle, "introText": introText, "Scribble": Scribble })} ${renderComponent($$result2, "TeamGrid", $$TeamGrid, {})} ` })}`;
+  return renderTemplate`${renderComponent($$result, "Layout", $$Layout, {}, { "default": ($$result2) => renderTemplate` ${renderComponent($$result2, "WelcomeLeftAligned", $$WelcomeLeftAligned, { "language": pageLanguage, "heading": heading, "subtitle": subtitle, "introText": introText, "Scribble": Scribble })} ${renderComponent($$result2, "TeamGrid", $$TeamGrid, { "language": pageLanguage })} ` })}`;
 }, "C:/Users/sabri/OneDrive/Desktop/feuchter-gmbh-astro/feuchter-gmbh/src/pages/[lang]/about.astro", void 0);
 
 const $$file = "C:/Users/sabri/OneDrive/Desktop/feuchter-gmbh-astro/feuchter-gmbh/src/pages/[lang]/about.astro";

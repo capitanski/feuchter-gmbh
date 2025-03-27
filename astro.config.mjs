@@ -6,14 +6,17 @@ import mdx from "@astrojs/mdx";
 // Make sure to uncomment the base when publishing to GITHUB PAGES
 // https://astro.build/config
 export default defineConfig({
-  site: "https://capitanski.github.io/",
+  //site: "https://capitanski.github.io/",
   integrations: [mdx()],
-  outDir: "./docs",
+  //outDir: "./docs",
   output: "server",
   adapter: node({ mode: "standalone" }),
   //base: 'matuschek',
   build: {
     assets: "custom-folder",
+  },
+  server: {
+    host: true
   },
   vite: {
     resolve: {
