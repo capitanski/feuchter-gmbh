@@ -1,9 +1,9 @@
 import { e as createAstro, f as createComponent, i as renderComponent, r as renderTemplate } from '../../chunks/astro/server_CofuBfMf.mjs';
 import 'kleur/colors';
-import { $ as $$Layout } from '../../chunks/Layout_BGlig_Eg.mjs';
-import { $ as $$ProductGrid } from '../../chunks/ProductGrid_1FGhfu4c.mjs';
+import { $ as $$Layout } from '../../chunks/Layout_BOf780Oc.mjs';
+import { $ as $$ProductGrid } from '../../chunks/ProductGrid_DUfxWBXk.mjs';
 import { S as Scribble$1 } from '../../chunks/feuchter_gmbh_header_DPQaMsdO.mjs';
-import { S as Scribble } from '../../chunks/projekte_C1wqO7aJ.mjs';
+import { S as Scribble } from '../../chunks/projekte_YcggKxQO.mjs';
 export { renderers } from '../../renderers.mjs';
 
 const clothingCategories = {

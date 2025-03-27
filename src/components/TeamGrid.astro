@@ -8,199 +8,199 @@ import markus from "@/assets/team/markus_feuchter.jpg";
 import avatar from "@/assets/team/avatar.jpg";
 const { language } = Astro.props;
 const headline = {
-    de: "Lernen Sie das Team kennen",
-    en: "Meet the team",
+  de: "Lernen Sie das Team kennen",
+  en: "Meet the team",
 };
 const cite = {
-    de: `"Unsere Liebe zum Detail und unser Anspruch an Perfektion
+  de: `"Unsere Liebe zum Detail und unser Anspruch an Perfektion
                 treiben uns jeden Tag aufs Neue an. Auch in der
                 Großserienproduktion geben wir uns nicht mit dem Durchschnitt
                 zufrieden – denn echte Qualität zeigt sich in den kleinen
                 Dingen. Dafür stehen wir mit Stolz seit über 60 Jahren."`,
-    en: `"Our passion for detail and our commitment to perfection drive us every single day. Even in large-scale production, we never settle for average – because true quality reveals itself in the little things. We've proudly stood by that belief for over 60 years."`,
+  en: `"Our passion for detail and our commitment to perfection drive us every single day. Even in large-scale production, we never settle for average – because true quality reveals itself in the little things. We've proudly stood by that belief for over 60 years."`,
 };
 const teamMembers = [
-    {
-        img: klaus.src,
-        name: "Klaus Feuchter",
-        role: {
-            de: "CEO",
-            en: "CEO",
-        },
+  {
+    img: klaus.src,
+    name: "Klaus Feuchter",
+    role: {
+      de: "CEO",
+      en: "CEO",
     },
-    {
-        img: markus.src,
-        name: "Markus Feuchter",
-        role: {
-            de: "Produktentwicklung",
-            en: "Product Development",
-        },
+  },
+  {
+    img: markus.src,
+    name: "Markus Feuchter",
+    role: {
+      de: "CEO",
+      en: "CEO",
     },
-    {
-        img: sabrina.src,
-        name: "Sabrina Feuchter",
-        role: {
-            de: "Stellvertretende Geschäftsführung",
-            en: "Deputy Managing Director",
-        },
+  },
+  {
+    img: sabrina.src,
+    name: "Sabrina Feuchter",
+    role: {
+      de: "Stellvertretende Geschäftsführung",
+      en: "Deputy Managing Director",
     },
-    {
-        img: avatar.src,
-        name: "Kathrin Hinz",
-        role: {
-            de: "Assistentin d. Geschäftsführung",
-            en: "Executive Assistant",
-        },
+  },
+  {
+    img: avatar.src,
+    name: "Kathrin Hinz",
+    role: {
+      de: "Assistentin d. Geschäftsführung",
+      en: "Executive Assistant",
     },
-    {
-        img: gabriele.src,
-        name: "Gabriele Feuchter",
-        role: {
-            de: "Leitung d. Finanzbuchhaltung",
-            en: "Head of Financial Accounting",
-        },
+  },
+  {
+    img: gabriele.src,
+    name: "Gabriele Feuchter",
+    role: {
+      de: "Leitung d. Finanzbuchhaltung",
+      en: "Head of Financial Accounting",
     },
-    {
-        img: lea.src,
-        name: "Lea Feuchter",
-        role: {
-            de: "Finanzbuchhaltung",
-            en: "Financial Accounting",
-        },
+  },
+  {
+    img: lea.src,
+    name: "Lea Feuchter",
+    role: {
+      de: "Finanzbuchhaltung",
+      en: "Financial Accounting",
     },
-    {
-        img: felix.src,
-        name: "Felix Feuchter",
-        role: {
-            de: "Head of Marketing, PR & Design",
-            en: "Head of Marketing, PR & Design",
-        },
+  },
+  {
+    img: felix.src,
+    name: "Felix Feuchter",
+    role: {
+      de: "Head of Marketing, PR & Design",
+      en: "Head of Marketing, PR & Design",
     },
-    {
-        img: avatar.src,
-        name: "Monika Walter",
-        role: {
-            de: "Logistik & Lagerverwaltung",
-            en: "Logistics & Warehouse Management",
-        },
+  },
+  {
+    img: avatar.src,
+    name: "Monika Walter",
+    role: {
+      de: "Logistik & Lagerverwaltung",
+      en: "Logistics & Warehouse Management",
     },
-    {
-        img: avatar.src,
-        name: "Maximilian Hierl",
-        role: {
-            de: "M. Eng. Qualitätsingenieur",
-            en: "M. Eng. Quality Engineer",
-        },
+  },
+  {
+    img: avatar.src,
+    name: "Maximilian Hierl",
+    role: {
+      de: "M. Eng. Qualitätsingenieur",
+      en: "M. Eng. Quality Engineer",
     },
+  },
 ];
 ---
 
 <section>
-    <div class="container">
-        <div class="title-and-cite">
-            <h2 class="animate-in-right">{headline[language]}</h2>
-            <p class="zitat">
-                {cite[language]}
-            </p>
-        </div>
-
-        <div class="grid">
-            {
-                teamMembers.map((item) => {
-                    return (
-                        <div class="grid-item animatable">
-                            <img src={item.img} alt="" />
-                            <div class="grid-item-text">
-                                <p>{item.name}</p>
-                                <span>{item.role[language]}</span>
-                            </div>
-                        </div>
-                    );
-                })
-            }
-        </div>
+  <div class="container">
+    <div class="title-and-cite">
+      <h2 class="animate-in-right">{headline[language]}</h2>
+      <p class="zitat">
+        {cite[language]}
+      </p>
     </div>
+
+    <div class="grid">
+      {
+        teamMembers.map((item) => {
+          return (
+            <div class="grid-item animatable">
+              <img src={item.img} alt="" />
+              <div class="grid-item-text">
+                <p>{item.name}</p>
+                <span>{item.role[language]}</span>
+              </div>
+            </div>
+          );
+        })
+      }
+    </div>
+  </div>
 </section>
 
 <style>
-    section {
-        background: var(--verydarkgray);
+  section {
+    background: var(--verydarkgray);
+  }
+  .container {
+    padding: 100px 0;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 20px;
+    @media screen and (max-width: 820px) {
+      flex-direction: column;
+      padding: 50px 20px;
     }
-    .container {
-        padding: 100px 0;
-        display: flex;
-        flex-direction: row;
-        align-items: flex-start;
-        gap: 20px;
-        @media screen and (max-width: 820px) {
-            flex-direction: column;
-            padding: 50px 20px;
-        }
+  }
+  .grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+    @media screen and (max-width: 820px) {
+      grid-template-columns: 1fr;
     }
-    .grid {
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
-        gap: 20px;
-        @media screen and (max-width: 820px) {
-            grid-template-columns: 1fr;
-        }
+  }
+  .grid-item {
+    position: relative;
+    padding: 0;
+    border-radius: 25px;
+    overflow: hidden;
+  }
+  .grid-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 25px;
+  }
+  .grid-item-text {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.7);
+    color: var(--lightgray);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+  }
+  p {
+    color: var(--lightgray);
+    font-size: 1.3rem;
+    font-weight: 700;
+    margin: 0;
+  }
+  span {
+    font-family: "Afacadflux", sans-serif;
+    font-size: 0.9rem;
+    color: var(--sand);
+    text-transform: uppercase;
+    font-weight: 200;
+  }
+  h2 {
+    font-family: "Afacadflux", sans-serif;
+    text-transform: uppercase;
+    color: var(--sand);
+  }
+  .title-and-cite {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    max-width: 30%;
+    @media screen and (max-width: 820px) {
+      max-width: 100%;
     }
-    .grid-item {
-        position: relative;
-        padding: 0;
-        border-radius: 25px;
-        overflow: hidden;
-    }
-    .grid-item img {
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-        border-radius: 25px;
-    }
-    .grid-item-text {
-        position: absolute;
-        width: 100%;
-        height: 100%;
-        top: 0;
-        left: 0;
-        background: rgba(0, 0, 0, 0.7);
-        color: var(--lightgray);
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        gap: 5px;
-    }
-    p {
-        color: var(--lightgray);
-        font-size: 1.3rem;
-        font-weight: 700;
-        margin: 0;
-    }
-    span {
-        font-family: "Afacadflux", sans-serif;
-        font-size: 0.9rem;
-        color: var(--sand);
-        text-transform: uppercase;
-        font-weight: 200;
-    }
-    h2 {
-        font-family: "Afacadflux", sans-serif;
-        text-transform: uppercase;
-        color: var(--sand);
-    }
-    .title-and-cite {
-        display: flex;
-        flex-direction: column;
-        gap: 20px;
-        max-width: 30%;
-        @media screen and (max-width: 820px) {
-            max-width: 100%;
-        }
-    }
-    .zitat {
-        font-weight: 200;
-        font-style: italic;
-        font-size: 1.2rem;
-    }
+  }
+  .zitat {
+    font-weight: 200;
+    font-style: italic;
+    font-size: 1.2rem;
+  }
 </style>

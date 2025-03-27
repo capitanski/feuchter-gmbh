@@ -98,13 +98,14 @@ h1 {
   -webkit-text-fill-color: transparent;
 
   @media screen and (max-width: 1028px) {
-    font-size: 1.5rem !important;
+    font-size: 1.75rem !important;
     line-height: 1.5rem !important;
   }
 }
 
 .subtitle {
   @media screen and (max-width: 1028px) {
+    margin-top: 10px !important;
     font-size: 1.1rem !important;
     line-height: 1.1rem !important;
   }
@@ -117,4 +118,5 @@ p {
   font-size: 0.85rem;
 }
 
-section {}
+section {
+}

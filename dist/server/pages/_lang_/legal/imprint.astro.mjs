@@ -1,7 +1,7 @@
 import { e as createAstro, f as createComponent, i as renderComponent, r as renderTemplate, m as maybeRenderHead, u as unescapeHTML } from '../../../chunks/astro/server_CofuBfMf.mjs';
 import 'kleur/colors';
 import fs from 'fs/promises';
-import { $ as $$Layout } from '../../../chunks/Layout_BGlig_Eg.mjs';
+import { $ as $$Layout } from '../../../chunks/Layout_BOf780Oc.mjs';
 /* empty css                                         */
 export { renderers } from '../../../renderers.mjs';
 

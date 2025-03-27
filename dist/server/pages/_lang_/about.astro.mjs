@@ -1,7 +1,7 @@
 import { e as createAstro, f as createComponent, m as maybeRenderHead, h as addAttribute, r as renderTemplate, i as renderComponent } from '../../chunks/astro/server_CofuBfMf.mjs';
 import 'kleur/colors';
-import { $ as $$WelcomeLeftAligned } from '../../chunks/WelcomeLeftAligned_C3QO3Bp6.mjs';
-import { $ as $$Layout } from '../../chunks/Layout_BGlig_Eg.mjs';
+import { $ as $$WelcomeLeftAligned } from '../../chunks/WelcomeLeftAligned_ClesInOg.mjs';
+import { $ as $$Layout } from '../../chunks/Layout_BOf780Oc.mjs';
 import 'clsx';
 /* empty css                                    */
 export { renderers } from '../../renderers.mjs';
@@ -127,8 +127,8 @@ const $$TeamGrid = createComponent(($$result, $$props, $$slots) => {
       img: markus.src,
       name: "Markus Feuchter",
       role: {
-        de: "Produktentwicklung",
-        en: "Product Development"
+        de: "CEO",
+        en: "CEO"
       }
     },
     {

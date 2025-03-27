@@ -1,12 +1,12 @@
 import { e as createAstro, f as createComponent, m as maybeRenderHead, h as addAttribute, i as renderComponent, r as renderTemplate } from '../chunks/astro/server_CofuBfMf.mjs';
 import 'kleur/colors';
 import { $ as $$Button } from '../chunks/Button_CREy6nXF.mjs';
-import { C as Circles$1, b as buttonTranslations, $ as $$Layout } from '../chunks/Layout_BGlig_Eg.mjs';
+import { C as Circles$1, b as buttonTranslations, $ as $$Layout } from '../chunks/Layout_BOf780Oc.mjs';
 import { S as Scribble } from '../chunks/feuchter_gmbh_header_DPQaMsdO.mjs';
 /* empty css                                 */
-import { $ as $$Leistungen } from '../chunks/Leistungen_BNZTdH-z.mjs';
+import { $ as $$Leistungen } from '../chunks/Leistungen_BORZTDwV.mjs';
 import 'clsx';
-import { $ as $$Projects } from '../chunks/Projects_kKDZvkCo.mjs';
+import { $ as $$Projects } from '../chunks/Projects_DO-svvB5.mjs';
 import { T as Transportloesungen, a as Thermohaube, S as Staubhaube } from '../chunks/staubhaube_5C8NrczT.mjs';
 import { C as Circles$2 } from '../chunks/projects_CXEmOaep.mjs';
 import { A as Arrow } from '../chunks/Arrow_sand_CKat7LSH.mjs';
@@ -63,7 +63,7 @@ const $$Cite = createComponent(($$result, $$props, $$slots) => {
     de: `"Seit 1957 stehen wir f\xFCr erstklassige Funktionalit\xE4t, Langlebigkeit und Innovation in der Produktion von Milit\xE4r- und Beh\xF6rdenbekleidung. Mit unserer jahrzehntelangen Erfahrung und h\xF6chsten Qualit\xE4tsstandards bieten wir nun auch Outdoor-, Survival- und Sicherheitsanbietern ma\xDFgeschneiderte Bekleidungsl\xF6sungen. Unser Ziel ist es, Profis in jeder Situation zuverl\xE4ssig auszur\xFCsten \u2013 mit Kleidung, die sch\xFCtzt, unterst\xFCtzt und h\xF6chsten Anforderungen gerecht wird."`,
     en: `"Since 1957, we have stood for outstanding functionality, durability, and innovation in the production of military and official agency clothing. With decades of experience and the highest quality standards, we now also offer customized clothing solutions for outdoor, survival, and security providers. Our goal is to equip professionals reliably in any situation \u2013 with clothing that protects, supports, and meets the highest demands."`
   };
-  return renderTemplate`${maybeRenderHead()}<section data-astro-cid-lwmcem6b> <img${addAttribute(Quotes.src, "src")} alt="" class="img-absolute animatable-opacity" data-astro-cid-lwmcem6b> <div class="container" data-astro-cid-lwmcem6b> <p class="cite" data-astro-cid-lwmcem6b> ${cite[language]} </p> <img${addAttribute(CEO.src, "src")} alt="" class="ceo animatable" data-astro-cid-lwmcem6b> <div class="ceo-and-role" data-astro-cid-lwmcem6b> <p class="ceo-name" data-astro-cid-lwmcem6b>Klaus Feuchter</p> <p class="job-role" data-astro-cid-lwmcem6b>CEO, Feuchter GmbH</p> </div> </div> </section> `;
+  return renderTemplate`${maybeRenderHead()}<section data-astro-cid-lwmcem6b> <img${addAttribute(Quotes.src, "src")} alt="" class="img-absolute animatable-opacity" data-astro-cid-lwmcem6b> <div class="container" data-astro-cid-lwmcem6b> <p class="cite animatable" data-astro-cid-lwmcem6b> ${cite[language]} </p> <img${addAttribute(CEO.src, "src")} alt="" class="ceo animatable" data-astro-cid-lwmcem6b> <div class="ceo-and-role" data-astro-cid-lwmcem6b> <p class="ceo-name" data-astro-cid-lwmcem6b>Klaus Feuchter</p> <p class="job-role" data-astro-cid-lwmcem6b>CEO, Feuchter GmbH</p> </div> </div> </section> `;
 }, "/home/felix/Desktop/feuchtergmbh_website/feuchter-gmbh/src/components/Cite.astro", void 0);
 
 const Circles = new Proxy({"src":"/custom-folder/Swirl_bottom_right.DnYoQ_FE.png","width":1000,"height":1000,"format":"png"}, {
