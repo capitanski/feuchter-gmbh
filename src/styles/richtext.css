@@ -1,5 +1,5 @@
 .rich-text h1 {
-  font-size: 2.1rem;
+  font-size: 1.8rem;
   line-height: 120%;
   color: var(--verydarkgray);
   letter-spacing: -1px;
@@ -55,11 +55,13 @@
   font-size: 0.9rem;
   font-weight: 400;
 }
+
 .rich-text ul {
   color: var(--verydarkgray);
   font-size: 0.9rem;
   font-weight: 400;
 }
+
 .rich-text a {
   color: var(--verydarkgray);
   font-size: 0.9rem;

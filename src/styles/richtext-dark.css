@@ -1,5 +1,5 @@
 .rich-text-dark h1 {
-  font-size: 2.1rem;
+  font-size: 1.8rem;
   line-height: 120%;
   color: var(--lightgray);
   letter-spacing: -1px;
@@ -55,11 +55,13 @@
   font-size: 0.9rem;
   font-weight: 400;
 }
+
 .rich-text-dark ul {
   color: var(--lightgray);
   font-size: 0.9rem;
   font-weight: 400;
 }
+
 .rich-text-dark a {
   color: var(--lightgray);
   font-size: 0.9rem;

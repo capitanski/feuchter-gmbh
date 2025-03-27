@@ -96,6 +96,11 @@ h1 {
   background: linear-gradient(135deg, var(--lightgray), var(--sand));
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+
+  @media screen and (max-width: 1028px) {
+    font-size: 1.5rem !important;
+    line-height: 1.5rem !important;
+  }
 }
 
 p {

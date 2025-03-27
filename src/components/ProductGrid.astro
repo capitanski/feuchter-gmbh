@@ -237,11 +237,9 @@ if (pageLanguage == "en") {
     grid-template-columns: 1fr;
     gap: 15px;
     width: 100%;
-    background: rgba(0, 0, 0, 0.65);
-    padding: 50px;
-    border-radius: 25px;
+
     @media screen and (max-width: 1028px) {
-      padding: 25px 25px;
+      padding: 0;
     }
   }
   .product-grid-item {
@@ -252,7 +250,6 @@ if (pageLanguage == "en") {
     gap: 10px;
     @media screen and (max-width: 820px) {
       flex-direction: row;
-      border-bottom: 1px solid var(--sand);
       padding-bottom: 10px;
       margin-bottom: 10px;
       width: 100%;
@@ -299,7 +296,7 @@ if (pageLanguage == "en") {
   .filter-link {
     color: var(--sand);
     text-decoration: none;
-    padding: 5px 15px;
+    padding: 10px 15px;
     box-shadow:
       rgba(0, 0, 0, 0.25) 0px 25px 50px -12px,
       0 0 0 0.35px var(--sand) !important;
@@ -315,6 +312,7 @@ if (pageLanguage == "en") {
   .active {
     color: var(--verydarkgray) !important;
     background: var(--sand) !important;
+    font-weight: 700;
   }
   .filter-link-container {
     display: grid;
@@ -354,9 +352,9 @@ if (pageLanguage == "en") {
   .intro-text {
     margin: 0;
     color: var(--lightgray);
-    font-size: 1.15rem;
+    font-size: 1rem;
     @media screen and (max-width: 820px) {
-      font-size: 1.05rem;
+      font-size: 0.9rem;
     }
   }
   .intro {
