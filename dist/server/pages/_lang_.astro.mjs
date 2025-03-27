@@ -1,12 +1,12 @@
 import { e as createAstro, f as createComponent, m as maybeRenderHead, h as addAttribute, i as renderComponent, r as renderTemplate } from '../chunks/astro/server_CofuBfMf.mjs';
 import 'kleur/colors';
 import { $ as $$Button } from '../chunks/Button_CREy6nXF.mjs';
-import { C as Circles$1, b as buttonTranslations, $ as $$Layout } from '../chunks/Layout_CWYabAYk.mjs';
+import { C as Circles$1, b as buttonTranslations, $ as $$Layout } from '../chunks/Layout_BGlig_Eg.mjs';
 import { S as Scribble } from '../chunks/feuchter_gmbh_header_DPQaMsdO.mjs';
 /* empty css                                 */
-import { $ as $$Leistungen } from '../chunks/Leistungen_D12sHDJG.mjs';
+import { $ as $$Leistungen } from '../chunks/Leistungen_BNZTdH-z.mjs';
 import 'clsx';
-import { $ as $$Projects } from '../chunks/Projects_C0WN_awT.mjs';
+import { $ as $$Projects } from '../chunks/Projects_kKDZvkCo.mjs';
 import { T as Transportloesungen, a as Thermohaube, S as Staubhaube } from '../chunks/staubhaube_5C8NrczT.mjs';
 import { C as Circles$2 } from '../chunks/projects_CXEmOaep.mjs';
 import { A as Arrow } from '../chunks/Arrow_sand_CKat7LSH.mjs';

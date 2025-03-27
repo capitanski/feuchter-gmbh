@@ -1,7 +1,7 @@
 import { e as createAstro, f as createComponent, i as renderComponent, r as renderTemplate } from '../../chunks/astro/server_CofuBfMf.mjs';
 import 'kleur/colors';
-import { $ as $$Layout } from '../../chunks/Layout_CWYabAYk.mjs';
-import { $ as $$ProductGrid } from '../../chunks/ProductGrid_CZIBxj2J.mjs';
+import { $ as $$Layout } from '../../chunks/Layout_BGlig_Eg.mjs';
+import { $ as $$ProductGrid } from '../../chunks/ProductGrid_1FGhfu4c.mjs';
 import { T as Transportloesungen, S as Staubhaube, a as Thermohaube } from '../../chunks/staubhaube_5C8NrczT.mjs';
 export { renderers } from '../../renderers.mjs';
 
