@@ -8,7 +8,7 @@ const { language } = Astro.props;
 
 let heading = "Professionelle Textil- & Bekleidungslösungen seit 1957";
 let subtitle = "für Unternehmen, Militär und Behörden";
-let introText = `Seit 1957 sind wir einer der führenden Produzenten von Bekleidung für Armeen, Behörden und Unternehmen weltweit. Vertrauen Sie auf unsere langjährige Erfahrung in den Bereichen Entwicklung, Produktion und Lieferung. Egal ob Sie einen Produzenten für Ihren eigenen Onlineshop oder ihr Geschäft suchen oder Sie Ihre Mitarbeiter neu ausstatten möchten - bei uns sind Sie in besten Händen.`;
+let introText = `Seit 1957 sind wir einer der führenden Produzenten von Bekleidung für Armeen, Behörden und Unternehmen weltweit. Vertrauen Sie auf unsere langjährige Erfahrung in den Bereichen Entwicklung, Produktion und Lieferung.<br/><br/> Egal ob Sie einen Produzenten für Ihren eigenen Onlineshop oder ihr Geschäft suchen oder Sie Ihre Mitarbeiter neu ausstatten möchten - bei uns sind Sie in besten Händen.`;
 if (language == "en") {
   heading = "Professional Textile & Apparel Solutions since 1957";
   subtitle = "For Businesses, Military, and Government Agencies";
@@ -37,19 +37,19 @@ if (language == "en") {
         {heading}
       </h1>
       <p class="subtitle animatable">{subtitle}</p>
-      <p class="hero-paragraph">
-        {introText}
-      </p>
+      <p class="hero-paragraph" set:html={introText} />
       <div class="button-wrapper hero-button-wrapper">
         <Button
           linkText={buttonTranslations("contact", language)}
           target=`/${language}/contact`
           class="hero-button-1"
+          variant="primary"
         />
         <Button
           linkText={buttonTranslations("projects", language)}
           target=`/${language}/projects`
           class="hero-button-2"
+          variant="secondary"
         />
       </div>
     </div>
