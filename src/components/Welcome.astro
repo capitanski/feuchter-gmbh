@@ -66,7 +66,12 @@ if (language == "en") {
     margin: 0 auto;
     gap: 50px;
     padding-top: 100px;
-    background: rgba(0, 0, 0, 0.6);
+    background-image: linear-gradient(
+      to bottom right,
+      rgba(0, 0, 0, 0.9),
+      rgba(0, 0, 0, 0.7),
+      rgba(0, 0, 0, 0)
+    );
   }
   .container {
     display: flex;
@@ -89,7 +94,7 @@ if (language == "en") {
     font-size: 3rem;
     max-width: 75%;
     letter-spacing: -1px;
-    text-align: center;
+    text-align: left;
     font-family: "Afacadflux", sans-serif;
     text-transform: uppercase;
     margin: 0;
@@ -101,11 +106,13 @@ if (language == "en") {
   }
   p {
     color: var(--lightgray);
+    font-family: "Inter", sans-serif;
     max-width: 600px;
-    line-height: 1.3rem;
-    font-weight: 600;
+    line-height: 1.6rem;
+    font-weight: 500;
     font-size: 1rem;
-    text-align: center;
+    letter-spacing: 90%;
+    text-align: left;
     @media screen and (max-width: 820px) {
       text-align: left;
     }
@@ -114,7 +121,7 @@ if (language == "en") {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start;
     width: 100%;
     gap: 5px;
     padding: 50px 0;
@@ -134,7 +141,7 @@ if (language == "en") {
     font-family: "Afacadflux", sans-serif;
     text-transform: uppercase;
     color: var(--sand);
-
+    font-style: italic;
     @media screen and (max-width: 820px) {
       text-align: left;
       margin-top: 0px;
