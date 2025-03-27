@@ -1,7 +1,9 @@
 import schutzwand from "@/assets/projekte.jpg";
 import thermohaube from "@/assets/officialwear_header.jpg";
 import staubhaube from "@/assets/corporate_fashion.jpg";
-import mobileSchutzwand from "@/assets/Transportwand mobile.jpg";
+import mobileProjekte from "@/assets/projekte_mobile.jpg";
+import mobileOfficialwear from "@/assets/officialwear_mobile.jpg";
+import mobileCorporatefashion from "@/assets/corporate_fashion_mobile.jpg";
 export const clothingTexts = {
   militarysurvival: {
     heading: {
@@ -33,7 +35,7 @@ export const clothingTexts = {
       ],
     },
     headerImage: schutzwand.src,
-    mobileHeaderImage: mobileSchutzwand.src,
+    mobileHeaderImage: mobileProjekte.src,
   },
   officialwear: {
     heading: {
@@ -41,29 +43,32 @@ export const clothingTexts = {
       en: "Officialwear and Securityclothing",
     },
     subtitle: {
-      de: "Transportieren und Lagern Sie Ihre Waren sicher und wohltemperiert von A nach B",
-      en: "Transport and store your goods safely and at the right temperature from A to B",
+      de: "Für maximale Sicherheit und Komfort im Einsatz",
+      en: "For maximum safety and comfort in action",
     },
     introText: {
-      de: "Wir fertigen hochwertige Thermohauben in verschiedenen Maßen für Rollcontainer. Unsere innovativen Lösungen ersetzen herkömmliche Stretchfolie vollständig und bieten eine nachhaltige, wiederverwendbare Alternative zur Ladungssicherung & Isolierung. Unsere Produkte sorgen für zuverlässige und umweltfreundliche Abdeckung. Kontaktieren Sie uns gerne für Anfragen oder individuelle Lösungen.",
-      en: "We manufacture high-quality thermal covers in various sizes for roll containers. Our innovative solutions completely replace conventional stretch film and offer a sustainable, reusable alternative for load securing and insulation. Our products ensure reliable and environmentally friendly coverage. Feel free to contact us for inquiries or custom solutions.",
+      de: "Wir stellen hochwertige, funktionale und individualisierbare Kleidung für Behörden und Sicherheitsdienste her. Unsere Produkte sind auf maximale Strapazierfähigkeit, Komfort und professionelle Optik ausgelegt – genau abgestimmt auf die anspruchsvollen Einsätze im Alltag.",
+      en: "We manufacture high-quality, functional, and customizable apparel for authorities and security services. Our products are designed for maximum durability, comfort, and a professional appearance – perfectly suited for the demanding challenges of daily operations.",
     },
     suitableFor: {
       de: [
-        "Cateringunternehmen",
-        "Supermarktketten",
-        "Konditoreien",
-        "Gastronomie",
+        "Polizei",
+        "Behörden",
+        "Sicherheitsdienste",
+        "Öffentliche Einrichtungen",
+        "Onlineshops"
       ],
       en: [
-        "Catering companies",
-        "Supermarket chains",
-        "Pastry shops",
-        "Hospitality industry",
-      ],
+        "Police",
+        "Authorities",
+        "Security Services",
+        "Public Institutions",
+        "Onlineshops"
+      ]
+      ,
     },
     headerImage: thermohaube.src,
-    mobileHeaderImage: mobileSchutzwand.src,
+    mobileHeaderImage: mobileOfficialwear.src,
   },
   corporatefashion: {
     heading: {
@@ -71,30 +76,31 @@ export const clothingTexts = {
       en: "Corporate Fashion for Businesses",
     },
     subtitle: {
-      de: "Individuell abgestimmt auf Ihre Bedürfnisse",
-      en: "Transport and store your goods safely and out of sight from A to B.",
+      de: "Für perfekt eingekleidete Mitarbeiter",
+      en: "For perfectly dressed employees",
     },
     introText: {
-      de: "Wir fertigen hochwertige Staubhauben in verschiedenen Maßen für Rollcontainer. Unsere innovativen Lösungen ersetzen herkömmliche Stretchfolie vollständig und bieten eine nachhaltige, wiederverwendbare Alternative zur Ladungssicherung. Unsere Produkte sorgen für zuverlässige und umweltfreundliche Abdeckung. Kontaktieren Sie uns gerne für Anfragen oder individuelle Lösungen.",
-      en: "We manufacture high-quality dust covers in various sizes for roll containers. Our innovative solutions completely replace conventional stretch film and offer a sustainable, reusable alternative for load securing. Our products ensure reliable and environmentally friendly coverage. Feel free to contact us for inquiries or custom solutions.",
+      de: "Wir produzieren hochwertige, individualisierbare Corporate Fashion für Unternehmen jeder Branche. Unsere Kleidung vereint Stil, Komfort und Funktionalität – perfekt abgestimmt auf Ihre Marke und die Anforderungen Ihres Teams.",
+      en: "We produce high-quality, customizable corporate fashion for companies across all industries. Our clothing combines style, comfort, and functionality – perfectly tailored to your brand and your team’s needs.",
     },
     suitableFor: {
       de: [
-        "Cateringunternehmen",
+        "Hotelgewerbe",
         "Supermarktketten",
-        "Konditoreien",
         "Gastronomie",
-        "Logistikunternehmen",
+        "Öffentliche Einrichtungen",
+        "Alle Unternehmen",
       ],
       en: [
-        "Catering companies",
-        "Supermarket chains",
-        "Pastry shops",
-        "Hospitality industry",
-        "Logistics Companies",
-      ],
+        "Hospitality Industry",
+        "Supermarket Chains",
+        "Gastronomy",
+        "Public Institutions",
+        "All Businesses"
+      ]
+      ,
     },
     headerImage: staubhaube.src,
-    mobileHeaderImage: mobileSchutzwand.src,
+    mobileHeaderImage: mobileCorporatefashion.src,
   },
 };

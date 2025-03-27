@@ -1,7 +1,9 @@
-import schutzwand from "@/assets/transportwand_header.jpg";
-import thermohaube from "@/assets/thermohaube_header.jpg";
-import staubhaube from "@/assets/thermohaube_header.jpg";
+import schutzwand from "@/assets/Transportwand quer.jpg";
+import thermohaube from "@/assets/Thermohaube quer.jpg";
+import staubhaube from "@/assets/Staubhaube quer.jpg";
 import mobileSchutzwand from "@/assets/Transportwand mobile.jpg";
+import mobileThermohaube from "@/assets/Thermohaube mobile.jpg";
+import mobileStaubhaube from "@/assets/Staubhaube mobile.jpg";
 export const transportTexts = {
   protectivewall: {
     heading: {
@@ -51,7 +53,7 @@ export const transportTexts = {
       ],
     },
     headerImage: thermohaube.src,
-    mobileHeaderImage: mobileSchutzwand.src,
+    mobileHeaderImage: mobileThermohaube.src,
   },
   dustcover: {
     heading: {
@@ -83,6 +85,6 @@ export const transportTexts = {
       ],
     },
     headerImage: staubhaube.src,
-    mobileHeaderImage: mobileSchutzwand.src,
+    mobileHeaderImage: mobileStaubhaube.src,
   },
 };
