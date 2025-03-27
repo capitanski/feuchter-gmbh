@@ -1,7 +1,7 @@
 import { e as createAstro, f as createComponent, m as maybeRenderHead, h as addAttribute, i as renderComponent, r as renderTemplate } from './astro/server_CofuBfMf.mjs';
 import 'kleur/colors';
 import { p as projects, C as Circles, $ as $$ProjectTag } from './projects_CXEmOaep.mjs';
-import { b as buttonTranslations, t as translations } from './Layout_DpPkgxYx.mjs';
+import { b as buttonTranslations, t as translations } from './Layout_BgFoxrKR.mjs';
 /* empty css                         */
 
 const Arrow = new Proxy({"src":"/custom-folder/Arrow_link.4yBbKQU6.svg","width":827,"height":826,"format":"svg"}, {

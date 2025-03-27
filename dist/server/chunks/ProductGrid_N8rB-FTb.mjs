@@ -3,7 +3,7 @@ import 'kleur/colors';
 import 'clsx';
 /* empty css                         */
 import { A as Arrow } from './Arrow_sand_CKat7LSH.mjs';
-import { b as buttonTranslations } from './Layout_DpPkgxYx.mjs';
+import { b as buttonTranslations } from './Layout_BgFoxrKR.mjs';
 
 const $$Astro$1 = createAstro("http://192.168.178.48:4321/");
 const $$Modal = createComponent(($$result, $$props, $$slots) => {
@@ -51,7 +51,7 @@ const $$ProductGrid = createComponent(($$result, $$props, $$slots) => {
   if (searchCategory == "corporate-fashion") {
     content = texts.corporatefashion;
   }
-  return renderTemplate`${maybeRenderHead()}<section data-astro-cid-poyn3awd> <img${addAttribute(content.headerImage, "src")} alt="" class="header-image" fetchpriority="high" loading="eager" data-astro-cid-poyn3awd> <img${addAttribute(content.mobileHeaderImage, "src")} alt="" fetchpriority="high" loading="eager" class="mobile-header-image" data-astro-cid-poyn3awd> <div class="container" data-astro-cid-poyn3awd> <div class="intro" data-astro-cid-poyn3awd> <div class="headline-and-subtitle" data-astro-cid-poyn3awd> <h1 class="animatable" data-astro-cid-poyn3awd> ${content.heading[pageLanguage]} </h1> <p class="subtitle" data-astro-cid-poyn3awd> ${content.subtitle[pageLanguage]} </p> </div> <p class="intro-text" data-astro-cid-poyn3awd> ${content.introText[pageLanguage]} </p> <!--<p class="suitable-for">{suitableFor}</p>
+  return renderTemplate`${maybeRenderHead()}<section data-astro-cid-poyn3awd> <div class="container" data-astro-cid-poyn3awd> <div class="gradient-overlay" data-astro-cid-poyn3awd></div> <img${addAttribute(content.headerImage, "src")} alt="" class="header-image" fetchpriority="high" loading="eager" data-astro-cid-poyn3awd> <img${addAttribute(content.headerImage, "src")} alt="" fetchpriority="high" loading="eager" class="mobile-header-image" data-astro-cid-poyn3awd> <div class="intro" data-astro-cid-poyn3awd> <div class="headline-and-subtitle" data-astro-cid-poyn3awd> <h1 class="animatable" data-astro-cid-poyn3awd> ${content.heading[pageLanguage]} </h1> <p class="subtitle" data-astro-cid-poyn3awd> ${content.subtitle[pageLanguage]} </p> </div> <p class="intro-text" data-astro-cid-poyn3awd> ${content.introText[pageLanguage]} </p> <!--<p class="suitable-for">{suitableFor}</p>
       <div class="suitable-for-wrapper">
         <div class="tags">
           {
@@ -65,7 +65,7 @@ const $$ProductGrid = createComponent(($$result, $$props, $$slots) => {
       link.searchCategory === searchCategory ? "active filter-link" : "filter-link",
       "class"
     )} data-astro-cid-poyn3awd> ${link.linkText[pageLanguage]} </a>`;
-  })} </div> ${categories.map((category) => {
+  })} </div> <div class="grid-holder" data-astro-cid-poyn3awd> ${categories.map((category) => {
     return renderTemplate`${renderComponent($$result, "Fragment", Fragment, { "data-astro-cid-poyn3awd": true }, { "default": ($$result2) => renderTemplate` <h2 data-astro-cid-poyn3awd>${category.value}</h2> <div class="product-grid" data-astro-cid-poyn3awd> ${products.filter(
       (product) => product.category.key == category.key && product.category.overall == searchCategory
     ).map((p) => {
@@ -74,7 +74,7 @@ const $$ProductGrid = createComponent(($$result, $$props, $$slots) => {
         pageLanguage
       )} </span> </button> ${renderComponent($$result2, "Modal", $$Modal, { "content": p, "pageLanguage": pageLanguage, "data-astro-cid-poyn3awd": true })} </div> </div>`;
     })} </div> ` })}`;
-  })} </div> </section> `;
+  })} </div> </div> </section> `;
 }, "/home/felix/Desktop/feuchtergmbh_website/feuchter-gmbh/src/components/ProductGrid.astro", void 0);
 
 export { $$ProductGrid as $ };

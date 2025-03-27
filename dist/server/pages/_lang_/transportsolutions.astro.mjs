@@ -1,7 +1,7 @@
 import { e as createAstro, f as createComponent, i as renderComponent, r as renderTemplate } from '../../chunks/astro/server_CofuBfMf.mjs';
 import 'kleur/colors';
-import { $ as $$Layout } from '../../chunks/Layout_DpPkgxYx.mjs';
-import { $ as $$ProductGrid } from '../../chunks/ProductGrid_ByHkwEcq.mjs';
+import { $ as $$Layout } from '../../chunks/Layout_BgFoxrKR.mjs';
+import { $ as $$ProductGrid } from '../../chunks/ProductGrid_N8rB-FTb.mjs';
 import { T as Transportloesungen, S as Staubhaube, a as Thermohaube } from '../../chunks/staubhaube_5C8NrczT.mjs';
 export { renderers } from '../../renderers.mjs';
 
@@ -135,7 +135,7 @@ const products = [
   },
 ];
 
-const schutzwand = new Proxy({"src":"/custom-folder/Transportwand quer.Dm-sC9wI.jpg","width":1920,"height":1080,"format":"jpg"}, {
+const schutzwand = new Proxy({"src":"/custom-folder/Transportwand quer.-4OAF-Uh.jpg","width":1920,"height":675,"format":"jpg"}, {
 						get(target, name, receiver) {
 							if (name === 'clone') {
 								return structuredClone(target);
@@ -148,7 +148,7 @@ const schutzwand = new Proxy({"src":"/custom-folder/Transportwand quer.Dm-sC9wI.
 						}
 					});
 
-const thermohaube = new Proxy({"src":"/custom-folder/Thermohaube quer.Dgsxx-du.jpg","width":1920,"height":1080,"format":"jpg"}, {
+const thermohaube = new Proxy({"src":"/custom-folder/Thermohaube quer.CqXGdCrb.jpg","width":1920,"height":1080,"format":"jpg"}, {
 						get(target, name, receiver) {
 							if (name === 'clone') {
 								return structuredClone(target);
@@ -161,7 +161,7 @@ const thermohaube = new Proxy({"src":"/custom-folder/Thermohaube quer.Dgsxx-du.j
 						}
 					});
 
-const staubhaube = new Proxy({"src":"/custom-folder/Staubhaube quer.DiktvuiN.jpg","width":1920,"height":1080,"format":"jpg"}, {
+const staubhaube = new Proxy({"src":"/custom-folder/Staubhaube quer.DofFUvvV.jpg","width":1920,"height":1080,"format":"jpg"}, {
 						get(target, name, receiver) {
 							if (name === 'clone') {
 								return structuredClone(target);
