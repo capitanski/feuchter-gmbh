@@ -6,7 +6,7 @@ import { S as Scribble } from '../chunks/feuchter_gmbh_header_BZdgIJPN.mjs';
 /* empty css                                 */
 import { $ as $$Leistungen } from '../chunks/Leistungen_DxPW6h17.mjs';
 import 'clsx';
-import { $ as $$Projects } from '../chunks/Projects_DwdU9SLM.mjs';
+import { $ as $$Projects } from '../chunks/Projects_DgQi6VoB.mjs';
 import { T as Transportloesungen, a as Thermohaube, S as Staubhaube } from '../chunks/staubhaube_5C8NrczT.mjs';
 import { C as Circles$2 } from '../chunks/projects_dap78bP4.mjs';
 import { A as Arrow } from '../chunks/Arrow_sand_CKat7LSH.mjs';
@@ -23,7 +23,7 @@ const $$Welcome = createComponent(($$result, $$props, $$slots) => {
   if (language == "en") {
     heading = "Professional Textile & Apparel Solutions since 1957";
     subtitle = "For Businesses, Military, and Government Agencies";
-    introText = `Since 1957, we have been one of the leading producers of clothing for armies, government agencies, and businesses worldwide. Rely on our many years of experience in development, production, and delivery. Whether you are looking for a manufacturer for your own online shop or retail business, or you need to outfit your employees with new uniforms \u2013 you are in the best hands with us.`;
+    introText = `Since 1957, we have been one of the leading producers of clothing for armies, government agencies, and businesses worldwide.`;
   }
   return renderTemplate`${maybeRenderHead()}<section data-astro-cid-mmc7otgs> <img${addAttribute(Scribble.src, "src")} alt="" class="scribble" fetchpriority="high" loading="eager" data-astro-cid-mmc7otgs> <div class="container" data-astro-cid-mmc7otgs> <img${addAttribute(Circles$1.src, "src")} alt="" class="circles-svg" fetchpriority="high" loading="eager" data-astro-cid-mmc7otgs> <div class="hero-container" data-astro-cid-mmc7otgs> <h1 class="hero-heading animatable" data-astro-cid-mmc7otgs> ${heading} </h1> <p class="subtitle animatable" data-astro-cid-mmc7otgs>${subtitle}</p> <p class="hero-paragraph" data-astro-cid-mmc7otgs>${unescapeHTML(introText)}</p> <div class="button-wrapper hero-button-wrapper" data-astro-cid-mmc7otgs> ${renderComponent($$result, "Button", $$Button, { "linkText": buttonTranslations("contact", language), "target": `/${language}/contact`, "class": "hero-button-1", "variant": "primary", "data-astro-cid-mmc7otgs": true })} ${renderComponent($$result, "Button", $$Button, { "linkText": buttonTranslations("projects", language), "target": `/${language}/projects`, "class": "hero-button-2", "variant": "secondary", "data-astro-cid-mmc7otgs": true })} </div> </div> </div> </section> `;
 }, "/home/felix/Desktop/feuchtergmbh_website/feuchter-gmbh/src/components/Welcome.astro", void 0);
@@ -131,7 +131,7 @@ const Neuentwicklungen = new Proxy({"src":"/custom-folder/neuentwicklungen.CCiqW
 						}
 					});
 
-const Lieferant = new Proxy({"src":"/custom-folder/lieferant.DLK3j3dI.svg","width":44,"height":49,"format":"svg"}, {
+const Lieferant = new Proxy({"src":"/custom-folder/lieferant.DmK82rqN.svg","width":44,"height":49,"format":"svg"}, {
 						get(target, name, receiver) {
 							if (name === 'clone') {
 								return structuredClone(target);
@@ -144,7 +144,7 @@ const Lieferant = new Proxy({"src":"/custom-folder/lieferant.DLK3j3dI.svg","widt
 						}
 					});
 
-const Qualitaetsmanagement = new Proxy({"src":"/custom-folder/qualitaetsmanagement.CbWWgZWq.svg","width":873,"height":905,"format":"svg"}, {
+const Qualitaetsmanagement = new Proxy({"src":"/custom-folder/qualitaetsmanagement.DJE3wIKU.svg","width":873,"height":905,"format":"svg"}, {
 						get(target, name, receiver) {
 							if (name === 'clone') {
 								return structuredClone(target);
@@ -349,7 +349,7 @@ const $$Categories = createComponent(($$result, $$props, $$slots) => {
     }
   ];
   return renderTemplate`${maybeRenderHead()}<section data-astro-cid-qacliicl> <img${addAttribute(Circles$2.src, "src")} alt="" class="img-absolute" data-astro-cid-qacliicl> <div class="container" data-astro-cid-qacliicl> <h2 class="section-title animatable" data-astro-cid-qacliicl>${heading[language]}</h2> <div class="category-grid" data-astro-cid-qacliicl> ${categories.map((category) => {
-    return renderTemplate`<div class="category-card animate-in-right" data-astro-cid-qacliicl> <div class="card-title-and-text" data-astro-cid-qacliicl> <div class="image-and-title" data-astro-cid-qacliicl> <img${addAttribute(category.image, "src")} alt="" loading="lazy" data-astro-cid-qacliicl> <h2 data-astro-cid-qacliicl>${category.title[language]}</h2> </div> <p data-astro-cid-qacliicl>${category.text[language]}</p> </div> <a${addAttribute(`/${language}/${category.slug}`, "href")} class="project-link" data-astro-cid-qacliicl> <img${addAttribute(Arrow.src, "src")} alt="" data-astro-cid-qacliicl> <span data-astro-cid-qacliicl>${buttonTranslations("toproducts", language)}</span> </a> </div>`;
+    return renderTemplate`<div class="category-card animate-in-right" data-astro-cid-qacliicl> <div class="card-title-and-text" data-astro-cid-qacliicl> <div class="image-and-title" data-astro-cid-qacliicl> <img${addAttribute(category.image, "src")} alt="" loading="lazy" data-astro-cid-qacliicl> <p class="category-title" data-astro-cid-qacliicl>${category.title[language]}</p> </div> <p data-astro-cid-qacliicl>${category.text[language]}</p> </div> <a${addAttribute(`/${language}/${category.slug}`, "href")} class="project-link" data-astro-cid-qacliicl> <img${addAttribute(Arrow.src, "src")} alt="" data-astro-cid-qacliicl> <span data-astro-cid-qacliicl>${buttonTranslations("toproducts", language)}</span> </a> </div>`;
   })} </div> </div> </section> `;
 }, "/home/felix/Desktop/feuchtergmbh_website/feuchter-gmbh/src/components/Categories.astro", void 0);
 

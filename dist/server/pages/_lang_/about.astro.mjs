@@ -1,6 +1,6 @@
 import { e as createAstro, f as createComponent, m as maybeRenderHead, h as addAttribute, r as renderTemplate, i as renderComponent } from '../../chunks/astro/server_CofuBfMf.mjs';
 import 'kleur/colors';
-import { $ as $$WelcomeLeftAligned } from '../../chunks/WelcomeLeftAligned_JvBt59ht.mjs';
+import { $ as $$WelcomeLeftAligned } from '../../chunks/WelcomeLeftAligned_ib6fyl68.mjs';
 import { $ as $$Layout } from '../../chunks/Layout_BIZBW9qJ.mjs';
 import 'clsx';
 /* empty css                                    */
@@ -214,8 +214,7 @@ const $$About = createComponent(($$result, $$props, $$slots) => {
   const pageLanguage = locals.language;
   let heading = "Vom Traditionellen Bekleidungshersteller bis zum international agierenden Ausstatter von Armeen und Beh\xF6rden";
   let subtitle = "Familiengef\xFChrt seit 1957";
-  let introText = `
-Seit 1957 haben wir uns vom traditionellen Bekleidungshersteller zu einem international agierenden Ausstatter f\xFCr Armeen und Beh\xF6rden weltweit entwickelt. Mit unserer langj\xE4hrigen Erfahrung bieten wir ma\xDFgeschneiderte L\xF6sungen, die h\xF6chste Standards in Qualit\xE4t, Funktionalit\xE4t und Sicherheit erf\xFCllen.`;
+  let introText = `Dank unserer langj\xE4hrigen Erfahrung k\xF6nnen wir Ihnen ma\xDFgeschneiderte L\xF6sungen bieten, die h\xF6chste Standards in Qualit\xE4t, Funktionalit\xE4t und Sicherheit erf\xFCllen.`;
   if (pageLanguage == "en") {
     heading = "From a traditional clothing manufacturer to an internationally operating supplier of armies and authorities";
     subtitle = "Family-owned since 1957.";

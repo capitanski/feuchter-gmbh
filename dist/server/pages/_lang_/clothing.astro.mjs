@@ -1,7 +1,7 @@
 import { e as createAstro, f as createComponent, i as renderComponent, r as renderTemplate } from '../../chunks/astro/server_CofuBfMf.mjs';
 import 'kleur/colors';
 import { $ as $$Layout } from '../../chunks/Layout_BIZBW9qJ.mjs';
-import { $ as $$ProductGrid } from '../../chunks/ProductGrid_CfuYb3Gc.mjs';
+import { $ as $$ProductGrid } from '../../chunks/ProductGrid_B4eoeq2N.mjs';
 import { S as Scribble$1 } from '../../chunks/feuchter_gmbh_header_BZdgIJPN.mjs';
 import { S as Scribble } from '../../chunks/projekte_YcggKxQO.mjs';
 export { renderers } from '../../renderers.mjs';
