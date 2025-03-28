@@ -8,7 +8,7 @@ const { language } = Astro.props;
 
 let heading = "Professionelle Textil- & Bekleidungslösungen seit 1957";
 let subtitle = "für Unternehmen, Militär und Behörden";
-let introText = `Seit 1957 sind wir einer der führenden Produzenten von Bekleidung für Armeen, Behörden und Unternehmen weltweit. Vertrauen Sie auf unsere langjährige Erfahrung in den Bereichen Entwicklung, Produktion und Lieferung.<br/><br/> Egal ob Sie einen Produzenten für Ihren eigenen Onlineshop oder ihr Geschäft suchen oder Sie Ihre Mitarbeiter neu ausstatten möchten - bei uns sind Sie in besten Händen.`;
+let introText = `Seit 1957 sind wir einer der führenden Produzenten von Bekleidung für Armeen, Behörden und Unternehmen weltweit.`;
 if (language == "en") {
   heading = "Professional Textile & Apparel Solutions since 1957";
   subtitle = "For Businesses, Military, and Government Agencies";
@@ -72,6 +72,10 @@ if (language == "en") {
       rgba(0, 0, 0, 0.7),
       rgba(0, 0, 0, 0)
     );
+    @media screen and (max-width: 1028px) {
+      padding-top: 20px;
+      background: rgba(0, 0, 0, 0.8);
+    }
   }
   .container {
     display: flex;
@@ -110,11 +114,12 @@ if (language == "en") {
     max-width: 600px;
     line-height: 1.6rem;
     font-weight: 500;
-    font-size: 1rem;
+    font-size: 1.2rem;
     letter-spacing: 90%;
     text-align: left;
     @media screen and (max-width: 820px) {
       text-align: left;
+      font-size: 1rem;
     }
   }
   .hero-container {

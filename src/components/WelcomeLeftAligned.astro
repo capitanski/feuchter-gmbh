@@ -34,6 +34,7 @@ const showButton = page !== "projects";
           linkText={buttonTranslations("contact", language)}
           target=`/${language}/contact`
           class="hero-button-1"
+          variant="primary"
         />
         {
           !showButton && (
@@ -41,6 +42,7 @@ const showButton = page !== "projects";
               linkText={buttonTranslations("aboutus", language)}
               target={`/${language}/about`}
               class="hero-button-2"
+              variant="secondary"
             />
           )
         }
@@ -129,7 +131,7 @@ const showButton = page !== "projects";
     text-align: center;
     margin: 0;
     margin-top: 10px;
-    font-weight: 400;
+    font-weight: 700;
     font-size: 1.2rem;
     letter-spacing: 4px;
     margin-bottom: 30px;
@@ -142,7 +144,7 @@ const showButton = page !== "projects";
       text-align: left;
       margin-top: 0px;
       width: 100%;
-      font-size: 1rem;
+      font-size: 1.1rem !important;
     }
   }
   img {
