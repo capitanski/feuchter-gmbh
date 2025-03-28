@@ -2,13 +2,13 @@
 import projects from "@/content/projects.js";
 import ProjectTag from "./ProjectTag.astro";
 import Circles from "@/assets/Swirl.png";
-import Arrow from "@/assets/Arrow_link.svg";
+import Arrow from "@/assets/Arrow_sand.svg";
 import { translations } from "@/content/translations";
 import { buttonTranslations } from "@/content/translations";
 const pageLanguage = Astro.params.lang;
 const { currentUrl, language } = Astro.props;
 const heading = {
-  de: "Projekte & Referenzen",
+  de: "Laufende & Abgeschlossene Projekte",
   en: "Projects & References",
 };
 const subtitle = {
@@ -46,18 +46,18 @@ const subtitle = {
                 </div>
                 <div class="project-tag-wrapper">
                  <!-- {project.tags[pageLanguage].map((tag) => {
-                    return <ProjectTag tagContent={tag} />;
+                    return <ProjectTag tagContent={tag} colorScheme="bright"/>;
                   })}-->
-                  <ProjectTag
+                  <ProjectTag colorScheme="bright"
                     tagContent={`${project.amount} ${translations(
                       "menge",
                       pageLanguage,
                     )}`}
                   />
-                  <ProjectTag tagContent={project.customer[pageLanguage]} />
-                  <ProjectTag tagContent={project.tl} />
-                  <ProjectTag tagContent={project.date} />
-                  <ProjectTag tagContent={project.status[pageLanguage]} />
+                  <ProjectTag tagContent={project.customer[pageLanguage]} colorScheme="bright"/>
+                  <ProjectTag tagContent={project.tl} colorScheme="bright"/>
+                  <ProjectTag tagContent={project.date} colorScheme="bright"/>
+                  <ProjectTag tagContent={project.status[pageLanguage]} colorScheme="bright"/>
                 </div>
                 <p class="card-title">{project.title[pageLanguage]}</p>
               </div>
@@ -83,6 +83,7 @@ const subtitle = {
   section {
     position: relative;
     padding: 50px 0 !important;
+    background: var(--verydarkgray);
   }
   .img-absolute {
     position: absolute;
@@ -109,6 +110,7 @@ const subtitle = {
     text-align: left;
     margin: 0;
     font-weight: 600;
+    color: var(--sand);
   }
   .scribble {
     position: absolute;
@@ -140,7 +142,7 @@ const subtitle = {
     justify-content: space-between;
     align-items: flex-start;
     gap: 10px;
-    background: #f3f1eb;
+    background: transparent;
     padding: 40px;
     border-radius: 20px;
     z-index: 1;
@@ -169,9 +171,11 @@ const subtitle = {
   .card-title {
     font-weight: 800;
     font-size: 1.4rem;
+    color: var(--lightgray);
   }
   .card-text {
     font-size: 0.8rem;
+    color: var(--lightgray)
   }
   .container {
     display: flex;
@@ -187,6 +191,7 @@ const subtitle = {
     font-family: "Afacadflux", sans-serif;
     text-transform: uppercase;
     font-weight: 800;
+    color: var(--sand);
   }
   .icon-and-title {
     display: flex;
@@ -204,7 +209,7 @@ const subtitle = {
     margin-top: -85px;
   }
   .project-link {
-    color: var(--verydarkgray);
+    color: var(--sand);
     text-decoration: none;
     font-size: 0.8rem;
     display: flex;
@@ -218,10 +223,10 @@ const subtitle = {
     letter-spacing: 3px;
   }
   .project-link:hover {
-    gap: 20px;
+    gap: 13px;
   }
   .project-link img {
-    width: 30px;
-    height: 30px;
+    width: 10px;
+    height: 10px;
   }
 </style>

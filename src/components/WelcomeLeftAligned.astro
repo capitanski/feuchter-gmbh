@@ -66,11 +66,16 @@ const showButton = page !== "projects";
     justify-content: space-between;
     align-items: center;
     position: relative;
-    min-height: 100vh;
+    min-height: 80vh;
     margin: 0 auto;
     gap: 50px;
     padding-top: 100px;
-    background: rgba(0, 0, 0, 0.6);
+    background-image: linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0.5),
+      rgba(0, 0, 0, 0.7),
+      var(--verydarkgray)
+    );
   }
   .container {
     display: flex;
