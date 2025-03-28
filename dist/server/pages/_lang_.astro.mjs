@@ -1,14 +1,14 @@
-import { e as createAstro, f as createComponent, m as maybeRenderHead, h as addAttribute, i as renderComponent, r as renderTemplate } from '../chunks/astro/server_CofuBfMf.mjs';
+import { e as createAstro, f as createComponent, m as maybeRenderHead, h as addAttribute, u as unescapeHTML, i as renderComponent, r as renderTemplate } from '../chunks/astro/server_CofuBfMf.mjs';
 import 'kleur/colors';
-import { $ as $$Button } from '../chunks/Button_CREy6nXF.mjs';
-import { C as Circles$1, b as buttonTranslations, $ as $$Layout } from '../chunks/Layout_BOf780Oc.mjs';
+import { $ as $$Button } from '../chunks/Button_DTN3DVjt.mjs';
+import { C as Circles$1, b as buttonTranslations, $ as $$Layout } from '../chunks/Layout_BIZBW9qJ.mjs';
 import { S as Scribble } from '../chunks/feuchter_gmbh_header_BZdgIJPN.mjs';
 /* empty css                                 */
-import { $ as $$Leistungen } from '../chunks/Leistungen_KnwR46OT.mjs';
+import { $ as $$Leistungen } from '../chunks/Leistungen_DxPW6h17.mjs';
 import 'clsx';
-import { $ as $$Projects } from '../chunks/Projects_DO-svvB5.mjs';
+import { $ as $$Projects } from '../chunks/Projects_DwdU9SLM.mjs';
 import { T as Transportloesungen, a as Thermohaube, S as Staubhaube } from '../chunks/staubhaube_5C8NrczT.mjs';
-import { C as Circles$2 } from '../chunks/projects_CXEmOaep.mjs';
+import { C as Circles$2 } from '../chunks/projects_dap78bP4.mjs';
 import { A as Arrow } from '../chunks/Arrow_sand_CKat7LSH.mjs';
 export { renderers } from '../renderers.mjs';
 
@@ -19,13 +19,13 @@ const $$Welcome = createComponent(($$result, $$props, $$slots) => {
   const { language } = Astro2.props;
   let heading = "Professionelle Textil- & Bekleidungsl\xF6sungen seit 1957";
   let subtitle = "f\xFCr Unternehmen, Milit\xE4r und Beh\xF6rden";
-  let introText = `Seit 1957 sind wir einer der f\xFChrenden Produzenten von Bekleidung f\xFCr Armeen, Beh\xF6rden und Unternehmen weltweit. Vertrauen Sie auf unsere langj\xE4hrige Erfahrung in den Bereichen Entwicklung, Produktion und Lieferung. Egal ob Sie einen Produzenten f\xFCr Ihren eigenen Onlineshop oder ihr Gesch\xE4ft suchen oder Sie Ihre Mitarbeiter neu ausstatten m\xF6chten - bei uns sind Sie in besten H\xE4nden.`;
+  let introText = `Seit 1957 sind wir einer der f\xFChrenden Produzenten von Bekleidung f\xFCr Armeen, Beh\xF6rden und Unternehmen weltweit.`;
   if (language == "en") {
     heading = "Professional Textile & Apparel Solutions since 1957";
     subtitle = "For Businesses, Military, and Government Agencies";
     introText = `Since 1957, we have been one of the leading producers of clothing for armies, government agencies, and businesses worldwide. Rely on our many years of experience in development, production, and delivery. Whether you are looking for a manufacturer for your own online shop or retail business, or you need to outfit your employees with new uniforms \u2013 you are in the best hands with us.`;
   }
-  return renderTemplate`${maybeRenderHead()}<section data-astro-cid-mmc7otgs> <img${addAttribute(Scribble.src, "src")} alt="" class="scribble" fetchpriority="high" loading="eager" data-astro-cid-mmc7otgs> <div class="container" data-astro-cid-mmc7otgs> <img${addAttribute(Circles$1.src, "src")} alt="" class="circles-svg" fetchpriority="high" loading="eager" data-astro-cid-mmc7otgs> <div class="hero-container" data-astro-cid-mmc7otgs> <h1 class="hero-heading animatable" data-astro-cid-mmc7otgs> ${heading} </h1> <p class="subtitle animatable" data-astro-cid-mmc7otgs>${subtitle}</p> <p class="hero-paragraph" data-astro-cid-mmc7otgs> ${introText} </p> <div class="button-wrapper hero-button-wrapper" data-astro-cid-mmc7otgs> ${renderComponent($$result, "Button", $$Button, { "linkText": buttonTranslations("contact", language), "target": `/${language}/contact`, "class": "hero-button-1", "data-astro-cid-mmc7otgs": true })} ${renderComponent($$result, "Button", $$Button, { "linkText": buttonTranslations("projects", language), "target": `/${language}/projects`, "class": "hero-button-2", "data-astro-cid-mmc7otgs": true })} </div> </div> </div> </section> `;
+  return renderTemplate`${maybeRenderHead()}<section data-astro-cid-mmc7otgs> <img${addAttribute(Scribble.src, "src")} alt="" class="scribble" fetchpriority="high" loading="eager" data-astro-cid-mmc7otgs> <div class="container" data-astro-cid-mmc7otgs> <img${addAttribute(Circles$1.src, "src")} alt="" class="circles-svg" fetchpriority="high" loading="eager" data-astro-cid-mmc7otgs> <div class="hero-container" data-astro-cid-mmc7otgs> <h1 class="hero-heading animatable" data-astro-cid-mmc7otgs> ${heading} </h1> <p class="subtitle animatable" data-astro-cid-mmc7otgs>${subtitle}</p> <p class="hero-paragraph" data-astro-cid-mmc7otgs>${unescapeHTML(introText)}</p> <div class="button-wrapper hero-button-wrapper" data-astro-cid-mmc7otgs> ${renderComponent($$result, "Button", $$Button, { "linkText": buttonTranslations("contact", language), "target": `/${language}/contact`, "class": "hero-button-1", "variant": "primary", "data-astro-cid-mmc7otgs": true })} ${renderComponent($$result, "Button", $$Button, { "linkText": buttonTranslations("projects", language), "target": `/${language}/projects`, "class": "hero-button-2", "variant": "secondary", "data-astro-cid-mmc7otgs": true })} </div> </div> </div> </section> `;
 }, "/home/felix/Desktop/feuchtergmbh_website/feuchter-gmbh/src/components/Welcome.astro", void 0);
 
 const CEO = new Proxy({"src":"/custom-folder/CEO.DGfP5CoV.jpg","width":400,"height":400,"format":"jpg"}, {

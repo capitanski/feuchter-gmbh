@@ -7,8 +7,8 @@ const $$Astro = createAstro("http://192.168.178.48:4321/");
 const $$Button = createComponent(($$result, $$props, $$slots) => {
   const Astro2 = $$result.createAstro($$Astro, $$props, $$slots);
   Astro2.self = $$Button;
-  const { linkText, target, class: className, language } = Astro2.props;
-  return renderTemplate`${maybeRenderHead()}<a${addAttribute(target || "#", "href")}${addAttribute(className, "class")} data-astro-cid-vnzlvqnm> ${linkText} </a> `;
+  const { linkText, target, class: className, language, variant } = Astro2.props;
+  return renderTemplate`${maybeRenderHead()}<a${addAttribute(target || "#", "href")}${addAttribute(`${className} ${variant}`, "class")} data-astro-cid-vnzlvqnm> ${linkText} </a> `;
 }, "/home/felix/Desktop/feuchtergmbh_website/feuchter-gmbh/src/components/Button.astro", void 0);
 
 export { $$Button as $ };

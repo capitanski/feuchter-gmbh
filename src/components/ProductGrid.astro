@@ -113,7 +113,7 @@ if (pageLanguage == "en") {
                   .filter(
                     (product) =>
                       product.category.key == category.key &&
-                      product.category.overall == searchCategory,
+                      product.category.overall == searchCategory
                   )
                   .map((p) => {
                     return (
@@ -128,7 +128,7 @@ if (pageLanguage == "en") {
                             <span>
                               {buttonTranslations(
                                 "technischedaten",
-                                pageLanguage,
+                                pageLanguage
                               )}
                             </span>
                           </button>
@@ -150,7 +150,7 @@ if (pageLanguage == "en") {
     background: var(--verydarkgray);
     padding: 0 0;
     position: relative;
-    min-height: 100vh;
+    min-height: 90vh;
     @media screen and (max-width: 820px) {
       padding: 0;
       background: var(--verydarkgray);

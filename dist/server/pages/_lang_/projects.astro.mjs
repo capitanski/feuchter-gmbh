@@ -1,8 +1,8 @@
 import { e as createAstro, f as createComponent, i as renderComponent, r as renderTemplate } from '../../chunks/astro/server_CofuBfMf.mjs';
 import 'kleur/colors';
-import { $ as $$WelcomeLeftAligned } from '../../chunks/WelcomeLeftAligned_tItijDKf.mjs';
-import { $ as $$Layout } from '../../chunks/Layout_BOf780Oc.mjs';
-import { $ as $$Projects } from '../../chunks/Projects_DO-svvB5.mjs';
+import { $ as $$WelcomeLeftAligned } from '../../chunks/WelcomeLeftAligned_JvBt59ht.mjs';
+import { $ as $$Layout } from '../../chunks/Layout_BIZBW9qJ.mjs';
+import { $ as $$Projects } from '../../chunks/Projects_DwdU9SLM.mjs';
 import { S as Scribble } from '../../chunks/projekte_YcggKxQO.mjs';
 export { renderers } from '../../renderers.mjs';
 
@@ -14,7 +14,7 @@ const $$Index = createComponent(($$result, $$props, $$slots) => {
   const pageLanguage = locals.language;
   let heading = "Projekte & Referenzen";
   let subtitle = "Vom Unterhemd bis zum Einsatzanzug - Seit 1957 bieten wir h\xF6chste qualit\xE4tsstandards";
-  let introText = "Ob funktionale Kleidung f\xFCr den t\xE4glichen Einsatz, ma\xDFgeschneiderte L\xF6sungen f\xFCr Beh\xF6rden oder gro\xDFangelegte Serienproduktionen: Unsere langj\xE4hrige Erfahrung, Innovationskraft und Verl\xE4sslichkeit machen uns zum starken Partner f\xFCr anspruchsvolle Textilprojekte. Werfen Sie einen Blick auf ausgew\xE4hlte Referenzen und \xFCberzeugen Sie sich selbst.";
+  let introText = "Unsere langj\xE4hrige Erfahrung, Innovationskraft und Verl\xE4sslichkeit machen uns zum starken Partner f\xFCr anspruchsvolle Textilprojekte.";
   if (pageLanguage == "en") {
     heading = "Projects & References";
     subtitle = "From underwear to tactical suits \u2013 since 1957, we\u2019ve been delivering the highest quality standards";

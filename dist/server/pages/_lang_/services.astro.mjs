@@ -1,8 +1,8 @@
 import { e as createAstro, f as createComponent, i as renderComponent, r as renderTemplate } from '../../chunks/astro/server_CofuBfMf.mjs';
 import 'kleur/colors';
-import { $ as $$WelcomeLeftAligned } from '../../chunks/WelcomeLeftAligned_tItijDKf.mjs';
-import { $ as $$Layout } from '../../chunks/Layout_BOf780Oc.mjs';
-import { $ as $$Leistungen } from '../../chunks/Leistungen_KnwR46OT.mjs';
+import { $ as $$WelcomeLeftAligned } from '../../chunks/WelcomeLeftAligned_JvBt59ht.mjs';
+import { $ as $$Layout } from '../../chunks/Layout_BIZBW9qJ.mjs';
+import { $ as $$Leistungen } from '../../chunks/Leistungen_DxPW6h17.mjs';
 export { renderers } from '../../renderers.mjs';
 
 const Scribble = new Proxy({"src":"/custom-folder/leistungen.CE96ka63.jpg","width":1920,"height":1281,"format":"jpg"}, {

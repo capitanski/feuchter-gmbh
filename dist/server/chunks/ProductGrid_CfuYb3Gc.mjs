@@ -3,7 +3,7 @@ import 'kleur/colors';
 import 'clsx';
 /* empty css                         */
 import { A as Arrow } from './Arrow_sand_CKat7LSH.mjs';
-import { b as buttonTranslations } from './Layout_BOf780Oc.mjs';
+import { b as buttonTranslations } from './Layout_BIZBW9qJ.mjs';
 
 const $$Astro$1 = createAstro("http://192.168.178.48:4321/");
 const $$Modal = createComponent(($$result, $$props, $$slots) => {
