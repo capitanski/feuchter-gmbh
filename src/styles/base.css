@@ -84,34 +84,47 @@
 }
 
 h2 {
-  font-weight: 700;
-  font-size: 3rem;
+  font-size: 2rem !important;
   letter-spacing: -1.5px;
   color: var(--verydarkgray);
   margin-bottom: 0;
   margin-top: 10px;
-  line-height: 85%;
+  line-height: 2.1rem;
+  font-family: "peridot-pe-variable", sans-serif !important;
+  font-variation-settings: "ital" 0, "wdth" 300, "wght" 900 !important;
+  @media screen and (max-width: 1028px) {
+    font-size: 1.4rem !important;
+    line-height: 1.5rem !important;
+  }
 }
 
 h1 {
-  line-height: 85%;
+  line-height: 95% !important;
   font-weight: 900 !important;
   background: linear-gradient(135deg, var(--lightgray), var(--sand));
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-
+  font-family: "peridot-pe-variable", sans-serif !important;
+  font-variation-settings: "ital" 0, "wdth" 400, "wght" 900;
+  font-size: 1.8rem !important;
+  line-height: 2rem !important;
   @media screen and (max-width: 1028px) {
-    font-size: 1.75rem !important;
-    line-height: 1.5rem !important;
+    font-size: 1.15rem !important;
+    line-height: 1.15em !important;
+    font-variation-settings: "ital" 0, "wdth" 300, "wght" 900;
   }
 }
 
 .subtitle {
   font-style: italic !important;
+  font-family: "peridot-pe-variable", sans-serif !important;
+  font-variation-settings: "ital" 0, "wdth" 200, "wght" 200;
+  font-size: 1rem !important;
   @media screen and (max-width: 1028px) {
     margin-top: 10px !important;
-    font-size: 1.1rem !important;
+    font-size: 0.95rem !important;
     line-height: 1.1rem !important;
+    font-variation-settings: "ital" 0, "wdth" 100, "wght" 300;
   }
 }
 
