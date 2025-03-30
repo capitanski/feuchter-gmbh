@@ -118,7 +118,7 @@ h1 {
 .subtitle {
   font-style: italic !important;
   font-family: "peridot-pe-variable", sans-serif !important;
-  font-variation-settings: "ital" 0, "wdth" 200, "wght" 200;
+  font-variation-settings: "ital" 0, "wdth" 200, "wght" 300;
   font-size: 1rem !important;
   @media screen and (max-width: 1028px) {
     margin-top: 10px !important;
