@@ -3,8 +3,7 @@ import 'kleur/colors';
 import 'clsx';
 /* empty css                         */
 import { A as Arrow } from './Arrow_sand_CKat7LSH.mjs';
-import { b as buttonTranslations } from './Layout_rRfr0-Vd.mjs';
-import { S as Staubhaube } from './Thermohaube_Staubhaube Schräg_ESJPzDhV.mjs';
+import { b as buttonTranslations } from './Layout_BxRlT_jL.mjs';
 
 const $$Astro$1 = createAstro("http://192.168.178.48:4321/");
 const $$Modal = createComponent(($$result, $$props, $$slots) => {
@@ -2202,6 +2201,19 @@ const schutzwandProducts = [
     }
 ];
 
+const thermohaubeSchraeg = new Proxy({"src":"/custom-folder/Thermohaube_Staubhaube Schräg.LP_BA3QO.jpg","width":1000,"height":1000,"format":"jpg"}, {
+						get(target, name, receiver) {
+							if (name === 'clone') {
+								return structuredClone(target);
+							}
+							if (name === 'fsPath') {
+								return "/home/felix/Desktop/feuchtergmbh_website/feuchter-gmbh/src/assets/Produkte/Thermohaube_Staubhaube Schräg.jpg";
+							}
+							
+							return target[name];
+						}
+					});
+
 const thermohaubeFront = new Proxy({"src":"/custom-folder/Thermohaube_Staubhaube Frontal.BZM-zc-h.jpg","width":1000,"height":1000,"format":"jpg"}, {
 						get(target, name, receiver) {
 							if (name === 'clone') {
@@ -2247,7 +2259,7 @@ const thermohaubeProducts = [
             en: "Customizable"
         },
         images: [
-            Staubhaube.src,
+            thermohaubeSchraeg.src,
             thermohaubeFront.src,
             thermohaubeVerschluss.src
         ],
@@ -2325,7 +2337,7 @@ const staubhaubeProducts = [
             en: "Customizable"
         },
         images: [
-            Staubhaube.src,
+            thermohaubeSchraeg.src,
             thermohaubeFront.src,
             thermohaubeVerschluss.src
         ],

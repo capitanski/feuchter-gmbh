@@ -1,21 +1,9 @@
 import { e as createAstro, f as createComponent, i as renderComponent, r as renderTemplate } from '../../chunks/astro/server_CofuBfMf.mjs';
 import 'kleur/colors';
-import { $ as $$Layout } from '../../chunks/Layout_rRfr0-Vd.mjs';
-import { $ as $$ProductGrid } from '../../chunks/ProductGrid_CCQ-xVHk.mjs';
+import { $ as $$Layout } from '../../chunks/Layout_BxRlT_jL.mjs';
+import { $ as $$ProductGrid } from '../../chunks/ProductGrid_DRXQdxJJ.mjs';
+import { T as Thermohaube, a as Transportloesungen } from '../../chunks/Thermohaube quer_CCmxDng1.mjs';
 export { renderers } from '../../renderers.mjs';
-
-const HeaderImage = new Proxy({"src":"/custom-folder/transportwand_header.CWrzyzww.jpg","width":1920,"height":1080,"format":"jpg"}, {
-						get(target, name, receiver) {
-							if (name === 'clone') {
-								return structuredClone(target);
-							}
-							if (name === 'fsPath') {
-								return "/home/felix/Desktop/feuchtergmbh_website/feuchter-gmbh/src/assets/transportwand_header.jpg";
-							}
-							
-							return target[name];
-						}
-					});
 
 const transportCategories = {
     protectivewalls: {
@@ -48,7 +36,7 @@ const schutzwand$1 = new Proxy({"src":"/custom-folder/transportloesungen.Drj6yWa
 						}
 					});
 
-const thermohaube$1 = new Proxy({"src":"/custom-folder/thermohaube.C9CYxG_D.jpg","width":1080,"height":1080,"format":"jpg"}, {
+const thermohaube = new Proxy({"src":"/custom-folder/thermohaube.C9CYxG_D.jpg","width":1080,"height":1080,"format":"jpg"}, {
 						get(target, name, receiver) {
 							if (name === 'clone') {
 								return structuredClone(target);
@@ -161,7 +149,7 @@ const products = [
       de: "<ul><li><strong>Allgemeine Merkmale:</strong><ul><li>Zweiteiliger Anzug, bestehend aus Einsatzblouson und Einsatzhose</li><li>Wird über den Körperschutzausstattungen getragen</li></ul></li><li><strong>Einsatzblouson:</strong><ul><li>Mit Stehkragen</li><li>Verdeckter Frontreißverschluss</li><li>Vier Taschen</li><li>Vier Durchgriffe und zwei Ärmelverschlüsse zur Arretierung der Körperschutzausstattung</li><li>Gummikordel im Saum zur Weitenregulierung</li><li>Mit Ärmelabzeichen und Polizei-Kennzeichnungen</li></ul></li><li><strong>Einsatzhose:</strong><ul><li>Abnehmbare Hosenträger</li><li>Verstellbare Saumkonstruktion</li><li>Seitentaschen, Gesäßtaschen, Oberschenkel- und Unterschenkeltaschen</li><li>Innenbeinreißverschlüsse zur Arretierung der Körperschutzausstattung</li></ul></li><li><strong>Gestaltung &amp; Passform:</strong><ul><li>Blouson und Hose sind funktionell aufeinander abgestimmt</li><li>Optimale Bewegungsfreiheit und Formstabilität</li></ul></li><li><strong>Größen:</strong><ul><li><strong>Normale Größe (N):</strong> XS bis N-5XL</li><li><strong>Lange Größe (L):</strong> XS bis L-5XL</li><li><strong>Kurze Größe (K):</strong> XS bis K-5XL</li></ul></li></ul><p>‍</p>",
       en: "<ul><li><strong>Allgemeine Merkmale:</strong><ul><li>Zweiteiliger Anzug, bestehend aus Einsatzblouson und Einsatzhose</li><li>Wird über den Körperschutzausstattungen getragen</li></ul></li><li><strong>Einsatzblouson:</strong><ul><li>Mit Stehkragen</li><li>Verdeckter Frontreißverschluss</li><li>Vier Taschen</li><li>Vier Durchgriffe und zwei Ärmelverschlüsse zur Arretierung der Körperschutzausstattung</li><li>Gummikordel im Saum zur Weitenregulierung</li><li>Mit Ärmelabzeichen und Polizei-Kennzeichnungen</li></ul></li><li><strong>Einsatzhose:</strong><ul><li>Abnehmbare Hosenträger</li><li>Verstellbare Saumkonstruktion</li><li>Seitentaschen, Gesäßtaschen, Oberschenkel- und Unterschenkeltaschen</li><li>Innenbeinreißverschlüsse zur Arretierung der Körperschutzausstattung</li></ul></li><li><strong>Gestaltung &amp; Passform:</strong><ul><li>Blouson und Hose sind funktionell aufeinander abgestimmt</li><li>Optimale Bewegungsfreiheit und Formstabilität</li></ul></li><li><strong>Größen:</strong><ul><li><strong>Normale Größe (N):</strong> XS bis N-5XL</li><li><strong>Lange Größe (L):</strong> XS bis L-5XL</li><li><strong>Kurze Größe (K):</strong> XS bis K-5XL</li></ul></li></ul><p>‍</p>",
     },
-    mainImage: thermohaube$1.src,
+    mainImage: thermohaube.src,
     images: [
       "https://cdn.prod.website-files.com/66fbdc612b6ec708353a8c01/67cec5dd6d9817dfa24f1aa7_EinsatzblousonMa%C3%9Ftabelle.png",
     ],
@@ -180,19 +168,6 @@ const schutzwand = new Proxy({"src":"/custom-folder/Transportwand quer.CqVqW5ZG.
 							}
 							if (name === 'fsPath') {
 								return "/home/felix/Desktop/feuchtergmbh_website/feuchter-gmbh/src/assets/Transportwand quer.jpg";
-							}
-							
-							return target[name];
-						}
-					});
-
-const thermohaube = new Proxy({"src":"/custom-folder/Thermohaube quer.CVuBt3g6.jpg","width":1920,"height":1080,"format":"jpg"}, {
-						get(target, name, receiver) {
-							if (name === 'clone') {
-								return structuredClone(target);
-							}
-							if (name === 'fsPath') {
-								return "/home/felix/Desktop/feuchtergmbh_website/feuchter-gmbh/src/assets/Thermohaube quer.jpg";
 							}
 							
 							return target[name];
@@ -299,7 +274,7 @@ const transportTexts = {
         "Hospitality industry",
       ],
     },
-    headerImage: thermohaube.src,
+    headerImage: Thermohaube.src,
     mobileHeaderImage: mobileThermohaube.src,
   },
   dustcover: {
@@ -396,17 +371,17 @@ const $$Index = createComponent(($$result, $$props, $$slots) => {
     subtitle = "Secure sustainably instead of wasting";
     introText = `We manufacture high-quality protective walls, dust covers, and thermal covers for roll containers. Our innovative solutions are designed to fully replace traditional stretch film, offering a sustainable and reusable alternative for load securing. Whether you need protection from impact, dust, or temperature fluctuations \u2013 our products provide reliable and eco-friendly coverage. Feel free to reach out to us for inquiries or customized solutions.`;
   }
-  return renderTemplate`${renderComponent($$result, "Layout", $$Layout, {}, { "default": ($$result2) => renderTemplate` ${renderComponent($$result2, "ProductGrid", $$ProductGrid, { "categories": categories, "products": products, "pageLanguage": pageLanguage, "searchCategory": searchCategory, "links": links, "headerImage": HeaderImage, "heading": heading, "introText": introText, "subtitle": subtitle, "texts": transportTexts })} ` })}`;
+  return renderTemplate`${renderComponent($$result, "Layout", $$Layout, {}, { "default": ($$result2) => renderTemplate` ${renderComponent($$result2, "ProductGrid", $$ProductGrid, { "categories": categories, "products": products, "pageLanguage": pageLanguage, "searchCategory": searchCategory, "links": links, "headerImage": Transportloesungen, "heading": heading, "introText": introText, "subtitle": subtitle, "texts": transportTexts })} ` })}`;
 }, "/home/felix/Desktop/feuchtergmbh_website/feuchter-gmbh/src/pages/[lang]/transportsolutions/index.astro", void 0);
 
 const $$file = "/home/felix/Desktop/feuchtergmbh_website/feuchter-gmbh/src/pages/[lang]/transportsolutions/index.astro";
 const $$url = "/[lang]/transportsolutions";
 
 const _page = /*#__PURE__*/Object.freeze(/*#__PURE__*/Object.defineProperty({
-	__proto__: null,
-	default: $$Index,
-	file: $$file,
-	url: $$url
+    __proto__: null,
+    default: $$Index,
+    file: $$file,
+    url: $$url
 }, Symbol.toStringTag, { value: 'Module' }));
 
 const page = () => _page;

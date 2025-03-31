@@ -2,7 +2,7 @@ import { e as createAstro, f as createComponent, m as maybeRenderHead, h as addA
 import 'kleur/colors';
 import { $ as $$Button } from '../../../chunks/Button_DTN3DVjt.mjs';
 import { C as Circles, $ as $$ProjectTag, p as projects } from '../../../chunks/projects_CgVXogum.mjs';
-import { t as translations, b as buttonTranslations, $ as $$Layout } from '../../../chunks/Layout_rRfr0-Vd.mjs';
+import { t as translations, b as buttonTranslations, $ as $$Layout } from '../../../chunks/Layout_BxRlT_jL.mjs';
 /* empty css                                           */
 import fs from 'fs/promises';
 export { renderers } from '../../../renderers.mjs';

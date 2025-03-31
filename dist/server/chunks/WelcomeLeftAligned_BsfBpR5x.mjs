@@ -1,7 +1,7 @@
 import { e as createAstro, f as createComponent, m as maybeRenderHead, h as addAttribute, i as renderComponent, r as renderTemplate } from './astro/server_CofuBfMf.mjs';
 import 'kleur/colors';
 import { $ as $$Button } from './Button_DTN3DVjt.mjs';
-import { C as Circles, b as buttonTranslations } from './Layout_rRfr0-Vd.mjs';
+import { C as Circles, b as buttonTranslations } from './Layout_BxRlT_jL.mjs';
 /* empty css                         */
 
 const $$Astro = createAstro("http://192.168.178.48:4321/");
