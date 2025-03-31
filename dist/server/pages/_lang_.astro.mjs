@@ -11,7 +11,7 @@ import { a as Transportloesungen, T as Thermohaube } from '../chunks/Thermohaube
 import { B as Bekleidung } from '../chunks/projekte_C2Tx1DqM.mjs';
 import { C as Circles$2 } from '../chunks/projects_CgVXogum.mjs';
 import { A as Arrow } from '../chunks/Arrow_sand_CKat7LSH.mjs';
-import { $ as $$ContactForm } from '../chunks/ContactForm_BPALx_-G.mjs';
+import { $ as $$ContactForm } from '../chunks/ContactForm_CTGokQIw.mjs';
 export { renderers } from '../renderers.mjs';
 
 const $$Astro$4 = createAstro("http://192.168.178.48:4321/");
