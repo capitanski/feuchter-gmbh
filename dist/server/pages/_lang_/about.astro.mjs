@@ -1,7 +1,7 @@
 import { e as createAstro, f as createComponent, m as maybeRenderHead, h as addAttribute, r as renderTemplate, i as renderComponent } from '../../chunks/astro/server_CofuBfMf.mjs';
 import 'kleur/colors';
-import { $ as $$WelcomeLeftAligned } from '../../chunks/WelcomeLeftAligned_BsfBpR5x.mjs';
-import { $ as $$Layout } from '../../chunks/Layout_BxRlT_jL.mjs';
+import { $ as $$WelcomeLeftAligned } from '../../chunks/WelcomeLeftAligned_Djop1HMz.mjs';
+import { $ as $$Layout } from '../../chunks/Layout_CdeovOSY.mjs';
 import 'clsx';
 /* empty css                                    */
 export { renderers } from '../../renderers.mjs';
@@ -178,15 +178,15 @@ const $$TeamGrid = createComponent(($$result, $$props, $$slots) => {
         de: "Logistik & Lagerverwaltung",
         en: "Logistics & Warehouse Management"
       }
-    },
-    {
+    }
+    /*{
       img: avatar.src,
       name: "Maximilian Hierl",
       role: {
-        de: "M. Eng. Qualit\xE4tsingenieur",
-        en: "M. Eng. Quality Engineer"
-      }
-    }
+        de: "M. Eng. Qualitätsingenieur",
+        en: "M. Eng. Quality Engineer",
+      },
+    },*/
   ];
   return renderTemplate`${maybeRenderHead()}<section data-astro-cid-liz7rhkm> <div class="container" data-astro-cid-liz7rhkm> <div class="title-and-cite" data-astro-cid-liz7rhkm> <h2 class="animate-in-right" data-astro-cid-liz7rhkm>${headline[language]}</h2> <p class="zitat" data-astro-cid-liz7rhkm> ${cite[language]} </p> </div> <div class="grid" data-astro-cid-liz7rhkm> ${teamMembers.map((item) => {
     return renderTemplate`<div class="grid-item animatable" data-astro-cid-liz7rhkm> <img${addAttribute(item.img, "src")} alt="" data-astro-cid-liz7rhkm> <div class="grid-item-text" data-astro-cid-liz7rhkm> <p data-astro-cid-liz7rhkm>${item.name}</p> <span data-astro-cid-liz7rhkm>${item.role[language]}</span> </div> </div>`;

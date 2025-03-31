@@ -1,16 +1,17 @@
 import { e as createAstro, f as createComponent, m as maybeRenderHead, h as addAttribute, u as unescapeHTML, i as renderComponent, r as renderTemplate } from '../chunks/astro/server_CofuBfMf.mjs';
 import 'kleur/colors';
-import { $ as $$Button } from '../chunks/Button_DTN3DVjt.mjs';
-import { C as Circles$1, b as buttonTranslations, $ as $$Layout } from '../chunks/Layout_BxRlT_jL.mjs';
+import { $ as $$Button } from '../chunks/Button_BHV8ZOOp.mjs';
+import { C as Circles$1, b as buttonTranslations, $ as $$Layout } from '../chunks/Layout_CdeovOSY.mjs';
 import { S as Scribble, B as Behoerdenkleidung, C as Corporate } from '../chunks/corporate_fashion_DzCh8UDt.mjs';
 /* empty css                                 */
-import { $ as $$Leistungen } from '../chunks/Leistungen_BvV2iti2.mjs';
+import { $ as $$Leistungen } from '../chunks/Leistungen_DMMBhsO-.mjs';
 import 'clsx';
-import { $ as $$Projects } from '../chunks/Projects_BtQKCfFw.mjs';
+import { $ as $$Projects } from '../chunks/Projects_BpygXrwY.mjs';
 import { a as Transportloesungen, T as Thermohaube } from '../chunks/Thermohaube quer_CCmxDng1.mjs';
 import { B as Bekleidung } from '../chunks/projekte_C2Tx1DqM.mjs';
 import { C as Circles$2 } from '../chunks/projects_CgVXogum.mjs';
 import { A as Arrow } from '../chunks/Arrow_sand_CKat7LSH.mjs';
+import { $ as $$ContactForm } from '../chunks/ContactForm_BPALx_-G.mjs';
 export { renderers } from '../renderers.mjs';
 
 const $$Astro$4 = createAstro("http://192.168.178.48:4321/");
@@ -334,7 +335,7 @@ const $$Index = createComponent(($$result, $$props, $$slots) => {
   Astro2.self = $$Index;
   const { locals } = Astro2;
   const pageLanguage = locals.language;
-  return renderTemplate`${renderComponent($$result, "Layout", $$Layout, {}, { "default": ($$result2) => renderTemplate` ${renderComponent($$result2, "Welcome", $$Welcome, { "language": pageLanguage })} ${renderComponent($$result2, "Leistungen", $$Leistungen, { "language": pageLanguage })} ${renderComponent($$result2, "Categories", $$Categories, { "language": pageLanguage })} ${renderComponent($$result2, "Cite", $$Cite, { "language": pageLanguage })} ${renderComponent($$result2, "Usps", $$Usps, { "language": pageLanguage })} ${renderComponent($$result2, "Projects", $$Projects, { "language": pageLanguage })} ` })}`;
+  return renderTemplate`${renderComponent($$result, "Layout", $$Layout, {}, { "default": ($$result2) => renderTemplate` ${renderComponent($$result2, "Welcome", $$Welcome, { "language": pageLanguage })} ${renderComponent($$result2, "Leistungen", $$Leistungen, { "language": pageLanguage })} ${renderComponent($$result2, "Categories", $$Categories, { "language": pageLanguage })} ${renderComponent($$result2, "Cite", $$Cite, { "language": pageLanguage })} ${renderComponent($$result2, "Usps", $$Usps, { "language": pageLanguage })} ${renderComponent($$result2, "Projects", $$Projects, { "language": pageLanguage })} ${renderComponent($$result2, "ContactForm", $$ContactForm, {})} ` })}`;
 }, "/home/felix/Desktop/feuchtergmbh_website/feuchter-gmbh/src/pages/[lang]/index.astro", void 0);
 
 const $$file = "/home/felix/Desktop/feuchtergmbh_website/feuchter-gmbh/src/pages/[lang]/index.astro";
