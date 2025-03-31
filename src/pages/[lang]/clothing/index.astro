@@ -5,6 +5,7 @@ import Products from "@/components/Products.astro";
 import Scribble from "@/assets/feuchter_gmbh_header.jpg";
 import ProductGrid from "@/components/ProductGrid.astro";
 import HeaderImage from "@/assets/feuchter_gmbh_header.jpg";
+import { clothingProducts } from "@/content/productmodels/military-and-survival";
 import products from "@/content/clothingProducts";
 import { clothingCategories } from "@/content/clothingCategories";
 import { clothingTexts } from "@/content/clothingTexts";
@@ -14,27 +15,6 @@ const { url } = Astro.request;
 const searchParams = new URL(url).searchParams;
 const searchCategory = searchParams.get("category");
 const pageLanguage = locals.language;
-let categories = Array.from(
-  new Set(
-    products
-      .filter(
-        (product) =>
-          product.category.key ==
-            clothingCategories[product.category.key].key &&
-          product.category.overall == searchCategory,
-      )
-      .map((product) => {
-        return {
-          key: product.category.key,
-          value: clothingCategories[product.category.key][pageLanguage],
-        };
-      }),
-  ),
-);
-categories = [...new Map(categories.map((item) => [item.key, item])).values()];
-if (categories.length == 0) {
-  return new Response(null, { status: 404 });
-}
 
 const links = [
   {
@@ -78,7 +58,6 @@ if (pageLanguage == "en") {
 
 <Layout>
   <ProductGrid
-    categories={categories}
     products={products}
     pageLanguage={pageLanguage}
     searchCategory={searchCategory}

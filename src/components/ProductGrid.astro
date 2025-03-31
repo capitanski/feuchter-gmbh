@@ -2,8 +2,8 @@
 import Modal from "./Modal.astro";
 import Arrow from "@/assets/Arrow_sand.svg";
 import { buttonTranslations } from "@/content/translations";
+import { clothingProducts } from "@/content/productmodels/military-and-survival";
 const {
-  categories,
   products,
   pageLanguage,
   searchCategory,
@@ -14,7 +14,7 @@ const {
   introText,
   texts,
 } = Astro.props;
-console.log(searchCategory);
+let currentProducts = [];
 let content;
 let suitableFor;
 if (searchCategory == "protective-wall") {
@@ -28,6 +28,7 @@ if (searchCategory == "dust-cover") {
 }
 if (searchCategory == "military-and-survival") {
   content = texts.militarysurvival;
+  currentProducts = clothingProducts;
 }
 if (searchCategory == "officialwear") {
   content = texts.officialwear;
@@ -41,6 +42,18 @@ if (pageLanguage == "de") {
 if (pageLanguage == "en") {
   suitableFor = "Ideal for:";
 }
+const productCategories = currentProducts.map((product) => {
+  return {
+    de: product.category.de,
+    en: product.category.en,
+  };
+});
+const filteredCategories = productCategories.map((category) => {
+  return category[pageLanguage];
+});
+console.log(filteredCategories);
+const categories = Array.from(new Set(filteredCategories));
+console.log(categories);
 ---
 
 <section>
@@ -107,28 +120,27 @@ if (pageLanguage == "en") {
         categories.map((category) => {
           return (
             <>
-              <h2>{category.value}</h2>
+              <h2>{category}</h2>
               <div class="product-grid">
-                {products
+                {currentProducts
                   .filter(
                     (product) =>
-                      product.category.key == category.key &&
-                      product.category.overall == searchCategory
+                      product.category[pageLanguage].toLowerCase() ==
+                      category.toLowerCase(),
                   )
                   .map((p) => {
                     return (
                       <div class="product-grid-item">
-                        <img src={p.mainImage} alt="" class="animatable" />
+                        <img src={p.images[0]} alt="" class="animatable" />
                         <div>
-                          {p.originalTl ? <span>Original TL</span> : ""}
-                          {p.individual ? <span>Individualisierbar</span> : ""}
+                          <span>{p.tag[pageLanguage]}</span>
                           <p class="product-title">{p.title[pageLanguage]}</p>
                           <button class="openBtn project-link">
                             <img src={Arrow.src} alt="" />
                             <span>
                               {buttonTranslations(
                                 "technischedaten",
-                                pageLanguage
+                                pageLanguage,
                               )}
                             </span>
                           </button>

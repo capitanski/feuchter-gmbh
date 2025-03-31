@@ -7,7 +7,7 @@ const { isOpen = false, content, pageLanguage } = Astro.props;
     <div class="modal">
         <button class="close-button">×</button>
         <h2>{content.title[pageLanguage]}</h2>
-        <p>{content.description[pageLanguage]}</p>
+        <p>{content.shortDescription[pageLanguage]}</p>
         <div class="modal-image-grid">
             {
                 content.images.map((image) => {
@@ -19,11 +19,20 @@ const { isOpen = false, content, pageLanguage } = Astro.props;
                 })
             }
         </div>
-
-        <small
-            set:html={content.technicalData[pageLanguage]}
+        {content.lists.map((list) => {
+            return (<h3>
+                {list.title[pageLanguage]}
+            </h3>
+            <ul>
+                {list.content.map((listitem) => {
+                    return (<li>{listitem[pageLanguage]}</li>)
+                })}
+            </ul>)
+        })}
+        <!--<div
+            set:html={content.optionalRichtext.content[pageLanguage]}
             class="rich-text-dark"
-        />
+        />-->
     </div>
 </div>
 <script>
@@ -107,7 +116,13 @@ const { isOpen = false, content, pageLanguage } = Astro.props;
         font-size: 1.6rem;
     }
     p {
+        color: var(--lightgray);
+        font-size: 1rem;
+    }
+    h3 {
         color: var(--sand);
-        font-size: 0.8rem;
+    }
+    ul, li {
+        color: var(--lightgray);
     }
 </style>
