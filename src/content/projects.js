@@ -1,8 +1,15 @@
-import PolizeihemdSeite from "@/assets/polizeihemd_bayern_wappen.png";
-import PolizeihemdFront from "@/assets/polizeihemd_bayern_wappen.png";
-import PolizeihemdWappen from "@/assets/polizeihemd_bayern_wappen.png";
-import MonteurkombiFront from "@/assets/Monteurkombi_Front.jpg";
-import MonteurkombiSeite from "@/assets/Monteurkombi_Seite.jpg";
+import PolizeihemdSeite from "@/assets/Projekte/Bayernhemd arm.jpg";
+import PolizeihemdFront from "@/assets/Projekte/Bayernhemd vorne.jpg";
+import bmiHoseRechts from "@/assets/Projekte/BMI Hose rechts.jpg"
+import bmiJackeFront from "@/assets/Projekte/BMI Jacke front.jpg"
+import berlinHoseLinks from "@/assets/Projekte/Hose Berlin Links.jpg"
+import berlinJackeSeite from "@/assets/Projekte/Jacke Berlin Seite.jpg"
+import unterhemdSeite from "@/assets/Projekte/Unterhemd BWBM Seite.jpg";
+import unterhemdFront from "@/assets/Projekte/Unterhemd BWBM vorne.jpg"
+import monteurkombiFront from "@/assets/Projekte/Monteurkombi Front.jpg"
+import monteurkombiSeite from "@/assets/Projekte/Monteurkombi Seite.jpg"
+import ksJacke from "@/assets/Projekte/Kaelteschutzjacke Seite.jpg"
+import ksHose from "@/assets/Projekte/Kaelteschutzhose Seite.jpg"
 import fs from "fs";
 const projects = [
   {
@@ -25,7 +32,7 @@ const projects = [
       en: ["kaelteschutz", "gefuttert"],
     },
     tl: "TL 8415-0234/TL 8415-0260",
-    images: [PolizeihemdSeite.src, PolizeihemdFront.src, PolizeihemdWappen.src],
+    images: [ksJacke.src, ksHose.src],
     amount: 51000,
     status: {
       de: "Laufend",
@@ -53,7 +60,7 @@ const projects = [
       en: ["flammhemmend", "aramidgewebe"],
     },
     tl: "Ausgabe No. 5",
-    images: [PolizeihemdSeite.src, PolizeihemdFront.src, PolizeihemdWappen.src],
+    images: [bmiJackeFront.src, bmiHoseRechts.src],
     amount: 18500,
     status: {
       de: "Laufend",
@@ -81,7 +88,7 @@ const projects = [
       en: ["aramidgewebe"],
     },
     tl: "TL 8405-075",
-    images: [PolizeihemdSeite.src, PolizeihemdFront.src, PolizeihemdWappen.src],
+    images: [berlinJackeSeite.src, berlinHoseLinks.src],
     amount: 2400,
     status: {
       de: "Abgeschlossen",
@@ -109,7 +116,7 @@ const projects = [
       en: ["atlasgewebe"],
     },
     tl: "TL 8415-0212 / TL 8415-0213",
-    images: [PolizeihemdSeite.src, PolizeihemdFront.src, PolizeihemdWappen.src],
+    images: [monteurkombiFront.src, monteurkombiSeite.src],
     amount: 45000,
     status: {
       de: "Laufend",
@@ -137,7 +144,7 @@ const projects = [
       en: ["mischgewebe"],
     },
     tl: "TL-BY4",
-    images: [PolizeihemdSeite.src, PolizeihemdFront.src, PolizeihemdWappen.src],
+    images: [PolizeihemdSeite.src, PolizeihemdFront.src],
     amount: 680000,
     status: {
       de: "Laufend",
@@ -165,7 +172,7 @@ const projects = [
       en: ["mischgewebe"],
     },
     tl: "TL 8420-0052",
-    images: [PolizeihemdSeite.src, PolizeihemdFront.src, PolizeihemdWappen.src],
+    images: [unterhemdFront.src, unterhemdSeite.src],
     amount: 170000,
     status: {
       de: "Laufend",
