@@ -1,0 +1,32 @@
+---
+import WelcomeContact from "@/components/WelcomeContact.astro";
+import ContactForm from "@/components/ContactForm.astro";
+import Layout from "@/layouts/Layout.astro";
+import Scribble from "@/assets/team/teamimage.jpg";
+import type { AstroLocals } from "@/types";
+
+const { locals } = Astro as unknown as { locals: AstroLocals };
+
+const pageLanguage = locals.language;
+
+let heading = "Ihr Vision ist nur noch einen Klick entfernt";
+let subtitle = "Wir freuen uns, von Ihnen zu hören";
+let introText = `
+Wir unterstützen unsere Kunden von Anfang an bei ihren Projekten – von der Konzeption und Entwicklung über die Produktion bis hin zur Logistik. Mit unserer Expertise sorgen wir für maßgeschneiderte Lösungen, die effizient, zuverlässig und nachhaltig sind.`;
+if (pageLanguage == "en") {
+    heading = "We are looking forward to hear from you";
+    subtitle = "From conception to production to logistics";
+    introText = `
+We support our customers from the very beginning of their projects – from conception and development to production and logistics. With our expertise, we ensure tailored solutions that are efficient, reliable, and sustainable.`;
+}
+---
+
+<Layout>
+    <WelcomeContact
+        language={pageLanguage}
+        heading={heading}
+        subtitle={subtitle}
+        introText={introText}
+        Scribble={Scribble}
+    />
+</Layout>
