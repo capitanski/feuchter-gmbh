@@ -1,7 +1,7 @@
 import { e as createAstro, f as createComponent, m as maybeRenderHead, h as addAttribute, r as renderTemplate, i as renderComponent } from '../../chunks/astro/server_CofuBfMf.mjs';
 import 'kleur/colors';
-import { $ as $$WelcomeLeftAligned } from '../../chunks/WelcomeLeftAligned_ib6fyl68.mjs';
-import { $ as $$Layout } from '../../chunks/Layout_BIZBW9qJ.mjs';
+import { $ as $$WelcomeLeftAligned } from '../../chunks/WelcomeLeftAligned_C5ygzh1C.mjs';
+import { $ as $$Layout } from '../../chunks/Layout_rRfr0-Vd.mjs';
 import 'clsx';
 /* empty css                                    */
 export { renderers } from '../../renderers.mjs';
@@ -84,7 +84,7 @@ const markus = new Proxy({"src":"/custom-folder/markus_feuchter.DRKi8Bbc.jpg","w
 						}
 					});
 
-const avatar = new Proxy({"src":"/custom-folder/avatar.BIt64UI2.jpg","width":400,"height":400,"format":"jpg"}, {
+const avatar = new Proxy({"src":"/custom-folder/avatar.qyaxPyh_.jpg","width":400,"height":400,"format":"jpg"}, {
 						get(target, name, receiver) {
 							if (name === 'clone') {
 								return structuredClone(target);
@@ -127,16 +127,16 @@ const $$TeamGrid = createComponent(($$result, $$props, $$slots) => {
       img: markus.src,
       name: "Markus Feuchter",
       role: {
-        de: "CEO",
-        en: "CEO"
+        de: "Produktentwicklung",
+        en: "Product Development"
       }
     },
     {
       img: sabrina.src,
       name: "Sabrina Feuchter",
       role: {
-        de: "Stellvertretende Gesch\xE4ftsf\xFChrung",
-        en: "Deputy Managing Director"
+        de: "Produktentwicklung",
+        en: "Product Development"
       }
     },
     {

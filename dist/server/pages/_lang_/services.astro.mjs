@@ -1,8 +1,8 @@
 import { e as createAstro, f as createComponent, i as renderComponent, r as renderTemplate } from '../../chunks/astro/server_CofuBfMf.mjs';
 import 'kleur/colors';
-import { $ as $$WelcomeLeftAligned } from '../../chunks/WelcomeLeftAligned_ib6fyl68.mjs';
-import { $ as $$Layout } from '../../chunks/Layout_BIZBW9qJ.mjs';
-import { $ as $$Leistungen } from '../../chunks/Leistungen_DxPW6h17.mjs';
+import { $ as $$WelcomeLeftAligned } from '../../chunks/WelcomeLeftAligned_C5ygzh1C.mjs';
+import { $ as $$Layout } from '../../chunks/Layout_rRfr0-Vd.mjs';
+import { $ as $$Leistungen } from '../../chunks/Leistungen_CmRV8OxK.mjs';
 export { renderers } from '../../renderers.mjs';
 
 const Scribble = new Proxy({"src":"/custom-folder/leistungen.CE96ka63.jpg","width":1920,"height":1281,"format":"jpg"}, {
@@ -25,7 +25,7 @@ const $$Services = createComponent(($$result, $$props, $$slots) => {
   const { locals } = Astro2;
   const pageLanguage = locals.language;
   let heading = "Wir unterst\xFCtzen Sie bei Ihrem Vorhaben von Anfang an.";
-  let subtitle = "Ein Parnter, der h\xE4lt was er verspricht";
+  let subtitle = "Ein Partner, der h\xE4lt was er verspricht";
   let introText = `
 Wir unterst\xFCtzen unsere Kunden von Anfang an bei ihren Projekten \u2013 von der Konzeption und Entwicklung \xFCber die Produktion bis hin zur Logistik. Mit unserer Expertise sorgen wir f\xFCr ma\xDFgeschneiderte L\xF6sungen, die effizient, zuverl\xE4ssig und nachhaltig sind.`;
   if (pageLanguage == "en") {

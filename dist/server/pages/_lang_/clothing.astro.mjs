@@ -1,58 +1,28 @@
 import { e as createAstro, f as createComponent, i as renderComponent, r as renderTemplate } from '../../chunks/astro/server_CofuBfMf.mjs';
 import 'kleur/colors';
-import { $ as $$Layout } from '../../chunks/Layout_BIZBW9qJ.mjs';
-import { $ as $$ProductGrid } from '../../chunks/ProductGrid_B4eoeq2N.mjs';
-import { S as Scribble$1 } from '../../chunks/feuchter_gmbh_header_BZdgIJPN.mjs';
-import { S as Scribble } from '../../chunks/projekte_YcggKxQO.mjs';
+import { $ as $$Layout } from '../../chunks/Layout_rRfr0-Vd.mjs';
+import { $ as $$ProductGrid } from '../../chunks/ProductGrid_CCQ-xVHk.mjs';
+import { C as Corporate, B as Behoerdenkleidung, S as Scribble } from '../../chunks/corporate_fashion_DzCh8UDt.mjs';
+import { B as Bekleidung } from '../../chunks/projekte_C2Tx1DqM.mjs';
 export { renderers } from '../../renderers.mjs';
 
 const clothingCategories = {
     jackets: {
-        key: "jackets",
-        de: "Jacken",
-        en: "Jackets"
-    },
+        key: "jackets"},
     pants: {
-        key: "pants",
-        de: "Hosen",
-        en: "Pants"
-    },
+        key: "pants"},
     shirts: {
-        key: "shirts",
-        de: "Hemden",
-        en: "Shirts"
-    },
+        key: "shirts"},
     headwear: {
-        key: "headwear",
-        de: "Kopfbedeckungen",
-        en: "Headwear"
-    },
+        key: "headwear"},
     pullovers: {
-        key: "pullovers",
-        de: "Pullover",
-        en: "Pullovers"
-    },
+        key: "pullovers"},
     poloshirts: {
-        key: "poloshirts",
-        de: "Poloshirts",
-        en: "Poloshirts"
-    },
+        key: "poloshirts"},
     suits: {
-        key: "suits",
-        de: "Anzüge/Kombinationen",
-        en: "Suits/Combinations"
-    },
+        key: "suits"},
     accessories: {
-        key: "accessories",
-        de: "Accessoires",
-        en: "Accessories"
-    },
-    security: {
-        key: "security",
-        de: "Securitykleidung",
-        en: "Securityclothing"
-    }
-};
+        key: "accessories"}};
 
 const products = [
   {
@@ -803,32 +773,6 @@ const products = [
   },
 ];
 
-const thermohaube = new Proxy({"src":"/custom-folder/officialwear_header.B3vUiA31.jpg","width":3500,"height":2333,"format":"jpg"}, {
-						get(target, name, receiver) {
-							if (name === 'clone') {
-								return structuredClone(target);
-							}
-							if (name === 'fsPath') {
-								return "/home/felix/Desktop/feuchtergmbh_website/feuchter-gmbh/src/assets/officialwear_header.jpg";
-							}
-							
-							return target[name];
-						}
-					});
-
-const staubhaube = new Proxy({"src":"/custom-folder/corporate_fashion.CnWaj1Y1.jpg","width":1920,"height":1080,"format":"jpg"}, {
-						get(target, name, receiver) {
-							if (name === 'clone') {
-								return structuredClone(target);
-							}
-							if (name === 'fsPath') {
-								return "/home/felix/Desktop/feuchtergmbh_website/feuchter-gmbh/src/assets/corporate_fashion.jpg";
-							}
-							
-							return target[name];
-						}
-					});
-
 const mobileProjekte = new Proxy({"src":"/custom-folder/projekte_mobile.DOWqA9OZ.jpg","width":765,"height":1080,"format":"jpg"}, {
 						get(target, name, receiver) {
 							if (name === 'clone') {
@@ -898,7 +842,7 @@ const clothingTexts = {
         "Fishing shops",
       ],
     },
-    headerImage: Scribble.src,
+    headerImage: Bekleidung.src,
     mobileHeaderImage: mobileProjekte.src,
   },
   officialwear: {
@@ -931,7 +875,7 @@ const clothingTexts = {
       ]
       ,
     },
-    headerImage: thermohaube.src,
+    headerImage: Behoerdenkleidung.src,
     mobileHeaderImage: mobileOfficialwear.src,
   },
   corporatefashion: {
@@ -964,7 +908,7 @@ const clothingTexts = {
       ]
       ,
     },
-    headerImage: staubhaube.src,
+    headerImage: Corporate.src,
     mobileHeaderImage: mobileCorporatefashion.src,
   },
 };
@@ -978,22 +922,6 @@ const $$Index = createComponent(($$result, $$props, $$slots) => {
   const searchParams = new URL(url).searchParams;
   const searchCategory = searchParams.get("category");
   const pageLanguage = locals.language;
-  let categories = Array.from(
-    new Set(
-      products.filter(
-        (product) => product.category.key == clothingCategories[product.category.key].key && product.category.overall == searchCategory
-      ).map((product) => {
-        return {
-          key: product.category.key,
-          value: clothingCategories[product.category.key][pageLanguage]
-        };
-      })
-    )
-  );
-  categories = [...new Map(categories.map((item) => [item.key, item])).values()];
-  if (categories.length == 0) {
-    return new Response(null, { status: 404 });
-  }
   const links = [
     {
       href: `clothing?category=military-and-survival`,
@@ -1028,7 +956,7 @@ const $$Index = createComponent(($$result, $$props, $$slots) => {
     subtitle = "Whether for armed forces, government agencies, online retailers, or businesses";
     introText = `From rugged military and survival apparel to functional gear for authorities and tailored corporate fashion \u2013 we\u2019ve got you covered. Whether for armed forces, emergency services, online retailers, or businesses: our products combine quality, functionality, and design at the highest level. Rely on experience, precision, and textile solutions that make a difference. Feel free to reach out to us for inquiries or customized solutions.`;
   }
-  return renderTemplate`${renderComponent($$result, "Layout", $$Layout, {}, { "default": ($$result2) => renderTemplate` ${renderComponent($$result2, "ProductGrid", $$ProductGrid, { "categories": categories, "products": products, "pageLanguage": pageLanguage, "searchCategory": searchCategory, "links": links, "headerImage": Scribble$1, "heading": heading, "introText": introText, "subtitle": subtitle, "texts": clothingTexts })} ` })}`;
+  return renderTemplate`${renderComponent($$result, "Layout", $$Layout, {}, { "default": ($$result2) => renderTemplate` ${renderComponent($$result2, "ProductGrid", $$ProductGrid, { "products": products, "pageLanguage": pageLanguage, "searchCategory": searchCategory, "links": links, "headerImage": Scribble, "heading": heading, "introText": introText, "subtitle": subtitle, "texts": clothingTexts })} ` })}`;
 }, "/home/felix/Desktop/feuchtergmbh_website/feuchter-gmbh/src/pages/[lang]/clothing/index.astro", void 0);
 
 const $$file = "/home/felix/Desktop/feuchtergmbh_website/feuchter-gmbh/src/pages/[lang]/clothing/index.astro";

@@ -1,14 +1,15 @@
 import { e as createAstro, f as createComponent, m as maybeRenderHead, h as addAttribute, u as unescapeHTML, i as renderComponent, r as renderTemplate } from '../chunks/astro/server_CofuBfMf.mjs';
 import 'kleur/colors';
 import { $ as $$Button } from '../chunks/Button_DTN3DVjt.mjs';
-import { C as Circles$1, b as buttonTranslations, $ as $$Layout } from '../chunks/Layout_BIZBW9qJ.mjs';
-import { S as Scribble } from '../chunks/feuchter_gmbh_header_BZdgIJPN.mjs';
+import { C as Circles$1, b as buttonTranslations, $ as $$Layout } from '../chunks/Layout_rRfr0-Vd.mjs';
+import { S as Scribble, B as Behoerdenkleidung, C as Corporate } from '../chunks/corporate_fashion_DzCh8UDt.mjs';
 /* empty css                                 */
-import { $ as $$Leistungen } from '../chunks/Leistungen_DxPW6h17.mjs';
+import { $ as $$Leistungen } from '../chunks/Leistungen_CmRV8OxK.mjs';
 import 'clsx';
-import { $ as $$Projects } from '../chunks/Projects_DgQi6VoB.mjs';
-import { T as Transportloesungen, a as Thermohaube, S as Staubhaube } from '../chunks/staubhaube_5C8NrczT.mjs';
-import { C as Circles$2 } from '../chunks/projects_dap78bP4.mjs';
+import { $ as $$Projects } from '../chunks/Projects_cBqLZ2Aq.mjs';
+import { B as Bekleidung } from '../chunks/projekte_C2Tx1DqM.mjs';
+import { S as Staubhaube } from '../chunks/Thermohaube_Staubhaube Schräg_ESJPzDhV.mjs';
+import { C as Circles$2 } from '../chunks/projects_CgVXogum.mjs';
 import { A as Arrow } from '../chunks/Arrow_sand_CKat7LSH.mjs';
 export { renderers } from '../renderers.mjs';
 
@@ -239,26 +240,13 @@ const $$Usps = createComponent(($$result, $$props, $$slots) => {
   })} </div> </div> </section> `;
 }, "/home/felix/Desktop/feuchtergmbh_website/feuchter-gmbh/src/components/Usps.astro", void 0);
 
-const Bekleidung = new Proxy({"src":"/custom-folder/bekleidung.CO0tQQn4.jpg","width":1080,"height":1080,"format":"jpg"}, {
+const Transportloesungen = new Proxy({"src":"/custom-folder/schutzwand_schraeg.D7efcrPx.jpg","width":1000,"height":1000,"format":"jpg"}, {
 						get(target, name, receiver) {
 							if (name === 'clone') {
 								return structuredClone(target);
 							}
 							if (name === 'fsPath') {
-								return "/home/felix/Desktop/feuchtergmbh_website/feuchter-gmbh/src/assets/bekleidung.jpg";
-							}
-							
-							return target[name];
-						}
-					});
-
-const Behoerdenkleidung = new Proxy({"src":"/custom-folder/behoerden.DyRktwU4.jpg","width":1080,"height":1080,"format":"jpg"}, {
-						get(target, name, receiver) {
-							if (name === 'clone') {
-								return structuredClone(target);
-							}
-							if (name === 'fsPath') {
-								return "/home/felix/Desktop/feuchtergmbh_website/feuchter-gmbh/src/assets/behoerden.jpg";
+								return "/home/felix/Desktop/feuchtergmbh_website/feuchter-gmbh/src/assets/Produkte/Transportwand Rollcontainer Schräg.jpg";
 							}
 							
 							return target[name];
@@ -309,7 +297,7 @@ const $$Categories = createComponent(($$result, $$props, $$slots) => {
         en: "Our corporate fashion enhances your brand's appearance with professional, stylish clothing. Whether for trade fairs, customer interactions, or internal events \u2013 we offer high-quality textiles with custom designs. Comfort, quality, and brand recognition are at the heart of every collection we create for you."
       },
       slug: "clothing?category=corporate-fashion",
-      image: Behoerdenkleidung.src
+      image: Corporate.src
     },
     {
       title: {
@@ -333,7 +321,7 @@ const $$Categories = createComponent(($$result, $$props, $$slots) => {
         en: "Our thermal covers enable the safe transport of temperature-sensitive goods. They effectively protect against heat, cold, and moisture, ensuring a stable climate inside the roll container. Especially suitable for food, pharmaceuticals, or chemicals \u2013 wherever constant temperatures are critical during storage or delivery."
       },
       slug: "transportsolutions?category=thermal-cover",
-      image: Thermohaube.src
+      image: Staubhaube.src
     },
     {
       title: {

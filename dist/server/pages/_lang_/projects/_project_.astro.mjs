@@ -1,16 +1,15 @@
-import { e as createAstro, f as createComponent, m as maybeRenderHead, h as addAttribute, i as renderComponent, r as renderTemplate, u as unescapeHTML } from '../../../chunks/astro/server_CofuBfMf.mjs';
+import { e as createAstro, f as createComponent, m as maybeRenderHead, h as addAttribute, i as renderComponent, r as renderTemplate } from '../../../chunks/astro/server_CofuBfMf.mjs';
 import 'kleur/colors';
 import { $ as $$Button } from '../../../chunks/Button_DTN3DVjt.mjs';
-import { C as Circles, $ as $$ProjectTag, p as projects } from '../../../chunks/projects_dap78bP4.mjs';
-import { t as translations, b as buttonTranslations, $ as $$Layout } from '../../../chunks/Layout_BIZBW9qJ.mjs';
+import { C as Circles, $ as $$ProjectTag, p as projects } from '../../../chunks/projects_CgVXogum.mjs';
+import { t as translations, b as buttonTranslations, $ as $$Layout } from '../../../chunks/Layout_rRfr0-Vd.mjs';
 /* empty css                                           */
-import 'clsx';
 import fs from 'fs/promises';
 export { renderers } from '../../../renderers.mjs';
 
-const $$Astro$2 = createAstro("http://192.168.178.48:4321/");
+const $$Astro$1 = createAstro("http://192.168.178.48:4321/");
 const $$ProjectAboveTheFold = createComponent(($$result, $$props, $$slots) => {
-  const Astro2 = $$result.createAstro($$Astro$2, $$props, $$slots);
+  const Astro2 = $$result.createAstro($$Astro$1, $$props, $$slots);
   Astro2.self = $$ProjectAboveTheFold;
   const { currentProject, language } = Astro2.props;
   return renderTemplate`${maybeRenderHead()}<section data-astro-cid-dfrtyu5v> <!--<img
@@ -25,14 +24,6 @@ const $$ProjectAboveTheFold = createComponent(($$result, $$props, $$slots) => {
     language
   })} ${translations("menge", language)}`, "colorScheme": "bright", "data-astro-cid-dfrtyu5v": true })} ${renderComponent($$result, "ProjectTag", $$ProjectTag, { "tagContent": currentProject.customer[language], "colorScheme": "bright", "data-astro-cid-dfrtyu5v": true })} ${renderComponent($$result, "ProjectTag", $$ProjectTag, { "tagContent": currentProject.tl, "colorScheme": "bright", "data-astro-cid-dfrtyu5v": true })} ${renderComponent($$result, "ProjectTag", $$ProjectTag, { "tagContent": currentProject.date, "colorScheme": "bright", "data-astro-cid-dfrtyu5v": true })} ${renderComponent($$result, "ProjectTag", $$ProjectTag, { "tagContent": currentProject.status[language], "colorScheme": "bright", "data-astro-cid-dfrtyu5v": true })} </div> <p class="hero-paragraph" data-astro-cid-dfrtyu5v> ${currentProject.shortDescription[language]} </p> <div class="button-wrapper hero-button-wrapper" data-astro-cid-dfrtyu5v> ${renderComponent($$result, "Button", $$Button, { "linkText": buttonTranslations("contact", language), "target": `/${language}/contact`, "class": "hero-button-1", "variant": "primary", "data-astro-cid-dfrtyu5v": true })} ${renderComponent($$result, "Button", $$Button, { "linkText": buttonTranslations("projects", language), "target": `/${language}/projects`, "class": "hero-button-2", "data-astro-cid-dfrtyu5v": true })} </div> </div> </div> </section> `;
 }, "/home/felix/Desktop/feuchtergmbh_website/feuchter-gmbh/src/components/ProjectAboveTheFold.astro", void 0);
-
-const $$Astro$1 = createAstro("http://192.168.178.48:4321/");
-const $$ProjectRichText = createComponent(($$result, $$props, $$slots) => {
-  const Astro2 = $$result.createAstro($$Astro$1, $$props, $$slots);
-  Astro2.self = $$ProjectRichText;
-  const { richText, pageLanguage } = Astro2.props;
-  return renderTemplate`${maybeRenderHead()}<section data-astro-cid-2iwxpusj> <div class="container" data-astro-cid-2iwxpusj> <h2 data-astro-cid-2iwxpusj>${translations("projektbeschreibung", pageLanguage)}</h2> <div class="rich-text" data-astro-cid-2iwxpusj>${unescapeHTML(richText)}</div> </div> </section> `;
-}, "/home/felix/Desktop/feuchtergmbh_website/feuchter-gmbh/src/components/ProjectRichText.astro", void 0);
 
 const $$Astro = createAstro("http://192.168.178.48:4321/");
 const $$project = createComponent(async ($$result, $$props, $$slots) => {
@@ -57,7 +48,7 @@ const $$project = createComponent(async ($$result, $$props, $$slots) => {
   } catch (err) {
     return new Response(null, { status: 404 });
   }
-  return renderTemplate`${renderComponent($$result, "Layout", $$Layout, {}, { "default": async ($$result2) => renderTemplate` ${renderComponent($$result2, "ProjectAboveTheFold", $$ProjectAboveTheFold, { "currentProject": currentProject, "language": pageLanguage })} ${renderComponent($$result2, "ProjectRichText", $$ProjectRichText, { "richText": richtext, "pageLanguage": pageLanguage })} ` })}`;
+  return renderTemplate`${renderComponent($$result, "Layout", $$Layout, {}, { "default": async ($$result2) => renderTemplate` ${renderComponent($$result2, "ProjectAboveTheFold", $$ProjectAboveTheFold, { "currentProject": currentProject, "language": pageLanguage })}  ` })}`;
 }, "/home/felix/Desktop/feuchtergmbh_website/feuchter-gmbh/src/pages/[lang]/projects/[project].astro", void 0);
 
 const $$file = "/home/felix/Desktop/feuchtergmbh_website/feuchter-gmbh/src/pages/[lang]/projects/[project].astro";
