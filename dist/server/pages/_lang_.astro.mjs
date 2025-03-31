@@ -335,7 +335,13 @@ const $$Index = createComponent(($$result, $$props, $$slots) => {
   Astro2.self = $$Index;
   const { locals } = Astro2;
   const pageLanguage = locals.language;
-  return renderTemplate`${renderComponent($$result, "Layout", $$Layout, {}, { "default": ($$result2) => renderTemplate` ${renderComponent($$result2, "Welcome", $$Welcome, { "language": pageLanguage })} ${renderComponent($$result2, "Leistungen", $$Leistungen, { "language": pageLanguage })} ${renderComponent($$result2, "Categories", $$Categories, { "language": pageLanguage })} ${renderComponent($$result2, "Cite", $$Cite, { "language": pageLanguage })} ${renderComponent($$result2, "Usps", $$Usps, { "language": pageLanguage })} ${renderComponent($$result2, "Projects", $$Projects, { "language": pageLanguage })} ${renderComponent($$result2, "ContactForm", $$ContactForm, {})} ` })}`;
+  let heading = "Ihr Vision ist nur noch einen Klick entfernt";
+  let subtitle = "Wir freuen uns, von Ihnen zu h\xF6ren";
+  if (pageLanguage == "en") {
+    heading = "Your Vision is just a click away";
+    subtitle = "We are looking forward to hear from you";
+  }
+  return renderTemplate`${renderComponent($$result, "Layout", $$Layout, {}, { "default": ($$result2) => renderTemplate` ${renderComponent($$result2, "Welcome", $$Welcome, { "language": pageLanguage })} ${renderComponent($$result2, "Leistungen", $$Leistungen, { "language": pageLanguage })} ${renderComponent($$result2, "Categories", $$Categories, { "language": pageLanguage })} ${renderComponent($$result2, "Cite", $$Cite, { "language": pageLanguage })} ${renderComponent($$result2, "Usps", $$Usps, { "language": pageLanguage })} ${renderComponent($$result2, "Projects", $$Projects, { "language": pageLanguage })} ${renderComponent($$result2, "ContactForm", $$ContactForm, { "heading": heading, "subtitle": subtitle })} ` })}`;
 }, "/home/felix/Desktop/feuchtergmbh_website/feuchter-gmbh/src/pages/[lang]/index.astro", void 0);
 
 const $$file = "/home/felix/Desktop/feuchtergmbh_website/feuchter-gmbh/src/pages/[lang]/index.astro";
