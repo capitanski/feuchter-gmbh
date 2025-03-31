@@ -1,3 +1,41 @@
+import parkaNiederlandeFront from "@/assets/Produkte/Waldcamo Ripstop Jacke Front.jpg";
+import parkaNiederlandeSeite from "@/assets/Produkte/Waldcamo Ripstop Jacke Seite.jpg";
+import regenjackeDkFront from "@/assets/Produkte/Regenjacke Daenemark Front.jpg"
+import regenjackeDkSeite from "@/assets/Produkte/Regenjacke Daenemark Seite.jpg"
+import kbsJackeFront from "@/assets/Produkte/Feldbekleidung Jacke Hell Front.jpg"
+import kbsJackeSeite from "@/assets/Produkte/Feldbekleidung Jacke Hell Seite.jpg"
+import bwParkaOlivFront from "@/assets/Produkte/Bundeswehr Parka Oliv Front.jpg"
+import bwParkaOlivSeite from "@/assets/Produkte/Bundeswehr Parka Oliv Seite.jpg"
+import ksJackeFront from "@/assets/Produkte/Kaelteschutzjacke Front.jpg"
+import ksJackeSeite from "@/assets/Produkte/Kaelteschutzjacke Seite.jpg"
+import feldhoseTropentarnFront from "@/assets/Produkte/Tropentarn Feldhose Front.jpg"
+import feldhoseTropentarnSeite from "@/assets/Produkte/Tropentarn Feldhose Seite.jpg"
+import feldhoseFlecktarnFront from "@/assets/Produkte/Feldhose Flecktarn Front.jpg"
+import feldhoseFlecktarnSeite from "@/assets/Produkte/Feldhose Flecktarn Seite.jpg"
+import regenhoseDkFront from "@/assets/Produkte/Regenhose Daenemark Front.jpg"
+import regenhoseDkSeite from "@/assets/Produkte/Regenhose Daenemark Seite.jpg"
+import kbsHoseFront from "@/assets/Produkte/Feldbekleidung Hose Hell Front.jpg"
+import kbsHoseSeite from "@/assets/Produkte/Feldbekleidung Hose Hell Seite.jpg"
+import ksHoseFront from "@/assets/Produkte/Kaelteschutzhose Front.jpg"
+import ksHoseSeite from "@/assets/Produkte/Kaelteschutzhose Seite.jpg"
+import feldbluseTropentarnFront from "@/assets/Produkte/Tropentarn Bluse Front.jpg"
+import feldbluseTropentarnSeite from "@/assets/Produkte/Tropentarn Bluse Seite.jpg"
+import wuestenTarnhemdFront from "@/assets/Produkte/Wuestentarn Hemd Front.jpg"
+import wuestenTarnhemdSeite from "@/assets/Produkte/Wuestentarn Hemd Seite.jpg"
+import bordhemdFront from "@/assets/Produkte/Bordhemd Marine Front.jpg"
+import bordhemdSeite from "@/assets/Produkte/Bordhemd Marine Seite.jpg"
+import feldMuetzeFront from "@/assets/Produkte/Dienstkappe Front Flecktarn.jpg"
+import feldMuetzeSeite from "@/assets/Produkte/Dienstkappe Seite Flecktarn.jpg"
+import krempenhutFlecktarnFront from "@/assets/Produkte/Krempenhut Flecktarn Front.jpg"
+import krempenhutFlecktarnSeite from "@/assets/Produkte/Krempenhut Flecktarn Seite.jpg"
+import bwPulloverFront from "@/assets/Produkte/Bundeswehr Pullover Front.jpg"
+import bwPulloverSeite from "@/assets/Produkte/Bundeswehr Pullover Seite.jpg"
+import monteurkombiFront from "@/assets/Produkte/Monteurkombi Front.jpg"
+import monteurkombiSeite from "@/assets/Produkte/Monteurkombi Seite.jpg"
+import kampftragetasche from "@/assets/Produkte/kampftragetasche_100l.jpg"
+import grantentasche from "@/assets/Produkte/granatentasche.webp"
+import gamasche from "@/assets/Produkte/gamasche.webp"
+import rucksackUeberzug from "@/assets/Produkte/rucksack_ueberzug.jpg"
 export const clothingProducts = [
     {
         title: {
@@ -17,8 +55,8 @@ export const clothingProducts = [
             en: "Original TL"
         },
         images: [
-            "https://cdn.prod.website-files.com/66fbdc612b6ec708353a8c01/67ceff6e127b1c203bb4b3c9_Tropentarn%20Feldhose%20Front.jpg",
-            "https://cdn.prod.website-files.com/66fbdc612b6ec708353a8c01/67ceff785843abeb9d4dfe04_Tropentarn%20Feldhose%20Seite.jpg"
+            parkaNiederlandeFront.src,
+            parkaNiederlandeSeite.src
         ],
         lists: [
             {
@@ -95,8 +133,8 @@ export const clothingProducts = [
             en: "Original TL"
         },
         images: [
-            "https://cdn.prod.website-files.com/66fbdc612b6ec708353a8c01/67ceff6e127b1c203bb4b3c9_Tropentarn%20Feldhose%20Front.jpg",
-            "https://cdn.prod.website-files.com/66fbdc612b6ec708353a8c01/67ceff785843abeb9d4dfe04_Tropentarn%20Feldhose%20Seite.jpg"
+            regenjackeDkFront.src,
+            regenjackeDkSeite.src
         ],
         lists: [
             {
@@ -185,8 +223,8 @@ export const clothingProducts = [
             en: "Original TL"
         },
         images: [
-            "https://cdn.prod.website-files.com/66fbdc612b6ec708353a8c01/67ceff6e127b1c203bb4b3c9_Tropentarn%20Feldhose%20Front.jpg",
-            "https://cdn.prod.website-files.com/66fbdc612b6ec708353a8c01/67ceff785843abeb9d4dfe04_Tropentarn%20Feldhose%20Seite.jpg"
+            kbsJackeFront.src,
+            kbsJackeSeite.src
         ],
         lists: [
             {
@@ -291,8 +329,8 @@ export const clothingProducts = [
             en: "Original TL"
         },
         images: [
-            "https://cdn.prod.website-files.com/66fbdc612b6ec708353a8c01/67ceff6e127b1c203bb4b3c9_Tropentarn%20Feldhose%20Front.jpg",
-            "https://cdn.prod.website-files.com/66fbdc612b6ec708353a8c01/67ceff785843abeb9d4dfe04_Tropentarn%20Feldhose%20Seite.jpg"
+            bwParkaOlivFront.src,
+            bwParkaOlivSeite.src
         ],
         lists: [
             {
@@ -373,8 +411,8 @@ export const clothingProducts = [
             en: "Original TL"
         },
         images: [
-            "https://cdn.prod.website-files.com/66fbdc612b6ec708353a8c01/67ceff6e127b1c203bb4b3c9_Tropentarn%20Feldhose%20Front.jpg",
-            "https://cdn.prod.website-files.com/66fbdc612b6ec708353a8c01/67ceff785843abeb9d4dfe04_Tropentarn%20Feldhose%20Seite.jpg"
+            ksJackeFront.src,
+            ksJackeSeite.src
         ],
         lists: [
             {
@@ -459,8 +497,8 @@ export const clothingProducts = [
             en: "Original TL",
         },
         images: [
-            "https://cdn.prod.website-files.com/66fbdc612b6ec708353a8c01/67ceff6e127b1c203bb4b3c9_Tropentarn%20Feldhose%20Front.jpg",
-            "https://cdn.prod.website-files.com/66fbdc612b6ec708353a8c01/67ceff785843abeb9d4dfe04_Tropentarn%20Feldhose%20Seite.jpg",
+            feldhoseTropentarnFront.src,
+            feldhoseTropentarnSeite.src,
         ],
         lists: [
             {
@@ -541,8 +579,8 @@ export const clothingProducts = [
             en: "Original TL",
         },
         images: [
-            "https://cdn.prod.website-files.com/66fbdc612b6ec708353a8c01/67ceff6e127b1c203bb4b3c9_Tropentarn%20Feldhose%20Front.jpg",
-            "https://cdn.prod.website-files.com/66fbdc612b6ec708353a8c01/67ceff785843abeb9d4dfe04_Tropentarn%20Feldhose%20Seite.jpg",
+            feldhoseFlecktarnFront.src,
+            feldhoseFlecktarnSeite.src,
         ],
         lists: [
             {
@@ -619,8 +657,8 @@ export const clothingProducts = [
             en: "Original TL"
         },
         images: [
-            "https://cdn.prod.website-files.com/66fbdc612b6ec708353a8c01/67ceff6e127b1c203bb4b3c9_Tropentarn%20Feldhose%20Front.jpg",
-            "https://cdn.prod.website-files.com/66fbdc612b6ec708353a8c01/67ceff785843abeb9d4dfe04_Tropentarn%20Feldhose%20Seite.jpg"
+            regenhoseDkFront.src,
+            regenhoseDkSeite.src
         ],
         lists: [
             {
@@ -721,8 +759,8 @@ export const clothingProducts = [
             en: "Original TL"
         },
         images: [
-            "https://cdn.prod.website-files.com/66fbdc612b6ec708353a8c01/67ceff6e127b1c203bb4b3c9_Tropentarn%20Feldhose%20Front.jpg",
-            "https://cdn.prod.website-files.com/66fbdc612b6ec708353a8c01/67ceff785843abeb9d4dfe04_Tropentarn%20Feldhose%20Seite.jpg"
+            kbsHoseFront.src,
+            kbsHoseSeite.src
         ],
         lists: [
             {
@@ -839,8 +877,8 @@ export const clothingProducts = [
             en: "Original TL"
         },
         images: [
-            "https://cdn.prod.website-files.com/66fbdc612b6ec708353a8c01/67ceff6e127b1c203bb4b3c9_Tropentarn%20Feldhose%20Front.jpg",
-            "https://cdn.prod.website-files.com/66fbdc612b6ec708353a8c01/67ceff785843abeb9d4dfe04_Tropentarn%20Feldhose%20Seite.jpg"
+            ksHoseFront.src,
+            ksHoseSeite.src
         ],
         lists: [
             {
@@ -905,8 +943,8 @@ export const clothingProducts = [
             en: "Original TL"
         },
         images: [
-            "https://cdn.prod.website-files.com/66fbdc612b6ec708353a8c01/67ceff6e127b1c203bb4b3c9_Tropentarn%20Feldhose%20Front.jpg",
-            "https://cdn.prod.website-files.com/66fbdc612b6ec708353a8c01/67ceff785843abeb9d4dfe04_Tropentarn%20Feldhose%20Seite.jpg"
+            feldbluseTropentarnFront.src,
+            feldbluseTropentarnSeite.src
         ],
         lists: [
             {
@@ -967,8 +1005,8 @@ export const clothingProducts = [
             en: "Original TL"
         },
         images: [
-            "https://cdn.prod.website-files.com/66fbdc612b6ec708353a8c01/67ceff6e127b1c203bb4b3c9_Tropentarn%20Feldhose%20Front.jpg",
-            "https://cdn.prod.website-files.com/66fbdc612b6ec708353a8c01/67ceff785843abeb9d4dfe04_Tropentarn%20Feldhose%20Seite.jpg"
+            wuestenTarnhemdFront.src,
+            wuestenTarnhemdSeite.src
         ],
         lists: [
             {
@@ -1033,8 +1071,8 @@ export const clothingProducts = [
             en: "Original TL"
         },
         images: [
-            "https://cdn.prod.website-files.com/66fbdc612b6ec708353a8c01/67ceff6e127b1c203bb4b3c9_Tropentarn%20Feldhose%20Front.jpg",
-            "https://cdn.prod.website-files.com/66fbdc612b6ec708353a8c01/67ceff785843abeb9d4dfe04_Tropentarn%20Feldhose%20Seite.jpg"
+            bordhemdFront.src,
+            bordhemdSeite.src
         ],
         lists: [
             {
@@ -1119,8 +1157,8 @@ export const clothingProducts = [
             en: "Original TL"
         },
         images: [
-            "https://cdn.prod.website-files.com/66fbdc612b6ec708353a8c01/67ceff6e127b1c203bb4b3c9_Tropentarn%20Feldhose%20Front.jpg",
-            "https://cdn.prod.website-files.com/66fbdc612b6ec708353a8c01/67ceff785843abeb9d4dfe04_Tropentarn%20Feldhose%20Seite.jpg"
+            feldMuetzeFront.src,
+            feldMuetzeSeite.src
         ],
         lists: [],
         optionalRichtext: {
@@ -1152,8 +1190,8 @@ export const clothingProducts = [
             en: "Original TL"
         },
         images: [
-            "https://cdn.prod.website-files.com/66fbdc612b6ec708353a8c01/67ceff6e127b1c203bb4b3c9_Tropentarn%20Feldhose%20Front.jpg",
-            "https://cdn.prod.website-files.com/66fbdc612b6ec708353a8c01/67ceff785843abeb9d4dfe04_Tropentarn%20Feldhose%20Seite.jpg"
+            krempenhutFlecktarnFront.src,
+            krempenhutFlecktarnSeite.src
         ],
         lists: [],
         optionalRichtext: {
@@ -1185,8 +1223,8 @@ export const clothingProducts = [
             en: "Original TL"
         },
         images: [
-            "https://cdn.prod.website-files.com/66fbdc612b6ec708353a8c01/67ceff6e127b1c203bb4b3c9_Tropentarn%20Feldhose%20Front.jpg",
-            "https://cdn.prod.website-files.com/66fbdc612b6ec708353a8c01/67ceff785843abeb9d4dfe04_Tropentarn%20Feldhose%20Seite.jpg"
+            bwPulloverFront.src,
+            bwPulloverSeite.src
         ],
         lists: [
             {
@@ -1251,8 +1289,8 @@ export const clothingProducts = [
             en: "Original TL"
         },
         images: [
-            "https://cdn.prod.website-files.com/66fbdc612b6ec708353a8c01/67ceff6e127b1c203bb4b3c9_Tropentarn%20Feldhose%20Front.jpg",
-            "https://cdn.prod.website-files.com/66fbdc612b6ec708353a8c01/67ceff785843abeb9d4dfe04_Tropentarn%20Feldhose%20Seite.jpg"
+            monteurkombiFront.src,
+            monteurkombiSeite.src
         ],
         lists: [
             {
@@ -1321,8 +1359,7 @@ export const clothingProducts = [
             en: "Original TL"
         },
         images: [
-            "https://cdn.prod.website-files.com/66fbdc612b6ec708353a8c01/67ceff6e127b1c203bb4b3c9_Tropentarn%20Feldhose%20Front.jpg",
-            "https://cdn.prod.website-files.com/66fbdc612b6ec708353a8c01/67ceff785843abeb9d4dfe04_Tropentarn%20Feldhose%20Seite.jpg"
+            kampftragetasche.src
         ],
         lists: [
             {
@@ -1395,8 +1432,7 @@ export const clothingProducts = [
             en: "Original TL"
         },
         images: [
-            "https://cdn.prod.website-files.com/66fbdc612b6ec708353a8c01/67ceff6e127b1c203bb4b3c9_Tropentarn%20Feldhose%20Front.jpg",
-            "https://cdn.prod.website-files.com/66fbdc612b6ec708353a8c01/67ceff785843abeb9d4dfe04_Tropentarn%20Feldhose%20Seite.jpg"
+            grantentasche.src
         ],
         lists: [
             {
@@ -1453,8 +1489,7 @@ export const clothingProducts = [
             en: "Original TL"
         },
         images: [
-            "https://cdn.prod.website-files.com/66fbdc612b6ec708353a8c01/67ceff6e127b1c203bb4b3c9_Tropentarn%20Feldhose%20Front.jpg",
-            "https://cdn.prod.website-files.com/66fbdc612b6ec708353a8c01/67ceff785843abeb9d4dfe04_Tropentarn%20Feldhose%20Seite.jpg"
+            gamasche.src
         ],
         lists: [
             {
@@ -1515,8 +1550,7 @@ export const clothingProducts = [
             en: "Original TL"
         },
         images: [
-            "https://cdn.prod.website-files.com/66fbdc612b6ec708353a8c01/67ceff6e127b1c203bb4b3c9_Tropentarn%20Feldhose%20Front.jpg",
-            "https://cdn.prod.website-files.com/66fbdc612b6ec708353a8c01/67ceff785843abeb9d4dfe04_Tropentarn%20Feldhose%20Seite.jpg"
+            rucksackUeberzug.src
         ],
         lists: [
             {

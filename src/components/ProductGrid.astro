@@ -3,6 +3,10 @@ import Modal from "./Modal.astro";
 import Arrow from "@/assets/Arrow_sand.svg";
 import { buttonTranslations } from "@/content/translations";
 import { clothingProducts } from "@/content/productmodels/military-and-survival";
+import { schutzwandProducts } from "@/content/productmodels/schutzwand";
+import { thermohaubeProducts } from "@/content/productmodels/thermohaube";
+import { staubhaubeProducts } from "@/content/productmodels/staubhaube";
+import { officialWearProducts } from "@/content/productmodels/officialwear";
 const {
   products,
   pageLanguage,
@@ -19,12 +23,15 @@ let content;
 let suitableFor;
 if (searchCategory == "protective-wall") {
   content = texts.protectivewall;
+  currentProducts = schutzwandProducts;
 }
 if (searchCategory == "thermal-cover") {
   content = texts.thermalcover;
+  currentProducts = thermohaubeProducts;
 }
 if (searchCategory == "dust-cover") {
   content = texts.dustcover;
+  currentProducts = staubhaubeProducts;
 }
 if (searchCategory == "military-and-survival") {
   content = texts.militarysurvival;
@@ -32,6 +39,7 @@ if (searchCategory == "military-and-survival") {
 }
 if (searchCategory == "officialwear") {
   content = texts.officialwear;
+  currentProducts = officialWearProducts;
 }
 if (searchCategory == "corporate-fashion") {
   content = texts.corporatefashion;
