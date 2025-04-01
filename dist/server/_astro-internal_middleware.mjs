@@ -32,6 +32,9 @@ const langSwitcher = function (currentPath) {
 const onRequest$1 = defineMiddleware(
   ({ context, locals, request, redirect }, next) => {
     const url = new URL(request.url);
+    if (url.pathname.startsWith("/api/")) {
+      return next();
+    }
     const pathSegments = url.pathname.split("/").filter(Boolean); // Zerlegt die URL
     //const supportedLanguages = ["de", "en", "fr", "cz"];
     const defaultLang = "de"; // Standard-Sprache

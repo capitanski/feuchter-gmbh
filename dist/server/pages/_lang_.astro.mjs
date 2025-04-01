@@ -1,17 +1,17 @@
 import { e as createAstro, f as createComponent, m as maybeRenderHead, h as addAttribute, u as unescapeHTML, i as renderComponent, r as renderTemplate } from '../chunks/astro/server_CofuBfMf.mjs';
 import 'kleur/colors';
 import { $ as $$Button } from '../chunks/Button_BHV8ZOOp.mjs';
-import { C as Circles$1, b as buttonTranslations, $ as $$Layout } from '../chunks/Layout_Be7f7Y1O.mjs';
+import { C as Circles$1, b as buttonTranslations, $ as $$Layout } from '../chunks/Layout_E4bqnXAw.mjs';
 import { S as Scribble, B as Behoerdenkleidung, C as Corporate } from '../chunks/corporate_fashion_DzCh8UDt.mjs';
 /* empty css                                 */
-import { $ as $$Leistungen } from '../chunks/Leistungen_DKtjWwMh.mjs';
+import { $ as $$Leistungen } from '../chunks/Leistungen_CfpdB827.mjs';
 import 'clsx';
-import { $ as $$Projects } from '../chunks/Projects_6ImQhbhF.mjs';
+import { $ as $$Projects } from '../chunks/Projects_B3pwjYkg.mjs';
 import { a as Transportloesungen, T as Thermohaube } from '../chunks/Thermohaube quer_CCmxDng1.mjs';
 import { B as Bekleidung } from '../chunks/projekte_C2Tx1DqM.mjs';
 import { C as Circles$2 } from '../chunks/projects_CgVXogum.mjs';
 import { A as Arrow } from '../chunks/Arrow_sand_CKat7LSH.mjs';
-import { $ as $$ContactForm } from '../chunks/ContactForm_Cjw6quwO.mjs';
+import { $ as $$ContactForm } from '../chunks/ContactForm_DUCZI50M.mjs';
 export { renderers } from '../renderers.mjs';
 
 const $$Astro$4 = createAstro("http://192.168.178.48:4321/");
@@ -335,13 +335,13 @@ const $$Index = createComponent(($$result, $$props, $$slots) => {
   Astro2.self = $$Index;
   const { locals } = Astro2;
   const pageLanguage = locals.language;
-  let heading = "Ihr Vision ist nur noch einen Klick entfernt";
+  let heading = "Ihre Vision ist nur noch einen Klick entfernt";
   let subtitle = "Wir freuen uns, von Ihnen zu h\xF6ren";
   if (pageLanguage == "en") {
     heading = "Your Vision is just a click away";
     subtitle = "We are looking forward to hear from you";
   }
-  return renderTemplate`${renderComponent($$result, "Layout", $$Layout, {}, { "default": ($$result2) => renderTemplate` ${renderComponent($$result2, "Welcome", $$Welcome, { "language": pageLanguage })} ${renderComponent($$result2, "Leistungen", $$Leistungen, { "language": pageLanguage })} ${renderComponent($$result2, "Categories", $$Categories, { "language": pageLanguage })} ${renderComponent($$result2, "Cite", $$Cite, { "language": pageLanguage })} ${renderComponent($$result2, "Usps", $$Usps, { "language": pageLanguage })} ${renderComponent($$result2, "Projects", $$Projects, { "language": pageLanguage })} ${renderComponent($$result2, "ContactForm", $$ContactForm, { "heading": heading, "subtitle": subtitle })} ` })}`;
+  return renderTemplate`${renderComponent($$result, "Layout", $$Layout, {}, { "default": ($$result2) => renderTemplate` ${renderComponent($$result2, "Welcome", $$Welcome, { "language": pageLanguage })} ${renderComponent($$result2, "Leistungen", $$Leistungen, { "language": pageLanguage })} ${renderComponent($$result2, "Categories", $$Categories, { "language": pageLanguage })} ${renderComponent($$result2, "Cite", $$Cite, { "language": pageLanguage })} ${renderComponent($$result2, "Usps", $$Usps, { "language": pageLanguage })} ${renderComponent($$result2, "Projects", $$Projects, { "language": pageLanguage })} ${renderComponent($$result2, "ContactForm", $$ContactForm, { "heading": heading, "subtitle": subtitle, "language": pageLanguage })} ` })}`;
 }, "/home/felix/Desktop/feuchtergmbh_website/feuchter-gmbh/src/pages/[lang]/index.astro", void 0);
 
 const $$file = "/home/felix/Desktop/feuchtergmbh_website/feuchter-gmbh/src/pages/[lang]/index.astro";

@@ -189,6 +189,86 @@ function buttonTranslations(text, lang) {
           break;
       }
       break;
+    case "formName":
+      switch (lang) {
+        case "de":
+          returnValue = "Name:";
+          break;
+        case "en":
+          returnValue = "Name:";
+          break;
+      }
+      break;
+    case "formEmail":
+      switch (lang) {
+        case "de":
+          returnValue = "Email:";
+          break;
+        case "en":
+          returnValue = "Email:";
+          break;
+      }
+      break;
+    case "formPhone":
+      switch (lang) {
+        case "de":
+          returnValue = "Telefon:";
+          break;
+        case "en":
+          returnValue = "Phone:";
+          break;
+      }
+      break;
+    case "formCompany":
+      switch (lang) {
+        case "de":
+          returnValue = "Firma:";
+          break;
+        case "en":
+          returnValue = "Company:";
+          break;
+      }
+      break;
+    case "formMessage":
+      switch (lang) {
+        case "de":
+          returnValue = "Nachricht:";
+          break;
+        case "en":
+          returnValue = "Message:";
+          break;
+      }
+      break;
+    case "formPrivacy":
+      switch (lang) {
+        case "de":
+          returnValue = "Ich akzeptiere die";
+          break;
+        case "en":
+          returnValue = "I accept the";
+          break;
+      }
+      break;
+    case "formSend":
+      switch (lang) {
+        case "de":
+          returnValue = "Senden";
+          break;
+        case "en":
+          returnValue = "Send";
+          break;
+      }
+      break;
+    case "formWait":
+      switch (lang) {
+        case "de":
+          returnValue = "Bitte warten...";
+          break;
+        case "en":
+          returnValue = "Please wait...";
+          break;
+      }
+      break;
   }
   return returnValue;
 }
