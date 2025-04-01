@@ -1,14 +1,18 @@
 // src/pages/api/kontakt.ts
 import type { APIRoute } from "astro";
+import type { M } from "docs/server/chunks/astro/server_CofuBfMf.mjs";
 import nodemailer from "nodemailer";
 
 export const POST: APIRoute = async ({ request }) => {
     const formData = await request.formData();
-    console.log('endpoint hit')
+    const honeypot = formData.get("website");
     const name = formData.get("name")?.toString();
     const email = formData.get("email")?.toString();
     const message = formData.get("message")?.toString();
-
+    if (honeypot) {
+        // Wenn das Feld ausgefüllt ist, ist es wahrscheinlich ein Bot
+        return new Response("Bot erkannt.", { status: 400 });
+    }
     if (!name || !email || !message) {
         return new Response("Alle Felder sind erforderlich.", { status: 400 });
     }

@@ -1,5 +1,6 @@
 ---
-const { heading, subtitle, pageLanguage } = Astro.props;
+const { heading, subtitle, language } = Astro.props;
+import { buttonTranslations } from "@/content/translations";
 ---
 
 <div class="container">
@@ -9,7 +10,7 @@ const { heading, subtitle, pageLanguage } = Astro.props;
     </h2>
     <p class="subtitle animatable">{subtitle}</p>
     <form id="kontaktForm">
-      <div class="loader-wrapper">
+      <div class="loader-wrapper" id="loader-wrapper">
         <span class="loader"></span>
       </div>
 
@@ -22,10 +23,31 @@ const { heading, subtitle, pageLanguage } = Astro.props;
         <input name="email" type="email" required />
       </div>
       <div>
-        <label for="message">Nachricht:</label>
-        <textarea name="message" required></textarea>
+        <label for="phone">Telefon:</label>
+        <input name="tel" type="tel" />
       </div>
-      <div id="responseText" class="message-visible"></div>
+      <div>
+        <label for="company">Firma:</label>
+        <input name="company" type="text" />
+      </div>
+      <div>
+        <label for="message">Nachricht:</label>
+        <textarea name="message" rows="5" cols="33" required></textarea>
+      </div>
+      <label class="hidden-field" style="display: none">
+        Wenn du ein Mensch bist, lass dieses Feld leer:
+        <input type="text" name="website" autocomplete="off" />
+      </label>
+      <div class="datenschutz">
+        <input name="datenschutz" type="checkbox" required /><small
+          >Ich akzeptiere die <a
+            href={`/${language}/legal/privacy`}
+            class="datenschutz-link"
+            >{buttonTranslations("datenschutz", language)}</a
+          ></small
+        >
+      </div>
+      <div id="responseText" class="response-text"></div>
       <button type="submit" id="sendButton">Senden</button>
     </form>
   </div>
@@ -42,6 +64,7 @@ const { heading, subtitle, pageLanguage } = Astro.props;
   const form = document.getElementById("kontaktForm");
   const responseText = document.getElementById("responseText");
   const sendButton = document.getElementById("sendButton");
+  const loader = document.getElementById("loader-wrapper");
 
   form.addEventListener("submit", async (e) => {
     e.preventDefault(); // verhindert Page Reload
@@ -50,6 +73,7 @@ const { heading, subtitle, pageLanguage } = Astro.props;
     try {
       sendButton.innerText = "Bitte warten";
       sendButton.setAttribute("disabled", true);
+      loader.style.display = "flex";
       const res = await fetch("/api/contact", {
         method: "POST",
         body: formData,
@@ -60,6 +84,7 @@ const { heading, subtitle, pageLanguage } = Astro.props;
       if (res.ok) {
         sendButton.innerText = "Senden";
         sendButton.removeAttribute("disabled");
+        loader.style.display = "none";
         responseText.textContent = "Vielen Dank für Ihre Nachricht!";
         responseText?.classList.add("message-visible");
         form.reset();
@@ -67,12 +92,14 @@ const { heading, subtitle, pageLanguage } = Astro.props;
         responseText.textContent = "Fehler: " + text;
         sendButton.innerText = "Senden";
         sendButton.removeAttribute("disabled");
+        loader.style.display = "none";
         responseText?.classList.add("message-visible");
       }
     } catch (err) {
       sendButton.innerText = "Senden";
       sendButton.removeAttribute("disabled");
       responseText.textContent = "Netzwerkfehler: " + err.message;
+      loader.style.display = "none";
       responseText?.classList.add("message-visible");
     }
   });
@@ -80,23 +107,31 @@ const { heading, subtitle, pageLanguage } = Astro.props;
 
 <style>
   .loader-wrapper {
-    position: absolute;
+    position: fixed;
+    top: 0;
+    left: 0;
     width: 100%;
     height: 100%;
-    background: rgba(0, 0, 0, 0.7);
-    display: flex;
+    background: rgba(0, 0, 0, 0.9);
     flex-direction: row;
     justify-content: center;
     align-items: center;
+    border-radius: 20px;
     z-index: 5;
   }
-  #responseText {
+  #loader-wrapper {
+    display: none;
+  }
+  .response-text {
+    display: none !important;
     padding: 35px;
     background: rgba(0, 0, 0, 0.8);
-    color: var(--verydarkgray);
+    color: var(--lightgray);
     text-align: left;
     border-radius: 25px;
-    z-index: 5;
+  }
+  .message-visible {
+    display: block !important;
   }
   .loader {
     width: 48px;
@@ -117,7 +152,7 @@ const { heading, subtitle, pageLanguage } = Astro.props;
     animation: prixClipFix 2s linear infinite;
   }
   .loader::after {
-    border-color: #ff3d00;
+    border-color: var(--sand);
     animation:
       prixClipFix 2s linear infinite,
       rotate 0.5s linear infinite reverse;
@@ -228,6 +263,7 @@ const { heading, subtitle, pageLanguage } = Astro.props;
   input,
   textarea {
     width: 100%;
+    max-width: 620px;
     background: rgba(17, 17, 17, 0.6);
     color: var(--lightgray);
     border: none;
@@ -237,6 +273,21 @@ const { heading, subtitle, pageLanguage } = Astro.props;
     box-shadow:
       rgba(0, 0, 0, 0.25) 0px 25px 50px -12px,
       0 0 0 0.15px var(--lightgray);
+  }
+  input[type="checkbox"] {
+    box-shadow: none !important;
+    width: auto;
+  }
+
+  .datenschutz {
+    display: flex;
+    flex-direction: row !important;
+    justify-content: flex-start !important;
+    color: var(--lightgray);
+  }
+  .datenschutz-link {
+    color: var(--lightgray);
+    text-decoration: underline;
   }
   button {
     cursor: pointer;
