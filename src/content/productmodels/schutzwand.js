@@ -5,8 +5,8 @@ import schutzwandVerschluss from "@/assets/Produkte/schutzwand_verschluss.jpg"
 export const schutzwandProducts = [
     {
         title: {
-            de: "Transportwand für Rollcontainer",
-            en: "Transport Wall for Roll Containers"
+            de: "Transportwand für Rollcontainer, 720 x 815 mm",
+            en: "Transport Wall for Roll Containers, 720 x 815 mm"
         },
         shortDescription: {
             de: `Unsere patentierte Schutzwand für Rollbehälter erleichtert den Transport Ihrer Ware. Außerdem wird durch die Wiederverwendung Plastikmüll gespart. Alternativ in unterschiedlichen Farben erhältlich. Außerdem für den individuellen Touch, kann das eigene Logo platziert werden. Patentiertes Produkt zur Warensicherung im Rollbehälter. Das 6-Punkt-Clicksystem ermöglicht eine einfache Befestigung an den Seitengittern.`,
@@ -17,8 +17,356 @@ export const schutzwandProducts = [
             en: "Protective Walls"
         },
         tag: {
-            de: "Individualisierbar",
-            en: "Customizable"
+            de: "Wahlweise mit Logodruck & verschiedenen Farben",
+            en: "Optionally with logo print & different colors"
+        },
+        images: [
+            schutzwandSchraeg.src,
+            schutzwandFront.src,
+            schutzwandVerschluss.src
+        ],
+        lists: [
+            {
+                title: {
+                    de: "Technische Daten",
+                    en: "Technical Data"
+                },
+                content: [
+                    {
+                        de: "Verwendung von umweltschädlicher Stretch-Folie entfällt",
+                        en: "Eliminates the need for environmentally harmful stretch film"
+                    },
+                    {
+                        de: "Schutzwand wird durch die Kraft elastischer Bänder auf Zug gehalten; somit kein Überspannen der Seitengitter nach innen; Quetschungen empfindlicher Ware daher ausgeschlossen",
+                        en: "Held under tension by elastic bands — prevents side grids from bending inward and protects sensitive goods from being crushed"
+                    },
+                    {
+                        de: "Vorspannung justierbar",
+                        en: "Adjustable tensioning"
+                    },
+                    {
+                        de: "Kompatibel mit automatisierter Warenbestückung des Rollbehälters",
+                        en: "Compatible with automated goods loading systems for roll containers"
+                    },
+                    {
+                        de: "Schutzwände können nach Gebrauch an den Seitengittern verstaut bzw. eingeklappt werden",
+                        en: "Can be folded or stored on the side panels when not in use"
+                    },
+                    {
+                        de: "Stabilität: Stabilisierung durch zwei an den Seiten eingenähte Glasfaserstäbe",
+                        en: "Stabilized with two integrated fiberglass rods sewn into the sides"
+                    },
+                    {
+                        de: "Außenbahnen in Wunschfarbe oder transparent erhältlich",
+                        en: "Outer panels available in custom colors or transparent"
+                    },
+                    {
+                        de: "Personalisierung der Schutzwand mit Ihrem Kundenlogo",
+                        en: "Custom branding with your company logo possible"
+                    },
+                    {
+                        de: "Zusätzliche Verstärkungsstäbe",
+                        en: "Optional reinforcement rods for extra durability"
+                    },
+                    {
+                        de: "Dokumententasche",
+                        en: "Integrated document pocket"
+                    },
+                    {
+                        de: "Diebstahlschutz (Sicherungskeile)",
+                        en: "Anti-theft protection (locking wedges)"
+                    }
+                ]
+            }
+        ],
+        optionalRichtext: {
+            title: {
+                de: "Richtext Titel Optional",
+                en: "Richtext Title Optional"
+            },
+            content: {
+                de: "Deutscher Richtext set:html",
+                en: "English Richtext set:html"
+            }
+        }
+    },
+    {
+        title: {
+            de: "Transportwand für Rollcontainer, 724 x 815 mm",
+            en: "Transport Wall for Roll Containers, 724 x 815 mm"
+        },
+        shortDescription: {
+            de: `Unsere patentierte Schutzwand für Rollbehälter erleichtert den Transport Ihrer Ware. Außerdem wird durch die Wiederverwendung Plastikmüll gespart. Alternativ in unterschiedlichen Farben erhältlich. Außerdem für den individuellen Touch, kann das eigene Logo platziert werden. Patentiertes Produkt zur Warensicherung im Rollbehälter. Das 6-Punkt-Clicksystem ermöglicht eine einfache Befestigung an den Seitengittern.`,
+            en: `Our patented protective wall for roll containers makes transporting your goods easier and more secure. By reusing the product, plastic waste is significantly reduced. Available in various colors and customizable with your company logo. The 6-point click system allows for quick and easy attachment to the container’s side panels — a patented solution for securing goods in transport.`
+        },
+        category: {
+            de: "Schutzwände",
+            en: "Protective Walls"
+        },
+        tag: {
+            de: "Wahlweise mit Logodruck & verschiedenen Farben",
+            en: "Optionally with logo print & different colors"
+        },
+        images: [
+            schutzwandSchraeg.src,
+            schutzwandFront.src,
+            schutzwandVerschluss.src
+        ],
+        lists: [
+            {
+                title: {
+                    de: "Technische Daten",
+                    en: "Technical Data"
+                },
+                content: [
+                    {
+                        de: "Verwendung von umweltschädlicher Stretch-Folie entfällt",
+                        en: "Eliminates the need for environmentally harmful stretch film"
+                    },
+                    {
+                        de: "Schutzwand wird durch die Kraft elastischer Bänder auf Zug gehalten; somit kein Überspannen der Seitengitter nach innen; Quetschungen empfindlicher Ware daher ausgeschlossen",
+                        en: "Held under tension by elastic bands — prevents side grids from bending inward and protects sensitive goods from being crushed"
+                    },
+                    {
+                        de: "Vorspannung justierbar",
+                        en: "Adjustable tensioning"
+                    },
+                    {
+                        de: "Kompatibel mit automatisierter Warenbestückung des Rollbehälters",
+                        en: "Compatible with automated goods loading systems for roll containers"
+                    },
+                    {
+                        de: "Schutzwände können nach Gebrauch an den Seitengittern verstaut bzw. eingeklappt werden",
+                        en: "Can be folded or stored on the side panels when not in use"
+                    },
+                    {
+                        de: "Stabilität: Stabilisierung durch zwei an den Seiten eingenähte Glasfaserstäbe",
+                        en: "Stabilized with two integrated fiberglass rods sewn into the sides"
+                    },
+                    {
+                        de: "Außenbahnen in Wunschfarbe oder transparent erhältlich",
+                        en: "Outer panels available in custom colors or transparent"
+                    },
+                    {
+                        de: "Personalisierung der Schutzwand mit Ihrem Kundenlogo",
+                        en: "Custom branding with your company logo possible"
+                    },
+                    {
+                        de: "Zusätzliche Verstärkungsstäbe",
+                        en: "Optional reinforcement rods for extra durability"
+                    },
+                    {
+                        de: "Dokumententasche",
+                        en: "Integrated document pocket"
+                    },
+                    {
+                        de: "Diebstahlschutz (Sicherungskeile)",
+                        en: "Anti-theft protection (locking wedges)"
+                    }
+                ]
+            }
+        ],
+        optionalRichtext: {
+            title: {
+                de: "Richtext Titel Optional",
+                en: "Richtext Title Optional"
+            },
+            content: {
+                de: "Deutscher Richtext set:html",
+                en: "English Richtext set:html"
+            }
+        }
+    },
+    {
+        title: {
+            de: "Transportwand für Rollcontainer, 720 x 630 mm",
+            en: "Transport Wall for Roll Containers, 720 x 630 mm"
+        },
+        shortDescription: {
+            de: `Unsere patentierte Schutzwand für Rollbehälter erleichtert den Transport Ihrer Ware. Außerdem wird durch die Wiederverwendung Plastikmüll gespart. Alternativ in unterschiedlichen Farben erhältlich. Außerdem für den individuellen Touch, kann das eigene Logo platziert werden. Patentiertes Produkt zur Warensicherung im Rollbehälter. Das 6-Punkt-Clicksystem ermöglicht eine einfache Befestigung an den Seitengittern.`,
+            en: `Our patented protective wall for roll containers makes transporting your goods easier and more secure. By reusing the product, plastic waste is significantly reduced. Available in various colors and customizable with your company logo. The 6-point click system allows for quick and easy attachment to the container’s side panels — a patented solution for securing goods in transport.`
+        },
+        category: {
+            de: "Schutzwände",
+            en: "Protective Walls"
+        },
+        tag: {
+            de: "Wahlweise mit Logodruck & verschiedenen Farben",
+            en: "Optionally with logo print & different colors"
+        },
+        images: [
+            schutzwandSchraeg.src,
+            schutzwandFront.src,
+            schutzwandVerschluss.src
+        ],
+        lists: [
+            {
+                title: {
+                    de: "Technische Daten",
+                    en: "Technical Data"
+                },
+                content: [
+                    {
+                        de: "Verwendung von umweltschädlicher Stretch-Folie entfällt",
+                        en: "Eliminates the need for environmentally harmful stretch film"
+                    },
+                    {
+                        de: "Schutzwand wird durch die Kraft elastischer Bänder auf Zug gehalten; somit kein Überspannen der Seitengitter nach innen; Quetschungen empfindlicher Ware daher ausgeschlossen",
+                        en: "Held under tension by elastic bands — prevents side grids from bending inward and protects sensitive goods from being crushed"
+                    },
+                    {
+                        de: "Vorspannung justierbar",
+                        en: "Adjustable tensioning"
+                    },
+                    {
+                        de: "Kompatibel mit automatisierter Warenbestückung des Rollbehälters",
+                        en: "Compatible with automated goods loading systems for roll containers"
+                    },
+                    {
+                        de: "Schutzwände können nach Gebrauch an den Seitengittern verstaut bzw. eingeklappt werden",
+                        en: "Can be folded or stored on the side panels when not in use"
+                    },
+                    {
+                        de: "Stabilität: Stabilisierung durch zwei an den Seiten eingenähte Glasfaserstäbe",
+                        en: "Stabilized with two integrated fiberglass rods sewn into the sides"
+                    },
+                    {
+                        de: "Außenbahnen in Wunschfarbe oder transparent erhältlich",
+                        en: "Outer panels available in custom colors or transparent"
+                    },
+                    {
+                        de: "Personalisierung der Schutzwand mit Ihrem Kundenlogo",
+                        en: "Custom branding with your company logo possible"
+                    },
+                    {
+                        de: "Zusätzliche Verstärkungsstäbe",
+                        en: "Optional reinforcement rods for extra durability"
+                    },
+                    {
+                        de: "Dokumententasche",
+                        en: "Integrated document pocket"
+                    },
+                    {
+                        de: "Diebstahlschutz (Sicherungskeile)",
+                        en: "Anti-theft protection (locking wedges)"
+                    }
+                ]
+            }
+        ],
+        optionalRichtext: {
+            title: {
+                de: "Richtext Titel Optional",
+                en: "Richtext Title Optional"
+            },
+            content: {
+                de: "Deutscher Richtext set:html",
+                en: "English Richtext set:html"
+            }
+        }
+    },
+    {
+        title: {
+            de: "Transportwand für Rollcontainer, 682 x 815 mm",
+            en: "Transport Wall for Roll Containers, 682 x 815 mm"
+        },
+        shortDescription: {
+            de: `Unsere patentierte Schutzwand für Rollbehälter erleichtert den Transport Ihrer Ware. Außerdem wird durch die Wiederverwendung Plastikmüll gespart. Alternativ in unterschiedlichen Farben erhältlich. Außerdem für den individuellen Touch, kann das eigene Logo platziert werden. Patentiertes Produkt zur Warensicherung im Rollbehälter. Das 6-Punkt-Clicksystem ermöglicht eine einfache Befestigung an den Seitengittern.`,
+            en: `Our patented protective wall for roll containers makes transporting your goods easier and more secure. By reusing the product, plastic waste is significantly reduced. Available in various colors and customizable with your company logo. The 6-point click system allows for quick and easy attachment to the container’s side panels — a patented solution for securing goods in transport.`
+        },
+        category: {
+            de: "Schutzwände",
+            en: "Protective Walls"
+        },
+        tag: {
+            de: "Wahlweise mit Logodruck & verschiedenen Farben",
+            en: "Optionally with logo print & different colors"
+        },
+        images: [
+            schutzwandSchraeg.src,
+            schutzwandFront.src,
+            schutzwandVerschluss.src
+        ],
+        lists: [
+            {
+                title: {
+                    de: "Technische Daten",
+                    en: "Technical Data"
+                },
+                content: [
+                    {
+                        de: "Verwendung von umweltschädlicher Stretch-Folie entfällt",
+                        en: "Eliminates the need for environmentally harmful stretch film"
+                    },
+                    {
+                        de: "Schutzwand wird durch die Kraft elastischer Bänder auf Zug gehalten; somit kein Überspannen der Seitengitter nach innen; Quetschungen empfindlicher Ware daher ausgeschlossen",
+                        en: "Held under tension by elastic bands — prevents side grids from bending inward and protects sensitive goods from being crushed"
+                    },
+                    {
+                        de: "Vorspannung justierbar",
+                        en: "Adjustable tensioning"
+                    },
+                    {
+                        de: "Kompatibel mit automatisierter Warenbestückung des Rollbehälters",
+                        en: "Compatible with automated goods loading systems for roll containers"
+                    },
+                    {
+                        de: "Schutzwände können nach Gebrauch an den Seitengittern verstaut bzw. eingeklappt werden",
+                        en: "Can be folded or stored on the side panels when not in use"
+                    },
+                    {
+                        de: "Stabilität: Stabilisierung durch zwei an den Seiten eingenähte Glasfaserstäbe",
+                        en: "Stabilized with two integrated fiberglass rods sewn into the sides"
+                    },
+                    {
+                        de: "Außenbahnen in Wunschfarbe oder transparent erhältlich",
+                        en: "Outer panels available in custom colors or transparent"
+                    },
+                    {
+                        de: "Personalisierung der Schutzwand mit Ihrem Kundenlogo",
+                        en: "Custom branding with your company logo possible"
+                    },
+                    {
+                        de: "Zusätzliche Verstärkungsstäbe",
+                        en: "Optional reinforcement rods for extra durability"
+                    },
+                    {
+                        de: "Dokumententasche",
+                        en: "Integrated document pocket"
+                    },
+                    {
+                        de: "Diebstahlschutz (Sicherungskeile)",
+                        en: "Anti-theft protection (locking wedges)"
+                    }
+                ]
+            }
+        ],
+        optionalRichtext: {
+            title: {
+                de: "Richtext Titel Optional",
+                en: "Richtext Title Optional"
+            },
+            content: {
+                de: "Deutscher Richtext set:html",
+                en: "English Richtext set:html"
+            }
+        }
+    },
+    {
+        title: {
+            de: "Transportwand für Rollcontainer, Individuelle Maße",
+            en: "Transport Wall for Roll Containers, Custom size"
+        },
+        shortDescription: {
+            de: `Unsere patentierte Schutzwand für Rollbehälter erleichtert den Transport Ihrer Ware. Außerdem wird durch die Wiederverwendung Plastikmüll gespart. Alternativ in unterschiedlichen Farben erhältlich. Außerdem für den individuellen Touch, kann das eigene Logo platziert werden. Patentiertes Produkt zur Warensicherung im Rollbehälter. Das 6-Punkt-Clicksystem ermöglicht eine einfache Befestigung an den Seitengittern.`,
+            en: `Our patented protective wall for roll containers makes transporting your goods easier and more secure. By reusing the product, plastic waste is significantly reduced. Available in various colors and customizable with your company logo. The 6-point click system allows for quick and easy attachment to the container’s side panels — a patented solution for securing goods in transport.`
+        },
+        category: {
+            de: "Schutzwände",
+            en: "Protective Walls"
+        },
+        tag: {
+            de: "Wahlweise mit Logodruck & verschiedenen Farben",
+            en: "Optionally with logo print & different colors"
         },
         images: [
             schutzwandSchraeg.src,

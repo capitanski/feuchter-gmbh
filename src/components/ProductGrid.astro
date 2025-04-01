@@ -141,7 +141,7 @@ console.log(categories);
                       <div class="product-grid-item">
                         <img src={p.images[0]} alt="" class="animatable" />
                         <div>
-                          <span>{p.tag[pageLanguage]}</span>
+                          <span class="tag">{p.tag[pageLanguage]}</span>
                           <p class="product-title">{p.title[pageLanguage]}</p>
                           <button class="openBtn project-link">
                             <img src={Arrow.src} alt="" />
@@ -247,7 +247,8 @@ console.log(categories);
     color: var(--sand);
     margin-bottom: 30px;
     margin-top: 30px;
-    font-size: 1.8rem;
+    font-size: 1.2rem !important;
+    text-transform: uppercase;
   }
   .grid-holder {
     padding: 20px 20px;
@@ -300,14 +301,6 @@ console.log(categories);
       line-height: 1rem;
     }
   }
-  .product-grid-item span {
-    color: var(--sand);
-    font-weight: 200;
-    font-size: 0.9rem;
-    font-family: "Afacadflux", sans-serif;
-    text-transform: uppercase;
-    font-style: italic;
-  }
   details {
     color: var(--lightgray) !important;
     font-family: "Inter", sans-serif !important;
@@ -358,7 +351,6 @@ console.log(categories);
     }
   }
   h1 {
-    font-family: "Afacadflux", sans-serif;
     text-transform: uppercase;
     margin: 0;
     font-size: 3rem;
@@ -399,10 +391,12 @@ console.log(categories);
   }
   .tag {
     font-size: 0.7rem;
+    display: block;
     color: var(--sand);
-    font-family: "Afacadflux", sans-serif;
+    font-family: "Afacadflux", sans-serif !important;
     text-transform: uppercase;
     letter-spacing: 2px;
+    margin-bottom: 5px;
   }
   .suitable-for {
     color: var(--sand);

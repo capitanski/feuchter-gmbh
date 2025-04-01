@@ -31,8 +31,8 @@ export const transportTexts = {
       en: "The thermal cover for roll cage trolleys",
     },
     subtitle: {
-      de: "Transportieren und Lagern Sie Ihre Waren sicher und wohltemperiert von A nach B",
-      en: "Transport and store your goods safely and at the right temperature from A to B",
+      de: "Transportieren Sie Ihre Waren sicher und wohltemperiert von A nach B",
+      en: "Transport your goods safely and at the right temperature from A to B",
     },
     introText: {
       de: "Wir fertigen hochwertige Thermohauben in verschiedenen Maßen für Rollcontainer. Unsere innovativen Lösungen ersetzen herkömmliche Stretchfolie vollständig und bieten eine nachhaltige, wiederverwendbare Alternative zur Ladungssicherung & Isolierung. Unsere Produkte sorgen für zuverlässige und umweltfreundliche Abdeckung. Kontaktieren Sie uns gerne für Anfragen oder individuelle Lösungen.",
@@ -61,8 +61,8 @@ export const transportTexts = {
       en: "The dust cover for roll cage trolleys",
     },
     subtitle: {
-      de: "Transportieren und Lagern Sie Ihre Waren sicher & blickdicht von A nach B",
-      en: "Transport and store your goods safely and out of sight from A to B.",
+      de: "Transportieren Sie Ihre Waren sicher & blickdicht von A nach B",
+      en: "Transport your goods safely and out of sight from A to B.",
     },
     introText: {
       de: "Wir fertigen hochwertige Staubhauben in verschiedenen Maßen für Rollcontainer. Unsere innovativen Lösungen ersetzen herkömmliche Stretchfolie vollständig und bieten eine nachhaltige, wiederverwendbare Alternative zur Ladungssicherung. Unsere Produkte sorgen für zuverlässige und umweltfreundliche Abdeckung. Kontaktieren Sie uns gerne für Anfragen oder individuelle Lösungen.",
