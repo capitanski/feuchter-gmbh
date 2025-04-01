@@ -1,6 +1,7 @@
 import schutzwandSchraeg from "@/assets/Produkte/schutzwand_schraeg.jpg"
 import schutzwandFront from "@/assets/Produkte/schutzwand_front.jpg"
 import schutzwandVerschluss from "@/assets/Produkte/schutzwand_verschluss.jpg"
+import schutzwandFarbig from "@/assets/Produkte/Transportwand farbig.jpg"
 
 export const schutzwandProducts = [
     {
@@ -21,7 +22,7 @@ export const schutzwandProducts = [
             en: "Optionally with logo print & different colors"
         },
         images: [
-            schutzwandSchraeg.src,
+            schutzwandFarbig.src,
             schutzwandFront.src,
             schutzwandVerschluss.src
         ],
