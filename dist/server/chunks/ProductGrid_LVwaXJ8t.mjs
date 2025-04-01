@@ -3,7 +3,7 @@ import 'kleur/colors';
 import 'clsx';
 /* empty css                         */
 import { A as Arrow } from './Arrow_sand_CKat7LSH.mjs';
-import { b as buttonTranslations } from './Layout_E4bqnXAw.mjs';
+import { b as buttonTranslations } from './Layout_DaASaaif.mjs';
 
 const $$Astro$1 = createAstro("http://192.168.178.48:4321/");
 const $$Modal = createComponent(($$result, $$props, $$slots) => {
@@ -2114,8 +2114,8 @@ const schutzwandVerschluss = new Proxy({"src":"/custom-folder/schutzwand_verschl
 const schutzwandProducts = [
     {
         title: {
-            de: "Transportwand für Rollcontainer",
-            en: "Transport Wall for Roll Containers"
+            de: "Transportwand für Rollcontainer, 720 x 815 mm",
+            en: "Transport Wall for Roll Containers, 720 x 815 mm"
         },
         shortDescription: {
             de: `Unsere patentierte Schutzwand für Rollbehälter erleichtert den Transport Ihrer Ware. Außerdem wird durch die Wiederverwendung Plastikmüll gespart. Alternativ in unterschiedlichen Farben erhältlich. Außerdem für den individuellen Touch, kann das eigene Logo platziert werden. Patentiertes Produkt zur Warensicherung im Rollbehälter. Das 6-Punkt-Clicksystem ermöglicht eine einfache Befestigung an den Seitengittern.`,
@@ -2126,8 +2126,356 @@ const schutzwandProducts = [
             en: "Protective Walls"
         },
         tag: {
-            de: "Individualisierbar",
-            en: "Customizable"
+            de: "Wahlweise mit Logodruck & verschiedenen Farben",
+            en: "Optionally with logo print & different colors"
+        },
+        images: [
+            schutzwandSchraeg.src,
+            schutzwandFront.src,
+            schutzwandVerschluss.src
+        ],
+        lists: [
+            {
+                title: {
+                    de: "Technische Daten",
+                    en: "Technical Data"
+                },
+                content: [
+                    {
+                        de: "Verwendung von umweltschädlicher Stretch-Folie entfällt",
+                        en: "Eliminates the need for environmentally harmful stretch film"
+                    },
+                    {
+                        de: "Schutzwand wird durch die Kraft elastischer Bänder auf Zug gehalten; somit kein Überspannen der Seitengitter nach innen; Quetschungen empfindlicher Ware daher ausgeschlossen",
+                        en: "Held under tension by elastic bands — prevents side grids from bending inward and protects sensitive goods from being crushed"
+                    },
+                    {
+                        de: "Vorspannung justierbar",
+                        en: "Adjustable tensioning"
+                    },
+                    {
+                        de: "Kompatibel mit automatisierter Warenbestückung des Rollbehälters",
+                        en: "Compatible with automated goods loading systems for roll containers"
+                    },
+                    {
+                        de: "Schutzwände können nach Gebrauch an den Seitengittern verstaut bzw. eingeklappt werden",
+                        en: "Can be folded or stored on the side panels when not in use"
+                    },
+                    {
+                        de: "Stabilität: Stabilisierung durch zwei an den Seiten eingenähte Glasfaserstäbe",
+                        en: "Stabilized with two integrated fiberglass rods sewn into the sides"
+                    },
+                    {
+                        de: "Außenbahnen in Wunschfarbe oder transparent erhältlich",
+                        en: "Outer panels available in custom colors or transparent"
+                    },
+                    {
+                        de: "Personalisierung der Schutzwand mit Ihrem Kundenlogo",
+                        en: "Custom branding with your company logo possible"
+                    },
+                    {
+                        de: "Zusätzliche Verstärkungsstäbe",
+                        en: "Optional reinforcement rods for extra durability"
+                    },
+                    {
+                        de: "Dokumententasche",
+                        en: "Integrated document pocket"
+                    },
+                    {
+                        de: "Diebstahlschutz (Sicherungskeile)",
+                        en: "Anti-theft protection (locking wedges)"
+                    }
+                ]
+            }
+        ],
+        optionalRichtext: {
+            title: {
+                de: "Richtext Titel Optional",
+                en: "Richtext Title Optional"
+            },
+            content: {
+                de: "Deutscher Richtext set:html",
+                en: "English Richtext set:html"
+            }
+        }
+    },
+    {
+        title: {
+            de: "Transportwand für Rollcontainer, 724 x 815 mm",
+            en: "Transport Wall for Roll Containers, 724 x 815 mm"
+        },
+        shortDescription: {
+            de: `Unsere patentierte Schutzwand für Rollbehälter erleichtert den Transport Ihrer Ware. Außerdem wird durch die Wiederverwendung Plastikmüll gespart. Alternativ in unterschiedlichen Farben erhältlich. Außerdem für den individuellen Touch, kann das eigene Logo platziert werden. Patentiertes Produkt zur Warensicherung im Rollbehälter. Das 6-Punkt-Clicksystem ermöglicht eine einfache Befestigung an den Seitengittern.`,
+            en: `Our patented protective wall for roll containers makes transporting your goods easier and more secure. By reusing the product, plastic waste is significantly reduced. Available in various colors and customizable with your company logo. The 6-point click system allows for quick and easy attachment to the container’s side panels — a patented solution for securing goods in transport.`
+        },
+        category: {
+            de: "Schutzwände",
+            en: "Protective Walls"
+        },
+        tag: {
+            de: "Wahlweise mit Logodruck & verschiedenen Farben",
+            en: "Optionally with logo print & different colors"
+        },
+        images: [
+            schutzwandSchraeg.src,
+            schutzwandFront.src,
+            schutzwandVerschluss.src
+        ],
+        lists: [
+            {
+                title: {
+                    de: "Technische Daten",
+                    en: "Technical Data"
+                },
+                content: [
+                    {
+                        de: "Verwendung von umweltschädlicher Stretch-Folie entfällt",
+                        en: "Eliminates the need for environmentally harmful stretch film"
+                    },
+                    {
+                        de: "Schutzwand wird durch die Kraft elastischer Bänder auf Zug gehalten; somit kein Überspannen der Seitengitter nach innen; Quetschungen empfindlicher Ware daher ausgeschlossen",
+                        en: "Held under tension by elastic bands — prevents side grids from bending inward and protects sensitive goods from being crushed"
+                    },
+                    {
+                        de: "Vorspannung justierbar",
+                        en: "Adjustable tensioning"
+                    },
+                    {
+                        de: "Kompatibel mit automatisierter Warenbestückung des Rollbehälters",
+                        en: "Compatible with automated goods loading systems for roll containers"
+                    },
+                    {
+                        de: "Schutzwände können nach Gebrauch an den Seitengittern verstaut bzw. eingeklappt werden",
+                        en: "Can be folded or stored on the side panels when not in use"
+                    },
+                    {
+                        de: "Stabilität: Stabilisierung durch zwei an den Seiten eingenähte Glasfaserstäbe",
+                        en: "Stabilized with two integrated fiberglass rods sewn into the sides"
+                    },
+                    {
+                        de: "Außenbahnen in Wunschfarbe oder transparent erhältlich",
+                        en: "Outer panels available in custom colors or transparent"
+                    },
+                    {
+                        de: "Personalisierung der Schutzwand mit Ihrem Kundenlogo",
+                        en: "Custom branding with your company logo possible"
+                    },
+                    {
+                        de: "Zusätzliche Verstärkungsstäbe",
+                        en: "Optional reinforcement rods for extra durability"
+                    },
+                    {
+                        de: "Dokumententasche",
+                        en: "Integrated document pocket"
+                    },
+                    {
+                        de: "Diebstahlschutz (Sicherungskeile)",
+                        en: "Anti-theft protection (locking wedges)"
+                    }
+                ]
+            }
+        ],
+        optionalRichtext: {
+            title: {
+                de: "Richtext Titel Optional",
+                en: "Richtext Title Optional"
+            },
+            content: {
+                de: "Deutscher Richtext set:html",
+                en: "English Richtext set:html"
+            }
+        }
+    },
+    {
+        title: {
+            de: "Transportwand für Rollcontainer, 720 x 630 mm",
+            en: "Transport Wall for Roll Containers, 720 x 630 mm"
+        },
+        shortDescription: {
+            de: `Unsere patentierte Schutzwand für Rollbehälter erleichtert den Transport Ihrer Ware. Außerdem wird durch die Wiederverwendung Plastikmüll gespart. Alternativ in unterschiedlichen Farben erhältlich. Außerdem für den individuellen Touch, kann das eigene Logo platziert werden. Patentiertes Produkt zur Warensicherung im Rollbehälter. Das 6-Punkt-Clicksystem ermöglicht eine einfache Befestigung an den Seitengittern.`,
+            en: `Our patented protective wall for roll containers makes transporting your goods easier and more secure. By reusing the product, plastic waste is significantly reduced. Available in various colors and customizable with your company logo. The 6-point click system allows for quick and easy attachment to the container’s side panels — a patented solution for securing goods in transport.`
+        },
+        category: {
+            de: "Schutzwände",
+            en: "Protective Walls"
+        },
+        tag: {
+            de: "Wahlweise mit Logodruck & verschiedenen Farben",
+            en: "Optionally with logo print & different colors"
+        },
+        images: [
+            schutzwandSchraeg.src,
+            schutzwandFront.src,
+            schutzwandVerschluss.src
+        ],
+        lists: [
+            {
+                title: {
+                    de: "Technische Daten",
+                    en: "Technical Data"
+                },
+                content: [
+                    {
+                        de: "Verwendung von umweltschädlicher Stretch-Folie entfällt",
+                        en: "Eliminates the need for environmentally harmful stretch film"
+                    },
+                    {
+                        de: "Schutzwand wird durch die Kraft elastischer Bänder auf Zug gehalten; somit kein Überspannen der Seitengitter nach innen; Quetschungen empfindlicher Ware daher ausgeschlossen",
+                        en: "Held under tension by elastic bands — prevents side grids from bending inward and protects sensitive goods from being crushed"
+                    },
+                    {
+                        de: "Vorspannung justierbar",
+                        en: "Adjustable tensioning"
+                    },
+                    {
+                        de: "Kompatibel mit automatisierter Warenbestückung des Rollbehälters",
+                        en: "Compatible with automated goods loading systems for roll containers"
+                    },
+                    {
+                        de: "Schutzwände können nach Gebrauch an den Seitengittern verstaut bzw. eingeklappt werden",
+                        en: "Can be folded or stored on the side panels when not in use"
+                    },
+                    {
+                        de: "Stabilität: Stabilisierung durch zwei an den Seiten eingenähte Glasfaserstäbe",
+                        en: "Stabilized with two integrated fiberglass rods sewn into the sides"
+                    },
+                    {
+                        de: "Außenbahnen in Wunschfarbe oder transparent erhältlich",
+                        en: "Outer panels available in custom colors or transparent"
+                    },
+                    {
+                        de: "Personalisierung der Schutzwand mit Ihrem Kundenlogo",
+                        en: "Custom branding with your company logo possible"
+                    },
+                    {
+                        de: "Zusätzliche Verstärkungsstäbe",
+                        en: "Optional reinforcement rods for extra durability"
+                    },
+                    {
+                        de: "Dokumententasche",
+                        en: "Integrated document pocket"
+                    },
+                    {
+                        de: "Diebstahlschutz (Sicherungskeile)",
+                        en: "Anti-theft protection (locking wedges)"
+                    }
+                ]
+            }
+        ],
+        optionalRichtext: {
+            title: {
+                de: "Richtext Titel Optional",
+                en: "Richtext Title Optional"
+            },
+            content: {
+                de: "Deutscher Richtext set:html",
+                en: "English Richtext set:html"
+            }
+        }
+    },
+    {
+        title: {
+            de: "Transportwand für Rollcontainer, 682 x 815 mm",
+            en: "Transport Wall for Roll Containers, 682 x 815 mm"
+        },
+        shortDescription: {
+            de: `Unsere patentierte Schutzwand für Rollbehälter erleichtert den Transport Ihrer Ware. Außerdem wird durch die Wiederverwendung Plastikmüll gespart. Alternativ in unterschiedlichen Farben erhältlich. Außerdem für den individuellen Touch, kann das eigene Logo platziert werden. Patentiertes Produkt zur Warensicherung im Rollbehälter. Das 6-Punkt-Clicksystem ermöglicht eine einfache Befestigung an den Seitengittern.`,
+            en: `Our patented protective wall for roll containers makes transporting your goods easier and more secure. By reusing the product, plastic waste is significantly reduced. Available in various colors and customizable with your company logo. The 6-point click system allows for quick and easy attachment to the container’s side panels — a patented solution for securing goods in transport.`
+        },
+        category: {
+            de: "Schutzwände",
+            en: "Protective Walls"
+        },
+        tag: {
+            de: "Wahlweise mit Logodruck & verschiedenen Farben",
+            en: "Optionally with logo print & different colors"
+        },
+        images: [
+            schutzwandSchraeg.src,
+            schutzwandFront.src,
+            schutzwandVerschluss.src
+        ],
+        lists: [
+            {
+                title: {
+                    de: "Technische Daten",
+                    en: "Technical Data"
+                },
+                content: [
+                    {
+                        de: "Verwendung von umweltschädlicher Stretch-Folie entfällt",
+                        en: "Eliminates the need for environmentally harmful stretch film"
+                    },
+                    {
+                        de: "Schutzwand wird durch die Kraft elastischer Bänder auf Zug gehalten; somit kein Überspannen der Seitengitter nach innen; Quetschungen empfindlicher Ware daher ausgeschlossen",
+                        en: "Held under tension by elastic bands — prevents side grids from bending inward and protects sensitive goods from being crushed"
+                    },
+                    {
+                        de: "Vorspannung justierbar",
+                        en: "Adjustable tensioning"
+                    },
+                    {
+                        de: "Kompatibel mit automatisierter Warenbestückung des Rollbehälters",
+                        en: "Compatible with automated goods loading systems for roll containers"
+                    },
+                    {
+                        de: "Schutzwände können nach Gebrauch an den Seitengittern verstaut bzw. eingeklappt werden",
+                        en: "Can be folded or stored on the side panels when not in use"
+                    },
+                    {
+                        de: "Stabilität: Stabilisierung durch zwei an den Seiten eingenähte Glasfaserstäbe",
+                        en: "Stabilized with two integrated fiberglass rods sewn into the sides"
+                    },
+                    {
+                        de: "Außenbahnen in Wunschfarbe oder transparent erhältlich",
+                        en: "Outer panels available in custom colors or transparent"
+                    },
+                    {
+                        de: "Personalisierung der Schutzwand mit Ihrem Kundenlogo",
+                        en: "Custom branding with your company logo possible"
+                    },
+                    {
+                        de: "Zusätzliche Verstärkungsstäbe",
+                        en: "Optional reinforcement rods for extra durability"
+                    },
+                    {
+                        de: "Dokumententasche",
+                        en: "Integrated document pocket"
+                    },
+                    {
+                        de: "Diebstahlschutz (Sicherungskeile)",
+                        en: "Anti-theft protection (locking wedges)"
+                    }
+                ]
+            }
+        ],
+        optionalRichtext: {
+            title: {
+                de: "Richtext Titel Optional",
+                en: "Richtext Title Optional"
+            },
+            content: {
+                de: "Deutscher Richtext set:html",
+                en: "English Richtext set:html"
+            }
+        }
+    },
+    {
+        title: {
+            de: "Transportwand für Rollcontainer, Individuelle Maße",
+            en: "Transport Wall for Roll Containers, Custom size"
+        },
+        shortDescription: {
+            de: `Unsere patentierte Schutzwand für Rollbehälter erleichtert den Transport Ihrer Ware. Außerdem wird durch die Wiederverwendung Plastikmüll gespart. Alternativ in unterschiedlichen Farben erhältlich. Außerdem für den individuellen Touch, kann das eigene Logo platziert werden. Patentiertes Produkt zur Warensicherung im Rollbehälter. Das 6-Punkt-Clicksystem ermöglicht eine einfache Befestigung an den Seitengittern.`,
+            en: `Our patented protective wall for roll containers makes transporting your goods easier and more secure. By reusing the product, plastic waste is significantly reduced. Available in various colors and customizable with your company logo. The 6-point click system allows for quick and easy attachment to the container’s side panels — a patented solution for securing goods in transport.`
+        },
+        category: {
+            de: "Schutzwände",
+            en: "Protective Walls"
+        },
+        tag: {
+            de: "Wahlweise mit Logodruck & verschiedenen Farben",
+            en: "Optionally with logo print & different colors"
         },
         images: [
             schutzwandSchraeg.src,
@@ -2243,8 +2591,8 @@ const thermohaubeVerschluss = new Proxy({"src":"/custom-folder/Thermohaube_Staub
 const thermohaubeProducts = [
     {
         title: {
-            de: "Thermohaube für Rollcontainer",
-            en: "Thermal Cover for Roll Containers"
+            de: "Thermohaube für Rollcontainer, Nutzhöhe 1700mm",
+            en: "Thermal Cover for Roll Containers, Usable height 1700mm"
         },
         shortDescription: {
             de: `Die Thermohaube für Rollbehälter ist eine innovative Lösung, um Ihre Ware vor äußeren Einflüssen zu schützen. Egal, ob Hitze, Kälte, Staub uvw. Alternativ mit oder ohne transparente Tasche für Dokumente. Auch Ihr eigenes Logo kann auf Wunsch platziert werden. Ideal geeignet für die thermische Isolation von Frischeartikeln, welche mittels Rollbehälter transportiert werden. Verringert das Risiko der Kühlkettenunterbrechung während der Auslieferung.`,
@@ -2255,8 +2603,158 @@ const thermohaubeProducts = [
             en: "Thermal Covers"
         },
         tag: {
-            de: "Individualisierbar",
-            en: "Customizable"
+            de: "Wahlweise mit Dokumententasche und/oder Logodruck",
+            en: "Optionally with document pouch and/or logo print"
+        },
+        images: [
+            thermohaubeSchraeg.src,
+            thermohaubeFront.src,
+            thermohaubeVerschluss.src
+        ],
+        lists: [
+            {
+                title: {
+                    de: "Technische Daten",
+                    en: "Technical Data"
+                },
+                content: [
+                    {
+                        de: "Thermisch isolierender Stoff. (lebensmittelgeeignet)",
+                        en: "Thermally insulating material (food-safe)"
+                    },
+                    {
+                        de: "Dokumententasche auf der Vorderseite.",
+                        en: "Document pocket on the front"
+                    },
+                    {
+                        de: "Passend für Standard-Rollbehälter 720x815 mm",
+                        en: "Fits standard roll containers (720×815 mm)"
+                    },
+                    {
+                        de: "Nutzhöhe variabel (auf Anfrage)",
+                        en: "Usable height variable (on request)"
+                    },
+                    {
+                        de: "Nur in Farbe Schwarz gem. Abbildung lieferbar.",
+                        en: "Available only in black (as shown)"
+                    },
+                    {
+                        de: "Verschluss der Vorderwand mittels Klettsystem ermöglicht ein einfaches Überstülpen der kompletten Haube.",
+                        en: "Front panel with hook-and-loop closure enables easy covering of the entire container"
+                    },
+                    {
+                        de: "Nachträgliches Be- und Entladen von Ware jederzeit möglich.",
+                        en: "Post-loading and unloading of goods possible at any time"
+                    },
+                    {
+                        de: "Personalisierung der Thermohaube mit Ihrem Kundenlogo",
+                        en: "Custom branding with your company logo"
+                    }
+                ]
+            }
+        ],
+        optionalRichtext: {
+            title: {
+                de: "Richtext Titel Optional",
+                en: "Richtext Title Optional"
+            },
+            content: {
+                de: "Deutscher Richtext set:html",
+                en: "English Richtext set:html"
+            }
+        }
+    },
+    {
+        title: {
+            de: "Thermohaube für Rollcontainer, Nutzhöhe 1450mm",
+            en: "Thermal Cover for Roll Containers, Usable height 1450mm"
+        },
+        shortDescription: {
+            de: `Die Thermohaube für Rollbehälter ist eine innovative Lösung, um Ihre Ware vor äußeren Einflüssen zu schützen. Egal, ob Hitze, Kälte, Staub uvw. Alternativ mit oder ohne transparente Tasche für Dokumente. Auch Ihr eigenes Logo kann auf Wunsch platziert werden. Ideal geeignet für die thermische Isolation von Frischeartikeln, welche mittels Rollbehälter transportiert werden. Verringert das Risiko der Kühlkettenunterbrechung während der Auslieferung.`,
+            en: `The thermal cover for roll containers is an innovative solution to protect goods from external influences such as heat, cold, or dust. Optionally available with or without a transparent document pocket. Custom branding with your logo is possible. Ideal for the thermal insulation of perishable goods transported in roll containers, helping to reduce the risk of cold chain interruption during delivery.`
+        },
+        category: {
+            de: "Thermohauben",
+            en: "Thermal Covers"
+        },
+        tag: {
+            de: "Wahlweise mit Dokumententasche und/oder Logodruck",
+            en: "Optionally with document pouch and/or logo print"
+        },
+        images: [
+            thermohaubeSchraeg.src,
+            thermohaubeFront.src,
+            thermohaubeVerschluss.src
+        ],
+        lists: [
+            {
+                title: {
+                    de: "Technische Daten",
+                    en: "Technical Data"
+                },
+                content: [
+                    {
+                        de: "Thermisch isolierender Stoff. (lebensmittelgeeignet)",
+                        en: "Thermally insulating material (food-safe)"
+                    },
+                    {
+                        de: "Dokumententasche auf der Vorderseite.",
+                        en: "Document pocket on the front"
+                    },
+                    {
+                        de: "Passend für Standard-Rollbehälter 720x815 mm",
+                        en: "Fits standard roll containers (720×815 mm)"
+                    },
+                    {
+                        de: "Nutzhöhe variabel (auf Anfrage)",
+                        en: "Usable height variable (on request)"
+                    },
+                    {
+                        de: "Nur in Farbe Schwarz gem. Abbildung lieferbar.",
+                        en: "Available only in black (as shown)"
+                    },
+                    {
+                        de: "Verschluss der Vorderwand mittels Klettsystem ermöglicht ein einfaches Überstülpen der kompletten Haube.",
+                        en: "Front panel with hook-and-loop closure enables easy covering of the entire container"
+                    },
+                    {
+                        de: "Nachträgliches Be- und Entladen von Ware jederzeit möglich.",
+                        en: "Post-loading and unloading of goods possible at any time"
+                    },
+                    {
+                        de: "Personalisierung der Thermohaube mit Ihrem Kundenlogo",
+                        en: "Custom branding with your company logo"
+                    }
+                ]
+            }
+        ],
+        optionalRichtext: {
+            title: {
+                de: "Richtext Titel Optional",
+                en: "Richtext Title Optional"
+            },
+            content: {
+                de: "Deutscher Richtext set:html",
+                en: "English Richtext set:html"
+            }
+        }
+    },
+    {
+        title: {
+            de: "Thermohaube für Rollcontainer, variable Nutzhöhe",
+            en: "Thermal Cover for Roll Containers, variable height"
+        },
+        shortDescription: {
+            de: `Die Thermohaube für Rollbehälter ist eine innovative Lösung, um Ihre Ware vor äußeren Einflüssen zu schützen. Egal, ob Hitze, Kälte, Staub uvw. Alternativ mit oder ohne transparente Tasche für Dokumente. Auch Ihr eigenes Logo kann auf Wunsch platziert werden. Ideal geeignet für die thermische Isolation von Frischeartikeln, welche mittels Rollbehälter transportiert werden. Verringert das Risiko der Kühlkettenunterbrechung während der Auslieferung.`,
+            en: `The thermal cover for roll containers is an innovative solution to protect goods from external influences such as heat, cold, or dust. Optionally available with or without a transparent document pocket. Custom branding with your logo is possible. Ideal for the thermal insulation of perishable goods transported in roll containers, helping to reduce the risk of cold chain interruption during delivery.`
+        },
+        category: {
+            de: "Thermohauben",
+            en: "Thermal Covers"
+        },
+        tag: {
+            de: "Wahlweise mit Dokumententasche und/oder Logodruck",
+            en: "Optionally with document pouch and/or logo print"
         },
         images: [
             thermohaubeSchraeg.src,
@@ -2321,8 +2819,8 @@ const thermohaubeProducts = [
 const staubhaubeProducts = [
     {
         title: {
-            de: "Staubhaube für Rollcontainer",
-            en: "Dust Cover for Roll Containers"
+            de: "Staubhaube für Rollcontainer, Nutzhöhe 1700mm",
+            en: "Dust Cover for Roll Containers, Usable height 1700mm"
         },
         shortDescription: {
             de: `Die Staubhaube für Rollbehälter ist eine innovative Lösung, um Ihre Ware vor äußeren Einflüssen zu schützen. Egal ob Staub, Wind oder Nässe. Alternativ mit oder ohne transparente Tasche für Dokumente. Auch Ihr eigenes Logo kann auf Wunsch platziert werden.`,
@@ -2333,8 +2831,158 @@ const staubhaubeProducts = [
             en: "Dust Covers"
         },
         tag: {
-            de: "Individualisierbar",
-            en: "Customizable"
+            de: "Wahlweise mit Dokumententasche und/oder Logodruck",
+            en: "Optionally with document pouch and/or logo print"
+        },
+        images: [
+            thermohaubeSchraeg.src,
+            thermohaubeFront.src,
+            thermohaubeVerschluss.src
+        ],
+        lists: [
+            {
+                title: {
+                    de: "Technische Daten",
+                    en: "Technical Data"
+                },
+                content: [
+                    {
+                        de: "Thermisch isolierender Stoff. (lebensmittelgeeignet)",
+                        en: "Protective material with thermal insulation (food-safe)"
+                    },
+                    {
+                        de: "Dokumententasche auf der Vorderseite.",
+                        en: "Transparent document pocket on the front (optional)"
+                    },
+                    {
+                        de: "Passend für Standard-Rollbehälter 720x815 mm",
+                        en: "Fits standard roll containers (720×815 mm)"
+                    },
+                    {
+                        de: "Nutzhöhe variabel (auf Anfrage)",
+                        en: "Usable height adjustable on request"
+                    },
+                    {
+                        de: "Nur in Farbe Schwarz gem. Abbildung lieferbar.",
+                        en: "Available only in black (as shown)"
+                    },
+                    {
+                        de: "Verschluss der Vorderwand mittels Klettsystem ermöglicht ein einfaches Überstülpen der kompletten Haube.",
+                        en: "Front flap with Velcro closure allows for easy covering of the entire container"
+                    },
+                    {
+                        de: "Nachträgliches Be- und Entladen von Ware jederzeit möglich.",
+                        en: "Goods can be loaded and unloaded even after the cover is applied"
+                    },
+                    {
+                        de: "Personalisierung der Staubhaube mit Ihrem Kundenlogo",
+                        en: "Custom branding with your company logo available"
+                    }
+                ]
+            }
+        ],
+        optionalRichtext: {
+            title: {
+                de: "Richtext Titel Optional",
+                en: "Richtext Title Optional"
+            },
+            content: {
+                de: "Deutscher Richtext set:html",
+                en: "English Richtext set:html"
+            }
+        }
+    },
+    {
+        title: {
+            de: "Staubhaube für Rollcontainer, Nutzhöhe 1450mm",
+            en: "Dust Cover for Roll Containers, Usable height 1450mm"
+        },
+        shortDescription: {
+            de: `Die Staubhaube für Rollbehälter ist eine innovative Lösung, um Ihre Ware vor äußeren Einflüssen zu schützen. Egal ob Staub, Wind oder Nässe. Alternativ mit oder ohne transparente Tasche für Dokumente. Auch Ihr eigenes Logo kann auf Wunsch platziert werden.`,
+            en: `The dust cover for roll containers is an innovative solution to protect your goods from external influences such as dust, wind, or moisture. Optionally available with or without a transparent document pocket. Custom branding with your company logo is also possible.`
+        },
+        category: {
+            de: "Staubhauben",
+            en: "Dust Covers"
+        },
+        tag: {
+            de: "Wahlweise mit Dokumententasche und/oder Logodruck",
+            en: "Optionally with document pouch and/or logo print"
+        },
+        images: [
+            thermohaubeSchraeg.src,
+            thermohaubeFront.src,
+            thermohaubeVerschluss.src
+        ],
+        lists: [
+            {
+                title: {
+                    de: "Technische Daten",
+                    en: "Technical Data"
+                },
+                content: [
+                    {
+                        de: "Thermisch isolierender Stoff. (lebensmittelgeeignet)",
+                        en: "Protective material with thermal insulation (food-safe)"
+                    },
+                    {
+                        de: "Dokumententasche auf der Vorderseite.",
+                        en: "Transparent document pocket on the front (optional)"
+                    },
+                    {
+                        de: "Passend für Standard-Rollbehälter 720x815 mm",
+                        en: "Fits standard roll containers (720×815 mm)"
+                    },
+                    {
+                        de: "Nutzhöhe variabel (auf Anfrage)",
+                        en: "Usable height adjustable on request"
+                    },
+                    {
+                        de: "Nur in Farbe Schwarz gem. Abbildung lieferbar.",
+                        en: "Available only in black (as shown)"
+                    },
+                    {
+                        de: "Verschluss der Vorderwand mittels Klettsystem ermöglicht ein einfaches Überstülpen der kompletten Haube.",
+                        en: "Front flap with Velcro closure allows for easy covering of the entire container"
+                    },
+                    {
+                        de: "Nachträgliches Be- und Entladen von Ware jederzeit möglich.",
+                        en: "Goods can be loaded and unloaded even after the cover is applied"
+                    },
+                    {
+                        de: "Personalisierung der Staubhaube mit Ihrem Kundenlogo",
+                        en: "Custom branding with your company logo available"
+                    }
+                ]
+            }
+        ],
+        optionalRichtext: {
+            title: {
+                de: "Richtext Titel Optional",
+                en: "Richtext Title Optional"
+            },
+            content: {
+                de: "Deutscher Richtext set:html",
+                en: "English Richtext set:html"
+            }
+        }
+    },
+    {
+        title: {
+            de: "Staubhaube für Rollcontainer, variable Nutzhöhe",
+            en: "Dust Cover for Roll Containers, variable height"
+        },
+        shortDescription: {
+            de: `Die Staubhaube für Rollbehälter ist eine innovative Lösung, um Ihre Ware vor äußeren Einflüssen zu schützen. Egal ob Staub, Wind oder Nässe. Alternativ mit oder ohne transparente Tasche für Dokumente. Auch Ihr eigenes Logo kann auf Wunsch platziert werden.`,
+            en: `The dust cover for roll containers is an innovative solution to protect your goods from external influences such as dust, wind, or moisture. Optionally available with or without a transparent document pocket. Custom branding with your company logo is also possible.`
+        },
+        category: {
+            de: "Staubhauben",
+            en: "Dust Covers"
+        },
+        tag: {
+            de: "Wahlweise mit Dokumententasche und/oder Logodruck",
+            en: "Optionally with document pouch and/or logo print"
         },
         images: [
             thermohaubeSchraeg.src,
@@ -2725,7 +3373,7 @@ const $$ProductGrid = createComponent(($$result, $$props, $$slots) => {
     return renderTemplate`${renderComponent($$result, "Fragment", Fragment, { "data-astro-cid-poyn3awd": true }, { "default": ($$result2) => renderTemplate` <h2 data-astro-cid-poyn3awd>${category}</h2> <div class="product-grid" data-astro-cid-poyn3awd> ${currentProducts.filter(
       (product) => product.category[pageLanguage].toLowerCase() == category.toLowerCase()
     ).map((p) => {
-      return renderTemplate`<div class="product-grid-item" data-astro-cid-poyn3awd> <img${addAttribute(p.images[0], "src")} alt="" class="animatable" data-astro-cid-poyn3awd> <div data-astro-cid-poyn3awd> <span data-astro-cid-poyn3awd>${p.tag[pageLanguage]}</span> <p class="product-title" data-astro-cid-poyn3awd>${p.title[pageLanguage]}</p> <button class="openBtn project-link" data-astro-cid-poyn3awd> <img${addAttribute(Arrow.src, "src")} alt="" data-astro-cid-poyn3awd> <span data-astro-cid-poyn3awd> ${buttonTranslations(
+      return renderTemplate`<div class="product-grid-item" data-astro-cid-poyn3awd> <img${addAttribute(p.images[0], "src")} alt="" class="animatable" data-astro-cid-poyn3awd> <div data-astro-cid-poyn3awd> <span class="tag" data-astro-cid-poyn3awd>${p.tag[pageLanguage]}</span> <p class="product-title" data-astro-cid-poyn3awd>${p.title[pageLanguage]}</p> <button class="openBtn project-link" data-astro-cid-poyn3awd> <img${addAttribute(Arrow.src, "src")} alt="" data-astro-cid-poyn3awd> <span data-astro-cid-poyn3awd> ${buttonTranslations(
         "technischedaten",
         pageLanguage
       )} </span> </button> ${renderComponent($$result2, "Modal", $$Modal, { "content": p, "pageLanguage": pageLanguage, "data-astro-cid-poyn3awd": true })} </div> </div>`;

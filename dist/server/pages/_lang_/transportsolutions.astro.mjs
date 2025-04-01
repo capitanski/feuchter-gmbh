@@ -1,7 +1,7 @@
 import { e as createAstro, f as createComponent, i as renderComponent, r as renderTemplate } from '../../chunks/astro/server_CofuBfMf.mjs';
 import 'kleur/colors';
-import { $ as $$Layout } from '../../chunks/Layout_E4bqnXAw.mjs';
-import { $ as $$ProductGrid } from '../../chunks/ProductGrid_DXR5AUee.mjs';
+import { $ as $$Layout } from '../../chunks/Layout_DaASaaif.mjs';
+import { $ as $$ProductGrid } from '../../chunks/ProductGrid_LVwaXJ8t.mjs';
 import { T as Thermohaube, a as Transportloesungen } from '../../chunks/Thermohaube quer_CCmxDng1.mjs';
 export { renderers } from '../../renderers.mjs';
 
@@ -253,8 +253,8 @@ const transportTexts = {
       en: "The thermal cover for roll cage trolleys",
     },
     subtitle: {
-      de: "Transportieren und Lagern Sie Ihre Waren sicher und wohltemperiert von A nach B",
-      en: "Transport and store your goods safely and at the right temperature from A to B",
+      de: "Transportieren Sie Ihre Waren sicher und wohltemperiert von A nach B",
+      en: "Transport your goods safely and at the right temperature from A to B",
     },
     introText: {
       de: "Wir fertigen hochwertige Thermohauben in verschiedenen Maßen für Rollcontainer. Unsere innovativen Lösungen ersetzen herkömmliche Stretchfolie vollständig und bieten eine nachhaltige, wiederverwendbare Alternative zur Ladungssicherung & Isolierung. Unsere Produkte sorgen für zuverlässige und umweltfreundliche Abdeckung. Kontaktieren Sie uns gerne für Anfragen oder individuelle Lösungen.",
@@ -283,8 +283,8 @@ const transportTexts = {
       en: "The dust cover for roll cage trolleys",
     },
     subtitle: {
-      de: "Transportieren und Lagern Sie Ihre Waren sicher & blickdicht von A nach B",
-      en: "Transport and store your goods safely and out of sight from A to B.",
+      de: "Transportieren Sie Ihre Waren sicher & blickdicht von A nach B",
+      en: "Transport your goods safely and out of sight from A to B.",
     },
     introText: {
       de: "Wir fertigen hochwertige Staubhauben in verschiedenen Maßen für Rollcontainer. Unsere innovativen Lösungen ersetzen herkömmliche Stretchfolie vollständig und bieten eine nachhaltige, wiederverwendbare Alternative zur Ladungssicherung. Unsere Produkte sorgen für zuverlässige und umweltfreundliche Abdeckung. Kontaktieren Sie uns gerne für Anfragen oder individuelle Lösungen.",

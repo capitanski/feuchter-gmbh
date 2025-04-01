@@ -1,17 +1,17 @@
 import { e as createAstro, f as createComponent, m as maybeRenderHead, h as addAttribute, u as unescapeHTML, i as renderComponent, r as renderTemplate } from '../chunks/astro/server_CofuBfMf.mjs';
 import 'kleur/colors';
 import { $ as $$Button } from '../chunks/Button_BHV8ZOOp.mjs';
-import { C as Circles$1, b as buttonTranslations, $ as $$Layout } from '../chunks/Layout_E4bqnXAw.mjs';
+import { C as Circles$1, b as buttonTranslations, $ as $$Layout } from '../chunks/Layout_DaASaaif.mjs';
 import { S as Scribble, B as Behoerdenkleidung, C as Corporate } from '../chunks/corporate_fashion_DzCh8UDt.mjs';
 /* empty css                                 */
-import { $ as $$Leistungen } from '../chunks/Leistungen_CfpdB827.mjs';
+import { $ as $$Leistungen } from '../chunks/Leistungen_DBp_M8ku.mjs';
 import 'clsx';
-import { $ as $$Projects } from '../chunks/Projects_B3pwjYkg.mjs';
+import { $ as $$Projects } from '../chunks/Projects_T2wigMXL.mjs';
 import { a as Transportloesungen, T as Thermohaube } from '../chunks/Thermohaube quer_CCmxDng1.mjs';
 import { B as Bekleidung } from '../chunks/projekte_C2Tx1DqM.mjs';
 import { C as Circles$2 } from '../chunks/projects_CgVXogum.mjs';
 import { A as Arrow } from '../chunks/Arrow_sand_CKat7LSH.mjs';
-import { $ as $$ContactForm } from '../chunks/ContactForm_DUCZI50M.mjs';
+import { $ as $$ContactForm } from '../chunks/ContactForm_BtCcEDdm.mjs';
 export { renderers } from '../renderers.mjs';
 
 const $$Astro$4 = createAstro("http://192.168.178.48:4321/");
