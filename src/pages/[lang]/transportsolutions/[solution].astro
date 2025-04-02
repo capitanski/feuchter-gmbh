@@ -1,0 +1,57 @@
+---
+import Layout from "@/layouts/Layout.astro";
+import ProductGridTransport from "@/components/ProductGridTransport.astro";
+import HeaderImage from "@/assets/transportwand_header.jpg";
+import products from "@/content/transportProducts";
+import { transportCategories } from "@/content/transportCategories";
+import { transportTexts } from "@/content/transportTexts";
+// Hier einfach alle Transportprodukte importieren und dann nach dem richtigen filtern
+// Auch Thermohaube und Staubhaube importieren, aber an Schutzwand Model anlehnen
+import { schutzwand } from "@/content/productmodels/schutzwand";
+import type { AstroLocals } from "@/types";
+import schutzwandImage from "@/assets/Transportwand quer.jpg";
+import mobileSchutzwand from "@/assets/Transportwand mobile.jpg";
+const { locals } = Astro as unknown as { locals: AstroLocals };
+const { url } = Astro.request;
+const pageLanguage = locals.language;
+
+// Hier nach dem URL Param filtern und richtiges Produkt auswählen oder 404 werfen
+// Vorest bleibt das die Schutzwand
+const currentProduct = schutzwand;
+
+const links = [
+    {
+        href: `transportsolutions?category=protective-wall`,
+        searchCategory: "protective-wall",
+        linkText: {
+            de: "Schutzwand für Rollcontainer",
+            en: "Protective Wall for Roll Cage Trolleys",
+        },
+    },
+    {
+        href: `transportsolutions?category=thermal-cover`,
+        searchCategory: "thermal-cover",
+        linkText: {
+            de: "Thermohaube für Rollcontainer",
+            en: "Thermal Cover for Roll Cage Trolleys",
+        },
+    },
+    {
+        href: `transportsolutions?category=dust-cover`,
+        searchCategory: "dust-cover",
+        linkText: {
+            de: "Schutzhaube für Rollcontainer",
+            en: "Dust Cover for Roll Cage Trolleys",
+        },
+    },
+];
+---
+
+<Layout>
+    <ProductGridTransport
+        pageLanguage={pageLanguage}
+        links={links}
+        headerImage={schutzwandImage.src}
+        product={currentProduct}
+    />
+</Layout>

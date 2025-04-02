@@ -3,11 +3,12 @@ import WelcomeLeftAligned from "@/components/WelcomeLeftAligned.astro";
 import Layout from "@/layouts/Layout.astro";
 import Products from "@/components/Products.astro";
 import Scribble from "@/assets/feuchter_gmbh_header.jpg";
-import ProductGrid from "@/components/ProductGrid.astro";
+import ProductGridTransport from "@/components/ProductGridTransport.astro";
 import HeaderImage from "@/assets/transportwand_header.jpg";
 import products from "@/content/transportProducts";
 import { transportCategories } from "@/content/transportCategories";
 import { transportTexts } from "@/content/transportTexts";
+import { schutzwand } from "@/content/productmodels/schutzwand";
 import type { AstroLocals } from "@/types";
 const { locals } = Astro as unknown as { locals: AstroLocals };
 const { url } = Astro.request;
@@ -77,7 +78,7 @@ if (pageLanguage == "en") {
 ---
 
 <Layout>
-  <ProductGrid
+  <ProductGridTransport
     categories={categories}
     products={products}
     pageLanguage={pageLanguage}
@@ -88,5 +89,6 @@ if (pageLanguage == "en") {
     introText={introText}
     subtitle={subtitle}
     texts={transportTexts}
+    product={schutzwand}
   />
 </Layout>
