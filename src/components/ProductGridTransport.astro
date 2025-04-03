@@ -1,27 +1,28 @@
 ---
 import Function from "./Function.astro";
 import TransportUsps from "./TransportUsps.astro";
+import TransportVariants from "./TransportVariants.astro";
 const { pageLanguage, searchCategory, links, texts, product, headerImage } =
     Astro.props;
 ---
 
 <section>
+    <div class="gradient-overlay"></div>
+    <img
+        src={product.headerImage}
+        alt=""
+        class="header-image"
+        fetchpriority="high"
+        loading="eager"
+    />
+    <img
+        src={product.headerImage}
+        alt=""
+        fetchpriority="high"
+        loading="eager"
+        class="mobile-header-image"
+    />
     <div class="container">
-        <div class="gradient-overlay"></div>
-        <img
-            src={headerImage}
-            alt=""
-            class="header-image"
-            fetchpriority="high"
-            loading="eager"
-        />
-        <img
-            src={headerImage}
-            alt=""
-            fetchpriority="high"
-            loading="eager"
-            class="mobile-header-image"
-        />
         <div class="intro">
             <div class="headline-and-subtitle">
                 <h1 class="animatable">
@@ -56,6 +57,7 @@ const { pageLanguage, searchCategory, links, texts, product, headerImage } =
         </div>
         <Function product={product} pageLanguage={pageLanguage} />
         <TransportUsps product={product} pageLanguage={pageLanguage} />
+        <TransportVariants product={product} pageLanguage={pageLanguage} />
     </div>
 </section>
 <style>

@@ -47,6 +47,9 @@ const links = navLinks[language as keyof TranslatedNavigation];
   </div>
 </nav>
 <style>
+  * {
+    z-index: 3;
+  }
   .logo {
     width: 100px;
     height: auto;
@@ -170,5 +173,8 @@ const links = navLinks[language as keyof TranslatedNavigation];
     @media screen and (max-width: 820px) {
       text-align: center;
     }
+  }
+  #footer {
+    z-index: 3;
   }
 </style>

@@ -23,7 +23,7 @@ export const navLinks: TranslatedNavigation = {
     },
     {
       text: "Transportlösungen",
-      to: "transportsolutions?category=protective-wall",
+      to: "transportsolutions",
     },
   ],
   en: [

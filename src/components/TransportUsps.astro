@@ -4,12 +4,12 @@ const { product, pageLanguage } = Astro.props;
 
 <div class="function">
     <div class="headline-and-title">
-        <h2 id="h2">Eine Lösung für alles</h2>
-        <p class="headline-text">Beschreibung</p>
+        <h2 class="animatable">{product.usps.headline[pageLanguage]}</h2>
+        <p class="headline-text">{product.usps.intro[pageLanguage]}</p>
     </div>
     <div class="image-grid">
         {
-            product.usps.map((item) => {
+            product.usps.items.map((item) => {
                 return (
                     <div class="grid-item">
                         <img src={item.img} alt="" />
@@ -26,27 +26,39 @@ const { product, pageLanguage } = Astro.props;
 
 <style>
     h2 {
-        color: var(--sand);
-        font-size: 1.4rem !important;
+        background: linear-gradient(135deg, var(--lightgray), var(--sand));
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        font-size: 1.2rem !important;
+        line-height: 1.2rem !important;
         margin: 0;
+        text-transform: uppercase;
+    }
+    .headline-and-title {
+        border-right: 1px solid var(--sand);
+        padding-right: 20px;
     }
     .headline-text {
         color: var(--lightgray);
         font-size: 0.9rem;
+        font-weight: 500;
     }
     .function {
+        width: 100%;
         display: grid;
         grid-template-columns: 1fr 3fr;
-        margin: 50px auto;
-        gap: 20px;
+        margin: 50px 0;
+        gap: 50px;
         @media screen and (max-width: 1028px) {
             grid-template-columns: 1fr;
             padding: 0 20px;
+            margin: 0;
         }
     }
     .image-grid {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
+        gap: 20px;
         @media screen and (max-width: 1028px) {
             grid-template-columns: 1fr;
         }
@@ -58,9 +70,8 @@ const { product, pageLanguage } = Astro.props;
         align-items: flex-start;
     }
     .grid-item img {
-        width: 100px;
-        height: 100px;
-        border-radius: 20px;
+        width: 30px;
+        height: 30px;
     }
     .grid-item-title {
         color: var(--lightgray);

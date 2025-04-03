@@ -1,0 +1,114 @@
+---
+const { product, pageLanguage } = Astro.props;
+---
+
+<div class="function">
+    <div class="headline-and-title">
+        <h2 class="animatable">{product.colors.headline[pageLanguage]}</h2>
+        <p class="headline-text">{product.colors.intro[pageLanguage]}</p>
+    </div>
+    <div class="main-image-and-grid">
+        <div class="main-image-wrapper">
+            <img src={product.images[0]} alt="" id="color-mainImage" />
+        </div>
+        <div class="image-grid">
+            {
+                product.colors.items.map((item) => {
+                    return (
+                        <div class="grid-item">
+                            <img src={item.image} alt="" class="color-image" />
+                            <p class="grid-item-title">
+                                {item.title[pageLanguage]}
+                            </p>
+                        </div>
+                    );
+                })
+            }
+        </div>
+    </div>
+</div>
+<script>
+    const images = Array.from(document.getElementsByClassName("color-image"));
+    const mainImage = document.getElementById("color-mainImage");
+    images.forEach((image) => {
+        image.addEventListener("click", (e) => {
+            mainImage.style.opacity = 0;
+            setTimeout(() => {
+                mainImage?.setAttribute("src", e.target.getAttribute("src"));
+                mainImage.style.opacity = 1;
+            }, 150);
+        });
+    });
+</script>
+<style>
+    h2 {
+        background: linear-gradient(135deg, var(--lightgray), var(--sand));
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        font-size: 1.2rem !important;
+        line-height: 1.2rem !important;
+        margin: 0;
+        text-transform: uppercase;
+    }
+    .headline-and-title {
+        border-right: 1px solid var(--sand);
+        padding-right: 20px;
+    }
+    .headline-text {
+        color: var(--lightgray);
+        font-size: 0.9rem;
+        font-weight: 500;
+    }
+    .function {
+        width: 100%;
+        display: grid;
+        grid-template-columns: 1fr 3fr;
+        margin: 50px 0;
+        gap: 50px;
+        @media screen and (max-width: 1028px) {
+            grid-template-columns: 1fr;
+            padding: 0 20px;
+            margin: 0;
+        }
+    }
+    .main-image-and-grid {
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        @media screen and (max-width: 1028px) {
+            grid-template-columns: 1fr;
+        }
+    }
+    .main-image-wrapper img {
+        width: 100%;
+        height: auto;
+    }
+    .image-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+        @media screen and (max-width: 1028px) {
+            grid-template-columns: 1fr 1fr 1fr;
+        }
+    }
+    .grid-item {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+    }
+    .grid-item img {
+        width: 50px;
+        height: 50px;
+        border-radius: 20px;
+        cursor: pointer;
+    }
+    .grid-item-title {
+        color: var(--lightgray);
+        font-weight: 700;
+        font-size: 0.8rem;
+        margin-bottom: 0;
+        text-align: center;
+    }
+    #color-mainImage {
+        transition: all 0.15s ease-in-out;
+    }
+</style>

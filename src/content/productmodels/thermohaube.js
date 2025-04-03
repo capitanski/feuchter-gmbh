@@ -1,230 +1,364 @@
-import thermohaubeSchraeg from "@/assets/Produkte/Thermohaube_Staubhaube Schräg.jpg"
-import thermohaubeFront from "@/assets/Produkte/Thermohaube_Staubhaube Frontal.jpg"
-import thermohaubeVerschluss from "@/assets/Produkte/Thermohaube_Staubhaube Verschluss.jpg"
-export const thermohaubeProducts = [
-    {
-        title: {
-            de: "Thermohaube für Rollcontainer, Nutzhöhe 1700mm",
-            en: "Thermal Cover for Roll Containers, Usable height 1700mm"
-        },
-        shortDescription: {
-            de: `Die Thermohaube für Rollbehälter ist eine innovative Lösung, um Ihre Ware vor äußeren Einflüssen zu schützen. Egal, ob Hitze, Kälte, Staub uvw. Alternativ mit oder ohne transparente Tasche für Dokumente. Auch Ihr eigenes Logo kann auf Wunsch platziert werden. Ideal geeignet für die thermische Isolation von Frischeartikeln, welche mittels Rollbehälter transportiert werden. Verringert das Risiko der Kühlkettenunterbrechung während der Auslieferung.`,
-            en: `The thermal cover for roll containers is an innovative solution to protect goods from external influences such as heat, cold, or dust. Optionally available with or without a transparent document pocket. Custom branding with your logo is possible. Ideal for the thermal insulation of perishable goods transported in roll containers, helping to reduce the risk of cold chain interruption during delivery.`
-        },
-        category: {
-            de: "Thermohauben",
-            en: "Thermal Covers"
-        },
-        tag: {
-            de: "Wahlweise mit Dokumententasche und/oder Logodruck",
-            en: "Optionally with document pouch and/or logo print"
-        },
-        images: [
-            thermohaubeSchraeg.src,
-            thermohaubeFront.src,
-            thermohaubeVerschluss.src
-        ],
-        lists: [
-            {
-                title: {
-                    de: "Technische Daten",
-                    en: "Technical Data"
-                },
-                content: [
-                    {
-                        de: "Thermisch isolierender Stoff. (lebensmittelgeeignet)",
-                        en: "Thermally insulating material (food-safe)"
-                    },
-                    {
-                        de: "Dokumententasche auf der Vorderseite.",
-                        en: "Document pocket on the front"
-                    },
-                    {
-                        de: "Passend für Standard-Rollbehälter 720x815 mm",
-                        en: "Fits standard roll containers (720×815 mm)"
-                    },
-                    {
-                        de: "Nutzhöhe variabel (auf Anfrage)",
-                        en: "Usable height variable (on request)"
-                    },
-                    {
-                        de: "Nur in Farbe Schwarz gem. Abbildung lieferbar.",
-                        en: "Available only in black (as shown)"
-                    },
-                    {
-                        de: "Verschluss der Vorderwand mittels Klettsystem ermöglicht ein einfaches Überstülpen der kompletten Haube.",
-                        en: "Front panel with hook-and-loop closure enables easy covering of the entire container"
-                    },
-                    {
-                        de: "Nachträgliches Be- und Entladen von Ware jederzeit möglich.",
-                        en: "Post-loading and unloading of goods possible at any time"
-                    },
-                    {
-                        de: "Personalisierung der Thermohaube mit Ihrem Kundenlogo",
-                        en: "Custom branding with your company logo"
-                    }
-                ]
-            }
-        ],
-        optionalRichtext: {
-            title: {
-                de: "Richtext Titel Optional",
-                en: "Richtext Title Optional"
-            },
-            content: {
-                de: "Deutscher Richtext set:html",
-                en: "English Richtext set:html"
-            }
-        }
+import schutzwandSchraeg from "@/assets/Produkte/schutzwand_schraeg.jpg"
+import schutzwandFront from "@/assets/Produkte/schutzwand_front.jpg"
+import schutzwandVerschluss from "@/assets/Produkte/schutzwand_verschluss.jpg"
+import schutzwandFarbig from "@/assets/Produkte/Transportwand farbig.jpg"
+import thermohaubeImage from "@/assets/Thermohaube quer.jpg";
+import star from "@/assets/star-regular.svg"
+
+
+
+export const thermohaube = {
+    headerImage: thermohaubeImage.src,
+    title: {
+        de: "Die Thermohaube für Rollcontainer",
+        en: "The Patented Protective Wall for Roll Containers"
     },
-    {
-        title: {
-            de: "Thermohaube für Rollcontainer, Nutzhöhe 1450mm",
-            en: "Thermal Cover for Roll Containers, Usable height 1450mm"
-        },
-        shortDescription: {
-            de: `Die Thermohaube für Rollbehälter ist eine innovative Lösung, um Ihre Ware vor äußeren Einflüssen zu schützen. Egal, ob Hitze, Kälte, Staub uvw. Alternativ mit oder ohne transparente Tasche für Dokumente. Auch Ihr eigenes Logo kann auf Wunsch platziert werden. Ideal geeignet für die thermische Isolation von Frischeartikeln, welche mittels Rollbehälter transportiert werden. Verringert das Risiko der Kühlkettenunterbrechung während der Auslieferung.`,
-            en: `The thermal cover for roll containers is an innovative solution to protect goods from external influences such as heat, cold, or dust. Optionally available with or without a transparent document pocket. Custom branding with your logo is possible. Ideal for the thermal insulation of perishable goods transported in roll containers, helping to reduce the risk of cold chain interruption during delivery.`
-        },
-        category: {
-            de: "Thermohauben",
-            en: "Thermal Covers"
-        },
-        tag: {
-            de: "Wahlweise mit Dokumententasche und/oder Logodruck",
-            en: "Optionally with document pouch and/or logo print"
-        },
-        images: [
-            thermohaubeSchraeg.src,
-            thermohaubeFront.src,
-            thermohaubeVerschluss.src
-        ],
-        lists: [
-            {
-                title: {
-                    de: "Technische Daten",
-                    en: "Technical Data"
-                },
-                content: [
-                    {
-                        de: "Thermisch isolierender Stoff. (lebensmittelgeeignet)",
-                        en: "Thermally insulating material (food-safe)"
-                    },
-                    {
-                        de: "Dokumententasche auf der Vorderseite.",
-                        en: "Document pocket on the front"
-                    },
-                    {
-                        de: "Passend für Standard-Rollbehälter 720x815 mm",
-                        en: "Fits standard roll containers (720×815 mm)"
-                    },
-                    {
-                        de: "Nutzhöhe variabel (auf Anfrage)",
-                        en: "Usable height variable (on request)"
-                    },
-                    {
-                        de: "Nur in Farbe Schwarz gem. Abbildung lieferbar.",
-                        en: "Available only in black (as shown)"
-                    },
-                    {
-                        de: "Verschluss der Vorderwand mittels Klettsystem ermöglicht ein einfaches Überstülpen der kompletten Haube.",
-                        en: "Front panel with hook-and-loop closure enables easy covering of the entire container"
-                    },
-                    {
-                        de: "Nachträgliches Be- und Entladen von Ware jederzeit möglich.",
-                        en: "Post-loading and unloading of goods possible at any time"
-                    },
-                    {
-                        de: "Personalisierung der Thermohaube mit Ihrem Kundenlogo",
-                        en: "Custom branding with your company logo"
-                    }
-                ]
-            }
-        ],
-        optionalRichtext: {
-            title: {
-                de: "Richtext Titel Optional",
-                en: "Richtext Title Optional"
-            },
-            content: {
-                de: "Deutscher Richtext set:html",
-                en: "English Richtext set:html"
-            }
-        }
+    subtitle: {
+        de: "Kühlketten leicht gemacht",
+        en: "Secure sustainably instead of wasting"
     },
-    {
-        title: {
-            de: "Thermohaube für Rollcontainer, variable Nutzhöhe",
-            en: "Thermal Cover for Roll Containers, variable height"
+    shortDescription: {
+        de: `Unsere patentierte Schutzwand für Rollbehälter erleichtert den Transport Ihrer Ware. Außerdem wird durch die Wiederverwendung Plastikmüll gespart. Alternativ in unterschiedlichen Farben erhältlich. Außerdem für den individuellen Touch, kann das eigene Logo platziert werden. Patentiertes Produkt zur Warensicherung im Rollbehälter. Das 6-Punkt-Clicksystem ermöglicht eine einfache Befestigung an den Seitengittern.`,
+        en: `Our patented protective wall for roll containers makes transporting your goods easier and more secure. By reusing the product, plastic waste is significantly reduced. Available in various colors and customizable with your company logo. The 6-point click system allows for quick and easy attachment to the container’s side panels — a patented solution for securing goods in transport.`
+    },
+    category: {
+        de: "Schutzwände",
+        en: "Protective Walls"
+    },
+    tag: {
+        de: "Wahlweise mit Logodruck & verschiedenen Farben",
+        en: "Optionally with logo print & different colors"
+    },
+    images: [
+        schutzwandFarbig.src,
+        schutzwandFront.src,
+        schutzwandVerschluss.src
+    ],
+    function: {
+        headline: {
+            de: "Funktionsweise",
+            en: "How it works"
         },
-        shortDescription: {
-            de: `Die Thermohaube für Rollbehälter ist eine innovative Lösung, um Ihre Ware vor äußeren Einflüssen zu schützen. Egal, ob Hitze, Kälte, Staub uvw. Alternativ mit oder ohne transparente Tasche für Dokumente. Auch Ihr eigenes Logo kann auf Wunsch platziert werden. Ideal geeignet für die thermische Isolation von Frischeartikeln, welche mittels Rollbehälter transportiert werden. Verringert das Risiko der Kühlkettenunterbrechung während der Auslieferung.`,
-            en: `The thermal cover for roll containers is an innovative solution to protect goods from external influences such as heat, cold, or dust. Optionally available with or without a transparent document pocket. Custom branding with your logo is possible. Ideal for the thermal insulation of perishable goods transported in roll containers, helping to reduce the risk of cold chain interruption during delivery.`
+        intro: {
+            de: "Lorem ipsum dolor sit amet. Sit molestias esse et voluptas ducimus est nihil sunt et velit nostrum aut blanditiis tenetur. Est animi sunt ex quae ipsam et distinctio impedit ea commodi necessitatibus quo explicabo soluta sit cumque exercitationem et ipsum doloremque.",
+            en: "Lorem ipsum dolor sit amet. Sit molestias esse et voluptas ducimus est nihil sunt et velit nostrum aut blanditiis tenetur. Est animi sunt ex quae ipsam et distinctio impedit ea commodi necessitatibus quo explicabo soluta sit cumque exercitationem et ipsum doloremque."
         },
-        category: {
-            de: "Thermohauben",
-            en: "Thermal Covers"
-        },
-        tag: {
-            de: "Wahlweise mit Dokumententasche und/oder Logodruck",
-            en: "Optionally with document pouch and/or logo print"
-        },
-        images: [
-            thermohaubeSchraeg.src,
-            thermohaubeFront.src,
-            thermohaubeVerschluss.src
-        ],
-        lists: [
+        items: [
             {
                 title: {
-                    de: "Technische Daten",
-                    en: "Technical Data"
+                    de: "Haken einhängen",
+                    en: "Apply hooks"
                 },
-                content: [
-                    {
-                        de: "Thermisch isolierender Stoff. (lebensmittelgeeignet)",
-                        en: "Thermally insulating material (food-safe)"
-                    },
-                    {
-                        de: "Dokumententasche auf der Vorderseite.",
-                        en: "Document pocket on the front"
-                    },
-                    {
-                        de: "Passend für Standard-Rollbehälter 720x815 mm",
-                        en: "Fits standard roll containers (720×815 mm)"
-                    },
-                    {
-                        de: "Nutzhöhe variabel (auf Anfrage)",
-                        en: "Usable height variable (on request)"
-                    },
-                    {
-                        de: "Nur in Farbe Schwarz gem. Abbildung lieferbar.",
-                        en: "Available only in black (as shown)"
-                    },
-                    {
-                        de: "Verschluss der Vorderwand mittels Klettsystem ermöglicht ein einfaches Überstülpen der kompletten Haube.",
-                        en: "Front panel with hook-and-loop closure enables easy covering of the entire container"
-                    },
-                    {
-                        de: "Nachträgliches Be- und Entladen von Ware jederzeit möglich.",
-                        en: "Post-loading and unloading of goods possible at any time"
-                    },
-                    {
-                        de: "Personalisierung der Thermohaube mit Ihrem Kundenlogo",
-                        en: "Custom branding with your company logo"
-                    }
-                ]
-            }
-        ],
-        optionalRichtext: {
-            title: {
-                de: "Richtext Titel Optional",
-                en: "Richtext Title Optional"
+                img: schutzwandSchraeg.src,
+                text: {
+                    de: "Lorem ipsum dolor sit amet. Sit molestias esse et voluptas ducimus est nihil sunt et velit nostrum aut blanditiis tenetur. Est animi sunt ex quae ipsam et distinctio impedit ea commodi necessitatibus quo explicabo soluta sit cumque exercitationem et ipsum doloremque.",
+                    en: "Lorem ipsum dolor sit amet. Sit molestias esse et voluptas ducimus est nihil sunt et velit nostrum aut blanditiis tenetur. Est animi sunt ex quae ipsam et distinctio impedit ea commodi necessitatibus quo explicabo soluta sit cumque exercitationem et ipsum doloremque."
+                }
             },
-            content: {
-                de: "Deutscher Richtext set:html",
-                en: "English Richtext set:html"
+            {
+                title: {
+                    de: "Haken einhängen",
+                    en: "Apply hooks"
+                },
+                img: schutzwandFront.src,
+                text: {
+                    de: "Lorem ipsum dolor sit amet. Sit molestias esse et voluptas ducimus est nihil sunt et velit nostrum aut blanditiis tenetur. Est animi sunt ex quae ipsam et distinctio impedit ea commodi necessitatibus quo explicabo soluta sit cumque exercitationem et ipsum doloremque.",
+                    en: "Lorem ipsum dolor sit amet. Sit molestias esse et voluptas ducimus est nihil sunt et velit nostrum aut blanditiis tenetur. Est animi sunt ex quae ipsam et distinctio impedit ea commodi necessitatibus quo explicabo soluta sit cumque exercitationem et ipsum doloremque."
+                }
+            },
+            {
+                title: {
+                    de: "Haken einhängen",
+                    en: "Apply hooks"
+                },
+                img: schutzwandVerschluss.src,
+                text: {
+                    de: "Lorem ipsum dolor sit amet. Sit molestias esse et voluptas ducimus est nihil sunt et velit nostrum aut blanditiis tenetur. Est animi sunt ex quae ipsam et distinctio impedit ea commodi necessitatibus quo explicabo soluta sit cumque exercitationem et ipsum doloremque.",
+                    en: "Lorem ipsum dolor sit amet. Sit molestias esse et voluptas ducimus est nihil sunt et velit nostrum aut blanditiis tenetur. Est animi sunt ex quae ipsam et distinctio impedit ea commodi necessitatibus quo explicabo soluta sit cumque exercitationem et ipsum doloremque."
+                }
             }
+        ]
+    },
+    usps: {
+        headline: {
+            de: "Die All-Round Lösung",
+            en: "The All-Round Solution"
+        },
+        intro: {
+            de: "Lorem ipsum dolor sit amet. Sit molestias esse et voluptas ducimus est nihil sunt et velit nostrum aut blanditiis tenetur. Est animi sunt ex quae ipsam et distinctio impedit ea commodi necessitatibus quo explicabo soluta sit cumque exercitationem et ipsum doloremque.",
+            en: "Lorem ipsum dolor sit amet. Sit molestias esse et voluptas ducimus est nihil sunt et velit nostrum aut blanditiis tenetur. Est animi sunt ex quae ipsam et distinctio impedit ea commodi necessitatibus quo explicabo soluta sit cumque exercitationem et ipsum doloremque."
+        },
+        items: [
+            {
+                title: {
+                    de: "Personalisierbar",
+                    en: "Apply hooks"
+                },
+                img: star.src,
+                text: {
+                    de: "Lorem ipsum dolor sit amet. Sit molestias esse et voluptas ducimus est nihil sunt et velit nostrum aut blanditiis tenetur. Est animi sunt ex quae ipsam et distinctio impedit ea commodi necessitatibus quo explicabo soluta sit cumque exercitationem et ipsum doloremque.",
+                    en: "Lorem ipsum dolor sit amet. Sit molestias esse et voluptas ducimus est nihil sunt et velit nostrum aut blanditiis tenetur. Est animi sunt ex quae ipsam et distinctio impedit ea commodi necessitatibus quo explicabo soluta sit cumque exercitationem et ipsum doloremque."
+                }
+            },
+            {
+                title: {
+                    de: "Kompatibilität",
+                    en: "Apply hooks"
+                },
+                img: star.src,
+                text: {
+                    de: "Lorem ipsum dolor sit amet. Sit molestias esse et voluptas ducimus est nihil sunt et velit nostrum aut blanditiis tenetur. Est animi sunt ex quae ipsam et distinctio impedit ea commodi necessitatibus quo explicabo soluta sit cumque exercitationem et ipsum doloremque.",
+                    en: "Lorem ipsum dolor sit amet. Sit molestias esse et voluptas ducimus est nihil sunt et velit nostrum aut blanditiis tenetur. Est animi sunt ex quae ipsam et distinctio impedit ea commodi necessitatibus quo explicabo soluta sit cumque exercitationem et ipsum doloremque."
+                }
+            },
+            {
+                title: {
+                    de: "Einfache Befestigung",
+                    en: "Apply hooks"
+                },
+                img: star.src,
+                text: {
+                    de: "Lorem ipsum dolor sit amet. Sit molestias esse et voluptas ducimus est nihil sunt et velit nostrum aut blanditiis tenetur. Est animi sunt ex quae ipsam et distinctio impedit ea commodi necessitatibus quo explicabo soluta sit cumque exercitationem et ipsum doloremque.",
+                    en: "Lorem ipsum dolor sit amet. Sit molestias esse et voluptas ducimus est nihil sunt et velit nostrum aut blanditiis tenetur. Est animi sunt ex quae ipsam et distinctio impedit ea commodi necessitatibus quo explicabo soluta sit cumque exercitationem et ipsum doloremque."
+                }
+            },
+            {
+                title: {
+                    de: "Sicherheit",
+                    en: "Apply hooks"
+                },
+                img: star.src,
+                text: {
+                    de: "Lorem ipsum dolor sit amet. Sit molestias esse et voluptas ducimus est nihil sunt et velit nostrum aut blanditiis tenetur. Est animi sunt ex quae ipsam et distinctio impedit ea commodi necessitatibus quo explicabo soluta sit cumque exercitationem et ipsum doloremque.",
+                    en: "Lorem ipsum dolor sit amet. Sit molestias esse et voluptas ducimus est nihil sunt et velit nostrum aut blanditiis tenetur. Est animi sunt ex quae ipsam et distinctio impedit ea commodi necessitatibus quo explicabo soluta sit cumque exercitationem et ipsum doloremque."
+                }
+            },
+            {
+                title: {
+                    de: "Stabilität",
+                    en: "Apply hooks"
+                },
+                img: star.src,
+                text: {
+                    de: "Lorem ipsum dolor sit amet. Sit molestias esse et voluptas ducimus est nihil sunt et velit nostrum aut blanditiis tenetur. Est animi sunt ex quae ipsam et distinctio impedit ea commodi necessitatibus quo explicabo soluta sit cumque exercitationem et ipsum doloremque.",
+                    en: "Lorem ipsum dolor sit amet. Sit molestias esse et voluptas ducimus est nihil sunt et velit nostrum aut blanditiis tenetur. Est animi sunt ex quae ipsam et distinctio impedit ea commodi necessitatibus quo explicabo soluta sit cumque exercitationem et ipsum doloremque."
+                }
+            },
+            {
+                title: {
+                    de: "Nachhaltigkeit",
+                    en: "Apply hooks"
+                },
+                img: star.src,
+                text: {
+                    de: "Lorem ipsum dolor sit amet. Sit molestias esse et voluptas ducimus est nihil sunt et velit nostrum aut blanditiis tenetur. Est animi sunt ex quae ipsam et distinctio impedit ea commodi necessitatibus quo explicabo soluta sit cumque exercitationem et ipsum doloremque.",
+                    en: "Lorem ipsum dolor sit amet. Sit molestias esse et voluptas ducimus est nihil sunt et velit nostrum aut blanditiis tenetur. Est animi sunt ex quae ipsam et distinctio impedit ea commodi necessitatibus quo explicabo soluta sit cumque exercitationem et ipsum doloremque."
+                }
+            }
+        ]
+    },
+    colors: {
+        headline: {
+            de: "Farbvarianten",
+            en: "Color Variants"
+        },
+        intro: {
+            de: "Lorem ipsum dolor sit amet. Sit molestias esse et voluptas ducimus est nihil sunt et velit nostrum aut blanditiis tenetur. Est animi sunt ex quae ipsam et distinctio impedit ea commodi necessitatibus quo explicabo soluta sit cumque exercitationem et ipsum doloremque.",
+            en: "Lorem ipsum dolor sit amet. Sit molestias esse et voluptas ducimus est nihil sunt et velit nostrum aut blanditiis tenetur. Est animi sunt ex quae ipsam et distinctio impedit ea commodi necessitatibus quo explicabo soluta sit cumque exercitationem et ipsum doloremque."
+        },
+        items: [
+            {
+                title: {
+                    de: "Rot",
+                    en: "Red",
+
+                },
+                image: schutzwandVerschluss.src
+            },
+            {
+                title: {
+                    de: "Blau",
+                    en: "Blue",
+
+                },
+                image: schutzwandFarbig.src
+            },
+            {
+                title: {
+                    de: "Navy",
+                    en: "Navy",
+
+                },
+                image: schutzwandFarbig.src
+            },
+            {
+                title: {
+                    de: "Steingrau",
+                    en: "Stonegray",
+
+                },
+                image: schutzwandFarbig.src
+            },
+            {
+                title: {
+                    de: "Rot",
+                    en: "Red",
+
+                },
+                image: schutzwandFarbig.src
+            },
+            {
+                title: {
+                    de: "Blau",
+                    en: "Blue",
+
+                },
+                image: schutzwandFarbig.src
+            },
+            {
+                title: {
+                    de: "Navy",
+                    en: "Navy",
+
+                },
+                image: schutzwandFarbig.src
+            },
+            {
+                title: {
+                    de: "Steingrau",
+                    en: "Stonegray",
+
+                },
+                image: schutzwandFarbig.src
+            },
+            {
+                title: {
+                    de: "Rot",
+                    en: "Red",
+
+                },
+                image: schutzwandFarbig.src
+            },
+            {
+                title: {
+                    de: "Blau",
+                    en: "Blue",
+
+                },
+                image: schutzwandFarbig.src
+            },
+            {
+                title: {
+                    de: "Navy",
+                    en: "Navy",
+
+                },
+                image: schutzwandFarbig.src
+            },
+            {
+                title: {
+                    de: "Steingrau",
+                    en: "Stonegray",
+
+                },
+                image: schutzwandFarbig.src
+            },
+            {
+                title: {
+                    de: "Rot",
+                    en: "Red",
+
+                },
+                image: schutzwandFarbig.src
+            },
+            {
+                title: {
+                    de: "Blau",
+                    en: "Blue",
+
+                },
+                image: schutzwandFarbig.src
+            },
+            {
+                title: {
+                    de: "Navy",
+                    en: "Navy",
+
+                },
+                image: schutzwandFarbig.src
+            },
+            {
+                title: {
+                    de: "Steingrau",
+                    en: "Stonegray",
+
+                },
+                image: schutzwandFarbig.src
+            }
+        ]
+    },
+    lists: [
+        {
+            title: {
+                de: "Technische Daten",
+                en: "Technical Data"
+            },
+            content: [
+                {
+                    de: "Verwendung von umweltschädlicher Stretch-Folie entfällt",
+                    en: "Eliminates the need for environmentally harmful stretch film"
+                },
+                {
+                    de: "Schutzwand wird durch die Kraft elastischer Bänder auf Zug gehalten; somit kein Überspannen der Seitengitter nach innen; Quetschungen empfindlicher Ware daher ausgeschlossen",
+                    en: "Held under tension by elastic bands — prevents side grids from bending inward and protects sensitive goods from being crushed"
+                },
+                {
+                    de: "Vorspannung justierbar",
+                    en: "Adjustable tensioning"
+                },
+                {
+                    de: "Kompatibel mit automatisierter Warenbestückung des Rollbehälters",
+                    en: "Compatible with automated goods loading systems for roll containers"
+                },
+                {
+                    de: "Schutzwände können nach Gebrauch an den Seitengittern verstaut bzw. eingeklappt werden",
+                    en: "Can be folded or stored on the side panels when not in use"
+                },
+                {
+                    de: "Stabilität: Stabilisierung durch zwei an den Seiten eingenähte Glasfaserstäbe",
+                    en: "Stabilized with two integrated fiberglass rods sewn into the sides"
+                },
+                {
+                    de: "Außenbahnen in Wunschfarbe oder transparent erhältlich",
+                    en: "Outer panels available in custom colors or transparent"
+                },
+                {
+                    de: "Personalisierung der Schutzwand mit Ihrem Kundenlogo",
+                    en: "Custom branding with your company logo possible"
+                },
+                {
+                    de: "Zusätzliche Verstärkungsstäbe",
+                    en: "Optional reinforcement rods for extra durability"
+                },
+                {
+                    de: "Dokumententasche",
+                    en: "Integrated document pocket"
+                },
+                {
+                    de: "Diebstahlschutz (Sicherungskeile)",
+                    en: "Anti-theft protection (locking wedges)"
+                }
+            ]
+        }
+    ],
+    optionalRichtext: {
+        title: {
+            de: "Richtext Titel Optional",
+            en: "Richtext Title Optional"
+        },
+        content: {
+            de: "Deutscher Richtext set:html",
+            en: "English Richtext set:html"
         }
     }
-]
+}

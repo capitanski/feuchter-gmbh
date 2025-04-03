@@ -1,22 +1,33 @@
 ---
-const { product, pageLanguage } = Astro.props;
+const { categories, pageLanguage, textContent } = Astro.props;
+import Arrow from "@/assets/Arrow_sand.svg";
+import { buttonTranslations } from "@/content/translations";
 ---
 
 <div class="function">
     <div class="headline-and-title">
-        <h2 class="animatable">{product.function.headline[pageLanguage]}</h2>
-        <p class="headline-text">{product.function.intro[pageLanguage]}</p>
+        <h2 class="animatable">{textContent.title[pageLanguage]}</h2>
+        <p class="headline-text">{textContent.text[pageLanguage]}</p>
     </div>
     <div class="image-grid">
         {
-            product.function.items.map((item) => {
+            categories.map((item) => {
                 return (
                     <div class="grid-item">
                         <img src={item.img} alt="" />
                         <p class="grid-item-title">
                             {item.title[pageLanguage]}
                         </p>
-                        <p class="grid-item-text">{item.text[pageLanguage]}</p>
+                        <p class="grid-item-text">{item[pageLanguage]}</p>
+                        <a
+                            href={`/${pageLanguage}/transportsolutions/${item.slug}`}
+                            class="project-link"
+                        >
+                            <img src={Arrow.src} alt="" />
+                            <span>
+                                {buttonTranslations("toproducts", pageLanguage)}
+                            </span>
+                        </a>
                     </div>
                 );
             })
@@ -83,5 +94,26 @@ const { product, pageLanguage } = Astro.props;
         color: var(--lightgray);
         font-weight: 300;
         font-size: 0.8rem;
+    }
+    .project-link {
+        color: var(--sand);
+        text-decoration: none;
+        font-size: 0.7rem;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: center;
+        transition: gap 0.3s ease-in-out;
+        gap: 10px;
+        font-family: "Afacadflux", sans-serif;
+        text-transform: uppercase;
+        letter-spacing: 3px;
+    }
+    .project-link:hover {
+        gap: 20px;
+    }
+    .project-link img {
+        width: 5px;
+        height: auto;
     }
 </style>

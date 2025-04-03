@@ -1,17 +1,34 @@
-export const transportCategories = {
-    protectivewalls: {
-        key: "protectivewalls",
-        de: "Schutzwände",
-        en: "Protective walls"
+import schutzwandSchraeg from "@/assets/Produkte/schutzwand_schraeg.jpg"
+import schutzwandFront from "@/assets/Produkte/schutzwand_front.jpg"
+import schutzwandVerschluss from "@/assets/Produkte/schutzwand_verschluss.jpg"
+import schutzwandFarbig from "@/assets/Produkte/Transportwand farbig.jpg"
+export const transportCategories = [
+    {
+        slug: "protectivewalls",
+        title: {
+            de: "Schutzwände",
+            en: "Protective walls",
+        },
+
+        img: schutzwandFarbig.src
     },
-    dustcovers: {
-        key: "dustcovers",
-        de: "Staubhauben",
-        en: "Dust covers"
+    {
+        slug: "dustcovers",
+        title: {
+            de: "Staubhauben",
+            en: "Dust covers",
+        },
+
+        img: schutzwandFarbig.src
     },
-    thermalcovers: {
-        key: "thermalcovers",
-        de: "Thermohauben",
-        en: "Thermal covers"
+    {
+        slug: "thermalcovers",
+        title: {
+            de: "Thermohauben",
+            en: "Thermal covers",
+        },
+
+        img: schutzwandFarbig.src
     }
-}
+]
+

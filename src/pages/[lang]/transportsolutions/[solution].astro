@@ -1,23 +1,30 @@
 ---
 import Layout from "@/layouts/Layout.astro";
 import ProductGridTransport from "@/components/ProductGridTransport.astro";
-import HeaderImage from "@/assets/transportwand_header.jpg";
-import products from "@/content/transportProducts";
-import { transportCategories } from "@/content/transportCategories";
-import { transportTexts } from "@/content/transportTexts";
+import ContactForm from "@/components/ContactForm.astro";
 // Hier einfach alle Transportprodukte importieren und dann nach dem richtigen filtern
 // Auch Thermohaube und Staubhaube importieren, aber an Schutzwand Model anlehnen
 import { schutzwand } from "@/content/productmodels/schutzwand";
+import { thermohaube } from "@/content/productmodels/thermohaube";
+import { staubhaube } from "@/content/productmodels/staubhaube";
 import type { AstroLocals } from "@/types";
-import schutzwandImage from "@/assets/Transportwand quer.jpg";
 import mobileSchutzwand from "@/assets/Transportwand mobile.jpg";
 const { locals } = Astro as unknown as { locals: AstroLocals };
 const { url } = Astro.request;
+const { solution } = Astro.params;
 const pageLanguage = locals.language;
-
+let currentProduct;
 // Hier nach dem URL Param filtern und richtiges Produkt auswählen oder 404 werfen
 // Vorest bleibt das die Schutzwand
-const currentProduct = schutzwand;
+if (solution == "protectivewalls") {
+    currentProduct = schutzwand;
+}
+if (solution == "dustcovers") {
+    currentProduct = staubhaube;
+}
+if (solution == "thermalcovers") {
+    currentProduct = thermohaube;
+}
 
 const links = [
     {
@@ -45,13 +52,27 @@ const links = [
         },
     },
 ];
+let heading = "Ihre Vision ist nur noch einen Klick entfernt";
+let subtitle = "Wir freuen uns, von Ihnen zu hören";
+let introText = `
+Wir unterstützen unsere Kunden von Anfang an bei ihren Projekten – von der Konzeption und Entwicklung über die Produktion bis hin zur Logistik. Mit unserer Expertise sorgen wir für maßgeschneiderte Lösungen, die effizient, zuverlässig und nachhaltig sind.`;
+if (pageLanguage == "en") {
+    heading = "Your Vision is just a click away";
+    subtitle = "We are looking forward to hear from you";
+    introText = `
+We support our customers from the very beginning of their projects – from conception and development to production and logistics. With our expertise, we ensure tailored solutions that are efficient, reliable, and sustainable.`;
+}
 ---
 
 <Layout>
     <ProductGridTransport
         pageLanguage={pageLanguage}
         links={links}
-        headerImage={schutzwandImage.src}
         product={currentProduct}
+    />
+    <ContactForm
+        heading={heading}
+        subtitle={subtitle}
+        language={pageLanguage}
     />
 </Layout>
