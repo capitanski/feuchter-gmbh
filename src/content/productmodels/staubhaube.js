@@ -2,13 +2,15 @@ import schutzwandSchraeg from "@/assets/Produkte/schutzwand_schraeg.jpg"
 import schutzwandFront from "@/assets/Produkte/schutzwand_front.jpg"
 import schutzwandVerschluss from "@/assets/Produkte/schutzwand_verschluss.jpg"
 import schutzwandFarbig from "@/assets/Produkte/Transportwand farbig.jpg"
+import thermohaubeFarbig from "@/assets/Produkte/Thermohaube farbig.jpg"
 import staubhaubeImage from "@/assets/Staubhaube quer.jpg";
+import projekte from "@/assets/projekte.jpg"
 import star from "@/assets/star-regular.svg"
 
 
 
 export const staubhaube = {
-    headerImage: staubhaubeImage.src,
+    headerImage: thermohaubeFarbig.src,
     title: {
         de: "Die Schutzhaube für Rollcontainer",
         en: "The Patented Protective Wall for Roll Containers"
