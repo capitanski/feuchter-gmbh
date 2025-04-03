@@ -4,7 +4,7 @@ import schutzwandVerschluss from "@/assets/Produkte/schutzwand_verschluss.jpg"
 import schutzwandFarbig from "@/assets/Produkte/Transportwand farbig.jpg"
 export const transportCategories = [
     {
-        slug: "protectivewalls",
+        slug: "transportsolutions/protectivewalls",
         title: {
             de: "Schutzwände",
             en: "Protective walls",
@@ -13,7 +13,7 @@ export const transportCategories = [
         img: schutzwandFarbig.src
     },
     {
-        slug: "dustcovers",
+        slug: "transportsolutions/dustcovers",
         title: {
             de: "Staubhauben",
             en: "Dust covers",
@@ -22,7 +22,7 @@ export const transportCategories = [
         img: schutzwandFarbig.src
     },
     {
-        slug: "thermalcovers",
+        slug: "transportsolutions/thermalcovers",
         title: {
             de: "Thermohauben",
             en: "Thermal covers",

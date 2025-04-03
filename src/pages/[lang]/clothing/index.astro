@@ -1,71 +1,44 @@
 ---
-import WelcomeLeftAligned from "@/components/WelcomeLeftAligned.astro";
 import Layout from "@/layouts/Layout.astro";
-import Products from "@/components/Products.astro";
-import Scribble from "@/assets/feuchter_gmbh_header.jpg";
-import ProductGrid from "@/components/ProductGrid.astro";
-import HeaderImage from "@/assets/feuchter_gmbh_header.jpg";
-import { clothingProducts } from "@/content/productmodels/military-and-survival";
-import products from "@/content/clothingProducts";
+import CategoryHeader from "@/components/CategoryHeader.astro";
 import { clothingCategories } from "@/content/clothingCategories";
-import { clothingTexts } from "@/content/clothingTexts";
-import type { AstroLocals } from "@/types";
-const { locals } = Astro as unknown as { locals: AstroLocals };
-const { url } = Astro.request;
-const searchParams = new URL(url).searchParams;
-const searchCategory = searchParams.get("category");
-const pageLanguage = locals.language;
-
-const links = [
-  {
-    href: `clothing?category=military-and-survival`,
-    searchCategory: "military-and-survival",
-    linkText: {
-      de: "Militär- und Survivalkleidung",
-      en: "Military- and Survivalclothing",
-    },
+import bekleidung from "@/assets/projekte.jpg";
+const pageLanguage = Astro.locals.language;
+const textContent = {
+  title: {
+    de: "Bekleidungslösungen für Unternehmen, Militär und Behörden",
+    en: "Reusable Solutions for Roll Cage Trolleys",
   },
-  {
-    href: `clothing?category=officialwear`,
-    searchCategory: "officialwear",
-    linkText: {
-      de: "Behörden- & Securitykleidung",
-      en: "Official- and Securityclothing",
-    },
+  text: {
+    de: "Lorem ipsum dolor sit amet. Sit molestias esse et voluptas ducimus est nihil sunt et velit nostrum aut blanditiis tenetur. Est animi sunt ex quae ipsam et distinctio impedit ea commodi necessitatibus quo explicabo soluta sit cumque exercitationem et ipsum doloremque.",
+    en: "Lorem ipsum dolor sit amet. Sit molestias esse et voluptas ducimus est nihil sunt et velit nostrum aut blanditiis tenetur. Est animi sunt ex quae ipsam et distinctio impedit ea commodi necessitatibus quo explicabo soluta sit cumque exercitationem et ipsum doloremque.",
   },
-  {
-    href: `clothing?category=corporate-fashion`,
-    searchCategory: "corporate-fashion",
-    linkText: {
-      de: "Corporate Fashion",
-      en: "Corporate Fashion",
-    },
-  },
-];
-
-let heading =
-  "Von Militär- & Survivalkleidung über Behördenkleidung bis hin zu feinster Corporate Fashion";
-let subtitle = "Egal ob für Armeen, Behörden, Onlineshops oder Unternehmen";
-let introText = `Von robuster Militär- und Survivalkleidung über funktionale Behördenausstattung bis hin zu maßgeschneiderter Corporate Fashion – wir statten Sie aus. Ob für Armeen, Einsatzkräfte, Onlineshops oder Unternehmen: Unsere Produkte vereinen Qualität, Funktionalität und Design auf höchstem Niveau. Vertrauen Sie auf Erfahrung, Präzision und textile Lösungen, die den Unterschied machen. Kontaktieren Sie uns gerne für Anfragen oder individuelle Lösungen.`;
-if (pageLanguage == "en") {
-  heading =
-    "From military and survival clothing to official uniforms and premium corporate fashion";
-  subtitle =
-    "Whether for armed forces, government agencies, online retailers, or businesses";
-  introText = `From rugged military and survival apparel to functional gear for authorities and tailored corporate fashion – we’ve got you covered. Whether for armed forces, emergency services, online retailers, or businesses: our products combine quality, functionality, and design at the highest level. Rely on experience, precision, and textile solutions that make a difference. Feel free to reach out to us for inquiries or customized solutions.`;
-}
+};
 ---
 
 <Layout>
-  <ProductGrid
-    products={products}
-    pageLanguage={pageLanguage}
-    searchCategory={searchCategory}
-    links={links}
-    headerImage={HeaderImage}
-    heading={heading}
-    introText={introText}
-    subtitle={subtitle}
-    texts={clothingTexts}
-  />
+  <section>
+    <div class="container">
+      <CategoryHeader
+        categories={clothingCategories}
+        pageLanguage={pageLanguage}
+        textContent={textContent}
+      />
+    </div>
+  </section>
 </Layout>
+<style>
+  section {
+    background-image: linear-gradient(
+        to bottom,
+        rgba(0, 0, 0, 0.7),
+        var(--verydarkgray)
+      ),
+      var(--bg);
+    background-size: cover;
+    background-position: left;
+    padding-top: 100px;
+    position: relative;
+    min-height: 50vh;
+  }
+</style>

@@ -4,9 +4,9 @@ import ProductGridTransport from "@/components/ProductGridTransport.astro";
 import ContactForm from "@/components/ContactForm.astro";
 // Hier einfach alle Transportprodukte importieren und dann nach dem richtigen filtern
 // Auch Thermohaube und Staubhaube importieren, aber an Schutzwand Model anlehnen
-import { schutzwand } from "@/content/productmodels/schutzwand";
-import { thermohaube } from "@/content/productmodels/thermohaube";
-import { staubhaube } from "@/content/productmodels/staubhaube";
+import { military } from "@/content/productmodels/military-and-survival";
+import { official } from "@/content/productmodels/officialwear";
+import { corporate } from "@/content/productmodels/corporate-fashion";
 import type { AstroLocals } from "@/types";
 import mobileSchutzwand from "@/assets/Transportwand mobile.jpg";
 const { locals } = Astro as unknown as { locals: AstroLocals };
@@ -16,14 +16,14 @@ const pageLanguage = locals.language;
 let currentProduct;
 // Hier nach dem URL Param filtern und richtiges Produkt auswählen oder 404 werfen
 // Vorest bleibt das die Schutzwand
-if (solution == "protectivewalls") {
-    currentProduct = schutzwand;
+if (solution == "military-and-survival") {
+    currentProduct = military;
 }
-if (solution == "dustcovers") {
-    currentProduct = staubhaube;
+if (solution == "officialwear") {
+    currentProduct = official;
 }
-if (solution == "thermalcovers") {
-    currentProduct = thermohaube;
+if (solution == "corporate-fashion") {
+    currentProduct = corporate;
 }
 
 let heading = "Ihre Vision ist nur noch einen Klick entfernt";

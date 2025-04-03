@@ -2,15 +2,15 @@ import schutzwandSchraeg from "@/assets/Produkte/schutzwand_schraeg.jpg"
 import schutzwandFront from "@/assets/Produkte/schutzwand_front.jpg"
 import schutzwandVerschluss from "@/assets/Produkte/schutzwand_verschluss.jpg"
 import schutzwandFarbig from "@/assets/Produkte/Transportwand farbig.jpg"
-import schutzwandImage from "@/assets/Produkte/Transportwand farbig.jpg";
+import schutzwandImage from "@/assets/Transportwand quer flach.jpg";
 import star from "@/assets/star-regular.svg"
 
 
 
-export const schutzwand = {
+export const corporate = {
     headerImage: schutzwandImage.src,
     title: {
-        de: "Die Patentierte Schutzwand für Rollcontainer",
+        de: "Feinste Corporate Fashion für Ihr Unternehmen",
         en: "The Patented Protective Wall for Roll Containers"
     },
     subtitle: {

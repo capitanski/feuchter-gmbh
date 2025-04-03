@@ -1,47 +1,36 @@
-export const clothingCategories = {
-    jackets: {
-        key: "jackets",
-        de: "Jacken",
-        en: "Jackets"
+import schutzwandSchraeg from "@/assets/Produkte/schutzwand_schraeg.jpg"
+import schutzwandFront from "@/assets/Produkte/schutzwand_front.jpg"
+import schutzwandVerschluss from "@/assets/Produkte/schutzwand_verschluss.jpg"
+import schutzwandFarbig from "@/assets/projekte_mobile.jpg"
+import officialwear from "@/assets/officialwear.jpg"
+import military from "@/assets/Military Square.jpg"
+export const clothingCategories = [
+    {
+        slug: "clothing/military-and-survival",
+        title: {
+            de: "Militär- & Survivalkleidung",
+            en: "Military- & Survivalclothing",
+        },
+
+        img: military.src
     },
-    pants: {
-        key: "pants",
-        de: "Hosen",
-        en: "Pants"
+    {
+        slug: "clothing/officialwear",
+        title: {
+            de: "Behörden- & Sicherheitskleidung",
+            en: "Official- & Securityclothing",
+        },
+
+        img: officialwear.src
     },
-    shirts: {
-        key: "shirts",
-        de: "Hemden",
-        en: "Shirts"
-    },
-    headwear: {
-        key: "headwear",
-        de: "Kopfbedeckungen",
-        en: "Headwear"
-    },
-    pullovers: {
-        key: "pullovers",
-        de: "Pullover",
-        en: "Pullovers"
-    },
-    poloshirts: {
-        key: "poloshirts",
-        de: "Poloshirts",
-        en: "Poloshirts"
-    },
-    suits: {
-        key: "suits",
-        de: "Anzüge/Kombinationen",
-        en: "Suits/Combinations"
-    },
-    accessories: {
-        key: "accessories",
-        de: "Accessoires",
-        en: "Accessories"
-    },
-    security: {
-        key: "security",
-        de: "Securitykleidung",
-        en: "Securityclothing"
+    {
+        slug: "clothing/corporate-fashion",
+        title: {
+            de: "Corporate Fashion",
+            en: "Corporate Fashion",
+        },
+
+        img: officialwear.src
     }
-}
+]
+

@@ -19,7 +19,7 @@ export const navLinks: TranslatedNavigation = {
     },
     {
       text: "Bekleidung",
-      to: "clothing?category=military-and-survival",
+      to: "clothing",
     },
     {
       text: "Transportlösungen",
