@@ -2,6 +2,7 @@
 import Layout from "@/layouts/Layout.astro";
 import ProductGridTransport from "@/components/ProductGridTransport.astro";
 import ContactForm from "@/components/ContactForm.astro";
+import VariantSlider from "@/components/VariantSlider.astro";
 // Hier einfach alle Transportprodukte importieren und dann nach dem richtigen filtern
 // Auch Thermohaube und Staubhaube importieren, aber an Schutzwand Model anlehnen
 import { military } from "@/content/productmodels/military-and-survival";
@@ -24,6 +25,9 @@ if (solution == "officialwear") {
 }
 if (solution == "corporate-fashion") {
     currentProduct = corporate;
+}
+if (!currentProduct) {
+    return new Response(null, { status: 404 });
 }
 
 let heading = "Ihre Vision ist nur noch einen Klick entfernt";

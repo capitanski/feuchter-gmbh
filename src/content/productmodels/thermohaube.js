@@ -3,12 +3,13 @@ import schutzwandFront from "@/assets/Produkte/schutzwand_front.jpg"
 import schutzwandVerschluss from "@/assets/Produkte/schutzwand_verschluss.jpg"
 import schutzwandFarbig from "@/assets/Produkte/Transportwand farbig.jpg"
 import thermohaubeImage from "@/assets/Thermohaube quer.jpg";
+import thermohaubeFarbig from "@/assets/Staubhaube Farbig.jpg"
 import star from "@/assets/star-regular.svg"
 
 
 
 export const thermohaube = {
-    headerImage: thermohaubeImage.src,
+    headerImage: thermohaubeFarbig.src,
     title: {
         de: "Die Thermohaube für Rollcontainer",
         en: "The Patented Protective Wall for Roll Containers"

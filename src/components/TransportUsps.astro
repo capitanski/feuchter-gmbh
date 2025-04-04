@@ -58,7 +58,7 @@ const { product, pageLanguage } = Astro.props;
     .image-grid {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
-        gap: 20px;
+        gap: 30px;
         @media screen and (max-width: 1028px) {
             grid-template-columns: 1fr;
         }
@@ -68,6 +68,7 @@ const { product, pageLanguage } = Astro.props;
         flex-direction: column;
         justify-content: flex-start;
         align-items: flex-start;
+        gap: 10px;
     }
     .grid-item img {
         width: 30px;
@@ -77,11 +78,15 @@ const { product, pageLanguage } = Astro.props;
         color: var(--lightgray);
         font-weight: 700;
         font-size: 1.1rem;
+        line-height: 1.1rem;
+        min-height: 2.4rem;
         margin-bottom: 0;
+        margin: 0;
     }
     .grid-item-text {
         color: var(--lightgray);
         font-weight: 300;
         font-size: 0.8rem;
+        margin: 0;
     }
 </style>

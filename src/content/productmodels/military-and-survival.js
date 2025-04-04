@@ -37,7 +37,7 @@ export const military = {
     ],
     function: {
         headline: {
-            de: "Funktionsweise",
+            de: "Kategorien",
             en: "How it works"
         },
         intro: {
@@ -47,7 +47,7 @@ export const military = {
         items: [
             {
                 title: {
-                    de: "Haken einhängen",
+                    de: "Oberbekleidung",
                     en: "Apply hooks"
                 },
                 img: schutzwandSchraeg.src,
@@ -58,7 +58,7 @@ export const military = {
             },
             {
                 title: {
-                    de: "Haken einhängen",
+                    de: "Unterbekleidung",
                     en: "Apply hooks"
                 },
                 img: schutzwandFront.src,
@@ -69,7 +69,7 @@ export const military = {
             },
             {
                 title: {
-                    de: "Haken einhängen",
+                    de: "Accessoires & Kopfbedeckungen",
                     en: "Apply hooks"
                 },
                 img: schutzwandVerschluss.src,
@@ -82,7 +82,7 @@ export const military = {
     },
     usps: {
         headline: {
-            de: "Die All-Round Lösung",
+            de: "Qualität, die man spürt & sieht",
             en: "The All-Round Solution"
         },
         intro: {
@@ -92,7 +92,7 @@ export const military = {
         items: [
             {
                 title: {
-                    de: "Personalisierbar",
+                    de: "Original-TL",
                     en: "Apply hooks"
                 },
                 img: star.src,
@@ -103,7 +103,7 @@ export const military = {
             },
             {
                 title: {
-                    de: "Kompatibilität",
+                    de: "Zertifizierte Materialien",
                     en: "Apply hooks"
                 },
                 img: star.src,
@@ -114,7 +114,7 @@ export const military = {
             },
             {
                 title: {
-                    de: "Einfache Befestigung",
+                    de: "Deutsches Qualitätsmanagement",
                     en: "Apply hooks"
                 },
                 img: star.src,
@@ -125,7 +125,7 @@ export const military = {
             },
             {
                 title: {
-                    de: "Sicherheit",
+                    de: "Pionierarbeit (Vektorenschutz)",
                     en: "Apply hooks"
                 },
                 img: star.src,
@@ -136,7 +136,7 @@ export const military = {
             },
             {
                 title: {
-                    de: "Stabilität",
+                    de: "Funktionalität (besondere Situationen)",
                     en: "Apply hooks"
                 },
                 img: star.src,
@@ -147,7 +147,7 @@ export const military = {
             },
             {
                 title: {
-                    de: "Nachhaltigkeit",
+                    de: "Neuentwicklungen",
                     en: "Apply hooks"
                 },
                 img: star.src,
@@ -160,7 +160,7 @@ export const military = {
     },
     colors: {
         headline: {
-            de: "Farbvarianten",
+            de: "Farbvarianten (Produktbeispiele)",
             en: "Color Variants"
         },
         intro: {

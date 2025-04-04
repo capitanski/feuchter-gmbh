@@ -3,6 +3,8 @@ import schutzwandFront from "@/assets/Produkte/schutzwand_front.jpg"
 import schutzwandVerschluss from "@/assets/Produkte/schutzwand_verschluss.jpg"
 import schutzwandFarbig from "@/assets/Produkte/Transportwand farbig.jpg"
 import schutzwandImage from "@/assets/Transportwand quer flach.jpg";
+import einsatzjacke from "@/assets/Produkte/BMI Jacke Front.jpg"
+import einsatzhose from "@/assets/Produkte/BMI Hose Seite.jpg"
 import officialwear from "@/assets/officialwear.jpg"
 import star from "@/assets/star-regular.svg"
 
@@ -33,11 +35,17 @@ export const official = {
     images: [
         schutzwandFarbig.src,
         schutzwandFront.src,
+        schutzwandVerschluss.src,
+        schutzwandFarbig.src,
+        schutzwandFront.src,
+        schutzwandVerschluss.src,
+        schutzwandFarbig.src,
+        schutzwandFront.src,
         schutzwandVerschluss.src
     ],
     function: {
         headline: {
-            de: "Funktionsweise",
+            de: "Kategorien",
             en: "How it works"
         },
         intro: {
@@ -47,7 +55,7 @@ export const official = {
         items: [
             {
                 title: {
-                    de: "Haken einhängen",
+                    de: "Oberbekleidung",
                     en: "Apply hooks"
                 },
                 img: schutzwandSchraeg.src,
@@ -58,7 +66,7 @@ export const official = {
             },
             {
                 title: {
-                    de: "Haken einhängen",
+                    de: "Unterbekleidung",
                     en: "Apply hooks"
                 },
                 img: schutzwandFront.src,
@@ -69,7 +77,7 @@ export const official = {
             },
             {
                 title: {
-                    de: "Haken einhängen",
+                    de: "Accessoires & Kopfbedeckungen",
                     en: "Apply hooks"
                 },
                 img: schutzwandVerschluss.src,
@@ -82,7 +90,7 @@ export const official = {
     },
     usps: {
         headline: {
-            de: "Die All-Round Lösung",
+            de: "Qualität, die man spürt & sieht",
             en: "The All-Round Solution"
         },
         intro: {
@@ -92,7 +100,7 @@ export const official = {
         items: [
             {
                 title: {
-                    de: "Personalisierbar",
+                    de: "Offizieller Lieferant von Polizeien und Behörden, Original-TL",
                     en: "Apply hooks"
                 },
                 img: star.src,
@@ -103,7 +111,7 @@ export const official = {
             },
             {
                 title: {
-                    de: "Kompatibilität",
+                    de: "Zertifizierte Materialien",
                     en: "Apply hooks"
                 },
                 img: star.src,
@@ -114,7 +122,7 @@ export const official = {
             },
             {
                 title: {
-                    de: "Einfache Befestigung",
+                    de: "Deutsches Qualitätsmanagement",
                     en: "Apply hooks"
                 },
                 img: star.src,
@@ -125,7 +133,7 @@ export const official = {
             },
             {
                 title: {
-                    de: "Sicherheit",
+                    de: "Funktionalität (Kompatibilität)",
                     en: "Apply hooks"
                 },
                 img: star.src,
@@ -136,7 +144,7 @@ export const official = {
             },
             {
                 title: {
-                    de: "Stabilität",
+                    de: "Neuentwicklungen",
                     en: "Apply hooks"
                 },
                 img: star.src,
@@ -147,7 +155,7 @@ export const official = {
             },
             {
                 title: {
-                    de: "Nachhaltigkeit",
+                    de: "Enge Zusammenarbeit mit Prüflaboren",
                     en: "Apply hooks"
                 },
                 img: star.src,
@@ -160,7 +168,7 @@ export const official = {
     },
     colors: {
         headline: {
-            de: "Farbvarianten",
+            de: "Produktbeispiele",
             en: "Color Variants"
         },
         intro: {
@@ -170,19 +178,19 @@ export const official = {
         items: [
             {
                 title: {
-                    de: "Rot",
+                    de: "Einsatzjacke",
                     en: "Red",
 
                 },
-                image: schutzwandVerschluss.src
+                image: einsatzjacke.src
             },
             {
                 title: {
-                    de: "Blau",
+                    de: "Einsatzhose",
                     en: "Blue",
 
                 },
-                image: schutzwandFarbig.src
+                image: einsatzhose.src
             },
             {
                 title: {

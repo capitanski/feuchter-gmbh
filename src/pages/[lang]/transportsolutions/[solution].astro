@@ -25,6 +25,9 @@ if (solution == "dustcovers") {
 if (solution == "thermalcovers") {
     currentProduct = thermohaube;
 }
+if (!currentProduct) {
+    return new Response(null, { status: 404 });
+}
 
 let heading = "Ihre Vision ist nur noch einen Klick entfernt";
 let subtitle = "Wir freuen uns, von Ihnen zu hören";

@@ -8,39 +8,77 @@ const { product, pageLanguage } = Astro.props;
         <p class="headline-text">{product.colors.intro[pageLanguage]}</p>
     </div>
     <div class="main-image-and-grid">
-        <div class="main-image-wrapper">
-            <img src={product.images[0]} alt="" id="color-mainImage" />
-        </div>
         <div class="image-grid">
-            {
-                product.colors.items.map((item) => {
-                    return (
-                        <div class="grid-item">
-                            <img src={item.image} alt="" class="color-image" />
-                            <p class="grid-item-title">
-                                {item.title[pageLanguage]}
-                            </p>
-                        </div>
-                    );
-                })
-            }
+            <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                    {
+                        product.images.map((image) => {
+                            return (
+                                <div class="swiper-slide">
+                                    <img src={image} alt="" />
+                                </div>
+                            );
+                        })
+                    }
+                </div>
+            </div>
+            <div class="swiper-pagination"></div>
         </div>
     </div>
 </div>
 <script>
-    const images = Array.from(document.getElementsByClassName("color-image"));
-    const mainImage = document.getElementById("color-mainImage");
-    images.forEach((image) => {
-        image.addEventListener("click", (e) => {
-            mainImage.style.opacity = 0;
-            setTimeout(() => {
-                mainImage?.setAttribute("src", e.target.getAttribute("src"));
-                mainImage.style.opacity = 1;
-            }, 150);
-        });
+    var swiper = new Swiper(".mySwiper", {
+        slidesPerView: 3,
+        spaceBetween: 30,
+        centeredSlides: true,
+        autoplay: {
+            delay: 2500,
+            disableOnInteraction: false,
+        },
+        pagination: {
+            el: ".swiper-pagination",
+            clickable: true,
+        },
+        loop: true,
+        breakpoints: {
+            0: {
+                slidesPerView: 1.5, // ab 0px – also auf Mobile
+            },
+            768: {
+                slidesPerView: 2, // ab Tablet
+            },
+            1024: {
+                slidesPerView: 3, // ab Desktop
+            },
+        },
     });
 </script>
 <style>
+    .swiper {
+        width: 100%;
+        height: auto;
+        min-height: 30vh;
+    }
+
+    .swiper-slide {
+        text-align: center;
+        font-size: 18px;
+        background: var(--verydarkgray);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: white;
+        height: auto;
+        overflow: hidden;
+    }
+
+    .swiper-slide img {
+        display: block;
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+        border-radius: 25px;
+    }
     h2 {
         background: linear-gradient(135deg, var(--lightgray), var(--sand));
         -webkit-background-clip: text;
@@ -74,7 +112,7 @@ const { product, pageLanguage } = Astro.props;
     }
     .main-image-and-grid {
         display: grid;
-        grid-template-columns: 1fr 2fr;
+        grid-template-columns: 1fr;
         @media screen and (max-width: 1028px) {
             grid-template-columns: 1fr;
         }
@@ -85,9 +123,10 @@ const { product, pageLanguage } = Astro.props;
     }
     .image-grid {
         display: grid;
-        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+        grid-template-columns: 1fr;
+        gap: 50px;
         @media screen and (max-width: 1028px) {
-            grid-template-columns: 1fr 1fr 1fr;
+            grid-template-columns: 1fr;
         }
     }
     .grid-item {

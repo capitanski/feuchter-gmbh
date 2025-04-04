@@ -15,19 +15,26 @@ import { buttonTranslations } from "@/content/translations";
                 return (
                     <div class="grid-item">
                         <img src={item.img} alt="" />
-                        <p class="grid-item-title">
-                            {item.title[pageLanguage]}
-                        </p>
-                        <p class="grid-item-text">{item[pageLanguage]}</p>
-                        <a
-                            href={`/${pageLanguage}/${item.slug}`}
-                            class="project-link"
-                        >
-                            <img src={Arrow.src} alt="" />
-                            <span>
-                                {buttonTranslations("toproducts", pageLanguage)}
-                            </span>
-                        </a>
+                        <div>
+                            <p class="grid-item-title">
+                                {item.title[pageLanguage]}
+                            </p>
+                            <p class="grid-item-text">
+                                {item.description[pageLanguage]}
+                            </p>
+                            <a
+                                href={`/${pageLanguage}/${item.slug}`}
+                                class="project-link"
+                            >
+                                <img src={Arrow.src} alt="" />
+                                <span>
+                                    {buttonTranslations(
+                                        "toproducts",
+                                        pageLanguage,
+                                    )}
+                                </span>
+                            </a>
+                        </div>
                     </div>
                 );
             })
@@ -67,7 +74,7 @@ import { buttonTranslations } from "@/content/translations";
     }
     .image-grid {
         display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-columns: 1fr;
         gap: 20px;
         @media screen and (max-width: 1028px) {
             grid-template-columns: 1fr;
@@ -75,12 +82,12 @@ import { buttonTranslations } from "@/content/translations";
     }
     .grid-item {
         display: flex;
-        flex-direction: column;
+        flex-direction: row;
         justify-content: flex-start;
         align-items: flex-start;
     }
     .grid-item img {
-        width: 100%;
+        width: 20%;
         height: auto;
         border-radius: 20px;
     }
@@ -93,7 +100,11 @@ import { buttonTranslations } from "@/content/translations";
     .grid-item-text {
         color: var(--lightgray);
         font-weight: 300;
+        max-width: 60%;
         font-size: 0.8rem;
+        @media screen and (max-width: 1028px) {
+            max-width: 100%;
+        }
     }
     .project-link {
         color: var(--sand);

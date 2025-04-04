@@ -12,7 +12,10 @@ export const clothingCategories = [
       de: "Militär- & Survivalkleidung",
       en: "Military- & Survivalclothing",
     },
-
+    description: {
+      de: "Ut voluptas consequatur nam facere reiciendis ea deleniti alias At sunt esse et mollitia consequatur. Ut asperiores consequatur non dolores veritatis qui dolorum voluptatem ea laudantium maiores.",
+      en: "Ut voluptas consequatur nam facere reiciendis ea deleniti alias At sunt esse et mollitia consequatur. Ut asperiores consequatur non dolores veritatis qui dolorum voluptatem ea laudantium maiores."
+    },
     img: military.src,
   },
   {
@@ -21,7 +24,10 @@ export const clothingCategories = [
       de: "Behörden- & Sicherheitskleidung",
       en: "Official- & Securityclothing",
     },
-
+    description: {
+      de: "Ut voluptas consequatur nam facere reiciendis ea deleniti alias At sunt esse et mollitia consequatur. Ut asperiores consequatur non dolores veritatis qui dolorum voluptatem ea laudantium maiores.",
+      en: "Ut voluptas consequatur nam facere reiciendis ea deleniti alias At sunt esse et mollitia consequatur. Ut asperiores consequatur non dolores veritatis qui dolorum voluptatem ea laudantium maiores."
+    },
     img: officialwear.src,
   },
   {
@@ -30,7 +36,10 @@ export const clothingCategories = [
       de: "Corporate Fashion",
       en: "Corporate Fashion",
     },
-
+    description: {
+      de: "Ut voluptas consequatur nam facere reiciendis ea deleniti alias At sunt esse et mollitia consequatur. Ut asperiores consequatur non dolores veritatis qui dolorum voluptatem ea laudantium maiores.",
+      en: "Ut voluptas consequatur nam facere reiciendis ea deleniti alias At sunt esse et mollitia consequatur. Ut asperiores consequatur non dolores veritatis qui dolorum voluptatem ea laudantium maiores."
+    },
     img: corporatefashion.src,
   },
 ];

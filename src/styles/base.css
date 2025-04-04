@@ -140,3 +140,23 @@ p {
 }
 
 section {}
+
+.swiper-pagination-bullet {
+  background: var(--lightgray) !important;
+  opacity: 1;
+  /* optional, falls du transparente Punkte nicht willst */
+}
+
+/* Farbe des aktiven Punkts */
+.swiper-pagination-bullet-active {
+  background: var(--sand) !important;
+}
+
+.swiper-pagination {
+  position: relative;
+  /* oder absolute, je nachdem */
+  margin-top: 16px;
+  /* Abstand nach unten */
+  text-align: center;
+  z-index: 10;
+}
