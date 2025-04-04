@@ -45,7 +45,7 @@ export const official = {
     ],
     function: {
         headline: {
-            de: "Kategorien",
+            de: "Alles aus einer Hand",
             en: "How it works"
         },
         intro: {
