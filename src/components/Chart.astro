@@ -1,0 +1,29 @@
+<canvas id="myChart" height="150"></canvas>
+
+<script>
+    const ctx = document.getElementById("myChart")?.getContext("2d");
+
+    new Chart(ctx, {
+        type: "bar",
+        options: {
+            indexAxis: "y",
+        },
+        data: {
+            labels: ["Stretchfolie", "Transportwand"],
+            datasets: [
+                {
+                    label: "Kosten pro 100 Transporte pro Rollwagen in €",
+                    data: [185, 12],
+                    backgroundColor: ["rgba(229, 229, 229, 0.15)", "#f6d7b0"],
+                },
+            ],
+        },
+    });
+</script>
+<style>
+    canvas {
+        margin-top: 100px;
+        margin-bottom: 100px;
+        max-height: 150px;
+    }
+</style>

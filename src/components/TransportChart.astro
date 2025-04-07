@@ -1,0 +1,126 @@
+---
+
+---
+
+<div class="function">
+    <div class="headline-and-title">
+        <h2 class="animatable">Ersparnis</h2>
+        <p class="headline-text">
+            Erklärung, wie die Kosten berechnet werden (Bei Mindestabnahmemenge
+            X)
+        </p>
+    </div>
+    <div class="image-grid">
+        <canvas id="myChart" height="150"></canvas>
+    </div>
+</div>
+<script type="module">
+    Chart.register(ChartDataLabels);
+    const ctx = document.getElementById("myChart")?.getContext("2d");
+
+    new Chart(ctx, {
+        type: "bar",
+        options: {
+            indexAxis: "y",
+            plugins: {
+                legend: { display: true },
+                datalabels: {
+                    anchor: "center",
+                    align: "center",
+                    color: "black",
+                    font: {
+                        weight: "bold",
+                    },
+                    formatter: (value) => value + " €", // z. B. mit Einheit
+                },
+            },
+            scales: {
+                y: {
+                    ticks: {
+                        color: "#f6d7b0", // Textfarbe (z. B. Tailwind Gray-700)
+                        font: {
+                            size: 11, // Schriftgröße // Fett
+                            family: "Arial", // Schriftart (optional)
+                        },
+                    },
+                },
+            },
+        },
+        data: {
+            labels: ["Stretchfolie", "Transportwand"],
+            datasets: [
+                {
+                    label: "Kosten pro 100 Transporte pro Rollwagen in €",
+                    data: [185, 20],
+                    backgroundColor: ["rgba(255, 255, 255, 0.6)", "#f6d7b0"],
+                    borderRadius: 5,
+                },
+            ],
+        },
+    });
+</script>
+<style>
+    canvas {
+        max-height: 150px;
+        max-width: 100%;
+    }
+    h2 {
+        background: linear-gradient(135deg, var(--lightgray), var(--sand));
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        font-size: 1.2rem !important;
+        line-height: 1.2rem !important;
+        margin: 0;
+        text-transform: uppercase;
+    }
+    .headline-and-title {
+        border-right: 1px solid var(--sand);
+        padding-right: 20px;
+    }
+    .headline-text {
+        color: var(--lightgray);
+        font-size: 0.9rem;
+        font-weight: 500;
+    }
+    .function {
+        width: 100%;
+        display: grid;
+        grid-template-columns: 1fr 3fr;
+        margin: 50px 0;
+        gap: 50px;
+        @media screen and (max-width: 1028px) {
+            grid-template-columns: 1fr;
+            padding: 0 20px;
+        }
+    }
+    .image-grid {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 20px;
+        @media screen and (max-width: 1028px) {
+            grid-template-columns: 1fr;
+        }
+    }
+    .grid-item {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+    }
+    .grid-item img {
+        width: 100%;
+        height: auto;
+        border-radius: 20px;
+    }
+    .grid-item-title {
+        color: var(--lightgray);
+        font-weight: 700;
+        font-size: 1.1rem;
+        margin-bottom: 0;
+    }
+    .grid-item-text {
+        color: var(--lightgray);
+        font-weight: 300;
+        font-size: 0.8rem;
+    }
+</style>
