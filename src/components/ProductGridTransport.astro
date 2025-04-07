@@ -4,6 +4,7 @@ import TransportUsps from "./TransportUsps.astro";
 import TransportVariants from "./TransportVariants.astro";
 import VariantSlider from "./VariantSlider.astro";
 import TransportChart from "./TransportChart.astro";
+import SavingsCounter from "./SavingsCounter.astro";
 const { pageLanguage, searchCategory, links, texts, product, headerImage } =
   Astro.props;
 ---
@@ -61,7 +62,8 @@ const { pageLanguage, searchCategory, links, texts, product, headerImage } =
     <TransportUsps product={product} pageLanguage={pageLanguage} />
     <VariantSlider product={product} pageLanguage={pageLanguage} />
     <TransportVariants product={product} pageLanguage={pageLanguage} />
-    <TransportChart />
+    <!-- <TransportChart />-->
+    <SavingsCounter product={product} pageLanguage={pageLanguage} />
   </div>
 </section>
 <style>

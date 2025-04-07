@@ -34,6 +34,29 @@ export const schutzwand = {
         schutzwandFront.src,
         schutzwandVerschluss.src
     ],
+    numbers: [
+        {
+
+            de: "Kosten Stretchfolie",
+            en: "Foil",
+            color: "gray",
+            number: 185
+
+        }, {
+
+            de: "Kosten Schutzwand",
+            en: "Protective Wall",
+            color: "sand",
+            number: 20
+        }, {
+
+            de: "Ersparnis",
+            en: "Savings",
+            color: "white",
+            number: 165
+
+        }
+    ],
     function: {
         headline: {
             de: "Funktionsweise",

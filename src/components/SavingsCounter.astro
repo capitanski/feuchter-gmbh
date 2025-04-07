@@ -1,0 +1,171 @@
+---
+const { product, pageLanguage } = Astro.props;
+---
+
+<div class="function">
+    <div class="headline-and-title">
+        <h2 class="animatable">Ersparnis</h2>
+        <p class="headline-text">
+            Erklärung bezüglich Ersparnis auf 100 Transporte pro Rollcontainer
+        </p>
+    </div>
+    <div class="image-grid">
+        {
+            product.numbers.map((item) => {
+                return (
+                    <div class="grid-item">
+                        <div class="grid-item-inner">
+                            <p class={item.color + ` grid-item-text`}>
+                                {item[pageLanguage]}
+                            </p>
+                            <p class={item.color + ` grid-item-title`}>
+                                <span
+                                    id={item.color}
+                                    data-numbertarget={item.number}
+                                >
+                                    0
+                                </span>{" "}
+                                €
+                            </p>
+                        </div>
+                    </div>
+                );
+            })
+        }
+    </div>
+</div>
+<script type="module" is:browser>
+    import { CountUp } from "/countUp.min.js";
+    let foil = document.getElementById("gray");
+    let wall = document.getElementById("sand");
+    let savings = document.getElementById("white");
+    const observer = new IntersectionObserver((entries, observer) => {
+        entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+                const countUp = new CountUp(
+                    foil,
+                    foil.getAttribute("data-numbertarget"),
+                    {
+                        duration: 2,
+                    },
+                );
+
+                countUp.start();
+            }
+        });
+    });
+    const observer2 = new IntersectionObserver((entries, observer) => {
+        entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+                const countUp = new CountUp(
+                    wall,
+                    wall.getAttribute("data-numbertarget"),
+                    {
+                        duration: 2,
+                    },
+                );
+
+                countUp.start();
+            }
+        });
+    });
+    const observer3 = new IntersectionObserver((entries, observer) => {
+        entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+                const countUp = new CountUp(
+                    savings,
+                    savings.getAttribute("data-numbertarget"),
+                    {
+                        duration: 2,
+                    },
+                );
+
+                countUp.start();
+            }
+        });
+    });
+
+    observer.observe(foil);
+    observer2.observe(wall);
+    observer3.observe(savings);
+</script>
+<style>
+    h2 {
+        background: linear-gradient(135deg, var(--lightgray), var(--sand));
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        font-size: 1.2rem !important;
+        line-height: 1.2rem !important;
+        margin: 0;
+        text-transform: uppercase;
+    }
+    .headline-and-title {
+        border-right: 1px solid var(--sand);
+        padding-right: 20px;
+    }
+    .headline-text {
+        color: var(--lightgray);
+        font-size: 0.9rem;
+        font-weight: 500;
+    }
+    .function {
+        width: 100%;
+        display: grid;
+        grid-template-columns: 1fr 3fr;
+        margin: 50px 0;
+        gap: 50px;
+        @media screen and (max-width: 1028px) {
+            grid-template-columns: 1fr;
+            padding: 0 20px;
+            margin: 0;
+        }
+    }
+    .image-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 30px;
+        @media screen and (max-width: 1028px) {
+            grid-template-columns: 1fr;
+            margin: 30px 0 50px 0;
+        }
+    }
+    .grid-item {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        gap: 0px;
+    }
+    .grid-item-inner {
+        width: 100%;
+    }
+    .grid-item img {
+        width: 30px;
+        height: 30px;
+    }
+    .grid-item-title {
+        color: var(--lightgray);
+        font-weight: 900;
+        font-size: 4rem;
+        line-height: 2.5rem;
+        margin-bottom: 0;
+        margin: 0;
+        text-align: left;
+    }
+    .grid-item-text {
+        color: var(--lightgray);
+        font-weight: 300;
+        font-size: 0.8rem;
+        margin: 0;
+        text-align: left;
+    }
+    .gray {
+        color: #585858;
+    }
+    .sand {
+        color: var(--sand);
+    }
+    .white {
+        color: var(--lightgray);
+    }
+</style>
