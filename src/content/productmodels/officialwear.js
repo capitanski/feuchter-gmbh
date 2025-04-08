@@ -6,6 +6,18 @@ import schutzwandImage from "@/assets/Transportwand quer flach.jpg";
 import einsatzjacke from "@/assets/Produkte/BMI Jacke Front.jpg"
 import einsatzhose from "@/assets/Produkte/BMI Hose Seite.jpg"
 import officialwear from "@/assets/officialwear.jpg"
+import oberBekleidung from "@/assets/Produkte/Feldbekleidung Jacke Hell Front.jpg"
+import beinBekleidung from "@/assets/Produkte/Feldbekleidung Hose Hell Seite.jpg"
+import kopfBedeckungen from "@/assets/Produkte/Krempenhut Flecktarn Seite.jpg"
+import skirt from "@/assets/Produkte/Bordhemd Marine Front.jpg"
+import pants from "@/assets/Produkte/Bundeswehr Parka Oliv Front.jpg"
+import vest from "@/assets/Produkte/Feldbekleidung Hose Hell Front.jpg"
+import hat from "@/assets/Produkte/Feldjacke Flecktarn Front.jpg"
+import tie from "@/assets/Produkte/Kaelteschutzjacke Front.jpg"
+import polo from "@/assets/Produkte/Regenjacke Daenemark Front.jpg"
+import silkSkirt from "@/assets/Produkte/Tropentarn Bluse Front.jpg"
+import sacko from "@/assets/Produkte/Bundeswehr Pullover Front.jpg"
+import bluse from "@/assets/Produkte/Waldcamo Ripstop Jacke Front.jpg"
 import star from "@/assets/star-regular.svg"
 
 
@@ -14,11 +26,11 @@ export const official = {
     headerImage: officialwear.src,
     title: {
         de: "Behörden- & Securitykleidung vom Profi",
-        en: "The Patented Protective Wall for Roll Containers"
+        en: "Official- & Securityclothing made by Professionals"
     },
     subtitle: {
-        de: "Nachhaltig sichern statt verschwenden",
-        en: "Secure sustainably instead of wasting"
+        de: "Für maximale Sicherheit im Einsatz",
+        en: "For Maximum protection on duty"
     },
     shortDescription: {
         de: `Unsere patentierte Schutzwand für Rollbehälter erleichtert den Transport Ihrer Ware. Außerdem wird durch die Wiederverwendung Plastikmüll gespart. Alternativ in unterschiedlichen Farben erhältlich. Außerdem für den individuellen Touch, kann das eigene Logo platziert werden. Patentiertes Produkt zur Warensicherung im Rollbehälter. Das 6-Punkt-Clicksystem ermöglicht eine einfache Befestigung an den Seitengittern.`,
@@ -32,17 +44,17 @@ export const official = {
         de: "Wahlweise mit Logodruck & verschiedenen Farben",
         en: "Optionally with logo print & different colors"
     },
-    images: [
-        schutzwandFarbig.src,
-        schutzwandFront.src,
-        schutzwandVerschluss.src,
-        schutzwandFarbig.src,
-        schutzwandFront.src,
-        schutzwandVerschluss.src,
-        schutzwandFarbig.src,
-        schutzwandFront.src,
-        schutzwandVerschluss.src
-    ],
+    images: {
+        headline: {
+            de: "Produktbeispiele",
+            en: "Sample Products"
+        },
+        intro: {
+            de: "Hier sehen Sie einige Produktbeispiele. Es handelt sich dabei natürlich nur um einen Bruchteil dessen, was wir Ihnen bieten können.",
+            en: "Here you can see a few product examples – of course, this is just a small selection of what we have to offer."
+        },
+        images: [skirt.src, pants.src, vest.src, hat.src, tie.src, polo.src, silkSkirt.src, sacko.src, bluse.src]
+    },
     function: {
         headline: {
             de: "Alles aus einer Hand",

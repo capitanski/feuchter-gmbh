@@ -1,10 +1,10 @@
 ---
-import Transportloesungen from "@/assets/transportwand_header.jpg";
-import Bekleidung from "@/assets/projekte.jpg";
-import Behoerdenkleidung from "@/assets/officialwear_header.jpg";
-import Corporate from "@/assets/corporate_fashion.jpg";
-import Thermohaube from "@/assets/Thermohaube quer.jpg";
-import Staubhaube from "@/assets/Produkte/Thermohaube_Staubhaube Schräg.jpg";
+import Transportloesungen from "@/assets/Produkte/Transportwand farbig.jpg";
+import Bekleidung from "@/assets/Military Square.jpg";
+import Behoerdenkleidung from "@/assets/officialwear.jpg";
+import Corporate from "@/assets/Corporate Fashion.jpg";
+import Thermohaube from "@/assets/Staubhaube Farbig.jpg";
+import Staubhaube from "@/assets/Thermohaube farbig.jpg";
 import Circles from "@/assets/Swirl.png";
 import Arrow from "@/assets/Arrow_sand.svg";
 import { buttonTranslations } from "@/content/translations";
@@ -84,7 +84,7 @@ const categories = [
       en: "The dust cover reliably protects your products from contamination during transport and storage. It is easy to handle, durable, and available in various sizes. Particularly useful in dusty environments or for long-term storage – ensuring your goods stay clean and well-protected at all times.",
     },
     slug: "transportsolutions/dustcovers",
-    image: Thermohaube.src,
+    image: Staubhaube.src,
   },
 ];
 ---
@@ -149,7 +149,7 @@ const categories = [
     width: 100%;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    gap: 25px;
+    gap: 55px;
     row-gap: 80px;
     @media screen and (max-width: 820px) {
       grid-template-columns: 1fr;
@@ -165,10 +165,8 @@ const categories = [
   }
   .category-card img {
     width: 100%;
-    height: 200px;
+    height: auto;
     object-fit: cover;
-    border-radius: 10px;
-    box-shadow: rgba(0, 0, 0, 0.25) 0px 25px 50px -12px;
   }
   .image-and-title {
     display: flex;
