@@ -63,7 +63,11 @@ const { pageLanguage, searchCategory, links, texts, product, headerImage } =
     <VariantSlider product={product} pageLanguage={pageLanguage} />
     <TransportVariants product={product} pageLanguage={pageLanguage} />
     <!-- <TransportChart />-->
-    <SavingsCounter product={product} pageLanguage={pageLanguage} />
+    {
+      product.numbers ? (
+        <SavingsCounter product={product} pageLanguage={pageLanguage} />
+      ) : null
+    }
   </div>
 </section>
 <style>
