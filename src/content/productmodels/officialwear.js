@@ -6,18 +6,13 @@ import schutzwandImage from "@/assets/Transportwand quer flach.jpg";
 import einsatzjacke from "@/assets/Produkte/BMI Jacke Front.jpg"
 import einsatzhose from "@/assets/Produkte/BMI Hose Seite.jpg"
 import officialwear from "@/assets/officialwear.jpg"
+import headwear from "@/assets/official_headwear.png"
 import oberBekleidung from "@/assets/Produkte/Feldbekleidung Jacke Hell Front.jpg"
 import beinBekleidung from "@/assets/Produkte/Feldbekleidung Hose Hell Seite.jpg"
 import kopfBedeckungen from "@/assets/Produkte/Krempenhut Flecktarn Seite.jpg"
-import skirt from "@/assets/Produkte/Bordhemd Marine Front.jpg"
-import pants from "@/assets/Produkte/Bundeswehr Parka Oliv Front.jpg"
-import vest from "@/assets/Produkte/Feldbekleidung Hose Hell Front.jpg"
-import hat from "@/assets/Produkte/Feldjacke Flecktarn Front.jpg"
-import tie from "@/assets/Produkte/Kaelteschutzjacke Front.jpg"
-import polo from "@/assets/Produkte/Regenjacke Daenemark Front.jpg"
-import silkSkirt from "@/assets/Produkte/Tropentarn Bluse Front.jpg"
-import sacko from "@/assets/Produkte/Bundeswehr Pullover Front.jpg"
-import bluse from "@/assets/Produkte/Waldcamo Ripstop Jacke Front.jpg"
+import skirt from "@/assets/Produkte/BMI Jacke Front.jpg"
+import pants from "@/assets/Produkte/BMI Hose Seite.jpg"
+import vest from "@/assets/official_headwear.png"
 import star from "@/assets/star-regular.svg"
 
 
@@ -33,8 +28,8 @@ export const official = {
         en: "For Maximum protection on duty"
     },
     shortDescription: {
-        de: `Unsere patentierte Schutzwand für Rollbehälter erleichtert den Transport Ihrer Ware. Außerdem wird durch die Wiederverwendung Plastikmüll gespart. Alternativ in unterschiedlichen Farben erhältlich. Außerdem für den individuellen Touch, kann das eigene Logo platziert werden. Patentiertes Produkt zur Warensicherung im Rollbehälter. Das 6-Punkt-Clicksystem ermöglicht eine einfache Befestigung an den Seitengittern.`,
-        en: `Our patented protective wall for roll containers makes transporting your goods easier and more secure. By reusing the product, plastic waste is significantly reduced. Available in various colors and customizable with your company logo. The 6-point click system allows for quick and easy attachment to the container’s side panels — a patented solution for securing goods in transport.`
+        de: `Wir entwickeln und produzieren High-End Bekleidung für Behörden und Sicherheitsdienste – neu konzipiert oder nach bestehenden Polizeistandards. Ideal für Großabnehmer wie Onlineshops, Sicherheitsdienste und öffentliche Institutionen.`,
+        en: `We design and produce high-end apparel for authorities and security services – either custom-designed or based on existing police standards. Perfect for large buyers such as online retailers, security firms, and public institutions.`
     },
     category: {
         de: "Schutzwände",
@@ -53,38 +48,38 @@ export const official = {
             de: "Hier sehen Sie einige Produktbeispiele. Es handelt sich dabei natürlich nur um einen Bruchteil dessen, was wir Ihnen bieten können.",
             en: "Here you can see a few product examples – of course, this is just a small selection of what we have to offer."
         },
-        images: [skirt.src, pants.src, vest.src, hat.src, tie.src, polo.src, silkSkirt.src, sacko.src, bluse.src]
+        images: [skirt.src, pants.src, vest.src, skirt.src, pants.src, vest.src,]
     },
     function: {
         headline: {
             de: "Alles aus einer Hand",
-            en: "How it works"
+            en: "All-in-one solution"
         },
         intro: {
-            de: "Lorem ipsum dolor sit amet. Sit molestias esse et voluptas ducimus est nihil sunt et velit nostrum aut blanditiis tenetur. Est animi sunt ex quae ipsam et distinctio impedit ea commodi necessitatibus quo explicabo soluta sit cumque exercitationem et ipsum doloremque.",
-            en: "Lorem ipsum dolor sit amet. Sit molestias esse et voluptas ducimus est nihil sunt et velit nostrum aut blanditiis tenetur. Est animi sunt ex quae ipsam et distinctio impedit ea commodi necessitatibus quo explicabo soluta sit cumque exercitationem et ipsum doloremque."
+            de: "Wir fertigen maßgeschneiderte Ober- und Unterbekleidung, Beinbekleidung, Kopfbedeckungen und Accessoires – ganz nach den individuellen Wünschen unserer Kunden. Ob funktional oder stilvoll, wir entwickeln die perfekte Lösung für Ihre Anforderungen.",
+            en: "We create custom-made tops, bottoms, legwear, headwear, and accessories – tailored to the unique needs of our clients. Whether functional or stylish, we develop the perfect solution to meet your requirements."
         },
         items: [
             {
                 title: {
                     de: "Oberbekleidung",
-                    en: "Apply hooks"
+                    en: "Outerwear"
                 },
-                img: schutzwandSchraeg.src,
+                img: einsatzjacke.src,
                 text: {
-                    de: "Lorem ipsum dolor sit amet. Sit molestias esse et voluptas ducimus est nihil sunt et velit nostrum aut blanditiis tenetur. Est animi sunt ex quae ipsam et distinctio impedit ea commodi necessitatibus quo explicabo soluta sit cumque exercitationem et ipsum doloremque.",
-                    en: "Lorem ipsum dolor sit amet. Sit molestias esse et voluptas ducimus est nihil sunt et velit nostrum aut blanditiis tenetur. Est animi sunt ex quae ipsam et distinctio impedit ea commodi necessitatibus quo explicabo soluta sit cumque exercitationem et ipsum doloremque."
+                    de: "Wir spezialisieren uns auf die Entwicklung und Produktion von hochwertiger Oberbekleidung für Militär- und Survival-Anwendungen. Unsere Jacken, Mäntel und Outdoor-Bekleidung sind robust, funktional und bieten optimalen Schutz unter extremen Bedingungen. Wir bieten maßgeschneiderte Lösungen, die den Anforderungen Ihrer Einsätze gerecht werden.",
+                    en: "We specialize in the design and production of high-quality outerwear for military and survival applications. Our jackets, coats, and outdoor clothing are robust, functional, and provide optimal protection in extreme conditions. We offer customized solutions tailored to meet the demands of your operations."
                 }
             },
             {
                 title: {
-                    de: "Unterbekleidung",
-                    en: "Apply hooks"
+                    de: "Beinbekleidung",
+                    en: "Legwear"
                 },
-                img: schutzwandFront.src,
+                img: einsatzhose.src,
                 text: {
-                    de: "Lorem ipsum dolor sit amet. Sit molestias esse et voluptas ducimus est nihil sunt et velit nostrum aut blanditiis tenetur. Est animi sunt ex quae ipsam et distinctio impedit ea commodi necessitatibus quo explicabo soluta sit cumque exercitationem et ipsum doloremque.",
-                    en: "Lorem ipsum dolor sit amet. Sit molestias esse et voluptas ducimus est nihil sunt et velit nostrum aut blanditiis tenetur. Est animi sunt ex quae ipsam et distinctio impedit ea commodi necessitatibus quo explicabo soluta sit cumque exercitationem et ipsum doloremque."
+                    de: "Wir entwickeln und produzieren maßgeschneiderte Beinbekleidung für anspruchsvolle Einsatzbereiche. Unsere Hosen und Overalls bieten höchsten Tragekomfort, Robustheit und Funktionalität, speziell abgestimmt auf die Anforderungen im Security Bereich.",
+                    en: "We design and produce custom-made legwear for demanding environments. Our pants and overalls offer maximum comfort, durability, and functionality, specifically tailored to meet the needs of security operations."
                 }
             },
             {
@@ -92,7 +87,7 @@ export const official = {
                     de: "Accessoires & Kopfbedeckungen",
                     en: "Apply hooks"
                 },
-                img: schutzwandVerschluss.src,
+                img: headwear.src,
                 text: {
                     de: "Lorem ipsum dolor sit amet. Sit molestias esse et voluptas ducimus est nihil sunt et velit nostrum aut blanditiis tenetur. Est animi sunt ex quae ipsam et distinctio impedit ea commodi necessitatibus quo explicabo soluta sit cumque exercitationem et ipsum doloremque.",
                     en: "Lorem ipsum dolor sit amet. Sit molestias esse et voluptas ducimus est nihil sunt et velit nostrum aut blanditiis tenetur. Est animi sunt ex quae ipsam et distinctio impedit ea commodi necessitatibus quo explicabo soluta sit cumque exercitationem et ipsum doloremque."
@@ -178,146 +173,7 @@ export const official = {
             }
         ]
     },
-    colors: {
-        headline: {
-            de: "Produktbeispiele",
-            en: "Color Variants"
-        },
-        intro: {
-            de: "Lorem ipsum dolor sit amet. Sit molestias esse et voluptas ducimus est nihil sunt et velit nostrum aut blanditiis tenetur. Est animi sunt ex quae ipsam et distinctio impedit ea commodi necessitatibus quo explicabo soluta sit cumque exercitationem et ipsum doloremque.",
-            en: "Lorem ipsum dolor sit amet. Sit molestias esse et voluptas ducimus est nihil sunt et velit nostrum aut blanditiis tenetur. Est animi sunt ex quae ipsam et distinctio impedit ea commodi necessitatibus quo explicabo soluta sit cumque exercitationem et ipsum doloremque."
-        },
-        items: [
-            {
-                title: {
-                    de: "Einsatzjacke",
-                    en: "Red",
 
-                },
-                image: einsatzjacke.src
-            },
-            {
-                title: {
-                    de: "Einsatzhose",
-                    en: "Blue",
-
-                },
-                image: einsatzhose.src
-            },
-            {
-                title: {
-                    de: "Navy",
-                    en: "Navy",
-
-                },
-                image: schutzwandFarbig.src
-            },
-            {
-                title: {
-                    de: "Steingrau",
-                    en: "Stonegray",
-
-                },
-                image: schutzwandFarbig.src
-            },
-            {
-                title: {
-                    de: "Rot",
-                    en: "Red",
-
-                },
-                image: schutzwandFarbig.src
-            },
-            {
-                title: {
-                    de: "Blau",
-                    en: "Blue",
-
-                },
-                image: schutzwandFarbig.src
-            },
-            {
-                title: {
-                    de: "Navy",
-                    en: "Navy",
-
-                },
-                image: schutzwandFarbig.src
-            },
-            {
-                title: {
-                    de: "Steingrau",
-                    en: "Stonegray",
-
-                },
-                image: schutzwandFarbig.src
-            },
-            {
-                title: {
-                    de: "Rot",
-                    en: "Red",
-
-                },
-                image: schutzwandFarbig.src
-            },
-            {
-                title: {
-                    de: "Blau",
-                    en: "Blue",
-
-                },
-                image: schutzwandFarbig.src
-            },
-            {
-                title: {
-                    de: "Navy",
-                    en: "Navy",
-
-                },
-                image: schutzwandFarbig.src
-            },
-            {
-                title: {
-                    de: "Steingrau",
-                    en: "Stonegray",
-
-                },
-                image: schutzwandFarbig.src
-            },
-            {
-                title: {
-                    de: "Rot",
-                    en: "Red",
-
-                },
-                image: schutzwandFarbig.src
-            },
-            {
-                title: {
-                    de: "Blau",
-                    en: "Blue",
-
-                },
-                image: schutzwandFarbig.src
-            },
-            {
-                title: {
-                    de: "Navy",
-                    en: "Navy",
-
-                },
-                image: schutzwandFarbig.src
-            },
-            {
-                title: {
-                    de: "Steingrau",
-                    en: "Stonegray",
-
-                },
-                image: schutzwandFarbig.src
-            }
-        ]
-    },
     lists: [
         {
             title: {
