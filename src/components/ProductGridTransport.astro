@@ -61,7 +61,12 @@ const { pageLanguage, searchCategory, links, texts, product, headerImage } =
     <Function product={product} pageLanguage={pageLanguage} />
     <TransportUsps product={product} pageLanguage={pageLanguage} />
     <VariantSlider product={product} pageLanguage={pageLanguage} />
-    <TransportVariants product={product} pageLanguage={pageLanguage} />
+
+    {
+      product.colors ? (
+        <TransportVariants product={product} pageLanguage={pageLanguage} />
+      ) : null
+    }
     <!-- <TransportChart />-->
     {
       product.numbers ? (

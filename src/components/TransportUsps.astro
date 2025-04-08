@@ -12,7 +12,6 @@ const { product, pageLanguage } = Astro.props;
             product.usps.items.map((item) => {
                 return (
                     <div class="grid-item">
-                        <img src={item.img} alt="" />
                         <p class="grid-item-title">
                             {item.title[pageLanguage]}
                         </p>
@@ -75,13 +74,17 @@ const { product, pageLanguage } = Astro.props;
         height: 30px;
     }
     .grid-item-title {
-        color: var(--lightgray);
-        font-weight: 700;
-        font-size: 1.1rem;
+        color: var(--sand);
+        font-size: 0.8rem;
         line-height: 1.1rem;
-        min-height: 2.4rem;
         margin-bottom: 0;
         margin: 0;
+        text-transform: uppercase;
+        font-family: "peridot-pe-variable", sans-serif !important;
+        font-variation-settings:
+            "ital" 0,
+            "wdth" 800,
+            "wght" 400 !important;
     }
     .grid-item-text {
         color: var(--lightgray);

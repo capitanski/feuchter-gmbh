@@ -4,15 +4,15 @@ const { product, pageLanguage } = Astro.props;
 
 <div class="function">
     <div class="headline-and-title">
-        <h2 class="animatable">{product.colors.headline[pageLanguage]}</h2>
-        <p class="headline-text">{product.colors.intro[pageLanguage]}</p>
+        <h2 class="animatable">{product.images.headline[pageLanguage]}</h2>
+        <p class="headline-text">{product.images.intro[pageLanguage]}</p>
     </div>
     <div class="main-image-and-grid">
         <div class="image-grid">
             <div class="swiper mySwiper">
                 <div class="swiper-wrapper">
                     {
-                        product.images.map((image) => {
+                        product.images.images.map((image) => {
                             return (
                                 <div class="swiper-slide animatable">
                                     <img src={image} alt="" />

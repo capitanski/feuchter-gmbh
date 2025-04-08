@@ -4,21 +4,34 @@ import schutzwandVerschluss from "@/assets/Produkte/schutzwand_verschluss.jpg";
 import schutzwandFarbig from "@/assets/Produkte/Transportwand farbig.jpg";
 import schutzwandImage from "@/assets/Transportwand quer flach.jpg";
 import corporatefashion from "@/assets/Corporate Fashion.jpg";
+import corporateFashionTop from "@/assets/corporate_fashion_top.png"
+import corporateFashionBottom from "@/assets/corporate_fashion_bottom.png"
+import corporateFashionAccessoires from "@/assets/corporate_fashion_accessoires.png"
+import skirt from "@/assets/corporate_fashion_skirt.png"
+import pants from "@/assets/corporate_fashion_pants.png"
+import vest from "@/assets/corporate_fashion_vest.png"
+import hat from "@/assets/corporate_fashion_hat.png"
+import tie from "@/assets/corporate_fashion_tie.png"
+import polo from "@/assets/corporate_fashion_polo.png"
+import silkSkirt from "@/assets/corporate_fashion_silkskirt.png"
+import sacko from "@/assets/corporate_fashion_sacko.png"
+import bluse from "@/assets/corporate_fashion_bluse.png"
 import star from "@/assets/star-regular.svg";
 
 export const corporate = {
   headerImage: corporatefashion.src,
   title: {
     de: "Feinste Corporate Fashion für Ihr Unternehmen",
-    en: "The Patented Protective Wall for Roll Containers",
+    en: "Premium Corporate Fashion for Your Business",
   },
   subtitle: {
-    de: "Nachhaltig sichern statt verschwenden",
-    en: "Secure sustainably instead of wasting",
+    de: "Professionelles Auftreten mit Individualität",
+    en: "Professional Style with a Personal Touch",
   },
   shortDescription: {
-    de: `Unsere patentierte Schutzwand für Rollbehälter erleichtert den Transport Ihrer Ware. Außerdem wird durch die Wiederverwendung Plastikmüll gespart. Alternativ in unterschiedlichen Farben erhältlich. Außerdem für den individuellen Touch, kann das eigene Logo platziert werden. Patentiertes Produkt zur Warensicherung im Rollbehälter. Das 6-Punkt-Clicksystem ermöglicht eine einfache Befestigung an den Seitengittern.`,
-    en: `Our patented protective wall for roll containers makes transporting your goods easier and more secure. By reusing the product, plastic waste is significantly reduced. Available in various colors and customizable with your company logo. The 6-point click system allows for quick and easy attachment to the container’s side panels — a patented solution for securing goods in transport.`,
+    de: `Ein einheitlicher Look schafft Vertrauen, stärkt die Marke und hinterlässt bleibenden Eindruck. Unsere Corporate Fashion vereint modernes Design, angenehmen Tragekomfort und hochwertige Materialien – ideal für Empfang, Kundenkontakt, Außendienst oder den täglichen Einsatz im Unternehmen. Unsere Produkte sind individualisierbar – mit Firmenlogo, Farben oder speziellen Schnitten – für einen Auftritt, der so individuell ist wie Ihre Kunden.`,
+    en: `A consistent look builds trust, strengthens your brand, and leaves a lasting impression. Our corporate fashion combines modern design, comfortable wear, and high-quality materials – ideal for front desk, customer-facing roles, field staff, or everyday use in the workplace.
+Our products can be customized – with company logos, color schemes, or tailored cuts – for an appearance as unique as your clients themselves.`,
   },
   category: {
     de: "Schutzwände",
@@ -28,251 +41,126 @@ export const corporate = {
     de: "Wahlweise mit Logodruck & verschiedenen Farben",
     en: "Optionally with logo print & different colors",
   },
-  images: [schutzwandFarbig.src, schutzwandFront.src, schutzwandVerschluss.src],
-  function: {
+  images: {
     headline: {
-      de: "Funktionsweise",
-      en: "How it works",
+      de: "Produktbeispiele",
+      en: "Sample Products"
     },
     intro: {
-      de: "Lorem ipsum dolor sit amet. Sit molestias esse et voluptas ducimus est nihil sunt et velit nostrum aut blanditiis tenetur. Est animi sunt ex quae ipsam et distinctio impedit ea commodi necessitatibus quo explicabo soluta sit cumque exercitationem et ipsum doloremque.",
-      en: "Lorem ipsum dolor sit amet. Sit molestias esse et voluptas ducimus est nihil sunt et velit nostrum aut blanditiis tenetur. Est animi sunt ex quae ipsam et distinctio impedit ea commodi necessitatibus quo explicabo soluta sit cumque exercitationem et ipsum doloremque.",
+      de: "Hier sehen Sie einige Produktbeispiele. Lassen Sie sich gerne davon inspirieren, auch wenn wir natürlich empfehlen, Ihre Lösung ganz individuell zu gestalten.",
+      en: "Here are some product examples to inspire you. While these give a good first impression, we always recommend creating a solution tailored specifically to your needs."
+    },
+    images: [skirt.src, pants.src, vest.src, hat.src, tie.src, polo.src, silkSkirt.src, sacko.src, bluse.src]
+  },
+  function: {
+    headline: {
+      de: "Perfekt eingekleidet - Von Kopf bis Fuß",
+      en: "Perfectly Dressed – From Head to Toe",
+    },
+    intro: {
+      de: `Von funktionaler Oberbekleidung über bequeme Unterwäsche bis hin zu durchdachten Accessoires – bei uns erhalten Sie alles aus einer Hand. Unsere Corporate Fashion Kollektion bietet ein durchgängiges Bekleidungskonzept, das keine Details dem Zufall überlässt.`,
+      en: `From functional outerwear and comfortable base layers to thoughtfully selected accessories – we offer everything from a single source. Our corporate fashion collection provides a cohesive clothing concept that leaves nothing to chance, ensuring your team presents a consistent, head-to-toe look.`,
     },
     items: [
       {
         title: {
-          de: "Haken einhängen",
-          en: "Apply hooks",
+          de: "Oberbekleidung",
+          en: "Outerwear",
         },
-        img: schutzwandSchraeg.src,
+        img: corporateFashionTop.src,
         text: {
-          de: "Lorem ipsum dolor sit amet. Sit molestias esse et voluptas ducimus est nihil sunt et velit nostrum aut blanditiis tenetur. Est animi sunt ex quae ipsam et distinctio impedit ea commodi necessitatibus quo explicabo soluta sit cumque exercitationem et ipsum doloremque.",
-          en: "Lorem ipsum dolor sit amet. Sit molestias esse et voluptas ducimus est nihil sunt et velit nostrum aut blanditiis tenetur. Est animi sunt ex quae ipsam et distinctio impedit ea commodi necessitatibus quo explicabo soluta sit cumque exercitationem et ipsum doloremque.",
+          de: "Unsere Oberbekleidung bietet vielfältige Kombinationsmöglichkeiten – von Jacken, Westen und Blazern bis hin zu Hemden, Poloshirts und funktionalen Outdoorlösungen. Ideal für den professionellen Auftritt bei jedem Wetter und in jeder Branche.",
+          en: "Our outerwear offers versatile combinations – from jackets, vests, and blazers to shirts, polo shirts, and functional outdoor solutions. Perfect for a professional appearance in any weather and across all industries.",
         },
       },
       {
         title: {
-          de: "Haken einhängen",
-          en: "Apply hooks",
+          de: "Beinbekleidung",
+          en: "Bottoms",
         },
-        img: schutzwandFront.src,
+        img: corporateFashionBottom.src,
         text: {
-          de: "Lorem ipsum dolor sit amet. Sit molestias esse et voluptas ducimus est nihil sunt et velit nostrum aut blanditiis tenetur. Est animi sunt ex quae ipsam et distinctio impedit ea commodi necessitatibus quo explicabo soluta sit cumque exercitationem et ipsum doloremque.",
-          en: "Lorem ipsum dolor sit amet. Sit molestias esse et voluptas ducimus est nihil sunt et velit nostrum aut blanditiis tenetur. Est animi sunt ex quae ipsam et distinctio impedit ea commodi necessitatibus quo explicabo soluta sit cumque exercitationem et ipsum doloremque.",
+          de: "Unsere Hosen und Röcke sorgen für Komfort und ein gepflegtes Erscheinungsbild – von klassischen Stoffhosen und Chinos bis hin zu Röcken und robusten Arbeitshosen. Ideal für den täglichen Einsatz in Büro, Service oder Außendienst.",
+          en: "Our bottoms ensure all-day comfort and a polished look – from classic trousers and chinos to skirts and workwear pants. Designed for everyday use across corporate, service, and field roles.",
         },
       },
       {
         title: {
-          de: "Haken einhängen",
-          en: "Apply hooks",
+          de: "Accessoires",
+          en: "Accessories",
         },
-        img: schutzwandVerschluss.src,
+        img: corporateFashionAccessoires.src,
         text: {
-          de: "Lorem ipsum dolor sit amet. Sit molestias esse et voluptas ducimus est nihil sunt et velit nostrum aut blanditiis tenetur. Est animi sunt ex quae ipsam et distinctio impedit ea commodi necessitatibus quo explicabo soluta sit cumque exercitationem et ipsum doloremque.",
-          en: "Lorem ipsum dolor sit amet. Sit molestias esse et voluptas ducimus est nihil sunt et velit nostrum aut blanditiis tenetur. Est animi sunt ex quae ipsam et distinctio impedit ea commodi necessitatibus quo explicabo soluta sit cumque exercitationem et ipsum doloremque.",
+          de: "Die Details machen den Unterschied: Unsere Accessoires – wie Gürtel, Schals, Mützen oder Krawatten – ergänzen jedes Outfit funktional und stilvoll. Perfekt für einen einheitlichen und durchdachten Gesamtauftritt.",
+          en: "Details make the difference: Our accessories – such as belts, scarves, hats, and ties – add both function and style to any outfit. Perfect for a polished and cohesive overall look.",
         },
       },
     ],
   },
   usps: {
     headline: {
-      de: "Die All-Round Lösung",
-      en: "The All-Round Solution",
+      de: "Leistungen",
+      en: "Services",
     },
     intro: {
-      de: "Lorem ipsum dolor sit amet. Sit molestias esse et voluptas ducimus est nihil sunt et velit nostrum aut blanditiis tenetur. Est animi sunt ex quae ipsam et distinctio impedit ea commodi necessitatibus quo explicabo soluta sit cumque exercitationem et ipsum doloremque.",
-      en: "Lorem ipsum dolor sit amet. Sit molestias esse et voluptas ducimus est nihil sunt et velit nostrum aut blanditiis tenetur. Est animi sunt ex quae ipsam et distinctio impedit ea commodi necessitatibus quo explicabo soluta sit cumque exercitationem et ipsum doloremque.",
+      de: "Vom Konzept über die Mustererstellung, über die Produktion bis hin zur Logistik. Wir sorgen dafür, dass Ihr Projekt zum vollen Erfolg wird.",
+      en: "From the first sketch to the final stitch — through patterns, production, and logistics — we turn your vision into a success story.",
     },
     items: [
       {
         title: {
-          de: "Personalisierbar",
-          en: "Apply hooks",
+          de: "Beratung",
+          en: "Consulting",
         },
         img: star.src,
         text: {
-          de: "Lorem ipsum dolor sit amet. Sit molestias esse et voluptas ducimus est nihil sunt et velit nostrum aut blanditiis tenetur. Est animi sunt ex quae ipsam et distinctio impedit ea commodi necessitatibus quo explicabo soluta sit cumque exercitationem et ipsum doloremque.",
-          en: "Lorem ipsum dolor sit amet. Sit molestias esse et voluptas ducimus est nihil sunt et velit nostrum aut blanditiis tenetur. Est animi sunt ex quae ipsam et distinctio impedit ea commodi necessitatibus quo explicabo soluta sit cumque exercitationem et ipsum doloremque.",
+          de: "Gemeinsam mit Ihnen und Ihrem Team erarbeiten wir, was Ihre Corporate Fashion im Alltag leisten muss. Dafür tauchen wir auf Wunsch direkt in Ihre Arbeitsumgebung ein – um zu verstehen, wie Sie arbeiten und was Sie wirklich brauchen.",
+          en: "Together with you and your team, we define what your corporate fashion needs to deliver in everyday work life. If desired, we’ll step right into your environment — to truly understand how you work and what you really need.",
         },
       },
       {
         title: {
-          de: "Kompatibilität",
-          en: "Apply hooks",
+          de: "Konzept & Design",
+          en: "Concept & Design",
         },
         img: star.src,
         text: {
-          de: "Lorem ipsum dolor sit amet. Sit molestias esse et voluptas ducimus est nihil sunt et velit nostrum aut blanditiis tenetur. Est animi sunt ex quae ipsam et distinctio impedit ea commodi necessitatibus quo explicabo soluta sit cumque exercitationem et ipsum doloremque.",
-          en: "Lorem ipsum dolor sit amet. Sit molestias esse et voluptas ducimus est nihil sunt et velit nostrum aut blanditiis tenetur. Est animi sunt ex quae ipsam et distinctio impedit ea commodi necessitatibus quo explicabo soluta sit cumque exercitationem et ipsum doloremque.",
+          de: "Unsere Produktentwicklung verwandelt Ihre Ideen in durchdachte Designkonzepte. Wir finden passende Stoffe, entwickeln funktionale, komfortable Schnitte – und behalten dabei stets Ihr Budget im Blick. Das ist unsere Basis für eine langfristige Partnerschaft.",
+          en: "Our product development team transforms your ideas into cohesive design concepts. We research suitable fabrics, create functional and comfortable cuts – always keeping your budget in mind. That’s the foundation for a lasting partnership.",
         },
       },
       {
         title: {
-          de: "Einfache Befestigung",
-          en: "Apply hooks",
+          de: "Musterkollektion",
+          en: "Sample Collection",
         },
         img: star.src,
         text: {
-          de: "Lorem ipsum dolor sit amet. Sit molestias esse et voluptas ducimus est nihil sunt et velit nostrum aut blanditiis tenetur. Est animi sunt ex quae ipsam et distinctio impedit ea commodi necessitatibus quo explicabo soluta sit cumque exercitationem et ipsum doloremque.",
-          en: "Lorem ipsum dolor sit amet. Sit molestias esse et voluptas ducimus est nihil sunt et velit nostrum aut blanditiis tenetur. Est animi sunt ex quae ipsam et distinctio impedit ea commodi necessitatibus quo explicabo soluta sit cumque exercitationem et ipsum doloremque.",
+          de: "Auf das Design folgen greifbare Muster. Denn textile Produkte muss man erleben – sehen, fühlen, anprobieren. Erst beim Tragen zeigt sich, wie gut ein Schnitt wirklich sitzt. Ihre Mitarbeitenden testen die Kleidung im Arbeitsalltag – damit jedes Detail perfekt passt.",
+          en: "Designs come to life through physical samples. Textiles need to be experienced – seen, touched, worn. Only when tried on does the true fit and comfort become clear. Your employees can test the garments in their daily routine, ensuring every detail is just right.",
         },
       },
       {
         title: {
-          de: "Sicherheit",
-          en: "Apply hooks",
+          de: "Produktion",
+          en: "Production",
         },
         img: star.src,
         text: {
-          de: "Lorem ipsum dolor sit amet. Sit molestias esse et voluptas ducimus est nihil sunt et velit nostrum aut blanditiis tenetur. Est animi sunt ex quae ipsam et distinctio impedit ea commodi necessitatibus quo explicabo soluta sit cumque exercitationem et ipsum doloremque.",
-          en: "Lorem ipsum dolor sit amet. Sit molestias esse et voluptas ducimus est nihil sunt et velit nostrum aut blanditiis tenetur. Est animi sunt ex quae ipsam et distinctio impedit ea commodi necessitatibus quo explicabo soluta sit cumque exercitationem et ipsum doloremque.",
+          de: "Ob mit oder ohne Tragetests – am Ende entsteht ein Freigabemuster. Für die Produktion bieten wir Ihnen die nachhaltigste und flexibelste Lösung an, selbstverständlich in zertifizierten Betrieben, die weltweit anerkannte Standards für Arbeitsschutz, Nachhaltigkeit und Umwelt einhalten.",
+          en: "With or without wearer trials, a final approval sample is created. We offer the most sustainable and flexible production options — exclusively in certified factories that meet globally recognized standards in occupational safety, sustainability, and environmental responsibility.",
         },
       },
       {
         title: {
-          de: "Stabilität",
-          en: "Apply hooks",
+          de: "Lieferung & Logistik",
+          en: "Delivery & Logistics",
         },
         img: star.src,
         text: {
-          de: "Lorem ipsum dolor sit amet. Sit molestias esse et voluptas ducimus est nihil sunt et velit nostrum aut blanditiis tenetur. Est animi sunt ex quae ipsam et distinctio impedit ea commodi necessitatibus quo explicabo soluta sit cumque exercitationem et ipsum doloremque.",
-          en: "Lorem ipsum dolor sit amet. Sit molestias esse et voluptas ducimus est nihil sunt et velit nostrum aut blanditiis tenetur. Est animi sunt ex quae ipsam et distinctio impedit ea commodi necessitatibus quo explicabo soluta sit cumque exercitationem et ipsum doloremque.",
+          de: "Wir kümmern uns nicht nur um Design und Produktion – sondern auch um eine reibungslose Logistik. Ob zentrale Auslieferung, oder Filialbelieferung: Wir übernehmen die gesamte Abwicklung. So stellen wir sicher, dass Ihre Corporate Fashion dort ankommt, wo sie gebraucht wird – passgenau und termingerecht.",
+          en: "We take care of more than just design and production — we also ensure smooth and efficient logistics. Whether central delivery or distribution to individual locations, we handle the entire process. This way, your corporate fashion arrives exactly where it's needed — with the right fit and right on time.",
         },
-      },
-      {
-        title: {
-          de: "Nachhaltigkeit",
-          en: "Apply hooks",
-        },
-        img: star.src,
-        text: {
-          de: "Lorem ipsum dolor sit amet. Sit molestias esse et voluptas ducimus est nihil sunt et velit nostrum aut blanditiis tenetur. Est animi sunt ex quae ipsam et distinctio impedit ea commodi necessitatibus quo explicabo soluta sit cumque exercitationem et ipsum doloremque.",
-          en: "Lorem ipsum dolor sit amet. Sit molestias esse et voluptas ducimus est nihil sunt et velit nostrum aut blanditiis tenetur. Est animi sunt ex quae ipsam et distinctio impedit ea commodi necessitatibus quo explicabo soluta sit cumque exercitationem et ipsum doloremque.",
-        },
-      },
-    ],
-  },
-  colors: {
-    headline: {
-      de: "Farbvarianten",
-      en: "Color Variants",
-    },
-    intro: {
-      de: "Lorem ipsum dolor sit amet. Sit molestias esse et voluptas ducimus est nihil sunt et velit nostrum aut blanditiis tenetur. Est animi sunt ex quae ipsam et distinctio impedit ea commodi necessitatibus quo explicabo soluta sit cumque exercitationem et ipsum doloremque.",
-      en: "Lorem ipsum dolor sit amet. Sit molestias esse et voluptas ducimus est nihil sunt et velit nostrum aut blanditiis tenetur. Est animi sunt ex quae ipsam et distinctio impedit ea commodi necessitatibus quo explicabo soluta sit cumque exercitationem et ipsum doloremque.",
-    },
-    items: [
-      {
-        title: {
-          de: "Rot",
-          en: "Red",
-        },
-        image: schutzwandVerschluss.src,
-      },
-      {
-        title: {
-          de: "Blau",
-          en: "Blue",
-        },
-        image: schutzwandFarbig.src,
-      },
-      {
-        title: {
-          de: "Navy",
-          en: "Navy",
-        },
-        image: schutzwandFarbig.src,
-      },
-      {
-        title: {
-          de: "Steingrau",
-          en: "Stonegray",
-        },
-        image: schutzwandFarbig.src,
-      },
-      {
-        title: {
-          de: "Rot",
-          en: "Red",
-        },
-        image: schutzwandFarbig.src,
-      },
-      {
-        title: {
-          de: "Blau",
-          en: "Blue",
-        },
-        image: schutzwandFarbig.src,
-      },
-      {
-        title: {
-          de: "Navy",
-          en: "Navy",
-        },
-        image: schutzwandFarbig.src,
-      },
-      {
-        title: {
-          de: "Steingrau",
-          en: "Stonegray",
-        },
-        image: schutzwandFarbig.src,
-      },
-      {
-        title: {
-          de: "Rot",
-          en: "Red",
-        },
-        image: schutzwandFarbig.src,
-      },
-      {
-        title: {
-          de: "Blau",
-          en: "Blue",
-        },
-        image: schutzwandFarbig.src,
-      },
-      {
-        title: {
-          de: "Navy",
-          en: "Navy",
-        },
-        image: schutzwandFarbig.src,
-      },
-      {
-        title: {
-          de: "Steingrau",
-          en: "Stonegray",
-        },
-        image: schutzwandFarbig.src,
-      },
-      {
-        title: {
-          de: "Rot",
-          en: "Red",
-        },
-        image: schutzwandFarbig.src,
-      },
-      {
-        title: {
-          de: "Blau",
-          en: "Blue",
-        },
-        image: schutzwandFarbig.src,
-      },
-      {
-        title: {
-          de: "Navy",
-          en: "Navy",
-        },
-        image: schutzwandFarbig.src,
-      },
-      {
-        title: {
-          de: "Steingrau",
-          en: "Stonegray",
-        },
-        image: schutzwandFarbig.src,
       },
     ],
   },
