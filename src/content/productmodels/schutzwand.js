@@ -40,7 +40,7 @@ Thanks to the innovative 6-point click system and integrated fiberglass rods, th
             en: "Costefficient & fast",
         },
         text: {
-            de: "Auf 100 Transporte lassen sich pro Rollcontainer bereits bis zu 165€ sparen, da die Schutzwand auch bei kleineren Mengen nicht mehr als 20€ kostet, die Arbeitszeit gegenüber dem Einstretchen nur noch 20% beträgt und die Kosten für Stretchfolie sowie deren Entsorgung komplett wegfallen.",
+            de: "Auf einen LKW mit 48 Rollcontainern lassen sich bereits bis zu 7920€ sparen, da die Schutzwand auch bei kleineren Mengen nicht mehr als 20€ kostet, die Arbeitszeit gegenüber dem Einstretchen nur noch 20% beträgt und die Kosten für Stretchfolie sowie deren Entsorgung komplett wegfallen.",
             en: "For every 100 transports, savings of up to €165 per roll container can already be achieved, as the protective wall costs no more than €20 even for smaller quantities, the working time is reduced to just 20% compared to stretch-wrapping, and the costs for stretch film and its disposal are completely eliminated."
         },
         numbers: [
@@ -49,20 +49,20 @@ Thanks to the innovative 6-point click system and integrated fiberglass rods, th
                 de: "Kosten Stretchfolie",
                 en: "Cost of Stretch Film",
                 color: "gray",
-                number: 185
+                number: 8880
 
             }, {
 
                 de: "Kosten Schutzwand",
                 en: "Cost of Protective Wall",
                 color: "sand",
-                number: 20
+                number: 960
             }, {
 
                 de: "Ersparnis",
                 en: "Savings",
                 color: "white",
-                number: 165
+                number: 7920
 
             }
         ]

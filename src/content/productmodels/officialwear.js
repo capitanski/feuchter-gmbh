@@ -52,7 +52,7 @@ export const official = {
     },
     function: {
         headline: {
-            de: "Alles aus einer Hand",
+            de: "Perfekt ausgestattet - Von Kopf bis Fuss",
             en: "All-in-one solution"
         },
         intro: {

@@ -1,10 +1,23 @@
 ---
 const { product, pageLanguage } = Astro.props;
+import Button from "./Button.astro";
+import { buttonTranslations } from "@/content/translations";
 ---
 
 <div class="function">
     <div class="headline-and-title">
-        <h2 class="animatable">{product.function.headline[pageLanguage]}</h2>
+        <div class="inner">
+            <h2 class="animatable">
+                {product.function.headline[pageLanguage]}
+            </h2>
+            <Button
+                linkText={buttonTranslations("contact", pageLanguage)}
+                target=`/${pageLanguage}/contact`
+                class="hero-button-2 function-button"
+                variant="secondary"
+            />
+        </div>
+
         <!-- <p class="headline-text">{product.function.intro[pageLanguage]}</p>-->
     </div>
     <div class="image-grid">
@@ -32,7 +45,12 @@ const { product, pageLanguage } = Astro.props;
         font-size: 1.2rem !important;
         line-height: 1.2rem !important;
         margin: 0;
+        margin-bottom: 25px;
         text-transform: uppercase;
+    }
+    .inner {
+        position: sticky;
+        top: 120px;
     }
     .headline-and-title {
         border-right: 1px solid var(--sand);

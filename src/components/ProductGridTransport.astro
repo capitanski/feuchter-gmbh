@@ -5,6 +5,8 @@ import TransportVariants from "./TransportVariants.astro";
 import VariantSlider from "./VariantSlider.astro";
 import TransportChart from "./TransportChart.astro";
 import SavingsCounter from "./SavingsCounter.astro";
+import Button from "./Button.astro";
+import { buttonTranslations } from "@/content/translations";
 const { pageLanguage, searchCategory, links, texts, product, headerImage } =
   Astro.props;
 ---
@@ -25,17 +27,26 @@ const { pageLanguage, searchCategory, links, texts, product, headerImage } =
       </div>
 
       <div class="intro">
-        <div class="headline-and-subtitle">
-          <h1 class="animatable" id="h1">
-            {product.title[pageLanguage]}
-          </h1>
-          <p class="subtitle">
-            {product.subtitle[pageLanguage]}
+        <div class="intro-inner">
+          <div class="headline-and-subtitle">
+            <h1 class="animatable" id="h1">
+              {product.title[pageLanguage]}
+            </h1>
+            <p class="subtitle">
+              {product.subtitle[pageLanguage]}
+            </p>
+          </div>
+          <p class="intro-text">
+            {product.shortDescription[pageLanguage]}
           </p>
         </div>
-        <p class="intro-text">
-          {product.shortDescription[pageLanguage]}
-        </p>
+
+        <Button
+          linkText={buttonTranslations("contact", pageLanguage)}
+          target=`/${pageLanguage}/contact`
+          class="hero-button-2 button"
+          variant="secondary"
+        />
       </div>
     </div>
 
@@ -273,13 +284,20 @@ const { pageLanguage, searchCategory, links, texts, product, headerImage } =
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
-    gap: 10px;
+    gap: 40px;
     max-width: 100%;
-    padding: 0 0 50px 0;
+    padding: 0 0 50px 5px;
     @media screen and (max-width: 820px) {
       max-width: 100%;
       padding: 0 20px;
     }
+  }
+  .intro-inner {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 15px;
   }
   .tags {
     display: flex;

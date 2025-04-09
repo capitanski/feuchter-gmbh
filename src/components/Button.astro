@@ -46,4 +46,12 @@ const { linkText, target, class: className, language, variant } = Astro.props;
     background: var(--sand) !important;
     color: var(--darkgray) !important;
   }
+  .button {
+    width: 100% !important;
+  }
+  .function-button {
+    @media screen and (max-width: 1028px) {
+      display: none;
+    }
+  }
 </style>
