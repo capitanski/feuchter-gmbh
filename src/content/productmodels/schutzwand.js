@@ -40,8 +40,9 @@ Thanks to the innovative 6-point click system and integrated fiberglass rods, th
             en: "Costefficient & fast",
         },
         text: {
-            de: "Auf einen LKW mit 48 Rollcontainern lassen sich bereits bis zu 7920€ sparen, da die Schutzwand auch bei kleineren Mengen nicht mehr als 20€ kostet, die Arbeitszeit gegenüber dem Einstretchen nur noch 20% beträgt und die Kosten für Stretchfolie sowie deren Entsorgung komplett wegfallen.",
-            en: "For every 100 transports, savings of up to €165 per roll container can already be achieved, as the protective wall costs no more than €20 even for smaller quantities, the working time is reduced to just 20% compared to stretch-wrapping, and the costs for stretch film and its disposal are completely eliminated."
+            de: "Ein LKW mit 48 Rollcontainern verursacht allein durch Stretchfolie, Arbeitszeit und Entsorgung auf 7 Jahre  bis zu 51,240 € an Kosten – bei nur einem Transport pro Arbeitstag. Mit unserer wiederverwendbaren Schutzlösung sparen Sie sich das dauerhaft: kein Folienverbrauch, weniger Aufwand, mehr Effizienz.",
+            en: `A single truck with 48 roll containers generates up to €51,240 in costs within 7 years from stretch film, labor, and disposal – with just one transport per working day.
+Our reusable securing system eliminates all of that: no film waste, less effort, more efficiency.`
         },
         numbers: [
             {
@@ -49,20 +50,20 @@ Thanks to the innovative 6-point click system and integrated fiberglass rods, th
                 de: "Kosten Stretchfolie",
                 en: "Cost of Stretch Film",
                 color: "gray",
-                number: 8880
+                number: 56945
 
             }, {
 
                 de: "Kosten Schutzwand",
                 en: "Cost of Protective Wall",
                 color: "sand",
-                number: 960
+                number: 1080
             }, {
 
                 de: "Ersparnis",
                 en: "Savings",
                 color: "white",
-                number: 7920
+                number: 55865
 
             }
         ]
