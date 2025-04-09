@@ -22,9 +22,9 @@ export const schutzwand = {
     },
     shortDescription: {
         de: `Mit unserer patentierten Schutzwand für Rollbehälter verabschieden Sie sich endgültig von Stretchfolie. Sie ersetzt diese vollständig bei der Ladungssicherung und bietet eine nachhaltige, wiederverwendbare Alternative.
-Dank des innovativen 6-Punkt-Clicksystems und der integrierten Glasfaserstäbe überzeugt die Schutzwand durch maximale Stabilität und Sicherheit – und spart gleichzeitig wertvolle Zeit beim Anbringen.`,
+Dank des innovativen 6-Punkt-Clicksystems und der integrierten Glasfaserstäbe überzeugt die Schutzwand durch maximale Stabilität und Sicherheit – und spart gleichzeitig wertvolle Zeit beim Anbringen. Die Schutzwand kann für alle Rollcontainergrößen angefertigt werden.`,
         en: `With our patented protective wall for roll containers, you can finally say goodbye to stretch film. It completely replaces stretch film in load securing and offers a sustainable, reusable alternative.
-Thanks to the innovative 6-point click system and integrated fiberglass rods, the protective wall ensures maximum stability and safety – while also saving valuable time during installation.`
+Thanks to the innovative 6-point click system and integrated fiberglass rods, the protective wall ensures maximum stability and safety – while also saving valuable time during installation. The Protective wall can be manufactured for every size of Roll cage trolley.`
     },
     category: {
         de: "Schutzwände",

@@ -12,15 +12,15 @@ export const thermohaube = {
     headerImage: thermohaubeFarbig.src,
     title: {
         de: "Die Thermohaube für Rollcontainer",
-        en: "The Patented Protective Wall for Roll Containers"
+        en: "The Thermal Cover for Roll containers"
     },
     subtitle: {
         de: "Kühlketten leicht gemacht",
-        en: "Secure sustainably instead of wasting"
+        en: "Keeping it cool – the easy way"
     },
     shortDescription: {
-        de: `Unsere patentierte Schutzwand für Rollbehälter erleichtert den Transport Ihrer Ware. Außerdem wird durch die Wiederverwendung Plastikmüll gespart. Alternativ in unterschiedlichen Farben erhältlich. Außerdem für den individuellen Touch, kann das eigene Logo platziert werden. Patentiertes Produkt zur Warensicherung im Rollbehälter. Das 6-Punkt-Clicksystem ermöglicht eine einfache Befestigung an den Seitengittern.`,
-        en: `Our patented protective wall for roll containers makes transporting your goods easier and more secure. By reusing the product, plastic waste is significantly reduced. Available in various colors and customizable with your company logo. The 6-point click system allows for quick and easy attachment to the container’s side panels — a patented solution for securing goods in transport.`
+        de: `Die innovative Thermohaube gewährleistet eine konstant temperierte Umgebung im Rollwagen. Dank des zweischichtigen Oxfordgewebes mit integrierter Isolationsschicht lässt sich die Kühlkette während des Transports mühelos einhalten. Die Thermohaube ist individuell anpassbar – wahlweise mit Ihrem Firmenlogo, in verschiedenen Farben sowie optional mit praktischer Dokumententasche. Die Thermohaube kann für alle Rollcontainergrößen angefertigt werden.`,
+        en: `The innovative thermal cover ensures a consistently controlled temperature inside the roll cage. Thanks to its dual-layer Oxford fabric with an integrated insulation layer, maintaining the cold chain during transport becomes effortless. The thermal cover is fully customizable – available with your company logo, in a variety of colors, and optionally with a practical document pocket. The Thermal cover can be manufactured for every size of Roll cage trolley.`
     },
     category: {
         de: "Schutzwände",
@@ -30,15 +30,10 @@ export const thermohaube = {
         de: "Wahlweise mit Logodruck & verschiedenen Farben",
         en: "Optionally with logo print & different colors"
     },
-    images: [
-        schutzwandFarbig.src,
-        schutzwandFront.src,
-        schutzwandVerschluss.src
-    ],
     function: {
         headline: {
-            de: "Funktionsweise",
-            en: "How it works"
+            de: "Einfache Anwendung - große Wirkung",
+            en: "User-friendly and ease to use"
         },
         intro: {
             de: "Lorem ipsum dolor sit amet. Sit molestias esse et voluptas ducimus est nihil sunt et velit nostrum aut blanditiis tenetur. Est animi sunt ex quae ipsam et distinctio impedit ea commodi necessitatibus quo explicabo soluta sit cumque exercitationem et ipsum doloremque.",
@@ -47,115 +42,82 @@ export const thermohaube = {
         items: [
             {
                 title: {
-                    de: "Haken einhängen",
-                    en: "Apply hooks"
+                    de: "Klettverschluss öffnen & Rollwagen beladen",
+                    en: "Open the Velcro fastener and load the roll cage"
                 },
                 img: schutzwandSchraeg.src,
                 text: {
-                    de: "Lorem ipsum dolor sit amet. Sit molestias esse et voluptas ducimus est nihil sunt et velit nostrum aut blanditiis tenetur. Est animi sunt ex quae ipsam et distinctio impedit ea commodi necessitatibus quo explicabo soluta sit cumque exercitationem et ipsum doloremque.",
-                    en: "Lorem ipsum dolor sit amet. Sit molestias esse et voluptas ducimus est nihil sunt et velit nostrum aut blanditiis tenetur. Est animi sunt ex quae ipsam et distinctio impedit ea commodi necessitatibus quo explicabo soluta sit cumque exercitationem et ipsum doloremque."
+                    de: "Öffnen Sie die beiden seitlichen Klettverschlüsse der Thermohaube und schlagen Sie die Vorderseite ganz einfach nach oben über den Rollcontainer. Nun können Sie bequem mit dem Beladen des Rollwagens beginnen.",
+                    en: "Open the two Velcro fasteners on the sides of the thermal cover and simply fold the front flap up over the roll cage. You can now start loading your products with ease."
                 }
             },
             {
                 title: {
-                    de: "Haken einhängen",
-                    en: "Apply hooks"
+                    de: "Klettverschluss schließen",
+                    en: "Close the Velcro fastener"
                 },
                 img: schutzwandFront.src,
                 text: {
-                    de: "Lorem ipsum dolor sit amet. Sit molestias esse et voluptas ducimus est nihil sunt et velit nostrum aut blanditiis tenetur. Est animi sunt ex quae ipsam et distinctio impedit ea commodi necessitatibus quo explicabo soluta sit cumque exercitationem et ipsum doloremque.",
-                    en: "Lorem ipsum dolor sit amet. Sit molestias esse et voluptas ducimus est nihil sunt et velit nostrum aut blanditiis tenetur. Est animi sunt ex quae ipsam et distinctio impedit ea commodi necessitatibus quo explicabo soluta sit cumque exercitationem et ipsum doloremque."
+                    de: "Schließen Sie die beiden seitlichen Klettverschlüsse der Thermohaube und achten Sie darauf, dass sie am unteren Rand sauber abschließt. Ihre Waren sind nun optimal geschützt und bereit für Verladung und Transport.",
+                    en: "Fasten the two Velcro straps on the sides of the thermal cover, making sure it seals neatly at the bottom. Your goods are now well protected and ready for loading and transport."
                 }
             },
             {
                 title: {
-                    de: "Haken einhängen",
-                    en: "Apply hooks"
+                    de: "Waren sicher transportieren",
+                    en: "Transport the goods safely"
                 },
                 img: schutzwandVerschluss.src,
                 text: {
-                    de: "Lorem ipsum dolor sit amet. Sit molestias esse et voluptas ducimus est nihil sunt et velit nostrum aut blanditiis tenetur. Est animi sunt ex quae ipsam et distinctio impedit ea commodi necessitatibus quo explicabo soluta sit cumque exercitationem et ipsum doloremque.",
-                    en: "Lorem ipsum dolor sit amet. Sit molestias esse et voluptas ducimus est nihil sunt et velit nostrum aut blanditiis tenetur. Est animi sunt ex quae ipsam et distinctio impedit ea commodi necessitatibus quo explicabo soluta sit cumque exercitationem et ipsum doloremque."
+                    de: "Sobald Sie Zugriff auf die Waren benötigen, öffnen Sie einfach den Klettverschluss – und schon können Sie die Produkte servieren oder weiterverarbeiten. Die Thermohaube kann dabei jederzeit auf dem Rollwagen bleiben, solange dieser nicht anderweitig verwendet wird.",
+                    en: "Whenever you need access to the goods, simply open the Velcro fastener to serve or further process your products. The thermal cover can remain on the roll cage at all times, as long as the trolley isn’t being used for another purpose."
                 }
             }
         ]
     },
     usps: {
         headline: {
-            de: "Die All-Round Lösung",
-            en: "The All-Round Solution"
+            de: "Individualisierbar, wiederverwendbar und sicher",
+            en: "Configurable, reusable, and safe"
         },
         intro: {
-            de: "Lorem ipsum dolor sit amet. Sit molestias esse et voluptas ducimus est nihil sunt et velit nostrum aut blanditiis tenetur. Est animi sunt ex quae ipsam et distinctio impedit ea commodi necessitatibus quo explicabo soluta sit cumque exercitationem et ipsum doloremque.",
-            en: "Lorem ipsum dolor sit amet. Sit molestias esse et voluptas ducimus est nihil sunt et velit nostrum aut blanditiis tenetur. Est animi sunt ex quae ipsam et distinctio impedit ea commodi necessitatibus quo explicabo soluta sit cumque exercitationem et ipsum doloremque."
+            de: "",
+            en: ""
         },
         items: [
             {
                 title: {
-                    de: "Personalisierbar",
-                    en: "Apply hooks"
+                    de: "Individualisierbar",
+                    en: "Configurable"
                 },
                 img: star.src,
                 text: {
-                    de: "Lorem ipsum dolor sit amet. Sit molestias esse et voluptas ducimus est nihil sunt et velit nostrum aut blanditiis tenetur. Est animi sunt ex quae ipsam et distinctio impedit ea commodi necessitatibus quo explicabo soluta sit cumque exercitationem et ipsum doloremque.",
-                    en: "Lorem ipsum dolor sit amet. Sit molestias esse et voluptas ducimus est nihil sunt et velit nostrum aut blanditiis tenetur. Est animi sunt ex quae ipsam et distinctio impedit ea commodi necessitatibus quo explicabo soluta sit cumque exercitationem et ipsum doloremque."
+                    de: "Auf Wunsch wird die Thermohaube mit Ihrem Firmenlogo bedruckt und ist in zahlreichen Farbvarianten erhältlich. Bei größeren Abnahmemengen produzieren wir das Gewebe selbstverständlich in Ihrer individuellen Wunschfarbe – perfekt abgestimmt auf Ihr Corporate Design. Optional kann die Thermohaube auch mit einer praktischen Dokumententasche ausgestattet werden.",
+                    en: "Upon request, the thermal cover can be printed with your company logo and is available in a wide range of colors. For larger order volumes, we will gladly manufacture the fabric in your custom color – precisely matched to your corporate design. A practical document pocket can also be added if desired."
                 }
             },
             {
                 title: {
-                    de: "Kompatibilität",
-                    en: "Apply hooks"
+                    de: "Top Isolationswerte",
+                    en: "Top-tier thermal insulation"
                 },
                 img: star.src,
                 text: {
-                    de: "Lorem ipsum dolor sit amet. Sit molestias esse et voluptas ducimus est nihil sunt et velit nostrum aut blanditiis tenetur. Est animi sunt ex quae ipsam et distinctio impedit ea commodi necessitatibus quo explicabo soluta sit cumque exercitationem et ipsum doloremque.",
-                    en: "Lorem ipsum dolor sit amet. Sit molestias esse et voluptas ducimus est nihil sunt et velit nostrum aut blanditiis tenetur. Est animi sunt ex quae ipsam et distinctio impedit ea commodi necessitatibus quo explicabo soluta sit cumque exercitationem et ipsum doloremque."
+                    de: "Damit Ihre Waren sicher und bei optimaler Temperatur ankommen, setzen wir auf robustes Oxfordgewebe kombiniert mit einer hochwertigen Isolationsschicht aus 100 % Polyesterfasern. Diese überzeugt durch einen hohen Wärmewiderstand (R-Wert) von 0,53 m²K/W und einen besonders niedrigen Wärmedurchgangskoeffizienten (U-Wert) von nur 1,88 W/m²K.",
+                    en: "To ensure your goods arrive safely and at the right temperature, we use durable Oxford fabric combined with a high-quality insulation layer made of 100% polyester fibers. This construction delivers excellent thermal performance, with a high thermal resistance (R-value) of 0.53 m²K/W and a particularly low thermal transmittance (U-value) of just 1.88 W/m²K."
                 }
             },
             {
                 title: {
-                    de: "Einfache Befestigung",
-                    en: "Apply hooks"
+                    de: "Fertigung auf Maß",
+                    en: "Tailored for your needs"
                 },
                 img: star.src,
                 text: {
-                    de: "Lorem ipsum dolor sit amet. Sit molestias esse et voluptas ducimus est nihil sunt et velit nostrum aut blanditiis tenetur. Est animi sunt ex quae ipsam et distinctio impedit ea commodi necessitatibus quo explicabo soluta sit cumque exercitationem et ipsum doloremque.",
-                    en: "Lorem ipsum dolor sit amet. Sit molestias esse et voluptas ducimus est nihil sunt et velit nostrum aut blanditiis tenetur. Est animi sunt ex quae ipsam et distinctio impedit ea commodi necessitatibus quo explicabo soluta sit cumque exercitationem et ipsum doloremque."
+                    de: "Wir fertigen die Thermohaube passgenau nach Maß – so ist sie für alle Rollcontainergrößen geeignet. Haben Sie darüber hinaus besondere Anforderungen oder individuelle Wünsche? Sprechen Sie uns gerne an – wir setzen sie mit Freude für Sie um.",
+                    en: "We custom-make the thermal cover to fit perfectly – for all roll container sizes. If you have any special requirements or individual requests, we’ll be happy to bring them to life for you."
                 }
             },
-            {
-                title: {
-                    de: "Sicherheit",
-                    en: "Apply hooks"
-                },
-                img: star.src,
-                text: {
-                    de: "Lorem ipsum dolor sit amet. Sit molestias esse et voluptas ducimus est nihil sunt et velit nostrum aut blanditiis tenetur. Est animi sunt ex quae ipsam et distinctio impedit ea commodi necessitatibus quo explicabo soluta sit cumque exercitationem et ipsum doloremque.",
-                    en: "Lorem ipsum dolor sit amet. Sit molestias esse et voluptas ducimus est nihil sunt et velit nostrum aut blanditiis tenetur. Est animi sunt ex quae ipsam et distinctio impedit ea commodi necessitatibus quo explicabo soluta sit cumque exercitationem et ipsum doloremque."
-                }
-            },
-            {
-                title: {
-                    de: "Stabilität",
-                    en: "Apply hooks"
-                },
-                img: star.src,
-                text: {
-                    de: "Lorem ipsum dolor sit amet. Sit molestias esse et voluptas ducimus est nihil sunt et velit nostrum aut blanditiis tenetur. Est animi sunt ex quae ipsam et distinctio impedit ea commodi necessitatibus quo explicabo soluta sit cumque exercitationem et ipsum doloremque.",
-                    en: "Lorem ipsum dolor sit amet. Sit molestias esse et voluptas ducimus est nihil sunt et velit nostrum aut blanditiis tenetur. Est animi sunt ex quae ipsam et distinctio impedit ea commodi necessitatibus quo explicabo soluta sit cumque exercitationem et ipsum doloremque."
-                }
-            },
-            {
-                title: {
-                    de: "Nachhaltigkeit",
-                    en: "Apply hooks"
-                },
-                img: star.src,
-                text: {
-                    de: "Lorem ipsum dolor sit amet. Sit molestias esse et voluptas ducimus est nihil sunt et velit nostrum aut blanditiis tenetur. Est animi sunt ex quae ipsam et distinctio impedit ea commodi necessitatibus quo explicabo soluta sit cumque exercitationem et ipsum doloremque.",
-                    en: "Lorem ipsum dolor sit amet. Sit molestias esse et voluptas ducimus est nihil sunt et velit nostrum aut blanditiis tenetur. Est animi sunt ex quae ipsam et distinctio impedit ea commodi necessitatibus quo explicabo soluta sit cumque exercitationem et ipsum doloremque."
-                }
-            }
         ]
     },
     colors: {
@@ -164,138 +126,115 @@ export const thermohaube = {
             en: "Color Variants"
         },
         intro: {
-            de: "Lorem ipsum dolor sit amet. Sit molestias esse et voluptas ducimus est nihil sunt et velit nostrum aut blanditiis tenetur. Est animi sunt ex quae ipsam et distinctio impedit ea commodi necessitatibus quo explicabo soluta sit cumque exercitationem et ipsum doloremque.",
-            en: "Lorem ipsum dolor sit amet. Sit molestias esse et voluptas ducimus est nihil sunt et velit nostrum aut blanditiis tenetur. Est animi sunt ex quae ipsam et distinctio impedit ea commodi necessitatibus quo explicabo soluta sit cumque exercitationem et ipsum doloremque."
+            de: "Für kleinere Stückzahlen ist unsere Thermohaube in vielen attraktiven Basisfarben erhältlich. Bei größeren Abnahmemengen fertigen wir das Gewebe selbstverständlich in Ihrer Wunschfarbe – perfekt abgestimmt auf Ihr Corporate Design. Beachten Sie bitte, dass die Farbe je nach Bildschirm vom Original abweichen kann.",
+            en: "For smaller order quantities, our Thermal cover is available in many attractive standard colors. For larger volumes, we’re happy to produce the fabric in your custom color – perfectly matched to your corporate design. Please keep in mind, that the color on your monitor may differ from the original."
         },
         items: [
             {
                 title: {
-                    de: "Rot",
-                    en: "Red",
-
-                },
-                image: schutzwandVerschluss.src
-            },
-            {
-                title: {
-                    de: "Blau",
-                    en: "Blue",
+                    de: "Schwarz (980)",
+                    en: "Black (980)",
 
                 },
                 image: schutzwandFarbig.src
             },
             {
                 title: {
-                    de: "Navy",
-                    en: "Navy",
+                    de: "Weiß (001)",
+                    en: "White (001)",
 
                 },
                 image: schutzwandFarbig.src
             },
             {
                 title: {
-                    de: "Steingrau",
-                    en: "Stonegray",
+                    de: "Sand (011)",
+                    en: "Sand (011)",
 
                 },
                 image: schutzwandFarbig.src
             },
             {
                 title: {
-                    de: "Rot",
-                    en: "Red",
+                    de: "Hellbraun (032)",
+                    en: "Bright brown (032)",
 
                 },
                 image: schutzwandFarbig.src
             },
             {
                 title: {
-                    de: "Blau",
-                    en: "Blue",
+                    de: "Dunkelgrün (672)",
+                    en: "Dark green (672)",
 
                 },
                 image: schutzwandFarbig.src
             },
             {
                 title: {
-                    de: "Navy",
-                    en: "Navy",
+                    de: "Anthrazit (940)",
+                    en: "Anthrazite (940)",
 
                 },
                 image: schutzwandFarbig.src
             },
             {
                 title: {
-                    de: "Steingrau",
-                    en: "Stonegray",
+                    de: "Pink (325)",
+                    en: "Pink (325)",
 
                 },
                 image: schutzwandFarbig.src
             },
             {
                 title: {
-                    de: "Rot",
-                    en: "Red",
+                    de: "Safran (136)",
+                    en: "Saffron (136)",
 
                 },
                 image: schutzwandFarbig.src
             },
             {
                 title: {
-                    de: "Blau",
-                    en: "Blue",
+                    de: "Rot (370)",
+                    en: "Red (370)",
 
                 },
                 image: schutzwandFarbig.src
             },
             {
                 title: {
-                    de: "Navy",
-                    en: "Navy",
+                    de: "Dunkelrot (368)",
+                    en: "Dark red (368)",
 
                 },
                 image: schutzwandFarbig.src
             },
             {
                 title: {
-                    de: "Steingrau",
-                    en: "Stonegray",
+                    de: "Hellgrün (616)",
+                    en: "Bright green (616)",
 
                 },
                 image: schutzwandFarbig.src
             },
             {
                 title: {
-                    de: "Rot",
-                    en: "Red",
+                    de: "Hellblau (816)",
+                    en: "Bright blue (816)",
 
                 },
                 image: schutzwandFarbig.src
             },
             {
                 title: {
-                    de: "Blau",
-                    en: "Blue",
+                    de: "Navyblau (850)",
+                    en: "Navy blue (850)",
 
                 },
                 image: schutzwandFarbig.src
             },
-            {
-                title: {
-                    de: "Navy",
-                    en: "Navy",
 
-                },
-                image: schutzwandFarbig.src
-            },
-            {
-                title: {
-                    de: "Steingrau",
-                    en: "Stonegray",
-
-                },
-                image: schutzwandFarbig.src
-            }
         ]
     },
     lists: [
