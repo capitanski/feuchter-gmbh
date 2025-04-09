@@ -85,12 +85,12 @@ export const official = {
             {
                 title: {
                     de: "Accessoires & Kopfbedeckungen",
-                    en: "Apply hooks"
+                    en: "Accessories & Headwear"
                 },
                 img: headwear.src,
                 text: {
-                    de: "Lorem ipsum dolor sit amet. Sit molestias esse et voluptas ducimus est nihil sunt et velit nostrum aut blanditiis tenetur. Est animi sunt ex quae ipsam et distinctio impedit ea commodi necessitatibus quo explicabo soluta sit cumque exercitationem et ipsum doloremque.",
-                    en: "Lorem ipsum dolor sit amet. Sit molestias esse et voluptas ducimus est nihil sunt et velit nostrum aut blanditiis tenetur. Est animi sunt ex quae ipsam et distinctio impedit ea commodi necessitatibus quo explicabo soluta sit cumque exercitationem et ipsum doloremque."
+                    de: "Wir bieten maßgeschneiderte Accessoires und Kopfbedeckungen für Behörden und Sicherheitsdienste. Unsere Produkte wie Mützen, Hüte und Schals vereinen Funktionalität und professionelles Design. Sie sind optimal auf die Anforderungen der Branche abgestimmt und bieten sowohl Schutz als auch Komfort.",
+                    en: "We offer custom-made accessories and headwear for authorities and security services. Our products, including caps, hats, and scarves, combine functionality with professional design. They are perfectly tailored to meet the needs of the industry, providing both protection and comfort."
                 }
             }
         ]
@@ -98,77 +98,77 @@ export const official = {
     usps: {
         headline: {
             de: "Qualität, die man spürt & sieht",
-            en: "The All-Round Solution"
+            en: "Quality, you can feel & see"
         },
         intro: {
-            de: "Lorem ipsum dolor sit amet. Sit molestias esse et voluptas ducimus est nihil sunt et velit nostrum aut blanditiis tenetur. Est animi sunt ex quae ipsam et distinctio impedit ea commodi necessitatibus quo explicabo soluta sit cumque exercitationem et ipsum doloremque.",
-            en: "Lorem ipsum dolor sit amet. Sit molestias esse et voluptas ducimus est nihil sunt et velit nostrum aut blanditiis tenetur. Est animi sunt ex quae ipsam et distinctio impedit ea commodi necessitatibus quo explicabo soluta sit cumque exercitationem et ipsum doloremque."
+            de: "Unsere Qualitätsstandards entsprechen stets dem Niveau von Original-Polizei- und Behördenkleidung. Wir legen größten Wert auf die Auswahl hochwertiger Materialien, präzise Verarbeitung und Funktionalität. So gewährleisten wir, dass jedes Kleidungsstück den höchsten Ansprüchen an Sicherheit, Komfort und Langlebigkeit gerecht wird.",
+            en: "Our quality standards are always on par with those of original police and government uniforms. We place the utmost importance on selecting high-quality materials, precise craftsmanship, and functionality. This ensures that each garment meets the highest demands for safety, comfort, and durability."
         },
         items: [
             {
                 title: {
-                    de: "Offizieller Lieferant von Polizeien und Behörden, Original-TL",
-                    en: "Apply hooks"
+                    de: "Offizieller Lieferant von Polizeien und Behörden",
+                    en: "Official Supplier to Police and Government Agencies"
                 },
                 img: star.src,
                 text: {
-                    de: "Lorem ipsum dolor sit amet. Sit molestias esse et voluptas ducimus est nihil sunt et velit nostrum aut blanditiis tenetur. Est animi sunt ex quae ipsam et distinctio impedit ea commodi necessitatibus quo explicabo soluta sit cumque exercitationem et ipsum doloremque.",
-                    en: "Lorem ipsum dolor sit amet. Sit molestias esse et voluptas ducimus est nihil sunt et velit nostrum aut blanditiis tenetur. Est animi sunt ex quae ipsam et distinctio impedit ea commodi necessitatibus quo explicabo soluta sit cumque exercitationem et ipsum doloremque."
+                    de: "Wir sind offizieller Lieferant vieler Polizeien und Behörden, darunter die Polizei Bayern, Hamburg, Nordrhein-Westfalen und Berlin sowie das Bundesinnenministerium. Unsere Produkte erfüllen die höchsten Anforderungen und bieten den Behörden eine zuverlässige und hochwertige Ausstattung für ihre täglichen Einsätze.",
+                    en: "We are an official supplier to numerous police forces and government agencies, including the police departments of Bavaria, Hamburg, North Rhine-Westphalia, and Berlin, as well as the Federal Ministry of the Interior. Our products meet the highest standards, providing reliable and high-quality gear for their daily operations."
                 }
             },
             {
                 title: {
                     de: "Zertifizierte Materialien",
-                    en: "Apply hooks"
+                    en: "Certified Materials"
                 },
                 img: star.src,
                 text: {
-                    de: "Lorem ipsum dolor sit amet. Sit molestias esse et voluptas ducimus est nihil sunt et velit nostrum aut blanditiis tenetur. Est animi sunt ex quae ipsam et distinctio impedit ea commodi necessitatibus quo explicabo soluta sit cumque exercitationem et ipsum doloremque.",
-                    en: "Lorem ipsum dolor sit amet. Sit molestias esse et voluptas ducimus est nihil sunt et velit nostrum aut blanditiis tenetur. Est animi sunt ex quae ipsam et distinctio impedit ea commodi necessitatibus quo explicabo soluta sit cumque exercitationem et ipsum doloremque."
+                    de: "Wir verwenden ausschließlich zertifizierte Materialien, die den höchsten Qualitäts- und Sicherheitsstandards entsprechen. Jedes Material wird sorgfältig ausgewählt, um sicherzustellen, dass unsere Produkte den strengen Anforderungen von Behörden, Polizei und Sicherheitsdiensten gerecht werden.",
+                    en: "We use only certified materials that meet the highest quality and safety standards. Every material is carefully selected to ensure that our products meet the strict requirements of authorities, police forces, and security services."
                 }
             },
             {
                 title: {
-                    de: "Deutsches Qualitätsmanagement",
-                    en: "Apply hooks"
+                    de: "Qualitätsmanagement - Made in Germany",
+                    en: "Qualitymanagement - Made in Germany"
                 },
                 img: star.src,
                 text: {
-                    de: "Lorem ipsum dolor sit amet. Sit molestias esse et voluptas ducimus est nihil sunt et velit nostrum aut blanditiis tenetur. Est animi sunt ex quae ipsam et distinctio impedit ea commodi necessitatibus quo explicabo soluta sit cumque exercitationem et ipsum doloremque.",
-                    en: "Lorem ipsum dolor sit amet. Sit molestias esse et voluptas ducimus est nihil sunt et velit nostrum aut blanditiis tenetur. Est animi sunt ex quae ipsam et distinctio impedit ea commodi necessitatibus quo explicabo soluta sit cumque exercitationem et ipsum doloremque."
+                    de: "In unseren Produktionsstätten setzen wir ausschließlich deutsche Qualitätsmanager ein, die sicherstellen, dass alle Prozesse den höchsten Standards entsprechen. Ihre Expertise garantiert, dass jedes Produkt präzise gefertigt wird und den strengen Anforderungen unserer Kunden gerecht wird.",
+                    en: "In our production facilities, we employ German quality managers who ensure that all processes meet the highest standards. Their expertise guarantees that every product is precisely crafted and meets the strict requirements of our clients."
                 }
             },
             {
                 title: {
-                    de: "Funktionalität (Kompatibilität)",
-                    en: "Apply hooks"
+                    de: "High-End Funktionalität",
+                    en: "High-End Functionality"
                 },
                 img: star.src,
                 text: {
-                    de: "Lorem ipsum dolor sit amet. Sit molestias esse et voluptas ducimus est nihil sunt et velit nostrum aut blanditiis tenetur. Est animi sunt ex quae ipsam et distinctio impedit ea commodi necessitatibus quo explicabo soluta sit cumque exercitationem et ipsum doloremque.",
-                    en: "Lorem ipsum dolor sit amet. Sit molestias esse et voluptas ducimus est nihil sunt et velit nostrum aut blanditiis tenetur. Est animi sunt ex quae ipsam et distinctio impedit ea commodi necessitatibus quo explicabo soluta sit cumque exercitationem et ipsum doloremque."
+                    de: "Unsere Kleidung und Ausstattungen bieten außergewöhnliche Funktionalität, da sie von Polizei und Behörden unter realen Einsatzbedingungen getragen werden. Wir entwickeln jedes Detail, um höchste Anforderungen an Langlebigkeit, Komfort und Einsatzfähigkeit zu erfüllen.",
+                    en: "Our clothing and gear deliver exceptional functionality, worn by police and government agencies in real operational environments. We design every detail to meet the highest standards of durability, comfort, and readiness."
                 }
             },
             {
                 title: {
-                    de: "Neuentwicklungen",
-                    en: "Apply hooks"
+                    de: "Innovative Neuentwicklungen",
+                    en: "Pioneering advancements"
                 },
                 img: star.src,
                 text: {
-                    de: "Lorem ipsum dolor sit amet. Sit molestias esse et voluptas ducimus est nihil sunt et velit nostrum aut blanditiis tenetur. Est animi sunt ex quae ipsam et distinctio impedit ea commodi necessitatibus quo explicabo soluta sit cumque exercitationem et ipsum doloremque.",
-                    en: "Lorem ipsum dolor sit amet. Sit molestias esse et voluptas ducimus est nihil sunt et velit nostrum aut blanditiis tenetur. Est animi sunt ex quae ipsam et distinctio impedit ea commodi necessitatibus quo explicabo soluta sit cumque exercitationem et ipsum doloremque."
+                    de: "Neben der Herstellung von Original-Polizeibekleidung entwickeln wir auch völlig neue Produkte, die speziell auf Ihre individuellen Anforderungen zugeschnitten sind. Mit unserer Expertise schaffen wir maßgeschneiderte Lösungen, die höchste Funktionalität und Innovation vereinen.",
+                    en: "In addition to producing original police uniforms, we also develop entirely new products tailored to your specific needs. With our expertise, we create customized solutions that combine the highest functionality and innovation."
                 }
             },
             {
                 title: {
                     de: "Enge Zusammenarbeit mit Prüflaboren",
-                    en: "Apply hooks"
+                    en: "Strong collaboration with testing facilities"
                 },
                 img: star.src,
                 text: {
-                    de: "Lorem ipsum dolor sit amet. Sit molestias esse et voluptas ducimus est nihil sunt et velit nostrum aut blanditiis tenetur. Est animi sunt ex quae ipsam et distinctio impedit ea commodi necessitatibus quo explicabo soluta sit cumque exercitationem et ipsum doloremque.",
-                    en: "Lorem ipsum dolor sit amet. Sit molestias esse et voluptas ducimus est nihil sunt et velit nostrum aut blanditiis tenetur. Est animi sunt ex quae ipsam et distinctio impedit ea commodi necessitatibus quo explicabo soluta sit cumque exercitationem et ipsum doloremque."
+                    de: "Wir arbeiten stets eng mit renommierten Prüflaboren wie dem STFI und Hohenstein zusammen, um sicherzustellen, dass unsere Materialien und Produkte den höchsten Standards entsprechen. Durch diese enge Zusammenarbeit garantieren wir, dass jedes Produkt auf Qualität, Sicherheit und Funktionalität geprüft wird.",
+                    en: "We maintain close collaboration with renowned testing laboratories such as STFI and Hohenstein to ensure that our materials and products meet the highest standards. Through this close partnership, we guarantee that every product is thoroughly tested for quality, safety, and functionality."
                 }
             }
         ]
