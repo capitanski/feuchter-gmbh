@@ -8,14 +8,18 @@ const { product, pageLanguage } = Astro.props;
         <p class="headline-text">{product.colors.intro[pageLanguage]}</p>
     </div>
     <div class="main-image-and-grid">
-        <div class="main-image-wrapper">
-            <img src={product.images[0]} alt="" id="color-mainImage" />
+        <div class="main-image-wrapper animatable">
+            <img
+                src={product.colors.items[0].image}
+                alt=""
+                id="color-mainImage"
+            />
         </div>
         <div class="image-grid">
             {
                 product.colors.items.map((item) => {
                     return (
-                        <div class="grid-item">
+                        <div class="grid-item animatable">
                             <img src={item.image} alt="" class="color-image" />
                             <p class="grid-item-title">
                                 {item.title[pageLanguage]}

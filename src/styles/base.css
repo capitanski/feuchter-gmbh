@@ -86,7 +86,9 @@
 h2 {
   font-size: 2rem !important;
   letter-spacing: -1.5px;
-  color: var(--verydarkgray);
+  background: linear-gradient(135deg, var(--lightgray), var(--sand));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
   margin-bottom: 0;
   margin-top: 10px;
   line-height: 2.1rem;

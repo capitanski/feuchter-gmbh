@@ -12,8 +12,9 @@ export const transportCategories = [
             en: "Protective walls",
         },
         description: {
-            de: "Ut voluptas consequatur nam facere reiciendis ea deleniti alias At sunt esse et mollitia consequatur. Ut asperiores consequatur non dolores veritatis qui dolorum voluptatem ea laudantium maiores.",
-            en: "Ut voluptas consequatur nam facere reiciendis ea deleniti alias At sunt esse et mollitia consequatur. Ut asperiores consequatur non dolores veritatis qui dolorum voluptatem ea laudantium maiores."
+            de: `Unsere patentierten Schutzwände bieten eine umweltfreundliche Alternative zur herkömmlichen Stretchfolie. Sie sichern die Ladung zuverlässig, lassen sich schnell anbringen und sparen nicht nur Material, sondern auch Zeit und Kosten.`,
+            en: `With our patented protective wall for roll containers, you can finally say goodbye to stretch film. It completely replaces stretch film in load securing and offers a sustainable, reusable alternative.
+Thanks to the innovative 6-point click system and integrated fiberglass rods, the protective wall ensures maximum stability and safety – while also saving valuable time during installation.`
         },
 
         img: schutzwandFarbig.src
@@ -25,8 +26,8 @@ export const transportCategories = [
             en: "Dust covers",
         },
         description: {
-            de: "Ut voluptas consequatur nam facere reiciendis ea deleniti alias At sunt esse et mollitia consequatur. Ut asperiores consequatur non dolores veritatis qui dolorum voluptatem ea laudantium maiores.",
-            en: "Ut voluptas consequatur nam facere reiciendis ea deleniti alias At sunt esse et mollitia consequatur. Ut asperiores consequatur non dolores veritatis qui dolorum voluptatem ea laudantium maiores."
+            de: "Für besonders sensible Produkte bieten unsere Staub- und Schutzhauben optimalen Schutz vor äußeren Einflüssen wie Schmutz, Feuchtigkeit oder Beschädigung. Die hochwertigen Materialien garantieren Langlebigkeit und einfache Handhabung im täglichen Einsatz.",
+            en: "For particularly sensitive products, our dust and protective covers offer optimal protection against external influences such as dirt, moisture, or damage. High-quality materials ensure long-lasting performance and easy handling in daily use."
         },
         img: staubhaubeFarbig.src
     },
@@ -37,8 +38,8 @@ export const transportCategories = [
             en: "Thermal covers",
         },
         description: {
-            de: "Ut voluptas consequatur nam facere reiciendis ea deleniti alias At sunt esse et mollitia consequatur. Ut asperiores consequatur non dolores veritatis qui dolorum voluptatem ea laudantium maiores.",
-            en: "Ut voluptas consequatur nam facere reiciendis ea deleniti alias At sunt esse et mollitia consequatur. Ut asperiores consequatur non dolores veritatis qui dolorum voluptatem ea laudantium maiores."
+            de: "Ob heiß oder kalt – unsere Thermohauben schützen temperaturempfindliche Waren zuverlässig auf dem gesamten Transportweg. Sie sind robust, mehrfach verwendbar und sorgen für konstante Bedingungen, selbst bei wechselnden Außentemperaturen.",
+            en: "Hot or cold – our thermal covers reliably protect temperature-sensitive goods throughout the entire transport process. They are durable, reusable, and ensure stable conditions even in fluctuating external temperatures."
         },
         img: thermohaubeFarbig.src
     }

@@ -18,7 +18,7 @@ const { pageLanguage, searchCategory, links, texts, product, headerImage } =
         <img
           src={product.headerImage}
           alt=""
-          class="header-image"
+          class="header-image animatable"
           fetchpriority="high"
           loading="eager"
         />
@@ -60,7 +60,11 @@ const { pageLanguage, searchCategory, links, texts, product, headerImage } =
 
     <Function product={product} pageLanguage={pageLanguage} />
     <TransportUsps product={product} pageLanguage={pageLanguage} />
-    <VariantSlider product={product} pageLanguage={pageLanguage} />
+    {
+      product.images ? (
+        <VariantSlider product={product} pageLanguage={pageLanguage} />
+      ) : null
+    }
 
     {
       product.colors ? (

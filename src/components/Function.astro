@@ -5,13 +5,13 @@ const { product, pageLanguage } = Astro.props;
 <div class="function">
     <div class="headline-and-title">
         <h2 class="animatable">{product.function.headline[pageLanguage]}</h2>
-        <p class="headline-text">{product.function.intro[pageLanguage]}</p>
+        <!-- <p class="headline-text">{product.function.intro[pageLanguage]}</p>-->
     </div>
     <div class="image-grid">
         {
             product.function.items.map((item) => {
                 return (
-                    <div class="grid-item">
+                    <div class="grid-item animatable">
                         <img src={item.img} alt="" />
                         <p class="grid-item-title">
                             {item.title[pageLanguage]}

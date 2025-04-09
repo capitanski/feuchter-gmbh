@@ -11,7 +11,7 @@ const { product, pageLanguage } = Astro.props;
         {
             product.usps.items.map((item) => {
                 return (
-                    <div class="grid-item">
+                    <div class="grid-item animatable">
                         <p class="grid-item-title">
                             {item.title[pageLanguage]}
                         </p>

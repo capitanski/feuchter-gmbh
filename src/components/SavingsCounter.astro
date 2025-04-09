@@ -4,14 +4,14 @@ const { product, pageLanguage } = Astro.props;
 
 <div class="function">
     <div class="headline-and-title">
-        <h2 class="animatable">Ersparnis</h2>
+        <h2 class="animatable">{product.numbers.headline[pageLanguage]}</h2>
         <p class="headline-text">
-            Erklärung bezüglich Ersparnis auf 100 Transporte pro Rollcontainer
+            {product.numbers.text[pageLanguage]}
         </p>
     </div>
     <div class="image-grid">
         {
-            product.numbers.map((item) => {
+            product.numbers.numbers.map((item) => {
                 return (
                     <div class="grid-item">
                         <div class="grid-item-inner">
@@ -116,8 +116,9 @@ const { product, pageLanguage } = Astro.props;
         gap: 50px;
         @media screen and (max-width: 1028px) {
             grid-template-columns: 1fr;
+            gap: 20px;
             padding: 0 20px;
-            margin: 0;
+            margin: 100px 0;
         }
     }
     .image-grid {
@@ -126,7 +127,7 @@ const { product, pageLanguage } = Astro.props;
         gap: 30px;
         @media screen and (max-width: 1028px) {
             grid-template-columns: 1fr;
-            margin: 30px 0 50px 0;
+            margin: 10px 0 10px 0;
         }
     }
     .grid-item {
