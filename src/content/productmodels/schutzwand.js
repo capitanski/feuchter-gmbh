@@ -39,10 +39,35 @@ Thanks to the innovative 6-point click system and integrated fiberglass rods, th
             de: "Kosteneffizient & schnell",
             en: "Costefficient & fast",
         },
+        list: [
+            {
+                de: "Bei täglichem Transport von 54 Rollcontainern an 250 Arbeitstagen entstehen über 7 Jahre:",
+                en: "With daily transport of 54 roll containers over 250 working days, the 7-year totals are:"
+            },
+            {
+                de: "68.749 € Kosten mit Stretchfolie (inkl. Material, Entsorgung sowie Anbringen und Entfernen der Folie)",
+                en: "€68,749 in costs using stretch film (including material, disposal, and time for applying and removing)"
+            },
+            {
+                de: "12.893 € mit unserer wiederverwendbaren Schutzwand (inkl. einmaliger Anschaffung und verkürzter Handhabung)",
+                en: "€12,893 using our reusable securing system (including one-time purchase and faster handling)"
+            },
+            {
+                de: "Die Schutzwand reduziert die Handhabungszeit pro Container von 90 auf nur 30 Sekunden.",
+                en: "The reusable system cuts handling time per container from 90 seconds to just 30 seconds."
+            },
+            {
+                de: "Das spart bis zu 55.856 € pro LKW über 7 Jahre – ganz ohne Folienabfall.",
+                en: "This results in savings of up to €55,856 per truck over 7 years – with zero plastic waste."
+            }
+        ],
         text: {
-            de: "Ein LKW mit 48 Rollcontainern verursacht allein durch Stretchfolie, Arbeitszeit und Entsorgung auf 7 Jahre  bis zu 51,240 € an Kosten – bei nur einem Transport pro Arbeitstag. Mit unserer wiederverwendbaren Schutzlösung sparen Sie sich das dauerhaft: kein Folienverbrauch, weniger Aufwand, mehr Effizienz.",
-            en: `A single truck with 48 roll containers generates up to €51,240 in costs within 7 years from stretch film, labor, and disposal – with just one transport per working day.
-Our reusable securing system eliminates all of that: no film waste, less effort, more efficiency.`
+            de: `Bei einem täglichen Transport von 54 Rollcontainern an 250 Arbeitstagen entstehen in 7 Jahren bis zu 68.748 € an Kosten, wenn Stretchfolie verwendet wird – verursacht durch Material, Entsorgung sowie die Zeit für Anbringen und Entfernen der Folie.
+Unsere wiederverwendbare Schutzwand reduziert diesen Aufwand drastisch: Sie verursacht über denselben Zeitraum nur 12.893 € an Gesamtkosten – inklusive einmaliger Anschaffung und verkürzter Handhabungszeit.
+Das ergibt eine Ersparnis von bis zu 55.856 € pro LKW in nur sieben Jahren – und zusätzlich entfällt der gesamte Folienmüll.`,
+            en: `With a daily transport of 54 roll containers over 250 working days, using stretch film leads to up to €68,748 in costs over 7 years – from material, disposal, and the time needed to apply and remove the film.
+Our reusable securing system dramatically reduces that effort, totaling only €12,893 over the same period – including one-time purchase and reduced handling time.
+That’s a potential saving of up to €55,856 per truck in just seven years – with zero plastic waste.`
         },
         numbers: [
             {
@@ -50,20 +75,20 @@ Our reusable securing system eliminates all of that: no film waste, less effort,
                 de: "Kosten Stretchfolie",
                 en: "Cost of Stretch Film",
                 color: "gray",
-                number: 56945
+                number: 68748
 
             }, {
 
                 de: "Kosten Schutzwand",
                 en: "Cost of Protective Wall",
                 color: "sand",
-                number: 1080
+                number: 12893
             }, {
 
                 de: "Ersparnis",
                 en: "Savings",
                 color: "white",
-                number: 55865
+                number: 55856
 
             }
         ]

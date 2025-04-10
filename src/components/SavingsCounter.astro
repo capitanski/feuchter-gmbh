@@ -5,9 +5,13 @@ const { product, pageLanguage } = Astro.props;
 <div class="function">
     <div class="headline-and-title">
         <h2 class="animatable">{product.numbers.headline[pageLanguage]}</h2>
-        <p class="headline-text">
-            {product.numbers.text[pageLanguage]}
-        </p>
+        <div class="explanation">
+            {
+                product.numbers.list.map((item) => {
+                    return <p>{item[pageLanguage]}</p>;
+                })
+            }
+        </div>
     </div>
     <div class="image-grid">
         {
@@ -125,6 +129,7 @@ const { product, pageLanguage } = Astro.props;
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
         gap: 30px;
+        align-items: start;
         @media screen and (max-width: 1028px) {
             grid-template-columns: 1fr;
             margin: 10px 0 10px 0;
@@ -139,6 +144,16 @@ const { product, pageLanguage } = Astro.props;
     }
     .grid-item-inner {
         width: 100%;
+    }
+    .explanation {
+        margin: 0;
+        margin-top: 20px;
+        padding-left: 0;
+    }
+    .explanation p {
+        margin: 10px 0;
+        color: var(--lightgray);
+        font-size: 0.8rem;
     }
     .grid-item img {
         width: 30px;
@@ -161,12 +176,12 @@ const { product, pageLanguage } = Astro.props;
         text-align: left;
     }
     .gray {
-        color: #585858;
+        color: red;
     }
     .sand {
         color: var(--sand);
     }
     .white {
-        color: var(--lightgray);
+        color: greenyellow;
     }
 </style>
