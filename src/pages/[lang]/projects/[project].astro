@@ -3,13 +3,12 @@ import ProjectAboveTheFold from "@/components/ProjectAboveTheFold.astro";
 import ProjectRichText from "@/components/ProjectRichText.astro";
 import Layout from "@/layouts/Layout.astro";
 import projekte from "@/content/projects.js";
-import fs from "fs/promises";
 
 import type { AstroLocals } from "@/types";
 const { locals } = Astro as unknown as { locals: AstroLocals };
 
 // Lang Param auslesen, projekte nach slug durchsuchen, wenn kein Projekt gefunden wird, 404 Fehler werfen
-const pageLanguage = locals.language;
+
 const projectParam = Astro.params.project;
 const currentProject = projekte.find((item) => {
   return item.slug == projectParam;
@@ -18,20 +17,35 @@ if (!currentProject) {
   return new Response(null, { status: 404 });
 }
 
-// Richtext aus HTML Dateien lesen, wenn keiner gefunden wird, 404 Fehler werfen
-let richtext = "";
-try {
-  richtext = await fs.readFile(
-    `./src/content/htmldata/${projectParam}-${pageLanguage}.html`,
-    "utf-8",
-  );
-  console.log(richtext.length);
-} catch (err) {
-  return new Response(null, { status: 404 });
-}
+type Language = "de" | "en"; // ✅ exakt erlaubt
+
+const pageLanguage = (locals.language ?? "de") as Language;
+type MetaData = {
+  pageTitle: {
+    de: string;
+    en: string;
+  };
+  pageDescription: {
+    de: string;
+    en: string;
+  };
+};
+const metaData: MetaData = {
+  pageTitle: {
+    de: currentProject.title[pageLanguage] + " | Feuchter GmbH",
+    en: currentProject.title[pageLanguage] + " | Feuchter GmbH",
+  },
+  pageDescription: {
+    de: currentProject.shortDescription[pageLanguage],
+    en: currentProject.shortDescription[pageLanguage],
+  },
+};
 ---
 
-<Layout>
+<Layout
+  pageTitle={metaData.pageTitle[pageLanguage]}
+  pageDescription={metaData.pageDescription[pageLanguage]}
+>
   <ProjectAboveTheFold
     currentProject={currentProject}
     language={pageLanguage}

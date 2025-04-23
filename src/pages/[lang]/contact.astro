@@ -7,7 +7,29 @@ import type { AstroLocals } from "@/types";
 
 const { locals } = Astro as unknown as { locals: AstroLocals };
 
-const pageLanguage = locals.language;
+type Language = "de" | "en"; // ✅ exakt erlaubt
+
+const pageLanguage = (locals.language ?? "de") as Language;
+type MetaData = {
+  pageTitle: {
+    de: string;
+    en: string;
+  };
+  pageDescription: {
+    de: string;
+    en: string;
+  };
+};
+const metaData: MetaData = {
+  pageTitle: {
+    de: "Kontakt | Feuchter GmbH",
+    en: "Contact | Feuchter GmbH",
+  },
+  pageDescription: {
+    de: "Ihre Vision ist nur noch einen Klick entfernt - Wir freuen uns, von Ihnen zu hören.",
+    en: "Your Vision is just a click away - We are looking forward to hear from you.",
+  },
+};
 
 let heading = "Ihre Vision ist nur noch einen Klick entfernt";
 let subtitle = "Wir freuen uns, von Ihnen zu hören";
@@ -21,7 +43,10 @@ We support our customers from the very beginning of their projects – from conc
 }
 ---
 
-<Layout>
+<Layout
+  pageTitle={metaData.pageTitle[pageLanguage]}
+  pageDescription={metaData.pageDescription[pageLanguage]}
+>
   <WelcomeContact
     language={pageLanguage}
     heading={heading}

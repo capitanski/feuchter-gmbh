@@ -8,6 +8,7 @@ import Login from "../components/Login.astro";
 import type { AstroLocals } from "@/types";
 //const { languages } = Astro.props;
 const { locals } = Astro as unknown as { locals: AstroLocals };
+const {pageTitle, pageDescription} = Astro.props; // Kommt von den jeweiligen Seiten
 const pageLanguage = locals.language; // Holt die aktuelle Sprache aus der Middleware (wichtig für html lang tag und Layoutkomponenten)
 const languages = locals.languages; // Holt die Sprachlinks aus Middleware (wichtig für hreflang, canonical und langSwitcher Tags in Navbar)
 // Jede Komponente, die in diesem Layout definiert ist, muss den language Prop übergeben bekommen (Damit die richtigen)
@@ -28,12 +29,12 @@ if (searchCategory) {
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="icon" type="image/svg+xml" href="/favicon_globe.svg" />
     <meta name="generator" content={Astro.generator} />
-    <title>Feuchter GmbH - Bekleidungslösungen</title>
+    <title>{pageTitle}</title>
     <meta
       name="description"
-      content="Jakob Matuschek - Saxophonmusik aus dem Herzen Passau's"
+      content={pageDescription}
     />
     <link rel="canonical" href={languages[0].url} />
     {
@@ -47,6 +48,32 @@ if (searchCategory) {
 ></script>
 <script src="https://cdn.jsdelivr.net/npm/chart.js" defer></script>
 <script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-datalabels" defer></script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "LocalBusiness",
+  "name": "Feuchter GmbH",
+  "image": "https://feuchter.com/feuchter_gmbh_logo.svg",
+  "description": "Hersteller für Militär- und Survivalkleidung, Behörden- und Sicherheitskleidung, Corporate Fashion sowie nachhaltige Lösungen für Rollcontainer",
+  "url": "https://www.feuchter.com",
+  "telephone": "+43 771 22 95 000",
+  "email": "office@feuchter.com",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "Bachweg 8",
+    "addressLocality": "Ringelai",
+    "postalCode": "94160",
+    "addressCountry": "DE"
+  },
+  "openingHours": [
+    "Mo-Fr 08:00-17:00"
+  ],
+  "sameAs": [
+    //"https://www.facebook.com/deinunternehmen",
+    //"https://www.linkedin.com/company/deinunternehmen"
+  ]
+}
+</script>
   </head>
   <body id="body">
     <Login />

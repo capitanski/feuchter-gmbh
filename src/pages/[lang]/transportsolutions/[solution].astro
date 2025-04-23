@@ -12,7 +12,18 @@ import mobileSchutzwand from "@/assets/Transportwand mobile.jpg";
 const { locals } = Astro as unknown as { locals: AstroLocals };
 const { url } = Astro.request;
 const { solution } = Astro.params;
-const pageLanguage = locals.language;
+type Language = "de" | "en"; // ✅ exakt erlaubt
+const pageLanguage = (locals.language ?? "de") as Language;
+type MetaData = {
+    pageTitle: {
+        de: string;
+        en: string;
+    };
+    pageDescription: {
+        de: string;
+        en: string;
+    };
+};
 let currentProduct;
 // Hier nach dem URL Param filtern und richtiges Produkt auswählen oder 404 werfen
 // Vorest bleibt das die Schutzwand
@@ -29,6 +40,17 @@ if (!currentProduct) {
     return new Response(null, { status: 404 });
 }
 
+const metaData: MetaData = {
+    pageTitle: {
+        de: currentProduct.title[pageLanguage],
+        en: currentProduct.title[pageLanguage],
+    },
+    pageDescription: {
+        de: currentProduct.shortDescription[pageLanguage],
+        en: currentProduct.shortDescription[pageLanguage],
+    },
+};
+
 let heading = "Ihre Vision ist nur noch einen Klick entfernt";
 let subtitle = "Wir freuen uns, von Ihnen zu hören";
 let introText = `
@@ -41,7 +63,10 @@ We support our customers from the very beginning of their projects – from conc
 }
 ---
 
-<Layout>
+<Layout
+    pageTitle={metaData.pageTitle[pageLanguage]}
+    pageDescription={metaData.pageDescription[pageLanguage]}
+>
     <ProductGridTransport
         pageLanguage={pageLanguage}
         product={currentProduct}

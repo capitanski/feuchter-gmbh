@@ -7,12 +7,34 @@ import type { AstroLocals } from "@/types";
 
 const { locals } = Astro as unknown as { locals: AstroLocals };
 
-const pageLanguage = locals.language;
+type Language = "de" | "en"; // ✅ exakt erlaubt
+
+const pageLanguage = (locals.language ?? "de") as Language;
+type MetaData = {
+  pageTitle: {
+    de: string;
+    en: string;
+  };
+  pageDescription: {
+    de: string;
+    en: string;
+  };
+};
+const metaData: MetaData = {
+  pageTitle: {
+    de: "Über uns | Feuchter GmbH",
+    en: "About us | Feuchter GmbH",
+  },
+  pageDescription: {
+    de: "Seit 1957 Ihr internationaler Partner für hochwertige Schutzbekleidung für Armeen und Behörden. Maßgeschneiderte Lösungen für höchste Ansprüche.",
+    en: "Since 1957, your international partner for high-quality apparel for armies and authorities. Tailored solutions for the highest demands.",
+  },
+};
 
 let heading =
   "Vom Traditionellen Bekleidungshersteller bis zum international agierenden Ausstatter von Armeen und Behörden";
 let subtitle = "Familiengeführt seit 1957";
-let introText = `Dank unserer langjährigen Erfahrung können wir Ihnen maßgeschneiderte Lösungen bieten, die höchste Standards in Qualität, Funktionalität und Sicherheit erfüllen.`;
+let introText = `Seit 1957 haben wir uns von einem traditionellen Bekleidungshersteller zu einem international tätigen Ausrüster für Armeen und Behörden weltweit entwickelt. Mit unserer langjährigen Erfahrung bieten wir maßgeschneiderte Lösungen, die höchsten Ansprüchen an Qualität, Funktionalität und Sicherheit gerecht werden.`;
 if (pageLanguage == "en") {
   heading =
     "From a traditional clothing manufacturer to an internationally operating supplier of armies and authorities";
@@ -21,7 +43,10 @@ if (pageLanguage == "en") {
 }
 ---
 
-<Layout>
+<Layout
+  pageTitle={metaData.pageTitle[pageLanguage]}
+  pageDescription={metaData.pageDescription[pageLanguage]}
+>
   <WelcomeLeftAligned
     language={pageLanguage}
     heading={heading}

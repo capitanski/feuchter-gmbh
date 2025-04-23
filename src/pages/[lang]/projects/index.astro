@@ -7,12 +7,34 @@ import type { AstroLocals } from "@/types";
 
 const { locals } = Astro as unknown as { locals: AstroLocals };
 
-const pageLanguage = locals.language;
+type Language = "de" | "en"; // ✅ exakt erlaubt
+
+const pageLanguage = (locals.language ?? "de") as Language;
+type MetaData = {
+  pageTitle: {
+    de: string;
+    en: string;
+  };
+  pageDescription: {
+    de: string;
+    en: string;
+  };
+};
+const metaData: MetaData = {
+  pageTitle: {
+    de: "Projekte & Referenzen | Feuchter GmbH",
+    en: "Projects & References | Feuchter GmbH",
+  },
+  pageDescription: {
+    de: "Unsere langjährige Erfahrung, Innovationskraft und Verlässlichkeit machen uns zum starken Partner für anspruchsvolle Textilprojekte.",
+    en: "Our decades of experience, innovation, and reliability make us a strong partner for demanding textile projects.",
+  },
+};
 
 let heading = "Projekte & Referenzen";
 let subtitle = "Vom Unterhemd bis zum Einsatzanzug";
 let introText =
-  "Unsere langjährige Erfahrung, Innovationskraft und Verlässlichkeit machen uns zum starken Partner für anspruchsvolle Textilprojekte.";
+  "Ob Funktionskleidung für den täglichen Einsatz, maßgeschneiderte Lösungen für Behörden oder Großserienproduktion – unsere jahrzehntelange Erfahrung, Innovationskraft und Zuverlässigkeit machen uns zu einem starken Partner für anspruchsvolle Textilprojekte.";
 
 if (pageLanguage == "en") {
   heading = "Projects & References";
@@ -22,7 +44,10 @@ if (pageLanguage == "en") {
 }
 ---
 
-<Layout>
+<Layout
+  pageTitle={metaData.pageTitle[pageLanguage]}
+  pageDescription={metaData.pageDescription[pageLanguage]}
+>
   <WelcomeLeftAligned
     language={pageLanguage}
     heading={heading}

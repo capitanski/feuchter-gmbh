@@ -3,7 +3,29 @@ import Layout from "@/layouts/Layout.astro";
 import CategoryHeader from "@/components/CategoryHeader.astro";
 import { clothingCategories } from "@/content/clothingCategories";
 import bekleidung from "@/assets/projekte.jpg";
-const pageLanguage = Astro.locals.language;
+type Language = "de" | "en"; // ✅ exakt erlaubt
+
+const pageLanguage = (Astro.locals.language ?? "de") as Language;
+type MetaData = {
+  pageTitle: {
+    de: string;
+    en: string;
+  };
+  pageDescription: {
+    de: string;
+    en: string;
+  };
+};
+const metaData: MetaData = {
+  pageTitle: {
+    de: "Individuelle Textillösungen für Unternehmen | Feuchter GmbH",
+    en: "Tailored Apparel for Businesses Since 1957 | Feuchter GmbH",
+  },
+  pageDescription: {
+    de: "Zuverlässige Bekleidungslösungen für Militär, Behörden, Sicherheitsdienste und Unternehmen. Funktional, langlebig, professionell – seit Jahrzehnten bewährt.",
+    en: "Reliable workwear for military, government, security, and businesses. Durable, functional, and professional – trusted for decades.",
+  },
+};
 const textContent = {
   title: {
     de: "Bekleidungslösungen für Unternehmen, Militär und Behörden",
@@ -16,7 +38,10 @@ const textContent = {
 };
 ---
 
-<Layout>
+<Layout
+  pageTitle={metaData.pageTitle[pageLanguage]}
+  pageDescription={metaData.pageDescription[pageLanguage]}
+>
   <section>
     <div class="container">
       <CategoryHeader

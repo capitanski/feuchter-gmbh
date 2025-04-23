@@ -3,7 +3,29 @@ import Layout from "@/layouts/Layout.astro";
 import CategoryHeader from "@/components/CategoryHeader.astro";
 import { transportCategories } from "@/content/transportCategories";
 import transportwand from "@/assets/transportwand_header.jpg";
-const pageLanguage = Astro.locals.language;
+type Language = "de" | "en"; // ✅ exakt erlaubt
+
+const pageLanguage = (Astro.locals.language ?? "de") as Language;
+type MetaData = {
+  pageTitle: {
+    de: string;
+    en: string;
+  };
+  pageDescription: {
+    de: string;
+    en: string;
+  };
+};
+const metaData: MetaData = {
+  pageTitle: {
+    de: "Nachhaltige Lösungen für Rollcontainer | Feuchter GmbH",
+    en: "Reusable Solutions for Roll Cage Trolleys | Feuchter GmbH",
+  },
+  pageDescription: {
+    de: "Wir setzen neue Maßstäbe in Sachen Nachhaltigkeit und Funktionalität im Bereich der Rollcontainer-Lösungen.",
+    en: "We are setting new standards in sustainability and functionality for roll container solutions.",
+  },
+};
 const textContent = {
   title: {
     de: "Nachhaltige Lösungen für Rollcontainer",
@@ -16,7 +38,10 @@ const textContent = {
 };
 ---
 
-<Layout>
+<Layout
+  pageTitle={metaData.pageTitle[pageLanguage]}
+  pageDescription={metaData.pageDescription[pageLanguage]}
+>
   <section>
     <div class="container">
       <CategoryHeader
