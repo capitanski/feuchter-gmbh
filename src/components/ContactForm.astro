@@ -107,6 +107,13 @@ import { buttonTranslations } from "@/content/translations";
     };
 
     try {
+      if (typeof gtag !== "undefined") {
+        console.log("analytics fired");
+        gtag("event", "submit", {
+          event_category: "Kontaktformular",
+          event_label: "Kontaktformular Abgesendet",
+        });
+      }
       sendButton.innerText = returnValues.wait[language];
       sendButton.setAttribute("disabled", true);
       loader.style.display = "flex";

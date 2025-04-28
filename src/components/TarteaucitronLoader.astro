@@ -1,0 +1,38 @@
+---
+const { lang } = Astro.props;
+---
+
+<div id="tarteaucitron-settings" data-lang={lang}></div>
+
+<script src="/node_modules/tarteaucitronjs/tarteaucitron.js" defer></script>
+
+<script is:inline>
+    window.addEventListener("DOMContentLoaded", function () {
+        const lang =
+            document.getElementById("tarteaucitron-settings")?.dataset.lang ||
+            "de";
+
+        if (typeof tarteaucitron !== "undefined") {
+            tarteaucitron.init({
+                privacyUrl: "/legal/privacy",
+                hashtag: "#cookies",
+                orientation: "bottom",
+                groupServices: false,
+                highPrivacy: true,
+                acceptAllCta: true,
+                moreInfoLink: true,
+                mandatory: true,
+                lang: lang,
+                showIcon: false, // 🍋 Zitronen-Symbol ausblenden
+            });
+
+            tarteaucitron.user.gtagUa = "G-H6KQBCYPRS";
+            tarteaucitron.user.gtagMore = function () {
+                gtag("config", tarteaucitron.user.gtagUa, {
+                    anonymize_ip: true,
+                });
+            };
+            (tarteaucitron.job = tarteaucitron.job || []).push("gtag");
+        }
+    });
+</script>

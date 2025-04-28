@@ -5,6 +5,7 @@ import "../styles/richtext-dark.css";
 import Navbar from "../components/Navbar.astro";
 import Footer from "@/components/Footer.astro";
 import Login from "../components/Login.astro";
+import TarteaucitronLoader from "@/components/TarteaucitronLoader.astro";
 import type { AstroLocals } from "@/types";
 //const { languages } = Astro.props;
 const { locals } = Astro as unknown as { locals: AstroLocals };
@@ -80,6 +81,7 @@ if (searchCategory) {
     <Navbar language={pageLanguage} languages={languages} />
     <slot />
     <Footer language={pageLanguage} languages={languages} />
+    <TarteaucitronLoader lang={pageLanguage} />
   </body>
 </html>
 <script>
