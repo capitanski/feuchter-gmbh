@@ -1,0 +1,10 @@
+---
+import Login from "@/components/Login.astro";
+import Layout from "@/layouts/Layout.astro";
+const { url } = Astro.request;
+const error = new URL(url).searchParams.get("error");
+---
+
+<Layout>
+    <Login error={error} />
+</Layout>

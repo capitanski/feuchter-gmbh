@@ -1,0 +1,46 @@
+---
+import Layout from "@/layouts/Layout.astro";
+import type { AstroLocals } from "@/types";
+const { locals } = Astro as unknown as { locals: AstroLocals };
+
+type Language = "de" | "en"; // ✅ exakt erlaubt
+
+const pageLanguage = (locals.language ?? "de") as Language;
+---
+
+<Layout>
+    <section>
+        <div class="container">
+            <h1>404</h1>
+            {
+                pageLanguage == "de" ? (
+                    <h2>
+                        Die angefragte Seite konnte leider nicht gefunden
+                        werden.
+                    </h2>
+                ) : (
+                    <h2>The requested page could not be found.</h2>
+                )
+            }
+        </div>
+    </section>
+</Layout>
+<style>
+    section {
+        min-height: 50vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 20px;
+    }
+    h1 {
+        font-size: 4rem !important;
+        line-height: 4rem !important;
+    }
+    h2 {
+        font-size: 1.2rem !important;
+        line-height: 1.5rem !important;
+        text-align: center;
+    }
+</style>

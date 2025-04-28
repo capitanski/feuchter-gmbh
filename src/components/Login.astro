@@ -1,43 +1,48 @@
 ---
 import Circles from "../assets/Circles.svg";
+const { error } = Astro.props;
 ---
 
-<form id="login-form">
-  <div class="form-inner">
-    <img src={Circles.src} alt="" />
-    <h1>Login</h1>
-    <input
-      type="password"
-      name="password"
-      id="password"
-      placeholder="Passwort"
-    />
-    <input type="submit" value="Anmelden" />
-  </div>
-</form>
-<script>
-  window.addEventListener("DOMContentLoaded", () => {
-    const loginForm = document.getElementById("login-form");
-    const password = document.getElementById("password");
-    loginForm?.addEventListener("submit", (e) => {
-      e.preventDefault();
-      if (password && password?.value == "feuchtergmbh25") {
-        window.localStorage.setItem("auth", "authenticated");
-        loginForm.style.display = "none";
-      } else {
-        window.localStorage.setItem("auth", "false");
-        loginForm.style.display = "block";
-        alert("Falsches Passwort");
+<section class="section">
+  <form id="login-form" method="POST" action="/api/login">
+    <div class="form-inner">
+      <img src={Circles.src} alt="" />
+      {
+        error ? (
+          <div class="error">
+            <small>Falsches Passwort</small>
+          </div>
+        ) : null
       }
-      console.log(e);
+      <h1>Login</h1>
+      <input
+        type="password"
+        name="password"
+        id="password"
+        placeholder="Passwort"
+      />
+      <input type="submit" value="Anmelden" />
+    </div>
+  </form>
+</section>
+
+<script is:inline>
+  const form = document.getElementById("login-form");
+
+  form.addEventListener("submit", async (e) => {
+    e.preventDefault();
+
+    const formData = new FormData(form);
+    const res = await fetch("/api/login", {
+      method: "POST",
+      body: formData,
+      credentials: "include", // wichtig wegen Cookies
     });
-    if (
-      !window.localStorage.getItem("auth") ||
-      window.localStorage.getItem("auth") != "authenticated"
-    ) {
-      loginForm.style.display = "block";
+
+    if (res.status === 200) {
+      window.location.href = "/";
     } else {
-      loginForm.style.display = "none";
+      alert("Falsches Passwort, bitte erneut versuchen.");
     }
   });
 </script>
@@ -46,7 +51,7 @@ import Circles from "../assets/Circles.svg";
     width: 100%;
     height: 100vh;
     position: absolute;
-    background: white;
+    background: var(--verydarkgray);
     z-index: 1000;
   }
   .form-inner {
@@ -73,8 +78,8 @@ import Circles from "../assets/Circles.svg";
     border: none;
     border-radius: 10px;
     padding: 10px 25px;
-    background: var(--darkgray);
-    color: var(--lightgray);
+    background: var(--sand);
+    color: var(--verydarkgray);
   }
   input,
   h1 {
@@ -85,5 +90,18 @@ import Circles from "../assets/Circles.svg";
     z-index: 1;
     filter: blur(100px);
     opacity: 0.1;
+  }
+  .error {
+    background: lightcoral;
+    color: red;
+    width: 100%;
+    max-width: 40%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    border-radius: 10px;
+    font-weight: 700;
   }
 </style>

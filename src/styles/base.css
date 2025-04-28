@@ -102,7 +102,6 @@ h2 {
 }
 
 h1 {
-  line-height: 95% !important;
   font-weight: 900 !important;
   background: linear-gradient(135deg, var(--lightgray), var(--sand));
   -webkit-background-clip: text;
@@ -110,7 +109,7 @@ h1 {
   font-family: "peridot-pe-variable", sans-serif !important;
   font-variation-settings: "ital" 0, "wdth" 400, "wght" 900;
   font-size: 1.8rem !important;
-  line-height: 2rem !important;
+  line-height: 2.4rem !important;
   letter-spacing: -1.5px;
 
   @media screen and (max-width: 1028px) {

@@ -6,7 +6,9 @@ import Navbar from "../components/Navbar.astro";
 import Footer from "@/components/Footer.astro";
 import Login from "../components/Login.astro";
 import TarteaucitronLoader from "@/components/TarteaucitronLoader.astro";
-import type { AstroLocals } from "@/types";
+
+
+
 //const { languages } = Astro.props;
 const { locals } = Astro as unknown as { locals: AstroLocals };
 const {pageTitle, pageDescription} = Astro.props; // Kommt von den jeweiligen Seiten
@@ -23,6 +25,8 @@ let searchparamString = "";
 if (searchCategory) {
   searchparamString = `?category=${searchCategory}`;
 }
+
+
 ---
 
 <!doctype html>
@@ -77,7 +81,6 @@ if (searchCategory) {
 </script>
   </head>
   <body id="body">
-    <Login />
     <Navbar language={pageLanguage} languages={languages} />
     <slot />
     <Footer language={pageLanguage} languages={languages} />
