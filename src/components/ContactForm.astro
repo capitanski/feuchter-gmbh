@@ -270,9 +270,12 @@ import { buttonTranslations } from "@/content/translations";
     gap: 55px;
     padding-top: 50px;
     height: auto !important;
-    @media screen and (max-width: 1028px) {
+    @media (min-width: 821px) and (max-width: 1028px) {
+      padding: 20px 70px;
+    }
+    @media (max-width: 820px) {
       grid-template-columns: 1fr;
-      padding: 20px 20px;
+      padding: 0 20px;
     }
   }
   .form-wrapper div {

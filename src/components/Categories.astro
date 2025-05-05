@@ -144,6 +144,9 @@ const categories = [
     align-items: flex-start;
     gap: 50px;
     padding: 20px;
+    @media (min-width: 769px) and (max-width: 1028px) {
+      padding: 0 50px !important;
+    }
   }
   .category-grid {
     width: 100%;
@@ -153,6 +156,9 @@ const categories = [
     row-gap: 80px;
     @media screen and (max-width: 820px) {
       grid-template-columns: 1fr;
+    }
+    @media (min-width: 769px) and (max-width: 1028px) {
+      grid-template-columns: 1fr 1fr;
     }
   }
   .category-card {
