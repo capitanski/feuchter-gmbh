@@ -8,6 +8,9 @@ import pants from "@/assets/Produkte/BMI Hose Seite.jpg"
 import vest from "@/assets/official_headwear.png"
 import star from "@/assets/star-regular.svg"
 import schutzwandHeader from "@/assets/Produkte/schutzwand_schraeg_header.jpg"
+import schutzwandHaken from "@/assets/Produkte/schutzwand_haken.jpg"
+import schutzwandSpannung from "@/assets/Produkte/schutzwand_spannung.jpg"
+import schutzwandLagerung from "@/assets/Produkte/schutzwand_lagerung.jpg"
 
 
 
@@ -113,7 +116,7 @@ When not in use, the wall can be conveniently and gently stored by securing it t
                     de: "Haken einhängen",
                     en: "Apply hooks"
                 },
-                img: schutzwandSchraeg.src,
+                img: schutzwandHaken.src,
                 text: {
                     de: `Hängen Sie alle sechs Haken in die Seitengitter des Rollcontainers ein. Achten Sie dabei unbedingt darauf, dass die breitere Seite der Mittelbahn nach oben zeigt. Dieser Schritt ist besonders wichtig, da der obere Bereich des Rollcontainers mehr Flexibilität benötigt und von der erhöhten Elastizität der oberen Zone profitiert.`,
                     en: `Attach all six hooks to the side panels of the roll container. Be sure that the wider side of the center panel is facing upward. This step is crucial, as the upper section of the container requires greater flexibility and benefits from the enhanced elasticity of the top part.`
@@ -124,7 +127,7 @@ When not in use, the wall can be conveniently and gently stored by securing it t
                     de: "Spannung einstellen",
                     en: "Adjust the tension"
                 },
-                img: schutzwandFront.src,
+                img: schutzwandSpannung.src,
                 text: {
                     de: `Stellen Sie nun die Spannung des Gurtbandes auf der Rückseite der Schutzwand so ein, dass die Gitterwände des Rollcontainers die Ware sicher fixieren – ohne sie zu quetschen. Herzlichen Glückwunsch: Ihre Ladung ist jetzt bereit für den Transport – ganz ohne teure und umweltschädliche Stretchfolie.`,
                     en: `Now adjust the tension of the strap at the back of the protective wall so that the container’s mesh panels hold the goods securely in place – without compressing them. Congratulations – your shipment is now ready for transport, without the need for costly and environmentally harmful stretch film.`
@@ -135,7 +138,7 @@ When not in use, the wall can be conveniently and gently stored by securing it t
                     de: "Lagerung der Schutzwand",
                     en: "Storage of the protective wall"
                 },
-                img: schutzwandVerschluss.src,
+                img: schutzwandLagerung.src,
                 text: {
                     de: `Wenn Sie die Schutzwand gerade nicht benötigen, kann sie ganz einfach an einer beliebigen Seitenwand des Rollcontainers eingehängt werden. So wird die Transportsicherung platzsparend und materialschonend gelagert. Für den nächsten Einsatz ist sie damit sofort griffbereit – das spart Zeit und bares Geld.`,
                     en: `When the protective wall is not in use, it can be easily hooked onto any side panel of the roll container. This allows for space-saving and gentle storage of the load securing system. For the next transport, it’s already in the right place – saving both time and money.`
