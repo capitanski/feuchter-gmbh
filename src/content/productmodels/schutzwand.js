@@ -7,11 +7,12 @@ import skirt from "@/assets/Produkte/BMI Jacke Front.jpg"
 import pants from "@/assets/Produkte/BMI Hose Seite.jpg"
 import vest from "@/assets/official_headwear.png"
 import star from "@/assets/star-regular.svg"
+import schutzwandHeader from "@/assets/Produkte/schutzwand_schraeg_header.jpg"
 
 
 
 export const schutzwand = {
-    headerImage: schutzwandImage.src,
+    headerImage: schutzwandHeader.src,
     title: {
         de: "Die Patentierte Schutzwand für Rollcontainer",
         en: "The Patented Protective Wall for Roll Containers"
