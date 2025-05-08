@@ -9,7 +9,19 @@ import thermohaubeHeader from "@/assets/Produkte/thermohaube_schraeg_header.jpg"
 import thermhaubeOffen from "@/assets/Produkte/thermohaube_schraeg_offen.jpg"
 import thermohaubeVerschluss from "@/assets/Produkte/thermohaube_verschluss.jpg"
 import thermohaubeFertig from "@/assets/Produkte/thermohaube_geschlossen.jpg"
-
+import haubeSchwarz from "@/assets/Produkte/haube_schwarz.jpg"
+import haubeWeiss from "@/assets/Produkte/haube_weiss.jpg"
+import haubeSand from "@/assets/Produkte/haube_sand.jpg"
+import haubeHellbraun from "@/assets/Produkte/haube_hellbraun.jpg"
+import haubeDunkelgruen from "@/assets/Produkte/haube_dunkelgruen.jpg"
+import haubeAnthrazit from "@/assets/Produkte/haube_anthrazit.jpg"
+import haubePink from "@/assets/Produkte/haube_pink.jpg"
+import haubeSafran from "@/assets/Produkte/haube_safran.jpg"
+import haubeRot from "@/assets/Produkte/haube_rot.jpg"
+import haubeDunkelrot from "@/assets/Produkte/haube_dunkelrot.jpg"
+import haubeHellgruen from "@/assets/Produkte/haube_hellgruen.jpg"
+import haubeHellblau from "@/assets/Produkte/haube_hellblau.jpg"
+import haubeNavy from "@/assets/Produkte/haube_navy.jpg"
 
 
 export const thermohaube = {
@@ -136,11 +148,11 @@ export const thermohaube = {
         items: [
             {
                 title: {
-                    de: "Schwarz (980)",
-                    en: "Black (980)",
+                    de: "Schwarz (982)",
+                    en: "Black (982)",
 
                 },
-                image: schutzwandFarbig.src
+                image: haubeSchwarz.src
             },
             {
                 title: {
@@ -148,7 +160,7 @@ export const thermohaube = {
                     en: "White (001)",
 
                 },
-                image: schutzwandFarbig.src
+                image: haubeWeiss.src
             },
             {
                 title: {
@@ -156,7 +168,7 @@ export const thermohaube = {
                     en: "Sand (011)",
 
                 },
-                image: schutzwandFarbig.src
+                image: haubeSand.src
             },
             {
                 title: {
@@ -164,7 +176,7 @@ export const thermohaube = {
                     en: "Bright brown (032)",
 
                 },
-                image: schutzwandFarbig.src
+                image: haubeHellbraun.src
             },
             {
                 title: {
@@ -172,7 +184,7 @@ export const thermohaube = {
                     en: "Dark green (672)",
 
                 },
-                image: schutzwandFarbig.src
+                image: haubeDunkelgruen.src
             },
             {
                 title: {
@@ -180,7 +192,7 @@ export const thermohaube = {
                     en: "Anthrazite (940)",
 
                 },
-                image: schutzwandFarbig.src
+                image: haubeAnthrazit.src
             },
             {
                 title: {
@@ -188,7 +200,7 @@ export const thermohaube = {
                     en: "Pink (325)",
 
                 },
-                image: schutzwandFarbig.src
+                image: haubePink.src
             },
             {
                 title: {
@@ -196,7 +208,7 @@ export const thermohaube = {
                     en: "Saffron (136)",
 
                 },
-                image: schutzwandFarbig.src
+                image: haubeSafran.src
             },
             {
                 title: {
@@ -204,7 +216,7 @@ export const thermohaube = {
                     en: "Red (370)",
 
                 },
-                image: schutzwandFarbig.src
+                image: haubeRot.src
             },
             {
                 title: {
@@ -212,7 +224,7 @@ export const thermohaube = {
                     en: "Dark red (368)",
 
                 },
-                image: schutzwandFarbig.src
+                image: haubeDunkelrot.src
             },
             {
                 title: {
@@ -220,7 +232,7 @@ export const thermohaube = {
                     en: "Bright green (616)",
 
                 },
-                image: schutzwandFarbig.src
+                image: haubeHellgruen.src
             },
             {
                 title: {
@@ -228,7 +240,7 @@ export const thermohaube = {
                     en: "Bright blue (816)",
 
                 },
-                image: schutzwandFarbig.src
+                image: haubeHellblau.src
             },
             {
                 title: {
@@ -236,7 +248,7 @@ export const thermohaube = {
                     en: "Navy blue (850)",
 
                 },
-                image: schutzwandFarbig.src
+                image: haubeNavy.src
             },
 
         ]

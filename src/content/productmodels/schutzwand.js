@@ -11,6 +11,11 @@ import schutzwandHeader from "@/assets/Produkte/schutzwand_schraeg_header.jpg"
 import schutzwandHaken from "@/assets/Produkte/schutzwand_haken.jpg"
 import schutzwandSpannung from "@/assets/Produkte/schutzwand_spannung.jpg"
 import schutzwandLagerung from "@/assets/Produkte/schutzwand_lagerung.jpg"
+import schutzwandSchwarz from "@/assets/Produkte/schutzwand_schwarz.jpg"
+import schutzwandBeige from "@/assets/Produkte/schutzwand_beige.jpg"
+import schutzwandAnthrazit from "@/assets/Produkte/schutzwand_anthrazit.jpg"
+import schutzwandBlau from "@/assets/Produkte/schutzwand_navy.jpg"
+import schutzwandHellgrau from "@/assets/Produkte/schutzwand_hellgrau.jpg"
 
 
 
@@ -207,7 +212,7 @@ When not in use, the wall can be conveniently and gently stored by securing it t
                     en: "Black",
 
                 },
-                image: schutzwandFarbig.src
+                image: schutzwandSchwarz.src
             },
             {
                 title: {
@@ -215,7 +220,7 @@ When not in use, the wall can be conveniently and gently stored by securing it t
                     en: "Anthracite",
 
                 },
-                image: schutzwandFarbig.src
+                image: schutzwandAnthrazit.src
             },
             {
                 title: {
@@ -223,7 +228,7 @@ When not in use, the wall can be conveniently and gently stored by securing it t
                     en: "Dark blue",
 
                 },
-                image: schutzwandFarbig.src
+                image: schutzwandBlau.src
             },
             {
                 title: {
@@ -231,7 +236,7 @@ When not in use, the wall can be conveniently and gently stored by securing it t
                     en: "Bright gray",
 
                 },
-                image: schutzwandFarbig.src
+                image: schutzwandHellgrau.src
             },
             {
                 title: {
@@ -239,7 +244,7 @@ When not in use, the wall can be conveniently and gently stored by securing it t
                     en: "Sand",
 
                 },
-                image: schutzwandFarbig.src
+                image: schutzwandBeige.src
             },
         ]
     },
