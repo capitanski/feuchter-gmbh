@@ -5,11 +5,15 @@ import schutzwandFarbig from "@/assets/Produkte/Transportwand farbig.jpg"
 import thermohaubeImage from "@/assets/Thermohaube quer.jpg";
 import thermohaubeFarbig from "@/assets/Staubhaube Farbig.jpg"
 import star from "@/assets/star-regular.svg"
+import thermohaubeHeader from "@/assets/Produkte/thermohaube_schraeg_header.jpg"
+import thermhaubeOffen from "@/assets/Produkte/thermohaube_schraeg_offen.jpg"
+import thermohaubeVerschluss from "@/assets/Produkte/thermohaube_verschluss.jpg"
+import thermohaubeFertig from "@/assets/Produkte/thermohaube_geschlossen.jpg"
 
 
 
 export const thermohaube = {
-    headerImage: thermohaubeFarbig.src,
+    headerImage: thermohaubeHeader.src,
     title: {
         de: "Die Thermohaube für Rollcontainer",
         en: "The Thermal Cover for Roll containers"
@@ -45,7 +49,7 @@ export const thermohaube = {
                     de: "Klettverschluss öffnen & Rollwagen beladen",
                     en: "Open the Velcro fastener and load the roll cage"
                 },
-                img: schutzwandSchraeg.src,
+                img: thermhaubeOffen.src,
                 text: {
                     de: "Öffnen Sie die beiden seitlichen Klettverschlüsse der Thermohaube und schlagen Sie die Vorderseite ganz einfach nach oben über den Rollcontainer. Nun können Sie bequem mit dem Beladen des Rollwagens beginnen.",
                     en: "Open the two Velcro fasteners on the sides of the thermal cover and simply fold the front flap up over the roll cage. You can now start loading your products with ease."
@@ -56,7 +60,7 @@ export const thermohaube = {
                     de: "Klettverschluss schließen",
                     en: "Close the Velcro fastener"
                 },
-                img: schutzwandFront.src,
+                img: thermohaubeVerschluss.src,
                 text: {
                     de: "Schließen Sie die beiden seitlichen Klettverschlüsse der Thermohaube und achten Sie darauf, dass sie am unteren Rand sauber abschließt. Ihre Waren sind nun optimal geschützt und bereit für Verladung und Transport.",
                     en: "Fasten the two Velcro straps on the sides of the thermal cover, making sure it seals neatly at the bottom. Your goods are now well protected and ready for loading and transport."
@@ -67,7 +71,7 @@ export const thermohaube = {
                     de: "Waren sicher transportieren",
                     en: "Transport the goods safely"
                 },
-                img: schutzwandVerschluss.src,
+                img: thermohaubeFertig.src,
                 text: {
                     de: "Sobald Sie Zugriff auf die Waren benötigen, öffnen Sie einfach den Klettverschluss – und schon können Sie die Produkte servieren oder weiterverarbeiten. Die Thermohaube kann dabei jederzeit auf dem Rollwagen bleiben, solange dieser nicht anderweitig verwendet wird.",
                     en: "Whenever you need access to the goods, simply open the Velcro fastener to serve or further process your products. The thermal cover can remain on the roll cage at all times, as long as the trolley isn’t being used for another purpose."

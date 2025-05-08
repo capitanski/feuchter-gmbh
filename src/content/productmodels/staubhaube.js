@@ -6,11 +6,15 @@ import thermohaubeFarbig from "@/assets/Thermohaube farbig.jpg"
 import staubhaubeImage from "@/assets/Staubhaube quer.jpg";
 import projekte from "@/assets/projekte.jpg"
 import star from "@/assets/star-regular.svg"
+import staubhaubeHeader from "@/assets/Produkte/staubhaube_schraeg_header.jpg"
+import staubhaubeOffen from "@/assets/Produkte/staubhaube_schraeg_offen.jpg"
+import staubhaubeVerschluss from "@/assets/Produkte/staubhaube_verschluss.jpg"
+import staubhaubeFertig from "@/assets/Produkte/staubhaube_geschlossen.jpg"
 
 
 
 export const staubhaube = {
-    headerImage: thermohaubeFarbig.src,
+    headerImage: staubhaubeHeader.src,
     title: {
         de: "Die Schutzhaube für Rollcontainer",
         en: "The Dust Cover for Roll containers"
@@ -46,7 +50,7 @@ export const staubhaube = {
                     de: "Klettverschluss öffnen & Rollwagen beladen",
                     en: "Open the Velcro fastener and load the roll cage"
                 },
-                img: schutzwandSchraeg.src,
+                img: staubhaubeOffen.src,
                 text: {
                     de: "Öffnen Sie die beiden seitlichen Klettverschlüsse der Staubhaube und schlagen Sie die Vorderseite ganz einfach nach oben über den Rollcontainer. Nun können Sie bequem mit dem Beladen des Rollwagens beginnen.",
                     en: "Open the two Velcro fasteners on the sides of the dust cover and simply fold the front flap up over the roll cage. You can now start loading your products with ease."
@@ -57,7 +61,7 @@ export const staubhaube = {
                     de: "Klettverschluss schließen",
                     en: "Close the Velcro fastener"
                 },
-                img: schutzwandFront.src,
+                img: staubhaubeVerschluss.src,
                 text: {
                     de: "Schließen Sie die beiden seitlichen Klettverschlüsse der Staubhaube und achten Sie darauf, dass sie am unteren Rand sauber abschließt. Ihre Waren sind nun optimal geschützt und bereit für Verladung und Transport.",
                     en: "Fasten the two Velcro straps on the sides of the dust cover, making sure it seals neatly at the bottom. Your goods are now well protected and ready for loading and transport."
@@ -68,7 +72,7 @@ export const staubhaube = {
                     de: "Waren sicher transportieren",
                     en: "Transport the goods safely"
                 },
-                img: schutzwandVerschluss.src,
+                img: staubhaubeFertig.src,
                 text: {
                     de: "Sobald Sie Zugriff auf die Waren benötigen, öffnen Sie einfach den Klettverschluss – und schon können Sie die Produkte entladen oder weiterverarbeiten. Die Staubhaube kann dabei jederzeit auf dem Rollwagen bleiben, solange dieser nicht anderweitig verwendet wird.",
                     en: "Whenever you need access to the goods, simply open the Velcro fastener to unload or further process your products. The dust cover can remain on the roll cage at all times, as long as the trolley isn’t being used for another purpose."
