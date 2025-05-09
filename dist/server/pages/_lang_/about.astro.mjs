@@ -1,7 +1,7 @@
-import { e as createAstro, f as createComponent, m as maybeRenderHead, h as addAttribute, r as renderTemplate, i as renderComponent } from '../../chunks/astro/server_CofuBfMf.mjs';
+import { e as createAstro, f as createComponent, m as maybeRenderHead, h as addAttribute, r as renderTemplate, i as renderComponent } from '../../chunks/astro/server_C55uJX-_.mjs';
 import 'kleur/colors';
-import { $ as $$WelcomeLeftAligned } from '../../chunks/WelcomeLeftAligned_DmXir0Xz.mjs';
-import { $ as $$Layout } from '../../chunks/Layout_DaASaaif.mjs';
+import { $ as $$WelcomeLeftAligned } from '../../chunks/WelcomeLeftAligned_BabOw5MF.mjs';
+import { $ as $$Layout } from '../../chunks/Layout_Cic49wVH.mjs';
 import 'clsx';
 /* empty css                                    */
 export { renderers } from '../../renderers.mjs';
@@ -12,7 +12,7 @@ const felix = new Proxy({"src":"/custom-folder/felix_feuchter.Bs_2rl0v.jpg","wid
 								return structuredClone(target);
 							}
 							if (name === 'fsPath') {
-								return "/home/felix/Desktop/feuchtergmbh_website/feuchter-gmbh/src/assets/team/felix_feuchter.jpg";
+								return "C:/Users/felix/Desktop/feuchter-gmbh/feuchter-gmbh/src/assets/team/felix_feuchter.jpg";
 							}
 							
 							return target[name];
@@ -25,7 +25,7 @@ const klaus = new Proxy({"src":"/custom-folder/CEO.DGfP5CoV.jpg","width":400,"he
 								return structuredClone(target);
 							}
 							if (name === 'fsPath') {
-								return "/home/felix/Desktop/feuchtergmbh_website/feuchter-gmbh/src/assets/team/klaus_feuchter.jpg";
+								return "C:/Users/felix/Desktop/feuchter-gmbh/feuchter-gmbh/src/assets/team/klaus_feuchter.jpg";
 							}
 							
 							return target[name];
@@ -38,7 +38,7 @@ const sabrina = new Proxy({"src":"/custom-folder/sabrina_feuchter.fXOFD15A.jpg",
 								return structuredClone(target);
 							}
 							if (name === 'fsPath') {
-								return "/home/felix/Desktop/feuchtergmbh_website/feuchter-gmbh/src/assets/team/sabrina_feuchter.jpg";
+								return "C:/Users/felix/Desktop/feuchter-gmbh/feuchter-gmbh/src/assets/team/sabrina_feuchter.jpg";
 							}
 							
 							return target[name];
@@ -51,7 +51,7 @@ const gabriele = new Proxy({"src":"/custom-folder/gabriele_feuchter.Bs7CAuDl.jpg
 								return structuredClone(target);
 							}
 							if (name === 'fsPath') {
-								return "/home/felix/Desktop/feuchtergmbh_website/feuchter-gmbh/src/assets/team/gabriele_feuchter.jpg";
+								return "C:/Users/felix/Desktop/feuchter-gmbh/feuchter-gmbh/src/assets/team/gabriele_feuchter.jpg";
 							}
 							
 							return target[name];
@@ -64,7 +64,7 @@ const lea = new Proxy({"src":"/custom-folder/lea_feuchter.CDapj7kA.jpg","width":
 								return structuredClone(target);
 							}
 							if (name === 'fsPath') {
-								return "/home/felix/Desktop/feuchtergmbh_website/feuchter-gmbh/src/assets/team/lea_feuchter.jpg";
+								return "C:/Users/felix/Desktop/feuchter-gmbh/feuchter-gmbh/src/assets/team/lea_feuchter.jpg";
 							}
 							
 							return target[name];
@@ -77,7 +77,7 @@ const markus = new Proxy({"src":"/custom-folder/markus_feuchter.DRKi8Bbc.jpg","w
 								return structuredClone(target);
 							}
 							if (name === 'fsPath') {
-								return "/home/felix/Desktop/feuchtergmbh_website/feuchter-gmbh/src/assets/team/markus_feuchter.jpg";
+								return "C:/Users/felix/Desktop/feuchter-gmbh/feuchter-gmbh/src/assets/team/markus_feuchter.jpg";
 							}
 							
 							return target[name];
@@ -90,7 +90,7 @@ const avatar = new Proxy({"src":"/custom-folder/avatar.qyaxPyh_.jpg","width":400
 								return structuredClone(target);
 							}
 							if (name === 'fsPath') {
-								return "/home/felix/Desktop/feuchtergmbh_website/feuchter-gmbh/src/assets/team/avatar.jpg";
+								return "C:/Users/felix/Desktop/feuchter-gmbh/feuchter-gmbh/src/assets/team/avatar.jpg";
 							}
 							
 							return target[name];
@@ -191,7 +191,7 @@ const $$TeamGrid = createComponent(($$result, $$props, $$slots) => {
   return renderTemplate`${maybeRenderHead()}<section data-astro-cid-liz7rhkm> <div class="container" data-astro-cid-liz7rhkm> <div class="title-and-cite" data-astro-cid-liz7rhkm> <h2 class="animate-in-right" data-astro-cid-liz7rhkm>${headline[language]}</h2> <p class="zitat" data-astro-cid-liz7rhkm> ${cite[language]} </p> </div> <div class="grid" data-astro-cid-liz7rhkm> ${teamMembers.map((item) => {
     return renderTemplate`<div class="grid-item animatable" data-astro-cid-liz7rhkm> <img${addAttribute(item.img, "src")} alt="" data-astro-cid-liz7rhkm> <div class="grid-item-text" data-astro-cid-liz7rhkm> <p data-astro-cid-liz7rhkm>${item.name}</p> <span data-astro-cid-liz7rhkm>${item.role[language]}</span> </div> </div>`;
   })} </div> </div> </section> `;
-}, "/home/felix/Desktop/feuchtergmbh_website/feuchter-gmbh/src/components/TeamGrid.astro", void 0);
+}, "C:/Users/felix/Desktop/feuchter-gmbh/feuchter-gmbh/src/components/TeamGrid.astro", void 0);
 
 const Scribble = new Proxy({"src":"/custom-folder/firmengebaeude.bFyYJ3Pd.jpg","width":2000,"height":1333,"format":"jpg"}, {
 						get(target, name, receiver) {
@@ -199,7 +199,7 @@ const Scribble = new Proxy({"src":"/custom-folder/firmengebaeude.bFyYJ3Pd.jpg","
 								return structuredClone(target);
 							}
 							if (name === 'fsPath') {
-								return "/home/felix/Desktop/feuchtergmbh_website/feuchter-gmbh/src/assets/firmengebaeude.jpg";
+								return "C:/Users/felix/Desktop/feuchter-gmbh/feuchter-gmbh/src/assets/firmengebaeude.jpg";
 							}
 							
 							return target[name];
@@ -211,19 +211,29 @@ const $$About = createComponent(($$result, $$props, $$slots) => {
   const Astro2 = $$result.createAstro($$Astro, $$props, $$slots);
   Astro2.self = $$About;
   const { locals } = Astro2;
-  const pageLanguage = locals.language;
+  const pageLanguage = locals.language ?? "de";
+  const metaData = {
+    pageTitle: {
+      de: "\xDCber uns | Feuchter GmbH",
+      en: "About us | Feuchter GmbH"
+    },
+    pageDescription: {
+      de: "Seit 1957 Ihr internationaler Partner f\xFCr hochwertige Schutzbekleidung f\xFCr Armeen und Beh\xF6rden. Ma\xDFgeschneiderte L\xF6sungen f\xFCr h\xF6chste Anspr\xFCche.",
+      en: "Since 1957, your international partner for high-quality apparel for armies and authorities. Tailored solutions for the highest demands."
+    }
+  };
   let heading = "Vom Traditionellen Bekleidungshersteller bis zum international agierenden Ausstatter von Armeen und Beh\xF6rden";
   let subtitle = "Familiengef\xFChrt seit 1957";
-  let introText = `Dank unserer langj\xE4hrigen Erfahrung k\xF6nnen wir Ihnen ma\xDFgeschneiderte L\xF6sungen bieten, die h\xF6chste Standards in Qualit\xE4t, Funktionalit\xE4t und Sicherheit erf\xFCllen.`;
+  let introText = `Seit 1957 haben wir uns von einem traditionellen Bekleidungshersteller zu einem international t\xE4tigen Ausr\xFCster f\xFCr Armeen und Beh\xF6rden weltweit entwickelt. Mit unserer langj\xE4hrigen Erfahrung bieten wir ma\xDFgeschneiderte L\xF6sungen, die h\xF6chsten Anspr\xFCchen an Qualit\xE4t, Funktionalit\xE4t und Sicherheit gerecht werden.`;
   if (pageLanguage == "en") {
     heading = "From a traditional clothing manufacturer to an internationally operating supplier of armies and authorities";
     subtitle = "Family-owned since 1957.";
     introText = `Since 1957, we have evolved from a traditional clothing manufacturer into an internationally operating supplier for armies and authorities worldwide. With our many years of experience, we offer tailored solutions that meet the highest standards of quality, functionality, and safety.`;
   }
-  return renderTemplate`${renderComponent($$result, "Layout", $$Layout, {}, { "default": ($$result2) => renderTemplate` ${renderComponent($$result2, "WelcomeLeftAligned", $$WelcomeLeftAligned, { "language": pageLanguage, "heading": heading, "subtitle": subtitle, "introText": introText, "Scribble": Scribble })} ${renderComponent($$result2, "TeamGrid", $$TeamGrid, { "language": pageLanguage })} ` })}`;
-}, "/home/felix/Desktop/feuchtergmbh_website/feuchter-gmbh/src/pages/[lang]/about.astro", void 0);
+  return renderTemplate`${renderComponent($$result, "Layout", $$Layout, { "pageTitle": metaData.pageTitle[pageLanguage], "pageDescription": metaData.pageDescription[pageLanguage] }, { "default": ($$result2) => renderTemplate` ${renderComponent($$result2, "WelcomeLeftAligned", $$WelcomeLeftAligned, { "language": pageLanguage, "heading": heading, "subtitle": subtitle, "introText": introText, "Scribble": Scribble })} ${renderComponent($$result2, "TeamGrid", $$TeamGrid, { "language": pageLanguage })} ` })}`;
+}, "C:/Users/felix/Desktop/feuchter-gmbh/feuchter-gmbh/src/pages/[lang]/about.astro", void 0);
 
-const $$file = "/home/felix/Desktop/feuchtergmbh_website/feuchter-gmbh/src/pages/[lang]/about.astro";
+const $$file = "C:/Users/felix/Desktop/feuchter-gmbh/feuchter-gmbh/src/pages/[lang]/about.astro";
 const $$url = "/[lang]/about";
 
 const _page = /*#__PURE__*/Object.freeze(/*#__PURE__*/Object.defineProperty({

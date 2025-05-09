@@ -1,8 +1,8 @@
-import { e as createAstro, f as createComponent, i as renderComponent, r as renderTemplate } from '../../chunks/astro/server_CofuBfMf.mjs';
+import { e as createAstro, f as createComponent, i as renderComponent, r as renderTemplate } from '../../chunks/astro/server_C55uJX-_.mjs';
 import 'kleur/colors';
-import { $ as $$WelcomeLeftAligned } from '../../chunks/WelcomeLeftAligned_DmXir0Xz.mjs';
-import { $ as $$Layout } from '../../chunks/Layout_DaASaaif.mjs';
-import { $ as $$Leistungen } from '../../chunks/Leistungen_DBp_M8ku.mjs';
+import { $ as $$WelcomeLeftAligned } from '../../chunks/WelcomeLeftAligned_BabOw5MF.mjs';
+import { $ as $$Layout } from '../../chunks/Layout_Cic49wVH.mjs';
+import { $ as $$Leistungen } from '../../chunks/Leistungen_Q7FwUnff.mjs';
 export { renderers } from '../../renderers.mjs';
 
 const Scribble = new Proxy({"src":"/custom-folder/leistungen.CE96ka63.jpg","width":1920,"height":1281,"format":"jpg"}, {
@@ -11,7 +11,7 @@ const Scribble = new Proxy({"src":"/custom-folder/leistungen.CE96ka63.jpg","widt
 								return structuredClone(target);
 							}
 							if (name === 'fsPath') {
-								return "/home/felix/Desktop/feuchtergmbh_website/feuchter-gmbh/src/assets/leistungen.jpg";
+								return "C:/Users/felix/Desktop/feuchter-gmbh/feuchter-gmbh/src/assets/leistungen.jpg";
 							}
 							
 							return target[name];
@@ -23,7 +23,17 @@ const $$Services = createComponent(($$result, $$props, $$slots) => {
   const Astro2 = $$result.createAstro($$Astro, $$props, $$slots);
   Astro2.self = $$Services;
   const { locals } = Astro2;
-  const pageLanguage = locals.language;
+  const pageLanguage = locals.language ?? "de";
+  const metaData = {
+    pageTitle: {
+      de: "Leistungen | Feuchter GmbH",
+      en: "Services | Feuchter GmbH"
+    },
+    pageDescription: {
+      de: "Wir unterst\xFCtzen unsere Kunden von Anfang an bei ihren Projekten \u2013 von der Konzeption und Entwicklung \xFCber die Produktion bis hin zur Logistik.",
+      en: "We support our customers from the very beginning of their projects \u2013 from conception and development to production and logistics."
+    }
+  };
   let heading = "Wir unterst\xFCtzen Sie bei Ihrem Vorhaben von Anfang an.";
   let subtitle = "Ein Partner, der h\xE4lt was er verspricht";
   let introText = `
@@ -34,10 +44,10 @@ Wir unterst\xFCtzen unsere Kunden von Anfang an bei ihren Projekten \u2013 von d
     introText = `
 We support our customers from the very beginning of their projects \u2013 from conception and development to production and logistics. With our expertise, we ensure tailored solutions that are efficient, reliable, and sustainable.`;
   }
-  return renderTemplate`${renderComponent($$result, "Layout", $$Layout, {}, { "default": ($$result2) => renderTemplate` ${renderComponent($$result2, "WelcomeLeftAligned", $$WelcomeLeftAligned, { "language": pageLanguage, "heading": heading, "subtitle": subtitle, "introText": introText, "Scribble": Scribble })} ${renderComponent($$result2, "Leistungen", $$Leistungen, { "language": pageLanguage })} ` })}`;
-}, "/home/felix/Desktop/feuchtergmbh_website/feuchter-gmbh/src/pages/[lang]/services.astro", void 0);
+  return renderTemplate`${renderComponent($$result, "Layout", $$Layout, { "pageTitle": metaData.pageTitle[pageLanguage], "pageDescription": metaData.pageDescription[pageLanguage] }, { "default": ($$result2) => renderTemplate` ${renderComponent($$result2, "WelcomeLeftAligned", $$WelcomeLeftAligned, { "language": pageLanguage, "heading": heading, "subtitle": subtitle, "introText": introText, "Scribble": Scribble })} ${renderComponent($$result2, "Leistungen", $$Leistungen, { "language": pageLanguage })} ` })}`;
+}, "C:/Users/felix/Desktop/feuchter-gmbh/feuchter-gmbh/src/pages/[lang]/services.astro", void 0);
 
-const $$file = "/home/felix/Desktop/feuchtergmbh_website/feuchter-gmbh/src/pages/[lang]/services.astro";
+const $$file = "C:/Users/felix/Desktop/feuchter-gmbh/feuchter-gmbh/src/pages/[lang]/services.astro";
 const $$url = "/[lang]/services";
 
 const _page = /*#__PURE__*/Object.freeze(/*#__PURE__*/Object.defineProperty({

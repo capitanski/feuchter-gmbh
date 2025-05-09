@@ -1,4 +1,4 @@
-import { p as renderJSX, q as createVNode, v as AstroJSX, w as AstroUserError } from './chunks/astro/server_CofuBfMf.mjs';
+import { o as renderJSX, p as createVNode, q as AstroJSX, v as AstroUserError } from './chunks/astro/server_C55uJX-_.mjs';
 import 'kleur/colors';
 import 'clsx';
 
@@ -48,6 +48,6 @@ const renderer = {
 };
 var server_default = renderer;
 
-const renderers = [Object.assign({"name":"astro:jsx","serverEntrypoint":"file:///home/felix/Desktop/feuchtergmbh_website/feuchter-gmbh/node_modules/@astrojs/mdx/dist/server.js"}, { ssr: server_default }),];
+const renderers = [Object.assign({"name":"astro:jsx","serverEntrypoint":"file:///C:/Users/felix/Desktop/feuchter-gmbh/feuchter-gmbh/node_modules/@astrojs/mdx/dist/server.js"}, { ssr: server_default }),];
 
 export { renderers };

@@ -1,18 +1,31 @@
-import { e as createAstro, f as createComponent, m as maybeRenderHead, h as addAttribute, u as unescapeHTML, i as renderComponent, r as renderTemplate } from '../chunks/astro/server_CofuBfMf.mjs';
+import { e as createAstro, f as createComponent, m as maybeRenderHead, h as addAttribute, u as unescapeHTML, i as renderComponent, r as renderTemplate } from '../chunks/astro/server_C55uJX-_.mjs';
 import 'kleur/colors';
-import { $ as $$Button } from '../chunks/Button_BHV8ZOOp.mjs';
-import { C as Circles$1, b as buttonTranslations, $ as $$Layout } from '../chunks/Layout_DaASaaif.mjs';
-import { S as Scribble, B as Behoerdenkleidung, C as Corporate } from '../chunks/corporate_fashion_DzCh8UDt.mjs';
+import { $ as $$Button } from '../chunks/Button_ASMSUPRi.mjs';
+import { C as Circles$1 } from '../chunks/Circles_C2MmP2nu.mjs';
+import { b as buttonTranslations, $ as $$Layout } from '../chunks/Layout_Cic49wVH.mjs';
 /* empty css                                 */
-import { $ as $$Leistungen } from '../chunks/Leistungen_DBp_M8ku.mjs';
+import { $ as $$Leistungen } from '../chunks/Leistungen_Q7FwUnff.mjs';
 import 'clsx';
-import { $ as $$Projects } from '../chunks/Projects_T2wigMXL.mjs';
-import { a as Transportloesungen, T as Thermohaube } from '../chunks/Thermohaube quer_CCmxDng1.mjs';
-import { B as Bekleidung } from '../chunks/projekte_C2Tx1DqM.mjs';
-import { C as Circles$2 } from '../chunks/projects_CgVXogum.mjs';
-import { A as Arrow } from '../chunks/Arrow_sand_CKat7LSH.mjs';
-import { $ as $$ContactForm } from '../chunks/ContactForm_BtCcEDdm.mjs';
+import { $ as $$Projects } from '../chunks/Projects_C9MXdpP9.mjs';
+import { T as Transportloesungen, a as Thermohaube, S as Staubhaube } from '../chunks/staubhaube_schraeg_header_B5Nd1Kmb.mjs';
+import { B as Bekleidung, a as Behoerdenkleidung, C as Corporate } from '../chunks/Corporate Fashion_CsQg6cJi.mjs';
+import { C as Circles$2 } from '../chunks/projects_DxjUdwdX.mjs';
+import { A as Arrow } from '../chunks/Arrow_sand_Bmd0_hxN.mjs';
+import { $ as $$ContactForm } from '../chunks/ContactForm_D0MPkWHY.mjs';
 export { renderers } from '../renderers.mjs';
+
+const Scribble = new Proxy({"src":"/custom-folder/feuchter_gmbh_header.Cq--DDfa.jpg","width":1400,"height":933,"format":"jpg"}, {
+						get(target, name, receiver) {
+							if (name === 'clone') {
+								return structuredClone(target);
+							}
+							if (name === 'fsPath') {
+								return "C:/Users/felix/Desktop/feuchter-gmbh/feuchter-gmbh/src/assets/feuchter_gmbh_header.jpg";
+							}
+							
+							return target[name];
+						}
+					});
 
 const $$Astro$4 = createAstro("http://192.168.178.48:4321/");
 const $$Welcome = createComponent(($$result, $$props, $$slots) => {
@@ -28,7 +41,7 @@ const $$Welcome = createComponent(($$result, $$props, $$slots) => {
     introText = `Since 1957, we have been one of the leading producers of clothing for armies, government agencies, and businesses worldwide.`;
   }
   return renderTemplate`${maybeRenderHead()}<section data-astro-cid-mmc7otgs> <img${addAttribute(Scribble.src, "src")} alt="" class="scribble" fetchpriority="high" loading="eager" data-astro-cid-mmc7otgs> <div class="container" data-astro-cid-mmc7otgs> <img${addAttribute(Circles$1.src, "src")} alt="" class="circles-svg" fetchpriority="high" loading="eager" data-astro-cid-mmc7otgs> <div class="hero-container" data-astro-cid-mmc7otgs> <h1 class="hero-heading animatable" data-astro-cid-mmc7otgs> ${heading} </h1> <p class="subtitle animatable" data-astro-cid-mmc7otgs>${subtitle}</p> <p class="hero-paragraph" data-astro-cid-mmc7otgs>${unescapeHTML(introText)}</p> <div class="button-wrapper hero-button-wrapper" data-astro-cid-mmc7otgs> ${renderComponent($$result, "Button", $$Button, { "linkText": buttonTranslations("contact", language), "target": `/${language}/contact`, "class": "hero-button-1", "variant": "primary", "data-astro-cid-mmc7otgs": true })} ${renderComponent($$result, "Button", $$Button, { "linkText": buttonTranslations("projects", language), "target": `/${language}/projects`, "class": "hero-button-2", "variant": "secondary", "data-astro-cid-mmc7otgs": true })} </div> </div> </div> </section> `;
-}, "/home/felix/Desktop/feuchtergmbh_website/feuchter-gmbh/src/components/Welcome.astro", void 0);
+}, "C:/Users/felix/Desktop/feuchter-gmbh/feuchter-gmbh/src/components/Welcome.astro", void 0);
 
 const CEO = new Proxy({"src":"/custom-folder/CEO.DGfP5CoV.jpg","width":400,"height":400,"format":"jpg"}, {
 						get(target, name, receiver) {
@@ -36,7 +49,7 @@ const CEO = new Proxy({"src":"/custom-folder/CEO.DGfP5CoV.jpg","width":400,"heig
 								return structuredClone(target);
 							}
 							if (name === 'fsPath') {
-								return "/home/felix/Desktop/feuchtergmbh_website/feuchter-gmbh/src/assets/CEO.jpg";
+								return "C:/Users/felix/Desktop/feuchter-gmbh/feuchter-gmbh/src/assets/CEO.jpg";
 							}
 							
 							return target[name];
@@ -49,7 +62,7 @@ const Quotes = new Proxy({"src":"/custom-folder/Quotes.CNCkwFDX.svg","width":149
 								return structuredClone(target);
 							}
 							if (name === 'fsPath') {
-								return "/home/felix/Desktop/feuchtergmbh_website/feuchter-gmbh/src/assets/Quotes.svg";
+								return "C:/Users/felix/Desktop/feuchter-gmbh/feuchter-gmbh/src/assets/Quotes.svg";
 							}
 							
 							return target[name];
@@ -66,7 +79,7 @@ const $$Cite = createComponent(($$result, $$props, $$slots) => {
     en: `"Since 1957, we have stood for outstanding functionality, durability, and innovation in the production of military and official agency clothing. With decades of experience and the highest quality standards, we now also offer customized clothing solutions for outdoor, survival, and security providers. Our goal is to equip professionals reliably in any situation \u2013 with clothing that protects, supports, and meets the highest demands."`
   };
   return renderTemplate`${maybeRenderHead()}<section data-astro-cid-lwmcem6b> <img${addAttribute(Quotes.src, "src")} alt="" class="img-absolute animatable-opacity" data-astro-cid-lwmcem6b> <div class="container" data-astro-cid-lwmcem6b> <p class="cite animatable" data-astro-cid-lwmcem6b> ${cite[language]} </p> <img${addAttribute(CEO.src, "src")} alt="" class="ceo animatable" data-astro-cid-lwmcem6b> <div class="ceo-and-role" data-astro-cid-lwmcem6b> <p class="ceo-name" data-astro-cid-lwmcem6b>Klaus Feuchter</p> <p class="job-role" data-astro-cid-lwmcem6b>CEO, Feuchter GmbH</p> </div> </div> </section> `;
-}, "/home/felix/Desktop/feuchtergmbh_website/feuchter-gmbh/src/components/Cite.astro", void 0);
+}, "C:/Users/felix/Desktop/feuchter-gmbh/feuchter-gmbh/src/components/Cite.astro", void 0);
 
 const Circles = new Proxy({"src":"/custom-folder/Swirl_bottom_right.DnYoQ_FE.png","width":1000,"height":1000,"format":"png"}, {
 						get(target, name, receiver) {
@@ -74,7 +87,7 @@ const Circles = new Proxy({"src":"/custom-folder/Swirl_bottom_right.DnYoQ_FE.png
 								return structuredClone(target);
 							}
 							if (name === 'fsPath') {
-								return "/home/felix/Desktop/feuchtergmbh_website/feuchter-gmbh/src/assets/Swirl_bottom_right.png";
+								return "C:/Users/felix/Desktop/feuchter-gmbh/feuchter-gmbh/src/assets/Swirl_bottom_right.png";
 							}
 							
 							return target[name];
@@ -87,7 +100,7 @@ const Produktionsketten = new Proxy({"src":"/custom-folder/globe._mf5Q8bi.svg","
 								return structuredClone(target);
 							}
 							if (name === 'fsPath') {
-								return "/home/felix/Desktop/feuchtergmbh_website/feuchter-gmbh/src/assets/globe.svg";
+								return "C:/Users/felix/Desktop/feuchter-gmbh/feuchter-gmbh/src/assets/globe.svg";
 							}
 							
 							return target[name];
@@ -100,7 +113,7 @@ const Grossserien = new Proxy({"src":"/custom-folder/grossserien.Dd9sBRH0.svg","
 								return structuredClone(target);
 							}
 							if (name === 'fsPath') {
-								return "/home/felix/Desktop/feuchtergmbh_website/feuchter-gmbh/src/assets/grossserien.svg";
+								return "C:/Users/felix/Desktop/feuchter-gmbh/feuchter-gmbh/src/assets/grossserien.svg";
 							}
 							
 							return target[name];
@@ -113,7 +126,7 @@ const Qualitaetsstandards = new Proxy({"src":"/custom-folder/qualitaetsstandards
 								return structuredClone(target);
 							}
 							if (name === 'fsPath') {
-								return "/home/felix/Desktop/feuchtergmbh_website/feuchter-gmbh/src/assets/qualitaetsstandards.svg";
+								return "C:/Users/felix/Desktop/feuchter-gmbh/feuchter-gmbh/src/assets/qualitaetsstandards.svg";
 							}
 							
 							return target[name];
@@ -126,7 +139,7 @@ const Neuentwicklungen = new Proxy({"src":"/custom-folder/neuentwicklungen.CCiqW
 								return structuredClone(target);
 							}
 							if (name === 'fsPath') {
-								return "/home/felix/Desktop/feuchtergmbh_website/feuchter-gmbh/src/assets/neuentwicklungen.svg";
+								return "C:/Users/felix/Desktop/feuchter-gmbh/feuchter-gmbh/src/assets/neuentwicklungen.svg";
 							}
 							
 							return target[name];
@@ -139,7 +152,7 @@ const Lieferant = new Proxy({"src":"/custom-folder/lieferant.DmK82rqN.svg","widt
 								return structuredClone(target);
 							}
 							if (name === 'fsPath') {
-								return "/home/felix/Desktop/feuchtergmbh_website/feuchter-gmbh/src/assets/lieferant.svg";
+								return "C:/Users/felix/Desktop/feuchter-gmbh/feuchter-gmbh/src/assets/lieferant.svg";
 							}
 							
 							return target[name];
@@ -152,7 +165,7 @@ const Qualitaetsmanagement = new Proxy({"src":"/custom-folder/qualitaetsmanageme
 								return structuredClone(target);
 							}
 							if (name === 'fsPath') {
-								return "/home/felix/Desktop/feuchtergmbh_website/feuchter-gmbh/src/assets/qualitaetsmanagement.svg";
+								return "C:/Users/felix/Desktop/feuchter-gmbh/feuchter-gmbh/src/assets/qualitaetsmanagement.svg";
 							}
 							
 							return target[name];
@@ -239,7 +252,7 @@ const $$Usps = createComponent(($$result, $$props, $$slots) => {
   return renderTemplate`${maybeRenderHead()}<section id="usps" data-astro-cid-6yr37or7> <img${addAttribute(Circles.src, "src")} alt="" class="img-absolute" data-astro-cid-6yr37or7> <div class="container" data-astro-cid-6yr37or7> <h2 class="animatable" data-astro-cid-6yr37or7>${headline[language]}</h2> <div class="rezensionen-grid" data-astro-cid-6yr37or7> ${leistungen.map((leistung) => {
     return renderTemplate`<div class="rezension-card animate-in-right" data-astro-cid-6yr37or7> <div class="icon-and-title" data-astro-cid-6yr37or7> <img${addAttribute(leistung.icon, "src")} alt="" class="card-icon" loading="lazy" width="150" height="150" data-astro-cid-6yr37or7> <p class="card-title" data-astro-cid-6yr37or7>${leistung.title[language]}</p> </div> <p class="card-text" data-astro-cid-6yr37or7>${leistung.text[language]}</p> </div>`;
   })} </div> </div> </section> `;
-}, "/home/felix/Desktop/feuchtergmbh_website/feuchter-gmbh/src/components/Usps.astro", void 0);
+}, "C:/Users/felix/Desktop/feuchter-gmbh/feuchter-gmbh/src/components/Usps.astro", void 0);
 
 const $$Astro$1 = createAstro("http://192.168.178.48:4321/");
 const $$Categories = createComponent(($$result, $$props, $$slots) => {
@@ -260,7 +273,7 @@ const $$Categories = createComponent(($$result, $$props, $$slots) => {
         de: "Unsere Milit\xE4r- und Survivalkleidung bietet Schutz, Komfort und Funktionalit\xE4t in extremen Umgebungen. Entwickelt f\xFCr h\xF6chste Anforderungen, eignet sie sich ideal f\xFCr taktische Eins\xE4tze, Outdoor-Abenteuer und Notfallsituationen. Strapazierf\xE4hige Materialien und durchdachtes Design garantieren zuverl\xE4ssige Leistung, auch unter h\xE4rtesten Bedingungen \u2013 weltweit einsetzbar.",
         en: "Our military and survival clothing provides protection, comfort, and functionality in extreme environments. Designed for the toughest demands, it's perfect for tactical missions, outdoor adventures, and emergency situations. Durable materials and thoughtful design ensure reliable performance, even under the harshest conditions \u2013 trusted worldwide."
       },
-      slug: "clothing?category=military-and-survival",
+      slug: "clothing/military-and-survival",
       image: Bekleidung.src
     },
     {
@@ -272,7 +285,7 @@ const $$Categories = createComponent(($$result, $$props, $$slots) => {
         de: "Unsere Beh\xF6rdenkleidung erf\xFCllt alle Anforderungen an Funktion, Sicherheit und Tragekomfort. Ob Polizei, Zoll oder Rettungsdienste \u2013 wir bieten ma\xDFgeschneiderte L\xF6sungen f\xFCr den professionellen Alltag. Die Kombination aus modernen Stoffen, robustem Aufbau und individueller Ausstattung macht unsere Kleidung zum zuverl\xE4ssigen Partner im Einsatz.",
         en: "Our official agency clothing meets all requirements for function, safety, and wearing comfort. Whether for police, customs, or emergency services \u2013 we offer custom solutions for everyday professional use. Modern fabrics, durable construction, and tailored features make our garments a dependable choice on duty."
       },
-      slug: "clothing?category=officialwear",
+      slug: "clothing/officialwear",
       image: Behoerdenkleidung.src
     },
     {
@@ -284,7 +297,7 @@ const $$Categories = createComponent(($$result, $$props, $$slots) => {
         de: "Mit unserer Corporate Fashion st\xE4rken Sie das Erscheinungsbild Ihrer Marke durch professionelle, stilvolle Kleidung. Ob f\xFCr Messen, Kundenkontakt oder interne Veranstaltungen \u2013 wir bieten hochwertige Textilien mit individuellem Design. Komfort, Qualit\xE4t und Wiedererkennung stehen dabei im Mittelpunkt jeder Kollektion, die wir entwickeln.",
         en: "Our corporate fashion enhances your brand's appearance with professional, stylish clothing. Whether for trade fairs, customer interactions, or internal events \u2013 we offer high-quality textiles with custom designs. Comfort, quality, and brand recognition are at the heart of every collection we create for you."
       },
-      slug: "clothing?category=corporate-fashion",
+      slug: "clothing/corporate-fashion",
       image: Corporate.src
     },
     {
@@ -296,7 +309,7 @@ const $$Categories = createComponent(($$result, $$props, $$slots) => {
         de: "Die Schutzwand f\xFCr Rollcontainer dient als robuster Puffer gegen St\xF6\xDFe und sch\xFCtzt empfindliche Fracht. Sie ist leicht montierbar, wiederverwendbar und erh\xF6ht die Sicherheit beim Transport. Ideal f\xFCr Logistikunternehmen und Lagerhaltung, bei denen sensible G\xFCter zuverl\xE4ssig gesichert werden m\xFCssen \u2013 effizient und langlebig.",
         en: "The protective wall for roll containers acts as a sturdy buffer against impact and protects sensitive cargo. It is easy to install, reusable, and enhances transport safety. Ideal for logistics companies and storage environments where delicate goods must be reliably secured \u2013 efficient and long-lasting."
       },
-      slug: "transportsolutions?category=protective-wall",
+      slug: "transportsolutions/protectivewalls",
       image: Transportloesungen.src
     },
     {
@@ -308,7 +321,7 @@ const $$Categories = createComponent(($$result, $$props, $$slots) => {
         de: "Unsere Thermohauben erm\xF6glichen den sicheren Transport temperaturempfindlicher Waren. Sie halten Hitze, K\xE4lte und Feuchtigkeit zuverl\xE4ssig fern und sorgen f\xFCr ein konstantes Klima im Inneren des Rollcontainers. Besonders geeignet f\xFCr Lebensmittel, Pharma oder Chemie \u2013 \xFCberall, wo konstante Temperaturen essenziell sind.",
         en: "Our thermal covers enable the safe transport of temperature-sensitive goods. They effectively protect against heat, cold, and moisture, ensuring a stable climate inside the roll container. Especially suitable for food, pharmaceuticals, or chemicals \u2013 wherever constant temperatures are critical during storage or delivery."
       },
-      slug: "transportsolutions?category=thermal-cover",
+      slug: "transportsolutions/thermalcovers",
       image: Thermohaube.src
     },
     {
@@ -320,38 +333,48 @@ const $$Categories = createComponent(($$result, $$props, $$slots) => {
         de: "Die Staubhaube sch\xFCtzt Ihre Produkte zuverl\xE4ssig vor Verschmutzung w\xE4hrend Transport und Lagerung. Sie ist einfach zu handhaben, langlebig und in verschiedenen Gr\xF6\xDFen erh\xE4ltlich. Besonders n\xFCtzlich in staubigen Umgebungen oder bei l\xE4ngerer Zwischenlagerung \u2013 damit Ihre Waren stets sauber und gesch\xFCtzt bleiben.",
         en: "The dust cover reliably protects your products from contamination during transport and storage. It is easy to handle, durable, and available in various sizes. Particularly useful in dusty environments or for long-term storage \u2013 ensuring your goods stay clean and well-protected at all times."
       },
-      slug: "transportsolutions?category=dust-cover",
-      image: Thermohaube.src
+      slug: "transportsolutions/dustcovers",
+      image: Staubhaube.src
     }
   ];
   return renderTemplate`${maybeRenderHead()}<section data-astro-cid-qacliicl> <img${addAttribute(Circles$2.src, "src")} alt="" class="img-absolute" data-astro-cid-qacliicl> <div class="container" data-astro-cid-qacliicl> <h2 class="section-title animatable" data-astro-cid-qacliicl>${heading[language]}</h2> <div class="category-grid" data-astro-cid-qacliicl> ${categories.map((category) => {
     return renderTemplate`<div class="category-card animate-in-right" data-astro-cid-qacliicl> <div class="card-title-and-text" data-astro-cid-qacliicl> <div class="image-and-title" data-astro-cid-qacliicl> <img${addAttribute(category.image, "src")} alt="" loading="lazy" data-astro-cid-qacliicl> <p class="category-title" data-astro-cid-qacliicl>${category.title[language]}</p> </div> <p data-astro-cid-qacliicl>${category.text[language]}</p> </div> <a${addAttribute(`/${language}/${category.slug}`, "href")} class="project-link" data-astro-cid-qacliicl> <img${addAttribute(Arrow.src, "src")} alt="" data-astro-cid-qacliicl> <span data-astro-cid-qacliicl>${buttonTranslations("toproducts", language)}</span> </a> </div>`;
   })} </div> </div> </section> `;
-}, "/home/felix/Desktop/feuchtergmbh_website/feuchter-gmbh/src/components/Categories.astro", void 0);
+}, "C:/Users/felix/Desktop/feuchter-gmbh/feuchter-gmbh/src/components/Categories.astro", void 0);
 
 const $$Astro = createAstro("http://192.168.178.48:4321/");
 const $$Index = createComponent(($$result, $$props, $$slots) => {
   const Astro2 = $$result.createAstro($$Astro, $$props, $$slots);
   Astro2.self = $$Index;
   const { locals } = Astro2;
-  const pageLanguage = locals.language;
+  const pageLanguage = locals.language ?? "de";
+  const metaData = {
+    pageTitle: {
+      de: "Textil- & Bekleidungsl\xF6sungen seit 1957 | Feuchter GmbH",
+      en: "Textile & Apparel Solutions Since 1957 | Feuchter GmbH"
+    },
+    pageDescription: {
+      de: "Hochwertige Textil- und Bekleidungsl\xF6sungen seit 1957. Produktion f\xFCr Industrie und Handel. Jetzt Kontakt aufnehmen \u2013 Feuchter GmbH.",
+      en: "High-quality textile and apparel solutions since 1957. Serving industry and retail. Learn more \u2013 Feuchter GmbH."
+    }
+  };
   let heading = "Ihre Vision ist nur noch einen Klick entfernt";
   let subtitle = "Wir freuen uns, von Ihnen zu h\xF6ren";
   if (pageLanguage == "en") {
     heading = "Your Vision is just a click away";
     subtitle = "We are looking forward to hear from you";
   }
-  return renderTemplate`${renderComponent($$result, "Layout", $$Layout, {}, { "default": ($$result2) => renderTemplate` ${renderComponent($$result2, "Welcome", $$Welcome, { "language": pageLanguage })} ${renderComponent($$result2, "Leistungen", $$Leistungen, { "language": pageLanguage })} ${renderComponent($$result2, "Categories", $$Categories, { "language": pageLanguage })} ${renderComponent($$result2, "Cite", $$Cite, { "language": pageLanguage })} ${renderComponent($$result2, "Usps", $$Usps, { "language": pageLanguage })} ${renderComponent($$result2, "Projects", $$Projects, { "language": pageLanguage })} ${renderComponent($$result2, "ContactForm", $$ContactForm, { "heading": heading, "subtitle": subtitle, "language": pageLanguage })} ` })}`;
-}, "/home/felix/Desktop/feuchtergmbh_website/feuchter-gmbh/src/pages/[lang]/index.astro", void 0);
+  return renderTemplate`${renderComponent($$result, "Layout", $$Layout, { "pageTitle": metaData.pageTitle[pageLanguage], "pageDescription": metaData.pageDescription[pageLanguage] }, { "default": ($$result2) => renderTemplate` ${renderComponent($$result2, "Welcome", $$Welcome, { "language": pageLanguage })} ${renderComponent($$result2, "Leistungen", $$Leistungen, { "language": pageLanguage })} ${renderComponent($$result2, "Categories", $$Categories, { "language": pageLanguage })} ${renderComponent($$result2, "Cite", $$Cite, { "language": pageLanguage })} ${renderComponent($$result2, "Usps", $$Usps, { "language": pageLanguage })} ${renderComponent($$result2, "Projects", $$Projects, { "language": pageLanguage })} ${renderComponent($$result2, "ContactForm", $$ContactForm, { "heading": heading, "subtitle": subtitle, "language": pageLanguage })} ` })}`;
+}, "C:/Users/felix/Desktop/feuchter-gmbh/feuchter-gmbh/src/pages/[lang]/index.astro", void 0);
 
-const $$file = "/home/felix/Desktop/feuchtergmbh_website/feuchter-gmbh/src/pages/[lang]/index.astro";
+const $$file = "C:/Users/felix/Desktop/feuchter-gmbh/feuchter-gmbh/src/pages/[lang]/index.astro";
 const $$url = "/[lang]";
 
 const _page = /*#__PURE__*/Object.freeze(/*#__PURE__*/Object.defineProperty({
-  __proto__: null,
-  default: $$Index,
-  file: $$file,
-  url: $$url
+	__proto__: null,
+	default: $$Index,
+	file: $$file,
+	url: $$url
 }, Symbol.toStringTag, { value: 'Module' }));
 
 const page = () => _page;
