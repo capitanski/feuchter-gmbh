@@ -1,15 +1,15 @@
-import PolizeihemdSeite from "@/assets/Projekte/Bayernhemd arm.jpg";
-import PolizeihemdFront from "@/assets/Projekte/Bayernhemd vorne.jpg";
-import bmiHoseRechts from "@/assets/Projekte/BMI Hose rechts.jpg"
-import bmiJackeFront from "@/assets/Projekte/BMI Jacke front.jpg"
+import PolizeihemdSeite from "@/assets/Projekte/Bayernhemd arm.webp";
+import PolizeihemdFront from "@/assets/Projekte/Bayernhemd vorne.webp";
+import bmiHoseRechts from "@/assets/Projekte/BMI Hose rechts.webp"
+import bmiJackeFront from "@/assets/Projekte/BMI Jacke front.webp"
 import berlinHoseLinks from "@/assets/Projekte/Hose Berlin Links.jpg"
 import berlinJackeSeite from "@/assets/Projekte/Jacke Berlin Seite.jpg"
-import unterhemdSeite from "@/assets/Projekte/Unterhemd BWBM Seite.jpg";
-import unterhemdFront from "@/assets/Projekte/Unterhemd BWBM vorne.jpg"
-import monteurkombiFront from "@/assets/Projekte/Monteurkombi Front.jpg"
-import monteurkombiSeite from "@/assets/Projekte/Monteurkombi Seite.jpg"
-import ksJacke from "@/assets/Projekte/Kaelteschutzjacke Seite.jpg"
-import ksHose from "@/assets/Projekte/Kaelteschutzhose Seite.jpg"
+import unterhemdSeite from "@/assets/Projekte/Unterhemd BWBM Seite.webp";
+import unterhemdFront from "@/assets/Projekte/Unterhemd BWBM vorne.webp"
+import monteurkombiFront from "@/assets/Projekte/Monteurkombi Front.webp"
+import monteurkombiSeite from "@/assets/Projekte/Monteurkombi Seite.webp"
+import ksJacke from "@/assets/Projekte/Kaelteschutzjacke Seite.webp"
+import ksHose from "@/assets/Projekte/Kaelteschutzhose Seite.webp"
 import fs from "fs";
 const projects = [
   {
