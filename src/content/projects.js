@@ -68,7 +68,7 @@ const projects = [
     },
     date: "2024",
   },
-  {
+  /*{
     title: {
       de: "Einsatzanzug Polizei Berlin",
       en: "Police Berlin Operational Suit",
@@ -95,7 +95,7 @@ const projects = [
       en: "Finished",
     },
     date: "2024",
-  },
+  },*/
   {
     title: {
       de: "Monteurkombi Sommer/Variabel",
