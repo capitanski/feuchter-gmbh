@@ -1,17 +1,17 @@
 import { e as createAstro, f as createComponent, i as renderComponent, r as renderTemplate } from '../../chunks/astro/server_C55uJX-_.mjs';
 import 'kleur/colors';
-import { $ as $$WelcomeLeftAligned } from '../../chunks/WelcomeLeftAligned_BabOw5MF.mjs';
-import { $ as $$Layout } from '../../chunks/Layout_Cic49wVH.mjs';
-import { $ as $$Leistungen } from '../../chunks/Leistungen_Q7FwUnff.mjs';
+import { $ as $$WelcomeLeftAligned } from '../../chunks/WelcomeLeftAligned_CWLygjtb.mjs';
+import { $ as $$Layout } from '../../chunks/Layout_DAu_V4L8.mjs';
+import { $ as $$Leistungen } from '../../chunks/Leistungen_COsfC27Y.mjs';
 export { renderers } from '../../renderers.mjs';
 
-const Scribble = new Proxy({"src":"/custom-folder/leistungen.CE96ka63.jpg","width":1920,"height":1281,"format":"jpg"}, {
+const Scribble = new Proxy({"src":"/custom-folder/leistungen.CJPjG1cR.webp","width":1920,"height":1281,"format":"webp"}, {
 						get(target, name, receiver) {
 							if (name === 'clone') {
 								return structuredClone(target);
 							}
 							if (name === 'fsPath') {
-								return "C:/Users/felix/Desktop/feuchter-gmbh/feuchter-gmbh/src/assets/leistungen.jpg";
+								return "C:/Users/sabri/OneDrive/Desktop/feuchter-gmbh-astro/feuchter-gmbh/src/assets/leistungen.webp";
 							}
 							
 							return target[name];
@@ -45,9 +45,9 @@ Wir unterst\xFCtzen unsere Kunden von Anfang an bei ihren Projekten \u2013 von d
 We support our customers from the very beginning of their projects \u2013 from conception and development to production and logistics. With our expertise, we ensure tailored solutions that are efficient, reliable, and sustainable.`;
   }
   return renderTemplate`${renderComponent($$result, "Layout", $$Layout, { "pageTitle": metaData.pageTitle[pageLanguage], "pageDescription": metaData.pageDescription[pageLanguage] }, { "default": ($$result2) => renderTemplate` ${renderComponent($$result2, "WelcomeLeftAligned", $$WelcomeLeftAligned, { "language": pageLanguage, "heading": heading, "subtitle": subtitle, "introText": introText, "Scribble": Scribble })} ${renderComponent($$result2, "Leistungen", $$Leistungen, { "language": pageLanguage })} ` })}`;
-}, "C:/Users/felix/Desktop/feuchter-gmbh/feuchter-gmbh/src/pages/[lang]/services.astro", void 0);
+}, "C:/Users/sabri/OneDrive/Desktop/feuchter-gmbh-astro/feuchter-gmbh/src/pages/[lang]/services.astro", void 0);
 
-const $$file = "C:/Users/felix/Desktop/feuchter-gmbh/feuchter-gmbh/src/pages/[lang]/services.astro";
+const $$file = "C:/Users/sabri/OneDrive/Desktop/feuchter-gmbh-astro/feuchter-gmbh/src/pages/[lang]/services.astro";
 const $$url = "/[lang]/services";
 
 const _page = /*#__PURE__*/Object.freeze(/*#__PURE__*/Object.defineProperty({

@@ -1,11 +1,11 @@
 import { e as createAstro, f as createComponent, i as renderComponent, r as renderTemplate, m as maybeRenderHead } from '../../chunks/astro/server_C55uJX-_.mjs';
 import 'kleur/colors';
-import { $ as $$Layout } from '../../chunks/Layout_Cic49wVH.mjs';
-import { $ as $$CategoryHeader } from '../../chunks/CategoryHeader_BGvWW_ds.mjs';
-import '../../chunks/schutzwand_verschluss_B5vleD1j.mjs';
-import '../../chunks/Transportwand farbig_DipWNYX7.mjs';
-import '../../chunks/Thermohaube farbig_XPeZaqCX.mjs';
-import { T as Transportloesungen, S as Staubhaube, a as Thermohaube } from '../../chunks/staubhaube_schraeg_header_B5Nd1Kmb.mjs';
+import { $ as $$Layout } from '../../chunks/Layout_DAu_V4L8.mjs';
+import { $ as $$CategoryHeader } from '../../chunks/CategoryHeader_-jIeOlS6.mjs';
+import '../../chunks/schutzwand_verschluss_BqHNROck.mjs';
+import '../../chunks/Transportwand farbig_QNd6lEeh.mjs';
+import '../../chunks/Thermohaube farbig_DEdBemqE.mjs';
+import { T as Transportloesungen, S as Staubhaube, a as Thermohaube } from '../../chunks/staubhaube_schraeg_header_DLhywCYd.mjs';
 /* empty css                                    */
 export { renderers } from '../../renderers.mjs';
 
@@ -76,9 +76,9 @@ const $$Index = createComponent(($$result, $$props, $$slots) => {
     }
   };
   return renderTemplate`${renderComponent($$result, "Layout", $$Layout, { "pageTitle": metaData.pageTitle[pageLanguage], "pageDescription": metaData.pageDescription[pageLanguage], "data-astro-cid-o3sgqaj7": true }, { "default": ($$result2) => renderTemplate` ${maybeRenderHead()}<section data-astro-cid-o3sgqaj7> <div class="container" data-astro-cid-o3sgqaj7> ${renderComponent($$result2, "CategoryHeader", $$CategoryHeader, { "categories": transportCategories, "pageLanguage": pageLanguage, "textContent": textContent, "data-astro-cid-o3sgqaj7": true })} </div> </section> ` })} `;
-}, "C:/Users/felix/Desktop/feuchter-gmbh/feuchter-gmbh/src/pages/[lang]/transportsolutions/index.astro", void 0);
+}, "C:/Users/sabri/OneDrive/Desktop/feuchter-gmbh-astro/feuchter-gmbh/src/pages/[lang]/transportsolutions/index.astro", void 0);
 
-const $$file = "C:/Users/felix/Desktop/feuchter-gmbh/feuchter-gmbh/src/pages/[lang]/transportsolutions/index.astro";
+const $$file = "C:/Users/sabri/OneDrive/Desktop/feuchter-gmbh-astro/feuchter-gmbh/src/pages/[lang]/transportsolutions/index.astro";
 const $$url = "/[lang]/transportsolutions";
 
 const _page = /*#__PURE__*/Object.freeze(/*#__PURE__*/Object.defineProperty({

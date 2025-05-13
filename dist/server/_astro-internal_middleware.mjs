@@ -11,7 +11,7 @@ const supportedLanguages = ["de", "en"];
 const langSwitcher = function (currentPath) {
   // Change the base URL when publishing, otherwise the hreflang tags in layout
   // and the lang Switcher links will have wrong destiantions
-  const baseURL = "http://192.168.178.39:4321";
+  const baseURL = "http://localhost:4321";
   // This function implements the language switching function
   // By clicking one of the Links it changes the language and stays on the same site
   // Returns an array of objects containing the current path and lang url-segment

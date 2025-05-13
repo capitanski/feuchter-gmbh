@@ -1,7 +1,7 @@
 import { e as createAstro, f as createComponent, i as renderComponent, r as renderTemplate, m as maybeRenderHead, u as unescapeHTML } from '../../../chunks/astro/server_C55uJX-_.mjs';
 import 'kleur/colors';
 import fs from 'fs/promises';
-import { $ as $$Layout } from '../../../chunks/Layout_Cic49wVH.mjs';
+import { $ as $$Layout } from '../../../chunks/Layout_DAu_V4L8.mjs';
 /* empty css                                         */
 export { renderers } from '../../../renderers.mjs';
 
@@ -20,9 +20,9 @@ const $$Imprint = createComponent(async ($$result, $$props, $$slots) => {
     return new Response(null, { status: 404 });
   }
   return renderTemplate`${renderComponent($$result, "Layout", $$Layout, { "data-astro-cid-wzymxeqy": true }, { "default": async ($$result2) => renderTemplate` ${maybeRenderHead()}<section data-astro-cid-wzymxeqy> <div class="container rich-text-dark" data-astro-cid-wzymxeqy>${unescapeHTML(richtext)}</div> </section> ` })} `;
-}, "C:/Users/felix/Desktop/feuchter-gmbh/feuchter-gmbh/src/pages/[lang]/legal/imprint.astro", void 0);
+}, "C:/Users/sabri/OneDrive/Desktop/feuchter-gmbh-astro/feuchter-gmbh/src/pages/[lang]/legal/imprint.astro", void 0);
 
-const $$file = "C:/Users/felix/Desktop/feuchter-gmbh/feuchter-gmbh/src/pages/[lang]/legal/imprint.astro";
+const $$file = "C:/Users/sabri/OneDrive/Desktop/feuchter-gmbh-astro/feuchter-gmbh/src/pages/[lang]/legal/imprint.astro";
 const $$url = "/[lang]/legal/imprint";
 
 const _page = /*#__PURE__*/Object.freeze(/*#__PURE__*/Object.defineProperty({

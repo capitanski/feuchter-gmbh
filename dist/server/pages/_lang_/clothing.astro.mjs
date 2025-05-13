@@ -1,19 +1,19 @@
 import { e as createAstro, f as createComponent, i as renderComponent, r as renderTemplate, m as maybeRenderHead } from '../../chunks/astro/server_C55uJX-_.mjs';
 import 'kleur/colors';
-import { $ as $$Layout } from '../../chunks/Layout_Cic49wVH.mjs';
-import { $ as $$CategoryHeader } from '../../chunks/CategoryHeader_BGvWW_ds.mjs';
-import '../../chunks/schutzwand_verschluss_B5vleD1j.mjs';
-import { B as Bekleidung, a as Behoerdenkleidung, C as Corporate } from '../../chunks/Corporate Fashion_CsQg6cJi.mjs';
+import { $ as $$Layout } from '../../chunks/Layout_DAu_V4L8.mjs';
+import { $ as $$CategoryHeader } from '../../chunks/CategoryHeader_-jIeOlS6.mjs';
+import '../../chunks/schutzwand_verschluss_BqHNROck.mjs';
+import { B as Bekleidung, a as Behoerdenkleidung, C as Corporate } from '../../chunks/Corporate Fashion_DqPmN4jq.mjs';
 /* empty css                                    */
 export { renderers } from '../../renderers.mjs';
 
-new Proxy({"src":"/custom-folder/projekte_mobile.DOWqA9OZ.jpg","width":765,"height":1080,"format":"jpg"}, {
+new Proxy({"src":"/custom-folder/projekte_mobile.DWYZD9tg.webp","width":765,"height":1080,"format":"webp"}, {
 						get(target, name, receiver) {
 							if (name === 'clone') {
 								return structuredClone(target);
 							}
 							if (name === 'fsPath') {
-								return "C:/Users/felix/Desktop/feuchter-gmbh/feuchter-gmbh/src/assets/projekte_mobile.jpg";
+								return "C:/Users/sabri/OneDrive/Desktop/feuchter-gmbh-astro/feuchter-gmbh/src/assets/projekte_mobile.webp";
 							}
 							
 							return target[name];
@@ -85,9 +85,9 @@ const $$Index = createComponent(($$result, $$props, $$slots) => {
     }
   };
   return renderTemplate`${renderComponent($$result, "Layout", $$Layout, { "pageTitle": metaData.pageTitle[pageLanguage], "pageDescription": metaData.pageDescription[pageLanguage], "data-astro-cid-7tv3otf2": true }, { "default": ($$result2) => renderTemplate` ${maybeRenderHead()}<section data-astro-cid-7tv3otf2> <div class="container" data-astro-cid-7tv3otf2> ${renderComponent($$result2, "CategoryHeader", $$CategoryHeader, { "categories": clothingCategories, "pageLanguage": pageLanguage, "textContent": textContent, "data-astro-cid-7tv3otf2": true })} </div> </section> ` })} `;
-}, "C:/Users/felix/Desktop/feuchter-gmbh/feuchter-gmbh/src/pages/[lang]/clothing/index.astro", void 0);
+}, "C:/Users/sabri/OneDrive/Desktop/feuchter-gmbh-astro/feuchter-gmbh/src/pages/[lang]/clothing/index.astro", void 0);
 
-const $$file = "C:/Users/felix/Desktop/feuchter-gmbh/feuchter-gmbh/src/pages/[lang]/clothing/index.astro";
+const $$file = "C:/Users/sabri/OneDrive/Desktop/feuchter-gmbh-astro/feuchter-gmbh/src/pages/[lang]/clothing/index.astro";
 const $$url = "/[lang]/clothing";
 
 const _page = /*#__PURE__*/Object.freeze(/*#__PURE__*/Object.defineProperty({
