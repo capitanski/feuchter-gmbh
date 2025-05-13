@@ -1,7 +1,7 @@
 import { e as createAstro, f as createComponent, m as maybeRenderHead, i as renderComponent, h as addAttribute, r as renderTemplate, j as renderScript } from './astro/server_C55uJX-_.mjs';
 import 'kleur/colors';
 import { $ as $$Button } from './Button_BukcMihT.mjs';
-import { b as buttonTranslations } from './Layout_Wl4CagMY.mjs';
+import { b as buttonTranslations } from './Layout_DR_EymNx.mjs';
 /* empty css                              */
 import 'clsx';
 

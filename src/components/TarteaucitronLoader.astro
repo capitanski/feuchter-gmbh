@@ -4,7 +4,7 @@ const { lang } = Astro.props;
 
 <div id="tarteaucitron-settings" data-lang={lang}></div>
 
-<script src="/node_modules/tarteaucitronjs/tarteaucitron.js" defer></script>
+<script src="/tarteaucitron.js" defer></script>
 
 <script is:inline>
     window.addEventListener("DOMContentLoaded", function () {
@@ -24,6 +24,7 @@ const { lang } = Astro.props;
                 mandatory: true,
                 lang: lang,
                 showIcon: false, // 🍋 Zitronen-Symbol ausblenden
+                baseUrl: "/",
             });
 
             tarteaucitron.user.gtagUa = "G-H6KQBCYPRS";
