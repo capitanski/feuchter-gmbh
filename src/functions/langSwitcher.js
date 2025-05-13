@@ -2,7 +2,7 @@ import supportedLanguages from "@/sitevariables/supportedlanguages";
 const langSwitcher = function (currentPath) {
   // Change the base URL when publishing, otherwise the hreflang tags in layout
   // and the lang Switcher links will have wrong destiantions
-  const baseURL = 'http://localhost:4321';
+  const baseURL = import.meta.env.SITE_URL || "http://localhost:4321";
   // This function implements the language switching function
   // By clicking one of the Links it changes the language and stays on the same site
   // Returns an array of objects containing the current path and lang url-segment
@@ -13,7 +13,9 @@ const langSwitcher = function (currentPath) {
   currentPath.shift();
   currentPath = currentPath.join("/");
   const final = supportedLanguages.map((lang) => {
+
     const url = `${baseURL}/${lang}/${currentPath}`;
+    console.log(url)
     return { lang, url };
   });
 

@@ -92,11 +92,11 @@ const navLinks = {
     },
     {
       text: "Clothing",
-      to: "clothing?category=military-and-survival"
+      to: "clothing"
     },
     {
       text: "Transport Solutions",
-      to: "transportsolutions?category=protective-wall"
+      to: "transportsolutions"
     }
   ],
   fr: [

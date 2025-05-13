@@ -47,11 +47,11 @@ export const navLinks: TranslatedNavigation = {
 
     {
       text: "Clothing",
-      to: "clothing?category=military-and-survival",
+      to: "clothing",
     },
     {
       text: "Transport Solutions",
-      to: "transportsolutions?category=protective-wall",
+      to: "transportsolutions",
     },
   ],
   fr: [

@@ -1,8 +1,8 @@
 import { e as createAstro, f as createComponent, i as renderComponent, r as renderTemplate } from '../../chunks/astro/server_C55uJX-_.mjs';
 import 'kleur/colors';
-import { $ as $$WelcomeLeftAligned } from '../../chunks/WelcomeLeftAligned_BVXiMx6u.mjs';
-import { $ as $$Layout } from '../../chunks/Layout_aDJLy9Xb.mjs';
-import { $ as $$Projects } from '../../chunks/Projects_DYe8P1wo.mjs';
+import { $ as $$WelcomeLeftAligned } from '../../chunks/WelcomeLeftAligned_KXuLOFMH.mjs';
+import { $ as $$Layout } from '../../chunks/Layout_Wl4CagMY.mjs';
+import { $ as $$Projects } from '../../chunks/Projects_Bisna1H5.mjs';
 import { S as Scribble } from '../../chunks/projekte_B500-ns2.mjs';
 export { renderers } from '../../renderers.mjs';
 
