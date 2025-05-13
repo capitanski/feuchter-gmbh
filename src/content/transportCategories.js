@@ -1,12 +1,12 @@
-import schutzwandSchraeg from "@/assets/Produkte/schutzwand_schraeg.jpg"
-import schutzwandFront from "@/assets/Produkte/schutzwand_front.jpg"
-import schutzwandVerschluss from "@/assets/Produkte/schutzwand_verschluss.jpg"
-import schutzwandFarbig from "@/assets/Produkte/Transportwand farbig.jpg"
-import thermohaubeFarbig from "@/assets/Staubhaube Farbig.jpg"
-import staubhaubeFarbig from "@/assets/Thermohaube farbig.jpg"
-import schutzwand from "@/assets/Produkte/schutzwand_schraeg_header.jpg"
-import thermohaube from "@/assets/Produkte/thermohaube_schraeg_header.jpg"
-import staubhaube from "@/assets/Produkte/staubhaube_schraeg_header.jpg"
+import schutzwandSchraeg from "@/assets/Produkte/schutzwand_schraeg.webp"
+import schutzwandFront from "@/assets/Produkte/schutzwand_front.webp"
+import schutzwandVerschluss from "@/assets/Produkte/schutzwand_verschluss.webp"
+import schutzwandFarbig from "@/assets/Produkte/Transportwand farbig.webp"
+import thermohaubeFarbig from "@/assets/Staubhaube Farbig.webp"
+import staubhaubeFarbig from "@/assets/Thermohaube farbig.webp"
+import schutzwand from "@/assets/Produkte/schutzwand_schraeg_header.webp"
+import thermohaube from "@/assets/Produkte/thermohaube_schraeg_header.webp"
+import staubhaube from "@/assets/Produkte/staubhaube_schraeg_header.webp"
 export const transportCategories = [
     {
         slug: "transportsolutions/protectivewalls",

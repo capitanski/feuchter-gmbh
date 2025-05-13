@@ -1,21 +1,21 @@
-import schutzwandSchraeg from "@/assets/Produkte/schutzwand_schraeg.jpg";
-import schutzwandFront from "@/assets/Produkte/schutzwand_front.jpg";
-import schutzwandVerschluss from "@/assets/Produkte/schutzwand_verschluss.jpg";
-import schutzwandFarbig from "@/assets/Produkte/Transportwand farbig.jpg";
-import schutzwandImage from "@/assets/Transportwand quer flach.jpg";
-import corporatefashion from "@/assets/Corporate Fashion.jpg";
-import corporateFashionTop from "@/assets/corporate_fashion_top.png"
-import corporateFashionBottom from "@/assets/corporate_fashion_bottom.png"
-import corporateFashionAccessoires from "@/assets/corporate_fashion_accessoires.png"
-import skirt from "@/assets/corporate_fashion_skirt.png"
-import pants from "@/assets/corporate_fashion_pants.png"
-import vest from "@/assets/corporate_fashion_vest.png"
-import hat from "@/assets/corporate_fashion_hat.png"
-import tie from "@/assets/corporate_fashion_tie.png"
-import polo from "@/assets/corporate_fashion_polo.png"
-import silkSkirt from "@/assets/corporate_fashion_silkskirt.png"
-import sacko from "@/assets/corporate_fashion_sacko.png"
-import bluse from "@/assets/corporate_fashion_bluse.png"
+import schutzwandSchraeg from "@/assets/Produkte/schutzwand_schraeg.webp";
+import schutzwandFront from "@/assets/Produkte/schutzwand_front.webp";
+import schutzwandVerschluss from "@/assets/Produkte/schutzwand_verschluss.webp";
+import schutzwandFarbig from "@/assets/Produkte/Transportwand farbig.webp";
+import schutzwandImage from "@/assets/Transportwand quer flach.webp";
+import corporatefashion from "@/assets/Corporate Fashion.webp";
+import corporateFashionTop from "@/assets/corporate_fashion_top.webp"
+import corporateFashionBottom from "@/assets/corporate_fashion_bottom.webp"
+import corporateFashionAccessoires from "@/assets/corporate_fashion_accessoires.webp"
+import skirt from "@/assets/corporate_fashion_skirt.webp"
+import pants from "@/assets/corporate_fashion_pants.webp"
+import vest from "@/assets/corporate_fashion_vest.webp"
+import hat from "@/assets/corporate_fashion_hat.webp"
+import tie from "@/assets/corporate_fashion_tie.webp"
+import polo from "@/assets/corporate_fashion_polo.webp"
+import silkSkirt from "@/assets/corporate_fashion_silkskirt.webp"
+import sacko from "@/assets/corporate_fashion_sacko.webp"
+import bluse from "@/assets/corporate_fashion_bluse.webp"
 import star from "@/assets/star-regular.svg";
 
 export const corporate = {

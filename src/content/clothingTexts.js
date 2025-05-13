@@ -1,9 +1,9 @@
-import schutzwand from "@/assets/projekte.jpg";
-import thermohaube from "@/assets/officialwear_header.jpg";
-import staubhaube from "@/assets/corporate_fashion.jpg";
-import mobileProjekte from "@/assets/projekte_mobile.jpg";
-import mobileOfficialwear from "@/assets/officialwear_mobile.jpg";
-import mobileCorporatefashion from "@/assets/corporate_fashion_mobile.jpg";
+import schutzwand from "@/assets/projekte.webp";
+import thermohaube from "@/assets/officialwear_header.webp";
+import staubhaube from "@/assets/corporate_fashion.webp";
+import mobileProjekte from "@/assets/projekte_mobile.webp";
+import mobileOfficialwear from "@/assets/officialwear_mobile.webp";
+import mobileCorporatefashion from "@/assets/corporate_fashion_mobile.webp";
 export const clothingTexts = {
   militarysurvival: {
     heading: {

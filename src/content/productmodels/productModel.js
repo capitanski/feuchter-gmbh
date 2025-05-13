@@ -21,8 +21,8 @@ const product = {
     en: "Original TL",
   },
   images: [
-    "https://cdn.prod.website-files.com/66fbdc612b6ec708353a8c01/67ceff6e127b1c203bb4b3c9_Tropentarn%20Feldhose%20Front.jpg",
-    "https://cdn.prod.website-files.com/66fbdc612b6ec708353a8c01/67ceff785843abeb9d4dfe04_Tropentarn%20Feldhose%20Seite.jpg",
+    "https://cdn.prod.website-files.com/66fbdc612b6ec708353a8c01/67ceff6e127b1c203bb4b3c9_Tropentarn%20Feldhose%20Front.webp",
+    "https://cdn.prod.website-files.com/66fbdc612b6ec708353a8c01/67ceff785843abeb9d4dfe04_Tropentarn%20Feldhose%20Seite.webp",
   ],
   lists: [
     {

@@ -1,9 +1,9 @@
-import schutzwand from "@/assets/Transportwand quer.jpg";
-import thermohaube from "@/assets/Thermohaube quer.jpg";
-import staubhaube from "@/assets/Staubhaube quer.jpg";
-import mobileSchutzwand from "@/assets/Transportwand mobile.jpg";
-import mobileThermohaube from "@/assets/Thermohaube mobile.jpg";
-import mobileStaubhaube from "@/assets/Staubhaube mobile.jpg";
+import schutzwand from "@/assets/Transportwand quer.webp";
+import thermohaube from "@/assets/Thermohaube quer.webp";
+import staubhaube from "@/assets/Staubhaube quer.webp";
+import mobileSchutzwand from "@/assets/Transportwand mobile.webp";
+import mobileThermohaube from "@/assets/Thermohaube mobile.webp";
+import mobileStaubhaube from "@/assets/Staubhaube mobile.webp";
 export const transportTexts = {
   protectivewall: {
     heading: {

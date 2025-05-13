@@ -1,10 +1,10 @@
-import schutzwandSchraeg from "@/assets/Produkte/schutzwand_schraeg.jpg";
-import schutzwandFront from "@/assets/Produkte/schutzwand_front.jpg";
-import schutzwandVerschluss from "@/assets/Produkte/schutzwand_verschluss.jpg";
-import schutzwandFarbig from "@/assets/projekte_mobile.jpg";
-import officialwear from "@/assets/officialwear.jpg";
-import military from "@/assets/Military Square.jpg";
-import corporatefashion from "@/assets/Corporate Fashion.jpg";
+import schutzwandSchraeg from "@/assets/Produkte/schutzwand_schraeg.webp";
+import schutzwandFront from "@/assets/Produkte/schutzwand_front.webp";
+import schutzwandVerschluss from "@/assets/Produkte/schutzwand_verschluss.webp";
+import schutzwandFarbig from "@/assets/projekte_mobile.webp";
+import officialwear from "@/assets/officialwear.webp";
+import military from "@/assets/Military Square.webp";
+import corporatefashion from "@/assets/Corporate Fashion.webp";
 export const clothingCategories = [
   {
     slug: "clothing/military-and-survival",

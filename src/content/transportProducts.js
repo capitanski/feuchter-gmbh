@@ -1,7 +1,7 @@
 import { transportCategories } from "./transportCategories";
-import schutzwand from "@/assets/transportloesungen.jpg";
-import thermohaube from "@/assets/thermohaube.jpg";
-import staubhaube from "@/assets/staubhaube.jpg";
+import schutzwand from "@/assets/transportloesungen.webp";
+import thermohaube from "@/assets/thermohaube.webp";
+import staubhaube from "@/assets/staubhaube.webp";
 const products = [
   {
     title: {
@@ -19,7 +19,7 @@ const products = [
     },
     mainImage: schutzwand.src,
     images: [
-      "https://cdn.prod.website-files.com/66fbdc612b6ec708353a8c01/67ceb8e7af42e1fae9e61375_BordhemdMa%C3%9Ftabelle.png",
+      "https://cdn.prod.website-files.com/66fbdc612b6ec708353a8c01/67ceb8e7af42e1fae9e61375_BordhemdMa%C3%9Ftabelle.webp",
     ],
     individual: true,
     category: {
@@ -43,7 +43,7 @@ const products = [
     },
     mainImage: schutzwand.src,
     images: [
-      "https://cdn.prod.website-files.com/66fbdc612b6ec708353a8c01/67ceb8e7af42e1fae9e61375_BordhemdMa%C3%9Ftabelle.png",
+      "https://cdn.prod.website-files.com/66fbdc612b6ec708353a8c01/67ceb8e7af42e1fae9e61375_BordhemdMa%C3%9Ftabelle.webp",
     ],
     individual: true,
     category: {
@@ -67,7 +67,7 @@ const products = [
     },
     mainImage: staubhaube.src,
     images: [
-      "https://cdn.prod.website-files.com/66fbdc612b6ec708353a8c01/67cefe58d5662a6955cbb4a0_Bundeswehr%20Pullover%20Front.jpg",
+      "https://cdn.prod.website-files.com/66fbdc612b6ec708353a8c01/67cefe58d5662a6955cbb4a0_Bundeswehr%20Pullover%20Front.webp",
     ],
     individual: true,
     category: {
@@ -91,7 +91,7 @@ const products = [
     },
     mainImage: thermohaube.src,
     images: [
-      "https://cdn.prod.website-files.com/66fbdc612b6ec708353a8c01/67cec5dd6d9817dfa24f1aa7_EinsatzblousonMa%C3%9Ftabelle.png",
+      "https://cdn.prod.website-files.com/66fbdc612b6ec708353a8c01/67cec5dd6d9817dfa24f1aa7_EinsatzblousonMa%C3%9Ftabelle.webp",
     ],
     individual: true,
     category: {
