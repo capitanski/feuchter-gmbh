@@ -1,11 +1,11 @@
 import { e as createAstro, f as createComponent, m as maybeRenderHead, i as renderComponent, h as addAttribute, r as renderTemplate, j as renderScript } from './astro/server_C55uJX-_.mjs';
 import 'kleur/colors';
-import { $ as $$Button } from './Button_B7dfefty.mjs';
-import { b as buttonTranslations } from './Layout_DAu_V4L8.mjs';
+import { $ as $$Button } from './Button_BukcMihT.mjs';
+import { b as buttonTranslations } from './Layout_aDJLy9Xb.mjs';
 /* empty css                              */
 import 'clsx';
 
-const $$Astro$5 = createAstro("http://192.168.178.48:4321/");
+const $$Astro$5 = createAstro("http://localhost:4321");
 const $$Function = createComponent(($$result, $$props, $$slots) => {
   const Astro2 = $$result.createAstro($$Astro$5, $$props, $$slots);
   Astro2.self = $$Function;
@@ -15,7 +15,7 @@ const $$Function = createComponent(($$result, $$props, $$slots) => {
   })} </div> </div> `;
 }, "C:/Users/sabri/OneDrive/Desktop/feuchter-gmbh-astro/feuchter-gmbh/src/components/Function.astro", void 0);
 
-const $$Astro$4 = createAstro("http://192.168.178.48:4321/");
+const $$Astro$4 = createAstro("http://localhost:4321");
 const $$TransportUsps = createComponent(($$result, $$props, $$slots) => {
   const Astro2 = $$result.createAstro($$Astro$4, $$props, $$slots);
   Astro2.self = $$TransportUsps;
@@ -25,7 +25,7 @@ const $$TransportUsps = createComponent(($$result, $$props, $$slots) => {
   })} </div> </div> `;
 }, "C:/Users/sabri/OneDrive/Desktop/feuchter-gmbh-astro/feuchter-gmbh/src/components/TransportUsps.astro", void 0);
 
-const $$Astro$3 = createAstro("http://192.168.178.48:4321/");
+const $$Astro$3 = createAstro("http://localhost:4321");
 const $$TransportVariants = createComponent(($$result, $$props, $$slots) => {
   const Astro2 = $$result.createAstro($$Astro$3, $$props, $$slots);
   Astro2.self = $$TransportVariants;
@@ -35,7 +35,7 @@ const $$TransportVariants = createComponent(($$result, $$props, $$slots) => {
   })} </div> </div> </div> ${renderScript($$result, "C:/Users/sabri/OneDrive/Desktop/feuchter-gmbh-astro/feuchter-gmbh/src/components/TransportVariants.astro?astro&type=script&index=0&lang.ts")} `;
 }, "C:/Users/sabri/OneDrive/Desktop/feuchter-gmbh-astro/feuchter-gmbh/src/components/TransportVariants.astro", void 0);
 
-const $$Astro$2 = createAstro("http://192.168.178.48:4321/");
+const $$Astro$2 = createAstro("http://localhost:4321");
 const $$VariantSlider = createComponent(($$result, $$props, $$slots) => {
   const Astro2 = $$result.createAstro($$Astro$2, $$props, $$slots);
   Astro2.self = $$VariantSlider;
@@ -49,7 +49,7 @@ var __freeze = Object.freeze;
 var __defProp = Object.defineProperty;
 var __template = (cooked, raw) => __freeze(__defProp(cooked, "raw", { value: __freeze(cooked.slice()) }));
 var _a;
-const $$Astro$1 = createAstro("http://192.168.178.48:4321/");
+const $$Astro$1 = createAstro("http://localhost:4321");
 const $$SavingsCounter = createComponent(($$result, $$props, $$slots) => {
   const Astro2 = $$result.createAstro($$Astro$1, $$props, $$slots);
   Astro2.self = $$SavingsCounter;
@@ -65,7 +65,7 @@ const $$SavingsCounter = createComponent(($$result, $$props, $$slots) => {
   }));
 }, "C:/Users/sabri/OneDrive/Desktop/feuchter-gmbh-astro/feuchter-gmbh/src/components/SavingsCounter.astro", void 0);
 
-const $$Astro = createAstro("http://192.168.178.48:4321/");
+const $$Astro = createAstro("http://localhost:4321");
 const $$ProductGridTransport = createComponent(($$result, $$props, $$slots) => {
   const Astro2 = $$result.createAstro($$Astro, $$props, $$slots);
   Astro2.self = $$ProductGridTransport;

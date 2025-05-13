@@ -1,8 +1,8 @@
 import { e as createAstro, f as createComponent, i as renderComponent, r as renderTemplate } from '../../../chunks/astro/server_C55uJX-_.mjs';
 import 'kleur/colors';
-import { $ as $$Layout } from '../../../chunks/Layout_DAu_V4L8.mjs';
-import { s as star, $ as $$ProductGridTransport } from '../../../chunks/official_headwear_D5I1Rrm7.mjs';
-import { $ as $$ContactForm } from '../../../chunks/ContactForm_CdG3CnAm.mjs';
+import { $ as $$Layout } from '../../../chunks/Layout_aDJLy9Xb.mjs';
+import { s as star, $ as $$ProductGridTransport } from '../../../chunks/official_headwear_ntOxvucG.mjs';
+import { $ as $$ContactForm } from '../../../chunks/ContactForm_qJEMCmpH.mjs';
 import '../../../chunks/schutzwand_verschluss_BqHNROck.mjs';
 import '../../../chunks/Transportwand farbig_QNd6lEeh.mjs';
 import { T as Transportloesungen, a as Thermohaube, S as Staubhaube } from '../../../chunks/staubhaube_schraeg_header_DLhywCYd.mjs';
@@ -1272,7 +1272,7 @@ const staubhaube = {
     }
 };
 
-const $$Astro = createAstro("http://192.168.178.48:4321/");
+const $$Astro = createAstro("http://localhost:4321");
 const $$solution = createComponent(($$result, $$props, $$slots) => {
   const Astro2 = $$result.createAstro($$Astro, $$props, $$slots);
   Astro2.self = $$solution;

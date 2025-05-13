@@ -3,7 +3,7 @@ import 'kleur/colors';
 import 'clsx';
 /* empty css                              */
 
-const $$Astro = createAstro("http://192.168.178.48:4321/");
+const $$Astro = createAstro("http://localhost:4321");
 const $$Button = createComponent(($$result, $$props, $$slots) => {
   const Astro2 = $$result.createAstro($$Astro, $$props, $$slots);
   Astro2.self = $$Button;

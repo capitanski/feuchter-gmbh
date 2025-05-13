@@ -1,7 +1,7 @@
 import { e as createAstro, f as createComponent, m as maybeRenderHead, h as addAttribute, r as renderTemplate } from './astro/server_C55uJX-_.mjs';
 import 'kleur/colors';
 import 'clsx';
-import { t as translations } from './Layout_DAu_V4L8.mjs';
+import { t as translations } from './Layout_aDJLy9Xb.mjs';
 /* empty css                         */
 
 const Hochzeiten = new Proxy({"src":"/custom-folder/konzeption.B8QB-5B4.webp","width":600,"height":338,"format":"webp"}, {
@@ -43,7 +43,7 @@ const Birthday = new Proxy({"src":"/custom-folder/logistik.C-9nhZRh.webp","width
 						}
 					});
 
-const $$Astro = createAstro("http://192.168.178.48:4321/");
+const $$Astro = createAstro("http://localhost:4321");
 const $$Leistungen = createComponent(($$result, $$props, $$slots) => {
   const Astro2 = $$result.createAstro($$Astro, $$props, $$slots);
   Astro2.self = $$Leistungen;

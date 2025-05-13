@@ -16,7 +16,7 @@ const Circles = new Proxy({"src":"/custom-folder/Swirl.BUIxi6cc.webp","width":10
 						}
 					});
 
-const $$Astro = createAstro("http://192.168.178.48:4321/");
+const $$Astro = createAstro("http://localhost:4321");
 const $$ProjectTag = createComponent(($$result, $$props, $$slots) => {
   const Astro2 = $$result.createAstro($$Astro, $$props, $$slots);
   Astro2.self = $$ProjectTag;

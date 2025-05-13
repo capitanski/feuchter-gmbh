@@ -29,7 +29,7 @@ const Menu = new Proxy({"src":"/custom-folder/Menu.BmJbz0by.svg","width":49,"hei
 						}
 					});
 
-const $$Astro$4 = createAstro("http://192.168.178.48:4321/");
+const $$Astro$4 = createAstro("http://localhost:4321");
 const $$LangSwitcher = createComponent(($$result, $$props, $$slots) => {
   const Astro2 = $$result.createAstro($$Astro$4, $$props, $$slots);
   Astro2.self = $$LangSwitcher;
@@ -179,7 +179,7 @@ const navLinks = {
   ]
 };
 
-const $$Astro$3 = createAstro("http://192.168.178.48:4321/");
+const $$Astro$3 = createAstro("http://localhost:4321");
 const $$Navbar = createComponent(($$result, $$props, $$slots) => {
   const Astro2 = $$result.createAstro($$Astro$3, $$props, $$slots);
   Astro2.self = $$Navbar;
@@ -453,7 +453,7 @@ function buttonTranslations(text, lang) {
   return returnValue;
 }
 
-const $$Astro$2 = createAstro("http://192.168.178.48:4321/");
+const $$Astro$2 = createAstro("http://localhost:4321");
 const $$Footer = createComponent(($$result, $$props, $$slots) => {
   const Astro2 = $$result.createAstro($$Astro$2, $$props, $$slots);
   Astro2.self = $$Footer;
@@ -468,7 +468,7 @@ var __freeze$1 = Object.freeze;
 var __defProp$1 = Object.defineProperty;
 var __template$1 = (cooked, raw) => __freeze$1(__defProp$1(cooked, "raw", { value: __freeze$1(cooked.slice()) }));
 var _a$1;
-const $$Astro$1 = createAstro("http://192.168.178.48:4321/");
+const $$Astro$1 = createAstro("http://localhost:4321");
 const $$TarteaucitronLoader = createComponent(($$result, $$props, $$slots) => {
   const Astro2 = $$result.createAstro($$Astro$1, $$props, $$slots);
   Astro2.self = $$TarteaucitronLoader;
@@ -480,7 +480,7 @@ var __freeze = Object.freeze;
 var __defProp = Object.defineProperty;
 var __template = (cooked, raw) => __freeze(__defProp(cooked, "raw", { value: __freeze(cooked.slice()) }));
 var _a;
-const $$Astro = createAstro("http://192.168.178.48:4321/");
+const $$Astro = createAstro("http://localhost:4321");
 const $$Layout = createComponent(($$result, $$props, $$slots) => {
   const Astro2 = $$result.createAstro($$Astro, $$props, $$slots);
   Astro2.self = $$Layout;

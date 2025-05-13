@@ -1,12 +1,12 @@
 import { e as createAstro, f as createComponent, i as renderComponent, r as renderTemplate } from '../../chunks/astro/server_C55uJX-_.mjs';
 import 'kleur/colors';
-import { $ as $$WelcomeLeftAligned } from '../../chunks/WelcomeLeftAligned_CWLygjtb.mjs';
-import { $ as $$Layout } from '../../chunks/Layout_DAu_V4L8.mjs';
-import { $ as $$Projects } from '../../chunks/Projects_Dlixhv2W.mjs';
+import { $ as $$WelcomeLeftAligned } from '../../chunks/WelcomeLeftAligned_BVXiMx6u.mjs';
+import { $ as $$Layout } from '../../chunks/Layout_aDJLy9Xb.mjs';
+import { $ as $$Projects } from '../../chunks/Projects_DYe8P1wo.mjs';
 import { S as Scribble } from '../../chunks/projekte_B500-ns2.mjs';
 export { renderers } from '../../renderers.mjs';
 
-const $$Astro = createAstro("http://192.168.178.48:4321/");
+const $$Astro = createAstro("http://localhost:4321");
 const $$Index = createComponent(($$result, $$props, $$slots) => {
   const Astro2 = $$result.createAstro($$Astro, $$props, $$slots);
   Astro2.self = $$Index;

@@ -1,11 +1,11 @@
 import { e as createAstro, f as createComponent, m as maybeRenderHead, h as addAttribute, i as renderComponent, r as renderTemplate } from './astro/server_C55uJX-_.mjs';
 import 'kleur/colors';
-import { p as projects, C as Circles, $ as $$ProjectTag } from './projects_BMjgsRwq.mjs';
+import { p as projects, C as Circles, $ as $$ProjectTag } from './projects_BCwoxzkS.mjs';
 import { A as Arrow } from './Arrow_sand_5oaPgMNc.mjs';
-import { b as buttonTranslations, t as translations } from './Layout_DAu_V4L8.mjs';
+import { b as buttonTranslations, t as translations } from './Layout_aDJLy9Xb.mjs';
 /* empty css                         */
 
-const $$Astro = createAstro("http://192.168.178.48:4321/");
+const $$Astro = createAstro("http://localhost:4321");
 const $$Projects = createComponent(($$result, $$props, $$slots) => {
   const Astro2 = $$result.createAstro($$Astro, $$props, $$slots);
   Astro2.self = $$Projects;

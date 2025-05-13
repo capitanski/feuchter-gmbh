@@ -1,17 +1,17 @@
 import { e as createAstro, f as createComponent, m as maybeRenderHead, h as addAttribute, u as unescapeHTML, i as renderComponent, r as renderTemplate } from '../chunks/astro/server_C55uJX-_.mjs';
 import 'kleur/colors';
-import { $ as $$Button } from '../chunks/Button_B7dfefty.mjs';
+import { $ as $$Button } from '../chunks/Button_BukcMihT.mjs';
 import { C as Circles$1 } from '../chunks/Circles_Bt8dJA-c.mjs';
-import { b as buttonTranslations, $ as $$Layout } from '../chunks/Layout_DAu_V4L8.mjs';
+import { b as buttonTranslations, $ as $$Layout } from '../chunks/Layout_aDJLy9Xb.mjs';
 /* empty css                                 */
-import { $ as $$Leistungen } from '../chunks/Leistungen_COsfC27Y.mjs';
+import { $ as $$Leistungen } from '../chunks/Leistungen_B19ZXzdv.mjs';
 import 'clsx';
-import { $ as $$Projects } from '../chunks/Projects_Dlixhv2W.mjs';
+import { $ as $$Projects } from '../chunks/Projects_DYe8P1wo.mjs';
 import { T as Transportloesungen, a as Thermohaube, S as Staubhaube } from '../chunks/staubhaube_schraeg_header_DLhywCYd.mjs';
 import { B as Bekleidung, a as Behoerdenkleidung, C as Corporate } from '../chunks/Corporate Fashion_DqPmN4jq.mjs';
-import { C as Circles$2 } from '../chunks/projects_BMjgsRwq.mjs';
+import { C as Circles$2 } from '../chunks/projects_BCwoxzkS.mjs';
 import { A as Arrow } from '../chunks/Arrow_sand_5oaPgMNc.mjs';
-import { $ as $$ContactForm } from '../chunks/ContactForm_CdG3CnAm.mjs';
+import { $ as $$ContactForm } from '../chunks/ContactForm_qJEMCmpH.mjs';
 export { renderers } from '../renderers.mjs';
 
 const Scribble = new Proxy({"src":"/custom-folder/feuchter_gmbh_header.DZi6SfZT.webp","width":1400,"height":933,"format":"webp"}, {
@@ -27,7 +27,7 @@ const Scribble = new Proxy({"src":"/custom-folder/feuchter_gmbh_header.DZi6SfZT.
 						}
 					});
 
-const $$Astro$4 = createAstro("http://192.168.178.48:4321/");
+const $$Astro$4 = createAstro("http://localhost:4321");
 const $$Welcome = createComponent(($$result, $$props, $$slots) => {
   const Astro2 = $$result.createAstro($$Astro$4, $$props, $$slots);
   Astro2.self = $$Welcome;
@@ -69,7 +69,7 @@ const Quotes = new Proxy({"src":"/custom-folder/Quotes.CNCkwFDX.svg","width":149
 						}
 					});
 
-const $$Astro$3 = createAstro("http://192.168.178.48:4321/");
+const $$Astro$3 = createAstro("http://localhost:4321");
 const $$Cite = createComponent(($$result, $$props, $$slots) => {
   const Astro2 = $$result.createAstro($$Astro$3, $$props, $$slots);
   Astro2.self = $$Cite;
@@ -172,7 +172,7 @@ const Qualitaetsmanagement = new Proxy({"src":"/custom-folder/qualitaetsmanageme
 						}
 					});
 
-const $$Astro$2 = createAstro("http://192.168.178.48:4321/");
+const $$Astro$2 = createAstro("http://localhost:4321");
 const $$Usps = createComponent(($$result, $$props, $$slots) => {
   const Astro2 = $$result.createAstro($$Astro$2, $$props, $$slots);
   Astro2.self = $$Usps;
@@ -254,7 +254,7 @@ const $$Usps = createComponent(($$result, $$props, $$slots) => {
   })} </div> </div> </section> `;
 }, "C:/Users/sabri/OneDrive/Desktop/feuchter-gmbh-astro/feuchter-gmbh/src/components/Usps.astro", void 0);
 
-const $$Astro$1 = createAstro("http://192.168.178.48:4321/");
+const $$Astro$1 = createAstro("http://localhost:4321");
 const $$Categories = createComponent(($$result, $$props, $$slots) => {
   const Astro2 = $$result.createAstro($$Astro$1, $$props, $$slots);
   Astro2.self = $$Categories;
@@ -342,7 +342,7 @@ const $$Categories = createComponent(($$result, $$props, $$slots) => {
   })} </div> </div> </section> `;
 }, "C:/Users/sabri/OneDrive/Desktop/feuchter-gmbh-astro/feuchter-gmbh/src/components/Categories.astro", void 0);
 
-const $$Astro = createAstro("http://192.168.178.48:4321/");
+const $$Astro = createAstro("http://localhost:4321");
 const $$Index = createComponent(($$result, $$props, $$slots) => {
   const Astro2 = $$result.createAstro($$Astro, $$props, $$slots);
   Astro2.self = $$Index;

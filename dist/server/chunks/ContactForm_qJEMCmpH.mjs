@@ -1,14 +1,14 @@
 import { e as createAstro, f as createComponent, r as renderTemplate, h as addAttribute, m as maybeRenderHead } from './astro/server_C55uJX-_.mjs';
 import 'kleur/colors';
 import 'clsx';
-import { b as buttonTranslations } from './Layout_DAu_V4L8.mjs';
+import { b as buttonTranslations } from './Layout_aDJLy9Xb.mjs';
 /* empty css                           */
 
 var __freeze = Object.freeze;
 var __defProp = Object.defineProperty;
 var __template = (cooked, raw) => __freeze(__defProp(cooked, "raw", { value: __freeze(cooked.slice()) }));
 var _a;
-const $$Astro = createAstro("http://192.168.178.48:4321/");
+const $$Astro = createAstro("http://localhost:4321");
 const $$ContactForm = createComponent(async ($$result, $$props, $$slots) => {
   const Astro2 = $$result.createAstro($$Astro, $$props, $$slots);
   Astro2.self = $$ContactForm;

@@ -1,12 +1,12 @@
 import { e as createAstro, f as createComponent, m as maybeRenderHead, h as addAttribute, i as renderComponent, r as renderTemplate } from '../../../chunks/astro/server_C55uJX-_.mjs';
 import 'kleur/colors';
-import { $ as $$Button } from '../../../chunks/Button_B7dfefty.mjs';
-import { C as Circles, $ as $$ProjectTag, p as projects } from '../../../chunks/projects_BMjgsRwq.mjs';
-import { t as translations, b as buttonTranslations, $ as $$Layout } from '../../../chunks/Layout_DAu_V4L8.mjs';
+import { $ as $$Button } from '../../../chunks/Button_BukcMihT.mjs';
+import { C as Circles, $ as $$ProjectTag, p as projects } from '../../../chunks/projects_BCwoxzkS.mjs';
+import { t as translations, b as buttonTranslations, $ as $$Layout } from '../../../chunks/Layout_aDJLy9Xb.mjs';
 /* empty css                                           */
 export { renderers } from '../../../renderers.mjs';
 
-const $$Astro$1 = createAstro("http://192.168.178.48:4321/");
+const $$Astro$1 = createAstro("http://localhost:4321");
 const $$ProjectAboveTheFold = createComponent(($$result, $$props, $$slots) => {
   const Astro2 = $$result.createAstro($$Astro$1, $$props, $$slots);
   Astro2.self = $$ProjectAboveTheFold;
@@ -24,7 +24,7 @@ const $$ProjectAboveTheFold = createComponent(($$result, $$props, $$slots) => {
   })} ${translations("menge", language)}`, "colorScheme": "bright", "data-astro-cid-dfrtyu5v": true })} ${renderComponent($$result, "ProjectTag", $$ProjectTag, { "tagContent": currentProject.customer[language], "colorScheme": "bright", "data-astro-cid-dfrtyu5v": true })} ${renderComponent($$result, "ProjectTag", $$ProjectTag, { "tagContent": currentProject.tl, "colorScheme": "bright", "data-astro-cid-dfrtyu5v": true })} ${renderComponent($$result, "ProjectTag", $$ProjectTag, { "tagContent": currentProject.date, "colorScheme": "bright", "data-astro-cid-dfrtyu5v": true })} ${renderComponent($$result, "ProjectTag", $$ProjectTag, { "tagContent": currentProject.status[language], "colorScheme": "bright", "data-astro-cid-dfrtyu5v": true })} </div> <p class="hero-paragraph" data-astro-cid-dfrtyu5v> ${currentProject.shortDescription[language]} </p> <div class="button-wrapper hero-button-wrapper" data-astro-cid-dfrtyu5v> ${renderComponent($$result, "Button", $$Button, { "linkText": buttonTranslations("contact", language), "target": `/${language}/contact`, "class": "hero-button-1", "variant": "primary", "data-astro-cid-dfrtyu5v": true })} ${renderComponent($$result, "Button", $$Button, { "linkText": buttonTranslations("projects", language), "target": `/${language}/projects`, "class": "hero-button-2", "data-astro-cid-dfrtyu5v": true })} </div> </div> </div> </section> `;
 }, "C:/Users/sabri/OneDrive/Desktop/feuchter-gmbh-astro/feuchter-gmbh/src/components/ProjectAboveTheFold.astro", void 0);
 
-const $$Astro = createAstro("http://192.168.178.48:4321/");
+const $$Astro = createAstro("http://localhost:4321");
 const $$project = createComponent(($$result, $$props, $$slots) => {
   const Astro2 = $$result.createAstro($$Astro, $$props, $$slots);
   Astro2.self = $$project;

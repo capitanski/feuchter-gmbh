@@ -3,14 +3,14 @@ import 'kleur/colors';
 import 'clsx';
 import { C as Circles } from '../../chunks/Circles_Bt8dJA-c.mjs';
 /* empty css                                    */
-import { $ as $$Layout } from '../../chunks/Layout_DAu_V4L8.mjs';
+import { $ as $$Layout } from '../../chunks/Layout_aDJLy9Xb.mjs';
 export { renderers } from '../../renderers.mjs';
 
 var __freeze = Object.freeze;
 var __defProp = Object.defineProperty;
 var __template = (cooked, raw) => __freeze(__defProp(cooked, "raw", { value: __freeze(cooked.slice()) }));
 var _a;
-const $$Astro$1 = createAstro("http://192.168.178.48:4321/");
+const $$Astro$1 = createAstro("http://localhost:4321");
 const $$Login$1 = createComponent(async ($$result, $$props, $$slots) => {
   const Astro2 = $$result.createAstro($$Astro$1, $$props, $$slots);
   Astro2.self = $$Login$1;
@@ -18,7 +18,7 @@ const $$Login$1 = createComponent(async ($$result, $$props, $$slots) => {
   return renderTemplate(_a || (_a = __template(["", '<section class="section" data-astro-cid-b2fdlob7> <form id="login-form" method="POST" action="/api/login" data-astro-cid-b2fdlob7> <div class="form-inner" data-astro-cid-b2fdlob7> <img', ' alt="" data-astro-cid-b2fdlob7> ', ' <h1 data-astro-cid-b2fdlob7>Login</h1> <input type="password" name="password" id="password" placeholder="Passwort" data-astro-cid-b2fdlob7> <input type="submit" value="Anmelden" data-astro-cid-b2fdlob7> </div> </form> </section> <script>\n  const form = document.getElementById("login-form");\n\n  form.addEventListener("submit", async (e) => {\n    e.preventDefault();\n\n    const formData = new FormData(form);\n    const res = await fetch("/api/login", {\n      method: "POST",\n      body: formData,\n      credentials: "include", // wichtig wegen Cookies\n    });\n\n    if (res.status === 200) {\n      window.location.href = "/";\n    } else {\n      alert("Falsches Passwort, bitte erneut versuchen.");\n    }\n  });\n<\/script> '])), maybeRenderHead(), addAttribute(Circles.src, "src"), error ? renderTemplate`<div class="error" data-astro-cid-b2fdlob7> <small data-astro-cid-b2fdlob7>Falsches Passwort</small> </div>` : null);
 }, "C:/Users/sabri/OneDrive/Desktop/feuchter-gmbh-astro/feuchter-gmbh/src/components/Login.astro", void 0);
 
-const $$Astro = createAstro("http://192.168.178.48:4321/");
+const $$Astro = createAstro("http://localhost:4321");
 const $$Login = createComponent(($$result, $$props, $$slots) => {
   const Astro2 = $$result.createAstro($$Astro, $$props, $$slots);
   Astro2.self = $$Login;

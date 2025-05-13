@@ -1,8 +1,8 @@
 import { e as createAstro, f as createComponent, i as renderComponent, r as renderTemplate } from '../../chunks/astro/server_C55uJX-_.mjs';
 import 'kleur/colors';
-import { $ as $$WelcomeLeftAligned } from '../../chunks/WelcomeLeftAligned_CWLygjtb.mjs';
-import { $ as $$Layout } from '../../chunks/Layout_DAu_V4L8.mjs';
-import { $ as $$Leistungen } from '../../chunks/Leistungen_COsfC27Y.mjs';
+import { $ as $$WelcomeLeftAligned } from '../../chunks/WelcomeLeftAligned_BVXiMx6u.mjs';
+import { $ as $$Layout } from '../../chunks/Layout_aDJLy9Xb.mjs';
+import { $ as $$Leistungen } from '../../chunks/Leistungen_B19ZXzdv.mjs';
 export { renderers } from '../../renderers.mjs';
 
 const Scribble = new Proxy({"src":"/custom-folder/leistungen.CJPjG1cR.webp","width":1920,"height":1281,"format":"webp"}, {
@@ -18,7 +18,7 @@ const Scribble = new Proxy({"src":"/custom-folder/leistungen.CJPjG1cR.webp","wid
 						}
 					});
 
-const $$Astro = createAstro("http://192.168.178.48:4321/");
+const $$Astro = createAstro("http://localhost:4321");
 const $$Services = createComponent(($$result, $$props, $$slots) => {
   const Astro2 = $$result.createAstro($$Astro, $$props, $$slots);
   Astro2.self = $$Services;

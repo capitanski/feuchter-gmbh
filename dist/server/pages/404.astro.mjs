@@ -1,10 +1,10 @@
 import { e as createAstro, f as createComponent, i as renderComponent, r as renderTemplate, m as maybeRenderHead } from '../chunks/astro/server_C55uJX-_.mjs';
 import 'kleur/colors';
-import { $ as $$Layout } from '../chunks/Layout_DAu_V4L8.mjs';
+import { $ as $$Layout } from '../chunks/Layout_aDJLy9Xb.mjs';
 /* empty css                               */
 export { renderers } from '../renderers.mjs';
 
-const $$Astro = createAstro("http://192.168.178.48:4321/");
+const $$Astro = createAstro("http://localhost:4321");
 const $$404 = createComponent(($$result, $$props, $$slots) => {
   const Astro2 = $$result.createAstro($$Astro, $$props, $$slots);
   Astro2.self = $$404;

@@ -1,11 +1,11 @@
 import { e as createAstro, f as createComponent, m as maybeRenderHead, h as addAttribute, i as renderComponent, r as renderTemplate } from './astro/server_C55uJX-_.mjs';
 import 'kleur/colors';
-import { $ as $$Button } from './Button_B7dfefty.mjs';
+import { $ as $$Button } from './Button_BukcMihT.mjs';
 import { C as Circles } from './Circles_Bt8dJA-c.mjs';
-import { b as buttonTranslations } from './Layout_DAu_V4L8.mjs';
+import { b as buttonTranslations } from './Layout_aDJLy9Xb.mjs';
 /* empty css                         */
 
-const $$Astro = createAstro("http://192.168.178.48:4321/");
+const $$Astro = createAstro("http://localhost:4321");
 const $$WelcomeLeftAligned = createComponent(($$result, $$props, $$slots) => {
   const Astro2 = $$result.createAstro($$Astro, $$props, $$slots);
   Astro2.self = $$WelcomeLeftAligned;

@@ -2,10 +2,10 @@ import { e as createAstro, f as createComponent, m as maybeRenderHead, h as addA
 import 'kleur/colors';
 import 'clsx';
 import { A as Arrow } from './Arrow_sand_5oaPgMNc.mjs';
-import { b as buttonTranslations } from './Layout_DAu_V4L8.mjs';
+import { b as buttonTranslations } from './Layout_aDJLy9Xb.mjs';
 /* empty css                         */
 
-const $$Astro = createAstro("http://192.168.178.48:4321/");
+const $$Astro = createAstro("http://localhost:4321");
 const $$CategoryHeader = createComponent(($$result, $$props, $$slots) => {
   const Astro2 = $$result.createAstro($$Astro, $$props, $$slots);
   Astro2.self = $$CategoryHeader;
