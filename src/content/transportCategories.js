@@ -4,9 +4,9 @@ import schutzwandVerschluss from "@/assets/Produkte/schutzwand_verschluss.webp"
 import schutzwandFarbig from "@/assets/Produkte/Transportwand farbig.webp"
 import thermohaubeFarbig from "@/assets/Staubhaube Farbig.webp"
 import staubhaubeFarbig from "@/assets/Thermohaube farbig.webp"
-import schutzwand from "@/assets/Produkte/schutzwand_schraeg_header.webp"
-import thermohaube from "@/assets/Produkte/thermohaube_schraeg_header.webp"
-import staubhaube from "@/assets/Produkte/staubhaube_schraeg_header.webp"
+import schutzwand from "@/assets/Produkte/schutzwand_grid.webp"
+import thermohaube from "@/assets/Produkte/thermohaube_grid.webp"
+import staubhaube from "@/assets/Produkte/staubhaube_grid.webp"
 export const transportCategories = [
     {
         slug: "transportsolutions/protectivewalls",

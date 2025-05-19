@@ -1,7 +1,7 @@
 import sharp from 'sharp';
 
-const inputPath = './src/assets/Produkte/Transportwand navy.jpg';
-const outputPath = './problem.webp';
+const inputPath = './src/assets/Produkte/haube_dokumententasche.png';
+const outputPath = './src/assets/Produkte/haube_dokumententasche.webp';
 
 try {
     console.log('➡️ Starte Konvertierung...');
