@@ -3,7 +3,7 @@ import fs from 'fs/promises';
 import path from 'path';
 import pLimit from 'p-limit';
 
-const inputDir = './src/assets';
+const inputDir = './src/assets/Projekte';
 const outputDir = './src/assets/team';
 let filePaths;
 const limit = pLimit(1); // Nur eine Datei zur Zeit

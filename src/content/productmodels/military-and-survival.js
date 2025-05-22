@@ -74,7 +74,7 @@ export const military = {
       {
         title: {
           de: "Oberbekleidung",
-          en: "Apply hooks",
+          en: "Upperwear",
         },
         img: oberBekleidung.src,
         text: {
@@ -85,7 +85,7 @@ export const military = {
       {
         title: {
           de: "Beinbekleidung",
-          en: "Apply hooks",
+          en: "Legwear",
         },
         img: beinBekleidung.src,
         text: {
@@ -96,7 +96,7 @@ export const military = {
       {
         title: {
           de: "Accessoires & Kopfbedeckungen",
-          en: "Apply hooks",
+          en: "Accessories & Headwear",
         },
         img: kopfBedeckungen.src,
         text: {

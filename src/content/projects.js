@@ -1,15 +1,21 @@
-import PolizeihemdSeite from "@/assets/Projekte/Bayernhemd arm.webp";
-import PolizeihemdFront from "@/assets/Projekte/Bayernhemd vorne.webp";
-import bmiHoseRechts from "@/assets/Projekte/BMI Hose rechts.webp"
-import bmiJackeFront from "@/assets/Projekte/BMI Jacke front.webp"
-import berlinHoseLinks from "@/assets/Projekte/Hose Berlin Links.webp"
-import berlinJackeSeite from "@/assets/Projekte/Jacke Berlin Seite.webp"
+import PolizeihemdSeite from "@/assets/Projekte/polizeihemd_bayern_seite.webp";
+import PolizeihemdFront from "@/assets/Projekte/polizeihemd_bayern_front.webp";
+import bmiHoseRechts from "@/assets/Projekte/bmi_hose_front.webp"
+import bmiJackeFront from "@/assets/Projekte/bmi_jacke_front.webp"
+import berlinHoseLinks from "@/assets/Projekte/berlin_hose_front.webp"
+import berlinJackeSeite from "@/assets/Projekte/berlin_jacke_front.webp"
 import unterhemdSeite from "@/assets/Projekte/Unterhemd BWBM Seite.webp";
 import unterhemdFront from "@/assets/Projekte/Unterhemd BWBM vorne.webp"
 import monteurkombiFront from "@/assets/Projekte/Monteurkombi Front.webp"
 import monteurkombiSeite from "@/assets/Projekte/Monteurkombi Seite.webp"
 import ksJacke from "@/assets/Projekte/Kaelteschutzjacke Seite.webp"
 import ksHose from "@/assets/Projekte/Kaelteschutzhose Seite.webp"
+import rucksackUeberzug from "@/assets/Projekte/rucksackueberzug_tropentarn.webp"
+import rucksackUeberzugSeite from "@/assets/Projekte/rucksackueberzug_tropentarn_seite.webp"
+import feuerwehrPolo from "@/assets/Projekte/feuerwehr_polo_front.webp"
+import feuerwehrSweatshirt from "@/assets/Projekte/feuerwehr_sweatshirt_front.webp"
+import trageRiemen_1 from "@/assets/Projekte/trageriemen_1.webp"
+import trageRiemen_2 from "@/assets/Projekte/trageriemen_2.webp"
 import fs from "fs";
 const projects = [
   {
@@ -68,15 +74,15 @@ const projects = [
     },
     date: "2024",
   },
-  /*{
+  {
     title: {
       de: "Einsatzanzug Polizei Berlin",
       en: "Police Berlin Operational Suit",
     },
     slug: "einsatzanzug-polizei-berlin",
     shortDescription: {
-      de: "Es handelt sich um einen Einsatzanzug, bestehend aus Blouson und Hose, gefertigt aus dunkelblauem Aramidgewebe, permanent schwer entflammbar und antistatisch.\nDie Einsatzbekleidung nach TL 8405-075 bietet optimalen Schutz, hohe Funktionalität und maximale Bewegungsfreiheit für Polizeikräfte in Berlin. Sie ist robust, wetterfest und auf die spezifischen Anforderungen des Polizeidienstes zugeschnitten.\nDer Blouson ist mit Stehkragen, verdecktem Frontreißverschluss, 2 Brust- und 2 Seitentaschen, 5 Durchgriffen zur Arretierung des Körperschutzes, einer Lasche zur Befestigung der Funkantenne, Ärmelnaht – Reißverschlüssen, Ärmelabschluss mit Gummizug sowie Kordelzug im Saumbereich verarbeitet.",
-      en: "This is an operational suit consisting of a blouson and trousers, made from dark blue aramid fabric, permanently flame-retardant and antistatic. The clothing according to TL 8405-075 offers optimal protection, high functionality, and maximum mobility for police forces in Berlin. It is durable, weather-resistant, and tailored to police service needs. The blouson features a stand-up collar, hidden front zipper, 2 chest and 2 side pockets, access points for body armor, antenna loop, and adjustable waistband.",
+      de: "Es handelt sich um einen Einsatzanzug, bestehend aus Blouson und Hose, gefertigt aus dunkelblauem Aramidgewebe, permanent schwer entflammbar und antistatisch.",
+      en: "This is an operational suit consisting of a blouson and trousers, made from dark blue aramid fabric, permanently flame-retardant and antistatic.",
     },
     mainImage: "https://example.com/berlin.webp",
     customer: {
@@ -95,7 +101,7 @@ const projects = [
       en: "Finished",
     },
     date: "2024",
-  },*/
+  },
   {
     title: {
       de: "Monteurkombi Sommer/Variabel",
@@ -179,6 +185,90 @@ const projects = [
       en: "Running",
     },
     date: "2024",
+  },
+  {
+    title: {
+      de: "Rucksacküberzug Deutsche Bundeswehr",
+      en: "Backpack cover German Federal Armed Forces",
+    },
+    slug: "rucksackueberzug-deutsche-bundeswehr",
+    shortDescription: {
+      de: "Der Rucksacküberzug im Tropentarndruck schützt den Rucksack vor Witterung und sorgt für eine exzellente Tarnung in subtropischen Gebieten",
+      en: "The backpack cover in desert camouflage protects the backpack from the elements and provides excellent concealment in subtropical environments.",
+    },
+    mainImage: "https://example.com/unterhemd.webp",
+    customer: {
+      de: "BWBM",
+      en: "Federal Office for Bundeswehr Equipment",
+    },
+    tags: {
+      de: ["mischgewebe"],
+      en: ["mischgewebe"],
+    },
+    tl: "TL 8420-0052",
+    images: [rucksackUeberzug.src, rucksackUeberzugSeite.src],
+    amount: 50000,
+    status: {
+      de: "Laufend",
+      en: "Running",
+    },
+    date: "2021",
+  },
+  {
+    title: {
+      de: "Feuerwehr Tragedienstbekleidung",
+      en: "Fire service duty uniform",
+    },
+    slug: "feuerwehr-tragedienstbekleidung",
+    shortDescription: {
+      de: "Hierbei handelt es sich um Tragedienstbekleidung der Feuerwehr, sowohl Langarm-Sweatshirts als auch Kurzarm-Poloshirts.",
+      en: "This is duty wear for firefighters, including both long-sleeve sweatshirts and short-sleeve polo shirts.",
+    },
+    mainImage: "https://example.com/unterhemd.webp",
+    customer: {
+      de: "BWBM",
+      en: "Federal Office for Bundeswehr Equipment",
+    },
+    tags: {
+      de: ["mischgewebe"],
+      en: ["mischgewebe"],
+    },
+    tl: "TL 8420-0052",
+    images: [feuerwehrPolo.src, feuerwehrSweatshirt.src],
+    amount: 25000,
+    status: {
+      de: "Abgeschlossen",
+      en: "Finished",
+    },
+    date: "2020",
+  },
+  {
+    title: {
+      de: "Trageriemenausstattung",
+      en: "Carrying strap system",
+    },
+    slug: "trageriemen",
+    shortDescription: {
+      de: "Es handelt sich um Trageriemen für verschiedenste Einsatzmöglichkeiten.",
+      en: "These are carrying straps designed for a wide range of operational uses.",
+    },
+    mainImage: "https://example.com/unterhemd.webp",
+    customer: {
+      de: "BWBM",
+      en: "Federal Office for Bundeswehr Equipment",
+    },
+    tags: {
+      de: ["mischgewebe"],
+      en: ["mischgewebe"],
+    },
+    tl: "TL 8465-0133",
+    images: [trageRiemen_1.src, trageRiemen_2.src],
+    amount: 150000,
+    status: {
+      de: "Laufend",
+      en: "Running",
+    },
+    date: "2023",
   },
 ];
 
