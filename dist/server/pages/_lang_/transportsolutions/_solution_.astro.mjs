@@ -1,11 +1,11 @@
 import { e as createAstro, f as createComponent, i as renderComponent, r as renderTemplate } from '../../../chunks/astro/server_C55uJX-_.mjs';
 import 'kleur/colors';
-import { $ as $$Layout } from '../../../chunks/Layout_DR_EymNx.mjs';
-import { s as star, $ as $$ProductGridTransport } from '../../../chunks/official_headwear_D7F2I3nF.mjs';
-import { $ as $$ContactForm } from '../../../chunks/ContactForm_B_JbyN1W.mjs';
+import { $ as $$Layout } from '../../../chunks/Layout_BPuxJA3I.mjs';
+import { s as star, $ as $$ProductGridTransport } from '../../../chunks/official_headwear_B6c2EiRz.mjs';
+import { $ as $$ContactForm } from '../../../chunks/ContactForm_BKLBO8rD.mjs';
 import '../../../chunks/schutzwand_verschluss_BqHNROck.mjs';
 import '../../../chunks/Transportwand farbig_QNd6lEeh.mjs';
-import { T as Transportloesungen, a as Thermohaube, S as Staubhaube } from '../../../chunks/staubhaube_schraeg_header_DLhywCYd.mjs';
+import { T as Transportloesungen, a as Thermohaube, S as Staubhaube } from '../../../chunks/staubhaube_grid_COihfAhI.mjs';
 import '../../../chunks/Thermohaube farbig_DEdBemqE.mjs';
 import '../../../chunks/projekte_B500-ns2.mjs';
 export { renderers } from '../../../renderers.mjs';
@@ -448,13 +448,13 @@ const thermohaubeVerschluss = new Proxy({"src":"/custom-folder/staubhaube_versch
 						}
 					});
 
-const thermohaubeFertig = new Proxy({"src":"/custom-folder/thermohaube_geschlossen.DXrXioVR.webp","width":3000,"height":3000,"format":"webp"}, {
+const staubhaubeFertig = new Proxy({"src":"/custom-folder/haube_dokumententasche.CUVUvDbG.webp","width":1673,"height":1673,"format":"webp"}, {
 						get(target, name, receiver) {
 							if (name === 'clone') {
 								return structuredClone(target);
 							}
 							if (name === 'fsPath') {
-								return "C:/Users/sabri/OneDrive/Desktop/feuchter-gmbh-astro/feuchter-gmbh/src/assets/Produkte/thermohaube_geschlossen.webp";
+								return "C:/Users/sabri/OneDrive/Desktop/feuchter-gmbh-astro/feuchter-gmbh/src/assets/Produkte/haube_dokumententasche.webp";
 							}
 							
 							return target[name];
@@ -689,7 +689,7 @@ const thermohaube = {
                     de: "Waren sicher transportieren",
                     en: "Transport the goods safely"
                 },
-                img: thermohaubeFertig.src,
+                img: staubhaubeFertig.src,
                 text: {
                     de: "Sobald Sie Zugriff auf die Waren benötigen, öffnen Sie einfach den Klettverschluss – und schon können Sie die Produkte servieren oder weiterverarbeiten. Die Thermohaube kann dabei jederzeit auf dem Rollwagen bleiben, solange dieser nicht anderweitig verwendet wird.",
                     en: "Whenever you need access to the goods, simply open the Velcro fastener to serve or further process your products. The thermal cover can remain on the roll cage at all times, as long as the trolley isn’t being used for another purpose."
@@ -958,19 +958,6 @@ const staubhaubeVerschluss = new Proxy({"src":"/custom-folder/staubhaube_verschl
 							}
 							if (name === 'fsPath') {
 								return "C:/Users/sabri/OneDrive/Desktop/feuchter-gmbh-astro/feuchter-gmbh/src/assets/Produkte/staubhaube_verschluss.webp";
-							}
-							
-							return target[name];
-						}
-					});
-
-const staubhaubeFertig = new Proxy({"src":"/custom-folder/staubhaube_geschlossen.Ctd7up6D.webp","width":3000,"height":3000,"format":"webp"}, {
-						get(target, name, receiver) {
-							if (name === 'clone') {
-								return structuredClone(target);
-							}
-							if (name === 'fsPath') {
-								return "C:/Users/sabri/OneDrive/Desktop/feuchter-gmbh-astro/feuchter-gmbh/src/assets/Produkte/staubhaube_geschlossen.webp";
 							}
 							
 							return target[name];

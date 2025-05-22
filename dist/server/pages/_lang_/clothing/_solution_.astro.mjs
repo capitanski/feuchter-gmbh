@@ -1,8 +1,8 @@
 import { e as createAstro, f as createComponent, i as renderComponent, r as renderTemplate } from '../../../chunks/astro/server_C55uJX-_.mjs';
 import 'kleur/colors';
-import { $ as $$Layout } from '../../../chunks/Layout_DR_EymNx.mjs';
-import { s as star, e as einsatzjacke, a as einsatzhose, h as headwear, $ as $$ProductGridTransport } from '../../../chunks/official_headwear_D7F2I3nF.mjs';
-import { $ as $$ContactForm } from '../../../chunks/ContactForm_B_JbyN1W.mjs';
+import { $ as $$Layout } from '../../../chunks/Layout_BPuxJA3I.mjs';
+import { s as star, e as einsatzjacke, a as einsatzhose, h as headwear, $ as $$ProductGridTransport } from '../../../chunks/official_headwear_B6c2EiRz.mjs';
+import { $ as $$ContactForm } from '../../../chunks/ContactForm_BKLBO8rD.mjs';
 import '../../../chunks/schutzwand_verschluss_BqHNROck.mjs';
 import '../../../chunks/Transportwand farbig_QNd6lEeh.mjs';
 import { B as Bekleidung, a as Behoerdenkleidung, C as Corporate } from '../../../chunks/Corporate Fashion_DqPmN4jq.mjs';
@@ -233,7 +233,7 @@ const military = {
       {
         title: {
           de: "Oberbekleidung",
-          en: "Apply hooks",
+          en: "Upperwear",
         },
         img: oberBekleidung.src,
         text: {
@@ -244,7 +244,7 @@ const military = {
       {
         title: {
           de: "Beinbekleidung",
-          en: "Apply hooks",
+          en: "Legwear",
         },
         img: beinBekleidung.src,
         text: {
@@ -255,7 +255,7 @@ const military = {
       {
         title: {
           de: "Accessoires & Kopfbedeckungen",
-          en: "Apply hooks",
+          en: "Accessories & Headwear",
         },
         img: kopfBedeckungen.src,
         text: {

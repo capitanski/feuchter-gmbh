@@ -24,78 +24,78 @@ const $$ProjectTag = createComponent(($$result, $$props, $$slots) => {
   return renderTemplate`${maybeRenderHead()}<div${addAttribute(colorScheme && colorScheme == "bright" ? "is-bright project-tag" : "is-dark project-tag", "class")} data-astro-cid-hp42x6y6> ${tagContent} </div> `;
 }, "C:/Users/sabri/OneDrive/Desktop/feuchter-gmbh-astro/feuchter-gmbh/src/components/ProjectTag.astro", void 0);
 
-const PolizeihemdSeite = new Proxy({"src":"/custom-folder/Bayernhemd arm.CEVeHoP4.webp","width":1080,"height":1080,"format":"webp"}, {
+const PolizeihemdSeite = new Proxy({"src":"/custom-folder/polizeihemd_bayern_seite.37beRnUB.webp","width":990,"height":990,"format":"webp"}, {
 						get(target, name, receiver) {
 							if (name === 'clone') {
 								return structuredClone(target);
 							}
 							if (name === 'fsPath') {
-								return "C:/Users/sabri/OneDrive/Desktop/feuchter-gmbh-astro/feuchter-gmbh/src/assets/Projekte/Bayernhemd arm.webp";
+								return "C:/Users/sabri/OneDrive/Desktop/feuchter-gmbh-astro/feuchter-gmbh/src/assets/Projekte/polizeihemd_bayern_seite.webp";
 							}
 							
 							return target[name];
 						}
 					});
 
-const PolizeihemdFront = new Proxy({"src":"/custom-folder/Bayernhemd vorne.5NmsvUDk.webp","width":1080,"height":1080,"format":"webp"}, {
+const PolizeihemdFront = new Proxy({"src":"/custom-folder/polizeihemd_bayern_front.NjCWWmKA.webp","width":990,"height":990,"format":"webp"}, {
 						get(target, name, receiver) {
 							if (name === 'clone') {
 								return structuredClone(target);
 							}
 							if (name === 'fsPath') {
-								return "C:/Users/sabri/OneDrive/Desktop/feuchter-gmbh-astro/feuchter-gmbh/src/assets/Projekte/Bayernhemd vorne.webp";
+								return "C:/Users/sabri/OneDrive/Desktop/feuchter-gmbh-astro/feuchter-gmbh/src/assets/Projekte/polizeihemd_bayern_front.webp";
 							}
 							
 							return target[name];
 						}
 					});
 
-const bmiHoseRechts = new Proxy({"src":"/custom-folder/BMI Hose rechts.LX5R47qO.webp","width":1080,"height":1080,"format":"webp"}, {
+const bmiHoseRechts = new Proxy({"src":"/custom-folder/bmi_hose_front.CYerNvrc.webp","width":990,"height":990,"format":"webp"}, {
 						get(target, name, receiver) {
 							if (name === 'clone') {
 								return structuredClone(target);
 							}
 							if (name === 'fsPath') {
-								return "C:/Users/sabri/OneDrive/Desktop/feuchter-gmbh-astro/feuchter-gmbh/src/assets/Projekte/BMI Hose rechts.webp";
+								return "C:/Users/sabri/OneDrive/Desktop/feuchter-gmbh-astro/feuchter-gmbh/src/assets/Projekte/bmi_hose_front.webp";
 							}
 							
 							return target[name];
 						}
 					});
 
-const bmiJackeFront = new Proxy({"src":"/custom-folder/BMI Jacke front.C-zp27St.webp","width":1080,"height":1080,"format":"webp"}, {
+const bmiJackeFront = new Proxy({"src":"/custom-folder/bmi_jacke_front.CahD7q4A.webp","width":990,"height":990,"format":"webp"}, {
 						get(target, name, receiver) {
 							if (name === 'clone') {
 								return structuredClone(target);
 							}
 							if (name === 'fsPath') {
-								return "C:/Users/sabri/OneDrive/Desktop/feuchter-gmbh-astro/feuchter-gmbh/src/assets/Projekte/BMI Jacke front.webp";
+								return "C:/Users/sabri/OneDrive/Desktop/feuchter-gmbh-astro/feuchter-gmbh/src/assets/Projekte/bmi_jacke_front.webp";
 							}
 							
 							return target[name];
 						}
 					});
 
-new Proxy({"src":"/custom-folder/Hose Berlin Links.DE72OPtM.webp","width":1080,"height":1080,"format":"webp"}, {
+const berlinHoseLinks = new Proxy({"src":"/custom-folder/berlin_hose_front.DH7nMKp_.webp","width":990,"height":990,"format":"webp"}, {
 						get(target, name, receiver) {
 							if (name === 'clone') {
 								return structuredClone(target);
 							}
 							if (name === 'fsPath') {
-								return "C:/Users/sabri/OneDrive/Desktop/feuchter-gmbh-astro/feuchter-gmbh/src/assets/Projekte/Hose Berlin Links.webp";
+								return "C:/Users/sabri/OneDrive/Desktop/feuchter-gmbh-astro/feuchter-gmbh/src/assets/Projekte/berlin_hose_front.webp";
 							}
 							
 							return target[name];
 						}
 					});
 
-new Proxy({"src":"/custom-folder/Jacke Berlin Seite.B_CZsV1f.webp","width":1080,"height":1080,"format":"webp"}, {
+const berlinJackeSeite = new Proxy({"src":"/custom-folder/berlin_jacke_front.BUM4jWjc.webp","width":990,"height":990,"format":"webp"}, {
 						get(target, name, receiver) {
 							if (name === 'clone') {
 								return structuredClone(target);
 							}
 							if (name === 'fsPath') {
-								return "C:/Users/sabri/OneDrive/Desktop/feuchter-gmbh-astro/feuchter-gmbh/src/assets/Projekte/Jacke Berlin Seite.webp";
+								return "C:/Users/sabri/OneDrive/Desktop/feuchter-gmbh-astro/feuchter-gmbh/src/assets/Projekte/berlin_jacke_front.webp";
 							}
 							
 							return target[name];
@@ -180,6 +180,84 @@ const ksHose = new Proxy({"src":"/custom-folder/Kaelteschutzhose Seite.BUHN5Dr5.
 						}
 					});
 
+const rucksackUeberzug = new Proxy({"src":"/custom-folder/rucksackueberzug_tropentarn.oRUZrDTE.webp","width":990,"height":990,"format":"webp"}, {
+						get(target, name, receiver) {
+							if (name === 'clone') {
+								return structuredClone(target);
+							}
+							if (name === 'fsPath') {
+								return "C:/Users/sabri/OneDrive/Desktop/feuchter-gmbh-astro/feuchter-gmbh/src/assets/Projekte/rucksackueberzug_tropentarn.webp";
+							}
+							
+							return target[name];
+						}
+					});
+
+const rucksackUeberzugSeite = new Proxy({"src":"/custom-folder/rucksackueberzug_tropentarn_seite.71zRbopM.webp","width":990,"height":990,"format":"webp"}, {
+						get(target, name, receiver) {
+							if (name === 'clone') {
+								return structuredClone(target);
+							}
+							if (name === 'fsPath') {
+								return "C:/Users/sabri/OneDrive/Desktop/feuchter-gmbh-astro/feuchter-gmbh/src/assets/Projekte/rucksackueberzug_tropentarn_seite.webp";
+							}
+							
+							return target[name];
+						}
+					});
+
+const feuerwehrPolo = new Proxy({"src":"/custom-folder/feuerwehr_polo_front.kTjRS5Ym.webp","width":990,"height":990,"format":"webp"}, {
+						get(target, name, receiver) {
+							if (name === 'clone') {
+								return structuredClone(target);
+							}
+							if (name === 'fsPath') {
+								return "C:/Users/sabri/OneDrive/Desktop/feuchter-gmbh-astro/feuchter-gmbh/src/assets/Projekte/feuerwehr_polo_front.webp";
+							}
+							
+							return target[name];
+						}
+					});
+
+const feuerwehrSweatshirt = new Proxy({"src":"/custom-folder/feuerwehr_sweatshirt_front.5r-dOHAj.webp","width":990,"height":990,"format":"webp"}, {
+						get(target, name, receiver) {
+							if (name === 'clone') {
+								return structuredClone(target);
+							}
+							if (name === 'fsPath') {
+								return "C:/Users/sabri/OneDrive/Desktop/feuchter-gmbh-astro/feuchter-gmbh/src/assets/Projekte/feuerwehr_sweatshirt_front.webp";
+							}
+							
+							return target[name];
+						}
+					});
+
+const trageRiemen_1 = new Proxy({"src":"/custom-folder/trageriemen_1.C1JemE35.webp","width":990,"height":990,"format":"webp"}, {
+						get(target, name, receiver) {
+							if (name === 'clone') {
+								return structuredClone(target);
+							}
+							if (name === 'fsPath') {
+								return "C:/Users/sabri/OneDrive/Desktop/feuchter-gmbh-astro/feuchter-gmbh/src/assets/Projekte/trageriemen_1.webp";
+							}
+							
+							return target[name];
+						}
+					});
+
+const trageRiemen_2 = new Proxy({"src":"/custom-folder/trageriemen_2.DdkGGJoY.webp","width":990,"height":990,"format":"webp"}, {
+						get(target, name, receiver) {
+							if (name === 'clone') {
+								return structuredClone(target);
+							}
+							if (name === 'fsPath') {
+								return "C:/Users/sabri/OneDrive/Desktop/feuchter-gmbh-astro/feuchter-gmbh/src/assets/Projekte/trageriemen_2.webp";
+							}
+							
+							return target[name];
+						}
+					});
+
 const projects = [
   {
     title: {
@@ -237,15 +315,15 @@ const projects = [
     },
     date: "2024",
   },
-  /*{
+  {
     title: {
       de: "Einsatzanzug Polizei Berlin",
       en: "Police Berlin Operational Suit",
     },
     slug: "einsatzanzug-polizei-berlin",
     shortDescription: {
-      de: "Es handelt sich um einen Einsatzanzug, bestehend aus Blouson und Hose, gefertigt aus dunkelblauem Aramidgewebe, permanent schwer entflammbar und antistatisch.\nDie Einsatzbekleidung nach TL 8405-075 bietet optimalen Schutz, hohe Funktionalität und maximale Bewegungsfreiheit für Polizeikräfte in Berlin. Sie ist robust, wetterfest und auf die spezifischen Anforderungen des Polizeidienstes zugeschnitten.\nDer Blouson ist mit Stehkragen, verdecktem Frontreißverschluss, 2 Brust- und 2 Seitentaschen, 5 Durchgriffen zur Arretierung des Körperschutzes, einer Lasche zur Befestigung der Funkantenne, Ärmelnaht – Reißverschlüssen, Ärmelabschluss mit Gummizug sowie Kordelzug im Saumbereich verarbeitet.",
-      en: "This is an operational suit consisting of a blouson and trousers, made from dark blue aramid fabric, permanently flame-retardant and antistatic. The clothing according to TL 8405-075 offers optimal protection, high functionality, and maximum mobility for police forces in Berlin. It is durable, weather-resistant, and tailored to police service needs. The blouson features a stand-up collar, hidden front zipper, 2 chest and 2 side pockets, access points for body armor, antenna loop, and adjustable waistband.",
+      de: "Es handelt sich um einen Einsatzanzug, bestehend aus Blouson und Hose, gefertigt aus dunkelblauem Aramidgewebe, permanent schwer entflammbar und antistatisch.",
+      en: "This is an operational suit consisting of a blouson and trousers, made from dark blue aramid fabric, permanently flame-retardant and antistatic.",
     },
     mainImage: "https://example.com/berlin.webp",
     customer: {
@@ -264,7 +342,7 @@ const projects = [
       en: "Finished",
     },
     date: "2024",
-  },*/
+  },
   {
     title: {
       de: "Monteurkombi Sommer/Variabel",
@@ -348,6 +426,90 @@ const projects = [
       en: "Running",
     },
     date: "2024",
+  },
+  {
+    title: {
+      de: "Rucksacküberzug Deutsche Bundeswehr",
+      en: "Backpack cover German Federal Armed Forces",
+    },
+    slug: "rucksackueberzug-deutsche-bundeswehr",
+    shortDescription: {
+      de: "Der Rucksacküberzug im Tropentarndruck schützt den Rucksack vor Witterung und sorgt für eine exzellente Tarnung in subtropischen Gebieten",
+      en: "The backpack cover in desert camouflage protects the backpack from the elements and provides excellent concealment in subtropical environments.",
+    },
+    mainImage: "https://example.com/unterhemd.webp",
+    customer: {
+      de: "BWBM",
+      en: "Federal Office for Bundeswehr Equipment",
+    },
+    tags: {
+      de: ["mischgewebe"],
+      en: ["mischgewebe"],
+    },
+    tl: "TL 8420-0052",
+    images: [rucksackUeberzug.src, rucksackUeberzugSeite.src],
+    amount: 50000,
+    status: {
+      de: "Laufend",
+      en: "Running",
+    },
+    date: "2021",
+  },
+  {
+    title: {
+      de: "Feuerwehr Tragedienstbekleidung",
+      en: "Fire service duty uniform",
+    },
+    slug: "feuerwehr-tragedienstbekleidung",
+    shortDescription: {
+      de: "Hierbei handelt es sich um Tragedienstbekleidung der Feuerwehr, sowohl Langarm-Sweatshirts als auch Kurzarm-Poloshirts.",
+      en: "This is duty wear for firefighters, including both long-sleeve sweatshirts and short-sleeve polo shirts.",
+    },
+    mainImage: "https://example.com/unterhemd.webp",
+    customer: {
+      de: "BWBM",
+      en: "Federal Office for Bundeswehr Equipment",
+    },
+    tags: {
+      de: ["mischgewebe"],
+      en: ["mischgewebe"],
+    },
+    tl: "TL 8420-0052",
+    images: [feuerwehrPolo.src, feuerwehrSweatshirt.src],
+    amount: 25000,
+    status: {
+      de: "Abgeschlossen",
+      en: "Finished",
+    },
+    date: "2020",
+  },
+  {
+    title: {
+      de: "Trageriemenausstattung",
+      en: "Carrying strap system",
+    },
+    slug: "trageriemen",
+    shortDescription: {
+      de: "Es handelt sich um Trageriemen für verschiedenste Einsatzmöglichkeiten.",
+      en: "These are carrying straps designed for a wide range of operational uses.",
+    },
+    mainImage: "https://example.com/unterhemd.webp",
+    customer: {
+      de: "BWBM",
+      en: "Federal Office for Bundeswehr Equipment",
+    },
+    tags: {
+      de: ["mischgewebe"],
+      en: ["mischgewebe"],
+    },
+    tl: "TL 8465-0133",
+    images: [trageRiemen_1.src, trageRiemen_2.src],
+    amount: 150000,
+    status: {
+      de: "Laufend",
+      en: "Running",
+    },
+    date: "2023",
   },
 ];
 

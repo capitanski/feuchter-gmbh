@@ -2,7 +2,7 @@ import { e as createAstro, f as createComponent, m as maybeRenderHead, h as addA
 import 'kleur/colors';
 import 'clsx';
 import { A as Arrow } from './Arrow_sand_5oaPgMNc.mjs';
-import { b as buttonTranslations } from './Layout_DR_EymNx.mjs';
+import { b as buttonTranslations } from './Layout_BPuxJA3I.mjs';
 /* empty css                         */
 
 const $$Astro = createAstro("http://localhost:4321");

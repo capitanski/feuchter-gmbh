@@ -9,7 +9,7 @@ import 'cookie';
 const supportedLanguages = ["de", "en"];
 
 const langSwitcher = function(currentPath) {
-  const baseURL = "https://feuchter-gmbh-kar6r.ondigitalocean.app";
+  const baseURL = "http://localhost:4321";
   currentPath = currentPath.split("/").filter(Boolean);
   currentPath.shift();
   currentPath = currentPath.join("/");

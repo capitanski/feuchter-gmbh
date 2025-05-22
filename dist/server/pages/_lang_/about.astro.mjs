@@ -1,7 +1,7 @@
 import { e as createAstro, f as createComponent, m as maybeRenderHead, h as addAttribute, r as renderTemplate, i as renderComponent } from '../../chunks/astro/server_C55uJX-_.mjs';
 import 'kleur/colors';
-import { $ as $$WelcomeLeftAligned } from '../../chunks/WelcomeLeftAligned_BGtY0KHd.mjs';
-import { $ as $$Layout } from '../../chunks/Layout_DR_EymNx.mjs';
+import { $ as $$WelcomeLeftAligned } from '../../chunks/WelcomeLeftAligned_CkddR4Zs.mjs';
+import { $ as $$Layout } from '../../chunks/Layout_BPuxJA3I.mjs';
 import 'clsx';
 /* empty css                                    */
 export { renderers } from '../../renderers.mjs';
