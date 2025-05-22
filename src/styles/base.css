@@ -107,7 +107,7 @@ h1 {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   font-family: "peridot-pe-variable", sans-serif !important;
-  font-variation-settings: "ital" 0, "wdth" 400, "wght" 900;
+  font-variation-settings: "ital" 0, "wdth" 300, "wght" 900;
   font-size: 1.8rem !important;
   line-height: 2.4rem !important;
   letter-spacing: -1.5px;
