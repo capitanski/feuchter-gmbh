@@ -1,6 +1,6 @@
 import { e as createAstro, f as createComponent, m as maybeRenderHead, h as addAttribute, i as renderComponent, r as renderTemplate } from './astro/server_C55uJX-_.mjs';
 import 'kleur/colors';
-import { p as projects, C as Circles, $ as $$ProjectTag } from './projects_CzLJvgQl.mjs';
+import { p as projects, C as Circles, $ as $$ProjectTag } from './projects_lCUEtkRg.mjs';
 import { A as Arrow } from './Arrow_sand_5oaPgMNc.mjs';
 import { b as buttonTranslations, t as translations } from './Layout_CxFWCwmj.mjs';
 /* empty css                         */

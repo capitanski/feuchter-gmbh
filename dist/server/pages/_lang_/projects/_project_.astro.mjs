@@ -1,7 +1,7 @@
 import { e as createAstro, f as createComponent, m as maybeRenderHead, h as addAttribute, i as renderComponent, r as renderTemplate } from '../../../chunks/astro/server_C55uJX-_.mjs';
 import 'kleur/colors';
 import { $ as $$Button } from '../../../chunks/Button_BukcMihT.mjs';
-import { C as Circles, $ as $$ProjectTag, p as projects } from '../../../chunks/projects_CzLJvgQl.mjs';
+import { C as Circles, $ as $$ProjectTag, p as projects } from '../../../chunks/projects_lCUEtkRg.mjs';
 import { t as translations, b as buttonTranslations, $ as $$Layout } from '../../../chunks/Layout_CxFWCwmj.mjs';
 /* empty css                                           */
 export { renderers } from '../../../renderers.mjs';

@@ -258,6 +258,32 @@ const trageRiemen_2 = new Proxy({"src":"/custom-folder/trageriemen_2.DdkGGJoY.we
 						}
 					});
 
+const berlinTrainingJacke = new Proxy({"src":"/custom-folder/trainingsanzug_berlin_jacke.B83bSYY8.webp","width":990,"height":990,"format":"webp"}, {
+						get(target, name, receiver) {
+							if (name === 'clone') {
+								return structuredClone(target);
+							}
+							if (name === 'fsPath') {
+								return "C:/Users/sabri/OneDrive/Desktop/feuchter-gmbh-astro/feuchter-gmbh/src/assets/Projekte/trainingsanzug_berlin_jacke.webp";
+							}
+							
+							return target[name];
+						}
+					});
+
+const berlinTrainingHose = new Proxy({"src":"/custom-folder/trainingsanzug_berlin_hose.a9bJMJWL.webp","width":990,"height":990,"format":"webp"}, {
+						get(target, name, receiver) {
+							if (name === 'clone') {
+								return structuredClone(target);
+							}
+							if (name === 'fsPath') {
+								return "C:/Users/sabri/OneDrive/Desktop/feuchter-gmbh-astro/feuchter-gmbh/src/assets/Projekte/trainingsanzug_berlin_hose.webp";
+							}
+							
+							return target[name];
+						}
+					});
+
 const projects = [
   {
     title: {
@@ -336,6 +362,34 @@ const projects = [
     },
     tl: "TL 8405-075",
     images: [berlinJackeSeite.src, berlinHoseLinks.src],
+    amount: 2400,
+    status: {
+      de: "Abgeschlossen",
+      en: "Finished",
+    },
+    date: "2024",
+  },
+  {
+    title: {
+      de: "Trainingsanzug Polizei Berlin",
+      en: "Police Berlin Training Suit",
+    },
+    slug: "trainingsanzug-polizei-berlin",
+    shortDescription: {
+      de: "Es handelt sich um einen Trainingsanzug, bestehend aus Blouson und Hose.",
+      en: "This is a training suit consisting of a blouson and trousers.",
+    },
+    mainImage: "https://example.com/berlin.webp",
+    customer: {
+      de: "Polizei Berlin",
+      en: "Berlin Police",
+    },
+    tags: {
+      de: ["aramidgewebe"],
+      en: ["aramidgewebe"],
+    },
+    tl: "TL 8405-075",
+    images: [berlinTrainingJacke.src, berlinTrainingHose.src],
     amount: 2400,
     status: {
       de: "Abgeschlossen",

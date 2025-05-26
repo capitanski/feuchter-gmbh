@@ -16,6 +16,8 @@ import feuerwehrPolo from "@/assets/Projekte/feuerwehr_polo_front.webp"
 import feuerwehrSweatshirt from "@/assets/Projekte/feuerwehr_sweatshirt_front.webp"
 import trageRiemen_1 from "@/assets/Projekte/trageriemen_1.webp"
 import trageRiemen_2 from "@/assets/Projekte/trageriemen_2.webp"
+import berlinTrainingJacke from "@/assets/Projekte/trainingsanzug_berlin_jacke.webp"
+import berlinTrainingHose from "@/assets/Projekte/trainingsanzug_berlin_hose.webp"
 import fs from "fs";
 const projects = [
   {
@@ -95,6 +97,34 @@ const projects = [
     },
     tl: "TL 8405-075",
     images: [berlinJackeSeite.src, berlinHoseLinks.src],
+    amount: 2400,
+    status: {
+      de: "Abgeschlossen",
+      en: "Finished",
+    },
+    date: "2024",
+  },
+  {
+    title: {
+      de: "Trainingsanzug Polizei Berlin",
+      en: "Police Berlin Training Suit",
+    },
+    slug: "trainingsanzug-polizei-berlin",
+    shortDescription: {
+      de: "Es handelt sich um einen Trainingsanzug, bestehend aus Blouson und Hose.",
+      en: "This is a training suit consisting of a blouson and trousers.",
+    },
+    mainImage: "https://example.com/berlin.webp",
+    customer: {
+      de: "Polizei Berlin",
+      en: "Berlin Police",
+    },
+    tags: {
+      de: ["aramidgewebe"],
+      en: ["aramidgewebe"],
+    },
+    tl: "TL 8405-075",
+    images: [berlinTrainingJacke.src, berlinTrainingHose.src],
     amount: 2400,
     status: {
       de: "Abgeschlossen",
