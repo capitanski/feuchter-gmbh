@@ -18,8 +18,38 @@ import trageRiemen_1 from "@/assets/Projekte/trageriemen_1.webp"
 import trageRiemen_2 from "@/assets/Projekte/trageriemen_2.webp"
 import berlinTrainingJacke from "@/assets/Projekte/trainingsanzug_berlin_jacke.webp"
 import berlinTrainingHose from "@/assets/Projekte/trainingsanzug_berlin_hose.webp"
+import kbsJacke from "@/assets/Projekte/kbs_kaelteschutz_jacke.webp"
+import kbsHose from "@/assets/Projekte/kbs_kaelteschutz_hose.webp"
 import fs from "fs";
 const projects = [
+  {
+    title: {
+      de: "KBS Kälteschutzausrüstung",
+      en: "KBS Cold Protection",
+    },
+    slug: "kbs-kaelteschutz",
+    shortDescription: {
+      de: "Die Unterzieh-Kälteschutzausrüstung des KBS der deutschen Bundeswehr.",
+      en: "The undergarment cold protection equipment of the KBS of the German Armed Forces.",
+    },
+    mainImage: "https://example.com/kaelteschutz.webp",
+    customer: {
+      de: "BWBM",
+      en: "Federal Office for Bundeswehr Equipment",
+    },
+    tags: {
+      de: ["kaelteschutz", "gefuttert"],
+      en: ["kaelteschutz", "gefuttert"],
+    },
+    tl: "TL 8415-0234/TL 8415-0260",
+    images: [kbsJacke.src, kbsHose.src],
+    amount: 264000,
+    status: {
+      de: "Laufend",
+      en: "Running",
+    },
+    date: "2025",
+  },
   {
     title: {
       de: "BWBM Kälteschutz",
