@@ -21,25 +21,20 @@ const langSwitcher = function(currentPath) {
   return final;
 };
 
-function auth(cookies, redirect) {
-    const token = cookies.get('accessToken')?.value;
-    console.log(token);
-    if (!token) throw new Error("bad token")
-}
-
 const onRequest$1 = defineMiddleware(
   ({ context, locals, request, redirect, cookies }, next) => {
     const url = new URL(request.url);
     if (url.pathname.startsWith("/api/")) {
       return next();
     }
-    if (!url.pathname.includes("login")) {
+    // uncomment the following if statement to remove the login redirect in production
+    /*if (!url.pathname.includes("login")) {
       try {
         auth(cookies, redirect);
       } catch (e) {
         return redirect("/login")
       }
-    }
+    }*/
 
     const pathSegments = url.pathname.split("/").filter(Boolean); // Zerlegt die URL
     //const supportedLanguages = ["de", "en", "fr", "cz"];

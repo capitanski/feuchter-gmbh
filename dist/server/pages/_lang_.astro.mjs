@@ -306,8 +306,8 @@ const $$Categories = createComponent(($$result, $$props, $$slots) => {
         en: "Protective Wall for Roll Containers"
       },
       text: {
-        de: "Die Schutzwand f\xFCr Rollcontainer dient als robuster Puffer gegen St\xF6\xDFe und sch\xFCtzt empfindliche Fracht. Sie ist leicht montierbar, wiederverwendbar und erh\xF6ht die Sicherheit beim Transport. Ideal f\xFCr Logistikunternehmen und Lagerhaltung, bei denen sensible G\xFCter zuverl\xE4ssig gesichert werden m\xFCssen \u2013 effizient und langlebig.",
-        en: "The protective wall for roll containers acts as a sturdy buffer against impact and protects sensitive cargo. It is easy to install, reusable, and enhances transport safety. Ideal for logistics companies and storage environments where delicate goods must be reliably secured \u2013 efficient and long-lasting."
+        de: "Die Schutzwand f\xFCr Rollcontainer dient als vollst\xE4ndiger, nachhaltiger Ersatz f\xFCr Stretchfolie. Sie ist leicht montierbar, wiederverwendbar und erh\xF6ht die Sicherheit beim Transport. Ideal f\xFCr Logistikunternehmen und Lagerhaltung, bei denen sensible G\xFCter zuverl\xE4ssig gesichert werden m\xFCssen \u2013 effizient und langlebig.",
+        en: "The protective wall for roll containers acts as a complete, sustainable replacement for stretch film. It is easy to install, reusable, and enhances transport safety. Ideal for logistics companies and storage environments where delicate goods must be reliably secured \u2013 efficient and long-lasting."
       },
       slug: "transportsolutions/protectivewalls",
       image: Transportloesungen.src
