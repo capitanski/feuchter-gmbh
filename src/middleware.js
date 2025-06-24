@@ -8,13 +8,14 @@ export const onRequest = defineMiddleware(
     if (url.pathname.startsWith("/api/")) {
       return next();
     }
-    if (!url.pathname.includes("login")) {
+    // uncomment the following if statement to remove the login redirect in production
+    /*if (!url.pathname.includes("login")) {
       try {
         auth(cookies, redirect);
       } catch (e) {
         return redirect("/login")
       }
-    }
+    }*/
 
     const pathSegments = url.pathname.split("/").filter(Boolean); // Zerlegt die URL
     //const supportedLanguages = ["de", "en", "fr", "cz"];
