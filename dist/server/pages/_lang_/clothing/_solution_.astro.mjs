@@ -1,8 +1,8 @@
 import { e as createAstro, f as createComponent, i as renderComponent, r as renderTemplate } from '../../../chunks/astro/server_C55uJX-_.mjs';
 import 'kleur/colors';
-import { $ as $$Layout } from '../../../chunks/Layout_CxFWCwmj.mjs';
-import { s as star, e as einsatzjacke, a as einsatzhose, h as headwear, $ as $$ProductGridTransport } from '../../../chunks/official_headwear_DQAF4CIf.mjs';
-import { $ as $$ContactForm } from '../../../chunks/ContactForm_Bdlqd3z3.mjs';
+import { $ as $$Layout } from '../../../chunks/Layout_COPaMLlO.mjs';
+import { s as star, e as einsatzjacke, a as einsatzhose, h as headwear, $ as $$ProductGridTransport } from '../../../chunks/official_headwear_CxxmSCf1.mjs';
+import { $ as $$ContactForm } from '../../../chunks/ContactForm_C0GpXmmF.mjs';
 import '../../../chunks/schutzwand_verschluss_BqHNROck.mjs';
 import '../../../chunks/Transportwand farbig_QNd6lEeh.mjs';
 import { B as Bekleidung, a as Behoerdenkleidung, C as Corporate } from '../../../chunks/Corporate Fashion_DqPmN4jq.mjs';

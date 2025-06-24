@@ -2,16 +2,16 @@ import { e as createAstro, f as createComponent, m as maybeRenderHead, h as addA
 import 'kleur/colors';
 import { $ as $$Button } from '../chunks/Button_BukcMihT.mjs';
 import { C as Circles$1 } from '../chunks/Circles_Bt8dJA-c.mjs';
-import { b as buttonTranslations, $ as $$Layout } from '../chunks/Layout_CxFWCwmj.mjs';
+import { b as buttonTranslations, $ as $$Layout } from '../chunks/Layout_COPaMLlO.mjs';
 /* empty css                                 */
-import { $ as $$Leistungen } from '../chunks/Leistungen_D6O0gxuK.mjs';
+import { $ as $$Leistungen } from '../chunks/Leistungen_Bgu-dGnU.mjs';
 import 'clsx';
-import { $ as $$Projects } from '../chunks/Projects_asBV_WcU.mjs';
+import { $ as $$Projects } from '../chunks/Projects_C6yTqQnc.mjs';
 import { T as Transportloesungen, a as Thermohaube, S as Staubhaube } from '../chunks/staubhaube_grid_COihfAhI.mjs';
 import { B as Bekleidung, a as Behoerdenkleidung, C as Corporate } from '../chunks/Corporate Fashion_DqPmN4jq.mjs';
 import { C as Circles$2 } from '../chunks/projects_DMM2jGj4.mjs';
 import { A as Arrow } from '../chunks/Arrow_sand_5oaPgMNc.mjs';
-import { $ as $$ContactForm } from '../chunks/ContactForm_Bdlqd3z3.mjs';
+import { $ as $$ContactForm } from '../chunks/ContactForm_C0GpXmmF.mjs';
 export { renderers } from '../renderers.mjs';
 
 const Scribble = new Proxy({"src":"/custom-folder/feuchter_gmbh_header.DZi6SfZT.webp","width":1400,"height":933,"format":"webp"}, {

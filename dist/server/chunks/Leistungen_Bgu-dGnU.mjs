@@ -1,7 +1,7 @@
 import { e as createAstro, f as createComponent, m as maybeRenderHead, h as addAttribute, r as renderTemplate } from './astro/server_C55uJX-_.mjs';
 import 'kleur/colors';
 import 'clsx';
-import { t as translations } from './Layout_CxFWCwmj.mjs';
+import { t as translations } from './Layout_COPaMLlO.mjs';
 /* empty css                         */
 
 const Hochzeiten = new Proxy({"src":"/custom-folder/konzeption.B8QB-5B4.webp","width":600,"height":338,"format":"webp"}, {

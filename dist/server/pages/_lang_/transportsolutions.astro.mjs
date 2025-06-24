@@ -1,7 +1,7 @@
 import { e as createAstro, f as createComponent, i as renderComponent, r as renderTemplate, m as maybeRenderHead } from '../../chunks/astro/server_C55uJX-_.mjs';
 import 'kleur/colors';
-import { $ as $$Layout } from '../../chunks/Layout_CxFWCwmj.mjs';
-import { $ as $$CategoryHeader } from '../../chunks/CategoryHeader_Dl5dr0Tm.mjs';
+import { $ as $$Layout } from '../../chunks/Layout_COPaMLlO.mjs';
+import { $ as $$CategoryHeader } from '../../chunks/CategoryHeader_DlyDpEaM.mjs';
 import '../../chunks/schutzwand_verschluss_BqHNROck.mjs';
 import '../../chunks/Transportwand farbig_QNd6lEeh.mjs';
 import '../../chunks/Thermohaube farbig_DEdBemqE.mjs';
