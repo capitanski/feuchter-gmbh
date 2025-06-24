@@ -6,12 +6,12 @@ import { b as buttonTranslations, $ as $$Layout } from '../chunks/Layout_CxFWCwm
 /* empty css                                 */
 import { $ as $$Leistungen } from '../chunks/Leistungen_D6O0gxuK.mjs';
 import 'clsx';
-import { $ as $$Projects } from '../chunks/Projects_CntgWBNC.mjs';
+import { $ as $$Projects } from '../chunks/Projects_asBV_WcU.mjs';
 import { T as Transportloesungen, a as Thermohaube, S as Staubhaube } from '../chunks/staubhaube_grid_COihfAhI.mjs';
 import { B as Bekleidung, a as Behoerdenkleidung, C as Corporate } from '../chunks/Corporate Fashion_DqPmN4jq.mjs';
-import { C as Circles$2 } from '../chunks/projects_lCUEtkRg.mjs';
+import { C as Circles$2 } from '../chunks/projects_DMM2jGj4.mjs';
 import { A as Arrow } from '../chunks/Arrow_sand_5oaPgMNc.mjs';
-import { $ as $$ContactForm } from '../chunks/ContactForm_IozG0gYi.mjs';
+import { $ as $$ContactForm } from '../chunks/ContactForm_Bdlqd3z3.mjs';
 export { renderers } from '../renderers.mjs';
 
 const Scribble = new Proxy({"src":"/custom-folder/feuchter_gmbh_header.DZi6SfZT.webp","width":1400,"height":933,"format":"webp"}, {

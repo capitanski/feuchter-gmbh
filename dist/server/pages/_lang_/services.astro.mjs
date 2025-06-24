@@ -40,7 +40,7 @@ const $$Services = createComponent(($$result, $$props, $$slots) => {
 Wir unterst\xFCtzen unsere Kunden von Anfang an bei ihren Projekten \u2013 von der Konzeption und Entwicklung \xFCber die Produktion bis hin zur Logistik. Mit unserer Expertise sorgen wir f\xFCr ma\xDFgeschneiderte L\xF6sungen, die effizient, zuverl\xE4ssig und nachhaltig sind.`;
   if (pageLanguage == "en") {
     heading = "We support you in your endeavor from the very beginning.";
-    subtitle = "From conception to production to logistics";
+    subtitle = "A Partner, which you can rely on";
     introText = `
 We support our customers from the very beginning of their projects \u2013 from conception and development to production and logistics. With our expertise, we ensure tailored solutions that are efficient, reliable, and sustainable.`;
   }

@@ -2,7 +2,7 @@ import { e as createAstro, f as createComponent, i as renderComponent, r as rend
 import 'kleur/colors';
 import { $ as $$Layout } from '../../../chunks/Layout_CxFWCwmj.mjs';
 import { s as star, $ as $$ProductGridTransport } from '../../../chunks/official_headwear_DQAF4CIf.mjs';
-import { $ as $$ContactForm } from '../../../chunks/ContactForm_IozG0gYi.mjs';
+import { $ as $$ContactForm } from '../../../chunks/ContactForm_Bdlqd3z3.mjs';
 import '../../../chunks/schutzwand_verschluss_BqHNROck.mjs';
 import '../../../chunks/Transportwand farbig_QNd6lEeh.mjs';
 import { T as Transportloesungen, a as Thermohaube, S as Staubhaube } from '../../../chunks/staubhaube_grid_COihfAhI.mjs';
@@ -117,8 +117,8 @@ const schutzwandHellgrau = new Proxy({"src":"/custom-folder/schutzwand_hellgrau.
 const schutzwand = {
     headerImage: Transportloesungen.src,
     title: {
-        de: "Die Patentierte Schutzwand für Rollcontainer",
-        en: "The Patented Protective Wall for Roll Containers"
+        de: "Die innovative Schutzwand für Rollcontainer",
+        en: "The innovative Protective Wall for Roll Containers"
     },
     subtitle: {
         de: "Nachhaltig sichern statt verschwenden",

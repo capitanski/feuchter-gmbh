@@ -1,6 +1,6 @@
 import { e as createAstro, f as createComponent, m as maybeRenderHead, h as addAttribute, i as renderComponent, r as renderTemplate } from './astro/server_C55uJX-_.mjs';
 import 'kleur/colors';
-import { p as projects, C as Circles, $ as $$ProjectTag } from './projects_lCUEtkRg.mjs';
+import { p as projects, C as Circles, $ as $$ProjectTag } from './projects_DMM2jGj4.mjs';
 import { A as Arrow } from './Arrow_sand_5oaPgMNc.mjs';
 import { b as buttonTranslations, t as translations } from './Layout_CxFWCwmj.mjs';
 /* empty css                         */
@@ -16,8 +16,8 @@ const $$Projects = createComponent(($$result, $$props, $$slots) => {
     en: "Projects"
   };
   const subtitle = {
-    de: "Bekleidung, die einfach funktioniert",
-    en: "Clothing that simply works"
+    de: "Ein kleiner Ausschnitt unserer zahlreichen Projekte",
+    en: "A small selection of our numerous projects"
   };
   return renderTemplate`${maybeRenderHead()}<section id="projects" data-astro-cid-amng4zvp> <img${addAttribute(Circles.src, "src")} alt="" class="img-absolute" data-astro-cid-amng4zvp> <div class="container" data-astro-cid-amng4zvp> <h2 class="animatable" data-astro-cid-amng4zvp>${heading[language]}</h2> <p class="subtitle animatable" data-astro-cid-amng4zvp>${subtitle[language]}</p> <div class="rezensionen-grid" data-astro-cid-amng4zvp> ${projects.map((project) => {
     return renderTemplate`<div class="rezension-card animate-in-right" data-astro-cid-amng4zvp> <div data-astro-cid-amng4zvp> <div class="icon-and-title" data-astro-cid-amng4zvp> <div class="project-image-wrapper" data-astro-cid-amng4zvp> ${project.images.map((image) => {
@@ -27,7 +27,7 @@ const $$Projects = createComponent(($$result, $$props, $$slots) => {
                   })}--> ${renderComponent($$result, "ProjectTag", $$ProjectTag, { "colorScheme": "bright", "tagContent": `${project.amount} ${translations(
       "menge",
       pageLanguage
-    )}`, "data-astro-cid-amng4zvp": true })} ${renderComponent($$result, "ProjectTag", $$ProjectTag, { "tagContent": project.customer[pageLanguage], "colorScheme": "bright", "data-astro-cid-amng4zvp": true })} ${renderComponent($$result, "ProjectTag", $$ProjectTag, { "tagContent": project.tl, "colorScheme": "bright", "data-astro-cid-amng4zvp": true })} ${renderComponent($$result, "ProjectTag", $$ProjectTag, { "tagContent": project.date, "colorScheme": "bright", "data-astro-cid-amng4zvp": true })} ${renderComponent($$result, "ProjectTag", $$ProjectTag, { "tagContent": project.status[pageLanguage], "colorScheme": "bright", "data-astro-cid-amng4zvp": true })} </div> <p class="card-title" data-astro-cid-amng4zvp>${project.title[pageLanguage]}</p> </div> <p class="card-text" data-astro-cid-amng4zvp>${`${project.shortDescription[pageLanguage].slice(0, 200)}...`}</p> </div> <a${addAttribute(`/${pageLanguage}/projects/${project.slug}`, "href")} class="project-link" data-astro-cid-amng4zvp> <img${addAttribute(Arrow.src, "src")} alt="" data-astro-cid-amng4zvp> <span data-astro-cid-amng4zvp>${buttonTranslations("mehr", language)}</span> </a> </div>`;
+    )}`, "data-astro-cid-amng4zvp": true })} ${renderComponent($$result, "ProjectTag", $$ProjectTag, { "tagContent": project.customer[pageLanguage], "colorScheme": "bright", "data-astro-cid-amng4zvp": true })} <!--<ProjectTag tagContent={project.tl} colorScheme="bright"/>--> ${renderComponent($$result, "ProjectTag", $$ProjectTag, { "tagContent": project.date, "colorScheme": "bright", "data-astro-cid-amng4zvp": true })} ${renderComponent($$result, "ProjectTag", $$ProjectTag, { "tagContent": project.status[pageLanguage], "colorScheme": "bright", "data-astro-cid-amng4zvp": true })} </div> <p class="card-title" data-astro-cid-amng4zvp>${project.title[pageLanguage]}</p> </div> <p class="card-text" data-astro-cid-amng4zvp>${`${project.shortDescription[pageLanguage].slice(0, 200)}...`}</p> </div> <a${addAttribute(`/${pageLanguage}/projects/${project.slug}`, "href")} class="project-link" data-astro-cid-amng4zvp> <img${addAttribute(Arrow.src, "src")} alt="" data-astro-cid-amng4zvp> <span data-astro-cid-amng4zvp>${buttonTranslations("mehr", language)}</span> </a> </div>`;
   })} </div> </div> </section> `;
 }, "C:/Users/sabri/OneDrive/Desktop/feuchter-gmbh-astro/feuchter-gmbh/src/components/Projects.astro", void 0);
 

@@ -127,8 +127,8 @@ const $$TeamGrid = createComponent(($$result, $$props, $$slots) => {
       img: markus.src,
       name: "Markus Feuchter",
       role: {
-        de: "Produktentwicklung",
-        en: "Product Development"
+        de: "Qualit\xE4tsmanagement",
+        en: "Qualitymanagement"
       }
     },
     {

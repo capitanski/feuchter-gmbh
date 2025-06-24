@@ -284,7 +284,61 @@ const berlinTrainingHose = new Proxy({"src":"/custom-folder/trainingsanzug_berli
 						}
 					});
 
+const kbsJacke = new Proxy({"src":"/custom-folder/kbs_kaelteschutz_jacke.DrUyy_9t.webp","width":990,"height":990,"format":"webp"}, {
+						get(target, name, receiver) {
+							if (name === 'clone') {
+								return structuredClone(target);
+							}
+							if (name === 'fsPath') {
+								return "C:/Users/sabri/OneDrive/Desktop/feuchter-gmbh-astro/feuchter-gmbh/src/assets/Projekte/kbs_kaelteschutz_jacke.webp";
+							}
+							
+							return target[name];
+						}
+					});
+
+const kbsHose = new Proxy({"src":"/custom-folder/kbs_kaelteschutz_hose.DKJe2vVE.webp","width":990,"height":990,"format":"webp"}, {
+						get(target, name, receiver) {
+							if (name === 'clone') {
+								return structuredClone(target);
+							}
+							if (name === 'fsPath') {
+								return "C:/Users/sabri/OneDrive/Desktop/feuchter-gmbh-astro/feuchter-gmbh/src/assets/Projekte/kbs_kaelteschutz_hose.webp";
+							}
+							
+							return target[name];
+						}
+					});
+
 const projects = [
+  {
+    title: {
+      de: "KBS Kälteschutzausrüstung",
+      en: "KBS Cold Protection",
+    },
+    slug: "kbs-kaelteschutz",
+    shortDescription: {
+      de: "Die Unterzieh-Kälteschutzausrüstung des KBS der deutschen Bundeswehr.",
+      en: "The undergarment cold protection equipment of the KBS of the German Armed Forces.",
+    },
+    mainImage: "https://example.com/kaelteschutz.webp",
+    customer: {
+      de: "BWBM",
+      en: "Federal Office for Bundeswehr Equipment",
+    },
+    tags: {
+      de: ["kaelteschutz", "gefuttert"],
+      en: ["kaelteschutz", "gefuttert"],
+    },
+    tl: "TL 8415-0234/TL 8415-0260",
+    images: [kbsJacke.src, kbsHose.src],
+    amount: 264000,
+    status: {
+      de: "Laufend",
+      en: "Running",
+    },
+    date: "2025",
+  },
   {
     title: {
       de: "BWBM Kälteschutz",

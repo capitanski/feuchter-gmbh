@@ -1,7 +1,7 @@
 import { e as createAstro, f as createComponent, m as maybeRenderHead, h as addAttribute, i as renderComponent, r as renderTemplate } from '../../chunks/astro/server_C55uJX-_.mjs';
 import 'kleur/colors';
 import { C as Circles } from '../../chunks/Circles_Bt8dJA-c.mjs';
-import { $ as $$ContactForm } from '../../chunks/ContactForm_IozG0gYi.mjs';
+import { $ as $$ContactForm } from '../../chunks/ContactForm_Bdlqd3z3.mjs';
 /* empty css                                      */
 import { $ as $$Layout } from '../../chunks/Layout_CxFWCwmj.mjs';
 export { renderers } from '../../renderers.mjs';
