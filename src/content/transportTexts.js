@@ -7,8 +7,8 @@ import mobileStaubhaube from "@/assets/Staubhaube mobile.webp";
 export const transportTexts = {
   protectivewall: {
     heading: {
-      de: "Die patentierte Schutzwand für Rollcontainer",
-      en: "The patented protective wall for roll cage trolleys",
+      de: "Die innovative Schutzwand für Rollcontainer",
+      en: "The innovative protective wall for roll cage trolleys",
     },
     subtitle: {
       de: "Nachhaltig sichern statt verschwenden",

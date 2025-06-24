@@ -22,8 +22,8 @@ import schutzwandHellgrau from "@/assets/Produkte/schutzwand_hellgrau.webp"
 export const schutzwand = {
     headerImage: schutzwandHeader.src,
     title: {
-        de: "Die Patentierte Schutzwand für Rollcontainer",
-        en: "The Patented Protective Wall for Roll Containers"
+        de: "Die innovative Schutzwand für Rollcontainer",
+        en: "The innovative Protective Wall for Roll Containers"
     },
     subtitle: {
         de: "Nachhaltig sichern statt verschwenden",
