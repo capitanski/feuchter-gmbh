@@ -19,7 +19,7 @@ const felix = new Proxy({"src":"/custom-folder/felix_feuchter.DND1vuPT.webp","wi
 						}
 					});
 
-const klaus = new Proxy({"src":"/custom-folder/CEO.C16dMTc5.webp","width":400,"height":400,"format":"webp"}, {
+const klaus = new Proxy({"src":"/custom-folder/klaus_feuchter.C16dMTc5.webp","width":400,"height":400,"format":"webp"}, {
 						get(target, name, receiver) {
 							if (name === 'clone') {
 								return structuredClone(target);

@@ -1,4 +1,4 @@
-const Transportloesungen = new Proxy({"src":"/custom-folder/schutzwand_grid.DSQAWzn9.webp","width":3000,"height":3000,"format":"webp"}, {
+const Transportloesungen = new Proxy({"src":"/custom-folder/schutzwand_grid.BXYe42tP.webp","width":3000,"height":3000,"format":"webp"}, {
 						get(target, name, receiver) {
 							if (name === 'clone') {
 								return structuredClone(target);
@@ -11,7 +11,7 @@ const Transportloesungen = new Proxy({"src":"/custom-folder/schutzwand_grid.DSQA
 						}
 					});
 
-const Thermohaube = new Proxy({"src":"/custom-folder/thermohaube_grid.DyR9Ezaw.webp","width":1501,"height":1501,"format":"webp"}, {
+const Thermohaube = new Proxy({"src":"/custom-folder/thermohaube_grid.Df-aPUrW.webp","width":3000,"height":3000,"format":"webp"}, {
 						get(target, name, receiver) {
 							if (name === 'clone') {
 								return structuredClone(target);
@@ -24,7 +24,7 @@ const Thermohaube = new Proxy({"src":"/custom-folder/thermohaube_grid.DyR9Ezaw.w
 						}
 					});
 
-const Staubhaube = new Proxy({"src":"/custom-folder/staubhaube_grid.Dmf3611O.webp","width":3000,"height":3000,"format":"webp"}, {
+const Staubhaube = new Proxy({"src":"/custom-folder/staubhaube_grid.Buvw9wOb.webp","width":3000,"height":3000,"format":"webp"}, {
 						get(target, name, receiver) {
 							if (name === 'clone') {
 								return structuredClone(target);

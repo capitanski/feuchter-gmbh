@@ -7,7 +7,7 @@ import { b as buttonTranslations, $ as $$Layout } from '../chunks/Layout_COPaMLl
 import { $ as $$Leistungen } from '../chunks/Leistungen_Bgu-dGnU.mjs';
 import 'clsx';
 import { $ as $$Projects } from '../chunks/Projects_C6yTqQnc.mjs';
-import { T as Transportloesungen, a as Thermohaube, S as Staubhaube } from '../chunks/staubhaube_grid_COihfAhI.mjs';
+import { T as Transportloesungen, a as Thermohaube, S as Staubhaube } from '../chunks/staubhaube_grid_Dw_xqCSQ.mjs';
 import { B as Bekleidung, a as Behoerdenkleidung, C as Corporate } from '../chunks/Corporate Fashion_DqPmN4jq.mjs';
 import { C as Circles$2 } from '../chunks/projects_DMM2jGj4.mjs';
 import { A as Arrow } from '../chunks/Arrow_sand_5oaPgMNc.mjs';
@@ -43,19 +43,6 @@ const $$Welcome = createComponent(($$result, $$props, $$slots) => {
   return renderTemplate`${maybeRenderHead()}<section data-astro-cid-mmc7otgs> <img${addAttribute(Scribble.src, "src")} alt="" class="scribble" fetchpriority="high" loading="eager" data-astro-cid-mmc7otgs> <div class="container" data-astro-cid-mmc7otgs> <img${addAttribute(Circles$1.src, "src")} alt="" class="circles-svg" fetchpriority="high" loading="eager" data-astro-cid-mmc7otgs> <div class="hero-container" data-astro-cid-mmc7otgs> <h1 class="hero-heading animatable" data-astro-cid-mmc7otgs> ${heading} </h1> <p class="subtitle animatable" data-astro-cid-mmc7otgs>${subtitle}</p> <p class="hero-paragraph" data-astro-cid-mmc7otgs>${unescapeHTML(introText)}</p> <div class="button-wrapper hero-button-wrapper" data-astro-cid-mmc7otgs> ${renderComponent($$result, "Button", $$Button, { "linkText": buttonTranslations("contact", language), "target": `/${language}/contact`, "class": "hero-button-1", "variant": "primary", "data-astro-cid-mmc7otgs": true })} ${renderComponent($$result, "Button", $$Button, { "linkText": buttonTranslations("projects", language), "target": `/${language}/projects`, "class": "hero-button-2", "variant": "secondary", "data-astro-cid-mmc7otgs": true })} </div> </div> </div> </section> `;
 }, "C:/Users/sabri/OneDrive/Desktop/feuchter-gmbh-astro/feuchter-gmbh/src/components/Welcome.astro", void 0);
 
-const CEO = new Proxy({"src":"/custom-folder/CEO.C16dMTc5.webp","width":400,"height":400,"format":"webp"}, {
-						get(target, name, receiver) {
-							if (name === 'clone') {
-								return structuredClone(target);
-							}
-							if (name === 'fsPath') {
-								return "C:/Users/sabri/OneDrive/Desktop/feuchter-gmbh-astro/feuchter-gmbh/src/assets/CEO.webp";
-							}
-							
-							return target[name];
-						}
-					});
-
 const Quotes = new Proxy({"src":"/custom-folder/Quotes.CNCkwFDX.svg","width":149,"height":110,"format":"svg"}, {
 						get(target, name, receiver) {
 							if (name === 'clone') {
@@ -78,7 +65,7 @@ const $$Cite = createComponent(($$result, $$props, $$slots) => {
     de: `"Seit 1957 stehen wir f\xFCr erstklassige Funktionalit\xE4t, Langlebigkeit und Innovation in der Produktion von Milit\xE4r- und Beh\xF6rdenbekleidung. Mit unserer jahrzehntelangen Erfahrung und h\xF6chsten Qualit\xE4tsstandards bieten wir nun auch Outdoor-, Survival- und Sicherheitsanbietern ma\xDFgeschneiderte Bekleidungsl\xF6sungen. Unser Ziel ist es, Profis in jeder Situation zuverl\xE4ssig auszur\xFCsten \u2013 mit Kleidung, die sch\xFCtzt, unterst\xFCtzt und h\xF6chsten Anforderungen gerecht wird."`,
     en: `"Since 1957, we have stood for outstanding functionality, durability, and innovation in the production of military and official agency clothing. With decades of experience and the highest quality standards, we now also offer customized clothing solutions for outdoor, survival, and security providers. Our goal is to equip professionals reliably in any situation \u2013 with clothing that protects, supports, and meets the highest demands."`
   };
-  return renderTemplate`${maybeRenderHead()}<section data-astro-cid-lwmcem6b> <img${addAttribute(Quotes.src, "src")} alt="" class="img-absolute animatable-opacity" data-astro-cid-lwmcem6b> <div class="container" data-astro-cid-lwmcem6b> <p class="cite animatable" data-astro-cid-lwmcem6b> ${cite[language]} </p> <img${addAttribute(CEO.src, "src")} alt="" class="ceo animatable" data-astro-cid-lwmcem6b> <div class="ceo-and-role" data-astro-cid-lwmcem6b> <p class="ceo-name" data-astro-cid-lwmcem6b>Klaus Feuchter</p> <p class="job-role" data-astro-cid-lwmcem6b>CEO, Feuchter GmbH</p> </div> </div> </section> `;
+  return renderTemplate`${maybeRenderHead()}<section data-astro-cid-lwmcem6b> <img${addAttribute(Quotes.src, "src")} alt="" class="img-absolute animatable-opacity" data-astro-cid-lwmcem6b> <div class="container" data-astro-cid-lwmcem6b> <p class="cite animatable" data-astro-cid-lwmcem6b> ${cite[language]} </p> <!-- <img src={CEO.src} alt="" class="ceo animatable" />--> <div class="ceo-and-role" data-astro-cid-lwmcem6b> <p class="ceo-name" data-astro-cid-lwmcem6b>Klaus Feuchter</p> <p class="job-role" data-astro-cid-lwmcem6b>CEO, Feuchter GmbH</p> </div> </div> </section> `;
 }, "C:/Users/sabri/OneDrive/Desktop/feuchter-gmbh-astro/feuchter-gmbh/src/components/Cite.astro", void 0);
 
 const Circles = new Proxy({"src":"/custom-folder/Swirl_bottom_right.DSaQAhP9.webp","width":1000,"height":1000,"format":"webp"}, {

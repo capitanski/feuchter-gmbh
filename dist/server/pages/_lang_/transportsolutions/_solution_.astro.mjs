@@ -1,11 +1,11 @@
 import { e as createAstro, f as createComponent, i as renderComponent, r as renderTemplate } from '../../../chunks/astro/server_C55uJX-_.mjs';
 import 'kleur/colors';
 import { $ as $$Layout } from '../../../chunks/Layout_COPaMLlO.mjs';
-import { s as star, $ as $$ProductGridTransport } from '../../../chunks/official_headwear_CxxmSCf1.mjs';
+import { s as star, $ as $$ProductGridTransport } from '../../../chunks/official_headwear_D1ExG32J.mjs';
 import { $ as $$ContactForm } from '../../../chunks/ContactForm_C0GpXmmF.mjs';
 import '../../../chunks/schutzwand_verschluss_BqHNROck.mjs';
 import '../../../chunks/Transportwand farbig_QNd6lEeh.mjs';
-import { T as Transportloesungen, a as Thermohaube, S as Staubhaube } from '../../../chunks/staubhaube_grid_COihfAhI.mjs';
+import { T as Transportloesungen, a as Thermohaube, S as Staubhaube } from '../../../chunks/staubhaube_grid_Dw_xqCSQ.mjs';
 import '../../../chunks/Thermohaube farbig_DEdBemqE.mjs';
 import '../../../chunks/projekte_B500-ns2.mjs';
 export { renderers } from '../../../renderers.mjs';

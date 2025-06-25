@@ -1,7 +1,7 @@
 import { e as createAstro, f as createComponent, i as renderComponent, r as renderTemplate, m as maybeRenderHead } from '../../chunks/astro/server_C55uJX-_.mjs';
 import 'kleur/colors';
 import { $ as $$Layout } from '../../chunks/Layout_COPaMLlO.mjs';
-import { $ as $$CategoryHeader } from '../../chunks/CategoryHeader_DlyDpEaM.mjs';
+import { $ as $$CategoryHeader } from '../../chunks/CategoryHeader_ZWyU2TOY.mjs';
 import '../../chunks/schutzwand_verschluss_BqHNROck.mjs';
 import { B as Bekleidung, a as Behoerdenkleidung, C as Corporate } from '../../chunks/Corporate Fashion_DqPmN4jq.mjs';
 /* empty css                                    */
