@@ -1,13 +1,13 @@
 import { e as createAstro, f as createComponent, i as renderComponent, r as renderTemplate } from '../../../chunks/astro/server_C55uJX-_.mjs';
 import 'kleur/colors';
-import { $ as $$Layout } from '../../../chunks/Layout_BMH1rKNG.mjs';
-import { s as star, $ as $$ProductGridTransport } from '../../../chunks/official_headwear_CnY_kWA_.mjs';
-import { $ as $$ContactForm } from '../../../chunks/ContactForm_C1_vrPTY.mjs';
-import '../../../chunks/schutzwand_verschluss_BqHNROck.mjs';
-import '../../../chunks/Transportwand farbig_QNd6lEeh.mjs';
-import { T as Transportloesungen, a as Thermohaube, S as Staubhaube } from '../../../chunks/staubhaube_grid_Dw_xqCSQ.mjs';
-import '../../../chunks/Thermohaube farbig_DEdBemqE.mjs';
-import '../../../chunks/projekte_B500-ns2.mjs';
+import { $ as $$Layout } from '../../../chunks/Layout_phyfGR1g.mjs';
+import { s as star, $ as $$ProductGridTransport } from '../../../chunks/official_headwear_BRz-Tp_I.mjs';
+import { $ as $$ContactForm } from '../../../chunks/ContactForm_5Gkc2iBg.mjs';
+import '../../../chunks/schutzwand_verschluss_CjroLYuF.mjs';
+import '../../../chunks/Transportwand farbig_BHEz4Wf-.mjs';
+import { T as Transportloesungen, a as Thermohaube, S as Staubhaube } from '../../../chunks/staubhaube_grid_CAIyUw5X.mjs';
+import '../../../chunks/Thermohaube farbig_BuAhbC2T.mjs';
+import '../../../chunks/projekte_Bn1KJKvI.mjs';
 export { renderers } from '../../../renderers.mjs';
 
 const schutzwandHaken = new Proxy({"src":"/custom-folder/schutzwand_haken.BE5nPagk.webp","width":3000,"height":3000,"format":"webp"}, {
@@ -16,7 +16,7 @@ const schutzwandHaken = new Proxy({"src":"/custom-folder/schutzwand_haken.BE5nPa
 								return structuredClone(target);
 							}
 							if (name === 'fsPath') {
-								return "C:/Users/sabri/OneDrive/Desktop/feuchter-gmbh-astro/feuchter-gmbh/src/assets/Produkte/schutzwand_haken.webp";
+								return "C:/Users/sabri/OneDrive/Desktop/webprojekte/feuchter-gmbh-astro/feuchter-gmbh/src/assets/Produkte/schutzwand_haken.webp";
 							}
 							
 							return target[name];
@@ -29,7 +29,7 @@ const schutzwandSpannung = new Proxy({"src":"/custom-folder/schutzwand_spannung.
 								return structuredClone(target);
 							}
 							if (name === 'fsPath') {
-								return "C:/Users/sabri/OneDrive/Desktop/feuchter-gmbh-astro/feuchter-gmbh/src/assets/Produkte/schutzwand_spannung.webp";
+								return "C:/Users/sabri/OneDrive/Desktop/webprojekte/feuchter-gmbh-astro/feuchter-gmbh/src/assets/Produkte/schutzwand_spannung.webp";
 							}
 							
 							return target[name];
@@ -42,7 +42,7 @@ const schutzwandLagerung = new Proxy({"src":"/custom-folder/schutzwand_lagerung.
 								return structuredClone(target);
 							}
 							if (name === 'fsPath') {
-								return "C:/Users/sabri/OneDrive/Desktop/feuchter-gmbh-astro/feuchter-gmbh/src/assets/Produkte/schutzwand_lagerung.webp";
+								return "C:/Users/sabri/OneDrive/Desktop/webprojekte/feuchter-gmbh-astro/feuchter-gmbh/src/assets/Produkte/schutzwand_lagerung.webp";
 							}
 							
 							return target[name];
@@ -55,7 +55,7 @@ const schutzwandSchwarz = new Proxy({"src":"/custom-folder/schutzwand_schwarz.NR
 								return structuredClone(target);
 							}
 							if (name === 'fsPath') {
-								return "C:/Users/sabri/OneDrive/Desktop/feuchter-gmbh-astro/feuchter-gmbh/src/assets/Produkte/schutzwand_schwarz.webp";
+								return "C:/Users/sabri/OneDrive/Desktop/webprojekte/feuchter-gmbh-astro/feuchter-gmbh/src/assets/Produkte/schutzwand_schwarz.webp";
 							}
 							
 							return target[name];
@@ -68,7 +68,7 @@ const schutzwandBeige = new Proxy({"src":"/custom-folder/schutzwand_beige.C83XuR
 								return structuredClone(target);
 							}
 							if (name === 'fsPath') {
-								return "C:/Users/sabri/OneDrive/Desktop/feuchter-gmbh-astro/feuchter-gmbh/src/assets/Produkte/schutzwand_beige.webp";
+								return "C:/Users/sabri/OneDrive/Desktop/webprojekte/feuchter-gmbh-astro/feuchter-gmbh/src/assets/Produkte/schutzwand_beige.webp";
 							}
 							
 							return target[name];
@@ -81,7 +81,7 @@ const schutzwandAnthrazit = new Proxy({"src":"/custom-folder/schutzwand_anthrazi
 								return structuredClone(target);
 							}
 							if (name === 'fsPath') {
-								return "C:/Users/sabri/OneDrive/Desktop/feuchter-gmbh-astro/feuchter-gmbh/src/assets/Produkte/schutzwand_anthrazit.webp";
+								return "C:/Users/sabri/OneDrive/Desktop/webprojekte/feuchter-gmbh-astro/feuchter-gmbh/src/assets/Produkte/schutzwand_anthrazit.webp";
 							}
 							
 							return target[name];
@@ -94,7 +94,7 @@ const schutzwandBlau = new Proxy({"src":"/custom-folder/schutzwand_navy.BRGOlwcG
 								return structuredClone(target);
 							}
 							if (name === 'fsPath') {
-								return "C:/Users/sabri/OneDrive/Desktop/feuchter-gmbh-astro/feuchter-gmbh/src/assets/Produkte/schutzwand_navy.webp";
+								return "C:/Users/sabri/OneDrive/Desktop/webprojekte/feuchter-gmbh-astro/feuchter-gmbh/src/assets/Produkte/schutzwand_navy.webp";
 							}
 							
 							return target[name];
@@ -107,7 +107,7 @@ const schutzwandHellgrau = new Proxy({"src":"/custom-folder/schutzwand_hellgrau.
 								return structuredClone(target);
 							}
 							if (name === 'fsPath') {
-								return "C:/Users/sabri/OneDrive/Desktop/feuchter-gmbh-astro/feuchter-gmbh/src/assets/Produkte/schutzwand_hellgrau.webp";
+								return "C:/Users/sabri/OneDrive/Desktop/webprojekte/feuchter-gmbh-astro/feuchter-gmbh/src/assets/Produkte/schutzwand_hellgrau.webp";
 							}
 							
 							return target[name];
@@ -415,7 +415,7 @@ new Proxy({"src":"/custom-folder/Thermohaube quer.CkmRKXvt.webp","width":1920,"h
 								return structuredClone(target);
 							}
 							if (name === 'fsPath') {
-								return "C:/Users/sabri/OneDrive/Desktop/feuchter-gmbh-astro/feuchter-gmbh/src/assets/Thermohaube quer.webp";
+								return "C:/Users/sabri/OneDrive/Desktop/webprojekte/feuchter-gmbh-astro/feuchter-gmbh/src/assets/Thermohaube quer.webp";
 							}
 							
 							return target[name];
@@ -428,7 +428,7 @@ const thermhaubeOffen = new Proxy({"src":"/custom-folder/thermohaube_schraeg_off
 								return structuredClone(target);
 							}
 							if (name === 'fsPath') {
-								return "C:/Users/sabri/OneDrive/Desktop/feuchter-gmbh-astro/feuchter-gmbh/src/assets/Produkte/thermohaube_schraeg_offen.webp";
+								return "C:/Users/sabri/OneDrive/Desktop/webprojekte/feuchter-gmbh-astro/feuchter-gmbh/src/assets/Produkte/thermohaube_schraeg_offen.webp";
 							}
 							
 							return target[name];
@@ -441,7 +441,7 @@ const thermohaubeVerschluss = new Proxy({"src":"/custom-folder/staubhaube_versch
 								return structuredClone(target);
 							}
 							if (name === 'fsPath') {
-								return "C:/Users/sabri/OneDrive/Desktop/feuchter-gmbh-astro/feuchter-gmbh/src/assets/Produkte/thermohaube_verschluss.webp";
+								return "C:/Users/sabri/OneDrive/Desktop/webprojekte/feuchter-gmbh-astro/feuchter-gmbh/src/assets/Produkte/thermohaube_verschluss.webp";
 							}
 							
 							return target[name];
@@ -454,7 +454,7 @@ const staubhaubeFertig = new Proxy({"src":"/custom-folder/haube_dokumententasche
 								return structuredClone(target);
 							}
 							if (name === 'fsPath') {
-								return "C:/Users/sabri/OneDrive/Desktop/feuchter-gmbh-astro/feuchter-gmbh/src/assets/Produkte/haube_dokumententasche.webp";
+								return "C:/Users/sabri/OneDrive/Desktop/webprojekte/feuchter-gmbh-astro/feuchter-gmbh/src/assets/Produkte/haube_dokumententasche.webp";
 							}
 							
 							return target[name];
@@ -467,7 +467,7 @@ const haubeSchwarz = new Proxy({"src":"/custom-folder/haube_schwarz.CDFQzJvp.web
 								return structuredClone(target);
 							}
 							if (name === 'fsPath') {
-								return "C:/Users/sabri/OneDrive/Desktop/feuchter-gmbh-astro/feuchter-gmbh/src/assets/Produkte/haube_schwarz.webp";
+								return "C:/Users/sabri/OneDrive/Desktop/webprojekte/feuchter-gmbh-astro/feuchter-gmbh/src/assets/Produkte/haube_schwarz.webp";
 							}
 							
 							return target[name];
@@ -480,7 +480,7 @@ const haubeWeiss = new Proxy({"src":"/custom-folder/haube_weiss.Dr2uE-Lu.webp","
 								return structuredClone(target);
 							}
 							if (name === 'fsPath') {
-								return "C:/Users/sabri/OneDrive/Desktop/feuchter-gmbh-astro/feuchter-gmbh/src/assets/Produkte/haube_weiss.webp";
+								return "C:/Users/sabri/OneDrive/Desktop/webprojekte/feuchter-gmbh-astro/feuchter-gmbh/src/assets/Produkte/haube_weiss.webp";
 							}
 							
 							return target[name];
@@ -493,7 +493,7 @@ const haubeSand = new Proxy({"src":"/custom-folder/haube_sand.BTcnGNgP.webp","wi
 								return structuredClone(target);
 							}
 							if (name === 'fsPath') {
-								return "C:/Users/sabri/OneDrive/Desktop/feuchter-gmbh-astro/feuchter-gmbh/src/assets/Produkte/haube_sand.webp";
+								return "C:/Users/sabri/OneDrive/Desktop/webprojekte/feuchter-gmbh-astro/feuchter-gmbh/src/assets/Produkte/haube_sand.webp";
 							}
 							
 							return target[name];
@@ -506,7 +506,7 @@ const haubeHellbraun = new Proxy({"src":"/custom-folder/haube_hellbraun.zTYEsMQy
 								return structuredClone(target);
 							}
 							if (name === 'fsPath') {
-								return "C:/Users/sabri/OneDrive/Desktop/feuchter-gmbh-astro/feuchter-gmbh/src/assets/Produkte/haube_hellbraun.webp";
+								return "C:/Users/sabri/OneDrive/Desktop/webprojekte/feuchter-gmbh-astro/feuchter-gmbh/src/assets/Produkte/haube_hellbraun.webp";
 							}
 							
 							return target[name];
@@ -519,7 +519,7 @@ const haubeDunkelgruen = new Proxy({"src":"/custom-folder/haube_dunkelgruen.kgDx
 								return structuredClone(target);
 							}
 							if (name === 'fsPath') {
-								return "C:/Users/sabri/OneDrive/Desktop/feuchter-gmbh-astro/feuchter-gmbh/src/assets/Produkte/haube_dunkelgruen.webp";
+								return "C:/Users/sabri/OneDrive/Desktop/webprojekte/feuchter-gmbh-astro/feuchter-gmbh/src/assets/Produkte/haube_dunkelgruen.webp";
 							}
 							
 							return target[name];
@@ -532,7 +532,7 @@ const haubeAnthrazit = new Proxy({"src":"/custom-folder/haube_anthrazit.BnL3dMnS
 								return structuredClone(target);
 							}
 							if (name === 'fsPath') {
-								return "C:/Users/sabri/OneDrive/Desktop/feuchter-gmbh-astro/feuchter-gmbh/src/assets/Produkte/haube_anthrazit.webp";
+								return "C:/Users/sabri/OneDrive/Desktop/webprojekte/feuchter-gmbh-astro/feuchter-gmbh/src/assets/Produkte/haube_anthrazit.webp";
 							}
 							
 							return target[name];
@@ -545,7 +545,7 @@ const haubePink = new Proxy({"src":"/custom-folder/haube_pink.CpaU0ikj.webp","wi
 								return structuredClone(target);
 							}
 							if (name === 'fsPath') {
-								return "C:/Users/sabri/OneDrive/Desktop/feuchter-gmbh-astro/feuchter-gmbh/src/assets/Produkte/haube_pink.webp";
+								return "C:/Users/sabri/OneDrive/Desktop/webprojekte/feuchter-gmbh-astro/feuchter-gmbh/src/assets/Produkte/haube_pink.webp";
 							}
 							
 							return target[name];
@@ -558,7 +558,7 @@ const haubeSafran = new Proxy({"src":"/custom-folder/haube_safran.5OwEt5Q1.webp"
 								return structuredClone(target);
 							}
 							if (name === 'fsPath') {
-								return "C:/Users/sabri/OneDrive/Desktop/feuchter-gmbh-astro/feuchter-gmbh/src/assets/Produkte/haube_safran.webp";
+								return "C:/Users/sabri/OneDrive/Desktop/webprojekte/feuchter-gmbh-astro/feuchter-gmbh/src/assets/Produkte/haube_safran.webp";
 							}
 							
 							return target[name];
@@ -571,7 +571,7 @@ const haubeRot = new Proxy({"src":"/custom-folder/haube_rot.DwvQScc_.webp","widt
 								return structuredClone(target);
 							}
 							if (name === 'fsPath') {
-								return "C:/Users/sabri/OneDrive/Desktop/feuchter-gmbh-astro/feuchter-gmbh/src/assets/Produkte/haube_rot.webp";
+								return "C:/Users/sabri/OneDrive/Desktop/webprojekte/feuchter-gmbh-astro/feuchter-gmbh/src/assets/Produkte/haube_rot.webp";
 							}
 							
 							return target[name];
@@ -584,7 +584,7 @@ const haubeDunkelrot = new Proxy({"src":"/custom-folder/haube_dunkelrot.DUpVL5K7
 								return structuredClone(target);
 							}
 							if (name === 'fsPath') {
-								return "C:/Users/sabri/OneDrive/Desktop/feuchter-gmbh-astro/feuchter-gmbh/src/assets/Produkte/haube_dunkelrot.webp";
+								return "C:/Users/sabri/OneDrive/Desktop/webprojekte/feuchter-gmbh-astro/feuchter-gmbh/src/assets/Produkte/haube_dunkelrot.webp";
 							}
 							
 							return target[name];
@@ -597,7 +597,7 @@ const haubeHellgruen = new Proxy({"src":"/custom-folder/haube_hellgruen.aX0nsMhC
 								return structuredClone(target);
 							}
 							if (name === 'fsPath') {
-								return "C:/Users/sabri/OneDrive/Desktop/feuchter-gmbh-astro/feuchter-gmbh/src/assets/Produkte/haube_hellgruen.webp";
+								return "C:/Users/sabri/OneDrive/Desktop/webprojekte/feuchter-gmbh-astro/feuchter-gmbh/src/assets/Produkte/haube_hellgruen.webp";
 							}
 							
 							return target[name];
@@ -610,7 +610,7 @@ const haubeHellblau = new Proxy({"src":"/custom-folder/haube_hellblau.1R0Y9E1f.w
 								return structuredClone(target);
 							}
 							if (name === 'fsPath') {
-								return "C:/Users/sabri/OneDrive/Desktop/feuchter-gmbh-astro/feuchter-gmbh/src/assets/Produkte/haube_hellblau.webp";
+								return "C:/Users/sabri/OneDrive/Desktop/webprojekte/feuchter-gmbh-astro/feuchter-gmbh/src/assets/Produkte/haube_hellblau.webp";
 							}
 							
 							return target[name];
@@ -623,7 +623,7 @@ const haubeNavy = new Proxy({"src":"/custom-folder/haube_navy.8tu38_ya.webp","wi
 								return structuredClone(target);
 							}
 							if (name === 'fsPath') {
-								return "C:/Users/sabri/OneDrive/Desktop/feuchter-gmbh-astro/feuchter-gmbh/src/assets/Produkte/haube_navy.webp";
+								return "C:/Users/sabri/OneDrive/Desktop/webprojekte/feuchter-gmbh-astro/feuchter-gmbh/src/assets/Produkte/haube_navy.webp";
 							}
 							
 							return target[name];
@@ -931,7 +931,7 @@ new Proxy({"src":"/custom-folder/Staubhaube quer.BaRd--hh.webp","width":1920,"he
 								return structuredClone(target);
 							}
 							if (name === 'fsPath') {
-								return "C:/Users/sabri/OneDrive/Desktop/feuchter-gmbh-astro/feuchter-gmbh/src/assets/Staubhaube quer.webp";
+								return "C:/Users/sabri/OneDrive/Desktop/webprojekte/feuchter-gmbh-astro/feuchter-gmbh/src/assets/Staubhaube quer.webp";
 							}
 							
 							return target[name];
@@ -944,7 +944,7 @@ const staubhaubeOffen = new Proxy({"src":"/custom-folder/staubhaube_schraeg_offe
 								return structuredClone(target);
 							}
 							if (name === 'fsPath') {
-								return "C:/Users/sabri/OneDrive/Desktop/feuchter-gmbh-astro/feuchter-gmbh/src/assets/Produkte/staubhaube_schraeg_offen.webp";
+								return "C:/Users/sabri/OneDrive/Desktop/webprojekte/feuchter-gmbh-astro/feuchter-gmbh/src/assets/Produkte/staubhaube_schraeg_offen.webp";
 							}
 							
 							return target[name];
@@ -957,7 +957,7 @@ const staubhaubeVerschluss = new Proxy({"src":"/custom-folder/staubhaube_verschl
 								return structuredClone(target);
 							}
 							if (name === 'fsPath') {
-								return "C:/Users/sabri/OneDrive/Desktop/feuchter-gmbh-astro/feuchter-gmbh/src/assets/Produkte/staubhaube_verschluss.webp";
+								return "C:/Users/sabri/OneDrive/Desktop/webprojekte/feuchter-gmbh-astro/feuchter-gmbh/src/assets/Produkte/staubhaube_verschluss.webp";
 							}
 							
 							return target[name];
@@ -1297,9 +1297,9 @@ const $$solution = createComponent(($$result, $$props, $$slots) => {
     subtitle = "We are looking forward to hear from you";
   }
   return renderTemplate`${renderComponent($$result, "Layout", $$Layout, { "pageTitle": metaData.pageTitle[pageLanguage], "pageDescription": metaData.pageDescription[pageLanguage] }, { "default": ($$result2) => renderTemplate` ${renderComponent($$result2, "ProductGridTransport", $$ProductGridTransport, { "pageLanguage": pageLanguage, "product": currentProduct })} ${renderComponent($$result2, "ContactForm", $$ContactForm, { "heading": heading, "subtitle": subtitle, "language": pageLanguage })} ` })}`;
-}, "C:/Users/sabri/OneDrive/Desktop/feuchter-gmbh-astro/feuchter-gmbh/src/pages/[lang]/transportsolutions/[solution].astro", void 0);
+}, "C:/Users/sabri/OneDrive/Desktop/webprojekte/feuchter-gmbh-astro/feuchter-gmbh/src/pages/[lang]/transportsolutions/[solution].astro", void 0);
 
-const $$file = "C:/Users/sabri/OneDrive/Desktop/feuchter-gmbh-astro/feuchter-gmbh/src/pages/[lang]/transportsolutions/[solution].astro";
+const $$file = "C:/Users/sabri/OneDrive/Desktop/webprojekte/feuchter-gmbh-astro/feuchter-gmbh/src/pages/[lang]/transportsolutions/[solution].astro";
 const $$url = "/[lang]/transportsolutions/[solution]";
 
 const _page = /*#__PURE__*/Object.freeze(/*#__PURE__*/Object.defineProperty({

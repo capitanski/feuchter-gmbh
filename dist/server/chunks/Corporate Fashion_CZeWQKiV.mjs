@@ -4,7 +4,7 @@ const Bekleidung = new Proxy({"src":"/custom-folder/Military Square.D7Dm4JcL.web
 								return structuredClone(target);
 							}
 							if (name === 'fsPath') {
-								return "C:/Users/sabri/OneDrive/Desktop/feuchter-gmbh-astro/feuchter-gmbh/src/assets/Military Square.webp";
+								return "C:/Users/sabri/OneDrive/Desktop/webprojekte/feuchter-gmbh-astro/feuchter-gmbh/src/assets/Military Square.webp";
 							}
 							
 							return target[name];
@@ -17,7 +17,7 @@ const Behoerdenkleidung = new Proxy({"src":"/custom-folder/officialwear.B7lak7XA
 								return structuredClone(target);
 							}
 							if (name === 'fsPath') {
-								return "C:/Users/sabri/OneDrive/Desktop/feuchter-gmbh-astro/feuchter-gmbh/src/assets/officialwear.webp";
+								return "C:/Users/sabri/OneDrive/Desktop/webprojekte/feuchter-gmbh-astro/feuchter-gmbh/src/assets/officialwear.webp";
 							}
 							
 							return target[name];
@@ -30,7 +30,7 @@ const Corporate = new Proxy({"src":"/custom-folder/Corporate Fashion.BH4MCTWd.we
 								return structuredClone(target);
 							}
 							if (name === 'fsPath') {
-								return "C:/Users/sabri/OneDrive/Desktop/feuchter-gmbh-astro/feuchter-gmbh/src/assets/Corporate Fashion.webp";
+								return "C:/Users/sabri/OneDrive/Desktop/webprojekte/feuchter-gmbh-astro/feuchter-gmbh/src/assets/Corporate Fashion.webp";
 							}
 							
 							return target[name];

@@ -4,7 +4,7 @@ new Proxy({"src":"/custom-folder/Transportwand farbig.1DEYGJBS.webp","width":100
 								return structuredClone(target);
 							}
 							if (name === 'fsPath') {
-								return "C:/Users/sabri/OneDrive/Desktop/feuchter-gmbh-astro/feuchter-gmbh/src/assets/Produkte/Transportwand farbig.webp";
+								return "C:/Users/sabri/OneDrive/Desktop/webprojekte/feuchter-gmbh-astro/feuchter-gmbh/src/assets/Produkte/Transportwand farbig.webp";
 							}
 							
 							return target[name];

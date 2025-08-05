@@ -103,6 +103,14 @@ const teamMembers = [
     },
   },*/
 ];
+const leading = {
+  de: "Geschäftsführung",
+  en: "Management",
+};
+const team = {
+  de: "Das Team",
+  en: "The Team",
+};
 ---
 
 <section>
@@ -115,7 +123,7 @@ const teamMembers = [
     </div>
     <div class="right">
       <div class="leaders">
-        <h3>Geschäftsführung</h3>
+        <h3>{leading[language]}</h3>
         <div class="grid">
           {
             leaders.map((item) => {
@@ -132,7 +140,7 @@ const teamMembers = [
         </div>
       </div>
       <div class="lower">
-        <h3>Das Team</h3>
+        <h3>{team[language]}</h3>
         <div class="grid">
           {
             teamMembers.map((item) => {

@@ -1,8 +1,8 @@
 import { e as createAstro, f as createComponent, m as maybeRenderHead, h as addAttribute, r as renderTemplate } from './astro/server_C55uJX-_.mjs';
 import 'kleur/colors';
 import 'clsx';
-import { A as Arrow } from './Arrow_sand_5oaPgMNc.mjs';
-import { b as buttonTranslations } from './Layout_BMH1rKNG.mjs';
+import { A as Arrow } from './Arrow_sand_B2QntN2v.mjs';
+import { b as buttonTranslations } from './Layout_phyfGR1g.mjs';
 /* empty css                         */
 
 const $$Astro = createAstro("http://localhost:4321");
@@ -16,6 +16,6 @@ const $$CategoryHeader = createComponent(($$result, $$props, $$slots) => {
       pageLanguage
     )} </span> </a> </div> </div>`;
   })} </div> </div> `;
-}, "C:/Users/sabri/OneDrive/Desktop/feuchter-gmbh-astro/feuchter-gmbh/src/components/CategoryHeader.astro", void 0);
+}, "C:/Users/sabri/OneDrive/Desktop/webprojekte/feuchter-gmbh-astro/feuchter-gmbh/src/components/CategoryHeader.astro", void 0);
 
 export { $$CategoryHeader as $ };

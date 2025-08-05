@@ -1,6 +1,6 @@
 import { e as createAstro, f as createComponent, i as renderComponent, r as renderTemplate, m as maybeRenderHead } from '../chunks/astro/server_C55uJX-_.mjs';
 import 'kleur/colors';
-import { $ as $$Layout } from '../chunks/Layout_BMH1rKNG.mjs';
+import { $ as $$Layout } from '../chunks/Layout_phyfGR1g.mjs';
 /* empty css                               */
 export { renderers } from '../renderers.mjs';
 
@@ -14,9 +14,9 @@ const $$404 = createComponent(($$result, $$props, $$slots) => {
 Die angefragte Seite konnte leider nicht gefunden
                         werden.
 </h2>` : renderTemplate`<h2 data-astro-cid-zetdm5md>The requested page could not be found.</h2>`} </div> </section> ` })} `;
-}, "C:/Users/sabri/OneDrive/Desktop/feuchter-gmbh-astro/feuchter-gmbh/src/pages/404.astro", void 0);
+}, "C:/Users/sabri/OneDrive/Desktop/webprojekte/feuchter-gmbh-astro/feuchter-gmbh/src/pages/404.astro", void 0);
 
-const $$file = "C:/Users/sabri/OneDrive/Desktop/feuchter-gmbh-astro/feuchter-gmbh/src/pages/404.astro";
+const $$file = "C:/Users/sabri/OneDrive/Desktop/webprojekte/feuchter-gmbh-astro/feuchter-gmbh/src/pages/404.astro";
 const $$url = "/404";
 
 const _page = /*#__PURE__*/Object.freeze(/*#__PURE__*/Object.defineProperty({

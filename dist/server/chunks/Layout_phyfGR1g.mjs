@@ -9,7 +9,7 @@ const Logo = new Proxy({"src":"/custom-folder/feuchter_gmbh_logo.DsXPjw9d.svg","
 								return structuredClone(target);
 							}
 							if (name === 'fsPath') {
-								return "C:/Users/sabri/OneDrive/Desktop/feuchter-gmbh-astro/feuchter-gmbh/src/assets/feuchter_gmbh_logo.svg";
+								return "C:/Users/sabri/OneDrive/Desktop/webprojekte/feuchter-gmbh-astro/feuchter-gmbh/src/assets/feuchter_gmbh_logo.svg";
 							}
 							
 							return target[name];
@@ -22,7 +22,7 @@ const Menu = new Proxy({"src":"/custom-folder/Menu.BmJbz0by.svg","width":49,"hei
 								return structuredClone(target);
 							}
 							if (name === 'fsPath') {
-								return "C:/Users/sabri/OneDrive/Desktop/feuchter-gmbh-astro/feuchter-gmbh/src/assets/Menu.svg";
+								return "C:/Users/sabri/OneDrive/Desktop/webprojekte/feuchter-gmbh-astro/feuchter-gmbh/src/assets/Menu.svg";
 							}
 							
 							return target[name];
@@ -44,7 +44,7 @@ const $$LangSwitcher = createComponent(($$result, $$props, $$slots) => {
     searchparamString = `?category=${searchCategory}`;
   }
   return renderTemplate`${maybeRenderHead()}<nav data-astro-cid-su6xvggn> <ul data-astro-cid-su6xvggn> ${langs.map(({ lang, url: url2 }) => renderTemplate`<li data-astro-cid-su6xvggn> <a${addAttribute(`${url2}${searchparamString}`, "href")}${addAttribute(currentLang === lang ? "active" : "", "class")} data-astro-cid-su6xvggn> ${lang.toUpperCase()} </a> </li>`)} </ul> </nav> `;
-}, "C:/Users/sabri/OneDrive/Desktop/feuchter-gmbh-astro/feuchter-gmbh/src/components/LangSwitcher.astro", void 0);
+}, "C:/Users/sabri/OneDrive/Desktop/webprojekte/feuchter-gmbh-astro/feuchter-gmbh/src/components/LangSwitcher.astro", void 0);
 
 const navLinks = {
   de: [
@@ -193,8 +193,8 @@ const $$Navbar = createComponent(($$result, $$props, $$slots) => {
       currentPath === `/${language}/${link.to}` ? "active mobile-link" : "mobile-link",
       "class"
     )} data-astro-cid-5blmo7yk> ${link.text} </a>`;
-  })} </div> </nav> ${renderScript($$result, "C:/Users/sabri/OneDrive/Desktop/feuchter-gmbh-astro/feuchter-gmbh/src/components/Navbar.astro?astro&type=script&index=0&lang.ts")} `;
-}, "C:/Users/sabri/OneDrive/Desktop/feuchter-gmbh-astro/feuchter-gmbh/src/components/Navbar.astro", void 0);
+  })} </div> </nav> ${renderScript($$result, "C:/Users/sabri/OneDrive/Desktop/webprojekte/feuchter-gmbh-astro/feuchter-gmbh/src/components/Navbar.astro?astro&type=script&index=0&lang.ts")} `;
+}, "C:/Users/sabri/OneDrive/Desktop/webprojekte/feuchter-gmbh-astro/feuchter-gmbh/src/components/Navbar.astro", void 0);
 
 // Jedes zu übersetzende Element sollte in seiner Definition (Quelle alias JS Object) einen Translationkey haben
 // Oder die Translations direkt im Quell Objekt definieren, dann kann man sich diese Funktion hier sparen
@@ -462,7 +462,7 @@ const $$Footer = createComponent(($$result, $$props, $$slots) => {
   return renderTemplate`${maybeRenderHead()}<nav id="footer" data-astro-cid-sz7xmlte> <div class="nav-inner" data-astro-cid-sz7xmlte> <div class="logo-and-legal" data-astro-cid-sz7xmlte> <img${addAttribute(Logo.src, "src")} alt="" class="logo" loading="lazy" data-astro-cid-sz7xmlte> <div class="links legal" data-astro-cid-sz7xmlte> <a${addAttribute(`/${language}/legal/imprint`, "href")} data-astro-cid-sz7xmlte>${buttonTranslations("impressum", language)}</a> <a${addAttribute(`/${language}/legal/privacy`, "href")} data-astro-cid-sz7xmlte>${buttonTranslations("datenschutz", language)}</a> <a${addAttribute(`/${language}/legal/agbs`, "href")} data-astro-cid-sz7xmlte>${buttonTranslations("agbs", language)}</a> <a${addAttribute(`/certificates/${language}/iso_90012015.pdf`, "href")} download data-astro-cid-sz7xmlte>ISO 9001:2015</a> <a href="#" onclick="tarteaucitron.userInterface.openPanel(); return false;" data-astro-cid-sz7xmlte>Cookies</a> </div> </div> <div class="links" data-astro-cid-sz7xmlte> ${renderComponent($$result, "LangSwitcher", $$LangSwitcher, { "langs": languages, "data-astro-cid-sz7xmlte": true })} ${links.map((link) => {
     return renderTemplate`<a${addAttribute(`/${language}/${link.to}`, "href")} data-astro-cid-sz7xmlte>${link.text}</a>`;
   })} </div> <div class="langswitcher-and-contact" data-astro-cid-sz7xmlte> <div class="contact-data" data-astro-cid-sz7xmlte> <p data-astro-cid-sz7xmlte>+43 771 22 95 000</p> <p data-astro-cid-sz7xmlte>office@feuchter.com</p> <p data-astro-cid-sz7xmlte>Feuchter GmbH</p> <p data-astro-cid-sz7xmlte>Innbruckstraße 10</p> <p data-astro-cid-sz7xmlte>4780 Schärding AT</p> </div> </div> </div> </nav> `;
-}, "C:/Users/sabri/OneDrive/Desktop/feuchter-gmbh-astro/feuchter-gmbh/src/components/Footer.astro", void 0);
+}, "C:/Users/sabri/OneDrive/Desktop/webprojekte/feuchter-gmbh-astro/feuchter-gmbh/src/components/Footer.astro", void 0);
 
 var __freeze$1 = Object.freeze;
 var __defProp$1 = Object.defineProperty;
@@ -474,7 +474,7 @@ const $$TarteaucitronLoader = createComponent(($$result, $$props, $$slots) => {
   Astro2.self = $$TarteaucitronLoader;
   const { lang } = Astro2.props;
   return renderTemplate(_a$1 || (_a$1 = __template$1(["", '<div id="tarteaucitron-settings"', '></div> <script src="/tarteaucitron.js" defer><\/script> <script>\n    window.addEventListener("DOMContentLoaded", function () {\n        const lang =\n            document.getElementById("tarteaucitron-settings")?.dataset.lang ||\n            "de";\n\n        if (typeof tarteaucitron !== "undefined") {\n            tarteaucitron.init({\n                privacyUrl: "/legal/privacy",\n                hashtag: "#cookies",\n                orientation: "bottom",\n                groupServices: false,\n                highPrivacy: true,\n                acceptAllCta: true,\n                moreInfoLink: true,\n                mandatory: true,\n                lang: lang,\n                showIcon: false, // \u{1F34B} Zitronen-Symbol ausblenden\n                baseUrl: "/",\n            });\n\n            tarteaucitron.user.gtagUa = "G-H6KQBCYPRS";\n            tarteaucitron.user.gtagMore = function () {\n                gtag("config", tarteaucitron.user.gtagUa, {\n                    anonymize_ip: true,\n                });\n            };\n            (tarteaucitron.job = tarteaucitron.job || []).push("gtag");\n        }\n    });\n<\/script>'])), maybeRenderHead(), addAttribute(lang, "data-lang"));
-}, "C:/Users/sabri/OneDrive/Desktop/feuchter-gmbh-astro/feuchter-gmbh/src/components/TarteaucitronLoader.astro", void 0);
+}, "C:/Users/sabri/OneDrive/Desktop/webprojekte/feuchter-gmbh-astro/feuchter-gmbh/src/components/TarteaucitronLoader.astro", void 0);
 
 var __freeze = Object.freeze;
 var __defProp = Object.defineProperty;
@@ -495,7 +495,7 @@ const $$Layout = createComponent(($$result, $$props, $$slots) => {
   if (searchCategory) {
     searchparamString = `?category=${searchCategory}`;
   }
-  return renderTemplate(_a || (_a = __template(["<html", ' data-astro-cid-sckkx6r4> <head><meta charset="UTF-8"><meta name="viewport" content="width=device-width"><link rel="icon" type="image/svg+xml" href="/favicon_globe.svg"><meta name="generator"', "><title>", '</title><meta name="description"', '><link rel="canonical"', ">", '<link rel="stylesheet" href="https://use.typekit.net/eff4wzj.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"><script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js" defer><\/script><script src="https://cdn.jsdelivr.net/npm/chart.js" defer><\/script><script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-datalabels" defer><\/script><script type="application/ld+json">\n{\n  "@context": "https://schema.org",\n  "@type": "LocalBusiness",\n  "name": "Feuchter GmbH",\n  "image": "https://feuchter.com/feuchter_gmbh_logo.svg",\n  "description": "Hersteller f\xFCr Milit\xE4r- und Survivalkleidung, Beh\xF6rden- und Sicherheitskleidung, Corporate Fashion sowie nachhaltige L\xF6sungen f\xFCr Rollcontainer",\n  "url": "https://www.feuchter.com",\n  "telephone": "+43 771 22 95 000",\n  "email": "office@feuchter.com",\n  "address": {\n    "@type": "PostalAddress",\n    "streetAddress": "Bachweg 8",\n    "addressLocality": "Ringelai",\n    "postalCode": "94160",\n    "addressCountry": "DE"\n  },\n  "openingHours": [\n    "Mo-Fr 08:00-17:00"\n  ]\n}\n<\/script>', '</head> <body id="body" data-astro-cid-sckkx6r4> ', " ", " ", " ", " ", " </body></html>"])), addAttribute(pageLanguage, "lang"), addAttribute(Astro2.generator, "content"), pageTitle, addAttribute(pageDescription, "content"), addAttribute(languages[0].url, "href"), languages.map(({ lang, url: url2 }) => renderTemplate`<link rel="alternate"${addAttribute(lang, "hreflang")}${addAttribute(`${url2}${searchparamString}`, "href")}>`), renderHead(), renderComponent($$result, "Navbar", $$Navbar, { "language": pageLanguage, "languages": languages, "data-astro-cid-sckkx6r4": true }), renderSlot($$result, $$slots["default"]), renderComponent($$result, "Footer", $$Footer, { "language": pageLanguage, "languages": languages, "data-astro-cid-sckkx6r4": true }), renderComponent($$result, "TarteaucitronLoader", $$TarteaucitronLoader, { "lang": pageLanguage, "data-astro-cid-sckkx6r4": true }), renderScript($$result, "C:/Users/sabri/OneDrive/Desktop/feuchter-gmbh-astro/feuchter-gmbh/src/layouts/Layout.astro?astro&type=script&index=0&lang.ts"));
-}, "C:/Users/sabri/OneDrive/Desktop/feuchter-gmbh-astro/feuchter-gmbh/src/layouts/Layout.astro", void 0);
+  return renderTemplate(_a || (_a = __template(["<html", ' data-astro-cid-sckkx6r4> <head><meta charset="UTF-8"><meta name="viewport" content="width=device-width"><link rel="icon" type="image/svg+xml" href="/favicon_globe.svg"><meta name="generator"', "><title>", '</title><meta name="description"', '><link rel="canonical"', ">", '<link rel="stylesheet" href="https://use.typekit.net/eff4wzj.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"><script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js" defer><\/script><script src="https://cdn.jsdelivr.net/npm/chart.js" defer><\/script><script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-datalabels" defer><\/script><script type="application/ld+json">\n{\n  "@context": "https://schema.org",\n  "@type": "LocalBusiness",\n  "name": "Feuchter GmbH",\n  "image": "https://feuchter.com/feuchter_gmbh_logo.svg",\n  "description": "Hersteller f\xFCr Milit\xE4r- und Survivalkleidung, Beh\xF6rden- und Sicherheitskleidung, Corporate Fashion sowie nachhaltige L\xF6sungen f\xFCr Rollcontainer",\n  "url": "https://www.feuchter.com",\n  "telephone": "+43 771 22 95 000",\n  "email": "office@feuchter.com",\n  "address": {\n    "@type": "PostalAddress",\n    "streetAddress": "Bachweg 8",\n    "addressLocality": "Ringelai",\n    "postalCode": "94160",\n    "addressCountry": "DE"\n  },\n  "openingHours": [\n    "Mo-Fr 08:00-17:00"\n  ]\n}\n<\/script>', '</head> <body id="body" data-astro-cid-sckkx6r4> ', " ", " ", " ", " ", " </body></html>"])), addAttribute(pageLanguage, "lang"), addAttribute(Astro2.generator, "content"), pageTitle, addAttribute(pageDescription, "content"), addAttribute(languages[0].url, "href"), languages.map(({ lang, url: url2 }) => renderTemplate`<link rel="alternate"${addAttribute(lang, "hreflang")}${addAttribute(`${url2}${searchparamString}`, "href")}>`), renderHead(), renderComponent($$result, "Navbar", $$Navbar, { "language": pageLanguage, "languages": languages, "data-astro-cid-sckkx6r4": true }), renderSlot($$result, $$slots["default"]), renderComponent($$result, "Footer", $$Footer, { "language": pageLanguage, "languages": languages, "data-astro-cid-sckkx6r4": true }), renderComponent($$result, "TarteaucitronLoader", $$TarteaucitronLoader, { "lang": pageLanguage, "data-astro-cid-sckkx6r4": true }), renderScript($$result, "C:/Users/sabri/OneDrive/Desktop/webprojekte/feuchter-gmbh-astro/feuchter-gmbh/src/layouts/Layout.astro?astro&type=script&index=0&lang.ts"));
+}, "C:/Users/sabri/OneDrive/Desktop/webprojekte/feuchter-gmbh-astro/feuchter-gmbh/src/layouts/Layout.astro", void 0);
 
 export { $$Layout as $, buttonTranslations as b, translations as t };

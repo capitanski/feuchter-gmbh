@@ -1,7 +1,7 @@
 import { e as createAstro, f as createComponent, m as maybeRenderHead, i as renderComponent, h as addAttribute, r as renderTemplate, j as renderScript } from './astro/server_C55uJX-_.mjs';
 import 'kleur/colors';
-import { $ as $$Button } from './Button_BukcMihT.mjs';
-import { b as buttonTranslations } from './Layout_BMH1rKNG.mjs';
+import { $ as $$Button } from './Button_DhEF5pSX.mjs';
+import { b as buttonTranslations } from './Layout_phyfGR1g.mjs';
 /* empty css                              */
 import 'clsx';
 
@@ -13,7 +13,7 @@ const $$Function = createComponent(($$result, $$props, $$slots) => {
   return renderTemplate`${maybeRenderHead()}<div class="function" data-astro-cid-zzvl4fxx> <div class="headline-and-title" data-astro-cid-zzvl4fxx> <div class="inner" data-astro-cid-zzvl4fxx> <h2 class="animatable" data-astro-cid-zzvl4fxx> ${product.function.headline[pageLanguage]} </h2> ${renderComponent($$result, "Button", $$Button, { "linkText": buttonTranslations("contact", pageLanguage), "target": `/${pageLanguage}/contact`, "class": "hero-button-2 function-button", "variant": "secondary", "data-astro-cid-zzvl4fxx": true })} </div> <!-- <p class="headline-text">{product.function.intro[pageLanguage]}</p>--> </div> <div class="image-grid" data-astro-cid-zzvl4fxx> ${product.function.items.map((item) => {
     return renderTemplate`<div class="grid-item animatable" data-astro-cid-zzvl4fxx> <img${addAttribute(item.img, "src")} alt="" data-astro-cid-zzvl4fxx> <p class="grid-item-title" data-astro-cid-zzvl4fxx> ${item.title[pageLanguage]} </p> <p class="grid-item-text" data-astro-cid-zzvl4fxx>${item.text[pageLanguage]}</p> </div>`;
   })} </div> </div> `;
-}, "C:/Users/sabri/OneDrive/Desktop/feuchter-gmbh-astro/feuchter-gmbh/src/components/Function.astro", void 0);
+}, "C:/Users/sabri/OneDrive/Desktop/webprojekte/feuchter-gmbh-astro/feuchter-gmbh/src/components/Function.astro", void 0);
 
 const $$Astro$4 = createAstro("http://localhost:4321");
 const $$TransportUsps = createComponent(($$result, $$props, $$slots) => {
@@ -23,7 +23,7 @@ const $$TransportUsps = createComponent(($$result, $$props, $$slots) => {
   return renderTemplate`${maybeRenderHead()}<div class="function" data-astro-cid-z2ci73di> <div class="headline-and-title" data-astro-cid-z2ci73di> <h2 class="animatable" data-astro-cid-z2ci73di>${product.usps.headline[pageLanguage]}</h2> <p class="headline-text" data-astro-cid-z2ci73di>${product.usps.intro[pageLanguage]}</p> </div> <div class="image-grid" data-astro-cid-z2ci73di> ${product.usps.items.map((item) => {
     return renderTemplate`<div class="grid-item animatable" data-astro-cid-z2ci73di> <p class="grid-item-title" data-astro-cid-z2ci73di> ${item.title[pageLanguage]} </p> <p class="grid-item-text" data-astro-cid-z2ci73di>${item.text[pageLanguage]}</p> </div>`;
   })} </div> </div> `;
-}, "C:/Users/sabri/OneDrive/Desktop/feuchter-gmbh-astro/feuchter-gmbh/src/components/TransportUsps.astro", void 0);
+}, "C:/Users/sabri/OneDrive/Desktop/webprojekte/feuchter-gmbh-astro/feuchter-gmbh/src/components/TransportUsps.astro", void 0);
 
 const $$Astro$3 = createAstro("http://localhost:4321");
 const $$TransportVariants = createComponent(($$result, $$props, $$slots) => {
@@ -32,8 +32,8 @@ const $$TransportVariants = createComponent(($$result, $$props, $$slots) => {
   const { product, pageLanguage } = Astro2.props;
   return renderTemplate`${maybeRenderHead()}<div class="function" data-astro-cid-nai74nil> <div class="headline-and-title" data-astro-cid-nai74nil> <h2 class="animatable" data-astro-cid-nai74nil>${product.colors.headline[pageLanguage]}</h2> <p class="headline-text" data-astro-cid-nai74nil>${product.colors.intro[pageLanguage]}</p> </div> <div class="main-image-and-grid" data-astro-cid-nai74nil> <div class="main-image-wrapper animatable" data-astro-cid-nai74nil> <img${addAttribute(product.colors.items[0].image, "src")} alt="" id="color-mainImage" data-astro-cid-nai74nil> </div> <div class="image-grid" data-astro-cid-nai74nil> ${product.colors.items.map((item) => {
     return renderTemplate`<div class="grid-item animatable" data-astro-cid-nai74nil> <img${addAttribute(item.image, "src")} alt="" class="color-image" data-astro-cid-nai74nil> <p class="grid-item-title" data-astro-cid-nai74nil> ${item.title[pageLanguage]} </p> </div>`;
-  })} </div> </div> </div> ${renderScript($$result, "C:/Users/sabri/OneDrive/Desktop/feuchter-gmbh-astro/feuchter-gmbh/src/components/TransportVariants.astro?astro&type=script&index=0&lang.ts")} `;
-}, "C:/Users/sabri/OneDrive/Desktop/feuchter-gmbh-astro/feuchter-gmbh/src/components/TransportVariants.astro", void 0);
+  })} </div> </div> </div> ${renderScript($$result, "C:/Users/sabri/OneDrive/Desktop/webprojekte/feuchter-gmbh-astro/feuchter-gmbh/src/components/TransportVariants.astro?astro&type=script&index=0&lang.ts")} `;
+}, "C:/Users/sabri/OneDrive/Desktop/webprojekte/feuchter-gmbh-astro/feuchter-gmbh/src/components/TransportVariants.astro", void 0);
 
 const $$Astro$2 = createAstro("http://localhost:4321");
 const $$VariantSlider = createComponent(($$result, $$props, $$slots) => {
@@ -42,8 +42,8 @@ const $$VariantSlider = createComponent(($$result, $$props, $$slots) => {
   const { product, pageLanguage } = Astro2.props;
   return renderTemplate`${maybeRenderHead()}<div class="function" data-astro-cid-bms756br> <div class="headline-and-title" data-astro-cid-bms756br> <h2 class="animatable" data-astro-cid-bms756br>${product.images.headline[pageLanguage]}</h2> <p class="headline-text" data-astro-cid-bms756br>${product.images.intro[pageLanguage]}</p> </div> <div class="main-image-and-grid" data-astro-cid-bms756br> <div class="image-grid" data-astro-cid-bms756br> <div class="swiper mySwiper" data-astro-cid-bms756br> <div class="swiper-wrapper" data-astro-cid-bms756br> ${product.images.images.map((image) => {
     return renderTemplate`<div class="swiper-slide animatable" data-astro-cid-bms756br> <img${addAttribute(image, "src")} alt="" data-astro-cid-bms756br> </div>`;
-  })} </div> </div> <div class="swiper-pagination" data-astro-cid-bms756br></div> </div> </div> </div> ${renderScript($$result, "C:/Users/sabri/OneDrive/Desktop/feuchter-gmbh-astro/feuchter-gmbh/src/components/VariantSlider.astro?astro&type=script&index=0&lang.ts")} `;
-}, "C:/Users/sabri/OneDrive/Desktop/feuchter-gmbh-astro/feuchter-gmbh/src/components/VariantSlider.astro", void 0);
+  })} </div> </div> <div class="swiper-pagination" data-astro-cid-bms756br></div> </div> </div> </div> ${renderScript($$result, "C:/Users/sabri/OneDrive/Desktop/webprojekte/feuchter-gmbh-astro/feuchter-gmbh/src/components/VariantSlider.astro?astro&type=script&index=0&lang.ts")} `;
+}, "C:/Users/sabri/OneDrive/Desktop/webprojekte/feuchter-gmbh-astro/feuchter-gmbh/src/components/VariantSlider.astro", void 0);
 
 var __freeze = Object.freeze;
 var __defProp = Object.defineProperty;
@@ -63,7 +63,7 @@ const $$SavingsCounter = createComponent(($$result, $$props, $$slots) => {
 €
 </p> </div> </div>`;
   }));
-}, "C:/Users/sabri/OneDrive/Desktop/feuchter-gmbh-astro/feuchter-gmbh/src/components/SavingsCounter.astro", void 0);
+}, "C:/Users/sabri/OneDrive/Desktop/webprojekte/feuchter-gmbh-astro/feuchter-gmbh/src/components/SavingsCounter.astro", void 0);
 
 const $$Astro = createAstro("http://localhost:4321");
 const $$ProductGridTransport = createComponent(($$result, $$props, $$slots) => {
@@ -88,7 +88,7 @@ const $$ProductGridTransport = createComponent(($$result, $$props, $$slots) => {
                 })
             }
         </div> --> ${renderComponent($$result, "Function", $$Function, { "product": product, "pageLanguage": pageLanguage, "data-astro-cid-6na2l5sn": true })} ${renderComponent($$result, "TransportUsps", $$TransportUsps, { "product": product, "pageLanguage": pageLanguage, "data-astro-cid-6na2l5sn": true })} ${product.images ? renderTemplate`${renderComponent($$result, "VariantSlider", $$VariantSlider, { "product": product, "pageLanguage": pageLanguage, "data-astro-cid-6na2l5sn": true })}` : null} ${product.colors ? renderTemplate`${renderComponent($$result, "TransportVariants", $$TransportVariants, { "product": product, "pageLanguage": pageLanguage, "data-astro-cid-6na2l5sn": true })}` : null} <!-- <TransportChart />--> ${product.numbers ? renderTemplate`${renderComponent($$result, "SavingsCounter", $$SavingsCounter, { "product": product, "pageLanguage": pageLanguage, "data-astro-cid-6na2l5sn": true })}` : null} </div> </section> `;
-}, "C:/Users/sabri/OneDrive/Desktop/feuchter-gmbh-astro/feuchter-gmbh/src/components/ProductGridTransport.astro", void 0);
+}, "C:/Users/sabri/OneDrive/Desktop/webprojekte/feuchter-gmbh-astro/feuchter-gmbh/src/components/ProductGridTransport.astro", void 0);
 
 const star = new Proxy({"src":"/custom-folder/star-regular.CD5YShCy.svg","width":528,"height":512,"format":"svg"}, {
 						get(target, name, receiver) {
@@ -96,7 +96,7 @@ const star = new Proxy({"src":"/custom-folder/star-regular.CD5YShCy.svg","width"
 								return structuredClone(target);
 							}
 							if (name === 'fsPath') {
-								return "C:/Users/sabri/OneDrive/Desktop/feuchter-gmbh-astro/feuchter-gmbh/src/assets/star-regular.svg";
+								return "C:/Users/sabri/OneDrive/Desktop/webprojekte/feuchter-gmbh-astro/feuchter-gmbh/src/assets/star-regular.svg";
 							}
 							
 							return target[name];
@@ -109,7 +109,7 @@ const einsatzjacke = new Proxy({"src":"/custom-folder/BMI Jacke Front.CJ7k7CgK.w
 								return structuredClone(target);
 							}
 							if (name === 'fsPath') {
-								return "C:/Users/sabri/OneDrive/Desktop/feuchter-gmbh-astro/feuchter-gmbh/src/assets/Produkte/BMI Jacke Front.webp";
+								return "C:/Users/sabri/OneDrive/Desktop/webprojekte/feuchter-gmbh-astro/feuchter-gmbh/src/assets/Produkte/BMI Jacke Front.webp";
 							}
 							
 							return target[name];
@@ -122,7 +122,7 @@ const einsatzhose = new Proxy({"src":"/custom-folder/BMI Hose Seite.Dc-2FBsC.web
 								return structuredClone(target);
 							}
 							if (name === 'fsPath') {
-								return "C:/Users/sabri/OneDrive/Desktop/feuchter-gmbh-astro/feuchter-gmbh/src/assets/Produkte/BMI Hose Seite.webp";
+								return "C:/Users/sabri/OneDrive/Desktop/webprojekte/feuchter-gmbh-astro/feuchter-gmbh/src/assets/Produkte/BMI Hose Seite.webp";
 							}
 							
 							return target[name];
@@ -135,7 +135,7 @@ const headwear = new Proxy({"src":"/custom-folder/official_headwear.DKiAPmEP.web
 								return structuredClone(target);
 							}
 							if (name === 'fsPath') {
-								return "C:/Users/sabri/OneDrive/Desktop/feuchter-gmbh-astro/feuchter-gmbh/src/assets/official_headwear.webp";
+								return "C:/Users/sabri/OneDrive/Desktop/webprojekte/feuchter-gmbh-astro/feuchter-gmbh/src/assets/official_headwear.webp";
 							}
 							
 							return target[name];

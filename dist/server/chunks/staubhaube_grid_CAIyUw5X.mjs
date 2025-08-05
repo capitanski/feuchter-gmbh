@@ -4,7 +4,7 @@ const Transportloesungen = new Proxy({"src":"/custom-folder/schutzwand_grid.BXYe
 								return structuredClone(target);
 							}
 							if (name === 'fsPath') {
-								return "C:/Users/sabri/OneDrive/Desktop/feuchter-gmbh-astro/feuchter-gmbh/src/assets/Produkte/schutzwand_grid.webp";
+								return "C:/Users/sabri/OneDrive/Desktop/webprojekte/feuchter-gmbh-astro/feuchter-gmbh/src/assets/Produkte/schutzwand_grid.webp";
 							}
 							
 							return target[name];
@@ -17,7 +17,7 @@ const Thermohaube = new Proxy({"src":"/custom-folder/thermohaube_grid.Df-aPUrW.w
 								return structuredClone(target);
 							}
 							if (name === 'fsPath') {
-								return "C:/Users/sabri/OneDrive/Desktop/feuchter-gmbh-astro/feuchter-gmbh/src/assets/Produkte/thermohaube_grid.webp";
+								return "C:/Users/sabri/OneDrive/Desktop/webprojekte/feuchter-gmbh-astro/feuchter-gmbh/src/assets/Produkte/thermohaube_grid.webp";
 							}
 							
 							return target[name];
@@ -30,7 +30,7 @@ const Staubhaube = new Proxy({"src":"/custom-folder/staubhaube_grid.Buvw9wOb.web
 								return structuredClone(target);
 							}
 							if (name === 'fsPath') {
-								return "C:/Users/sabri/OneDrive/Desktop/feuchter-gmbh-astro/feuchter-gmbh/src/assets/Produkte/staubhaube_grid.webp";
+								return "C:/Users/sabri/OneDrive/Desktop/webprojekte/feuchter-gmbh-astro/feuchter-gmbh/src/assets/Produkte/staubhaube_grid.webp";
 							}
 							
 							return target[name];

@@ -1,7 +1,7 @@
 import { e as createAstro, f as createComponent, i as renderComponent, r as renderTemplate, m as maybeRenderHead, u as unescapeHTML } from '../../../chunks/astro/server_C55uJX-_.mjs';
 import 'kleur/colors';
 import fs from 'fs/promises';
-import { $ as $$Layout } from '../../../chunks/Layout_BMH1rKNG.mjs';
+import { $ as $$Layout } from '../../../chunks/Layout_phyfGR1g.mjs';
 /* empty css                                      */
 export { renderers } from '../../../renderers.mjs';
 
@@ -20,9 +20,9 @@ const $$Agbs = createComponent(async ($$result, $$props, $$slots) => {
     return new Response(null, { status: 404 });
   }
   return renderTemplate`${renderComponent($$result, "Layout", $$Layout, { "data-astro-cid-wljiisl4": true }, { "default": async ($$result2) => renderTemplate` ${maybeRenderHead()}<section data-astro-cid-wljiisl4> <div class="container rich-text-dark" data-astro-cid-wljiisl4>${unescapeHTML(richtext)}</div> </section> ` })} `;
-}, "C:/Users/sabri/OneDrive/Desktop/feuchter-gmbh-astro/feuchter-gmbh/src/pages/[lang]/legal/agbs.astro", void 0);
+}, "C:/Users/sabri/OneDrive/Desktop/webprojekte/feuchter-gmbh-astro/feuchter-gmbh/src/pages/[lang]/legal/agbs.astro", void 0);
 
-const $$file = "C:/Users/sabri/OneDrive/Desktop/feuchter-gmbh-astro/feuchter-gmbh/src/pages/[lang]/legal/agbs.astro";
+const $$file = "C:/Users/sabri/OneDrive/Desktop/webprojekte/feuchter-gmbh-astro/feuchter-gmbh/src/pages/[lang]/legal/agbs.astro";
 const $$url = "/[lang]/legal/agbs";
 
 const _page = /*#__PURE__*/Object.freeze(/*#__PURE__*/Object.defineProperty({

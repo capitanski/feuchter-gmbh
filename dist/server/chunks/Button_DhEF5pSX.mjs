@@ -9,6 +9,6 @@ const $$Button = createComponent(($$result, $$props, $$slots) => {
   Astro2.self = $$Button;
   const { linkText, target, class: className, language, variant } = Astro2.props;
   return renderTemplate`${maybeRenderHead()}<a${addAttribute(target || "#", "href")}${addAttribute(`${className} ${variant}`, "class")} data-astro-cid-vnzlvqnm> ${linkText} </a> `;
-}, "C:/Users/sabri/OneDrive/Desktop/feuchter-gmbh-astro/feuchter-gmbh/src/components/Button.astro", void 0);
+}, "C:/Users/sabri/OneDrive/Desktop/webprojekte/feuchter-gmbh-astro/feuchter-gmbh/src/components/Button.astro", void 0);
 
 export { $$Button as $ };

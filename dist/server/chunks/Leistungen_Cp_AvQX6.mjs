@@ -1,7 +1,7 @@
 import { e as createAstro, f as createComponent, m as maybeRenderHead, h as addAttribute, r as renderTemplate } from './astro/server_C55uJX-_.mjs';
 import 'kleur/colors';
 import 'clsx';
-import { t as translations } from './Layout_BMH1rKNG.mjs';
+import { t as translations } from './Layout_phyfGR1g.mjs';
 /* empty css                         */
 
 const Hochzeiten = new Proxy({"src":"/custom-folder/konzeption.B8QB-5B4.webp","width":600,"height":338,"format":"webp"}, {
@@ -10,7 +10,7 @@ const Hochzeiten = new Proxy({"src":"/custom-folder/konzeption.B8QB-5B4.webp","w
 								return structuredClone(target);
 							}
 							if (name === 'fsPath') {
-								return "C:/Users/sabri/OneDrive/Desktop/feuchter-gmbh-astro/feuchter-gmbh/src/assets/konzeption.webp";
+								return "C:/Users/sabri/OneDrive/Desktop/webprojekte/feuchter-gmbh-astro/feuchter-gmbh/src/assets/konzeption.webp";
 							}
 							
 							return target[name];
@@ -23,7 +23,7 @@ const Corporate = new Proxy({"src":"/custom-folder/produktion.CBsgn-VV.webp","wi
 								return structuredClone(target);
 							}
 							if (name === 'fsPath') {
-								return "C:/Users/sabri/OneDrive/Desktop/feuchter-gmbh-astro/feuchter-gmbh/src/assets/produktion.webp";
+								return "C:/Users/sabri/OneDrive/Desktop/webprojekte/feuchter-gmbh-astro/feuchter-gmbh/src/assets/produktion.webp";
 							}
 							
 							return target[name];
@@ -36,7 +36,7 @@ const Birthday = new Proxy({"src":"/custom-folder/logistik.C-9nhZRh.webp","width
 								return structuredClone(target);
 							}
 							if (name === 'fsPath') {
-								return "C:/Users/sabri/OneDrive/Desktop/feuchter-gmbh-astro/feuchter-gmbh/src/assets/logistik.webp";
+								return "C:/Users/sabri/OneDrive/Desktop/webprojekte/feuchter-gmbh-astro/feuchter-gmbh/src/assets/logistik.webp";
 							}
 							
 							return target[name];
@@ -80,6 +80,6 @@ const $$Leistungen = createComponent(($$result, $$props, $$slots) => {
   return renderTemplate`${maybeRenderHead()}<section id="leistungen" data-astro-cid-qlbszkyo> <div class="container" data-astro-cid-qlbszkyo> <h2 class="animatable" data-astro-cid-qlbszkyo>${translations("leistungen", language)}</h2> <p class="subtitle animatable" data-astro-cid-qlbszkyo> ${translations("leistungensubtitle", language)} </p> <div class="rezensionen-grid" data-astro-cid-qlbszkyo> ${leistungen.map((leistung) => {
     return renderTemplate`<div class="rezension-card animate-in-right" data-astro-cid-qlbszkyo> <div class="icon-and-title" data-astro-cid-qlbszkyo> <img${addAttribute(leistung.icon, "src")} alt="" class="card-icon" loading="lazy" width="150" height="150" data-astro-cid-qlbszkyo> <p class="card-title" data-astro-cid-qlbszkyo> ${translations(leistung.translationKey, language)} </p> </div> <p class="card-text" data-astro-cid-qlbszkyo>${leistung.text[language]}</p> </div>`;
   })} </div> </div> </section> `;
-}, "C:/Users/sabri/OneDrive/Desktop/feuchter-gmbh-astro/feuchter-gmbh/src/components/Leistungen.astro", void 0);
+}, "C:/Users/sabri/OneDrive/Desktop/webprojekte/feuchter-gmbh-astro/feuchter-gmbh/src/components/Leistungen.astro", void 0);
 
 export { $$Leistungen as $ };

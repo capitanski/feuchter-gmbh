@@ -4,7 +4,7 @@ const Arrow = new Proxy({"src":"/custom-folder/Arrow_sand.BLqrtg_Z.svg","width":
 								return structuredClone(target);
 							}
 							if (name === 'fsPath') {
-								return "C:/Users/sabri/OneDrive/Desktop/feuchter-gmbh-astro/feuchter-gmbh/src/assets/Arrow_sand.svg";
+								return "C:/Users/sabri/OneDrive/Desktop/webprojekte/feuchter-gmbh-astro/feuchter-gmbh/src/assets/Arrow_sand.svg";
 							}
 							
 							return target[name];

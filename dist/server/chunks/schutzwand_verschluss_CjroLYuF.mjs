@@ -4,7 +4,7 @@ new Proxy({"src":"/custom-folder/schutzwand_schraeg.dPFV0xjE.webp","width":1000,
 								return structuredClone(target);
 							}
 							if (name === 'fsPath') {
-								return "C:/Users/sabri/OneDrive/Desktop/feuchter-gmbh-astro/feuchter-gmbh/src/assets/Produkte/schutzwand_schraeg.webp";
+								return "C:/Users/sabri/OneDrive/Desktop/webprojekte/feuchter-gmbh-astro/feuchter-gmbh/src/assets/Produkte/schutzwand_schraeg.webp";
 							}
 							
 							return target[name];
@@ -17,7 +17,7 @@ new Proxy({"src":"/custom-folder/schutzwand_front.BObemgYk.webp","width":1000,"h
 								return structuredClone(target);
 							}
 							if (name === 'fsPath') {
-								return "C:/Users/sabri/OneDrive/Desktop/feuchter-gmbh-astro/feuchter-gmbh/src/assets/Produkte/schutzwand_front.webp";
+								return "C:/Users/sabri/OneDrive/Desktop/webprojekte/feuchter-gmbh-astro/feuchter-gmbh/src/assets/Produkte/schutzwand_front.webp";
 							}
 							
 							return target[name];
@@ -30,7 +30,7 @@ new Proxy({"src":"/custom-folder/schutzwand_verschluss.kiLo50Db.webp","width":10
 								return structuredClone(target);
 							}
 							if (name === 'fsPath') {
-								return "C:/Users/sabri/OneDrive/Desktop/feuchter-gmbh-astro/feuchter-gmbh/src/assets/Produkte/schutzwand_verschluss.webp";
+								return "C:/Users/sabri/OneDrive/Desktop/webprojekte/feuchter-gmbh-astro/feuchter-gmbh/src/assets/Produkte/schutzwand_verschluss.webp";
 							}
 							
 							return target[name];

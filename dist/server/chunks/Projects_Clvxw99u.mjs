@@ -1,8 +1,8 @@
 import { e as createAstro, f as createComponent, m as maybeRenderHead, h as addAttribute, i as renderComponent, r as renderTemplate } from './astro/server_C55uJX-_.mjs';
 import 'kleur/colors';
-import { p as projects, C as Circles, $ as $$ProjectTag } from './projects_DMM2jGj4.mjs';
-import { A as Arrow } from './Arrow_sand_5oaPgMNc.mjs';
-import { b as buttonTranslations, t as translations } from './Layout_BMH1rKNG.mjs';
+import { p as projects, C as Circles, $ as $$ProjectTag } from './projects_D8yrBwHq.mjs';
+import { A as Arrow } from './Arrow_sand_B2QntN2v.mjs';
+import { b as buttonTranslations, t as translations } from './Layout_phyfGR1g.mjs';
 /* empty css                         */
 
 const $$Astro = createAstro("http://localhost:4321");
@@ -29,6 +29,6 @@ const $$Projects = createComponent(($$result, $$props, $$slots) => {
       pageLanguage
     )}`, "data-astro-cid-amng4zvp": true })} ${renderComponent($$result, "ProjectTag", $$ProjectTag, { "tagContent": project.customer[pageLanguage], "colorScheme": "bright", "data-astro-cid-amng4zvp": true })} <!--<ProjectTag tagContent={project.tl} colorScheme="bright"/>--> ${renderComponent($$result, "ProjectTag", $$ProjectTag, { "tagContent": project.date, "colorScheme": "bright", "data-astro-cid-amng4zvp": true })} ${renderComponent($$result, "ProjectTag", $$ProjectTag, { "tagContent": project.status[pageLanguage], "colorScheme": "bright", "data-astro-cid-amng4zvp": true })} </div> <p class="card-title" data-astro-cid-amng4zvp>${project.title[pageLanguage]}</p> </div> <p class="card-text" data-astro-cid-amng4zvp>${`${project.shortDescription[pageLanguage].slice(0, 200)}...`}</p> </div> <a${addAttribute(`/${pageLanguage}/projects/${project.slug}`, "href")} class="project-link" data-astro-cid-amng4zvp> <img${addAttribute(Arrow.src, "src")} alt="" data-astro-cid-amng4zvp> <span data-astro-cid-amng4zvp>${buttonTranslations("mehr", language)}</span> </a> </div>`;
   })} </div> </div> </section> `;
-}, "C:/Users/sabri/OneDrive/Desktop/feuchter-gmbh-astro/feuchter-gmbh/src/components/Projects.astro", void 0);
+}, "C:/Users/sabri/OneDrive/Desktop/webprojekte/feuchter-gmbh-astro/feuchter-gmbh/src/components/Projects.astro", void 0);
 
 export { $$Projects as $ };

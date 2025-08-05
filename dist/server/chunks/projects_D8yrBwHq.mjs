@@ -9,7 +9,7 @@ const Circles = new Proxy({"src":"/custom-folder/Swirl.BUIxi6cc.webp","width":10
 								return structuredClone(target);
 							}
 							if (name === 'fsPath') {
-								return "C:/Users/sabri/OneDrive/Desktop/feuchter-gmbh-astro/feuchter-gmbh/src/assets/Swirl.webp";
+								return "C:/Users/sabri/OneDrive/Desktop/webprojekte/feuchter-gmbh-astro/feuchter-gmbh/src/assets/Swirl.webp";
 							}
 							
 							return target[name];
@@ -22,7 +22,7 @@ const $$ProjectTag = createComponent(($$result, $$props, $$slots) => {
   Astro2.self = $$ProjectTag;
   const { tagContent, colorScheme } = Astro2.props;
   return renderTemplate`${maybeRenderHead()}<div${addAttribute(colorScheme && colorScheme == "bright" ? "is-bright project-tag" : "is-dark project-tag", "class")} data-astro-cid-hp42x6y6> ${tagContent} </div> `;
-}, "C:/Users/sabri/OneDrive/Desktop/feuchter-gmbh-astro/feuchter-gmbh/src/components/ProjectTag.astro", void 0);
+}, "C:/Users/sabri/OneDrive/Desktop/webprojekte/feuchter-gmbh-astro/feuchter-gmbh/src/components/ProjectTag.astro", void 0);
 
 const PolizeihemdSeite = new Proxy({"src":"/custom-folder/polizeihemd_bayern_seite.37beRnUB.webp","width":990,"height":990,"format":"webp"}, {
 						get(target, name, receiver) {
@@ -30,7 +30,7 @@ const PolizeihemdSeite = new Proxy({"src":"/custom-folder/polizeihemd_bayern_sei
 								return structuredClone(target);
 							}
 							if (name === 'fsPath') {
-								return "C:/Users/sabri/OneDrive/Desktop/feuchter-gmbh-astro/feuchter-gmbh/src/assets/Projekte/polizeihemd_bayern_seite.webp";
+								return "C:/Users/sabri/OneDrive/Desktop/webprojekte/feuchter-gmbh-astro/feuchter-gmbh/src/assets/Projekte/polizeihemd_bayern_seite.webp";
 							}
 							
 							return target[name];
@@ -43,7 +43,7 @@ const PolizeihemdFront = new Proxy({"src":"/custom-folder/polizeihemd_bayern_fro
 								return structuredClone(target);
 							}
 							if (name === 'fsPath') {
-								return "C:/Users/sabri/OneDrive/Desktop/feuchter-gmbh-astro/feuchter-gmbh/src/assets/Projekte/polizeihemd_bayern_front.webp";
+								return "C:/Users/sabri/OneDrive/Desktop/webprojekte/feuchter-gmbh-astro/feuchter-gmbh/src/assets/Projekte/polizeihemd_bayern_front.webp";
 							}
 							
 							return target[name];
@@ -56,7 +56,7 @@ const bmiHoseRechts = new Proxy({"src":"/custom-folder/bmi_hose_front.CYerNvrc.w
 								return structuredClone(target);
 							}
 							if (name === 'fsPath') {
-								return "C:/Users/sabri/OneDrive/Desktop/feuchter-gmbh-astro/feuchter-gmbh/src/assets/Projekte/bmi_hose_front.webp";
+								return "C:/Users/sabri/OneDrive/Desktop/webprojekte/feuchter-gmbh-astro/feuchter-gmbh/src/assets/Projekte/bmi_hose_front.webp";
 							}
 							
 							return target[name];
@@ -69,7 +69,7 @@ const bmiJackeFront = new Proxy({"src":"/custom-folder/bmi_jacke_front.CahD7q4A.
 								return structuredClone(target);
 							}
 							if (name === 'fsPath') {
-								return "C:/Users/sabri/OneDrive/Desktop/feuchter-gmbh-astro/feuchter-gmbh/src/assets/Projekte/bmi_jacke_front.webp";
+								return "C:/Users/sabri/OneDrive/Desktop/webprojekte/feuchter-gmbh-astro/feuchter-gmbh/src/assets/Projekte/bmi_jacke_front.webp";
 							}
 							
 							return target[name];
@@ -82,7 +82,7 @@ const berlinHoseLinks = new Proxy({"src":"/custom-folder/berlin_hose_front.DH7nM
 								return structuredClone(target);
 							}
 							if (name === 'fsPath') {
-								return "C:/Users/sabri/OneDrive/Desktop/feuchter-gmbh-astro/feuchter-gmbh/src/assets/Projekte/berlin_hose_front.webp";
+								return "C:/Users/sabri/OneDrive/Desktop/webprojekte/feuchter-gmbh-astro/feuchter-gmbh/src/assets/Projekte/berlin_hose_front.webp";
 							}
 							
 							return target[name];
@@ -95,7 +95,7 @@ const berlinJackeSeite = new Proxy({"src":"/custom-folder/berlin_jacke_front.BUM
 								return structuredClone(target);
 							}
 							if (name === 'fsPath') {
-								return "C:/Users/sabri/OneDrive/Desktop/feuchter-gmbh-astro/feuchter-gmbh/src/assets/Projekte/berlin_jacke_front.webp";
+								return "C:/Users/sabri/OneDrive/Desktop/webprojekte/feuchter-gmbh-astro/feuchter-gmbh/src/assets/Projekte/berlin_jacke_front.webp";
 							}
 							
 							return target[name];
@@ -108,7 +108,7 @@ const unterhemdSeite = new Proxy({"src":"/custom-folder/Unterhemd BWBM Seite.Bvr
 								return structuredClone(target);
 							}
 							if (name === 'fsPath') {
-								return "C:/Users/sabri/OneDrive/Desktop/feuchter-gmbh-astro/feuchter-gmbh/src/assets/Projekte/Unterhemd BWBM Seite.webp";
+								return "C:/Users/sabri/OneDrive/Desktop/webprojekte/feuchter-gmbh-astro/feuchter-gmbh/src/assets/Projekte/Unterhemd BWBM Seite.webp";
 							}
 							
 							return target[name];
@@ -121,7 +121,7 @@ const unterhemdFront = new Proxy({"src":"/custom-folder/Unterhemd BWBM vorne.AC3
 								return structuredClone(target);
 							}
 							if (name === 'fsPath') {
-								return "C:/Users/sabri/OneDrive/Desktop/feuchter-gmbh-astro/feuchter-gmbh/src/assets/Projekte/Unterhemd BWBM vorne.webp";
+								return "C:/Users/sabri/OneDrive/Desktop/webprojekte/feuchter-gmbh-astro/feuchter-gmbh/src/assets/Projekte/Unterhemd BWBM vorne.webp";
 							}
 							
 							return target[name];
@@ -134,7 +134,7 @@ const monteurkombiFront = new Proxy({"src":"/custom-folder/Monteurkombi Front.DX
 								return structuredClone(target);
 							}
 							if (name === 'fsPath') {
-								return "C:/Users/sabri/OneDrive/Desktop/feuchter-gmbh-astro/feuchter-gmbh/src/assets/Projekte/Monteurkombi Front.webp";
+								return "C:/Users/sabri/OneDrive/Desktop/webprojekte/feuchter-gmbh-astro/feuchter-gmbh/src/assets/Projekte/Monteurkombi Front.webp";
 							}
 							
 							return target[name];
@@ -147,7 +147,7 @@ const monteurkombiSeite = new Proxy({"src":"/custom-folder/Monteurkombi Seite.D6
 								return structuredClone(target);
 							}
 							if (name === 'fsPath') {
-								return "C:/Users/sabri/OneDrive/Desktop/feuchter-gmbh-astro/feuchter-gmbh/src/assets/Projekte/Monteurkombi Seite.webp";
+								return "C:/Users/sabri/OneDrive/Desktop/webprojekte/feuchter-gmbh-astro/feuchter-gmbh/src/assets/Projekte/Monteurkombi Seite.webp";
 							}
 							
 							return target[name];
@@ -160,7 +160,7 @@ const ksJacke = new Proxy({"src":"/custom-folder/Kaelteschutzjacke Seite.B-lo5IZ
 								return structuredClone(target);
 							}
 							if (name === 'fsPath') {
-								return "C:/Users/sabri/OneDrive/Desktop/feuchter-gmbh-astro/feuchter-gmbh/src/assets/Projekte/Kaelteschutzjacke Seite.webp";
+								return "C:/Users/sabri/OneDrive/Desktop/webprojekte/feuchter-gmbh-astro/feuchter-gmbh/src/assets/Projekte/Kaelteschutzjacke Seite.webp";
 							}
 							
 							return target[name];
@@ -173,7 +173,7 @@ const ksHose = new Proxy({"src":"/custom-folder/Kaelteschutzhose Seite.BUHN5Dr5.
 								return structuredClone(target);
 							}
 							if (name === 'fsPath') {
-								return "C:/Users/sabri/OneDrive/Desktop/feuchter-gmbh-astro/feuchter-gmbh/src/assets/Projekte/Kaelteschutzhose Seite.webp";
+								return "C:/Users/sabri/OneDrive/Desktop/webprojekte/feuchter-gmbh-astro/feuchter-gmbh/src/assets/Projekte/Kaelteschutzhose Seite.webp";
 							}
 							
 							return target[name];
@@ -186,7 +186,7 @@ const rucksackUeberzug = new Proxy({"src":"/custom-folder/rucksackueberzug_trope
 								return structuredClone(target);
 							}
 							if (name === 'fsPath') {
-								return "C:/Users/sabri/OneDrive/Desktop/feuchter-gmbh-astro/feuchter-gmbh/src/assets/Projekte/rucksackueberzug_tropentarn.webp";
+								return "C:/Users/sabri/OneDrive/Desktop/webprojekte/feuchter-gmbh-astro/feuchter-gmbh/src/assets/Projekte/rucksackueberzug_tropentarn.webp";
 							}
 							
 							return target[name];
@@ -199,7 +199,7 @@ const rucksackUeberzugSeite = new Proxy({"src":"/custom-folder/rucksackueberzug_
 								return structuredClone(target);
 							}
 							if (name === 'fsPath') {
-								return "C:/Users/sabri/OneDrive/Desktop/feuchter-gmbh-astro/feuchter-gmbh/src/assets/Projekte/rucksackueberzug_tropentarn_seite.webp";
+								return "C:/Users/sabri/OneDrive/Desktop/webprojekte/feuchter-gmbh-astro/feuchter-gmbh/src/assets/Projekte/rucksackueberzug_tropentarn_seite.webp";
 							}
 							
 							return target[name];
@@ -212,7 +212,7 @@ const feuerwehrPolo = new Proxy({"src":"/custom-folder/feuerwehr_polo_front.kTjR
 								return structuredClone(target);
 							}
 							if (name === 'fsPath') {
-								return "C:/Users/sabri/OneDrive/Desktop/feuchter-gmbh-astro/feuchter-gmbh/src/assets/Projekte/feuerwehr_polo_front.webp";
+								return "C:/Users/sabri/OneDrive/Desktop/webprojekte/feuchter-gmbh-astro/feuchter-gmbh/src/assets/Projekte/feuerwehr_polo_front.webp";
 							}
 							
 							return target[name];
@@ -225,7 +225,7 @@ const feuerwehrSweatshirt = new Proxy({"src":"/custom-folder/feuerwehr_sweatshir
 								return structuredClone(target);
 							}
 							if (name === 'fsPath') {
-								return "C:/Users/sabri/OneDrive/Desktop/feuchter-gmbh-astro/feuchter-gmbh/src/assets/Projekte/feuerwehr_sweatshirt_front.webp";
+								return "C:/Users/sabri/OneDrive/Desktop/webprojekte/feuchter-gmbh-astro/feuchter-gmbh/src/assets/Projekte/feuerwehr_sweatshirt_front.webp";
 							}
 							
 							return target[name];
@@ -238,7 +238,7 @@ const trageRiemen_1 = new Proxy({"src":"/custom-folder/trageriemen_1.C1JemE35.we
 								return structuredClone(target);
 							}
 							if (name === 'fsPath') {
-								return "C:/Users/sabri/OneDrive/Desktop/feuchter-gmbh-astro/feuchter-gmbh/src/assets/Projekte/trageriemen_1.webp";
+								return "C:/Users/sabri/OneDrive/Desktop/webprojekte/feuchter-gmbh-astro/feuchter-gmbh/src/assets/Projekte/trageriemen_1.webp";
 							}
 							
 							return target[name];
@@ -251,7 +251,7 @@ const trageRiemen_2 = new Proxy({"src":"/custom-folder/trageriemen_2.DdkGGJoY.we
 								return structuredClone(target);
 							}
 							if (name === 'fsPath') {
-								return "C:/Users/sabri/OneDrive/Desktop/feuchter-gmbh-astro/feuchter-gmbh/src/assets/Projekte/trageriemen_2.webp";
+								return "C:/Users/sabri/OneDrive/Desktop/webprojekte/feuchter-gmbh-astro/feuchter-gmbh/src/assets/Projekte/trageriemen_2.webp";
 							}
 							
 							return target[name];
@@ -264,7 +264,7 @@ const berlinTrainingJacke = new Proxy({"src":"/custom-folder/trainingsanzug_berl
 								return structuredClone(target);
 							}
 							if (name === 'fsPath') {
-								return "C:/Users/sabri/OneDrive/Desktop/feuchter-gmbh-astro/feuchter-gmbh/src/assets/Projekte/trainingsanzug_berlin_jacke.webp";
+								return "C:/Users/sabri/OneDrive/Desktop/webprojekte/feuchter-gmbh-astro/feuchter-gmbh/src/assets/Projekte/trainingsanzug_berlin_jacke.webp";
 							}
 							
 							return target[name];
@@ -277,7 +277,7 @@ const berlinTrainingHose = new Proxy({"src":"/custom-folder/trainingsanzug_berli
 								return structuredClone(target);
 							}
 							if (name === 'fsPath') {
-								return "C:/Users/sabri/OneDrive/Desktop/feuchter-gmbh-astro/feuchter-gmbh/src/assets/Projekte/trainingsanzug_berlin_hose.webp";
+								return "C:/Users/sabri/OneDrive/Desktop/webprojekte/feuchter-gmbh-astro/feuchter-gmbh/src/assets/Projekte/trainingsanzug_berlin_hose.webp";
 							}
 							
 							return target[name];
@@ -290,7 +290,7 @@ const kbsJacke = new Proxy({"src":"/custom-folder/kbs_kaelteschutz_jacke.DrUyy_9
 								return structuredClone(target);
 							}
 							if (name === 'fsPath') {
-								return "C:/Users/sabri/OneDrive/Desktop/feuchter-gmbh-astro/feuchter-gmbh/src/assets/Projekte/kbs_kaelteschutz_jacke.webp";
+								return "C:/Users/sabri/OneDrive/Desktop/webprojekte/feuchter-gmbh-astro/feuchter-gmbh/src/assets/Projekte/kbs_kaelteschutz_jacke.webp";
 							}
 							
 							return target[name];
@@ -303,7 +303,7 @@ const kbsHose = new Proxy({"src":"/custom-folder/kbs_kaelteschutz_hose.DKJe2vVE.
 								return structuredClone(target);
 							}
 							if (name === 'fsPath') {
-								return "C:/Users/sabri/OneDrive/Desktop/feuchter-gmbh-astro/feuchter-gmbh/src/assets/Projekte/kbs_kaelteschutz_hose.webp";
+								return "C:/Users/sabri/OneDrive/Desktop/webprojekte/feuchter-gmbh-astro/feuchter-gmbh/src/assets/Projekte/kbs_kaelteschutz_hose.webp";
 							}
 							
 							return target[name];

@@ -4,7 +4,7 @@ const Scribble = new Proxy({"src":"/custom-folder/projekte.CCNIuahq.webp","width
 								return structuredClone(target);
 							}
 							if (name === 'fsPath') {
-								return "C:/Users/sabri/OneDrive/Desktop/feuchter-gmbh-astro/feuchter-gmbh/src/assets/projekte.webp";
+								return "C:/Users/sabri/OneDrive/Desktop/webprojekte/feuchter-gmbh-astro/feuchter-gmbh/src/assets/projekte.webp";
 							}
 							
 							return target[name];
