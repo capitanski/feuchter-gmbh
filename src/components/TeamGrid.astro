@@ -19,15 +19,25 @@ const cite = {
                 Dingen. Dafür stehen wir mit Stolz seit über 60 Jahren."`,
   en: `"Our passion for detail and our commitment to perfection drive us every single day. Even in large-scale production, we never settle for average – because true quality reveals itself in the little things. We've proudly stood by that belief for over 60 years."`,
 };
-const teamMembers = [
+const leaders = [
   {
+    img: klaus.src,
+    name: "Klaus Feuchter",
+  },
+  {
+    img: markus.src,
+    name: "Markus Feuchter",
+  },
+];
+const teamMembers = [
+  /*{
     img: klaus.src,
     name: "Klaus Feuchter",
     role: {
       de: "CEO",
       en: "CEO",
     },
-  },
+  },*/
   /*{
     img: markus.src,
     name: "Markus Feuchter",
@@ -103,21 +113,42 @@ const teamMembers = [
         {cite[language]}
       </p>
     </div>
-
-    <div class="grid">
-      {
-        teamMembers.map((item) => {
-          return (
-            <div class="grid-item animatable">
-              <img src={item.img} alt="" />
-              <div class="grid-item-text">
-                <p>{item.name}</p>
-                <span>{item.role[language]}</span>
-              </div>
-            </div>
-          );
-        })
-      }
+    <div class="right">
+      <div class="leaders">
+        <h3>Geschäftsführung</h3>
+        <div class="grid">
+          {
+            leaders.map((item) => {
+              return (
+                <div class="grid-item animatable">
+                  <img src={item.img} alt="" />
+                  <div class="grid-item-text">
+                    <p>{item.name}</p>
+                  </div>
+                </div>
+              );
+            })
+          }
+        </div>
+      </div>
+      <div class="lower">
+        <h3>Das Team</h3>
+        <div class="grid">
+          {
+            teamMembers.map((item) => {
+              return (
+                <div class="grid-item animatable">
+                  <img src={item.img} alt="" />
+                  <div class="grid-item-text">
+                    <p>{item.name}</p>
+                    <span>{item.role[language]}</span>
+                  </div>
+                </div>
+              );
+            })
+          }
+        </div>
+      </div>
     </div>
   </div>
 </section>
@@ -139,6 +170,14 @@ const teamMembers = [
     @media (min-width: 821px) and (max-width: 1028px) {
       padding: 0 70px;
     }
+  }
+  .right {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+  .lower {
+    margin-top: 20px;
   }
   .grid {
     display: grid;

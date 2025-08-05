@@ -101,6 +101,24 @@ h2 {
   }
 }
 
+h3 {
+  font-size: 1.3rem !important;
+  letter-spacing: -1.5px;
+  background: linear-gradient(135deg, var(--lightgray), var(--sand));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-bottom: 15px;
+  margin-top: 10px;
+  line-height: 1.8rem;
+  font-family: "peridot-pe-variable", sans-serif !important;
+  font-variation-settings: "ital" 0, "wdth" 300, "wght" 900 !important;
+
+  @media screen and (max-width: 1028px) {
+    font-size: 1.4rem !important;
+    line-height: 2rem !important;
+  }
+}
+
 h1 {
   font-weight: 900 !important;
   background: linear-gradient(135deg, var(--lightgray), var(--sand));
