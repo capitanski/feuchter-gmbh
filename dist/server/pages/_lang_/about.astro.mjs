@@ -1,7 +1,7 @@
 import { e as createAstro, f as createComponent, m as maybeRenderHead, h as addAttribute, r as renderTemplate, i as renderComponent } from '../../chunks/astro/server_C55uJX-_.mjs';
 import 'kleur/colors';
-import { $ as $$WelcomeLeftAligned } from '../../chunks/WelcomeLeftAligned_BLPXU9P9.mjs';
-import { $ as $$Layout } from '../../chunks/Layout_COPaMLlO.mjs';
+import { $ as $$WelcomeLeftAligned } from '../../chunks/WelcomeLeftAligned_g3ImeFrQ.mjs';
+import { $ as $$Layout } from '../../chunks/Layout_BMH1rKNG.mjs';
 import 'clsx';
 /* empty css                                    */
 export { renderers } from '../../renderers.mjs';
@@ -114,23 +114,33 @@ const $$TeamGrid = createComponent(($$result, $$props, $$slots) => {
                 Dingen. Daf\xFCr stehen wir mit Stolz seit \xFCber 60 Jahren."`,
     en: `"Our passion for detail and our commitment to perfection drive us every single day. Even in large-scale production, we never settle for average \u2013 because true quality reveals itself in the little things. We've proudly stood by that belief for over 60 years."`
   };
-  const teamMembers = [
+  const leaders = [
     {
+      img: klaus.src,
+      name: "Klaus Feuchter"
+    },
+    {
+      img: markus.src,
+      name: "Markus Feuchter"
+    }
+  ];
+  const teamMembers = [
+    /*{
       img: klaus.src,
       name: "Klaus Feuchter",
       role: {
         de: "CEO",
-        en: "CEO"
-      }
-    },
-    {
+        en: "CEO",
+      },
+    },*/
+    /*{
       img: markus.src,
       name: "Markus Feuchter",
       role: {
-        de: "Qualit\xE4tsmanagement",
-        en: "Qualitymanagement"
-      }
-    },
+        de: "Qualitätsmanagement",
+        en: "Qualitymanagement",
+      },
+    },*/
     {
       img: sabrina.src,
       name: "Sabrina Feuchter",
@@ -188,9 +198,11 @@ const $$TeamGrid = createComponent(($$result, $$props, $$slots) => {
       },
     },*/
   ];
-  return renderTemplate`${maybeRenderHead()}<section data-astro-cid-liz7rhkm> <div class="container" data-astro-cid-liz7rhkm> <div class="title-and-cite" data-astro-cid-liz7rhkm> <h2 class="animate-in-right" data-astro-cid-liz7rhkm>${headline[language]}</h2> <p class="zitat" data-astro-cid-liz7rhkm> ${cite[language]} </p> </div> <div class="grid" data-astro-cid-liz7rhkm> ${teamMembers.map((item) => {
+  return renderTemplate`${maybeRenderHead()}<section data-astro-cid-liz7rhkm> <div class="container" data-astro-cid-liz7rhkm> <div class="title-and-cite" data-astro-cid-liz7rhkm> <h2 class="animate-in-right" data-astro-cid-liz7rhkm>${headline[language]}</h2> <p class="zitat" data-astro-cid-liz7rhkm> ${cite[language]} </p> </div> <div class="right" data-astro-cid-liz7rhkm> <div class="leaders" data-astro-cid-liz7rhkm> <h3 data-astro-cid-liz7rhkm>Geschäftsführung</h3> <div class="grid" data-astro-cid-liz7rhkm> ${leaders.map((item) => {
+    return renderTemplate`<div class="grid-item animatable" data-astro-cid-liz7rhkm> <img${addAttribute(item.img, "src")} alt="" data-astro-cid-liz7rhkm> <div class="grid-item-text" data-astro-cid-liz7rhkm> <p data-astro-cid-liz7rhkm>${item.name}</p> </div> </div>`;
+  })} </div> </div> <div class="lower" data-astro-cid-liz7rhkm> <h3 data-astro-cid-liz7rhkm>Das Team</h3> <div class="grid" data-astro-cid-liz7rhkm> ${teamMembers.map((item) => {
     return renderTemplate`<div class="grid-item animatable" data-astro-cid-liz7rhkm> <img${addAttribute(item.img, "src")} alt="" data-astro-cid-liz7rhkm> <div class="grid-item-text" data-astro-cid-liz7rhkm> <p data-astro-cid-liz7rhkm>${item.name}</p> <span data-astro-cid-liz7rhkm>${item.role[language]}</span> </div> </div>`;
-  })} </div> </div> </section> `;
+  })} </div> </div> </div> </div> </section> `;
 }, "C:/Users/sabri/OneDrive/Desktop/feuchter-gmbh-astro/feuchter-gmbh/src/components/TeamGrid.astro", void 0);
 
 const Scribble = new Proxy({"src":"/custom-folder/firmengebaeude.D6emVdpK.webp","width":2000,"height":1333,"format":"webp"}, {

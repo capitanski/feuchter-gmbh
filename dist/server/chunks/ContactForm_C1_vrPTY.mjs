@@ -1,7 +1,7 @@
 import { e as createAstro, f as createComponent, r as renderTemplate, h as addAttribute, m as maybeRenderHead } from './astro/server_C55uJX-_.mjs';
 import 'kleur/colors';
 import 'clsx';
-import { b as buttonTranslations } from './Layout_COPaMLlO.mjs';
+import { b as buttonTranslations } from './Layout_BMH1rKNG.mjs';
 /* empty css                           */
 
 var __freeze = Object.freeze;

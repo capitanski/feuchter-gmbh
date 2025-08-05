@@ -2,7 +2,7 @@ import { e as createAstro, f as createComponent, m as maybeRenderHead, h as addA
 import 'kleur/colors';
 import { p as projects, C as Circles, $ as $$ProjectTag } from './projects_DMM2jGj4.mjs';
 import { A as Arrow } from './Arrow_sand_5oaPgMNc.mjs';
-import { b as buttonTranslations, t as translations } from './Layout_COPaMLlO.mjs';
+import { b as buttonTranslations, t as translations } from './Layout_BMH1rKNG.mjs';
 /* empty css                         */
 
 const $$Astro = createAstro("http://localhost:4321");
